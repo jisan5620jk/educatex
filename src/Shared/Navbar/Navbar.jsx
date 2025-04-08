@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import star from '/images/top-star.png';
 import Logo from '/images/logo.png';
 import './navbar.css';
 import { useEffect, useRef } from 'react';
@@ -12,8 +13,10 @@ import {
 } from 'react-icons/fa6';
 import { FaPhoneAlt, FaTimes } from 'react-icons/fa';
 import { MdLocationPin } from 'react-icons/md';
-import { IoMdPaperPlane } from 'react-icons/io';
-import { GoArrowUpRight } from 'react-icons/go';
+import { IoIosSearch, IoMdLogIn, IoMdPaperPlane } from 'react-icons/io';
+import { SlUserFollow } from 'react-icons/sl';
+import { HiArrowNarrowRight } from 'react-icons/hi';
+import { GrCart } from 'react-icons/gr';
 
 const Navbar = () => {
   //sticky
@@ -258,10 +261,53 @@ const Navbar = () => {
         ref={bodyOverlayRef}
         className='body-overlay'
       ></div>
+      <div className='bg-SecondaryColor-0 px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] flex justify-between items-center'>
+        <div className='flex items-center gap-3'>
+          <img
+            src={star}
+            draggable={false}
+            alt='Star'
+          />
+          <p className='font-OpenSans text-[15px] text-white text-opacity-80'>
+            Welcome to{' '}
+            <Link
+              to={'#'}
+              className='text-PrimaryColor-0 text-opacity-100'
+            >
+              Educate
+            </Link>{' '}
+            – Unlocking the Power of Education!
+          </p>
+        </div>
+        <div className='py-[14px] flex items-center gap-7'>
+          <div>
+            <Link
+              to={'/'}
+              className='flex items-center gap-1 text-white font-medium text-[15px] font-Outfit uppercase'
+            >
+              <span className='text-PrimaryColor-0'>
+                <IoMdLogIn size={20} />
+              </span>
+              LogIn
+            </Link>
+          </div>
+          <div>
+            <Link
+              to={'/'}
+              className='flex items-center gap-[6px] text-white font-medium text-[15px] font-Outfit uppercase'
+            >
+              <span className='text-PrimaryColor-0'>
+                <SlUserFollow size={16} />
+              </span>
+              Registration
+            </Link>
+          </div>
+        </div>
+      </div>
       <div className='header-area header-sticky'>
-        <div className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px]'>
-          <div className='flex items-center justify-between lg:grid lg:grid-cols-12'>
-            <div className='col-span-2'>
+        <div className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] border-b border-HeadingColor-0 border-opacity-10'>
+          <div className='flex items-center justify-between'>
+            <div>
               <div className='header-logo lg:hidden'>
                 <Link to={'/'}>
                   <img
@@ -279,7 +325,7 @@ const Navbar = () => {
                 </Link>
               </div>
             </div>
-            <div className='col-span-7 3xl:col-span-8 hidden lg:block'>
+            <div className='flex-1 hidden lg:block'>
               <div className='header-main-menu text-right 2xl:text-center'>
                 <nav className='main-menu-content'>
                   <ul>
@@ -343,22 +389,6 @@ const Navbar = () => {
                       </ul>
                     </li>
                     <li className='has-dropdown'>
-                      <Link to={'/service'}>
-                        Service
-                        <span>
-                          <FaChevronDown />
-                        </span>
-                      </Link>
-                      <ul className='submenu'>
-                        <li>
-                          <Link to={'/service'}>service</Link>
-                        </li>
-                        <li>
-                          <Link to={'/service_details'}>service details</Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className='has-dropdown'>
                       <Link to={'/'}>
                         Pages
                         <span>
@@ -405,7 +435,7 @@ const Navbar = () => {
                     </li>
                     <li className='has-dropdown'>
                       <Link to={'/project2'}>
-                        Project
+                        Courses
                         <span>
                           <FaChevronDown />
                         </span>
@@ -493,23 +523,43 @@ const Navbar = () => {
                 </nav>
               </div>
             </div>
-            <div className='col-span-3 3xl:col-span-2'>
-              <div className='header-right-box flex items-center gap-10 lg:gap-4 justify-end'>
-                <div className='header-btn hidden lg:block'>
-                  <Link to={'/contact'}>
-                    get a quote<span></span>
-                    <GoArrowUpRight size={22} />
-                  </Link>
+            <div>
+              <div className='header-right-box flex items-center gap-10 lg:gap-[34px] justify-end'>
+                <div className='flex items-center gap-4'>
+                  <div className='size-[46px] bg-transparent rounded-full border border-HeadingColor-0 border-opacity-20 overflow-hidden text-HeadingColor-0 transition-all duration-500 flex items-center justify-center cursor-pointer relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:rotate-180 before:scale-0 before:-z-10 hover:before:scale-100 hover:before:rotate-0 hover:text-white hover:border-PrimaryColor-0'>
+                    <button className='menu-cart'>
+                      <IoIosSearch size={22} />
+                    </button>
+                  </div>
+                  <div className='size-[46px] bg-transparent rounded-full border border-HeadingColor-0 border-opacity-20 text-HeadingColor-0 transition-all duration-500 flex items-center justify-center cursor-pointer relative z-10 before:absolute before:left-0 before:rounded-full before:top-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-10 hover:before:scale-100 hover:text-white hover:border-PrimaryColor-0'>
+                    <button className='menu-cart relative z-10'>
+                      <GrCart size={18} />
+                      <span className='absolute -top-[16px] -right-[16px] size-[18px] rounded-full bg-PrimaryColor-0 flex items-center justify-center text-white font-Outfit text-xs'>
+                        0
+                      </span>
+                    </button>
+                  </div>
                 </div>
-                <div
-                  className='header-sidebar hidden size-[50px] bg-gradient-to-l from-PrimaryColor2-0 to-PrimaryColor3-0 rounded-full 2xl:flex items-center justify-center cursor-pointer'
-                  ref={menuSideBarRef}
-                >
-                  <button className='menu-sidebar'>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </button>
+                <div className='flex items-center gap-4'>
+                  <div className='hidden lg:block'>
+                    <Link
+                      to={'/contact'}
+                      className='header-btn'
+                    >
+                      Free Trial
+                      <HiArrowNarrowRight size={18} />
+                    </Link>
+                  </div>
+                  <div
+                    className='header-sidebar hidden size-[46px] bg-SecondaryColor-0 rounded-full 2xl:flex items-center justify-center cursor-pointer'
+                    ref={menuSideBarRef}
+                  >
+                    <button className='menu-sidebar'>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </button>
+                  </div>
                 </div>
                 <div className='header-bar lg:hidden'>
                   <button

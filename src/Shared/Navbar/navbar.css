@@ -432,54 +432,48 @@ nav.main-menu-content > ul > li:hover > a > span {
   top: 26px;
 }
 
-.header-btn a {
-  text-decoration: none;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
+.header-btn {
   display: inline-flex;
-  gap: 2px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  font-family: 'Outfit', sans-serif;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-size: 18px;
-  line-height: 1;
-  font-weight: 500;
-  color: white;
+  gap: 8px;
+  font-size: 15px;
   text-transform: uppercase;
-  background-size: 200%;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#1a90ff),
-    color-stop(51%, #0c5adb, to(#1a90ff))
-  );
-  background-image: -o-linear-gradient(
-    left,
-    #1a90ff 0%,
-    #0c5adb 51%,
-    #1a90ff 100%
-  );
-  background-image: linear-gradient(
-    to right,
-    #1a90ff 0%,
-    #0c5adb 51%,
-    #1a90ff 100%
-  );
-  border: none;
-  border-radius: 50px;
-  padding: 14px 32px;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: 'Outfit';
+  border-radius: 28px;
+  background-color: #1ec28e;
+  padding: 12px 36px;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 1;
 }
 
-.header-btn a:hover {
-  background-position: -100%;
+.header-btn::before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: #fe853c;
+  border-radius: 30px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transition: 0.5s;
+  clip-path: polygon(50% 0, 50% 0, 50% 50%, 50% 100%, 50% 100%, 50% 50%);
+  z-index: -1;
+}
+
+.header-btn:hover:before {
+  clip-path: polygon(
+    25% -70%,
+    75% -70%,
+    120% 50%,
+    75% 170%,
+    25% 170%,
+    -20% 50%
+  );
 }
 
 .header-btn a svg {
@@ -994,7 +988,7 @@ li.has-dropdown a button span {
   display: block;
   height: 2px;
   background: #ffffff;
-  margin: 5px;
+  margin: 4px;
   transition: all 0.5s ease;
   border-radius: 30px;
 }
@@ -1002,19 +996,19 @@ li.has-dropdown a button span {
 .menu-sidebar:hover span:nth-child(1),
 .menu-sidebar:hover span:nth-child(2),
 .menu-sidebar:hover span:nth-child(3) {
-  width: 22px;
+  width: 18px;
 }
 
-.menu-sidebar span:nth-child(3) {
+.menu-sidebar span:nth-child(1) {
   width: 18px;
 }
 
 .menu-sidebar span:nth-child(2) {
-  width: 14px;
+  width: 18px;
 }
 
-.menu-sidebar span:nth-child(1) {
-  width: 20px;
+.menu-sidebar span:nth-child(3) {
+  width: 10px;
 }
 
 .body-overlay2 {
