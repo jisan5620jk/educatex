@@ -12,7 +12,7 @@ const Banner = () => {
       <div className='Container'>
         <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0 pt-[70px] lg:pt-0'>
           <div className='relative'>
-            <h5 className='font-Rajdhani text-white text-xl font-semibold flex items-center gap-2 mb-4 uppercase'>
+            <h5 className='font-Outfit text-white text-xl font-semibold flex items-center gap-2 mb-4 uppercase'>
               <img
                 src={subTilteShape}
                 alt='Shape'
@@ -21,7 +21,7 @@ const Banner = () => {
               />
               Best software agency
             </h5>
-            <h1 className='font-Rajdhani font-extrabold text-white text-[34px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[68px] 2xl:text-[80px] 2xl:leading-[75px]'>
+            <h1 className='font-Outfit font-extrabold text-white text-[34px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[68px] 2xl:text-[80px] 2xl:leading-[75px]'>
               Convert Idea to
               <br />
               <span className='flex items-center gap-2 sm:gap-4'>
@@ -34,7 +34,7 @@ const Banner = () => {
                 Your Business
               </span>
             </h1>
-            <p className='font-Nunito sm:text-xl text-white mb-10 mt-6'>
+            <p className='font-OpenSans sm:text-xl text-white mb-10 mt-6'>
               Continually formulate B2C partnerships orthogonal software
               <br className='hidden 2xl:block' /> maintainable quality through
               low budgets
@@ -47,7 +47,7 @@ const Banner = () => {
                 </button>
               </Link>
               <Link to={'/about'}>
-                <button className='flex items-center gap-2 border border-BorderColor3-0 py-[13px] px-11 transition-all text-lg duration-500 ease-linear rounded-full text-white font-semibold font-Rajdhani uppercase bg-transparent to-PrimaryColor-0 from-PrimaryColor2-0 hover:border-PrimaryColor-0 hover:bg-gradient-to-l'>
+                <button className='flex items-center gap-2 border border-BorderColor3-0 py-[13px] px-11 transition-all text-lg duration-500 ease-linear rounded-full text-white font-semibold font-Outfit uppercase bg-transparent to-PrimaryColor-0 from-PrimaryColor2-0 hover:border-PrimaryColor-0 hover:bg-gradient-to-l'>
                   {`Contact Us`}
                   <FaArrowRightLong size={'18'} />
                 </button>

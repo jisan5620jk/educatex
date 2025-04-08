@@ -2,14 +2,14 @@
   position: absolute;
   top: -28px;
   right: 0;
-  font-family: 'Rajdhani';
+  font-family: 'Outfit';
   font-weight: 600;
   color: #fff !important;
 }
 
 .service-progress .progress-bar-rect-wrapper {
-    overflow: hidden;
-    border-radius: 10px !important;
+  overflow: hidden;
+  border-radius: 10px !important;
 }
 
 .service-progress .inner-rect-bar {

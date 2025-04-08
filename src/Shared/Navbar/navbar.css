@@ -129,7 +129,7 @@
   font-size: 24px;
   color: #ffffff;
   font-weight: 400;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Outfit', sans-serif;
   margin-bottom: 30px;
   display: inline-block;
 }
@@ -141,7 +141,7 @@
 
 .offcanvas_contact-info ul li a {
   color: #ffffff;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 .offcanvas_contact-info ul li i {
@@ -152,7 +152,7 @@
   font-size: 24px;
   color: #ffffff;
   font-weight: 400;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Outfit', sans-serif;
   margin-bottom: 30px;
   display: inline-block;
 }
@@ -362,7 +362,7 @@ nav.main-menu-content > ul > li {
 
 nav.main-menu-content > ul > li > a {
   font-size: 18px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'OpenSans', sans-serif;
   text-transform: capitalize;
   transition: 0.5s;
   padding: 36px 21px;
@@ -442,7 +442,7 @@ nav.main-menu-content > ul > li:hover > a > span {
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Outfit', sans-serif;
   -ms-flex-pack: center;
   justify-content: center;
   font-size: 18px;
@@ -530,7 +530,7 @@ nav.main-menu-content > ul > li:hover > a > span {
 .header-main-menu nav ul li .submenu > li a,
 .header-main-menu nav ul li .submenu li:hover .submenu > li a {
   padding: 14px 24px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'OpenSans', sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   color: #041424;
@@ -604,7 +604,7 @@ nav.main-menu-content > ul > li:hover > a > span {
   margin-bottom: 0;
   color: #000000;
   display: inline-block;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 .homemenu-title:hover {
@@ -1086,7 +1086,7 @@ li.has-dropdown a button span {
   font-size: 24px;
   color: #ffffff;
   font-weight: 500;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Outfit', sans-serif;
   margin-bottom: 20px;
   display: inline-block;
 }
@@ -1101,7 +1101,7 @@ li.has-dropdown a button span {
   font-size: 18px;
   color: #a3b7b7;
   font-weight: 500;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Outfit', sans-serif;
   transition: all 0.5s;
   margin: 6px 0;
 }
@@ -1114,7 +1114,7 @@ li.has-dropdown a button span {
   font-size: 24px;
   color: #ffffff;
   font-weight: 500;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Outfit', sans-serif;
   margin-bottom: 30px;
   display: inline-block;
   margin-top: 20px;
@@ -1127,7 +1127,7 @@ li.has-dropdown a button span {
 
 .sidebar_contact-info ul li a {
   color: #ffffff;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 .sidebar_contact-info ul li svg {
@@ -1138,7 +1138,7 @@ li.has-dropdown a button span {
   font-size: 24px;
   color: #ffffff;
   font-weight: 400;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Outfit', sans-serif;
   margin-bottom: 30px;
   display: inline-block;
 }

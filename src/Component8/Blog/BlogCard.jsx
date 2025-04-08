@@ -18,7 +18,7 @@ const BlogCard = ({
         />
         <div className='absolute z-20 left-1/2 -translate-x-1/2 bottom-0 w-[calc(100%-20px)] sm:w-[calc(100%-40px)] mx-auto flex justify-center bg-BodyBg8-0 rounded-t-lg transition-all duration-500 px-3 md:px-5 lg:px-[30px] 2xl:px-[30px] pt-3 sm:pt-5 md:pt-7 xl:-mb-2 group-hover:pb-10'>
           <div className='mx-auto relative w-full'>
-            <p className='font-Rajdhani font-semibold text-HeadingColor-0 sm:text-lg flex gap-2 items-center leading-[15px]'>
+            <p className='font-Outfit font-semibold text-HeadingColor-0 sm:text-lg flex gap-2 items-center leading-[15px]'>
               <img
                 src={blogPostIcon}
                 draggable={false}
@@ -27,7 +27,7 @@ const BlogCard = ({
               {blogPost}
             </p>
             <Link to={blogUrl}>
-              <button className='font-Rajdhani text-left font-semibold text-lg leading-6 sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-5 sm:mr-14 md:mr-0'>
+              <button className='font-Outfit text-left font-semibold text-lg leading-6 sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-5 sm:mr-14 md:mr-0'>
                 {blogTitle}
               </button>
             </Link>
@@ -36,7 +36,7 @@ const BlogCard = ({
                 to={blogUrl}
                 className='inline-block'
               >
-                <button className='blog-button font-Rajdhani font-semibold text-lg uppercase fle items-center gap-2'>
+                <button className='blog-button font-Outfit font-semibold text-lg uppercase fle items-center gap-2'>
                   {blogBtnText}
                   <span className='icon-style relative left-2 -top-[1px]'>
                     <svg

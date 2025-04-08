@@ -102,7 +102,7 @@ const TeamMember = () => {
         <div className='Container'>
           <div className='flex flex-col gap-5 md:gap-0 md:flex-row justify-between md:items-center'>
             <div>
-              <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-white uppercase'>
+              <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-white uppercase'>
                 <img
                   src={titleShape}
                   draggable={false}
@@ -111,7 +111,7 @@ const TeamMember = () => {
                 />{' '}
                 MEET OUR TEAM
               </h5>
-              <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
+              <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
                 High Professional Team Ready
                 <br /> To Develope Your Business
               </h1>

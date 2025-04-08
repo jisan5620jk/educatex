@@ -35,7 +35,7 @@ const Process = () => {
     <section className='bg-BodyBg7-0 pb-16 md:pb-20 lg:pb-28'>
       <div className='Container'>
         <div className='text-center'>
-          <h1 className='font-Rajdhani font-bold text-[40px] leading-[42px] sm:text-[50px] sm:leading-[52px] md:text-[60px] md:leading-[72px] lg:text-[60px] lg:leading-[62px] xl:text-[70px] xl:leading-[72px] 2xl:text-[80px] 2xl:leading-[82px] text-HeadingColor-0 mb-4'>
+          <h1 className='font-Outfit font-bold text-[40px] leading-[42px] sm:text-[50px] sm:leading-[52px] md:text-[60px] md:leading-[72px] lg:text-[60px] lg:leading-[62px] xl:text-[70px] xl:leading-[72px] 2xl:text-[80px] 2xl:leading-[82px] text-HeadingColor-0 mb-4'>
             Working Process
           </h1>
         </div>

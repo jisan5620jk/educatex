@@ -28,10 +28,10 @@ const Brand = () => {
 
   return (
     <div className='bg-BodyBgDark3-0'>
-      <section className="mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] bg-PrimaryColor3-0 pt-[100px] pb-[92px] rounded-b-lg lg:rounded-b-2xl -mt-5">
+      <section className='mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] bg-PrimaryColor3-0 pt-[100px] pb-[92px] rounded-b-lg lg:rounded-b-2xl -mt-5'>
         <div className='Container'>
           <div className='flex items-center gap-2 sm:gap-4'>
-            <h5 className='font-Rajdhani font-semibold text-base sm:text-lg text-white uppercase'>
+            <h5 className='font-Outfit font-semibold text-base sm:text-lg text-white uppercase'>
               See our happy customers
             </h5>{' '}
             <div className='flex-1 w-full h-[1px] bg-white bg-opacity-20'></div>
@@ -96,9 +96,8 @@ const Brand = () => {
           </div>
           <div className='flex items-center gap-2 sm:gap-4'>
             <div className='flex-1 w-full h-[1px] bg-white bg-opacity-20'></div>{' '}
-            <h5 className='font-Rajdhani font-semibold text-base sm:text-lg text-white uppercase'>
-              About 10k+ customers
-              worldwide
+            <h5 className='font-Outfit font-semibold text-base sm:text-lg text-white uppercase'>
+              About 10k+ customers worldwide
             </h5>
           </div>
         </div>

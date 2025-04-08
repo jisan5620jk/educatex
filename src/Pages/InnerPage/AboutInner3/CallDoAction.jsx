@@ -8,7 +8,7 @@ const CallDoAction = () => {
       <div className='Container'>
         <div className='text-center'>
           <div className='relative z-10'>
-            <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+            <h5 className='flex items-center justify-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
                 src={titleShape}
                 draggable={false}
@@ -21,11 +21,11 @@ const CallDoAction = () => {
                 alt='Shape'
               />
             </h5>
-            <h1 className='font-Rajdhani font-bold text-lg leading-6 sm:text-[32px] sm:leading-[40px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-3'>
+            <h1 className='font-Outfit font-bold text-lg leading-6 sm:text-[32px] sm:leading-[40px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-3'>
               Do You Want to Take Your Business to
               <br /> Next Level? Connect with Us
             </h1>
-            <p className='font-Nunito text-TextColor2-0 max-w-[590px] w-full mx-auto mb-8'>
+            <p className='font-OpenSans text-TextColor2-0 max-w-[590px] w-full mx-auto mb-8'>
               Authoritatively disintermediate business to optimal web-readiness
               task vertical service timely human capital business plans with us
             </p>

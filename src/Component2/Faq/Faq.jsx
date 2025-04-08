@@ -71,10 +71,10 @@ const Faq = () => {
       <div className='Container'>
         <div className='grid grid-cols-1 gap-8 xl:gap-0 lg:grid-cols-2 items-center'>
           <div className='bg-[url("/images/AI-2-13.png")] bg-cover bg-center rounded-[20px] overflow-hidden px-4 sm:px-8 md:px-[50px] pt-4 sm:pt-8 md:pt-[50px] pb-5 sm:pb-9 md:pb-[64px] max-w-[520px] w-full text-center'>
-            <h3 className='font-Rajdhani font-bold text-2xl sm:text-3xl md:text-[40px] text-white'>
+            <h3 className='font-Outfit font-bold text-2xl sm:text-3xl md:text-[40px] text-white'>
               Send A Message
             </h3>
-            <p className='font-Nunito text-TextColor-0 mb-9 mt-2 md:-mt-[2px]'>
+            <p className='font-OpenSans text-TextColor-0 mb-9 mt-2 md:-mt-[2px]'>
               Write Us Something sending a message
             </p>
             <form
@@ -89,7 +89,7 @@ const Faq = () => {
                   id='name'
                   placeholder='Your Name'
                   required
-                  className='h-[60px] w-full rounded-md pl-[80px] text-white font-Nunito bg-white bg-opacity-5 outline-none border-2 border-transparent transition-all duration-500 ease-linear hover:border-PrimaryColor-0 focus:border-PrimaryColor-0'
+                  className='h-[60px] w-full rounded-md pl-[80px] text-white font-OpenSans bg-white bg-opacity-5 outline-none border-2 border-transparent transition-all duration-500 ease-linear hover:border-PrimaryColor-0 focus:border-PrimaryColor-0'
                 />
                 <span className='absolute top-0 left-0 size-[60px] flex items-center justify-center text-white text-opacity-40 border-r border-white border-opacity-10'>
                   <FaRegUser />
@@ -102,7 +102,7 @@ const Faq = () => {
                   id='name'
                   placeholder='Your E-Mail'
                   required
-                  className='h-[60px] w-full rounded-md pl-[80px] text-white font-Nunito bg-white bg-opacity-5 outline-none border-2 border-transparent transition-all duration-500 ease-linear hover:border-PrimaryColor-0 focus:border-PrimaryColor-0'
+                  className='h-[60px] w-full rounded-md pl-[80px] text-white font-OpenSans bg-white bg-opacity-5 outline-none border-2 border-transparent transition-all duration-500 ease-linear hover:border-PrimaryColor-0 focus:border-PrimaryColor-0'
                 />
                 <span className='absolute top-0 left-0 size-[60px] flex items-center justify-center text-white text-opacity-40 border-r border-white border-opacity-10'>
                   <FaRegEnvelope />
@@ -110,7 +110,7 @@ const Faq = () => {
               </div>
               <div className='relative'>
                 <select
-                  className='h-[60px] w-full cursor-pointer rounded-md pl-[80px] text-white font-Nunito bg-white bg-opacity-5 outline-none border-2 border-transparent transition-all duration-500 ease-linear hover:border-PrimaryColor-0 focus:border-PrimaryColor-0'
+                  className='h-[60px] w-full cursor-pointer rounded-md pl-[80px] text-white font-OpenSans bg-white bg-opacity-5 outline-none border-2 border-transparent transition-all duration-500 ease-linear hover:border-PrimaryColor-0 focus:border-PrimaryColor-0'
                   defaultValue=''
                 >
                   <option
@@ -154,7 +154,7 @@ const Faq = () => {
                   name='message'
                   id='message'
                   placeholder='Write Message...'
-                  className='min-h-[150px] w-full rounded-md px-7 py-3 resize-none text-white font-Nunito bg-white bg-opacity-5 outline-none border-2 border-transparent transition-all duration-500 ease-linear hover:border-PrimaryColor-0 focus:border-PrimaryColor-0'
+                  className='min-h-[150px] w-full rounded-md px-7 py-3 resize-none text-white font-OpenSans bg-white bg-opacity-5 outline-none border-2 border-transparent transition-all duration-500 ease-linear hover:border-PrimaryColor-0 focus:border-PrimaryColor-0'
                 ></textarea>
               </div>
               <button
@@ -185,7 +185,7 @@ const Faq = () => {
             </form>
           </div>
           <div>
-            <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+            <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
                 src={titleShape}
                 draggable={false}
@@ -193,7 +193,7 @@ const Faq = () => {
               />{' '}
               ASKED QUESTION
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+            <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
               Frequently Asked Question for
               <br />
               Robotics Industry
@@ -217,7 +217,7 @@ const Faq = () => {
                         }`}
                         onClick={() => handleToggle(index)}
                       >
-                        <h5 className='font-Rajdhani font-semibold text-xl sm:text-2xl text-HeadingColor-0'>
+                        <h5 className='font-Outfit font-semibold text-xl sm:text-2xl text-HeadingColor-0'>
                           {faq.question}
                         </h5>
                         <span
@@ -232,7 +232,7 @@ const Faq = () => {
                         ref={(el) => (contentRefs.current[index] = el)}
                         className='max-h-0 overflow-hidden transition-all duration-500'
                       >
-                        <p className='font-Nunito text-TextColor2-0 w-[90%] pt-2'>
+                        <p className='font-OpenSans text-TextColor2-0 w-[90%] pt-2'>
                           {faq.answer}
                         </p>
                       </div>

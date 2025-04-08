@@ -94,7 +94,7 @@ const Service = () => {
         <div className='absolute -z-10 -top-[85%] -left-[55%] size-[1245px] rounded-full blur-[150px] bg-PrimaryColor2-0 bg-opacity-50'></div>
         <div className='Container'>
           <div className='relative text-center'>
-            <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-white uppercase'>
+            <h5 className='flex items-center justify-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-white uppercase'>
               <img
                 src={titleShape}
                 draggable={false}
@@ -109,7 +109,7 @@ const Service = () => {
                 className='rotate-180 brightness-0 invert-[1]'
               />
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
+            <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
               Driving Change with Innovative
               <br />
               Successful Softwares

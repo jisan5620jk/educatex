@@ -20,13 +20,13 @@ const LatestWorkCard = ({
           />
         </div>
         <div className='px-4 sm:px-[38px] md:px-8 xl:px-[38px] 2xl:px-8 3xl:px-[38px] pb-7 pt-5 sm:pt-2'>
-          <h6 className='text-PrimaryColor-0 bg-HeadingColor-0 bg-opacity-5 font-Rajdhani font-medium uppercase text-sm rounded-full px-[26px] py-[7px] inline-block transition-all duration-500 group-hover:bg-white group-hover:bg-opacity-10 group-hover:text-white'>
+          <h6 className='text-PrimaryColor-0 bg-HeadingColor-0 bg-opacity-5 font-Outfit font-medium uppercase text-sm rounded-full px-[26px] py-[7px] inline-block transition-all duration-500 group-hover:bg-white group-hover:bg-opacity-10 group-hover:text-white'>
             {latestWorkSubTitle}
           </h6>
           <div className='inline-block mt-4'>
             <Link
               to={latestWorkCardURL}
-              className='text-HeadingColor-0 text-xl sm:text-2xl md:text-[19px] md:leading-[26px] lg:leading-[inherit] lg:text-2xl xl:text-xl 2xl:text-lg 3xl:text-2xl font-Rajdhani font-semibold transition-all duration-500 group-hover:text-white'
+              className='text-HeadingColor-0 text-xl sm:text-2xl md:text-[19px] md:leading-[26px] lg:leading-[inherit] lg:text-2xl xl:text-xl 2xl:text-lg 3xl:text-2xl font-Outfit font-semibold transition-all duration-500 group-hover:text-white'
             >
               {latestWorkTitle}
             </Link>
@@ -34,7 +34,7 @@ const LatestWorkCard = ({
           <div className='inline-block mt-5'>
             <Link
               to={latestWorkCardURL}
-              className='latest-work-btn flex items-center gap-2 text-PrimaryColor-0 font-Rajdhani font-semibold text-lg uppercase transition-all duration-500 group-hover:text-white'
+              className='latest-work-btn flex items-center gap-2 text-PrimaryColor-0 font-Outfit font-semibold text-lg uppercase transition-all duration-500 group-hover:text-white'
             >
               {latestWorkBtnText}
               <span className='icon-style'>

@@ -23,7 +23,7 @@ span.marquee-text-item4 {
   color: #ffffff;
   margin: 0 16px; /* Increased margin */
   text-transform: uppercase;
-  font-family: 'Rajdhani';
+  font-family: 'Outfit';
   font-weight: 600;
 }
 
@@ -31,7 +31,6 @@ span.marquee-text-item4.animate-rotational {
   position: relative;
   top: 5px;
 }
-
 
 span.marquee-text-item4 img {
   filter: brightness(0) invert(1);

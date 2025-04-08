@@ -30,7 +30,7 @@ const Brand = () => {
   return (
     <div className='mt-16 lg:mt-[120px]'>
       <div className='flex items-center gap-2 sm:gap-4'>
-        <h5 className='font-Rajdhani font-medium text-base sm:text-lg text-white uppercase'>
+        <h5 className='font-Outfit font-medium text-base sm:text-lg text-white uppercase'>
           See our happy customers
         </h5>{' '}
         <div className='flex-1 w-full h-[1px] bg-white bg-opacity-10'></div>
@@ -95,7 +95,7 @@ const Brand = () => {
       </div>
       <div className='flex items-center gap-2 sm:gap-4'>
         <div className='flex-1 w-full h-[1px] bg-white bg-opacity-10'></div>{' '}
-        <h5 className='font-Rajdhani font-medium text-base sm:text-lg text-white uppercase'>
+        <h5 className='font-Outfit font-medium text-base sm:text-lg text-white uppercase'>
           About 10k+ customers worldwide
         </h5>
       </div>

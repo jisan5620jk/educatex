@@ -13,7 +13,7 @@ const Counter = () => {
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-0 md:items-center'>
           <div className=''>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
+            <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
               View Our Achivement of top
               <br />
               Technology Milestone’s
@@ -21,7 +21,7 @@ const Counter = () => {
           </div>
           <div className='flex flex-col sm:flex-row sm:flex-wrap md:flex-nowrap sm:items-center justify-between w-full relative z-10'>
             <div className=''>
-              <div className='font-Rajdhani font-semibold text-white text-[60px] flex items-center'>
+              <div className='font-Outfit font-semibold text-white text-[60px] flex items-center'>
                 <OnScrollCounter
                   start={0}
                   end={10}
@@ -29,12 +29,12 @@ const Counter = () => {
                 />
                 <h1>K+</h1>
               </div>
-              <p className='font-Nunito text-white opacity-80'>
+              <p className='font-OpenSans text-white opacity-80'>
                 All Completed Works
               </p>
             </div>
             <div className=''>
-              <div className='font-Rajdhani font-semibold text-white text-[60px] flex items-center'>
+              <div className='font-Outfit font-semibold text-white text-[60px] flex items-center'>
                 <OnScrollCounter
                   start={0}
                   end={37}
@@ -42,12 +42,12 @@ const Counter = () => {
                 />
                 <h1>+</h1>
               </div>
-              <p className='font-Nunito text-white opacity-80'>
+              <p className='font-OpenSans text-white opacity-80'>
                 Our Expert Engineers
               </p>
             </div>
             <div className=''>
-              <div className='font-Rajdhani font-semibold text-white text-[60px] flex items-center'>
+              <div className='font-Outfit font-semibold text-white text-[60px] flex items-center'>
                 <OnScrollCounter
                   start={0}
                   end={97}
@@ -55,7 +55,7 @@ const Counter = () => {
                 />
                 <h1>%</h1>
               </div>
-              <p className='font-Nunito text-white opacity-80'>
+              <p className='font-OpenSans text-white opacity-80'>
                 Satisfaction Rates
               </p>
             </div>

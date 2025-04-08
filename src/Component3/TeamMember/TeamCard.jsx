@@ -56,11 +56,11 @@ const TeamCard = ({
           </div>
         </div>
       </div>
-      <div className="bg-transparent relative transition-all duration-500 rounded-md text-center pt-3 sm:pt-[22px] rounded-b-md">
-        <h5 className='font-Rajdhani font-semibold text-2xl sm:text-[28px] text-white transition-all duration-500'>
+      <div className='bg-transparent relative transition-all duration-500 rounded-md text-center pt-3 sm:pt-[22px] rounded-b-md'>
+        <h5 className='font-Outfit font-semibold text-2xl sm:text-[28px] text-white transition-all duration-500'>
           {teamTitle}
         </h5>
-        <p className='font-Nunito text-TextColor-0 transition-all duration-500 mt-1'>
+        <p className='font-OpenSans text-TextColor-0 transition-all duration-500 mt-1'>
           {teamDesc}
         </p>
       </div>

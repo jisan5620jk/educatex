@@ -14,7 +14,7 @@ const WhyChoose = () => {
       <div className='Container'>
         <div className='grid grid-cols-1 gap-10 lg:gap-0 lg:grid-cols-2 items-end relative'>
           <div>
-            <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-white uppercase'>
+            <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-white uppercase'>
               <img
                 src={titleShape}
                 draggable={false}
@@ -23,7 +23,7 @@ const WhyChoose = () => {
               />{' '}
               Why Choose us?
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-6'>
+            <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-6'>
               Brain Storming, Researcing and
               <br />
               Work Strategist Create
@@ -39,10 +39,10 @@ const WhyChoose = () => {
                   />
                 </div>
                 <div className='flex-1 -mt-1'>
-                  <h5 className='font-Rajdhani font-semibold text-2xl pb-[6px] text-white'>
+                  <h5 className='font-Outfit font-semibold text-2xl pb-[6px] text-white'>
                     Free Integrations
                   </h5>
-                  <p className='font-Nunito text-white text-opacity-70 max-w-[370px] w-full'>
+                  <p className='font-OpenSans text-white text-opacity-70 max-w-[370px] w-full'>
                     Competently leverage existing top-line technology maximize
                     cost effective service done
                   </p>
@@ -58,10 +58,10 @@ const WhyChoose = () => {
                   />
                 </div>
                 <div className='flex-1 -mt-1'>
-                  <h5 className='font-Rajdhani font-semibold text-2xl pb-[6px] text-white'>
+                  <h5 className='font-Outfit font-semibold text-2xl pb-[6px] text-white'>
                     Premium Resource
                   </h5>
-                  <p className='font-Nunito text-white text-opacity-70 max-w-[370px] w-full'>
+                  <p className='font-OpenSans text-white text-opacity-70 max-w-[370px] w-full'>
                     Competently leverage existing top-line technology maximize
                     cost effective service done
                   </p>
@@ -77,10 +77,10 @@ const WhyChoose = () => {
                   />
                 </div>
                 <div className='flex-1 -mt-1'>
-                  <h5 className='font-Rajdhani font-semibold text-2xl pb-[6px] text-white'>
+                  <h5 className='font-Outfit font-semibold text-2xl pb-[6px] text-white'>
                     Unlimited Supports
                   </h5>
-                  <p className='font-Nunito text-white text-opacity-70 max-w-[370px] w-full'>
+                  <p className='font-OpenSans text-white text-opacity-70 max-w-[370px] w-full'>
                     Competently leverage existing top-line technology maximize
                     cost effective service done
                   </p>

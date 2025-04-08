@@ -30,7 +30,7 @@ const Pricing = () => {
       <div className='Container'>
         <div className='flex flex-wrap justify-between items-center'>
           <div className=''>
-            <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+            <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
                 src={titleShape}
                 draggable={false}
@@ -38,7 +38,7 @@ const Pricing = () => {
               />{' '}
               Pricing Plans
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+            <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
               The Best value for Your SEO
               <br /> Marketing Plans
             </h1>
@@ -47,7 +47,7 @@ const Pricing = () => {
             className='toggle-container flex items-center gap-2 py-[15px] px-8 bg-SecondaryColor-0 rounded-full bg-opacity-10'
             onClick={togglePlans}
           >
-            <div className='font-Rajdhani font-semibold text-HeadingColor-0 text-[19px]'>
+            <div className='font-Outfit font-semibold text-HeadingColor-0 text-[19px]'>
               Monthly
             </div>
             <div className={`toggle ${isMonthly ? 'active' : ''}`}>
@@ -59,7 +59,7 @@ const Pricing = () => {
                 }}
               ></div>
             </div>
-            <div className='font-Rajdhani font-semibold text-HeadingColor-0 text-[19px]'>
+            <div className='font-Outfit font-semibold text-HeadingColor-0 text-[19px]'>
               Yearly
             </div>
           </div>
@@ -72,34 +72,34 @@ const Pricing = () => {
             <div className='bg-[url("/images/pricing-inner-image.jpg")] bg-no-repeat bg-cover bg-center p-2 sm:p-5 rounded-xl overflow-hidden relative z-10'>
               <div className='absolute top-1/2 -translate-y-1/2 left-[30%] hidden md:block'>
                 <button
-                  className='h-14 w-14 sm:h-[100px] sm:w-[100px] rounded-full bg-white bg-opacity-50 font-Rajdhani font-medium text-lg text-white flex justify-center items-center uppercase'
+                  className='h-14 w-14 sm:h-[100px] sm:w-[100px] rounded-full bg-white bg-opacity-50 font-Outfit font-medium text-lg text-white flex justify-center items-center uppercase'
                   onClick={() => setToggler(!toggler)}
                 >
                   Play
                 </button>
               </div>
               <div className='ml-auto max-w-[412px] w-full bg-BodyBg6-0 px-5 xl:px-10 py-7 xl:py-12 rounded-lg'>
-                <h5 className='font-Rajdhani font-semibold text-2xl leading-4 text-HeadingColor-0'>
+                <h5 className='font-Outfit font-semibold text-2xl leading-4 text-HeadingColor-0'>
                   Business
                 </h5>
                 <div className='flex items-center gap-1 my-4 sm:mb-[2px]'>
-                  <h6 className='font-Rajdhani font-semibold text-xl sm:text-2xl xl:text-3xl text-HeadingColor-0 relative -top-1 sm:-top-2'>
+                  <h6 className='font-Outfit font-semibold text-xl sm:text-2xl xl:text-3xl text-HeadingColor-0 relative -top-1 sm:-top-2'>
                     $
                   </h6>
-                  <div className='font-Rajdhani text-[35px] sm:text-[50px] xl:text-[60px] text-HeadingColor-0 font-semibold'>
+                  <div className='font-Outfit text-[35px] sm:text-[50px] xl:text-[60px] text-HeadingColor-0 font-semibold'>
                     <OnScrollCounter
                       start={0}
                       end={90}
                       duration={1000}
                     />
                   </div>
-                  <p className='font-Nunito text-TextColor2-0 sm:ml-3'>
+                  <p className='font-OpenSans text-TextColor2-0 sm:ml-3'>
                     Competently leverage <br /> maximize done
                   </p>
                 </div>
                 <Link
                   to={'/pricing2'}
-                  className='bg-HeadingColor-0 pricing-btn text-white font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
+                  className='bg-HeadingColor-0 pricing-btn text-white font-Outfit flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
                 >
                   Get StartTed Now
                   <span className='icon-style'>
@@ -124,7 +124,7 @@ const Pricing = () => {
                 </Link>
                 <Link
                   to={'/'}
-                  className='mt-3 bg-HeadingColor-0 bg-opacity-10 group text-HeadingColor-0 transition-all duration-500 hover:text-white pricing-btn font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
+                  className='mt-3 bg-HeadingColor-0 bg-opacity-10 group text-HeadingColor-0 transition-all duration-500 hover:text-white pricing-btn font-Outfit flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
                 >
                   Download Info
                   <span className='icon-style'>
@@ -147,42 +147,42 @@ const Pricing = () => {
                     </svg>
                   </span>
                 </Link>
-                <h5 className='font-Rajdhani font-semibold text-xl mt-[22px]'>
+                <h5 className='font-Outfit font-semibold text-xl mt-[22px]'>
                   Features
                 </h5>
-                <p className='font-Nunito text-TextColor2-0 text-[15px] mb-[18px]'>
+                <p className='font-OpenSans text-TextColor2-0 text-[15px] mb-[18px]'>
                   Everything in your Business plans
                 </p>
                 <ul className='space-y-2'>
-                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                  <li className='flex items-center gap-2 font-OpenSans text-TextColor2-0'>
                     <FaRegCircleCheck
                       size={18}
                       className='text-PrimaryColor-0'
                     />
                     Unlimited Campaigns
                   </li>
-                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                  <li className='flex items-center gap-2 font-OpenSans text-TextColor2-0'>
                     <FaRegCircleCheck
                       size={18}
                       className='text-PrimaryColor-0'
                     />
                     Paid SEO Tools Included
                   </li>
-                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                  <li className='flex items-center gap-2 font-OpenSans text-TextColor2-0'>
                     <FaRegCircleCheck
                       size={18}
                       className='text-PrimaryColor-0'
                     />
                     Domain & Hosting
                   </li>
-                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                  <li className='flex items-center gap-2 font-OpenSans text-TextColor2-0'>
                     <FaRegCircleCheck
                       size={18}
                       className='text-PrimaryColor-0'
                     />
                     Marketing Resources
                   </li>
-                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                  <li className='flex items-center gap-2 font-OpenSans text-TextColor2-0'>
                     <FaRegCircleCheck
                       size={18}
                       className='text-PrimaryColor-0'
@@ -201,34 +201,34 @@ const Pricing = () => {
             <div className='bg-[url("/images/pricing-inner-image.jpg")] bg-no-repeat bg-cover bg-center p-2 sm:p-5 rounded-xl overflow-hidden relative z-10'>
               <div className='absolute top-1/2 -translate-y-1/2 md:left-[12%] lg:left-[22%] xl:left-[30%] hidden md:block'>
                 <button
-                  className='h-14 w-14 sm:h-[100px] sm:w-[100px] rounded-full bg-white bg-opacity-50 font-Rajdhani font-medium text-lg text-white flex justify-center items-center uppercase'
+                  className='h-14 w-14 sm:h-[100px] sm:w-[100px] rounded-full bg-white bg-opacity-50 font-Outfit font-medium text-lg text-white flex justify-center items-center uppercase'
                   onClick={() => setToggler(!toggler)}
                 >
                   Play
                 </button>
               </div>
               <div className='ml-auto max-w-[412px] w-full bg-BodyBg-0 px-5 xl:px-10 py-7 xl:py-12 rounded-lg'>
-                <h5 className='font-Rajdhani font-semibold text-2xl leading-4 text-HeadingColor-0'>
+                <h5 className='font-Outfit font-semibold text-2xl leading-4 text-HeadingColor-0'>
                   Business
                 </h5>
                 <div className='flex items-center gap-1 my-4 sm:mb-[2px]'>
-                  <h6 className='font-Rajdhani font-semibold text-xl sm:text-2xl xl:text-3xl text-HeadingColor-0 relative -top-1 sm:-top-2'>
+                  <h6 className='font-Outfit font-semibold text-xl sm:text-2xl xl:text-3xl text-HeadingColor-0 relative -top-1 sm:-top-2'>
                     $
                   </h6>
-                  <div className='font-Rajdhani text-[35px] sm:text-[50px] xl:text-[60px] text-HeadingColor-0 font-semibold'>
+                  <div className='font-Outfit text-[35px] sm:text-[50px] xl:text-[60px] text-HeadingColor-0 font-semibold'>
                     <OnScrollCounter
                       start={0}
                       end={999}
                       duration={1000}
                     />
                   </div>
-                  <p className='font-Nunito text-TextColor2-0 sm:ml-3'>
+                  <p className='font-OpenSans text-TextColor2-0 sm:ml-3'>
                     Competently leverage <br /> maximize done
                   </p>
                 </div>
                 <Link
                   to={'/pricing2'}
-                  className='bg-HeadingColor-0 pricing-btn text-white font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
+                  className='bg-HeadingColor-0 pricing-btn text-white font-Outfit flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
                 >
                   Get StartTed Now
                   <span className='icon-style'>
@@ -253,7 +253,7 @@ const Pricing = () => {
                 </Link>
                 <Link
                   to={'/'}
-                  className='mt-3 bg-HeadingColor-0 bg-opacity-10 group text-HeadingColor-0 transition-all duration-500 hover:text-white pricing-btn font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
+                  className='mt-3 bg-HeadingColor-0 bg-opacity-10 group text-HeadingColor-0 transition-all duration-500 hover:text-white pricing-btn font-Outfit flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
                 >
                   Download Info
                   <span className='icon-style'>
@@ -276,42 +276,42 @@ const Pricing = () => {
                     </svg>
                   </span>
                 </Link>
-                <h5 className='font-Rajdhani font-semibold text-xl mt-[22px]'>
+                <h5 className='font-Outfit font-semibold text-xl mt-[22px]'>
                   Features
                 </h5>
-                <p className='font-Nunito text-TextColor2-0 text-[15px] mb-[18px]'>
+                <p className='font-OpenSans text-TextColor2-0 text-[15px] mb-[18px]'>
                   Everything in your Business plans
                 </p>
                 <ul className='space-y-2'>
-                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                  <li className='flex items-center gap-2 font-OpenSans text-TextColor2-0'>
                     <FaRegCircleCheck
                       size={18}
                       className='text-PrimaryColor-0'
                     />
                     Unlimited Campaigns
                   </li>
-                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                  <li className='flex items-center gap-2 font-OpenSans text-TextColor2-0'>
                     <FaRegCircleCheck
                       size={18}
                       className='text-PrimaryColor-0'
                     />
                     Paid SEO Tools Included
                   </li>
-                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                  <li className='flex items-center gap-2 font-OpenSans text-TextColor2-0'>
                     <FaRegCircleCheck
                       size={18}
                       className='text-PrimaryColor-0'
                     />
                     Domain & Hosting
                   </li>
-                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                  <li className='flex items-center gap-2 font-OpenSans text-TextColor2-0'>
                     <FaRegCircleCheck
                       size={18}
                       className='text-PrimaryColor-0'
                     />
                     Marketing Resources
                   </li>
-                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                  <li className='flex items-center gap-2 font-OpenSans text-TextColor2-0'>
                     <FaRegCircleCheck
                       size={18}
                       className='text-PrimaryColor-0'

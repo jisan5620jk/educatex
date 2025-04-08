@@ -4,10 +4,10 @@ const Subscribe = () => {
   return (
     <section className="bg-[url('/images/subscribe-bg.jpg')] bg-no-repeat bg-center bg-cover bg-fixed pt-20 sm:pt-28 md:pt-40 pb-20 sm:pb-28 md:pb-[176px] relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-gradient-to-t before:from-[#04142449] before:via-[#041424b7] before:to-[#041424f6] before:to-90% before:-z-10">
       <div className='Container text-center'>
-        <h1 className='font-Rajdhani font-bold text-[40px] leading-[42px] sm:text-[48px] sm:leading-[50px] md:text-[60px] md:leading-[72px] lg:text-[60px] lg:leading-[62px] xl:text-[70px] xl:leading-[72px] text-white mt-[14px] mb-[14px]'>
+        <h1 className='font-Outfit font-bold text-[40px] leading-[42px] sm:text-[48px] sm:leading-[50px] md:text-[60px] md:leading-[72px] lg:text-[60px] lg:leading-[62px] xl:text-[70px] xl:leading-[72px] text-white mt-[14px] mb-[14px]'>
           Need Security? We’re here
         </h1>
-        <p className='font-Nunito text-[22px] text-white'>
+        <p className='font-OpenSans text-[22px] text-white'>
           Feel free to contact with us. We’re ready for help
         </p>
         <Link

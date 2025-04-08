@@ -28,7 +28,7 @@ const Footer8 = () => {
                 />
               </Link>
             </div>
-            <p className='font-Nunito text-TextColor-0 mt-7 lg:mt-0 mb-5 w-full max-w-[340px]'>
+            <p className='font-OpenSans text-TextColor-0 mt-7 lg:mt-0 mb-5 w-full max-w-[340px]'>
               Globally expedite enterprise-wide action items rather than
               distinctive architectures. Globally engage market positioning.
             </p>
@@ -40,7 +40,7 @@ const Footer8 = () => {
                 href='mailto:example@gmail.com'
                 title='example@gmail.com'
               >
-                <button className='font-Rajdhani text-lg text-white font-medium'>
+                <button className='font-Outfit text-lg text-white font-medium'>
                   example@gmail.com
                 </button>
               </a>
@@ -69,13 +69,13 @@ const Footer8 = () => {
             </ul>
           </div>
           <div className='col-span-12 md:col-span-6 lg:col-span-2'>
-            <h4 className='font-Rajdhani text-[28px] text-white font-semibold mb-[33px]'>
+            <h4 className='font-Outfit text-[28px] text-white font-semibold mb-[33px]'>
               Company
             </h4>
             <ul>
               <li>
                 <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                  <button className='flex items-center gap-2 font-OpenSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
                     <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                     About Us
                   </button>
@@ -83,7 +83,7 @@ const Footer8 = () => {
               </li>
               <li>
                 <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                  <button className='flex items-center gap-2 font-OpenSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
                     <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                     Our Team
                   </button>
@@ -91,7 +91,7 @@ const Footer8 = () => {
               </li>
               <li>
                 <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                  <button className='flex items-center gap-2 font-OpenSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
                     <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                     Pricing Plan
                   </button>
@@ -99,7 +99,7 @@ const Footer8 = () => {
               </li>
               <li>
                 <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                  <button className='flex items-center gap-2 font-OpenSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
                     <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                     Latest Blog
                   </button>
@@ -107,7 +107,7 @@ const Footer8 = () => {
               </li>
               <li>
                 <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1'>
+                  <button className='flex items-center gap-2 font-OpenSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1'>
                     <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                     Careers
                   </button>
@@ -116,13 +116,13 @@ const Footer8 = () => {
             </ul>
           </div>
           <div className='col-span-12 md:col-span-6 lg:col-span-3'>
-            <h4 className='font-Rajdhani text-[28px] text-white font-semibold mb-[33px]'>
+            <h4 className='font-Outfit text-[28px] text-white font-semibold mb-[33px]'>
               Our Services
             </h4>
             <ul>
               <li>
                 <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                  <button className='flex items-center gap-2 font-OpenSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
                     <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                     IT Solutions
                   </button>
@@ -130,7 +130,7 @@ const Footer8 = () => {
               </li>
               <li>
                 <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                  <button className='flex items-center gap-2 font-OpenSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
                     <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                     Cyber Security
                   </button>
@@ -138,7 +138,7 @@ const Footer8 = () => {
               </li>
               <li>
                 <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                  <button className='flex items-center gap-2 font-OpenSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
                     <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                     Digital Marketing
                   </button>
@@ -146,7 +146,7 @@ const Footer8 = () => {
               </li>
               <li>
                 <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                  <button className='flex items-center gap-2 font-OpenSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
                     <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                     Brand Identity
                   </button>
@@ -154,7 +154,7 @@ const Footer8 = () => {
               </li>
               <li>
                 <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1'>
+                  <button className='flex items-center gap-2 font-OpenSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1'>
                     <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                     SEO Marketing
                   </button>
@@ -163,7 +163,7 @@ const Footer8 = () => {
             </ul>
           </div>
           <div className='col-span-12 md:col-span-6 lg:col-span-3'>
-            <h4 className='font-Rajdhani text-[28px] text-white font-semibold mb-[30px]'>
+            <h4 className='font-Outfit text-[28px] text-white font-semibold mb-[30px]'>
               Newsletter
             </h4>
             <form
@@ -180,7 +180,7 @@ const Footer8 = () => {
                   id='email'
                   placeholder='Enter Your E-Mail*'
                   required
-                  className='w-full h-[56px] font-Nunito rounded-full outline-none focus:outline-none border-none bg-white bg-opacity-10 px-8 py-2 text-white placeholder:text-white mb-3'
+                  className='w-full h-[56px] font-OpenSans rounded-full outline-none focus:outline-none border-none bg-white bg-opacity-10 px-8 py-2 text-white placeholder:text-white mb-3'
                 />
                 <HiOutlineMail className='absolute top-1/2 -translate-y-1/2 right-6 text-white text-xl' />
               </label>
@@ -195,7 +195,7 @@ const Footer8 = () => {
                 </button>
               </div>
             </form>
-            <p className='font-Nunito flex gap-2 text-TextColor-0 font-medium mt-5'>
+            <p className='font-OpenSans flex gap-2 text-TextColor-0 font-medium mt-5'>
               <span className='relative top-[3px] text-green-600'>
                 <FaRegCircleCheck />
               </span>
@@ -208,7 +208,7 @@ const Footer8 = () => {
         <div className='Container'>
           <div className='flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-7'>
             <div>
-              <p className='font-Nunito text-white'>
+              <p className='font-OpenSans text-white'>
                 &copy; {new Date().getFullYear()} educatex. Designed By Dream IT
                 Solution
               </p>
@@ -218,7 +218,7 @@ const Footer8 = () => {
                 <li>
                   <Link
                     to={'/'}
-                    className='font-Nunito text-white'
+                    className='font-OpenSans text-white'
                   >
                     Terms & Conditions
                   </Link>
@@ -226,7 +226,7 @@ const Footer8 = () => {
                 <li>
                   <Link
                     to={'/'}
-                    className='font-Nunito text-white'
+                    className='font-OpenSans text-white'
                   >
                     Privacy Policy
                   </Link>

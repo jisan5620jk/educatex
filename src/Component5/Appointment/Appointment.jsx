@@ -32,7 +32,7 @@ const Appointment = () => {
             />
           </div>
           <div>
-            <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+            <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
                 src={titleShape}
                 draggable={false}
@@ -40,7 +40,7 @@ const Appointment = () => {
               />{' '}
               GET IN TOUCH
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+            <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
               Feel Free to Contact with Us
             </h1>
             <form
@@ -56,7 +56,7 @@ const Appointment = () => {
                     id='name'
                     placeholder='Your Name*'
                     required
-                    className='h-[56px] w-full rounded-md pl-[60px] text-HeadingColor-0 font-Rajdhani text-lg bg-white outline-none border border-SecondaryColor-0 border-opacity-15 transition-all duration-500 ease-linear placeholder:text-HeadingColor-0 hover:border-PrimaryColor-0 focus:border-PrimaryColor-0'
+                    className='h-[56px] w-full rounded-md pl-[60px] text-HeadingColor-0 font-Outfit text-lg bg-white outline-none border border-SecondaryColor-0 border-opacity-15 transition-all duration-500 ease-linear placeholder:text-HeadingColor-0 hover:border-PrimaryColor-0 focus:border-PrimaryColor-0'
                   />
                   <span className='absolute top-1/2 -translate-y-1/2 left-0 h-6 w-11 flex items-center justify-center text-PrimaryColor-0 border-r border-PrimaryColor-0 border-opacity-25'>
                     <FaRegUser />
@@ -69,7 +69,7 @@ const Appointment = () => {
                     id='name'
                     placeholder='Your E-Mail*'
                     required
-                    className='h-[56px] w-full rounded-md pl-[60px] text-HeadingColor-0 font-Rajdhani text-lg bg-white outline-none border border-SecondaryColor-0 border-opacity-15 transition-all duration-500 ease-linear placeholder:text-HeadingColor-0 hover:border-PrimaryColor-0 focus:border-PrimaryColor-0'
+                    className='h-[56px] w-full rounded-md pl-[60px] text-HeadingColor-0 font-Outfit text-lg bg-white outline-none border border-SecondaryColor-0 border-opacity-15 transition-all duration-500 ease-linear placeholder:text-HeadingColor-0 hover:border-PrimaryColor-0 focus:border-PrimaryColor-0'
                   />
                   <span className='absolute top-1/2 -translate-y-1/2 left-0 h-6 w-11 flex items-center justify-center text-PrimaryColor-0 border-r border-PrimaryColor-0 border-opacity-25'>
                     <FaRegEnvelopeOpen />
@@ -78,7 +78,7 @@ const Appointment = () => {
               </div>
               <div className='relative'>
                 <select
-                  className='h-[60px] w-full cursor-pointer rounded-md pl-[56px] text-HeadingColor-0 font-Rajdhani text-lg bg-white outline-none border border-SecondaryColor-0 border-opacity-15 placeholder:text-HeadingColor-0 transition-all duration-500 ease-linear hover:border-PrimaryColor-0 focus:border-PrimaryColor-0'
+                  className='h-[60px] w-full cursor-pointer rounded-md pl-[56px] text-HeadingColor-0 font-Outfit text-lg bg-white outline-none border border-SecondaryColor-0 border-opacity-15 placeholder:text-HeadingColor-0 transition-all duration-500 ease-linear hover:border-PrimaryColor-0 focus:border-PrimaryColor-0'
                   defaultValue=''
                 >
                   <option
@@ -102,7 +102,7 @@ const Appointment = () => {
                   name='message'
                   id='message'
                   placeholder='Write Message...'
-                  className='min-h-[150px] w-full rounded-md px-7 py-3 resize-none text-PrimaryColor-0 font-Rajdhani text-lg bg-white outline-none border border-SecondaryColor-0 border-opacity-15 transition-all duration-500 ease-linear placeholder:text-HeadingColor-0 hover:border-PrimaryColor-0 focus:border-PrimaryColor-0'
+                  className='min-h-[150px] w-full rounded-md px-7 py-3 resize-none text-PrimaryColor-0 font-Outfit text-lg bg-white outline-none border border-SecondaryColor-0 border-opacity-15 transition-all duration-500 ease-linear placeholder:text-HeadingColor-0 hover:border-PrimaryColor-0 focus:border-PrimaryColor-0'
                 ></textarea>
               </div>
               <button

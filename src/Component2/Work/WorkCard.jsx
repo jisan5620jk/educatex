@@ -30,17 +30,17 @@ const WorkCard = ({
         <div className='absolute z-10 w-5/6 md:w-[70%] 3xl:w-[55%] bottom-[78px] left-full opacity-0 transition-all duration-500 group-hover:left-8 group-hover:opacity-100'>
           <Link
             to={workBoxLink}
-            className='font-Rajdhani font-bold text-2xl md:text-[26px] xl:text-2xl 2xl:text-[26px] leading-8 text-white'
+            className='font-Outfit font-bold text-2xl md:text-[26px] xl:text-2xl 2xl:text-[26px] leading-8 text-white'
           >
             {workTitle}
           </Link>
         </div>
         <div className='absolute bottom-[30px] -left-20 opacity-0 transition-all duration-500 group-hover:left-8 group-hover:opacity-100 z-10'>
           <ul className='flex items-center gap-3'>
-            <li className='rounded font-Rajdhani px-4 py-[5px] uppercase overflow-hidden text-sm font-medium bg-white bg-opacity-20 transition-all duration-500 text-HeadingColor-0 group-hover:text-white relative z-10 before:bg-gradient-to-r before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:transition-all before:duration-500 before:scale-0 before:rounded before:-z-10 hover:before:scale-100'>
+            <li className='rounded font-Outfit px-4 py-[5px] uppercase overflow-hidden text-sm font-medium bg-white bg-opacity-20 transition-all duration-500 text-HeadingColor-0 group-hover:text-white relative z-10 before:bg-gradient-to-r before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:transition-all before:duration-500 before:scale-0 before:rounded before:-z-10 hover:before:scale-100'>
               {workTag}
             </li>
-            <li className='rounded font-Rajdhani px-4 py-[5px] uppercase overflow-hidden text-sm font-medium bg-white bg-opacity-20 transition-all duration-500 text-HeadingColor-0 group-hover:text-white relative z-10 before:bg-gradient-to-r before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:transition-all before:duration-500 before:scale-0 before:rounded before:-z-10 hover:before:scale-100'>
+            <li className='rounded font-Outfit px-4 py-[5px] uppercase overflow-hidden text-sm font-medium bg-white bg-opacity-20 transition-all duration-500 text-HeadingColor-0 group-hover:text-white relative z-10 before:bg-gradient-to-r before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:transition-all before:duration-500 before:scale-0 before:rounded before:-z-10 hover:before:scale-100'>
               {workTag2}
             </li>
           </ul>

@@ -18,16 +18,16 @@ const FeatureCard = ({
           className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1] group-hover:animate-wobble_vertical'
         />
       </div>
-      <h4 className='font-Rajdhani font-semibold text-xl sm:text-2xl md:text-[22px] lg:text-xl xl:text-2xl 2xl:text-[26px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-7 mb-3 mr-16'>
+      <h4 className='font-Outfit font-semibold text-xl sm:text-2xl md:text-[22px] lg:text-xl xl:text-2xl 2xl:text-[26px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-7 mb-3 mr-16'>
         {featureTitle}
       </h4>
-      <p className='font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white group-hover:text-opacity-70 max-w-[290px] w-full'>
+      <p className='font-OpenSans text-TextColor2-0 transition-all duration-500 group-hover:text-white group-hover:text-opacity-70 max-w-[290px] w-full'>
         {featureDesc}
       </p>
       <div className='inline-block mt-[20px]'>
         <Link
           to={featureUrl}
-          className='flex items-center gap-1 rounded-3xl text-HeadingColor-0 font-Rajdhani overflow-hidden transition-all duration-500 group-hover:text-white font-semibold text-lg uppercase relative z-10'
+          className='flex items-center gap-1 rounded-3xl text-HeadingColor-0 font-Outfit overflow-hidden transition-all duration-500 group-hover:text-white font-semibold text-lg uppercase relative z-10'
         >
           {featureBtnText}
           <span className='-rotate-45 text-xl'>{featureBtnIcon}</span>

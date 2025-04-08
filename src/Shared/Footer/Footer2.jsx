@@ -27,17 +27,17 @@ const Footer2 = () => {
             </Link>
           </div>
           <div className='col-span-12 md:col-span-6 lg:col-span-2'>
-            <h4 className='font-Rajdhani text-[28px] text-HeadingColor-0 font-semibold'>
+            <h4 className='font-Outfit text-[28px] text-HeadingColor-0 font-semibold'>
               Company
             </h4>
           </div>
           <div className='col-span-12 md:col-span-6 lg:col-span-3'>
-            <h4 className='font-Rajdhani text-[28px] text-HeadingColor-0 font-semibold'>
+            <h4 className='font-Outfit text-[28px] text-HeadingColor-0 font-semibold'>
               Our Services
             </h4>
           </div>
           <div className='col-span-12 md:col-span-6 lg:col-span-3'>
-            <h4 className='font-Rajdhani text-[28px] text-HeadingColor-0 font-semibold'>
+            <h4 className='font-Outfit text-[28px] text-HeadingColor-0 font-semibold'>
               Newsletter
             </h4>
           </div>
@@ -54,7 +54,7 @@ const Footer2 = () => {
                 />
               </Link>
             </div>
-            <p className='font-Nunito text-HeadingColor-0 lg:-mt-1 mb-5 w-full max-w-[340px]'>
+            <p className='font-OpenSans text-HeadingColor-0 lg:-mt-1 mb-5 w-full max-w-[340px]'>
               Globally expedite enterprise-wide action items rather than
               distinctive architectures. Globally engage market positioning.
             </p>
@@ -66,7 +66,7 @@ const Footer2 = () => {
                 href='mailto:example@gmail.com'
                 title='example@gmail.com'
               >
-                <button className='font-Rajdhani text-lg text-HeadingColor-0 font-semibold'>
+                <button className='font-Outfit text-lg text-HeadingColor-0 font-semibold'>
                   example@gmail.com
                 </button>
               </a>
@@ -95,13 +95,13 @@ const Footer2 = () => {
             </ul>
           </div>
           <div className='col-span-12 md:col-span-6 lg:col-span-2'>
-            <h4 className='font-Rajdhani text-[28px] text-HeadingColor-0 font-semibold mb-7 lg:hidden'>
+            <h4 className='font-Outfit text-[28px] text-HeadingColor-0 font-semibold mb-7 lg:hidden'>
               Company
             </h4>
             <ul>
               <li>
                 <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-Nunito text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                  <button className='flex items-center gap-2 font-OpenSans text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
                     <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                     About Us
                   </button>
@@ -109,7 +109,7 @@ const Footer2 = () => {
               </li>
               <li>
                 <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-Nunito text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                  <button className='flex items-center gap-2 font-OpenSans text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
                     <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                     Our Team
                   </button>
@@ -117,7 +117,7 @@ const Footer2 = () => {
               </li>
               <li>
                 <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-Nunito text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                  <button className='flex items-center gap-2 font-OpenSans text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
                     <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                     Pricing Plan
                   </button>
@@ -125,7 +125,7 @@ const Footer2 = () => {
               </li>
               <li>
                 <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-Nunito text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                  <button className='flex items-center gap-2 font-OpenSans text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
                     <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                     Latest Blog
                   </button>
@@ -133,7 +133,7 @@ const Footer2 = () => {
               </li>
               <li>
                 <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-Nunito text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1'>
+                  <button className='flex items-center gap-2 font-OpenSans text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1'>
                     <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                     Careers
                   </button>
@@ -142,13 +142,13 @@ const Footer2 = () => {
             </ul>
           </div>
           <div className='col-span-12 md:col-span-6 lg:col-span-3'>
-            <h4 className='font-Rajdhani text-[28px] text-HeadingColor-0 font-semibold mb-7 lg:hidden'>
+            <h4 className='font-Outfit text-[28px] text-HeadingColor-0 font-semibold mb-7 lg:hidden'>
               Our Services
             </h4>
             <ul>
               <li>
                 <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-Nunito text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                  <button className='flex items-center gap-2 font-OpenSans text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
                     <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                     IT Solutions
                   </button>
@@ -156,7 +156,7 @@ const Footer2 = () => {
               </li>
               <li>
                 <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-Nunito text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                  <button className='flex items-center gap-2 font-OpenSans text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
                     <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                     Cyber Security
                   </button>
@@ -164,7 +164,7 @@ const Footer2 = () => {
               </li>
               <li>
                 <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-Nunito text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                  <button className='flex items-center gap-2 font-OpenSans text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
                     <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                     Digital Marketing
                   </button>
@@ -172,7 +172,7 @@ const Footer2 = () => {
               </li>
               <li>
                 <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-Nunito text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                  <button className='flex items-center gap-2 font-OpenSans text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
                     <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                     Brand Identity
                   </button>
@@ -180,7 +180,7 @@ const Footer2 = () => {
               </li>
               <li>
                 <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-Nunito text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1'>
+                  <button className='flex items-center gap-2 font-OpenSans text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1'>
                     <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                     SEO Marketing
                   </button>
@@ -189,7 +189,7 @@ const Footer2 = () => {
             </ul>
           </div>
           <div className='col-span-12 md:col-span-6 lg:col-span-3'>
-            <h4 className='font-Rajdhani text-[28px] text-HeadingColor-0 font-semibold mb-[30px] lg:hidden'>
+            <h4 className='font-Outfit text-[28px] text-HeadingColor-0 font-semibold mb-[30px] lg:hidden'>
               Newsletter
             </h4>
             <form
@@ -206,7 +206,7 @@ const Footer2 = () => {
                   id='email'
                   placeholder='Enter Your E-Mail*'
                   required
-                  className='w-full h-[56px] font-Nunito rounded-full outline-none focus:outline-none border-none bg-HeadingColor-0 bg-opacity-10 px-8 py-2 text-HeadingColor-0 placeholder:text-HeadingColor-0 mb-3'
+                  className='w-full h-[56px] font-OpenSans rounded-full outline-none focus:outline-none border-none bg-HeadingColor-0 bg-opacity-10 px-8 py-2 text-HeadingColor-0 placeholder:text-HeadingColor-0 mb-3'
                 />
                 <HiOutlineMail className='absolute top-1/2 -translate-y-1/2 right-6 text-HeadingColor-0 text-xl' />
               </label>
@@ -221,7 +221,7 @@ const Footer2 = () => {
                 </button>
               </div>
             </form>
-            <p className='font-Nunito flex gap-2 text-HeadingColor-0 font-medium mt-5'>
+            <p className='font-OpenSans flex gap-2 text-HeadingColor-0 font-medium mt-5'>
               <span className='relative top-[3px] text-green-600'>
                 <FaRegCircleCheck />
               </span>
@@ -234,7 +234,7 @@ const Footer2 = () => {
         <div className='Container'>
           <div className='flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-7'>
             <div>
-              <p className='font-Nunito text-HeadingColor-0'>
+              <p className='font-OpenSans text-HeadingColor-0'>
                 &copy; {new Date().getFullYear()} educatex. Designed By Dream IT
                 Solution
               </p>
@@ -244,7 +244,7 @@ const Footer2 = () => {
                 <li>
                   <Link
                     to={'/'}
-                    className='font-Nunito text-HeadingColor-0'
+                    className='font-OpenSans text-HeadingColor-0'
                   >
                     Terms & Conditions
                   </Link>
@@ -252,7 +252,7 @@ const Footer2 = () => {
                 <li>
                   <Link
                     to={'/'}
-                    className='font-Nunito text-HeadingColor-0'
+                    className='font-OpenSans text-HeadingColor-0'
                   >
                     Privacy Policy
                   </Link>

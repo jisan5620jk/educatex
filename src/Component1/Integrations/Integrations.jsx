@@ -14,7 +14,7 @@ const Integrations = () => {
       <div className='Container'>
         <div className='grid grid-cols-1 gap-12 lg:gap-0 lg:grid-cols-2 items-center'>
           <div>
-            <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+            <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
                 src={titleShape}
                 draggable={false}
@@ -22,7 +22,7 @@ const Integrations = () => {
               />{' '}
               Integrations
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+            <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
               Transform Your Website into a<br /> Revenue-Generating Machine
               <br /> Achieve Online Success
             </h1>
@@ -33,19 +33,19 @@ const Integrations = () => {
                     <BsArrowRight className='-rotate-90 inline-block text-[26px] md:text-[38px]' />
                   </div>
                   <div className='flex items-center -mt-1 md:-mt-3'>
-                    <div className='font-Rajdhani font-semibold text-HeadingColor-0 text-4xl md:text-[60px] leading-10'>
+                    <div className='font-Outfit font-semibold text-HeadingColor-0 text-4xl md:text-[60px] leading-10'>
                       <OnScrollCounter
                         start={0}
                         end={86}
                         duration={1000}
                       />
                     </div>
-                    <h6 className='font-Rajdhani font-semibold text-HeadingColor-0 text-4xl md:text-[60px] leading-10'>
+                    <h6 className='font-Outfit font-semibold text-HeadingColor-0 text-4xl md:text-[60px] leading-10'>
                       %
                     </h6>
                   </div>
                 </div>
-                <p className='font-Nunito text-TextColor2-0 text-[15px]'>
+                <p className='font-OpenSans text-TextColor2-0 text-[15px]'>
                   Sales Growth and top Organic
                   <br /> Traffice Generate
                 </p>
@@ -56,19 +56,19 @@ const Integrations = () => {
                     <BsArrowRight className='-rotate-90 inline-block text-[26px] md:text-[38px]' />
                   </div>
                   <div className='flex items-center -mt-1 md:-mt-3'>
-                    <div className='font-Rajdhani font-semibold text-HeadingColor-0 text-4xl md:text-[60px] leading-10'>
+                    <div className='font-Outfit font-semibold text-HeadingColor-0 text-4xl md:text-[60px] leading-10'>
                       <OnScrollCounter
                         start={0}
                         end={98}
                         duration={1000}
                       />
                     </div>
-                    <h6 className='font-Rajdhani font-semibold text-HeadingColor-0 text-4xl md:text-[60px] leading-10'>
+                    <h6 className='font-Outfit font-semibold text-HeadingColor-0 text-4xl md:text-[60px] leading-10'>
                       %
                     </h6>
                   </div>
                 </div>
-                <p className='font-Nunito text-TextColor2-0 text-[15px]'>
+                <p className='font-OpenSans text-TextColor2-0 text-[15px]'>
                   Revenue Generating for Local
                   <br /> and Global Business
                 </p>

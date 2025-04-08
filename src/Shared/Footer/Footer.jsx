@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import footerLogo from '/images/logo2.png';
+import footerLogo from '/images/logo.png';
 import {
   FaEnvelope,
   FaFacebookF,
@@ -12,7 +12,6 @@ import { GoArrowRight } from 'react-icons/go';
 import { HiOutlineMail } from 'react-icons/hi';
 import { PiArrowCircleRight, PiWhatsappLogoLight } from 'react-icons/pi';
 import { HiOutlineEnvelope } from 'react-icons/hi2';
-import footerShape from '/images/hand.png';
 
 const Footer = () => {
   return (
@@ -21,7 +20,7 @@ const Footer = () => {
         <div className='Container -mb-[70px] relative z-10'>
           <div className='bg-gradient-to-r to-PrimaryColor2-0 from-PrimaryColor3-0 py-5 md:py-12 px-6 md:px-16 rounded-[10px] grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-7 lg:gap-0 lg:grid-cols-3 lg:items-center'>
             <div className=''>
-              <h6 className='font-Nunito text-[15px] text-white mb-[6px]'>
+              <h6 className='font-OpenSans text-[15px] text-white mb-[6px]'>
                 Email Us at :
               </h6>
               <div className='flex items-center gap-2'>
@@ -32,7 +31,7 @@ const Footer = () => {
                   href='mailto:example@gmail.com'
                   title='example@gmail.com'
                 >
-                  <button className='font-Rajdhani text-xl sm:text-2xl text-white font-medium'>
+                  <button className='font-Outfit text-xl sm:text-2xl text-white font-medium'>
                     example@gmail.com
                   </button>
                 </a>
@@ -52,7 +51,7 @@ const Footer = () => {
             </div>
             <div className='flex lg:justify-end'>
               <div className=''>
-                <h6 className='font-Nunito text-[15px] text-white mb-[6px]'>
+                <h6 className='font-OpenSans text-[15px] text-white mb-[6px]'>
                   Call Us Anytime
                 </h6>
                 <div className='flex items-center gap-2'>
@@ -63,7 +62,7 @@ const Footer = () => {
                     href='tel:+001234567890'
                     title='+00 123 4567 890'
                   >
-                    <button className='font-Rajdhani text-xl sm:text-2xl text-white font-medium'>
+                    <button className='font-Outfit text-xl sm:text-2xl text-white font-medium'>
                       +00 123 4567 890
                     </button>
                   </a>
@@ -77,32 +76,32 @@ const Footer = () => {
         <div className='Container'>
           <div className='lg:grid gap-y-7 grid-cols-12 border-b border-white border-opacity-10 mt-12 pb-5 hidden'>
             <div className='col-span-12 md:col-span-6 lg:col-span-4'>
-              <h4 className='font-Rajdhani text-[28px] text-white font-semibold'>
+              <h4 className='font-Outfit text-[28px] text-white font-semibold'>
                 About educatex
               </h4>
             </div>
             <div className='col-span-12 md:col-span-6 lg:col-span-2'>
-              <h4 className='font-Rajdhani text-[28px] text-white font-semibold'>
+              <h4 className='font-Outfit text-[28px] text-white font-semibold'>
                 Company
               </h4>
             </div>
             <div className='col-span-12 md:col-span-6 lg:col-span-3'>
-              <h4 className='font-Rajdhani text-[28px] text-white font-semibold'>
+              <h4 className='font-Outfit text-[28px] text-white font-semibold'>
                 Our Services
               </h4>
             </div>
             <div className='col-span-12 md:col-span-6 lg:col-span-3'>
-              <h4 className='font-Rajdhani text-[28px] text-white font-semibold'>
+              <h4 className='font-Outfit text-[28px] text-white font-semibold'>
                 Newsletter
               </h4>
             </div>
           </div>
           <div className='grid gap-y-7 grid-cols-12 lg:mt-8'>
             <div className='col-span-12 md:col-span-6 lg:col-span-4'>
-              <h4 className='font-Rajdhani text-[28px] text-white font-semibold mb-[33px] block lg:hidden'>
+              <h4 className='font-Outfit text-[28px] text-white font-semibold mb-[33px] block lg:hidden'>
                 About educatex
               </h4>
-              <p className='font-Nunito text-TextColor-0 mt-7 lg:mt-0 mb-5 w-full max-w-[340px]'>
+              <p className='font-OpenSans text-TextColor-0 mt-7 lg:mt-0 mb-5 w-full max-w-[340px]'>
                 Globally expedite enterprise-wide action items rather than
                 distinctive architectures. Globally engage market positioning.
               </p>
@@ -114,7 +113,7 @@ const Footer = () => {
                   href='mailto:example@gmail.com'
                   title='example@gmail.com'
                 >
-                  <button className='font-Rajdhani text-lg text-white font-medium'>
+                  <button className='font-Outfit text-lg text-white font-medium'>
                     example@gmail.com
                   </button>
                 </a>
@@ -143,13 +142,13 @@ const Footer = () => {
               </ul>
             </div>
             <div className='col-span-12 md:col-span-6 lg:col-span-2'>
-              <h4 className='font-Rajdhani text-[28px] text-white font-semibold mb-[33px] block lg:hidden'>
+              <h4 className='font-Outfit text-[28px] text-white font-semibold mb-[33px] block lg:hidden'>
                 Company
               </h4>
               <ul>
                 <li>
                   <Link to={'/'}>
-                    <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                    <button className='flex items-center gap-2 font-OpenSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
                       <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                       About Us
                     </button>
@@ -157,7 +156,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link to={'/'}>
-                    <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                    <button className='flex items-center gap-2 font-OpenSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
                       <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                       Our Team
                     </button>
@@ -165,7 +164,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link to={'/'}>
-                    <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                    <button className='flex items-center gap-2 font-OpenSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
                       <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                       Pricing Plan
                     </button>
@@ -173,7 +172,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link to={'/'}>
-                    <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                    <button className='flex items-center gap-2 font-OpenSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
                       <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                       Latest Blog
                     </button>
@@ -181,7 +180,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link to={'/'}>
-                    <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1'>
+                    <button className='flex items-center gap-2 font-OpenSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1'>
                       <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                       Careers
                     </button>
@@ -190,13 +189,13 @@ const Footer = () => {
               </ul>
             </div>
             <div className='col-span-12 md:col-span-6 lg:col-span-3'>
-              <h4 className='font-Rajdhani text-[28px] text-white font-semibold mb-[33px] block lg:hidden'>
+              <h4 className='font-Outfit text-[28px] text-white font-semibold mb-[33px] block lg:hidden'>
                 Our Services
               </h4>
               <ul>
                 <li>
                   <Link to={'/'}>
-                    <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                    <button className='flex items-center gap-2 font-OpenSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
                       <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                       IT Solutions
                     </button>
@@ -204,7 +203,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link to={'/'}>
-                    <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                    <button className='flex items-center gap-2 font-OpenSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
                       <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                       Cyber Security
                     </button>
@@ -212,7 +211,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link to={'/'}>
-                    <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                    <button className='flex items-center gap-2 font-OpenSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
                       <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                       Digital Marketing
                     </button>
@@ -220,7 +219,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link to={'/'}>
-                    <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
+                    <button className='flex items-center gap-2 font-OpenSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
                       <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                       Brand Identity
                     </button>
@@ -228,7 +227,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link to={'/'}>
-                    <button className='flex items-center gap-2 font-Nunito text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1'>
+                    <button className='flex items-center gap-2 font-OpenSans text-white transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1'>
                       <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
                       SEO Marketing
                     </button>
@@ -237,7 +236,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className='col-span-12 md:col-span-6 lg:col-span-3'>
-              <h4 className='font-Rajdhani text-[28px] text-white font-semibold mb-[30px] block lg:hidden'>
+              <h4 className='font-Outfit text-[28px] text-white font-semibold mb-[30px] block lg:hidden'>
                 Newsletter
               </h4>
               <form
@@ -254,7 +253,7 @@ const Footer = () => {
                     id='email'
                     placeholder='Enter Your E-Mail*'
                     required
-                    className='w-full h-[56px] font-Nunito rounded-full outline-none focus:outline-none border-none bg-white bg-opacity-10 px-8 py-2 text-white placeholder:text-white mb-3'
+                    className='w-full h-[56px] font-OpenSans rounded-full outline-none focus:outline-none border-none bg-white bg-opacity-10 px-8 py-2 text-white placeholder:text-white mb-3'
                   />
                   <HiOutlineMail className='absolute top-1/2 -translate-y-1/2 right-6 text-white text-xl' />
                 </label>
@@ -269,7 +268,7 @@ const Footer = () => {
                   </button>
                 </div>
               </form>
-              <p className='font-Nunito flex gap-2 text-TextColor-0 font-medium mt-5'>
+              <p className='font-OpenSans flex gap-2 text-TextColor-0 font-medium mt-5'>
                 <span className='relative top-[3px] text-green-600'>
                   <FaRegCircleCheck />
                 </span>
@@ -278,18 +277,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className='absolute right-0 2xl:right-20 bottom-[81px] animate-dance3 hidden md:block'>
-          <img
-            src={footerShape}
-            draggable={false}
-            alt='Image'
-          />
-        </div>
         <div className='bg-white bg-opacity-5 mt-16 md:mt-[96px]'>
           <div className='Container'>
             <div className='flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-7'>
               <div>
-                <p className='font-Nunito text-white'>
+                <p className='font-OpenSans text-white'>
                   &copy; {new Date().getFullYear()} educatex. Designed By Dream
                   IT Solution
                 </p>
@@ -299,7 +291,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to={'/'}
-                      className='font-Nunito text-white'
+                      className='font-OpenSans text-white'
                     >
                       Terms & Conditions
                     </Link>
@@ -307,7 +299,7 @@ const Footer = () => {
                   <li>
                     <Link
                       to={'/'}
-                      className='font-Nunito text-white'
+                      className='font-OpenSans text-white'
                     >
                       Privacy Policy
                     </Link>

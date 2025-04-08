@@ -2,14 +2,14 @@
   position: absolute;
   top: -28px;
   right: 0;
-  font-family: 'Rajdhani';
+  font-family: 'Outfit';
   font-weight: 600;
   color: #041424 !important;
 }
 
 .skill-progress .progress-bar-rect-wrapper {
-    overflow: hidden;
-    border-radius: 10px !important;
+  overflow: hidden;
+  border-radius: 10px !important;
 }
 
 .skill-progress .inner-rect-bar {

@@ -4,16 +4,16 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        Rajdhani: ['Rajdhani', 'sans-serif'],
-        Nunito: ['Nunito', 'sans-serif'],
+        Outfit: ['Outfit', 'sans-serif'],
+        OpenSans: ['Open Sans', 'sans-serif'],
       },
       colors: {
-        PrimaryColor: ['#0c5adb'],
-        PrimaryColor2: ['#1a90ff'],
-        PrimaryColor3: ['#3326fc'],
+        PrimaryColor: ['#1ec28e'],
+        PrimaryColor2: ['#ff853f'],
+        PrimaryColor3: ['#15c1fa'],
         SecondaryColor: ['#021533'],
-        HeadingColor: ['#041424'],
-        TextColor: ['#b6b9c0'],
+        HeadingColor: ['#1e1e1e'],
+        TextColor: ['#616161'],
         TextColor2: ['#686868'],
         ReviewText: ['#ffb108'],
         BodyBg: ['#f1f3fe'],

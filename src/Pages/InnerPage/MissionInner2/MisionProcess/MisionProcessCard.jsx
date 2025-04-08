@@ -15,8 +15,10 @@ const MisionProcessCard = ({
           className='mx-auto group-hover:animate-wobble_vertical'
         />
       </div>
-      <h5 className="font-Rajdhani font-semibold text-[28px] text-HeadingColor-0 mt-7">{misionProcessTitle}</h5>
-      <p className="font-Nunito text-TextColor2-0">{misionProcessDesc}</p>
+      <h5 className='font-Outfit font-semibold text-[28px] text-HeadingColor-0 mt-7'>
+        {misionProcessTitle}
+      </h5>
+      <p className='font-OpenSans text-TextColor2-0'>{misionProcessDesc}</p>
     </div>
   );
 };

@@ -10,7 +10,7 @@ const Analysis = () => {
       <div className='Container'>
         <div className='grid grid-cols-1 gap-8 lg:grid-cols-2 items-center relative'>
           <div>
-            <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+            <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
                 src={titleShape}
                 draggable={false}
@@ -18,37 +18,37 @@ const Analysis = () => {
               />{' '}
               Analysis
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-3'>
+            <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-3'>
               Transforming IT Challenges
               <br />
               into Best Opportunities
             </h1>
-            <p className='font-Nunito text-TextColor2-0 max-w-[580px] w-full'>
+            <p className='font-OpenSans text-TextColor2-0 max-w-[580px] w-full'>
               Competently leverage existing top-line bandwidth vis-a-vis
               client-centric supply chains. Enthusiastically maximize cost
               effective technologies collaboratively transform highly efficient
               applications
             </p>
             <ul className='space-y-3 mt-[22px] mb-7'>
-              <li className='flex items-center gap-2 font-Rajdhani font-semibold text-lg text-HeadingColor-0'>
+              <li className='flex items-center gap-2 font-Outfit font-semibold text-lg text-HeadingColor-0'>
                 <span className='text-PrimaryColor-0'>
                   <RiCheckboxCircleFill size={22} />
                 </span>
                 Project analysis and Research
               </li>
-              <li className='flex items-center gap-2 font-Rajdhani font-semibold text-lg text-HeadingColor-0'>
+              <li className='flex items-center gap-2 font-Outfit font-semibold text-lg text-HeadingColor-0'>
                 <span className='text-PrimaryColor-0'>
                   <RiCheckboxCircleFill size={22} />
                 </span>
                 Professionally transform cost effective
               </li>
-              <li className='flex items-center gap-2 font-Rajdhani font-semibold text-lg text-HeadingColor-0'>
+              <li className='flex items-center gap-2 font-Outfit font-semibold text-lg text-HeadingColor-0'>
                 <span className='text-PrimaryColor-0'>
                   <RiCheckboxCircleFill size={22} />
                 </span>
                 Interactively plagiarize virtual processes before
               </li>
-              <li className='flex items-center gap-2 font-Rajdhani font-semibold text-lg text-HeadingColor-0'>
+              <li className='flex items-center gap-2 font-Outfit font-semibold text-lg text-HeadingColor-0'>
                 <span className='text-PrimaryColor-0'>
                   <RiCheckboxCircleFill size={22} />
                 </span>

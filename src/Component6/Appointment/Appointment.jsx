@@ -34,7 +34,7 @@ const Appointment = () => {
               />
             </div>
             <div>
-              <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-white uppercase'>
+              <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-white uppercase'>
                 <img
                   src={titleShape}
                   draggable={false}
@@ -42,7 +42,7 @@ const Appointment = () => {
                 />{' '}
                 GET IN TOUCH
               </h5>
-              <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
+              <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
                 Feel Free to Contact with Us
               </h1>
               <form
@@ -58,7 +58,7 @@ const Appointment = () => {
                       id='name'
                       placeholder='Your Name*'
                       required
-                      className='h-[56px] w-full rounded-md pl-[60px] text-white font-Rajdhani text-lg bg-white bg-opacity-10 outline-none border border-SecondaryColor-0 border-opacity-15 transition-all duration-500 ease-linear placeholder:text-white hover:border-white focus:border-white'
+                      className='h-[56px] w-full rounded-md pl-[60px] text-white font-Outfit text-lg bg-white bg-opacity-10 outline-none border border-SecondaryColor-0 border-opacity-15 transition-all duration-500 ease-linear placeholder:text-white hover:border-white focus:border-white'
                     />
                     <span className='absolute top-1/2 -translate-y-1/2 left-0 h-6 w-11 flex items-center justify-center text-white border-r border-white border-opacity-25'>
                       <FaRegUser />
@@ -71,7 +71,7 @@ const Appointment = () => {
                       id='name'
                       placeholder='Your E-Mail*'
                       required
-                      className='h-[56px] w-full rounded-md pl-[60px] text-white font-Rajdhani text-lg bg-white bg-opacity-10 outline-none border border-SecondaryColor-0 border-opacity-15 transition-all duration-500 ease-linear placeholder:text-white hover:border-white focus:border-white'
+                      className='h-[56px] w-full rounded-md pl-[60px] text-white font-Outfit text-lg bg-white bg-opacity-10 outline-none border border-SecondaryColor-0 border-opacity-15 transition-all duration-500 ease-linear placeholder:text-white hover:border-white focus:border-white'
                     />
                     <span className='absolute top-1/2 -translate-y-1/2 left-0 h-6 w-11 flex items-center justify-center text-white border-r border-white border-opacity-25'>
                       <FaRegEnvelopeOpen />
@@ -80,7 +80,7 @@ const Appointment = () => {
                 </div>
                 <div className='relative'>
                   <select
-                    className='h-[60px] w-full cursor-pointer rounded-md pl-[56px] text-white font-Rajdhani text-lg bg-white bg-opacity-10 outline-none border border-SecondaryColor-0 border-opacity-15 placeholder:text-white transition-all duration-500 ease-linear hover:border-white focus:border-white'
+                    className='h-[60px] w-full cursor-pointer rounded-md pl-[56px] text-white font-Outfit text-lg bg-white bg-opacity-10 outline-none border border-SecondaryColor-0 border-opacity-15 placeholder:text-white transition-all duration-500 ease-linear hover:border-white focus:border-white'
                     defaultValue=''
                   >
                     <option
@@ -104,7 +104,7 @@ const Appointment = () => {
                     name='message'
                     id='message'
                     placeholder='Write Message...'
-                    className='min-h-[150px] w-full rounded-md px-7 py-3 resize-none text-white font-Rajdhani text-lg bg-white bg-opacity-10 outline-none border border-SecondaryColor-0 border-opacity-15 transition-all duration-500 ease-linear placeholder:text-white hover:border-white focus:border-white'
+                    className='min-h-[150px] w-full rounded-md px-7 py-3 resize-none text-white font-Outfit text-lg bg-white bg-opacity-10 outline-none border border-SecondaryColor-0 border-opacity-15 transition-all duration-500 ease-linear placeholder:text-white hover:border-white focus:border-white'
                   ></textarea>
                 </div>
                 <button

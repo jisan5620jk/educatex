@@ -71,11 +71,18 @@ const Portfolio = () => {
     },
   };
   return (
-    <section className="portfolio relative z-10 pt-16 md:pt-20 lg:pt-28 pb-9 md:pb-14 lg:pb-[90px] bg-white">
-      <div className='mx-auto'><img src={bgShape} draggable={false} alt="Bg Shape" className='w-full absolute -top-[28%] -z-10' /></div>
+    <section className='portfolio relative z-10 pt-16 md:pt-20 lg:pt-28 pb-9 md:pb-14 lg:pb-[90px] bg-white'>
+      <div className='mx-auto'>
+        <img
+          src={bgShape}
+          draggable={false}
+          alt='Bg Shape'
+          className='w-full absolute -top-[28%] -z-10'
+        />
+      </div>
       <div className='Container'>
         <div className='text-center'>
-          <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+          <h5 className='flex items-center justify-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
             <img
               src={titleShape}
               draggable={false}
@@ -89,10 +96,10 @@ const Portfolio = () => {
               className='rotate-180'
             />
           </h5>
-          <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-2'>
+          <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-2'>
             We Provide Business Solutions
           </h1>
-          <p className='font-Nunito text-TextColor2-0 max-w-[675px] w-full mx-auto'>
+          <p className='font-OpenSans text-TextColor2-0 max-w-[675px] w-full mx-auto'>
             Energistically customize just in time synergy and dynamic
             information. Synergistically network performance based quality
             vectors whereas client-based ROI.

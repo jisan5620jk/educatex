@@ -24,19 +24,18 @@ const About = () => {
                   onClick={() => setToggler(!toggler)}
                 />
               </button>
-              
             </div>
           </div>
           <div className='relative'>
-            <h5 className='font-Rajdhani text-lg font-semibold text-PrimaryColor-0'>
+            <h5 className='font-Outfit text-lg font-semibold text-PrimaryColor-0'>
               IT Support for Business
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-3'>
+            <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-3'>
               About is Over 291+ Company
               <br />
               Business Solution.
             </h1>
-            <p className='font-Nunito text-TextColor2-0'>
+            <p className='font-OpenSans text-TextColor2-0'>
               Monotonectally synergize granular markets and front markets.
               Collaboratively visualize strategic infomediaries after multimedia
               based models. Synergistically task state of the art
@@ -52,12 +51,12 @@ const About = () => {
                     />
                   </div>
                   <div className='flex-1'>
-                    <h5 className='font-Rajdhani font-semibold text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] text-HeadingColor-0'>
+                    <h5 className='font-Outfit font-semibold text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] text-HeadingColor-0'>
                       IT Management
                     </h5>
                   </div>
                 </div>
-                <p className='font-Nunito text-TextColor2-0 pt-3'>
+                <p className='font-OpenSans text-TextColor2-0 pt-3'>
                   Proved granular markets dream team more based models clean.
                 </p>
               </div>
@@ -70,34 +69,35 @@ const About = () => {
                     />
                   </div>
                   <div className='flex-1'>
-                    <h5 className='font-Rajdhani font-semibold text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] text-HeadingColor-0'>
+                    <h5 className='font-Outfit font-semibold text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] text-HeadingColor-0'>
                       Award Ceremony
                     </h5>
                   </div>
                 </div>
-                <p className='font-Nunito text-TextColor2-0 pt-3'>
+                <p className='font-OpenSans text-TextColor2-0 pt-3'>
                   Proved granular markets dream team more based models clean.
                 </p>
               </div>
             </div>
             <div className='flex items-center gap-5'>
               <Link to={'/mission_inner'}>
-                <button className='px-8 py-[6px] rounded-full bg-PrimaryColor-0 text-white font-Nunito'>
+                <button className='px-8 py-[6px] rounded-full bg-PrimaryColor-0 text-white font-OpenSans'>
                   Mission
                 </button>
               </Link>
               <Link to={'/mission_inner'}>
-                <button className='px-8 py-[6px] rounded-full bg-PrimaryColor-0 text-white font-Nunito'>
+                <button className='px-8 py-[6px] rounded-full bg-PrimaryColor-0 text-white font-OpenSans'>
                   vision
                 </button>
               </Link>
             </div>
           </div>
         </div>
-      </div><FsLightbox
-                toggler={toggler}
-                sources={['https://youtu.be/NKJ-6zCSk2E?si=XQUpq01QZ8hNXLdc']}
-              />
+      </div>
+      <FsLightbox
+        toggler={toggler}
+        sources={['https://youtu.be/NKJ-6zCSk2E?si=XQUpq01QZ8hNXLdc']}
+      />
     </section>
   );
 };

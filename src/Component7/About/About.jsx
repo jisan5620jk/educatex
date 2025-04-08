@@ -20,7 +20,7 @@ const About = () => {
             />
           </div>
           <div className='relative'>
-            <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+            <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
                 src={titleShape}
                 draggable={false}
@@ -28,7 +28,7 @@ const About = () => {
               />{' '}
               About Us
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+            <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
               Next Generation Depends on
               <br />
               Digital Software’s Growing
@@ -46,10 +46,10 @@ const About = () => {
                   />
                 </div>
                 <div className='flex-1 -mt-1'>
-                  <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[26px] lg:text-base xl:text-xl 2xl:text-[26px] leading-[28px] text-HeadingColor-0'>
+                  <h5 className='flex-1 font-Outfit font-semibold text-xl md:text-[26px] lg:text-base xl:text-xl 2xl:text-[26px] leading-[28px] text-HeadingColor-0'>
                     Advanced Marketing
                   </h5>
-                  <p className='font-Nunito text-TextColor2-0 max-w-[362px] w-full mt-3'>
+                  <p className='font-OpenSans text-TextColor2-0 max-w-[362px] w-full mt-3'>
                     Clients-focused data centric process energistically
                     communicate installed done.
                   </p>
@@ -65,10 +65,10 @@ const About = () => {
                   />
                 </div>
                 <div className='flex-1 -mt-1'>
-                  <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[26px] lg:text-base xl:text-xl 2xl:text-[26px] leading-[28px] text-HeadingColor-0'>
+                  <h5 className='flex-1 font-Outfit font-semibold text-xl md:text-[26px] lg:text-base xl:text-xl 2xl:text-[26px] leading-[28px] text-HeadingColor-0'>
                     Innovation Soluitions
                   </h5>
-                  <p className='font-Nunito text-TextColor2-0 max-w-[362px] w-full mt-3'>
+                  <p className='font-OpenSans text-TextColor2-0 max-w-[362px] w-full mt-3'>
                     Clients-focused data centric process energistically
                     communicate installed done.
                   </p>
@@ -95,12 +95,12 @@ const About = () => {
                   />
                 </div>
                 <div className='flex-1'>
-                  <h6 className='font-Nunito text-TextColor2-0'>
+                  <h6 className='font-OpenSans text-TextColor2-0'>
                     Call Us Anytime
                   </h6>
                   <a
                     href='tel:+881234567890'
-                    className='font-Rajdhani font-semibold text-2xl lg:text-xl xl:text-2xl text-HeadingColor-0'
+                    className='font-Outfit font-semibold text-2xl lg:text-xl xl:text-2xl text-HeadingColor-0'
                   >
                     +88 123 4567 890
                   </a>

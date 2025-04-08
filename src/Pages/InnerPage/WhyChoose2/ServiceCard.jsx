@@ -9,10 +9,10 @@ const ServiceCard = ({ serviceIcon, serviceTitle, serviceDesc }) => {
           className='group-hover:animate-wobble_vertical'
         />
       </div>
-      <h5 className='font-Rajdhani font-semibold text-2xl xl:text-[26px] text-HeadingColor-0 mt-8'>
+      <h5 className='font-Outfit font-semibold text-2xl xl:text-[26px] text-HeadingColor-0 mt-8'>
         {serviceTitle}
       </h5>
-      <p className='font-Nunito text-TextColor2-0 pt-3'>{serviceDesc}</p>
+      <p className='font-OpenSans text-TextColor2-0 pt-3'>{serviceDesc}</p>
     </div>
   );
 };

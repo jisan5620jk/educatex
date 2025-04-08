@@ -9,10 +9,10 @@ const Banner = () => {
       <div className='Container'>
         <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0 pt-[70px] lg:pt-[100px]'>
           <div className='relative'>
-            <h5 className='font-Rajdhani text-white text-xl font-semibold flex items-center gap-2 mb-4 md:mb-4 uppercase'>
+            <h5 className='font-Outfit text-white text-xl font-semibold flex items-center gap-2 mb-4 md:mb-4 uppercase'>
               Be Protecting Save Everytime
             </h5>
-            <h1 className='2xl:-ml-1 font-Rajdhani font-bold uppercase text-white -tracking-[1px] text-[30px] leading-[36px] sm:text-[46px] sm:leading-[56px] md:text-[68px] md:leading-[74px] lg:text-[56px] lg:leading-[62px] xl:text-[60px] xl:leading-[64px] 2xl:text-[90px] 2xl:leading-[90px]'>
+            <h1 className='2xl:-ml-1 font-Outfit font-bold uppercase text-white -tracking-[1px] text-[30px] leading-[36px] sm:text-[46px] sm:leading-[56px] md:text-[68px] md:leading-[74px] lg:text-[56px] lg:leading-[62px] xl:text-[60px] xl:leading-[64px] 2xl:text-[90px] 2xl:leading-[90px]'>
               BUILDING TRUST
               <br />
               SECURING FUTURE
@@ -59,7 +59,7 @@ const Banner = () => {
               <div className='size-[38px] rounded-full bg-gradient-to-r to-PrimaryColor2-0 from-PrimaryColor3-0 flex items-center justify-center text-white'>
                 <FaCheck size={20} />
               </div>
-              <h5 className='flex-1 font-Rajdhani font-semibold text-HeadingColor-0 text-xl'>
+              <h5 className='flex-1 font-Outfit font-semibold text-HeadingColor-0 text-xl'>
                 6 Years Warranty
               </h5>
             </div>
@@ -80,10 +80,10 @@ const Banner = () => {
                 <FaCheck size={22} />
               </div>
               <div className='flex-1'>
-                <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-[22px] leading-[26px] border-b border-HeadingColor-0 border-opacity-30 pb-2 mb-2'>
+                <h5 className='font-Outfit font-semibold text-HeadingColor-0 text-[22px] leading-[26px] border-b border-HeadingColor-0 border-opacity-30 pb-2 mb-2'>
                   PROTECT & SECURE EVERYTHIG
                 </h5>
-                <p className='font-Nunito text-lg text-HeadingColor-0 leading-6'>
+                <p className='font-OpenSans text-lg text-HeadingColor-0 leading-6'>
                   High Defination HD <br /> Clean Footage
                 </p>
               </div>

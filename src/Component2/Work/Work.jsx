@@ -83,7 +83,7 @@ const Work = () => {
     <section className='work-section'>
       <div className='Container'>
         <div>
-          <h1 className='font-Rajdhani text-center font-bold text-4xl sm:text-[44px] md:text-[54px] lg:text-[75px] xl:text-[85px] 2xl:text-[100px] text-HeadingColor-0 mt-[14px] uppercase mb-7 md:mb-[74px]'>
+          <h1 className='font-Outfit text-center font-bold text-4xl sm:text-[44px] md:text-[54px] lg:text-[75px] xl:text-[85px] 2xl:text-[100px] text-HeadingColor-0 mt-[14px] uppercase mb-7 md:mb-[74px]'>
             Works
           </h1>
         </div>
@@ -126,7 +126,7 @@ const Work = () => {
             <div className='text-PrimaryColor-0 mt-1'>
               <GoArrowUpRight size={30} />
             </div>
-            <p className='font-Nunito text-lg'>
+            <p className='font-OpenSans text-lg'>
               Continually formulate B2C partnerships orthogonal software
               <br className='hidden lg:block' />
               maintainable quality through low budget

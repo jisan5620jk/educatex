@@ -48,7 +48,7 @@ const Provide = () => {
     <section className='pt-16 md:pt-20 lg:pt-28 relative bg-white'>
       <div className='Container'>
         <div className='text-center'>
-          <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+          <h5 className='flex items-center justify-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
             <img
               src={titleShape}
               draggable={false}
@@ -62,7 +62,7 @@ const Provide = () => {
               className='rotate-180'
             />
           </h5>
-          <h1 className='font-Rajdhani font-bold text-lg leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px]'>
+          <h1 className='font-Outfit font-bold text-lg leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px]'>
             Dominate Local Search Results with <br /> Tailored Local SEO
             Solutions
           </h1>
@@ -109,7 +109,7 @@ const Provide = () => {
                     className='group-hover:animate-wobble_vertical'
                   />
                 </div>
-                <h5 className='flex-1 font-Rajdhani font-semibold text-lg sm:text-[22px] lg:text-lg xl:text-[19px] 2xl:text-[22px] leading-6 sm:leading-7 text-HeadingColor-0'>
+                <h5 className='flex-1 font-Outfit font-semibold text-lg sm:text-[22px] lg:text-lg xl:text-[19px] 2xl:text-[22px] leading-6 sm:leading-7 text-HeadingColor-0'>
                   Content Strategy Development
                 </h5>
               </li>
@@ -122,7 +122,7 @@ const Provide = () => {
                     className='group-hover:animate-wobble_vertical'
                   />
                 </div>
-                <h5 className='flex-1 font-Rajdhani font-semibold text-lg sm:text-[22px] lg:text-lg xl:text-[19px] 2xl:text-[22px] leading-6 sm:leading-7 text-HeadingColor-0'>
+                <h5 className='flex-1 font-Outfit font-semibold text-lg sm:text-[22px] lg:text-lg xl:text-[19px] 2xl:text-[22px] leading-6 sm:leading-7 text-HeadingColor-0'>
                   High-Speed Website Optimization
                 </h5>
               </li>
@@ -135,7 +135,7 @@ const Provide = () => {
                     className='group-hover:animate-wobble_vertical'
                   />
                 </div>
-                <h5 className='flex-1 font-Rajdhani font-semibold text-lg sm:text-[22px] lg:text-lg xl:text-[19px] 2xl:text-[22px] leading-6 sm:leading-7 text-HeadingColor-0'>
+                <h5 className='flex-1 font-Outfit font-semibold text-lg sm:text-[22px] lg:text-lg xl:text-[19px] 2xl:text-[22px] leading-6 sm:leading-7 text-HeadingColor-0'>
                   Sustainable Business Growth Service
                 </h5>
               </li>

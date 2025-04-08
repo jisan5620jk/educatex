@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const BlogCard = ({
   blogThumb,
@@ -21,7 +21,7 @@ const BlogCard = ({
       <div className='w-[calc(100%-20px)] sm:w-[calc(100%-40px)] -mt-[50px] mx-auto flex justify-centerrounded-lg transition-all duration-500 pt-3 sm:pt-5 rounded-[10px] bg-gradient-to-t to-BoxBg-0 from-BoxBg3-0 relative z-20 overflow-hidden before:absolute before:top-0 before:right-0 before:w-0 before:opacity-0 before:h-full before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-BoxBg3-0 before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 hover:before:opacity-100'>
         <div className='mx-auto w-full'>
           <div className='px-3 sm:px-3 md:px-5 lg:px-[30px] 2xl:px-[30px] pb-2'>
-            <p className='font-Rajdhani font-semibold text-white sm:text-lg flex gap-2 items-center leading-[15px]'>
+            <p className='font-Outfit font-semibold text-white sm:text-lg flex gap-2 items-center leading-[15px]'>
               <img
                 src={blogPostIcon}
                 draggable={false}
@@ -30,13 +30,13 @@ const BlogCard = ({
               {blogPost}
             </p>
             <Link to={blogUrl}>
-              <button className='font-Rajdhani text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-[23px] xl:text-[21px] 2xl:text-[23px] text-white transition-all duration-500 mt-5 mb-5'>
+              <button className='font-Outfit text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-[23px] xl:text-[21px] 2xl:text-[23px] text-white transition-all duration-500 mt-5 mb-5'>
                 {blogTitle}
               </button>
             </Link>
           </div>
           <div className='flex items-center justify-between px-3 sm:px-3 md:px-5 lg:px-[30px] 2xl:px-[30px] border-t border-white border-opacity-10 py-3 sm:py-[19px]'>
-            <p className='font-Nunito text-white text-opacity-80 text-sm sm:text-base flex gap-2 items-center leading-[15px]'>
+            <p className='font-OpenSans text-white text-opacity-80 text-sm sm:text-base flex gap-2 items-center leading-[15px]'>
               <span className='text-PrimaryColor-0'>{blogDateIcon}</span>
               {blogDate}
             </p>

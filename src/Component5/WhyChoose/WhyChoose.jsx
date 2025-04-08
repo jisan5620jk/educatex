@@ -26,7 +26,7 @@ const WhyChoose = () => {
             />
           </div>
           <div>
-            <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+            <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
                 src={titleShape}
                 draggable={false}
@@ -34,14 +34,14 @@ const WhyChoose = () => {
               />{' '}
               Why Choose us?
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-3'>
+            <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-3'>
               Brain Storming, Researcing and
               <br />
               Work Strategist for Create Best
               <br />
               Sucessfull Products
             </h1>
-            <p className='font-Nunito text-TextColor2-0 max-w-[580px] w-full'>
+            <p className='font-OpenSans text-TextColor2-0 max-w-[580px] w-full'>
               Competently leverage existing top-line bandwidth vis-a-vis
               client-centric supply chains. Enthusiastically maximize cost
               effective technologies
@@ -52,10 +52,10 @@ const WhyChoose = () => {
                   <TbRosetteDiscountCheckFilled size={34} />
                 </div>
                 <div className='flex-1 -mt-1'>
-                  <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-2xl pb-[6px]'>
+                  <h5 className='font-Outfit font-semibold text-HeadingColor-0 text-2xl pb-[6px]'>
                     Market Research
                   </h5>
-                  <p className='font-Nunito text-TextColor2-0 max-w-[370px] w-full'>
+                  <p className='font-OpenSans text-TextColor2-0 max-w-[370px] w-full'>
                     Competently leverage existing top-line technology maximize
                     cost effective service done
                   </p>
@@ -66,10 +66,10 @@ const WhyChoose = () => {
                   <TbRosetteDiscountCheckFilled size={34} />
                 </div>
                 <div className='flex-1 -mt-1'>
-                  <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-2xl pb-[6px]'>
+                  <h5 className='font-Outfit font-semibold text-HeadingColor-0 text-2xl pb-[6px]'>
                     Project Analysis
                   </h5>
-                  <p className='font-Nunito text-TextColor2-0 max-w-[370px] w-full'>
+                  <p className='font-OpenSans text-TextColor2-0 max-w-[370px] w-full'>
                     Competently leverage existing top-line technology maximize
                     cost effective service done
                   </p>

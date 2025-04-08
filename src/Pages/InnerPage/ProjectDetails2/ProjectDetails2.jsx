@@ -23,10 +23,10 @@ const ProjectDetails2 = () => {
             draggable='false'
             className='w-full'
           />
-          <h2 className='font-Rajdhani font-bold text-3xl sm:text-[44px] text-HeadingColor-0 mt-7 sm:mt-10'>
+          <h2 className='font-Outfit font-bold text-3xl sm:text-[44px] text-HeadingColor-0 mt-7 sm:mt-10'>
             Overview
           </h2>
-          <p className='font-Nunito text-TextColor2-0 mt-3 sm:mt-5'>
+          <p className='font-OpenSans text-TextColor2-0 mt-3 sm:mt-5'>
             Alternative innovation to ethical network environmental whiteboard
             pursue compelling results premier methods empowerment. Dramatically
             architect go forward opportunities before user-centric partner
@@ -46,10 +46,10 @@ const ProjectDetails2 = () => {
               />
             </div>
             <div>
-              <h2 className='font-Rajdhani font-bold text-3xl sm:text-[44px] text-HeadingColor-0'>
+              <h2 className='font-Outfit font-bold text-3xl sm:text-[44px] text-HeadingColor-0'>
                 Solution
               </h2>
-              <p className='font-Nunito text-TextColor2-0 mt-3 sm:mt-5'>
+              <p className='font-OpenSans text-TextColor2-0 mt-3 sm:mt-5'>
                 Rapidiously create cross-platform manufactured products after
                 cost effective innovatio native e-business and optimal
                 solutions. Seamlessly customize interactive systems afte
@@ -58,7 +58,7 @@ const ProjectDetails2 = () => {
                 reconceptualize B2C imperatives without turnkey e-m arkets.
                 Phosfluorescently monetize long-term .
               </p>
-              <p className='font-Nunito text-TextColor2-0 mt-6'>
+              <p className='font-OpenSans text-TextColor2-0 mt-6'>
                 Rapidiously create cross-platform manufactured products after
                 cost effective innovatio native e-business and optimal
                 solutions. Seamlessly customize interactive systems afte
@@ -67,10 +67,10 @@ const ProjectDetails2 = () => {
               </p>
             </div>
           </div>
-          <h2 className='font-Rajdhani font-bold text-3xl sm:text-[44px] text-HeadingColor-0 mt-7 sm:mt-14'>
+          <h2 className='font-Outfit font-bold text-3xl sm:text-[44px] text-HeadingColor-0 mt-7 sm:mt-14'>
             Gallery
           </h2>
-          <p className='font-Nunito text-TextColor2-0 mt-3 sm:mt-5'>
+          <p className='font-OpenSans text-TextColor2-0 mt-3 sm:mt-5'>
             Rapidiously create cross-platform manufactured products after cost
             effective innovatio native e-business and optimal solutions.
             Seamlessly customize interactive systems afte prop riately drive

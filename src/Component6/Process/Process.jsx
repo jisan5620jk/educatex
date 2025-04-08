@@ -48,7 +48,7 @@ const Process = () => {
         <div className='Container'>
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-0 items-center'>
             <div>
-              <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-white uppercase'>
+              <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-white uppercase'>
                 <img
                   src={titleShape}
                   draggable={false}
@@ -57,7 +57,7 @@ const Process = () => {
                 />{' '}
                 WORK PROCESS
               </h5>
-              <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
+              <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
                 Our Proven Process for Digital
                 <br /> Excellence IT Solutions
               </h1>
@@ -79,10 +79,10 @@ const Process = () => {
                       />
                     </div>
                     <div className='flex-1'>
-                      <h4 className='font-Rajdhani font-semibold text-2xl sm:text-[28px] text-white'>
+                      <h4 className='font-Outfit font-semibold text-2xl sm:text-[28px] text-white'>
                         Planning Idea
                       </h4>
-                      <p className='max-w-[288px] w-full font-Nunito text-white text-opacity-70'>
+                      <p className='max-w-[288px] w-full font-OpenSans text-white text-opacity-70'>
                         Competently leverage existing top-line maximize cost
                         effective done
                       </p>
@@ -100,10 +100,10 @@ const Process = () => {
                       />
                     </div>
                     <div className='flex-1'>
-                      <h4 className='font-Rajdhani font-semibold text-2xl sm:text-[28px] text-white'>
+                      <h4 className='font-Outfit font-semibold text-2xl sm:text-[28px] text-white'>
                         Research & Analysis
                       </h4>
-                      <p className='max-w-[288px] w-full font-Nunito text-white text-opacity-70'>
+                      <p className='max-w-[288px] w-full font-OpenSans text-white text-opacity-70'>
                         Competently leverage existing top-line maximize cost
                         effective done
                       </p>
@@ -127,10 +127,10 @@ const Process = () => {
                       />
                     </div>
                     <div className='flex-1'>
-                      <h4 className='font-Rajdhani font-semibold text-2xl sm:text-[28px] text-white'>
+                      <h4 className='font-Outfit font-semibold text-2xl sm:text-[28px] text-white'>
                         Finished Works
                       </h4>
-                      <p className='max-w-[288px] w-full font-Nunito text-white text-opacity-70'>
+                      <p className='max-w-[288px] w-full font-OpenSans text-white text-opacity-70'>
                         Competently leverage existing top-line maximize cost
                         effective done
                       </p>

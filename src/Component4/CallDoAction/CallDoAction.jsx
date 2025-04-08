@@ -16,10 +16,10 @@ const CallDoAction = () => {
         <div className='Container'>
           <div className='flex flex-col gap-7 md:gap-0 md:flex-row justify-between md:items-center'>
             <div>
-              <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-2'>
+              <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-2'>
                 {`Need any project? we're here`}
               </h1>
-              <p className='font-Nunito text-white'>
+              <p className='font-OpenSans text-white'>
                 Feel free to contact with us. Our team ready to help
               </p>
             </div>

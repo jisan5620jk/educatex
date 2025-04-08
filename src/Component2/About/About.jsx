@@ -20,14 +20,14 @@ const About = () => {
                 <GoCheckCircleFill size={24} />
               </div>
               <div>
-                <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl'>
+                <h5 className='font-Outfit font-semibold text-HeadingColor-0 text-xl'>
                   High Performances
                 </h5>
               </div>
             </div>
           </div>
           <div className='relative'>
-            <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+            <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
                 src={titleShape}
                 draggable={false}
@@ -35,49 +35,49 @@ const About = () => {
               />{' '}
               About Us
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+            <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
               Building Tomorrow’s Technology
               <br />
               A Commitment to Excellence in
               <br />
               Robotics Industry
             </h1>
-            <p className='font-Nunito text-TextColor2-0 pb-7'>
+            <p className='font-OpenSans text-TextColor2-0 pb-7'>
               Competently leverage existing top-line bandwidth vis-a-vis
               client-centric supply chains. Enthusiastically maximize cost
               effective technologies dynamically negotiate multimedia based
               e-commerce competitive
             </p>
             <ul className='grid grid-cols-1 sm:grid-cols-2'>
-              <li className='font-Rajdhani font-semibold text-HeadingColor-0 flex items-center lg:items-start xl:items-center gap-2 mb-3'>
+              <li className='font-Outfit font-semibold text-HeadingColor-0 flex items-center lg:items-start xl:items-center gap-2 mb-3'>
                 <div className='text-PrimaryColor-0'>
                   <GoCheckCircleFill size={20} />
                 </div>
-                <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl lg:-mt-1 xl:mt-0'>
+                <h5 className='font-Outfit font-semibold text-HeadingColor-0 text-xl lg:-mt-1 xl:mt-0'>
                   Autonomous Navigation
                 </h5>
               </li>
-              <li className='font-Rajdhani font-semibold text-HeadingColor-0 flex items-center lg:items-start xl:items-center gap-2 mb-3'>
+              <li className='font-Outfit font-semibold text-HeadingColor-0 flex items-center lg:items-start xl:items-center gap-2 mb-3'>
                 <div className='text-PrimaryColor-0'>
                   <GoCheckCircleFill size={20} />
                 </div>
-                <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl lg:-mt-1 xl:mt-0'>
+                <h5 className='font-Outfit font-semibold text-HeadingColor-0 text-xl lg:-mt-1 xl:mt-0'>
                   AI-Powered Decision Making
                 </h5>
               </li>
-              <li className='font-Rajdhani font-semibold text-HeadingColor-0 flex items-center lg:items-start xl:items-center gap-2 mb-3'>
+              <li className='font-Outfit font-semibold text-HeadingColor-0 flex items-center lg:items-start xl:items-center gap-2 mb-3'>
                 <div className='text-PrimaryColor-0'>
                   <GoCheckCircleFill size={20} />
                 </div>
-                <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl lg:-mt-1 xl:mt-0'>
+                <h5 className='font-Outfit font-semibold text-HeadingColor-0 text-xl lg:-mt-1 xl:mt-0'>
                   Real-Time Data Processing
                 </h5>
               </li>
-              <li className='font-Rajdhani font-semibold text-HeadingColor-0 flex items-center lg:items-start xl:items-center gap-2 mb-3'>
+              <li className='font-Outfit font-semibold text-HeadingColor-0 flex items-center lg:items-start xl:items-center gap-2 mb-3'>
                 <div className='text-PrimaryColor-0'>
                   <GoCheckCircleFill size={20} />
                 </div>
-                <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl lg:-mt-1 xl:mt-0'>
+                <h5 className='font-Outfit font-semibold text-HeadingColor-0 text-xl lg:-mt-1 xl:mt-0'>
                   Adaptive Learning
                 </h5>
               </li>

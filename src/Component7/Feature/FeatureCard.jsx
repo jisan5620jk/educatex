@@ -17,7 +17,7 @@ const FeatureCard = ({
             className='sm:m-auto md:w-10 xl:w-[inherit]'
           />
         </div>
-        <h4 className='font-Rajdhani font-bold text-2xl sm:text-[26px] md:text-xl lg:text-2xl xl:text-[28px] 2xl:text-3xl text-white transition-all duration-500 group-hover:text-white'>
+        <h4 className='font-Outfit font-bold text-2xl sm:text-[26px] md:text-xl lg:text-2xl xl:text-[28px] 2xl:text-3xl text-white transition-all duration-500 group-hover:text-white'>
           {featureTitle}
         </h4>
       </div>

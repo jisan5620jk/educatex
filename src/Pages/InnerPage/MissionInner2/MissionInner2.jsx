@@ -28,7 +28,7 @@ const MissionInner2 = () => {
               />
             </div>
             <div className='lg:ml-[58px]'>
-              <h2 className='font-Rajdhani font-bold text-HeadingColor-0 text-3xl sm:text-4xl md:text-[42px] mb-6'>
+              <h2 className='font-Outfit font-bold text-HeadingColor-0 text-3xl sm:text-4xl md:text-[42px] mb-6'>
                 Our Mission
               </h2>
               <div className='flex flex-row gap-4'>
@@ -39,7 +39,7 @@ const MissionInner2 = () => {
                     alt='Icon'
                   />
                 </div>
-                <p className='font-Nunito text-TextColor2-0 flex-1 -mt-1 max-w-[484px] w-full'>
+                <p className='font-OpenSans text-TextColor2-0 flex-1 -mt-1 max-w-[484px] w-full'>
                   Completely target market-driven collaboration and idea-sharing
                   via partnerships. Monotonectally unleash open-sources
                   leaderships of through unique markets.
@@ -53,7 +53,7 @@ const MissionInner2 = () => {
                     alt='Icon'
                   />
                 </div>
-                <p className='font-Nunito text-TextColor2-0 flex-1 -mt-1 max-w-[484px] w-full'>
+                <p className='font-OpenSans text-TextColor2-0 flex-1 -mt-1 max-w-[484px] w-full'>
                   We believe that technology should not only be powerful but
                   also in intuitive and user-friendly, and our offerings reflect
                   that philosophy of a culture of continuous learning and
@@ -68,7 +68,7 @@ const MissionInner2 = () => {
                     alt='Icon'
                   />
                 </div>
-                <p className='font-Nunito text-TextColor2-0 flex-1 -mt-1 max-w-[488px] w-full'>
+                <p className='font-OpenSans text-TextColor2-0 flex-1 -mt-1 max-w-[488px] w-full'>
                   Sustainability is also at the heart of our mission. We
                   recognize there environmental and societal impacts of
                   technology, and we are can to ensuring that our products and
@@ -106,7 +106,7 @@ const MissionInner2 = () => {
           </div>
           <div className='grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-10 lg:gap-0 rounded-md mb-8 lg:mb-0 py-16 md:py-20 lg:py-28'>
             <div className='lg:mr-[58px]'>
-              <h2 className='font-Rajdhani font-bold text-HeadingColor-0 text-3xl sm:text-4xl md:text-[42px] mb-6'>
+              <h2 className='font-Outfit font-bold text-HeadingColor-0 text-3xl sm:text-4xl md:text-[42px] mb-6'>
                 Our Commitment
               </h2>
               <div className='flex flex-row gap-4'>
@@ -117,7 +117,7 @@ const MissionInner2 = () => {
                     alt='Icon'
                   />
                 </div>
-                <p className='font-Nunito text-TextColor2-0 flex-1 -mt-1 max-w-[484px] w-full'>
+                <p className='font-OpenSans text-TextColor2-0 flex-1 -mt-1 max-w-[484px] w-full'>
                   Completely target market-driven collaboration and idea-sharing
                   via partnerships. Monotonectally unleash open-sources
                   leaderships of through unique markets.
@@ -131,7 +131,7 @@ const MissionInner2 = () => {
                     alt='Icon'
                   />
                 </div>
-                <p className='font-Nunito text-TextColor2-0 flex-1 -mt-1 max-w-[484px] w-full'>
+                <p className='font-OpenSans text-TextColor2-0 flex-1 -mt-1 max-w-[484px] w-full'>
                   We believe that technology should not only be powerful but
                   also in intuitive and user-friendly, and our offerings reflect
                   that philosophy of a culture of continuous learning and
@@ -146,7 +146,7 @@ const MissionInner2 = () => {
                     alt='Icon'
                   />
                 </div>
-                <p className='font-Nunito text-TextColor2-0 flex-1 -mt-1 max-w-[488px] w-full'>
+                <p className='font-OpenSans text-TextColor2-0 flex-1 -mt-1 max-w-[488px] w-full'>
                   Sustainability is also at the heart of our mission. We
                   recognize there environmental and societal impacts of
                   technology, and we are can to ensuring that our products and
@@ -198,7 +198,7 @@ const MissionInner2 = () => {
               />
             </div>
             <div className='lg:ml-[58px]'>
-              <h2 className='font-Rajdhani font-bold text-HeadingColor-0 text-3xl sm:text-4xl md:text-[42px] mb-6'>
+              <h2 className='font-Outfit font-bold text-HeadingColor-0 text-3xl sm:text-4xl md:text-[42px] mb-6'>
                 Our Culture
               </h2>
               <div className='flex flex-row gap-4'>
@@ -209,7 +209,7 @@ const MissionInner2 = () => {
                     alt='Icon'
                   />
                 </div>
-                <p className='font-Nunito text-TextColor2-0 flex-1 -mt-1 max-w-[484px] w-full'>
+                <p className='font-OpenSans text-TextColor2-0 flex-1 -mt-1 max-w-[484px] w-full'>
                   Completely target market-driven collaboration and idea-sharing
                   via partnerships. Monotonectally unleash open-sources
                   leaderships of through unique markets.
@@ -223,7 +223,7 @@ const MissionInner2 = () => {
                     alt='Icon'
                   />
                 </div>
-                <p className='font-Nunito text-TextColor2-0 flex-1 -mt-1 max-w-[484px] w-full'>
+                <p className='font-OpenSans text-TextColor2-0 flex-1 -mt-1 max-w-[484px] w-full'>
                   We believe that technology should not only be powerful but
                   also in intuitive and user-friendly, and our offerings reflect
                   that philosophy of a culture of continuous learning and
@@ -238,7 +238,7 @@ const MissionInner2 = () => {
                     alt='Icon'
                   />
                 </div>
-                <p className='font-Nunito text-TextColor2-0 flex-1 -mt-1 max-w-[488px] w-full'>
+                <p className='font-OpenSans text-TextColor2-0 flex-1 -mt-1 max-w-[488px] w-full'>
                   Sustainability is also at the heart of our mission. We
                   recognize there environmental and societal impacts of
                   technology, and we are can to ensuring that our products and

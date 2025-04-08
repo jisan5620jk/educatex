@@ -48,7 +48,7 @@ const About = () => {
       <div className='Container'>
         <div className='flex flex-col lg:flex-row lg:items-center justify-start lg:justify-between md:gap-8 lg:gap-0 border-b border-white border-opacity-10 mb-10 pb-7'>
           <div>
-            <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+            <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
                 src={titleShape}
                 draggable={false}
@@ -57,13 +57,13 @@ const About = () => {
               />{' '}
               About Us
             </h5>
-            <h1 className='font-Rajdhani font-bold text-[40px] leading-[42px] sm:text-[50px] sm:leading-[52px] md:text-[60px] md:leading-[72px] lg:text-[60px] lg:leading-[62px] xl:text-[70px] xl:leading-[72px] 2xl:text-[80px] 2xl:leading-[82px] text-white mt-[14px] mb-4'>
+            <h1 className='font-Outfit font-bold text-[40px] leading-[42px] sm:text-[50px] sm:leading-[52px] md:text-[60px] md:leading-[72px] lg:text-[60px] lg:leading-[62px] xl:text-[70px] xl:leading-[72px] 2xl:text-[80px] 2xl:leading-[82px] text-white mt-[14px] mb-4'>
               Company Area
             </h1>
           </div>
           <div className='grid grid-cols-2 items-center gap-8'>
             <div className='flex flex-col items-center'>
-              <div className='counter-text-dark font-Rajdhani font-bold text-transparent text-5xl md:text-[90px] leading-[90px] flex items-center'>
+              <div className='counter-text-dark font-Outfit font-bold text-transparent text-5xl md:text-[90px] leading-[90px] flex items-center'>
                 <OnScrollCounter
                   start={0}
                   end={97}
@@ -72,13 +72,13 @@ const About = () => {
                 <h1>%</h1>
               </div>
               <div>
-                <p className='font-Nunito text-center sm:text-left text-white text-opacity-60 -mt-2'>
+                <p className='font-OpenSans text-center sm:text-left text-white text-opacity-60 -mt-2'>
                   Assesment & Analysis
                 </p>
               </div>
             </div>
             <div className='flex flex-col items-center'>
-              <div className='counter-text-dark font-Rajdhani font-bold text-transparent text-5xl md:text-[90px] leading-[90px] flex items-center'>
+              <div className='counter-text-dark font-Outfit font-bold text-transparent text-5xl md:text-[90px] leading-[90px] flex items-center'>
                 <OnScrollCounter
                   start={0}
                   end={130}
@@ -87,7 +87,7 @@ const About = () => {
                 <h1>+</h1>
               </div>
               <div>
-                <p className='font-Nunito text-center sm:text-left text-white text-opacity-60 -mt-2'>
+                <p className='font-OpenSans text-center sm:text-left text-white text-opacity-60 -mt-2'>
                   High Expert Technicians
                 </p>
               </div>
@@ -162,7 +162,7 @@ const About = () => {
                   alt='Icon'
                 />
               </div>
-              <h4 className='font-Rajdhani font-semibold text-2xl text-white mt-10 mb-4'>
+              <h4 className='font-Outfit font-semibold text-2xl text-white mt-10 mb-4'>
                 Secure Your House
                 <br />
                 Office Building And
@@ -171,7 +171,7 @@ const About = () => {
               </h4>
               <Link
                 to={'/contact'}
-                className='flex items-center justify-start gap-2 font-Rajdhani font-semibold text-lg text-white uppercase'
+                className='flex items-center justify-start gap-2 font-Outfit font-semibold text-lg text-white uppercase'
               >
                 Contact Us
                 <GoArrowRight size={22} />
@@ -179,14 +179,14 @@ const About = () => {
             </div>
           </div>
           <div className='relative'>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[38px] 2xl:leading-[48px] text-white mt-[14px] mb-6'>
+            <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[38px] 2xl:leading-[48px] text-white mt-[14px] mb-6'>
               Discover Our Security Story
             </h1>
             <ul className='flex items-center gap-10 border-b border-white border-opacity-10 pb-3 mb-8'>
               {tabs.map((tab, index) => (
                 <li
                   key={index}
-                  className={`mission-vision-tab-btn font-Rajdhani font-semibold text-[22px] text-white cursor-pointer relative z-10 ${
+                  className={`mission-vision-tab-btn font-Outfit font-semibold text-[22px] text-white cursor-pointer relative z-10 ${
                     activeIndex === index ? 'active' : ''
                   }`}
                   onClick={() => setActiveIndex(index)}
@@ -202,7 +202,7 @@ const About = () => {
                   activeIndex === index ? 'active' : ''
                 }`}
               >
-                <p className='font-Nunito text-white opacity-70'>
+                <p className='font-OpenSans text-white opacity-70'>
                   {tab.content}
                 </p>
               </div>
@@ -213,7 +213,7 @@ const About = () => {
                   <div className='size-7 rounded-full bg-white bg-opacity-5 flex items-center justify-center border border-white border-opacity-10 text-PrimaryColor-0'>
                     <FaCheck size={16} />
                   </div>
-                  <h5 className='flex-1 font-Rajdhani font-semibold text-white text-lg'>
+                  <h5 className='flex-1 font-Outfit font-semibold text-white text-lg'>
                     High-Definition Video Quality
                   </h5>
                 </div>
@@ -223,7 +223,7 @@ const About = () => {
                   <div className='size-7 rounded-full bg-white bg-opacity-5 flex items-center justify-center border border-white border-opacity-10 text-PrimaryColor-0'>
                     <FaCheck size={16} />
                   </div>
-                  <h5 className='flex-1 font-Rajdhani font-semibold text-white text-lg'>
+                  <h5 className='flex-1 font-Outfit font-semibold text-white text-lg'>
                     Remote Access & Control
                   </h5>
                 </div>
@@ -233,7 +233,7 @@ const About = () => {
                   <div className='size-7 rounded-full bg-white bg-opacity-5 flex items-center justify-center border border-white border-opacity-10 text-PrimaryColor-0'>
                     <FaCheck size={16} />
                   </div>
-                  <h5 className='flex-1 font-Rajdhani font-semibold text-white text-lg'>
+                  <h5 className='flex-1 font-Outfit font-semibold text-white text-lg'>
                     Night Vision Technology
                   </h5>
                 </div>
@@ -243,7 +243,7 @@ const About = () => {
                   <div className='size-7 rounded-full bg-white bg-opacity-5 flex items-center justify-center border border-white border-opacity-10 text-PrimaryColor-0'>
                     <FaCheck size={16} />
                   </div>
-                  <h5 className='flex-1 font-Rajdhani font-semibold text-white text-lg'>
+                  <h5 className='flex-1 font-Outfit font-semibold text-white text-lg'>
                     6 Years Warranty
                   </h5>
                 </div>

@@ -30,22 +30,22 @@ const About = () => {
               <div className='flex items-center justify-center text-white text-3xl sm:text-[40px]'>
                 <AiOutlineRise />
               </div>
-              <div className='text-2xl md:text-[42px] font-semibold font-Rajdhani text-white flex items-center justify-center'>
-                <h2 className=' font-Rajdhani'>+</h2>
+              <div className='text-2xl md:text-[42px] font-semibold font-Outfit text-white flex items-center justify-center'>
+                <h2 className=' font-Outfit'>+</h2>
                 <OnScrollCounter
                   start={0}
                   end={300}
                   duration={3000}
                 />
-                <h2 className=' font-Rajdhani'>%</h2>
+                <h2 className=' font-Outfit'>%</h2>
               </div>
-              <h6 className='font-Nunito text-sm md:text-lg text-white'>
+              <h6 className='font-OpenSans text-sm md:text-lg text-white'>
                 Growing Organic Traffics
               </h6>
             </div>
           </div>
           <div className='relative'>
-            <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+            <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
                 src={titleShape}
                 draggable={false}
@@ -53,13 +53,13 @@ const About = () => {
               />{' '}
               About Us
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+            <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
               Transform Your Website into a<br />
               Revenue-Generating Machine
               <br />
               Achieve Online Success
             </h1>
-            <p className='font-Nunito text-TextColor2-0 pb-7'>
+            <p className='font-OpenSans text-TextColor2-0 pb-7'>
               Competently leverage existing top-line bandwidth vis-a-vis
               client-centric supply chains. Enthusiastically maximize cost
               effective technologies
@@ -74,7 +74,7 @@ const About = () => {
                       alt='Icon'
                     />
                   </div>
-                  <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] leading-[28px] text-HeadingColor-0'>
+                  <h5 className='flex-1 font-Outfit font-semibold text-xl md:text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] leading-[28px] text-HeadingColor-0'>
                     Real time Performance Report send
                   </h5>
                 </li>
@@ -86,7 +86,7 @@ const About = () => {
                       alt='Icon2'
                     />
                   </div>
-                  <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] leading-[28px] text-HeadingColor-0'>
+                  <h5 className='flex-1 font-Outfit font-semibold text-xl md:text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] leading-[28px] text-HeadingColor-0'>
                     User Friendly SEO Dashboard
                   </h5>
                 </li>
@@ -98,7 +98,7 @@ const About = () => {
                       alt='Icon3'
                     />
                   </div>
-                  <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] leading-[28px] text-HeadingColor-0'>
+                  <h5 className='flex-1 font-Outfit font-semibold text-xl md:text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] leading-[28px] text-HeadingColor-0'>
                     Local SEO & Business Integrations
                   </h5>
                 </li>
@@ -110,7 +110,7 @@ const About = () => {
                       alt='Icon4'
                     />
                   </div>
-                  <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] leading-[28px] text-HeadingColor-0'>
+                  <h5 className='flex-1 font-Outfit font-semibold text-xl md:text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] leading-[28px] text-HeadingColor-0'>
                     Social Media Integration and Sharing
                   </h5>
                 </li>

@@ -11,7 +11,7 @@ const Banner = () => {
       <div className='Container'>
         <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0'>
           <div className='relative'>
-            <h5 className='font-Rajdhani text-white text-lg sm:text-xl font-semibold flex items-center gap-2 mb-4 md:mb-7 uppercase'>
+            <h5 className='font-Outfit text-white text-lg sm:text-xl font-semibold flex items-center gap-2 mb-4 md:mb-7 uppercase'>
               <img
                 src={subTilteShape}
                 alt='Shape'
@@ -20,12 +20,12 @@ const Banner = () => {
               />
               The Best Software Agency
             </h5>
-            <h1 className='font-Rajdhani font-bold uppercase text-white -tracking-[2px] text-[30px] leading-[36px] sm:text-[46px] sm:leading-[56px] md:text-[68x] lg:text-[46px] xl:text-[54px] xl:leading-[64px] 2xl:text-[69.8px] 2xl:leading-[70px]'>
+            <h1 className='font-Outfit font-bold uppercase text-white -tracking-[2px] text-[30px] leading-[36px] sm:text-[46px] sm:leading-[56px] md:text-[68x] lg:text-[46px] xl:text-[54px] xl:leading-[64px] 2xl:text-[69.8px] 2xl:leading-[70px]'>
               providing software
               <br /> solutions for your
               <br /> any business
             </h1>
-            <p className='font-Nunito sm:text-xl lg:text-lg xl:text-xl text-white opacity-70 mb-9 mt-3'>
+            <p className='font-OpenSans sm:text-xl lg:text-lg xl:text-xl text-white opacity-70 mb-9 mt-3'>
               Continually formulate B2C partnerships orthogonal
               <br className='hidden lg:block xl:hidden' /> software
               <br className='hidden md:block lg:hidden 2xl:block' />{' '}

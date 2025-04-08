@@ -12,7 +12,7 @@ const TestimonialCard = ({
       <div className='relative text-left bg-BodyBgDark-0 px-5 sm:px-9 py-4 sm:py-8 mb-5 rounded-lg'>
         <div className='flex items-center justify-between mb-7'>
           <div>
-            <h5 className='font-Rajdhani text-2xl text-white font-semibold'>
+            <h5 className='font-Outfit text-2xl text-white font-semibold'>
               {testiTitle}
             </h5>
             <ul className='flex items-center mt-[6px]'>
@@ -31,7 +31,7 @@ const TestimonialCard = ({
             />
           </div>
         </div>
-        <p className='font-Nunito text-TextColor-0'>{testiDesc}</p>
+        <p className='font-OpenSans text-TextColor-0'>{testiDesc}</p>
       </div>
       <div className='flex items-center gap-3'>
         <div>
@@ -41,7 +41,7 @@ const TestimonialCard = ({
             alt='Image'
           />
         </div>
-        <h5 className='font-Rajdhani font-semibold inline-block text-white text-xl relative'>
+        <h5 className='font-Outfit font-semibold inline-block text-white text-xl relative'>
           {testiName}
         </h5>
       </div>

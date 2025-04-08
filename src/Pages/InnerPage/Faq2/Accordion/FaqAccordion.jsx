@@ -57,7 +57,7 @@ const FaqAccordion = () => {
         <div className='grid grid-cols-1 lg:grid-cols-2 items-center gap-12 relative z-10'>
           <div>
             <div>
-              <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+              <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
                 <img
                   src={titleShape}
                   draggable={false}
@@ -65,7 +65,7 @@ const FaqAccordion = () => {
                 />{' '}
                 WHAT WE PROVIDE
               </h5>
-              <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4 sm:mb-8'>
+              <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4 sm:mb-8'>
                 Frequently Asked Questions <br /> and Answers
               </h1>
             </div>
@@ -84,7 +84,7 @@ const FaqAccordion = () => {
                       }`}
                       onClick={() => handleToggle(index)}
                     >
-                      <h5 className='font-Rajdhani font-semibold text-lg sm:text-2xl lg:text-xl xl:text-2xl text-HeadingColor-0'>
+                      <h5 className='font-Outfit font-semibold text-lg sm:text-2xl lg:text-xl xl:text-2xl text-HeadingColor-0'>
                         {FaqItem.itemTitle}
                       </h5>
                       <div className='relative flex items-center'>
@@ -113,7 +113,7 @@ const FaqAccordion = () => {
                       className='max-h-0 overflow-hidden transition-all duration-500 gap-8'
                     >
                       <div className='border-t border-HeadingColor-0 border-opacity-10 py-7'>
-                        <p className='font-Nunito text-TextColor2-0 max-w-[586px] w-full'>
+                        <p className='font-OpenSans text-TextColor2-0 max-w-[586px] w-full'>
                           {FaqItem.faqItemDesc}
                         </p>
                       </div>

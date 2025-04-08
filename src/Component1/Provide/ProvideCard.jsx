@@ -20,17 +20,17 @@ const ProvideCard = ({
             className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1] group-hover:animate-wobble_vertical'
           />
         </div>
-        <h4 className='flex-1 font-Rajdhani leading-6 sm:leading-7 font-semibold text-SecondaryColor-0 text-lg sm:text-2xl md:text-xl lg:text-[19px] 2xl:text-2xl'>
+        <h4 className='flex-1 font-Outfit leading-6 sm:leading-7 font-semibold text-SecondaryColor-0 text-lg sm:text-2xl md:text-xl lg:text-[19px] 2xl:text-2xl'>
           {provideBoxTitle}
         </h4>
       </div>
-      <p className='font-Nunito text-TextColor2-0 mt-5 mb-8'>
+      <p className='font-OpenSans text-TextColor2-0 mt-5 mb-8'>
         {provideBoxDesc}
       </p>
       <div className='inline-block'>
         <Link
           to={provideBoxBtnUrl}
-          className='bg-BodyBg2-0 px-8 py-[9px] text-lg rounded-full flex items-center gap-2 font-Rajdhani font-semibold relative z-10 overflow-hidden transition-all duration-500 group-hover:text-white before:absolute before:top-0 before:right-0 before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:ease-linear before:-z-10 group-hover:before:w-full group-hover:before:left-0'
+          className='bg-BodyBg2-0 px-8 py-[9px] text-lg rounded-full flex items-center gap-2 font-Outfit font-semibold relative z-10 overflow-hidden transition-all duration-500 group-hover:text-white before:absolute before:top-0 before:right-0 before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:ease-linear before:-z-10 group-hover:before:w-full group-hover:before:left-0'
         >
           {provideBoxBtnText}
           {provideBoxBtnIcon}

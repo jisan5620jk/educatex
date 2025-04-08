@@ -3,9 +3,9 @@ import {
   FaLinkedinIn,
   FaPinterestP,
   FaXTwitter,
-} from "react-icons/fa6";
-import { Link } from "react-router-dom";
-import contactFormImg from "/images/contact-form-img.png";
+} from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
+import contactFormImg from '/images/contact-form-img.png';
 import titleShape from '/images/sub-title-shape.png';
 
 const ContactForm = () => {
@@ -19,10 +19,10 @@ const ContactForm = () => {
             draggable='false'
           />
           <div className='bg-gradient-to-br to-PrimaryColor2-0 from-PrimaryColor3-0 pl-9 pt-7 pb-9'>
-            <h4 className='font-Rajdhani font-semibold text-xl sm:text-[28px] leading-[34px] text-white'>
+            <h4 className='font-Outfit font-semibold text-xl sm:text-[28px] leading-[34px] text-white'>
               Feel Free to Contact & Hire <br /> Us for Your Solution
             </h4>
-            <h6 className='font-Rajdhani font-semibold text-xl text-white mt-6 mb-5'>
+            <h6 className='font-Outfit font-semibold text-xl text-white mt-6 mb-5'>
               Follow US :
             </h6>
             <ul className='flex items-center gap-3'>
@@ -58,7 +58,7 @@ const ContactForm = () => {
           </div>
         </div>
         <div className='col-span-2 lg:pl-[120px]'>
-          <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+          <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
             <img
               src={titleShape}
               draggable={false}
@@ -66,7 +66,7 @@ const ContactForm = () => {
             />{' '}
             Have Any Consultation....?
           </h5>
-          <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-8'>
+          <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-8'>
             Get In Touch Your Nearest Local <br />
             Business Sales Executive
           </h1>

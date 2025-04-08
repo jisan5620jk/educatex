@@ -76,7 +76,7 @@ const Blog = () => {
     <section className='py-16 md:py-20 lg:py-28 bg-BodyBgDark3-0'>
       <div className='Container'>
         <div className='text-center'>
-          <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-white uppercase'>
+          <h5 className='flex items-center justify-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-white uppercase'>
             <img
               src={titleShape}
               draggable={false}
@@ -91,7 +91,7 @@ const Blog = () => {
               className='rotate-180 brightness-0 invert-[1]'
             />
           </h5>
-          <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[38px] md:leading-[48px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
+          <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[38px] md:leading-[48px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
             Ready Our Latest Insights from
             <br /> Our Blog Posts
           </h1>

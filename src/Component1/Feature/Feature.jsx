@@ -56,7 +56,7 @@ const Feature = () => {
     <section className='bg-[url("/images/servicer-bg.jpg")] bg-cover bg-center bg-no-repeat pt-28 sm:pt-32 lg:pt-[152px] pb-16 lg:pb-28 -mt-12 lg:-mt-9'>
       <div className='Container '>
         <div className='relative text-center'>
-          <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-white uppercase'>
+          <h5 className='flex items-center justify-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-white uppercase'>
             <img
               src={titleShape}
               draggable={false}
@@ -71,7 +71,7 @@ const Feature = () => {
               className='rotate-180 brightness-0 invert-[1]'
             />
           </h5>
-          <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
+          <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
             Grow Your Business in a short Time
           </h1>
           <div className='absolute top-0 right-0 2xl:-right-12 animate-bounce hidden lg:block'>

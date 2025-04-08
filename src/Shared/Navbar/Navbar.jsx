@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom';
-import Logo from '/images/main-logo.png';
-import Logo2 from '/images/logo2.png';
-import Logo3 from '/images/logo.png';
+import Logo from '/images/logo.png';
 import './navbar.css';
 import { useEffect, useRef } from 'react';
 import {
@@ -185,7 +183,7 @@ const Navbar = () => {
           <div className='offcanvas_logo'>
             <Link to={'/'}>
               <img
-                src={Logo2}
+                src={Logo}
                 draggable='false'
               />
             </Link>
@@ -267,7 +265,7 @@ const Navbar = () => {
               <div className='header-logo lg:hidden'>
                 <Link to={'/'}>
                   <img
-                    src={Logo3}
+                    src={Logo}
                     draggable='false'
                   />
                 </Link>
@@ -528,7 +526,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
       <div className='sidebar-content'>
         <div
           ref={sidebarContentRef}
@@ -545,7 +542,7 @@ const Navbar = () => {
           <div className='sidebar_logo'>
             <Link to={'/'}>
               <img
-                src={Logo2}
+                src={Logo}
                 draggable='false'
               />
             </Link>

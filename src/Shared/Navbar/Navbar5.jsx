@@ -268,7 +268,7 @@ const Navbar5 = () => {
           <div className='size-[16px] rounded-full flex items-center justify-center text-BodyBgDark4-0 bg-white'>
             <IoMdStar size={14} />
           </div>
-          <p className='flex-1 font-Nunito text-white text-opacity-80'>
+          <p className='flex-1 font-OpenSans text-white text-opacity-80'>
             Continually formulate B2C partnerships orthogonal software
           </p>
         </div>

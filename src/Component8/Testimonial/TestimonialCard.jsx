@@ -17,7 +17,7 @@ const TestimonialCard = ({
           src={paginationShape}
           draggable={false}
           alt='Shape'
-          className="w-36"
+          className='w-36'
         />
       </div>
       <div className='flex gap-1 items-center mb-6'>
@@ -35,11 +35,13 @@ const TestimonialCard = ({
           <li className='text-orange-400 text-[22px]'>{testiRatingIcon}</li>
           <li className='text-orange-400 text-[22px]'>{testiRatingIcon}</li>
         </ul>
-        <h5 className='font-Rajdhani font-semibold text-xl text-HeadingColor-0'>
+        <h5 className='font-Outfit font-semibold text-xl text-HeadingColor-0'>
           {testRatingText}
         </h5>
       </div>
-      <p className='font-Nunito text-HeadingColor-0 text-[17px] sm:text-xl md:text-[22px]'>{testiDesc}</p>
+      <p className='font-OpenSans text-HeadingColor-0 text-[17px] sm:text-xl md:text-[22px]'>
+        {testiDesc}
+      </p>
 
       <div className='flex justify-between flex-wrap items-center mt-5 sm:mt-10 md:mt-[60px]'>
         <div className='flex items-center gap-5'>
@@ -51,13 +53,15 @@ const TestimonialCard = ({
             />
           </div>
           <div>
-            <h5 className='font-Rajdhani font-semibold inline-block text-HeadingColor-0 text-2xl relative'>
+            <h5 className='font-Outfit font-semibold inline-block text-HeadingColor-0 text-2xl relative'>
               {testiName}
             </h5>
-            <p className='font-Nunito text-TextColor2-0 mt-[2px]'>{testiDesignation}</p>
+            <p className='font-OpenSans text-TextColor2-0 mt-[2px]'>
+              {testiDesignation}
+            </p>
           </div>
         </div>
-        <div className="hidden sm:block">
+        <div className='hidden sm:block'>
           <img
             src={testiShape}
             draggable={false}

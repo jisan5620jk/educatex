@@ -13,12 +13,12 @@ const WorkCard = ({ workImg, workBoxLink, workSubTitle, workTitle }) => {
         />
         <div className='absolute z-10 w-full max-w-[372px] left-0 sm:left-[60px] md:left-0 3xl:left-[60px] px-2 sm:px-0 md:px-4 2xl:pl-10 2xl:pr-0 3xl:px-0 -bottom-full opacity-0 transition-all duration-500 group-hover:bottom-0 group-hover:opacity-100'>
           <div className='bg-white rounded-t-[10px] pt-4 sm:pt-8 pb-3 sm:pb-[26px] px-4 md:px-10 relative'>
-            <h5 className='font-Rajdhani font-semibold text-lg uppercase text-PrimaryColor-0 inline-block border border-SecondaryColor-0 border-opacity-20 rounded-full px-[22px] py-[2px] mb-[10px]'>
+            <h5 className='font-Outfit font-semibold text-lg uppercase text-PrimaryColor-0 inline-block border border-SecondaryColor-0 border-opacity-20 rounded-full px-[22px] py-[2px] mb-[10px]'>
               {workSubTitle}
             </h5>
             <Link
               to={workBoxLink}
-              className='font-Rajdhani block font-semibold text-xl sm:text-2xl md:text-[24px] xl:text-2xl 2xl:text-[26px] leading-8 text-HeadingColor-0'
+              className='font-Outfit block font-semibold text-xl sm:text-2xl md:text-[24px] xl:text-2xl 2xl:text-[26px] leading-8 text-HeadingColor-0'
             >
               {workTitle}
             </Link>

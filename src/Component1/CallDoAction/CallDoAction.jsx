@@ -16,7 +16,7 @@ const CallDoAction = () => {
               />
             </div>
             <div>
-              <h1 className='font-Rajdhani font-bold text-lg leading-6 sm:text-[34px] sm:leading-[44px] md:text-[38px] md:leading-[48px] lg:text-[30px] lg:leading-[40px] xl:text-[34px] xl:leading-[40px] text-white mt-[14px] mb-4'>
+              <h1 className='font-Outfit font-bold text-lg leading-6 sm:text-[34px] sm:leading-[44px] md:text-[38px] md:leading-[48px] lg:text-[30px] lg:leading-[40px] xl:text-[34px] xl:leading-[40px] text-white mt-[14px] mb-4'>
                 Need SEO Service for growing your <br /> Business? Just Call Us.
               </h1>
             </div>
@@ -31,10 +31,10 @@ const CallDoAction = () => {
               />
             </div>
             <div>
-              <h6 className='font-Rajdhani text-white'>Call Us Anytime</h6>
+              <h6 className='font-Outfit text-white'>Call Us Anytime</h6>
               <a
                 href='tel:+001234567890'
-                className='font-Rajdhani text-white text-lg sm:text-[26px] sm:leading-10 font-medium'
+                className='font-Outfit text-white text-lg sm:text-[26px] sm:leading-10 font-medium'
               >
                 +00 123 (4567) 890
               </a>

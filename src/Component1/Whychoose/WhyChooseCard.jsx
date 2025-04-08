@@ -17,10 +17,10 @@ const WhyChooseCard = ({
           />
         </div>
         <div className='flex-1'>
-          <h4 className='font-Rajdhani why-choose-title leading-7 font-semibold text-HeadingColor-0 text-lg sm:text-xl md:text-2xl transition-all duration-500 group-hover:text-white'>
+          <h4 className='font-Outfit why-choose-title leading-7 font-semibold text-HeadingColor-0 text-lg sm:text-xl md:text-2xl transition-all duration-500 group-hover:text-white'>
             {whyChooseBoxTitle}
           </h4>
-          <p className='font-Nunito why-choose-desc text-sm sm:text-base text-TextColor2-0 transition-all duration-500 group-hover:text-white mt-1'>
+          <p className='font-OpenSans why-choose-desc text-sm sm:text-base text-TextColor2-0 transition-all duration-500 group-hover:text-white mt-1'>
             {whyChooseBoxDesc}
           </p>
         </div>

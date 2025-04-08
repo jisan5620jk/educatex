@@ -18,7 +18,7 @@ const WhyChooseUs = () => {
             />
           </div>
           <div>
-            <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+            <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
                 src={titleShape}
                 draggable={false}
@@ -26,17 +26,17 @@ const WhyChooseUs = () => {
               />{' '}
               Why Choose Us
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-5'>
+            <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-5'>
               Transforming Digital Future
               <br /> With Tailored IT Solutions Can
               <br /> Rely On Before That Final
             </h1>
-            <p className='font-Nunito text-TextColor2-0 pb-5 max-w-[530px] w-full'>
+            <p className='font-OpenSans text-TextColor2-0 pb-5 max-w-[530px] w-full'>
               Competently leverage existing top-line bandwidth vis vis client
               centric of chains. Enthusiastically maximize cost effective
               technologies TechVantage has the experience and tools to build.
             </p>
-            <p className='font-Nunito text-TextColor2-0 pb-10 max-w-[530px] w-full'>
+            <p className='font-OpenSans text-TextColor2-0 pb-10 max-w-[530px] w-full'>
               {`With DeepTech's comprehensive skillset and resources, we create,
               main tain, and optimize scalable IT solutions, giving you the
               freedom to concent rate on what matters most your business.`}
@@ -49,7 +49,7 @@ const WhyChooseUs = () => {
                 <button className='size-[64px] rounded-full bg-gradient-to-l to-PrimaryColor2-0 from-PrimaryColor3-0 text-white flex justify-center items-center'>
                   <FaPlay size={28} />
                 </button>
-                <span className='font-Rajdhani font-semibold text-lg text-PrimaryColor-0 underline underline-offset-4 uppercase'>
+                <span className='font-Outfit font-semibold text-lg text-PrimaryColor-0 underline underline-offset-4 uppercase'>
                   Play Video
                 </span>
               </div>
@@ -57,10 +57,10 @@ const WhyChooseUs = () => {
           </div>
         </div>
       </div>
-            <FsLightbox
-              toggler={toggler}
-              sources={['https://youtu.be/NKJ-6zCSk2E?si=XQUpq01QZ8hNXLdc']}
-            />
+      <FsLightbox
+        toggler={toggler}
+        sources={['https://youtu.be/NKJ-6zCSk2E?si=XQUpq01QZ8hNXLdc']}
+      />
     </section>
   );
 };

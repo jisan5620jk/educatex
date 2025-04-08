@@ -13,7 +13,7 @@ const Banner = () => {
       <div className='Container'>
         <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0'>
           <div className='relative'>
-            <h5 className='font-Rajdhani text-transparent bg-clip-text bg-gradient-to-r to-PrimaryColor2-0 from-PrimaryColor3-0 text-xl font-semibold flex items-center gap-2 mb-4 md:mb-7 uppercase'>
+            <h5 className='font-Outfit text-transparent bg-clip-text bg-gradient-to-r to-PrimaryColor2-0 from-PrimaryColor3-0 text-xl font-semibold flex items-center gap-2 mb-4 md:mb-7 uppercase'>
               <img
                 src={subTilteShape}
                 alt='Shape'
@@ -22,7 +22,7 @@ const Banner = () => {
               />
               Making Your Life Easier
             </h5>
-            <h1 className='font-Rajdhani font-bold uppercase text-HeadingColor-0 -tracking-[2px] text-[30px] leading-[36px] sm:text-[46px] sm:leading-[56px] md:text-[68x] lg:text-[46px] xl:text-[54px] xl:leading-[64px] 2xl:text-[65px] 2xl:leading-[68px]'>
+            <h1 className='font-Outfit font-bold uppercase text-HeadingColor-0 -tracking-[2px] text-[30px] leading-[36px] sm:text-[46px] sm:leading-[56px] md:text-[68x] lg:text-[46px] xl:text-[54px] xl:leading-[64px] 2xl:text-[65px] 2xl:leading-[68px]'>
               Empowering the Future
               <br />
               <span className='text-transparent bg-clip-text bg-gradient-to-r to-PrimaryColor2-0 from-PrimaryColor3-0'>
@@ -32,7 +32,7 @@ const Banner = () => {
               <br />
               top Challenges
             </h1>
-            <p className='font-Nunito sm:text-lg text-TextColor2-0 mb-9 mt-3'>
+            <p className='font-OpenSans sm:text-lg text-TextColor2-0 mb-9 mt-3'>
               Continually formulate B2C partnerships orthogonal software
               solutions
               <br className='hidden md:block lg:hidden 2xl:block' />{' '}
@@ -94,7 +94,7 @@ const Banner = () => {
       </div>
       <div className='absolute top-1/2 -left-24 hidden 3xl:block'>
         <div className='rotate-90 flex items-center gap-5'>
-          <h5 className='font-Rajdhani font-semibold text-xl text-HeadingColor-0 uppercase relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-[60px] before:w-[50px] before:h-[1px] before:bg-gradient-to-r before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:from-70%'>
+          <h5 className='font-Outfit font-semibold text-xl text-HeadingColor-0 uppercase relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-[60px] before:w-[50px] before:h-[1px] before:bg-gradient-to-r before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:from-70%'>
             Follow Us
           </h5>
           <ul className='flex items-center gap-3'>

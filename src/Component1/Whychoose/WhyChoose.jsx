@@ -47,7 +47,7 @@ const WhyChoose = () => {
         <div className='grid grid-cols-1 gap-10 lg:gap-0 lg:grid-cols-2'>
           <div>
             <div>
-              <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+              <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
                 <img
                   src={titleShape}
                   draggable={false}
@@ -55,7 +55,7 @@ const WhyChoose = () => {
                 />{' '}
                 WHY CHOOSE US?
               </h5>
-              <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+              <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
                 Why We’re Your Best Choice for
                 <br /> SEO Marketing Success
               </h1>
@@ -112,7 +112,7 @@ const WhyChoose = () => {
                     id='Search'
                     placeholder='www.yoursite.com'
                     required
-                    className='w-[520px] xl:w-[400px] 2xl:w-[520px] h-[65px] rounded-full text-xl font-medium border border-white px-10 py-3 outline-none text-HeadingColor-0 font-Rajdhani placeholder:text-HeadingColor-0 bg-white bg-opacity-10 backdrop-filter backdrop-blur-[5px]'
+                    className='w-[520px] xl:w-[400px] 2xl:w-[520px] h-[65px] rounded-full text-xl font-medium border border-white px-10 py-3 outline-none text-HeadingColor-0 font-Outfit placeholder:text-HeadingColor-0 bg-white bg-opacity-10 backdrop-filter backdrop-blur-[5px]'
                   />
                   <button
                     type='submit'

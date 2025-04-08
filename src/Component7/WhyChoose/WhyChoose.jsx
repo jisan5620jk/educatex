@@ -10,7 +10,7 @@ const WhyChoose = () => {
         <div className='grid grid-cols-1 gap-10 lg:gap-28 xl:gap-[190px] lg:grid-cols-2 items-end relative'>
           <div className='relative'>
             <div className='lg:absolute -bottom-[72px] -right-9'>
-              <div className='font-Rajdhani font-bold flex items-center text-white text-[50px] -tracking-wide'>
+              <div className='font-Outfit font-bold flex items-center text-white text-[50px] -tracking-wide'>
                 <OnScrollCounter
                   start={0}
                   end={10}
@@ -19,7 +19,7 @@ const WhyChoose = () => {
                 <h1>K+</h1>
               </div>
               <div>
-                <h5 className='font-Rajdhani font-semibold leading-7 text-[22px] text-white'>
+                <h5 className='font-Outfit font-semibold leading-7 text-[22px] text-white'>
                   OUR TOTAL FINISEHD
                   <br /> PROJECTS
                 </h5>
@@ -27,7 +27,7 @@ const WhyChoose = () => {
             </div>
           </div>
           <div>
-            <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+            <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
                 src={titleShape}
                 draggable={false}
@@ -36,7 +36,7 @@ const WhyChoose = () => {
               />{' '}
               Why Choose us?
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-9'>
+            <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-9'>
               Few Reason Why You Should
               <br /> Choose Our Services for Your
               <br /> Next Gen Business?
@@ -46,7 +46,7 @@ const WhyChoose = () => {
                 <div className='size-[28px] rounded-full flex items-center justify-center bg-white bg-opacity-10 text-white text-xl'>
                   <HiOutlineCheck />
                 </div>
-                <p className='flex-1 font-Nunito text-lg text-white text-opacity-70'>
+                <p className='flex-1 font-OpenSans text-lg text-white text-opacity-70'>
                   Globally underwhelm resource-leveling outsourcing
                 </p>
               </li>
@@ -54,7 +54,7 @@ const WhyChoose = () => {
                 <div className='size-[28px] rounded-full flex items-center justify-center bg-white bg-opacity-10 text-white text-xl'>
                   <HiOutlineCheck />
                 </div>
-                <p className='flex-1 font-Nunito text-lg text-white text-opacity-70'>
+                <p className='flex-1 font-OpenSans text-lg text-white text-opacity-70'>
                   Rapidiously transform vertical information whereas accurate
                   technologies. Uniquely predominate
                 </p>
@@ -63,7 +63,7 @@ const WhyChoose = () => {
                 <div className='size-[28px] rounded-full flex items-center justify-center bg-white bg-opacity-10 text-white text-xl'>
                   <HiOutlineCheck />
                 </div>
-                <p className='flex-1 font-Nunito text-lg text-white text-opacity-70'>
+                <p className='flex-1 font-OpenSans text-lg text-white text-opacity-70'>
                   Dynamically coordinate intuitive infomediaries on team
                 </p>
               </li>
@@ -71,7 +71,7 @@ const WhyChoose = () => {
                 <div className='size-[28px] rounded-full flex items-center justify-center bg-white bg-opacity-10 text-white text-xl'>
                   <HiOutlineCheck />
                 </div>
-                <p className='flex-1 font-Nunito text-lg text-white text-opacity-70'>
+                <p className='flex-1 font-OpenSans text-lg text-white text-opacity-70'>
                   Interactively optimize clicks-and-mortar vortals
                 </p>
               </li>

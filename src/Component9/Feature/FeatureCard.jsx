@@ -18,16 +18,16 @@ const FeatureCard = ({
           className='group-hover:animate-wobble_vertical'
         />
       </div>
-      <h4 className='font-Rajdhani font-semibold text-2xl sm:text-[26px] lg:text-xl xl:text-2xl 2xl:text-[26px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-7 mb-3'>
+      <h4 className='font-Outfit font-semibold text-2xl sm:text-[26px] lg:text-xl xl:text-2xl 2xl:text-[26px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-7 mb-3'>
         {featureTitle}
       </h4>
-      <p className='font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white group-hover:text-opacity-70'>
+      <p className='font-OpenSans text-TextColor2-0 transition-all duration-500 group-hover:text-white group-hover:text-opacity-70'>
         {featureDesc}
       </p>
       <div className='inline-block mt-[30px]'>
         <Link
           to={featureUrl}
-          className='flex items-center gap-2 bg-BodyBg-0 px-8 py-[7px] rounded-3xl text-HeadingColor-0 font-Rajdhani overflow-hidden transition-all duration-500 group-hover:text-white font-semibold text-lg relative z-10 before:absolute before:bottom-0 before:left-0 before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-full before:h-0 before:transition-all before:rounded-md before:duration-300 before:-z-10 before:ease-linear group-hover:before:h-full group-hover:before:top-0'
+          className='flex items-center gap-2 bg-BodyBg-0 px-8 py-[7px] rounded-3xl text-HeadingColor-0 font-Outfit overflow-hidden transition-all duration-500 group-hover:text-white font-semibold text-lg relative z-10 before:absolute before:bottom-0 before:left-0 before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-full before:h-0 before:transition-all before:rounded-md before:duration-300 before:-z-10 before:ease-linear group-hover:before:h-full group-hover:before:top-0'
         >
           {featureBtnText}
           {featureBtnIcon}

@@ -20,13 +20,13 @@ const LatestWorkCard = ({
           />
         </div>
         <div className='px-4 sm:px-[38px] md:px-8 xl:px-[38px] 2xl:px-8 3xl:px-[38px] pb-7 pt-5 sm:pt-2'>
-          <h6 className='text-white bg-white bg-opacity-5 font-Rajdhani font-medium uppercase text-sm rounded-full px-[26px] py-[7px] inline-block'>
+          <h6 className='text-white bg-white bg-opacity-5 font-Outfit font-medium uppercase text-sm rounded-full px-[26px] py-[7px] inline-block'>
             {latestWorkSubTitle}
           </h6>
           <div className='inline-block mt-4'>
             <Link
               to={latestWorkCardURL}
-              className='text-white text-xl sm:text-2xl md:text-xl lg:text-2xl xl:text-xl 2xl:text-lg 3xl:text-2xl font-Rajdhani font-medium'
+              className='text-white text-xl sm:text-2xl md:text-xl lg:text-2xl xl:text-xl 2xl:text-lg 3xl:text-2xl font-Outfit font-medium'
             >
               {latestWorkTitle}
             </Link>
@@ -34,7 +34,7 @@ const LatestWorkCard = ({
           <div className='inline-block mt-5'>
             <Link
               to={latestWorkCardURL}
-              className='latest-work-btn flex items-center gap-2 text-white font-Rajdhani font-medium text-lg uppercase'
+              className='latest-work-btn flex items-center gap-2 text-white font-Outfit font-medium text-lg uppercase'
             >
               {latestWorkBtnText}
               <span className='icon-style'>

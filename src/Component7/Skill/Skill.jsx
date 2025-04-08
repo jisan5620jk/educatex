@@ -16,7 +16,7 @@ const Skill = () => {
             />
           </div>
           <div>
-            <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+            <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
                 src={titleShape}
                 draggable={false}
@@ -24,12 +24,12 @@ const Skill = () => {
               />{' '}
               SOFT SKILLS
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+            <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
               Next Generation Depends on
               <br />
               Digital Software’s
             </h1>
-            <p className='font-Nunito text-TextColor2-0'>
+            <p className='font-OpenSans text-TextColor2-0'>
               Competently leverage existing top-line bandwidth vis-a-vis
               client-centric supply
               <br className='hidden md:block lg:hidden 2xl:block' /> chains.
@@ -37,7 +37,7 @@ const Skill = () => {
             </p>
             <div className='space-y-7 mt-6'>
               <div>
-                <h5 className='font-Rajdhani font-semibold text-xl text-HeadingColor-0 relative z-20 mb-[9px]'>
+                <h5 className='font-Outfit font-semibold text-xl text-HeadingColor-0 relative z-20 mb-[9px]'>
                   Database Design
                 </h5>
                 <div className='relative z-10 skill-progress'>
@@ -65,7 +65,7 @@ const Skill = () => {
                 </div>
               </div>
               <div>
-                <h5 className='font-Rajdhani font-semibold text-xl text-HeadingColor-0 relative z-20 mb-[9px]'>
+                <h5 className='font-Outfit font-semibold text-xl text-HeadingColor-0 relative z-20 mb-[9px]'>
                   App Development
                 </h5>
                 <div className='relative z-10 skill-progress'>
@@ -93,7 +93,7 @@ const Skill = () => {
                 </div>
               </div>
               <div>
-                <h5 className='font-Rajdhani font-semibold text-xl text-HeadingColor-0 relative z-20 mb-[9px]'>
+                <h5 className='font-Outfit font-semibold text-xl text-HeadingColor-0 relative z-20 mb-[9px]'>
                   UI/UX Design
                 </h5>
                 <div className='relative z-10 skill-progress'>

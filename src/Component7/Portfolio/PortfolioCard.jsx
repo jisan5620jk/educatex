@@ -29,11 +29,11 @@ const PortfolioCard = ({
             />
           </div>
           <Link to={portfolioUrl}>
-            <button className='font-Rajdhani font-bold text-xl sm:text-[26px] lg:text-2xl xl:text-2xl 2xl:text-[26px] text-HeadingColor-0 text-left max-w-[220px] w-full transition-all duration-500 group-hover:text-PrimaryColor-0'>
+            <button className='font-Outfit font-bold text-xl sm:text-[26px] lg:text-2xl xl:text-2xl 2xl:text-[26px] text-HeadingColor-0 text-left max-w-[220px] w-full transition-all duration-500 group-hover:text-PrimaryColor-0'>
               {portfolioTitle}
             </button>
           </Link>
-          <p className='font-Nunito text-TextColor2-0 mt-2 pb-5 max-w-[260px] w-full transition-all duration-500 group-hover:pb-10'>
+          <p className='font-OpenSans text-TextColor2-0 mt-2 pb-5 max-w-[260px] w-full transition-all duration-500 group-hover:pb-10'>
             {portfolioDesc}
           </p>
           <Link

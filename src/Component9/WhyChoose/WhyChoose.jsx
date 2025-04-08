@@ -35,7 +35,7 @@ const WhyChoose = () => {
             />
           </div>
           <div>
-            <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+            <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
                 src={titleShape}
                 draggable={false}
@@ -43,12 +43,12 @@ const WhyChoose = () => {
               />{' '}
               Why Choose us?
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+            <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
               Advanced Machine Learning
               <br />
               for Robotic Vision
             </h1>
-            <p className='font-Nunito text-TextColor2-0'>
+            <p className='font-OpenSans text-TextColor2-0'>
               Competently leverage existing top-line bandwidth vis-a-vis
               client-centric supply
               <br className='hidden md:block lg:hidden 2xl:block' /> chains.
@@ -56,7 +56,7 @@ const WhyChoose = () => {
             </p>
             <div className='-space-y-2'>
               <div>
-                <h5 className='font-Rajdhani font-semibold text-lg text-HeadingColor-0 uppercase ml-7 translate-y-[40px] relative z-20'>
+                <h5 className='font-Outfit font-semibold text-lg text-HeadingColor-0 uppercase ml-7 translate-y-[40px] relative z-20'>
                   Data Science
                 </h5>
                 <div className='relative z-10 why-choose-progress1'>
@@ -84,7 +84,7 @@ const WhyChoose = () => {
                 </div>
               </div>
               <div>
-                <h5 className='font-Rajdhani font-semibold text-lg text-HeadingColor-0 uppercase ml-7 translate-y-[40px] relative z-20'>
+                <h5 className='font-Outfit font-semibold text-lg text-HeadingColor-0 uppercase ml-7 translate-y-[40px] relative z-20'>
                   MACHINE LEARNING
                 </h5>
                 <div className='relative z-10 why-choose-progress2'>
@@ -112,7 +112,7 @@ const WhyChoose = () => {
                 </div>
               </div>
               <div>
-                <h5 className='font-Rajdhani font-semibold text-lg text-HeadingColor-0 uppercase ml-7 translate-y-[40px] relative z-20'>
+                <h5 className='font-Outfit font-semibold text-lg text-HeadingColor-0 uppercase ml-7 translate-y-[40px] relative z-20'>
                   ARTIFICIAL INTELLIGENCE
                 </h5>
                 <div className='relative z-10 why-choose-progress3'>
