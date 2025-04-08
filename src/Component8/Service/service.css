@@ -1,0 +1,17 @@
+.service-progress h2.rect-progress-bar-percent {
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-family: 'Rajdhani';
+  font-weight: 600;
+  color: #fff !important;
+}
+
+.service-progress .progress-bar-rect-wrapper {
+    overflow: hidden;
+    border-radius: 10px !important;
+}
+
+.service-progress .inner-rect-bar {
+  background: linear-gradient(90deg, #3513f9 0%, #1a90ff 100%) !important;
+}

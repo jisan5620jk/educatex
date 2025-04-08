@@ -1,0 +1,25 @@
+.feature-box1 {
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .feature-box1:nth-child(2n + 2) {
+    margin-top: 42px;
+  }
+}
+
+.feature-box1:nth-child(1) {
+  background: #f1f3ff;
+}
+
+.feature-box1:nth-child(2) {
+  background: #ffffff;
+}
+
+.feature-box1:nth-child(3) {
+  background: #e2f6ed;
+}
+
+.feature-box1:nth-child(4) {
+  background: #fbf2ed;
+}

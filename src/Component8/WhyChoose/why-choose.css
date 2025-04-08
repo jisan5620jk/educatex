@@ -1,0 +1,29 @@
+.why-choose-progress1 h2.rect-progress-bar-percent {
+    position: absolute;
+    top: 50%;
+    right: 19%;
+    transform: translateY(-50%);
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    color: #0c5adb !important;
+}
+
+.why-choose-progress2 h2.rect-progress-bar-percent {
+    position: absolute;
+    top: 50%;
+    right: 14%;
+    transform: translateY(-50%);
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    color: #0c5adb !important;
+}
+
+.why-choose-progress3 h2.rect-progress-bar-percent {
+    position: absolute;
+    top: 50%;
+    right: 9%;
+    transform: translateY(-50%);
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    color: #0c5adb !important;
+}

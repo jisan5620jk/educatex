@@ -1,0 +1,65 @@
+.toggle {
+  width: 60px;
+  height: 30px;
+  background-color: white; /* Background color when inactive */
+  border-radius: 50px;
+  border: 1px solid #3513f9;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.toggle-circle {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(90deg, #3513f9 0%, #1a90ff 100%);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s;
+}
+
+@media screen and (max-width: 767px) {
+  .toggle {
+    width: 50px !important;
+    height: 25px !important;
+  }
+
+  .toggle-circle {
+    width: 25px !important;
+    height: 25px !important;
+  }
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block !important;
+  animation: fadeInUp 0.5s linear;
+}
+@keyframes fadeInUp {
+  0% {
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.odometer-inside {
+  display: flex;
+}
+
+.odometer.odometer-auto-theme,
+.odometer.odometer-theme-default {
+  font-family: 'Rajdhani', sans-serif;
+  line-height: 1.1em;
+}

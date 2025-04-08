@@ -1,0 +1,35 @@
+/* Stroke */
+
+.counter-text {
+  -webkit-text-stroke: 1px #042414;
+}
+
+.mission-vision-tab-btn::before {
+  position: absolute;
+  content: "";
+  bottom: -13px;
+  right: 0;
+  width: 0;
+  height: 100%;
+  border-bottom: 2px solid #2852fc;
+  transition: all 0.5s ease-in-out;
+}
+
+.mission-vision-tab-btn.active::before {
+  left: 0;
+  width: 100%;
+}
+
+.mission-vision-tab-content {
+  display: none;
+  opacity: 0;
+  transform: translateY(10%);
+  transition: all 0.5s ease-in-out;
+}
+
+.mission-vision-tab-content.active {
+  display: block !important;
+  opacity: 1;
+  transform: translateY(0%);
+}
+

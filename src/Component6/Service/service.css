@@ -1,0 +1,17 @@
+.service-dark-box3 {
+  border-radius: 10px;
+}
+
+.service-dark-box3:nth-child(1),
+.service-dark-box3:nth-child(4),
+.service-dark-box3:nth-child(5) {
+  background: linear-gradient(to bottom, #f1f8ff, transparent);
+  border-color: #41c89e33;
+}
+
+.service-dark-box3:nth-child(2),
+.service-dark-box3:nth-child(3),
+.service-dark-box3:nth-child(6) {
+  background: linear-gradient(to bottom, #fcf5ed, transparent);
+  border-color: #ff821d26;
+}

@@ -1,0 +1,56 @@
+.marquee-text-section {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background: transparent;
+  margin: 100px 0 0;
+}
+
+.marquee-animation {
+  display: inline-block;
+  will-change: transform;
+  animation: marquee 30s linear infinite;
+  overflow: hidden;
+}
+
+.marquee-text-section:hover .marquee-animation {
+  animation-play-state: paused;
+}
+
+span.marquee-text-item {
+  display: inline-block;
+  font-size: 60px;
+  color: #041424;
+  margin: 0 25px; /* Increased margin */
+  text-transform: uppercase;
+  font-family: 'Rajdhani';
+  font-weight: 700;
+}
+
+/* Responsive here */
+
+@media screen and (max-width: 667px) {
+  .marquee-text-section {
+    margin: 40px 0 0;
+  }
+
+  span.marquee-text-item {
+    font-size: 24px;
+    margin: 0 5px;
+  }
+
+  span.marquee-text-item img {
+    width: 20px;
+  }
+}
+
+/* Animation */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

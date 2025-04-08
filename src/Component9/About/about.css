@@ -1,0 +1,43 @@
+/* Stroke */
+
+.counter-text-dark {
+  -webkit-text-stroke: 1px #ffffff;
+}
+
+.mission-vision-tab-btn::before {
+  position: absolute;
+  content: '';
+  bottom: -13px;
+  right: 0;
+  width: 0;
+  height: 100%;
+  border-bottom: 2px solid #2852fc;
+  transition: all 0.5s;
+}
+
+.mission-vision-tab-btn.active::before {
+  left: 0;
+  width: 100%;
+}
+
+.mission-vision-tab-content {
+  display: none;
+}
+
+.mission-vision-tab-content.active {
+  display: block !important;
+  animation: fadeInUp 0.5s linear;
+}
+@keyframes fadeInUp {
+  0% {
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

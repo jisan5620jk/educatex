@@ -1,0 +1,7 @@
+.work-section iframe {
+  max-width: 100% !important;
+}
+
+html.fslightbox-open {
+  overflow-y: auto !important;
+}

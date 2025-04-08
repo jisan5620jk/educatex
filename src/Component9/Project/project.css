@@ -1,0 +1,49 @@
+.project-dark .swiper-pagination {
+  bottom: inherit !important;
+  top: inherit !important;
+  bottom: 10px !important;
+  left: 50% !important;
+  transform: translatex(-50%) !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 7px !important;
+}
+
+@media screen and (max-width: 575px) {
+  .project-dark .swiper-pagination {
+    left: 55% !important;
+  }
+}
+
+.project-dark span.swiper-pagination-bullet {
+  background: #ffffff2f !important;
+  opacity: 1 !important;
+  border-radius: 50px;
+  height: 12px !important;
+  width: 12px !important;
+  position: relative;
+}
+
+.project-dark .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: linear-gradient(to right, #1a90ff, #3326fc) !important;
+}
+
+.project-dark span.swiper-pagination-bullet::before {
+  border-width: 1px;
+  border-color: #ff000000;
+}
+
+.project-dark span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+  top: -6px;
+  left: -6px;
+  width: 22px;
+  height: 22px;
+  border-color: #3326fc;
+}
+
+.project-dark .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  height: 10px !important;
+  width: 10px !important;
+}
