@@ -30,7 +30,7 @@ body {
   font-weight: 500;
   font-family: 'Outfit';
   border-radius: 28px;
-  background-color: #1ec28e;
+  background-color: #1ec28f;
   padding: 16px 40px;
   transition: all 0.5s;
   position: relative;
@@ -81,7 +81,7 @@ body {
   font-weight: 500;
   font-family: 'Outfit';
   border-radius: 28px;
-  background-color: #1ec28e;
+  background-color: #1ec28f;
   padding: 14px 35px;
   transition: all 0.5s;
   position: relative;
@@ -121,7 +121,6 @@ body {
     padding: 14px 30px;
   }
 }
-
 
 .primary-btn3 {
   @apply flex items-center gap-2 overflow-hidden border border-PrimaryColor-0 bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-9 py-[16px] relative rounded text-base text-white font-medium font-OpenSans before:bg-SecondaryColor-0 before:h-full before:w-0 before:absolute before:top-0 before:right-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0;

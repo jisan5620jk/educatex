@@ -37,7 +37,7 @@
 }
 
 .header-area.style-two.style-eight.style-eleven .menu-bar span {
-  background: #1ec28e;
+  background: #1ec28f;
 }
 
 .menu-bar:hover span:nth-child(1),
@@ -145,7 +145,7 @@
 }
 
 .offcanvas_contact-info ul li i {
-  color: #1ec28e;
+  color: #1ec28f;
 }
 
 .offcanvas_input-title h4 {
@@ -175,7 +175,7 @@
 .offcanvas_input button {
   height: 60px;
   width: 60px;
-  background-color: #1ec28e;
+  background-color: #1ec28f;
   color: #ffffff;
   font-size: 16px;
   position: absolute;
@@ -218,7 +218,7 @@
 }
 
 .offcanvas_contact-info ul li a:hover {
-  color: #1ec28e;
+  color: #1ec28f;
 }
 
 .offcanvas_logo {
@@ -250,7 +250,7 @@
   height: 40px;
   width: 40px;
   line-height: 43px;
-  background-color: #1ec28e;
+  background-color: #1ec28f;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -304,7 +304,7 @@
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  background: #1ec28e;
+  background: #1ec28f;
   transition: 0.5s;
   transform: scale(0);
   z-index: -1;
@@ -339,7 +339,7 @@
 
 @media only screen and (max-width: 991px) {
   .header-area {
-    background: #1ec28e;
+    background: #1ec28f;
   }
 }
 
@@ -385,7 +385,7 @@ nav.main-menu-content > ul > li > a::before {
   right: 0;
   width: 0;
   height: 100%;
-  background: #1ec28e;
+  background: #1ec28f;
   z-index: -1;
   transition: all 0.5s;
 }
@@ -434,7 +434,7 @@ nav.main-menu-content > ul > li > a.active > span {
   font-weight: 500;
   font-family: 'Outfit';
   border-radius: 28px;
-  background-color: #1ec28e;
+  background-color: #1ec28f;
   padding: 12px 36px;
   transition: all 0.5s;
   position: relative;
@@ -487,7 +487,7 @@ nav.main-menu-content > ul > li > a.active > span {
   transform-origin: top center;
   text-align: start;
   background-color: #ffffff;
-  border-top: 3px solid #1ec28e;
+  border-top: 3px solid #1ec28f;
   box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
   border-radius: 4px;
   transition: all 0.5s ease-in-out; /* Smooth transition */
@@ -526,7 +526,7 @@ nav.main-menu-content > ul > li > a.active > span {
   z-index: 1;
   transition: 0.5s;
   font-weight: 500;
-  border-bottom: 1px solid #1ec28e;
+  border-bottom: 1px solid #1ec28f;
 }
 
 .header-main-menu nav ul li .submenu > li a > span {
@@ -551,7 +551,7 @@ nav.main-menu-content > ul > li > a.active > span {
   top: auto;
   height: 0;
   width: 100%;
-  background-color: #1ec28e;
+  background-color: #1ec28f;
   transition: 0.7s;
   z-index: -1;
 }
@@ -594,7 +594,7 @@ nav.main-menu-content > ul > li > a.active > span {
 }
 
 .homemenu-title:hover {
-  color: #1ec28e;
+  color: #1ec28f;
 }
 
 .main-menu-mobile .submenu {
@@ -626,7 +626,7 @@ nav.main-menu-content > ul > li > a.active > span {
 }
 
 .main-menu-mobile ul > li > ul > li > a:hover {
-  color: #1ec28e;
+  color: #1ec28f;
 }
 
 .main-menu-mobile ul li.has-dropdown > a .dropdown-toggle-btn {
@@ -640,7 +640,7 @@ nav.main-menu-content > ul > li > a.active > span {
   transform: translateY(-2px);
   font-size: 14px;
   color: #fff;
-  background: #1ec28e;
+  background: #1ec28f;
   transition: all 0.3s ease-in-out;
   z-index: 1;
   width: 30px;
@@ -671,8 +671,8 @@ nav.main-menu-content > ul > li > a.active > span {
 }
 
 .main-menu-mobile ul li.has-dropdown > a .dropdown-toggle-btn:hover {
-  background-color: #1ec28e;
-  border-color: #1ec28e;
+  background-color: #1ec28f;
+  border-color: #1ec28f;
   color: #ffffff;
 }
 
@@ -685,8 +685,8 @@ nav.main-menu-content > ul > li > a.active > span {
   li.has-dropdown
   > a.expanded
   .dropdown-toggle-btn.dropdown-opened {
-  background-color: #1ec28e;
-  border-color: #1ec28e;
+  background-color: #1ec28f;
+  border-color: #1ec28f;
   color: #ffffff;
 }
 
@@ -811,7 +811,7 @@ li.has-dropdown a button span {
 }
 
 .homemenu-thumb a > h6 {
-  background: #1ec28e;
+  background: #1ec28f;
   color: #ffffff;
   border-radius: 4px;
   padding: 8px 0px;
@@ -863,7 +863,7 @@ li.has-dropdown a button span {
 }
 
 .homemenu-content a:hover {
-  color: #1ec28e;
+  color: #1ec28f;
 }
 
 .main-menu-mobile * li {
@@ -1075,7 +1075,7 @@ li.has-dropdown a button span {
 
 .service_list li {
   list-style: circle;
-  color: #1ec28e;
+  color: #1ec28f;
   margin-left: 20px;
 }
 
@@ -1113,7 +1113,7 @@ li.has-dropdown a button span {
 }
 
 .sidebar_contact-info ul li svg {
-  color: #1ec28e;
+  color: #1ec28f;
 }
 
 .sidebar_input-title h4 {
@@ -1144,7 +1144,7 @@ li.has-dropdown a button span {
 .sidebar_input button {
   height: 60px;
   width: 60px;
-  background-color: #1ec28e;
+  background-color: #1ec28f;
   color: #ffffff;
   font-size: 16px;
   position: absolute;
@@ -1187,7 +1187,7 @@ li.has-dropdown a button span {
 }
 
 .sidebar_contact-info ul li a:hover {
-  color: #1ec28e;
+  color: #1ec28f;
 }
 
 .sidebar_logo {
@@ -1219,7 +1219,7 @@ li.has-dropdown a button span {
   height: 40px;
   width: 40px;
   line-height: 43px;
-  background-color: #1ec28e;
+  background-color: #1ec28f;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -1270,7 +1270,7 @@ li.has-dropdown a button span {
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  background: #1ec28e;
+  background: #1ec28f;
   transition: 0.5s;
   transform: scale(0);
   z-index: -1;

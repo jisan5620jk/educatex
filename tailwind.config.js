@@ -8,7 +8,7 @@ export default {
         OpenSans: ['Open Sans', 'sans-serif'],
       },
       colors: {
-        PrimaryColor: ['#1ec28e'],
+        PrimaryColor: ['#1ec28f'],
         PrimaryColor2: ['#ff853f'],
         PrimaryColor3: ['#15c1fa'],
         SecondaryColor: ['#1e1e1e'],
