@@ -1,98 +1,81 @@
-import featureIcon from '/images/goggle.png';
-import featureIcon2 from '/images/facebook.png';
-import featureIcon3 from '/images/feature-icon23.png';
-import featureIcon4 from '/images/feature-icon24.png';
-import featureShape from '/images/feature-animate.png';
-import titleShape from '/images/sub-title-shape.png';
+import featureIcon from '/images/feature-icon1.png';
+import featureIcon2 from '/images/feature-icon2.png';
+import featureIcon3 from '/images/feature-icon3.png';
+import featureShape from '/images/feature-shape1.png';
+import featureShape2 from '/images/feature-shape2.png';
 import FeatureCard from './FeatureCard';
-import { GoArrowRight } from 'react-icons/go';
 import './feature.css';
 
 const processData = [
   {
     id: 1,
     featureIcon: featureIcon,
-    featureTitle: 'Google Analytics',
+    featureTitle: 'Learning Experiences',
     featureDesc:
-      'Clients-focused data are centric energistically communicate into installed done.',
+      'The ultimate destination for knowledge for We are committed to transforming',
     featureUrl: '/service',
-    featureBtnText: 'Details',
-    featureBtnIcon: <GoArrowRight />,
   },
   {
     id: 2,
     featureIcon: featureIcon2,
-    featureTitle: 'Facebook Adds',
+    featureTitle: 'Professional Instructor',
     featureDesc:
-      'Clients-focused data are centric energistically communicate into installed done.',
+      'The ultimate destination for knowledge for We are committed to transforming',
     featureUrl: '/service',
-    featureBtnText: 'Details',
-    featureBtnIcon: <GoArrowRight />,
   },
   {
     id: 3,
     featureIcon: featureIcon3,
-    featureTitle: 'Content Research',
+    featureTitle: 'Moneyback Gaurantee',
     featureDesc:
-      'Clients-focused data are centric energistically communicate into installed done.',
+      'The ultimate destination for knowledge for We are committed to transforming',
     featureUrl: '/service',
-    featureBtnText: 'Details',
-    featureBtnIcon: <GoArrowRight />,
-  },
-  {
-    id: 4,
-    featureIcon: featureIcon4,
-    featureTitle: 'Competitor Analysis',
-    featureDesc:
-      'Clients-focused data are centric energistically communicate into installed done.',
-    featureUrl: '/service',
-    featureBtnText: 'Details',
-    featureBtnIcon: <GoArrowRight />,
   },
 ];
 
 const Feature = () => {
   return (
-    <section className='bg-[url("/images/servicer-bg.jpg")] bg-cover bg-center bg-no-repeat pt-28 sm:pt-32 lg:pt-[152px] pb-16 lg:pb-28 -mt-12 lg:-mt-9'>
+    <section className='bg-white py-16 md:py-20 lg:py-28 relative'>
+      <div className='absolute top-28 left-32 animate-dance2 hidden lg:block'>
+        <img
+          src={featureShape}
+          draggable='false'
+          alt='Shape'
+        />
+      </div>
+      <div
+        className='absolute top-28 left-32 animate-dance2 hidden lg:block'
+        style={{ animationDelay: '1.5s' }}
+      >
+        <img
+          src={featureShape}
+          draggable='false'
+          alt='Shape'
+        />
+      </div>
+      <div className='absolute top-28 right-32 animate-rotational hidden lg:block'>
+        <img
+          src={featureShape2}
+          draggable='false'
+          alt='Shape'
+        />
+      </div>
       <div className='Container '>
-        <div className='relative text-center'>
-          <h5 className='flex items-center justify-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-white uppercase'>
-            <img
-              src={titleShape}
-              draggable={false}
-              alt='Shape'
-              className='brightness-0 invert-[1]'
-            />{' '}
-            Features{' '}
-            <img
-              src={titleShape}
-              draggable={false}
-              alt='Shape'
-              className='rotate-180 brightness-0 invert-[1]'
-            />
-          </h5>
-          <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
-            Grow Your Business in a short Time
-          </h1>
-          <div className='absolute top-0 right-0 2xl:-right-12 animate-bounce hidden lg:block'>
-            <img
-              src={featureShape}
-              draggable='false'
-              alt='Shape'
-            />
+        <div className='relative grid items-center grid-cols-1 md:grid-cols-2 gap-8'>
+          <div className='border-b border-SecondaryColor-0 border-opacity-15 py-6'>
+            <h5 className='font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
+              core features
+            </h5>
           </div>
+          <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0'>
+            Interactive Online Learning
+            <br />
+            Key Features & Benefits
+          </h1>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-start gap-7 relative z-10 mt-11'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start gap-7 relative z-10 mt-[52px]'>
           {processData.map(
-            ({
-              id,
-              featureIcon,
-              featureTitle,
-              featureDesc,
-              featureUrl,
-              featureBtnText,
-              featureBtnIcon,
-            }) => {
+            ({ id, featureIcon, featureTitle, featureDesc, featureUrl }) => {
               return (
                 <div
                   key={id}
@@ -103,8 +86,6 @@ const Feature = () => {
                     featureTitle={featureTitle}
                     featureDesc={featureDesc}
                     featureUrl={featureUrl}
-                    featureBtnText={featureBtnText}
-                    featureBtnIcon={featureBtnIcon}
                   />
                 </div>
               );
