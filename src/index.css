@@ -72,8 +72,56 @@ body {
 }
 
 .primary-btn2 {
-  @apply flex items-center gap-2 overflow-hidden border border-PrimaryColor-0 bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-10 py-[17px] relative rounded text-base text-white font-medium font-OpenSans before:bg-SecondaryColor-0 before:h-full before:w-0 before:absolute before:top-0 before:right-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: 'Outfit';
+  border-radius: 28px;
+  background-color: #1ec28e;
+  padding: 14px 35px;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 1;
 }
+
+.primary-btn2::before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: #fe853c;
+  border-radius: 30px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transition: 0.5s;
+  clip-path: polygon(50% 0, 50% 0, 50% 50%, 50% 100%, 50% 100%, 50% 50%);
+  z-index: -1;
+}
+
+.primary-btn2:hover:before {
+  clip-path: polygon(
+    25% -70%,
+    75% -70%,
+    120% 50%,
+    75% 170%,
+    25% 170%,
+    -20% 50%
+  );
+}
+
+@media screen and (max-width: 575px) {
+  .primary-btn2 {
+    font-size: 16px;
+    padding: 14px 30px;
+  }
+}
+
 
 .primary-btn3 {
   @apply flex items-center gap-2 overflow-hidden border border-PrimaryColor-0 bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-9 py-[16px] relative rounded text-base text-white font-medium font-OpenSans before:bg-SecondaryColor-0 before:h-full before:w-0 before:absolute before:top-0 before:right-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0;
