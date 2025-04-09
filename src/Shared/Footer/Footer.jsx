@@ -16,7 +16,7 @@ import { HiOutlineEnvelope } from 'react-icons/hi2';
 const Footer = () => {
   return (
     <>
-      <div className='bg-BodyBg-0'>
+      <div className='bg-SecondaryColor-0'>
         <div className='Container -mb-[70px] relative z-10'>
           <div className='bg-gradient-to-r to-PrimaryColor2-0 from-PrimaryColor3-0 py-5 md:py-12 px-6 md:px-16 rounded-[10px] grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-7 lg:gap-0 lg:grid-cols-3 lg:items-center'>
             <div className=''>
@@ -72,7 +72,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <footer className="bg-[url('/images/footer_bg.jpg')] bg-no-repeat bg-center bg-cover relative pt-28 overflow-hidden">
+      <footer className="bg-SecondaryColor-0 relative pt-28 overflow-hidden">
         <div className='Container'>
           <div className='lg:grid gap-y-7 grid-cols-12 border-b border-white border-opacity-10 mt-12 pb-5 hidden'>
             <div className='col-span-12 md:col-span-6 lg:col-span-4'>
@@ -99,9 +99,9 @@ const Footer = () => {
           <div className='grid gap-y-7 grid-cols-12 lg:mt-8'>
             <div className='col-span-12 md:col-span-6 lg:col-span-4'>
               <h4 className='font-Outfit text-[28px] text-white font-semibold mb-[33px] block lg:hidden'>
-                About educatex
+                About EducateX
               </h4>
-              <p className='font-OpenSans text-TextColor-0 mt-7 lg:mt-0 mb-5 w-full max-w-[340px]'>
+              <p className='font-OpenSans text-white text-opacity-70 mt-7 lg:mt-0 mb-5 w-full max-w-[340px]'>
                 Globally expedite enterprise-wide action items rather than
                 distinctive architectures. Globally engage market positioning.
               </p>
