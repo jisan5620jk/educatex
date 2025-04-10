@@ -11,6 +11,7 @@ export default {
         PrimaryColor: ['#1ec28f'],
         PrimaryColor2: ['#ff853f'],
         PrimaryColor3: ['#15c1fa'],
+        PrimaryColor4: ['#a64cf9'],
         SecondaryColor: ['#1e1e1e'],
         HeadingColor: ['#1e1e1e'],
         TextColor: ['#616161'],
