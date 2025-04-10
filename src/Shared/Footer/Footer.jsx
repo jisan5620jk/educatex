@@ -5,13 +5,11 @@ import {
   FaFacebookF,
   FaLinkedinIn,
   FaPinterestP,
-  FaRegCircleCheck,
   FaXTwitter,
 } from 'react-icons/fa6';
-import { GoArrowRight } from 'react-icons/go';
-import { HiOutlineMail } from 'react-icons/hi';
 import { PiArrowCircleRight, PiWhatsappLogoLight } from 'react-icons/pi';
 import { HiOutlineEnvelope } from 'react-icons/hi2';
+import footerImg from '/images/footer-recent-img1.png';
 
 const Footer = () => {
   return (
@@ -72,33 +70,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <footer className="bg-SecondaryColor-0 relative pt-28 overflow-hidden">
+      <footer className='bg-SecondaryColor-0 relative pt-28 overflow-hidden'>
         <div className='Container'>
-          <div className='lg:grid gap-y-7 grid-cols-12 border-b border-white border-opacity-10 mt-12 pb-5 hidden'>
-            <div className='col-span-12 md:col-span-6 lg:col-span-4'>
-              <h4 className='font-Outfit text-[28px] text-white font-semibold'>
-                About educatex
-              </h4>
-            </div>
-            <div className='col-span-12 md:col-span-6 lg:col-span-2'>
-              <h4 className='font-Outfit text-[28px] text-white font-semibold'>
-                Company
-              </h4>
-            </div>
-            <div className='col-span-12 md:col-span-6 lg:col-span-3'>
-              <h4 className='font-Outfit text-[28px] text-white font-semibold'>
-                Our Services
-              </h4>
-            </div>
-            <div className='col-span-12 md:col-span-6 lg:col-span-3'>
-              <h4 className='font-Outfit text-[28px] text-white font-semibold'>
-                Newsletter
-              </h4>
-            </div>
-          </div>
           <div className='grid gap-y-7 grid-cols-12 lg:mt-8'>
             <div className='col-span-12 md:col-span-6 lg:col-span-4'>
-              <h4 className='font-Outfit text-[28px] text-white font-semibold mb-[33px] block lg:hidden'>
+              <h4 className='font-Outfit text-[28px] text-white font-semibold mb-[33px]'>
                 About EducateX
               </h4>
               <p className='font-OpenSans text-white text-opacity-70 mt-7 lg:mt-0 mb-5 w-full max-w-[340px]'>
@@ -142,7 +118,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className='col-span-12 md:col-span-6 lg:col-span-2'>
-              <h4 className='font-Outfit text-[28px] text-white font-semibold mb-[33px] block lg:hidden'>
+              <h4 className='font-Outfit text-[28px] text-white font-semibold mb-[33px]'>
                 Company
               </h4>
               <ul>
@@ -189,7 +165,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className='col-span-12 md:col-span-6 lg:col-span-3'>
-              <h4 className='font-Outfit text-[28px] text-white font-semibold mb-[33px] block lg:hidden'>
+              <h4 className='font-Outfit text-[28px] text-white font-semibold mb-[33px]'>
                 Our Services
               </h4>
               <ul>
@@ -236,44 +212,28 @@ const Footer = () => {
               </ul>
             </div>
             <div className='col-span-12 md:col-span-6 lg:col-span-3'>
-              <h4 className='font-Outfit text-[28px] text-white font-semibold mb-[30px] block lg:hidden'>
+              <h4 className='font-Outfit text-[28px] text-white font-semibold mb-[30px]'>
                 Newsletter
               </h4>
-              <form
-                action='#'
-                method='post'
+              <Link
+                to={'/'}
+                className='flex items-center gap-[18px] group'
               >
-                <label
-                  htmlFor='email'
-                  className='relative'
-                >
-                  <input
-                    type='email'
-                    name='email'
-                    id='email'
-                    placeholder='Enter Your E-Mail*'
-                    required
-                    className='w-full h-[56px] font-OpenSans rounded-full outline-none focus:outline-none border-none bg-white bg-opacity-10 px-8 py-2 text-white placeholder:text-white mb-3'
-                  />
-                  <HiOutlineMail className='absolute top-1/2 -translate-y-1/2 right-6 text-white text-xl' />
-                </label>
-
                 <div>
-                  <button
-                    type='submit'
-                    className='primary-btn !w-full !py-[17px]'
-                  >
-                    {`Discover More`}
-                    <GoArrowRight size={'22'} />
-                  </button>
+                  <img
+                    src={footerImg}
+                    className='rounded'
+                  />
                 </div>
-              </form>
-              <p className='font-OpenSans flex gap-2 text-TextColor-0 font-medium mt-5'>
-                <span className='relative top-[3px] text-green-600'>
-                  <FaRegCircleCheck />
-                </span>
-                Protecting Your Service
-              </p>
+                <div className='flex-1'>
+                  <h6 className='font-Outfit text-[17px] text-white transition-all duration-500 group-hover:text-PrimaryColor-0'>
+                    10 Proven Strategies to<br className='hidden 2xl:block' /> Online Learning
+                  </h6>
+                  <p className='font-OpenSans text-sm text-white text-opacity-70 mt-1'>
+                    Nov 16, 2025
+                  </p>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
