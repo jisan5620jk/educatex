@@ -69,9 +69,9 @@ export default {
           '50%': { transform: 'translateY(-20px) translateX(-50%)' },
           '100%': { transform: 'translateY(0px) translateX(-50%)' },
         },
-        Dance: {
-          '0%,100%': { transform: 'translateX(0px)' },
-          '50%': { transform: 'translateX(35px)' },
+        dance: {
+          '0%, 100%': { transform: 'translateX(20px)' },
+          '50%': { transform: 'translateX(-20px)' },
         },
         dance4: {
           '0%,100%': { transform: 'translateX(0px)' },
@@ -148,6 +148,7 @@ export default {
         zoomInOut: 'zoomInOut 2s alternate infinite',
         dance2: 'dance2 3s alternate infinite',
         dance3: 'dance3 2s alternate infinite',
+        dance: 'dance 4s ease-in-out infinite',
         dance4: 'dance4 10s alternate infinite',
         dance5: 'dance5 10s alternate infinite',
         dance7: 'dance7 4s alternate infinite',

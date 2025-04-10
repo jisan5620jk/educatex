@@ -7,6 +7,7 @@ import courseImg3 from '/images/case-thumb3.jpg';
 import instructorImg from '/images/case-autor.png';
 import instructorImg2 from '/images/case-autor2.png';
 import instructorImg3 from '/images/case-autor3.png';
+import shape from '/images/case-shape1.png';
 import './course.css';
 import { BsStarFill, BsStarHalf } from 'react-icons/bs';
 import { IoDocumentTextOutline } from 'react-icons/io5';
@@ -43,7 +44,7 @@ const Course = () => {
     {
       id: 3,
       img: courseImg3,
-      category: 'Business',
+      category: 'Finance',
       title: 'Creative Graphic Design with Adobe Suite',
       price: '$50',
       rating: 4.8,
@@ -117,7 +118,15 @@ const Course = () => {
   }, []);
 
   return (
-    <div className='course-filter bg-white pt-[60px] pb-[30px] md:pt-20 md:pb-[60px] lg:pt-[100px] xl:pt-[120px] lg:pb-[60px] xl:pb-20'>
+    <div className='course-filter bg-white pt-[60px] pb-[30px] md:pt-20 md:pb-[60px] lg:pt-[100px] xl:pt-[120px] lg:pb-[60px] xl:pb-20 relative'>
+      <div className='absolute left-7 bottom-0'>
+        <img
+          src={shape}
+          draggable={false}
+          alt='Shape'
+          className='animate-dance'
+        />
+      </div>
       <div className='Container lg:px-0'>
         <div className='relative grid items-center grid-cols-1 md:grid-cols-2 gap-8'>
           <div className='border-b border-SecondaryColor-0 border-opacity-15 py-6'>
@@ -136,7 +145,6 @@ const Course = () => {
           <div
             className='button-group filter-button-group relative z-10 inline-block'
             data-aos='fade-up'
-            data-aos-delay='500'
             data-aos-duration='1000'
           >
             <button
@@ -146,31 +154,31 @@ const Course = () => {
               All Categories
             </button>
             <button
-              data-filter='.technology'
+              data-filter='.finance'
               className='px-[7px] sm:px-6 md:px-[30px] py-[9px] mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize'
             >
               Wordpress
             </button>
             <button
-              data-filter='.business'
+              data-filter='.wordpress'
               className='px-[7px] sm:px-6 md:px-[30px] py-[9px] mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize'
             >
               Business
             </button>
             <button
-              data-filter='.design'
+              data-filter='.networking'
               className='px-[7px] sm:px-6 md:px-[30px] py-[9px] mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize'
             >
               Networking
             </button>
             <button
-              data-filter='.design'
+              data-filter='.finance'
               className='px-[7px] sm:px-6 md:px-[30px] py-[9px] mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize'
             >
               Finance
             </button>
             <button
-              data-filter='.design'
+              data-filter='.wordpress'
               className='px-[7px] sm:px-6 md:px-[30px] py-[9px] mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize'
             >
               Designing
@@ -182,6 +190,7 @@ const Course = () => {
         <div
           className='course-box text-center pt-10 md:pt-[50px]'
           data-aos='fade-up'
+          data-aos-delay='500'
           data-aos-duration='1000'
         >
           <div className='course-sizer w-[30.83%]'></div>
@@ -190,17 +199,27 @@ const Course = () => {
           {courses.map((course, idx) => (
             <div
               key={idx}
-              className={`course-item box${
-                course.id
-              } ${course.category.toLowerCase()}  rounded-[20px] mb-[4%] w-full md:w-[47%] lg:w-[30.83%] p-[30px] group relative z-10`}
+              className={`course-item box${course.id} ${
+                idx === 0
+                  ? 'finance'
+                  : idx === 1
+                  ? 'wordpress'
+                  : idx === 2
+                  ? 'networking'
+                  : idx === 3
+                  ? 'finance'
+                  : 'wordpress'
+              }
+
+              }   rounded-[20px] mb-[4%] w-full md:w-[47%] lg:w-[30.83%] p-[30px] group relative z-10`}
             >
               <div className='relative rounded-2xl overflow-hidden'>
-              <div className='hover-bg'>
-                <span className='absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-0'></span>
-                <span className='absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-[25%]'></span>
-                <span className='absolute left-[62.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-1/2'></span>
-                <span className='absolute left-[87.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-[75%]'></span>
-              </div>
+                <div className='hover-bg'>
+                  <span className='absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-0'></span>
+                  <span className='absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-[25%]'></span>
+                  <span className='absolute left-[62.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-1/2'></span>
+                  <span className='absolute left-[87.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-[75%]'></span>
+                </div>
                 <img
                   src={course.img}
                   alt='Course'

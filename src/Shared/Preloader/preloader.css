@@ -42,6 +42,13 @@ body.loaded {
   color: #ffffff;
 }
 
+@media screen and (max-width: 575px) {
+  .preloader .preloader-heading .load-text {
+    font-size: 20px;
+    letter-spacing: 15px;
+  }
+}
+
 .load-text span {
   -webkit-animation: loading 1s infinite alternate;
   animation: loading 1s infinite alternate;
@@ -83,9 +90,9 @@ body.loaded {
 }
 @keyframes loading {
   0% {
-    opacity: 1;
+    filter: brightness(0) invert(1);
   }
   100% {
-    opacity: 0;
+    filter: brightness(1) invert(0);
   }
 }

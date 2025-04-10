@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 const HelmetChanger = ({ title }) => {
   return (
     <Helmet>
-      <title>educatex &#8211; {title}</title>
+      <title>EducateX &#8211; {title}</title>
     </Helmet>
   );
 };
