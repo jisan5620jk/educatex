@@ -140,6 +140,19 @@ export default {
           '50%': { transform: 'rotate3d(0, 1, 0, 180deg)' },
           '100%': { transform: 'rotate3d(0, 1, 0, 360deg)' },
         },
+        ripple_white: {
+          '0%': {
+            boxShadow:
+              '0 0 0 0 rgba(255,255,255,0.3), 0 0 0 10px rgba(255,255,255,0.3), 0 0 0 20px rgba(255,255,255,0.3)',
+          },
+          '100%': {
+            boxShadow:
+              '0 0 0 10px rgba(255,255,255,0.3), 0 0 0 20px rgba(255,255,255,0.3), 0 0 0 30px rgba(255, 255, 255, 0)',
+          },
+        },
+        shine: {
+          '100%': { left: '100%', opacity: '0' },
+        },
       },
       animation: {
         movebtn: 'movebtn 3s linear infinite',
@@ -159,6 +172,8 @@ export default {
         headerSlideDown:
           '500ms ease-in-out 0s normal none 1 running headerSlideDown',
         wobble_vertical: 'wobble_vertical 1s forwards ease-in-out',
+        ripple_white: 'ripple_white 1s linear infinite',
+        shine: 'shine 800ms',
       },
       boxShadow: {
         cases: '0px 10px 15px rgba(187, 187, 187, 0.2)',

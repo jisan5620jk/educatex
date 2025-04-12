@@ -2,10 +2,6 @@ import { Link } from 'react-router-dom';
 import footerLogo from '/images/logo.png';
 import {
   FaEnvelope,
-  FaFacebookF,
-  FaLinkedinIn,
-  FaPinterestP,
-  FaXTwitter,
 } from 'react-icons/fa6';
 import { PiArrowCircleRight, PiWhatsappLogoLight } from 'react-icons/pi';
 import { HiOutlineEnvelope } from 'react-icons/hi2';
@@ -89,33 +85,24 @@ const Footer = () => {
                   href='mailto:example@gmail.com'
                   title='example@gmail.com'
                 >
+                  <button className='font-Outfit text-xl text-white font-medium'>
+                    +123 (4567) 890
+                  </button>
+                </a>
+              </div>
+              <div className='flex items-center gap-2'>
+                <div className='text-PrimaryColor-0'>
+                  <FaEnvelope size={'18'} />
+                </div>
+                <a
+                  href='mailto:example@gmail.com'
+                  title='example@gmail.com'
+                >
                   <button className='font-Outfit text-lg text-white font-medium'>
                     example@gmail.com
                   </button>
                 </a>
               </div>
-              <ul className='flex gap-3 mt-7'>
-                <li>
-                  <button className='size-9 rounded-full text-sm bg-white bg-opacity-10 flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-gradient-to-l before:to-PrimaryColor-0 before:from-PrimaryColor2-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
-                    <FaFacebookF />
-                  </button>
-                </li>
-                <li>
-                  <button className='size-9 rounded-full text-sm bg-white bg-opacity-10 flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-gradient-to-l before:to-PrimaryColor-0 before:from-PrimaryColor2-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
-                    <FaXTwitter />
-                  </button>
-                </li>
-                <li>
-                  <button className='size-9 rounded-full text-sm bg-white bg-opacity-10 flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-gradient-to-l before:to-PrimaryColor-0 before:from-PrimaryColor2-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
-                    <FaLinkedinIn />
-                  </button>
-                </li>
-                <li>
-                  <button className='size-9 rounded-full text-sm bg-white bg-opacity-10 flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-gradient-to-l before:to-PrimaryColor-0 before:from-PrimaryColor2-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
-                    <FaPinterestP />
-                  </button>
-                </li>
-              </ul>
             </div>
             <div className='col-span-12 md:col-span-6 lg:col-span-2'>
               <h4 className='font-Outfit text-[28px] text-white font-semibold mb-[33px]'>
@@ -227,7 +214,8 @@ const Footer = () => {
                 </div>
                 <div className='flex-1'>
                   <h6 className='font-Outfit text-[17px] text-white transition-all duration-500 group-hover:text-PrimaryColor-0'>
-                    10 Proven Strategies to<br className='hidden 2xl:block' /> Online Learning
+                    10 Proven Strategies to
+                    <br className='hidden 2xl:block' /> Online Learning
                   </h6>
                   <p className='font-OpenSans text-sm text-white text-opacity-70 mt-1'>
                     Nov 16, 2025

@@ -238,7 +238,7 @@ const Course = () => {
                   {course.title}
                 </h3>
 
-                <div className='flex items-center gap-1 text-[#ff9614] text-sm mt-3 mb-5'>
+                <div className='flex items-center gap-1 text-ReviewText-0 text-sm mt-3 mb-5'>
                   {[...Array(Math.floor(course.rating))].map((_, i) => (
                     <BsStarFill key={i} />
                   ))}
