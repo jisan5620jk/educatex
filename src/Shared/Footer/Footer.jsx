@@ -216,7 +216,7 @@ const Footer = () => {
                     <br className='hidden 2xl:block' /> Online Learning
                   </h6>
                   <p className='font-OpenSans text-sm text-PrimaryColor-0 mt-1'>
-                    Nov 16, 2025
+                    Sep 26, 2025
                   </p>
                 </div>
               </Link>
