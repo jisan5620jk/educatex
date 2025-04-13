@@ -1,6 +1,13 @@
 import { Link } from 'react-router-dom';
 import footerLogo from '/images/footer-logo.png';
-import { FaEnvelope, FaPhoneVolume } from 'react-icons/fa6';
+import {
+  FaEnvelope,
+  FaFacebookF,
+  FaLinkedinIn,
+  FaPhoneVolume,
+  FaPinterestP,
+  FaXTwitter,
+} from 'react-icons/fa6';
 import footerImg from '/images/footer-recent-img1.png';
 import footerImg2 from '/images/footer-recent-img2.png';
 import { HiOutlineMail } from 'react-icons/hi';
@@ -243,9 +250,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className='bg-white bg-opacity-5 mt-16 md:mt-[96px]'>
+        <div className='mt-16 md:mt-[96px]'>
           <div className='Container'>
-            <div className='flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-7'>
+            <div className='flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-5 border-t border-white border-opacity-15'>
               <div>
                 <p className='font-OpenSans text-white text-opacity-60'>
                   &copy; {new Date().getFullYear()}{' '}
@@ -259,22 +266,26 @@ const Footer = () => {
                 </p>
               </div>
               <div>
-                <ul className='flex items-center gap-10'>
+                <ul className='flex gap-3'>
                   <li>
-                    <Link
-                      to={'/'}
-                      className='font-OpenSans text-white'
-                    >
-                      Terms & Conditions
-                    </Link>
+                    <button className='size-9 rounded-full text-sm bg-white bg-opacity-10 flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
+                      <FaFacebookF />
+                    </button>
                   </li>
                   <li>
-                    <Link
-                      to={'/'}
-                      className='font-OpenSans text-white'
-                    >
-                      Privacy Policy
-                    </Link>
+                    <button className='size-9 rounded-full text-sm bg-white bg-opacity-10 flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
+                      <FaXTwitter />
+                    </button>
+                  </li>
+                  <li>
+                    <button className='size-9 rounded-full text-sm bg-white bg-opacity-10 flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
+                      <FaLinkedinIn />
+                    </button>
+                  </li>
+                  <li>
+                    <button className='size-9 rounded-full text-sm bg-white bg-opacity-10 flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
+                      <FaPinterestP />
+                    </button>
                   </li>
                 </ul>
               </div>
