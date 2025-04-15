@@ -2,71 +2,65 @@
   color: white;
 }
 
-.course-item.box1 ,
-.course-item.box4 {
+.course-item.box1 {
   background: #f0fbf7;
 }
 
-.course-item.box1 .hover-bg span ,
-.course-item.box4 .hover-bg span {
+.course-item.box1 .hover-bg span {
   background: #1ec28f;
 }
 
-.course-item.box1 .course-price ,
-.course-item.box4 .course-price {
+.course-item.box1 .course-price {
   background: #1ec28f;
 }
 
-.course-item.box1 .course-category ,
-.course-item.box4 .course-category {
+.course-item.box1 .course-category {
   color: #1ec28f;
   background: rgb(30, 194, 143, 0.1);
   border: 1px solid rgb(30, 194, 143, 0.3);
 }
 
-.course-item.box1:hover .course-title ,
-.course-item.box4:hover .course-title {
+.course-item.box1:hover .course-title {
   color: #1ec28f;
 }
 
-.course-item.box1 .icon ,
-.course-item.box4 .icon {
+.course-item.box1 .icon {
   color: #1ec28f;
 }
 
+.course-item.box1 .course-button {
+  background: #1ec28f;
+}
 
-.course-item.box2 ,
-.course-item.box5 {
+.course-item.box2 {
   background: #f0fbf7;
 }
 
-.course-item.box2 .hover-bg span ,
-.course-item.box5 .hover-bg span {
+.course-item.box2 .hover-bg span {
   background: #ff853f;
 }
 
-.course-item.box2 .course-price ,
-.course-item.box5 .course-price {
+.course-item.box2 .course-price {
   background: #ff853f;
 }
 
-.course-item.box2 .course-category ,
-.course-item.box5 .course-category {
+.course-item.box2 .course-category {
   color: #ff853f;
   background: #ff853f1a;
-  border: 1px solid rgba(255,133,63,0.3);
+  border: 1px solid rgba(255, 133, 63, 0.3);
 }
 
-.course-item.box5:hover .course-title ,
 .course-item.box2:hover .course-title {
   color: #ff853f;
 }
 
-.course-item.box5 .icon ,
 .course-item.box2 .icon {
   color: #ff853f;
 }
 
+.course-item.box2 .course-button {
+  background: #ff853f;
+}
 
 .course-item.box3 {
   background: #f0fbf7;
@@ -83,7 +77,7 @@
 .course-item.box3 .course-category {
   color: #15c1fa;
   background: #15c1fa1a;
-  border: 1px solid rgba(21,193,250,0.3);
+  border: 1px solid rgba(21, 193, 250, 0.3);
 }
 
 .course-item.box3:hover .course-title {
@@ -92,4 +86,8 @@
 
 .course-item.box3 .icon {
   color: #15c1fa;
+}
+
+.course-item.box3 .course-button {
+  background: #15c1fa;
 }

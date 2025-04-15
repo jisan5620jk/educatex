@@ -12,6 +12,8 @@ import './course.css';
 import { BsStarFill, BsStarHalf } from 'react-icons/bs';
 import { IoDocumentTextOutline } from 'react-icons/io5';
 import { PiUsersThree } from 'react-icons/pi';
+import { GoArrowRight } from 'react-icons/go';
+import { Link } from 'react-router-dom';
 
 const Course = () => {
   const courses = [
@@ -211,7 +213,7 @@ const Course = () => {
                   : 'wordpress'
               }
 
-              }   rounded-[20px] mb-[4%] w-full md:w-[47%] lg:w-[30.83%] p-[30px] group relative z-10`}
+              }   rounded-[20px] mb-[4%] w-full md:w-[47%] lg:w-[30.83%] p-[30px] group relative z-10 overflow-hidden`}
             >
               <div className='relative rounded-2xl overflow-hidden'>
                 <div className='hover-bg'>
@@ -264,19 +266,29 @@ const Course = () => {
                   </div>
                 </div>
 
-                <div className='flex justify-between border-t pt-5'>
-                  <div className='font-Outfit text-HeadingColor-0 flex items-center gap-1'>
-                    <span className='icon'>
-                      <IoDocumentTextOutline size={18} />
-                    </span>
-                    {course.lessons} Lessons
+                <div className='border-t pt-5 relative'>
+                  <div className='flex justify-between transition-all duration-500 group-hover:opacity-0'>
+                    <div className='font-Outfit text-HeadingColor-0 flex items-center gap-1'>
+                      <span className='icon'>
+                        <IoDocumentTextOutline size={18} />
+                      </span>
+                      {course.lessons} Lessons
+                    </div>
+                    <div className='font-Outfit text-HeadingColor-0 flex items-center gap-2'>
+                      <span className='icon'>
+                        <PiUsersThree size={18} />
+                      </span>
+                      {course.students} Students
+                    </div>
                   </div>
-                  <div className='font-Outfit text-HeadingColor-0 flex items-center gap-2'>
-                    <span className='icon'>
-                      <PiUsersThree size={18} />
-                    </span>
-                    {course.students} Students
-                  </div>
+                  <Link to={'/course'}>
+                    <button className='course-button absolute left-0 -bottom-20 font-Outfit inline-flex items-center gap-2 uppercase text-sm justify-between px-7 py-[12px] border z-10 overflow-hidden rounded-full text-white transition-all duration-500 group-hover:-bottom-4'>
+                      Enroll Now
+                      <span className='text-xl'>
+                        <GoArrowRight />
+                      </span>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

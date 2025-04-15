@@ -14,7 +14,7 @@ const Offer = () => {
     <section className='pt-16 md:pt-20 lg:pt-28'>
       <div className='Container'>
         <div className='grid grid-cols-2 gap-6'>
-          <div className='rounded-[20px] overflow-hidden relative z-10 before:absolute before:-left-3/4 before:top-0 before:w-1/2 before:h-full before:bg-gradient-to-r before:to-transparent before:from-white before:-skew-x-[20deg] before:opacity-30 hover:before:animate-shine'>
+          <div className='rounded-[20px] overflow-hidden relative z-10 before:absolute before:-left-3/4 before:top-0 before:w-1/2 before:h-full before:bg-gradient-to-r before:to-transparent before:via-white before:from-transparent before:-skew-x-[20deg] before:opacity-30 hover:before:animate-shine'>
             <img
               src={offerImg}
               draggable={false}

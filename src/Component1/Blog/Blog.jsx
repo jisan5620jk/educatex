@@ -1,47 +1,49 @@
-import { FaRegCalendarCheck } from 'react-icons/fa6';
-import blogThumb from '/images/blog_img.png';
-import blogThumb2 from '/images/blog_img2.png';
-import blogThumb3 from '/images/blog_img3.png';
-import titleShape from '/images/sub-title-shape.png';
+import blogThumb from '/images/blog-thumb1.png';
+import blogThumb2 from '/images/blog-thumb2.png';
+import blogThumb3 from '/images/blog-thumb3.png';
 import BlogCard from './BlogCard';
-import blogPostIcon from '/images/user1.png';
-import blogPostIcon2 from '/images/user2.png';
-import blogPostIcon3 from '/images/user3.png';
-import { Link } from 'react-router-dom';
+import blogPostIcon from '/images/blog-autor1.png';
+import blogPostIcon2 from '/images/blog-autor2.png';
+import blogPostIcon3 from '/images/blog-autor3.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
+import './blog.css'
+import { IoMdLogIn } from 'react-icons/io';
 
 const blogData = [
   {
     id: 1,
     blogThumb: blogThumb,
-    blogDateIcon: <FaRegCalendarCheck />,
-    blogDate: '04 Mar, 2025',
+    blogDate: '04 Feb',
     blogPostIcon: blogPostIcon,
     blogPost: 'By - Jhon D. Alexon',
     blogUrl: '/blog_details2',
-    blogTitle: 'Expert Advice for Growing Your Digital Presence',
+    blogTitle: '10 Proven Strategies to excel Online Learning',
+    blogBtnText: 'Continue Reading',
+    blogBtnIcon: <IoMdLogIn />,
   },
   {
     id: 2,
     blogThumb: blogThumb2,
-    blogDateIcon: <FaRegCalendarCheck />,
-    blogDate: '14 Mar, 2025',
+    blogDate: '14 Mar',
     blogPostIcon: blogPostIcon2,
     blogPost: 'By - Samira Khan',
     blogUrl: '/blog_details2',
-    blogTitle: 'Data-Driven Strategies and Case Studies Success',
+    blogTitle: 'Trends that are shaping the Learning experience',
+    blogBtnText: 'Continue Reading',
+    blogBtnIcon: <IoMdLogIn />,
   },
   {
     id: 3,
     blogThumb: blogThumb3,
-    blogDateIcon: <FaRegCalendarCheck />,
-    blogDate: '24 Mar, 2025',
+    blogDate: '24 Nov',
     blogPostIcon: blogPostIcon3,
     blogPost: 'By - Anjelina Watson',
     blogUrl: '/blog_details2',
-    blogTitle: 'The Complete SEO Blog for Digital Success',
+    blogTitle: 'Learning is the Key soft skills and Professional',
+    blogBtnText: 'Continue Reading',
+    blogBtnIcon: <IoMdLogIn />,
   },
 ];
 
@@ -74,52 +76,19 @@ const Blog = () => {
     },
   };
   return (
-    <section className='py-16 md:py-20 lg:py-28 bg-BodyBg-0'>
+    <section className='py-16 md:py-20 lg:py-28 bg-white blog-section'>
       <div className='Container'>
-        <div className='flex gap-4 flex-col md:flex-row justify-between items-center'>
-          <div>
-            <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
-              <img
-                src={titleShape}
-                draggable={false}
-                alt='Shape'
-              />{' '}
-              Latest Blog
+        <div className='relative grid items-center grid-cols-1 md:grid-cols-2 gap-8'>
+          <div className='border-b border-SecondaryColor-0 border-opacity-15 py-6'>
+            <h5 className='font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
+              LATEST BLOG
             </h5>
-            <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[38px] md:leading-[48px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
-              Ready Our Latest Insights
-              <br /> from Our Blog Posts
-            </h1>
           </div>
-          <div className=''>
-            <Link
-              to={'/blog_grid2'}
-              className='inline-block'
-            >
-              <button className='primary-btn'>
-                {`All Projects`}
-                <span className='icon-style'>
-                  <svg
-                    className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
-                    xmlns='http://www.w3.org/2000/svg'
-                    stroke='CurrentColor'
-                    width='14.2'
-                    height='14.2'
-                    viewBox='0 0 14.2 14.2'
-                  >
-                    <g>
-                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                    </g>
-                    <g>
-                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                    </g>
-                  </svg>
-                </span>
-              </button>
-            </Link>
-          </div>
+          <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0'>
+            Read the Latest Insights and
+            <br />
+            Updates Educate Blog
+          </h1>
         </div>
         <div className='mt-[46px]'>
           <Swiper {...settings}>
@@ -127,24 +96,28 @@ const Blog = () => {
               ({
                 id,
                 blogThumb,
-                blogDateIcon,
                 blogDate,
                 blogPostIcon,
                 blogPost,
                 blogUrl,
                 blogTitle,
+                blogBtnText,
+                blogBtnIcon,
               }) => {
                 return (
                   <SwiperSlide key={id}>
-                    <BlogCard
-                      blogThumb={blogThumb}
-                      blogDateIcon={blogDateIcon}
-                      blogDate={blogDate}
-                      blogPostIcon={blogPostIcon}
-                      blogPost={blogPost}
-                      blogUrl={blogUrl}
-                      blogTitle={blogTitle}
-                    />
+                    <div className='blog-box'>
+                      <BlogCard
+                        blogThumb={blogThumb}
+                        blogDate={blogDate}
+                        blogPostIcon={blogPostIcon}
+                        blogPost={blogPost}
+                        blogUrl={blogUrl}
+                        blogTitle={blogTitle}
+                        blogBtnText={blogBtnText}
+                        blogBtnIcon={blogBtnIcon}
+                      />
+                    </div>
                   </SwiperSlide>
                 );
               }
