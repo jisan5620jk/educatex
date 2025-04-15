@@ -75,22 +75,22 @@ const Testimonial = () => {
 
   return (
     <section className='testimonial pt-16 md:pt-20 lg:pt-[120px] bg-PrimaryColor-0 bg-opacity-10 relative z-20 overflow-hidden'>
-            <div className='absolute -z-10 top-[22%] left-[13%] inline-block'>
-              <img
-                src={testiShape}
-                draggable={false}
-                alt='Testimonial Shape'
-                className='animate-rotational'
-              />
-            </div>
-            <div className='absolute -z-10 top-[56%] left-[12%] inline-block'>
-              <img
-                src={testiShape2}
-                draggable={false}
-                alt='Testimonial Shape'
-                className='animate-wiggle'
-              />
-            </div>
+      <div className='absolute -z-10 top-[22%] left-[13%] inline-block'>
+        <img
+          src={testiShape}
+          draggable={false}
+          alt='Testimonial Shape'
+          className='animate-rotational'
+        />
+      </div>
+      <div className='absolute -z-10 top-[56%] left-[12%] inline-block'>
+        <img
+          src={testiShape2}
+          draggable={false}
+          alt='Testimonial Shape'
+          className='animate-wiggle'
+        />
+      </div>
       <div className='Container'>
         <div className='relative grid items-center grid-cols-1 md:grid-cols-2 gap-8'>
           <div className='border-b border-SecondaryColor-0 border-opacity-15 py-6'>
@@ -105,7 +105,7 @@ const Testimonial = () => {
           </h1>
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2 items-start mt-12'>
-          <div className='-mt-2 flex items-center justify-center lg:ml-12 relative z-10'>
+          <div className='-mt-2 flex items-center justify-center lg:ml-12 relative'>
             <img
               src={testiThumb}
               draggable={false}
