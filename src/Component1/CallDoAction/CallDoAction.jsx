@@ -16,8 +16,8 @@ const CallDoAction = () => {
               </h1>
             </div>
           </div>
-          <div className='flex items-center justify-between'>
-            <div className='absolute top-28 left-48 animate-dance3'>
+          <div className='flex items-center justify-between relative'>
+            <div className='absolute top-7 -left-20 animate-dance3'>
               <img
                 src={shape}
                 draggable={false}

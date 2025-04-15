@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import footerLogo from '/images/footer-logo.png';
 import {
-  FaEnvelope,
   FaFacebookF,
   FaLinkedinIn,
   FaPhoneVolume,
   FaPinterestP,
+  FaRegEnvelope,
   FaXTwitter,
 } from 'react-icons/fa6';
 import footerImg from '/images/footer-recent-img1.png';
@@ -84,7 +84,7 @@ const Footer = () => {
               </p>
               <div className='flex items-center gap-2 mb-3'>
                 <div className='text-PrimaryColor-0'>
-                  <FaPhoneVolume size={'18'} />
+                  <FaPhoneVolume size={'20'} />
                 </div>
                 <a
                   href='tel:+1234567890'
@@ -97,7 +97,7 @@ const Footer = () => {
               </div>
               <div className='flex items-center gap-2'>
                 <div className='text-PrimaryColor-0'>
-                  <FaEnvelope size={'18'} />
+                  <FaRegEnvelope size={'16'} />
                 </div>
                 <a
                   href='mailto:example@gmail.com'

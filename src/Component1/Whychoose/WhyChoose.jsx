@@ -40,7 +40,7 @@ const WhyChoose = () => {
               systems
             </p>
             <ul className='grid items-center grid-cols-1 sm:grid-cols-2 gap-8 mt-9 mb-7'>
-              <li className='flex items-center gap-[10px] px-5 py-4 rounded-[10px] bg-BodyBg-0 group relative z-10 overflow-hidden'>
+              <li className='flex items-center gap-[10px] px-5 py-4 rounded-[10px] bg-PrimaryColor-0 bg-opacity-10 group relative z-10 overflow-hidden'>
                 <div className='choose-icon-hover-bg'>
                   <span className='absolute left-[12.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
                   <span className='absolute left-[37.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
@@ -59,7 +59,7 @@ const WhyChoose = () => {
                   Course Management
                 </h5>
               </li>
-              <li className='flex items-center gap-[10px] px-5 py-4 rounded-[10px] bg-BodyBg-0 group relative z-10 overflow-hidden'>
+              <li className='flex items-center gap-[10px] px-5 py-4 rounded-[10px] bg-PrimaryColor2-0 bg-opacity-10 group relative z-10 overflow-hidden'>
                 <div className='choose-icon-hover-bg'>
                   <span className='absolute left-[12.5%] top-0 h-full w-0 bg-PrimaryColor2-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
                   <span className='absolute left-[37.5%] top-0 h-full w-0 bg-PrimaryColor2-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
@@ -78,7 +78,7 @@ const WhyChoose = () => {
                   Students Progress Tracking
                 </h5>
               </li>
-              <li className='flex items-center gap-[10px] px-5 py-4 rounded-[10px] bg-BodyBg-0 group relative z-10 overflow-hidden'>
+              <li className='flex items-center gap-[10px] px-5 py-4 rounded-[10px] bg-PrimaryColor4-0 bg-opacity-10 group relative z-10 overflow-hidden'>
                 <div className='choose-icon-hover-bg'>
                   <span className='absolute left-[12.5%] top-0 h-full w-0 bg-PrimaryColor4-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
                   <span className='absolute left-[37.5%] top-0 h-full w-0 bg-PrimaryColor4-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
@@ -97,7 +97,7 @@ const WhyChoose = () => {
                   Interactive Live Class
                 </h5>
               </li>
-              <li className='flex items-center gap-[10px] px-5 py-4 rounded-[10px] bg-BodyBg-0 group relative z-10 overflow-hidden'>
+              <li className='flex items-center gap-[10px] px-5 py-4 rounded-[10px] bg-PrimaryColor3-0 bg-opacity-10 group relative z-10 overflow-hidden'>
                 <div className='choose-icon-hover-bg'>
                   <span className='absolute left-[12.5%] top-0 h-full w-0 bg-PrimaryColor3-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
                   <span className='absolute left-[37.5%] top-0 h-full w-0 bg-PrimaryColor3-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
