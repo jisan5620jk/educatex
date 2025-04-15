@@ -1,47 +1,53 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Autoplay } from 'swiper/modules';
-import { MdOutlineStarPurple500 } from 'react-icons/md';
+import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
+import { MdOutlineStarHalf, MdOutlineStarPurple500 } from 'react-icons/md';
 import TestimonialCard from './TestimonialCard';
-import titleShape from '/images/sub-title-shape.png';
-import reviewLogo from '/images/star-1-1.png';
-import testiImg from '/images/author.png';
-import testiQuate from '/images/quote.png';
-import Brand from './Brand';
+import testiImg from '/images/testi-autor1.png';
+import testiImg2 from '/images/testi-autor3.png';
+import testiImg3 from '/images/testi-autor4.png';
+import testiQuate from '/images/testi-quote.png';
+import testiThumb from '/images/testi-thumb.png';
+import testiShape from '/images/testi-map.png';
+import testiShape2 from '/images/hero-dot.png';
+import TestiNavigation from './TestiNavigation';
+import './testimonial.css';
 
 const testiData = [
   {
     id: 1,
     testiTitle: 'Design Quality!',
     testiQuate: testiQuate,
-    testiDesc: `Credibly embrace covalent growth strategies 
-                without out-of-the-box value. Collaboratively 
-                transition focused total linkage`,
+    testiDesc: `Educate the ultimate destination for knowledge seekers and educators we are committed to transforming special education impact global channels  without standards compliant systems attractive learning opinions.`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
+    testiRatingIcon2: <MdOutlineStarHalf />,
     testiName: 'Anjelina Watson',
     testiImg: testiImg,
+    testiDesignation: 'Student',
   },
   {
     id: 2,
     testiTitle: 'Awesome Support!',
     testiQuate: testiQuate,
-    testiDesc: `Credibly embrace covalent growth strategies 
-                without out-of-the-box value. Collaboratively 
-                transition focused total linkage`,
+    testiDesc: `Educate the ultimate destination for knowledge seekers and educators we are committed to transforming special education impact global channels  without standards compliant systems attractive learning opinions.`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
+    testiRatingIcon2: <MdOutlineStarHalf />,
     testiName: 'Jhon D. Alexon',
-    testiImg: testiImg,
+    testiImg: testiImg2,
+    testiDesignation: 'Student',
   },
   {
     id: 3,
     testiTitle: 'Best Development!',
     testiQuate: testiQuate,
-    testiDesc: `Credibly embrace covalent growth strategies 
-                without out-of-the-box value. Collaboratively 
-                transition focused total linkage`,
+    testiDesc: `Educate the ultimate destination for knowledge seekers and educators we are committed to transforming special education impact global channels  without standards compliant systems attractive learning opinions.`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
+    testiRatingIcon2: <MdOutlineStarHalf />,
     testiName: 'Murad Junaid',
-    testiImg: testiImg,
+    testiImg: testiImg3,
+    testiDesignation: 'Student',
   },
 ];
 
@@ -49,57 +55,69 @@ const Testimonial = () => {
   const settings = {
     modules: [Autoplay],
     loop: true,
-    spaceBetween: 30,
     speed: 2000,
     autoplay: {
       delay: 3000, // Set delay time in milliseconds
       disableOnInteraction: false, // Keep autoplay on user interaction
     },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 1,
-      },
-      992: {
-        slidesPerView: 2,
-      },
-      1400: {
-        slidesPerView: 2,
-      },
+    effect: 'fade', // Fade effect for smooth transitions
+    fadeEffect: {
+      crossFade: true,
     },
   };
+
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + ' pagination-bullet"></span>';
+    },
+  };
+
   return (
-    <section className='testimonial pt-16 md:pt-20 lg:pt-[135px] pb-16 md:pb-20 lg:pb-28 bg-[url(/images/testimonial.png)] bg-no-repeat bg-cover bg-top bg-HeadingColor-0 relative z-10 overflow-hidden'>
-      <div className='Container'>
-        <div className='grid grid-cols-1 gap-10 md:gap-2 md:grid-cols-2 lg:grid-cols-3'>
-          <div className='text-left col-span-1'>
-            <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+    <section className='testimonial pt-16 md:pt-20 lg:pt-[120px] bg-PrimaryColor-0 bg-opacity-10 relative z-20 overflow-hidden'>
+            <div className='absolute -z-10 top-[22%] left-[13%] inline-block'>
               <img
-                src={titleShape}
+                src={testiShape}
                 draggable={false}
-                alt='Shape'
-              />{' '}
-              Testimonials
-            </h5>
-            <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[38px] md:leading-[48px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-6'>
-              Trusted by Industry
-              <br />
-              Leaders Customers
-              <br />
-              Testimonials
-            </h1>
-            <div>
-              <img
-                src={reviewLogo}
-                draggable='false'
-                alt='Review Logo'
+                alt='Testimonial Shape'
+                className='animate-rotational'
               />
             </div>
+            <div className='absolute -z-10 top-[56%] left-[12%] inline-block'>
+              <img
+                src={testiShape2}
+                draggable={false}
+                alt='Testimonial Shape'
+                className='animate-wiggle'
+              />
+            </div>
+      <div className='Container'>
+        <div className='relative grid items-center grid-cols-1 md:grid-cols-2 gap-8'>
+          <div className='border-b border-SecondaryColor-0 border-opacity-15 py-6'>
+            <h5 className='font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
+              TESTIMONIALS
+            </h5>
           </div>
-          <div className='col-span-1 lg:col-span-2'>
-            <Swiper {...settings}>
+          <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0'>
+            Real Experiences From Our
+            <br />
+            Dedicated Learners
+          </h1>
+        </div>
+        <div className='grid grid-cols-1 lg:grid-cols-2 items-start mt-12'>
+          <div className='-mt-2 flex items-center justify-center lg:ml-12 relative z-10'>
+            <img
+              src={testiThumb}
+              draggable={false}
+              alt='Testimonial Image'
+            />
+          </div>
+          <div className='ml-4'>
+            <Swiper
+              {...settings}
+              pagination={pagination}
+              modules={[Pagination, EffectFade]}
+            >
               <div>
                 {testiData.map(
                   ({
@@ -107,9 +125,11 @@ const Testimonial = () => {
                     testiTitle,
                     testiQuate,
                     testiRatingIcon,
+                    testiRatingIcon2,
                     testiName,
                     testiImg,
                     testiDesc,
+                    testiDesignation,
                   }) => {
                     return (
                       <SwiperSlide key={id}>
@@ -118,9 +138,11 @@ const Testimonial = () => {
                             testiTitle={testiTitle}
                             testiQuate={testiQuate}
                             testiRatingIcon={testiRatingIcon}
+                            testiRatingIcon2={testiRatingIcon2}
                             testiName={testiName}
                             testiImg={testiImg}
                             testiDesc={testiDesc}
+                            testiDesignation={testiDesignation}
                           />
                         </div>
                       </SwiperSlide>
@@ -128,10 +150,10 @@ const Testimonial = () => {
                   }
                 )}
               </div>
+              <TestiNavigation />
             </Swiper>
           </div>
         </div>
-        <Brand />
       </div>
     </section>
   );

@@ -5,6 +5,7 @@ import Course from '../../Component1/Course/course';
 import Feature from '../../Component1/Feature/Feature';
 import Offer from '../../Component1/Offer/Offer';
 import TeamMember from '../../Component1/TeamMember/TeamMember';
+import Testimonial from '../../Component1/Testimonial/Testimonial';
 import WhyChoose from '../../Component1/Whychoose/WhyChoose';
 
 const Home1 = () => {
@@ -17,6 +18,7 @@ const Home1 = () => {
       <WhyChoose />
       <Offer />
       <TeamMember />
+      <Testimonial />
       <Brand />
     </>
   );
