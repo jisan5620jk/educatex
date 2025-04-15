@@ -52,7 +52,7 @@ const TeamCard = ({
             {teamTitle}
           </Link>
         </div>
-        <p className='team-desc bg-PrimaryColor-0 bg-opacity-10 border border-PrimaryColor-0 border-opacity-30 font-Outfit text-sm text-PrimaryColor-0 px-5 py-[5px] rounded-3xl font-medium mt-3 inline-block'>
+        <p className='team-desc bg-BodyBg-0 border border-PrimaryColor-0 border-opacity-30 font-Outfit text-sm text-PrimaryColor-0 px-5 py-[5px] rounded-3xl font-medium mt-3 inline-block'>
           {teamDesc}
         </p>
         <div className='flex items-center justify-center gap-1 text-ReviewText-0 text-[15px] mt-[19px]'>

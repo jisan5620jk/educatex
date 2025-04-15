@@ -74,7 +74,7 @@ const Testimonial = () => {
   };
 
   return (
-    <section className='testimonial pt-16 md:pt-20 lg:pt-[120px] bg-PrimaryColor-0 bg-opacity-10 relative z-20 overflow-hidden'>
+    <section className='testimonial pt-16 md:pt-20 lg:pt-[120px] bg-BodyBg-0 relative z-20 overflow-hidden'>
       <div className='absolute -z-10 top-[22%] left-[13%] inline-block'>
         <img
           src={testiShape}

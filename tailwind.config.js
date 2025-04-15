@@ -17,7 +17,7 @@ export default {
         TextColor: ['#616161'],
         TextColor2: ['#686868'],
         ReviewText: ['#ffb108'],
-        BodyBg: ['#f1f3fe'],
+        BodyBg: ['#f0fbf7'],
         BodyBg2: ['#daeae7'],
         BodyBg3: ['#152433'],
         BodyBg4: ['#233342'],

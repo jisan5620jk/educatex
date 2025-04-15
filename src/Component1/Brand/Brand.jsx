@@ -29,10 +29,28 @@ const Brand = () => {
   };
 
   return (
-    <section className="bg-PrimaryColor-0 bg-opacity-10 pt-[110px] pb-[78px] rounded-b-lg lg:rounded-b-2xl relative z-10">
-      <div className='absolute top-24 left-[40%] animate-rotational'><img src={shape} draggable={false} alt="Shape" /></div>
-      <div className='absolute top-28 left-48 animate-dance3'><img src={shape2} draggable={false} alt="Shape" /></div>
-      <div className='absolute -top-16 right-28 animate-wiggle'><img src={shape3} draggable={false} alt="Shape" /></div>
+    <section className='bg-BodyBg-0 pt-[110px] pb-[78px] rounded-b-lg lg:rounded-b-2xl relative z-10'>
+      <div className='absolute top-24 left-[40%] animate-rotational'>
+        <img
+          src={shape}
+          draggable={false}
+          alt='Shape'
+        />
+      </div>
+      <div className='absolute top-28 left-48 animate-dance3'>
+        <img
+          src={shape2}
+          draggable={false}
+          alt='Shape'
+        />
+      </div>
+      <div className='absolute -top-16 right-28 animate-wiggle'>
+        <img
+          src={shape3}
+          draggable={false}
+          alt='Shape'
+        />
+      </div>
       <div className='Container'>
         <div className='flex items-center justify-between flex-wrap'>
           <div>

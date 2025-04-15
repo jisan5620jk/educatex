@@ -30,7 +30,7 @@ const Offer = () => {
             </div>
           </div>
           <div className='rounded-[20px] overflow-hidden px-11 pt-[50px] pb-[49px] bg-PrimaryColor-0 bg-opacity-15 relative z-10'>
-            <h6 className='bg-PrimaryColor-0 bg-opacity-10 border border-PrimaryColor-0 border-opacity-30 font-Outfit text-sm text-PrimaryColor-0 px-5 py-[5px] rounded-3xl font-medium mb-4 inline-block'>
+            <h6 className='bg-BodyBg-0 border border-PrimaryColor-0 border-opacity-30 font-Outfit text-sm text-PrimaryColor-0 px-5 py-[5px] rounded-3xl font-medium mb-4 inline-block'>
               Designing
             </h6>
             <h3 className='font-Outfit text-[28px] font-semibold leading-[36px] text-HeadingColor-0 transition-all duration-500'>
@@ -66,8 +66,12 @@ const Offer = () => {
               />
             </div>
             <div className='flex items-center gap-4 mb-9'>
-              <h5 className='font-Outfit text-[22px] text-PrimaryColor-0'>$35</h5>
-              <h5 className='font-Outfit text-[22px] text-TextColor-0 line-through'>$60</h5>
+              <h5 className='font-Outfit text-[22px] text-PrimaryColor-0'>
+                $35
+              </h5>
+              <h5 className='font-Outfit text-[22px] text-TextColor-0 line-through'>
+                $60
+              </h5>
             </div>
             <div>
               <Link

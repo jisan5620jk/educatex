@@ -19,7 +19,7 @@ const Banner = () => {
         <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0 mt-[70px] lg:mt-[90px]'>
           <div className='relative'>
             <div className='inline-block mb-4'>
-              <h5 className='font-Outfit bg-PrimaryColor-0 bg-opacity-10 px-5 py-[6px] rounded border border-PrimaryColor-0 border-opacity-30 text-HeadingColor-0 text-sm flex items-center gap-3 uppercase'>
+              <h5 className='font-Outfit bg-BodyBg-0 px-5 py-[6px] rounded border border-PrimaryColor-0 border-opacity-30 text-HeadingColor-0 text-sm flex items-center gap-3 uppercase'>
                 <span className='text-PrimaryColor-0'>
                   <FaCheck size={15} />
                 </span>

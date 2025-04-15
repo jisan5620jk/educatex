@@ -1,6 +1,7 @@
 import About from '../../Component1/About/About';
 import Banner from '../../Component1/Banner/Banner';
 import Brand from '../../Component1/Brand/Brand';
+import CallDoAction from '../../Component1/CallDoAction/CallDoAction';
 import Course from '../../Component1/Course/course';
 import Feature from '../../Component1/Feature/Feature';
 import Offer from '../../Component1/Offer/Offer';
@@ -19,6 +20,7 @@ const Home1 = () => {
       <Offer />
       <TeamMember />
       <Testimonial />
+      <CallDoAction />
       <Brand />
     </>
   );
