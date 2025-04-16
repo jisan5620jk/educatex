@@ -5,6 +5,7 @@ import Brand from '../../Component1/Brand/Brand';
 import CallDoAction from '../../Component1/CallDoAction/CallDoAction';
 import Course from '../../Component1/Course/course';
 import Feature from '../../Component1/Feature/Feature';
+import Marquee from '../../Component1/Marquee/Marquee';
 import Offer from '../../Component1/Offer/Offer';
 import TeamMember from '../../Component1/TeamMember/TeamMember';
 import Testimonial from '../../Component1/Testimonial/Testimonial';
@@ -16,6 +17,7 @@ const Home1 = () => {
       <Banner />
       <Feature />
       <About />
+      <Marquee />
       <Course />
       <WhyChoose />
       <Offer />
