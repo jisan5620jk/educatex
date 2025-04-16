@@ -12,7 +12,7 @@ const TestimonialCard = ({
   return (
     <div>
       <div className='relative text-left bg-white px-5 sm:px-10 py-4 sm:py-12 mb-8 rounded-[20px]'>
-        <div className='flex items-center gap-4 mb-10'>
+        <div className='flex items-center gap-4 mb-4 sm:mb-10'>
           <div>
             <img
               src={testiQuate}
@@ -21,12 +21,12 @@ const TestimonialCard = ({
             />
           </div>
           <div>
-            <h5 className='font-Outfit text-2xl md:text-[26px] text-HeadingColor-0 font-medium'>
+            <h5 className='font-Outfit text-xl sm:text-2xl md:text-[26px] text-HeadingColor-0 font-medium'>
               {testiTitle}
             </h5>
           </div>
         </div>
-        <p className='font-OpenSans text-lg text-TextColor-0'>{testiDesc}</p>
+        <p className='font-OpenSans text-base sm:text-lg text-TextColor-0'>{testiDesc}</p>
         <ul className='flex items-center mt-[22px]'>
           <li className='text-ReviewText-0 text-2xl'>{testiRatingIcon}</li>
           <li className='text-ReviewText-0 text-2xl'>{testiRatingIcon}</li>

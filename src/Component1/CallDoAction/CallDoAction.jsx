@@ -6,7 +6,7 @@ const CallDoAction = () => {
   return (
     <section className='relative z-20 -mt-[88px]'>
       <div className='Container'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 lg:items-center bg-PrimaryColor-0 rounded-[20px] px-2 lg:px-0 py-10 xl:py-0'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 lg:items-center bg-PrimaryColor-0 rounded-[20px] gap-6 lg:gap-0 px-5 lg:px-0 py-6 xl:py-0'>
           <div className='flex xl:pl-[62px] relative'>
             <div>
               <h1 className='font-Outfit font-semibold text-lg leading-6 sm:text-[34px] sm:leading-[44px] md:text-[38px] md:leading-[48px] lg:text-[30px] lg:leading-[40px] xl:text-[34px] xl:leading-[40px] text-white mt-[14px] mb-4'>
@@ -16,7 +16,7 @@ const CallDoAction = () => {
               </h1>
             </div>
           </div>
-          <div className='flex items-center justify-between relative'>
+          <div className='flex flex-wrap items-center gap-7 md:gap-0 justify-between relative'>
             <div className='absolute top-7 -left-20 animate-dance3'>
               <img
                 src={shape}
@@ -43,7 +43,7 @@ const CallDoAction = () => {
                 </a>
               </div>
             </div>
-            <div className='max-w-[294px] w-full rounded-md bg-white m-[10px] pt-[42px] pb-10'>
+            <div className='max-w-[294px] w-full rounded-md bg-white lg:m-[10px] pt-[42px] pb-10'>
               <img
                 src={logo}
                 draggable={logo}

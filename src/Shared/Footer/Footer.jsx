@@ -19,8 +19,8 @@ const Footer = () => {
     <>
       <div className='bg-SecondaryColor-0 pt-[60px]'>
         <div className='Container -mb-[70px] relative z-10'>
-          <div className='bg-white bg-opacity-5 rounded-[20px] py-5 md:py-7 px-6 md:px-[50px] grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-7 lg:gap-0 lg:grid-cols-3 lg:items-center'>
-            <div className='py-4'>
+          <div className='bg-white bg-opacity-5 rounded-[20px] py-5 md:py-7 px-6 md:px-[50px] grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-7 lg:gap-0 lg:grid-cols-3 lg:items-center'>
+            <div className='md:py-4'>
               <Link
                 to={'/'}
                 title='EducateX'
@@ -32,7 +32,7 @@ const Footer = () => {
               </Link>
             </div>
             <div>
-              <h4 className='font-Outfit font-medium text-2xl text-white uppercase'>
+              <h4 className='font-Outfit font-medium tex-xl sm:text-2xl text-white uppercase'>
                 Subscribe{' '}
                 <span className='text-PrimaryColor-0'>Newsletter</span>
               </h4>
@@ -53,7 +53,7 @@ const Footer = () => {
                     id='email'
                     placeholder='Enter Your E-Mail*'
                     required
-                    className='w-[388px] h-[52px] font-OpenSans bg-transparent rounded-full outline-none focus:outline-none border border-white border-opacity-15 pl-14 pr-8 py-2 text-white placeholder:text-white placeholder:text-opacity-50'
+                    className='w-full sm:w-[388px] h-[52px] font-OpenSans bg-transparent rounded-full outline-none focus:outline-none border border-white border-opacity-15 pl-14 pr-8 py-2 text-white placeholder:text-white placeholder:text-opacity-50'
                   />
                   <HiOutlineMail className='absolute top-1/2 -translate-y-1/2 left-6 text-PrimaryColor-0 text-xl' />
                 </label>

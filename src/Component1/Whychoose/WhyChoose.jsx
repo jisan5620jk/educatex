@@ -20,7 +20,7 @@ const WhyChoose = () => {
         src={shape4}
         draggable={false}
         alt='Shape'
-        className='absolute -top-14 right-[6%] animate-rotational'
+        className='absolute -top-14 right-[6%] animate-rotational hidden lg:block'
       />
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 items-end'>
@@ -39,7 +39,7 @@ const WhyChoose = () => {
               education impact global channels without standards compliant
               systems
             </p>
-            <ul className='grid items-center grid-cols-1 sm:grid-cols-2 gap-8 mt-9 mb-7'>
+            <ul className='grid items-center grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-8 mt-9 mb-7'>
               <li className='flex items-center gap-[10px] px-5 py-4 rounded-[10px] bg-PrimaryColor-0 bg-opacity-10 group relative z-10 overflow-hidden'>
                 <div className='choose-icon-hover-bg'>
                   <span className='absolute left-[12.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
@@ -145,27 +145,27 @@ const WhyChoose = () => {
             <img
               src={whyChooseThumb}
               draggable='false'
-              className='w-full md:w-[inherit] lg:w-full xl:w-[inherit] max-w-[inherit] ml-[104px]'
+              className='w-full md:w-[inherit] lg:w-full xl:w-[inherit] max-w-[inherit] xl:ml-[104px]'
             />
             <img
               src={shape}
               draggable={false}
               alt='Shape'
-              className='absolute -z-10 bottom-[28%] left-[13%] animate-rotational'
+              className='absolute -z-10 bottom-[28%] left-[13%] animate-rotational hidden md:block'
             />
             <img
               src={shape2}
               draggable={false}
               alt='Shape'
-              className='absolute -z-10 -top-[1%] left-[59%] animate-swing'
+              className='absolute -z-10 -top-[1%] left-1/2 md:left-[59%] animate-swing'
             />
             <img
               src={shape3}
               draggable={false}
               alt='Shape'
-              className='absolute -bottom-[4%] -left-[24%] animate-dance'
+              className='absolute -bottom-[4%] -left-[24%] animate-dance hidden lg:block'
             />
-            <div className='absolute bottom-16 -right-[70px] bg-white rounded-[10px] px-7 py-6 inline-flex gap-5 items-start w-full max-w-[278px]'>
+            <div className='hidden absolute bottom-16 -right-[70px] bg-white rounded-[10px] px-7 py-6 md:inline-flex gap-5 items-start w-full max-w-[278px]'>
               <div>
                 <img
                   src={star}

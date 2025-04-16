@@ -31,7 +31,7 @@ span.marquee-text-item {
 
 @media screen and (max-width: 667px) {
   .marquee-text-section {
-    margin: 40px ;
+  padding: 27px 0 23px;
   }
 
   span.marquee-text-item {

@@ -29,22 +29,22 @@ const Brand = () => {
   };
 
   return (
-    <section className='bg-BodyBg-0 pt-[110px] pb-[78px] rounded-b-lg lg:rounded-b-2xl relative z-10'>
-      <div className='absolute top-24 left-[40%] animate-rotational'>
+    <section className='bg-BodyBg-0 pt-16 md:pt-20 lg:pt-[110px] pb-[78px] rounded-b-lg lg:rounded-b-2xl relative z-10'>
+      <div className='absolute top-24 left-[40%] animate-rotational hidden md:block'>
         <img
           src={shape}
           draggable={false}
           alt='Shape'
         />
       </div>
-      <div className='absolute top-28 left-48 animate-dance3'>
+      <div className='absolute top-28 left-48 animate-dance3 hidden md:block'>
         <img
           src={shape2}
           draggable={false}
           alt='Shape'
         />
       </div>
-      <div className='absolute -top-16 right-28 animate-wiggle'>
+      <div className='absolute -top-16 right-28 animate-wiggle hidden md:block'>
         <img
           src={shape3}
           draggable={false}
@@ -52,7 +52,7 @@ const Brand = () => {
         />
       </div>
       <div className='Container'>
-        <div className='flex items-center justify-between flex-wrap'>
+        <div className='flex items-center justify-between flex-wrap gap-y-7'>
           <div>
             <h5 className='font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
               our partners

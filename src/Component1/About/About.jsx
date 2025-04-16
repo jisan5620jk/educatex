@@ -16,13 +16,13 @@ const About = () => {
         src={shape4}
         draggable={false}
         alt='Shape'
-        className='absolute top-[16%] right-[7%] animate-rotational'
+        className='absolute top-[16%] right-[7%] animate-rotational hidden lg:block'
       />
       <img
         src={shape5}
         draggable={false}
         alt='Shape'
-        className='absolute bottom-[10%] right-[4%] animate-dance3'
+        className='absolute bottom-[10%] right-[4%] animate-dance3 hidden 2xl:block'
       />
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 items-end'>
@@ -30,25 +30,25 @@ const About = () => {
             <img
               src={aboutThumb}
               draggable='false'
-              className='w-full md:w-[inherit] lg:w-full xl:w-[inherit] max-w-[inherit] -ml-[224px]'
+              className='w-full md:w-[inherit] lg:w-full xl:w-[inherit] max-w-[inherit] xl:-ml-[224px]'
             />
             <img
               src={shape}
               draggable={false}
               alt='Shape'
-              className='absolute -z-10 -top-[3%] right-[12%] animate-rotational'
+              className='absolute -z-10 -top-[3%] right-0 lg:right-[12%] animate-rotational'
             />
             <img
               src={shape2}
               draggable={false}
               alt='Shape'
-              className='absolute -z-10 top-[2%] -left-[6%] animate-swing'
+              className='absolute -z-10 -top-4 lg:top-[2%] left-5 lg:-left-[6%] animate-swing'
             />
             <img
               src={shape3}
               draggable={false}
               alt='Shape'
-              className='absolute top-[30%] left-[24%] animate-wiggle'
+              className='absolute top-[30%] left-[24%] animate-wiggle hidden md:block'
             />
           </div>
           <div className='relative pb-16 md:pb-20 lg:pb-28'>
@@ -66,7 +66,7 @@ const About = () => {
               education impact global channels without standards compliant
               systems
             </p>
-            <ul className='grid items-center grid-cols-1 sm:grid-cols-2 gap-y-8 my-7'>
+            <ul className='grid items-center grid-cols-1 sm:grid-cols-2 gap-y-4 my-7'>
               <li className='flex items-center gap-[10px]'>
                 <div>
                   <img

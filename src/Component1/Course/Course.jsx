@@ -121,7 +121,7 @@ const Course = () => {
 
   return (
     <div className='course-filter bg-white pt-[60px] pb-[30px] md:pt-20 md:pb-[60px] lg:pt-[100px] xl:pt-[120px] lg:pb-[60px] xl:pb-20 relative'>
-      <div className='absolute left-7 bottom-0'>
+      <div className='absolute left-7 bottom-0 hidden lg:block'>
         <img
           src={shape}
           draggable={false}
@@ -151,37 +151,37 @@ const Course = () => {
           >
             <button
               data-filter='*'
-              className='active px-[7px] sm:px-6 md:px-[30px] py-[9px] mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize'
+              className='active px-3 sm:px-6 md:px-5 lg:px-[30px] py-[5px] sm:py-[9px] mx-[1px] sm:mx-2 md:mx-1 lg:mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize'
             >
-              All Categories
+              All <span className='hidden lg:block'>Categories</span>
             </button>
             <button
               data-filter='.finance'
-              className='px-[7px] sm:px-6 md:px-[30px] py-[9px] mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize'
+              className='hidden md:inline-block px-3 sm:px-6 md:px-5 lg:px-[30px] py-[5px] sm:py-[9px] mx-[1px] sm:mx-2 md:mx-1 lg:mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize'
             >
               Wordpress
             </button>
             <button
               data-filter='.wordpress'
-              className='px-[7px] sm:px-6 md:px-[30px] py-[9px] mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize'
+              className=' px-3 sm:px-6 md:px-5 lg:px-[30px] py-[5px] sm:py-[9px] mx-[1px] sm:mx-2 md:mx-1 lg:mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize'
             >
               Business
             </button>
             <button
               data-filter='.networking'
-              className='px-[7px] sm:px-6 md:px-[30px] py-[9px] mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize'
+              className='hidden md:inline-block px-3 sm:px-6 md:px-5 lg:px-[30px] py-[5px] sm:py-[9px] mx-[1px] sm:mx-2 md:mx-1 lg:mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize'
             >
               Networking
             </button>
             <button
               data-filter='.finance'
-              className='px-[7px] sm:px-6 md:px-[30px] py-[9px] mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize'
+              className='px-3 sm:px-6 md:px-5 lg:px-[30px] py-[6px] sm:py-[9px] mx-[1px] sm:mx-2 md:mx-1 lg:mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize'
             >
               Finance
             </button>
             <button
               data-filter='.wordpress'
-              className='px-[7px] sm:px-6 md:px-[30px] py-[9px] mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize'
+              className='px-3 sm:px-6 md:px-5 lg:px-[30px] py-[5px] sm:py-[9px] mx-[1px] sm:mx-2 md:mx-1 lg:mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize'
             >
               Designing
             </button>
@@ -190,30 +190,35 @@ const Course = () => {
         </div>
 
         <div
-          className='course-box text-center pt-10 md:pt-[50px]'
+          className='course-box flex flex-wrap -mx-[1.25%] pt-10 md:pt-[50px]'
           data-aos='fade-up'
           data-aos-delay='500'
           data-aos-duration='1000'
         >
-          <div className='course-sizer w-[30.83%]'></div>
-          <div className='gutter-sizer w-[2.5%]'></div>
+          {/* Only needed if you're using Isotope */}
+          <div className='course-sizer hidden lg:block w-[30.83%]'></div>
+          <div className='gutter-sizer hidden lg:block w-[2.5%]'></div>
 
           {courses.map((course, idx) => (
             <div
               key={idx}
-              className={`course-item box${course.id} ${
-                idx === 0
-                  ? 'finance'
-                  : idx === 1
-                  ? 'wordpress'
-                  : idx === 2
-                  ? 'networking'
-                  : idx === 3
-                  ? 'finance'
-                  : 'wordpress'
-              }
+              className={` course-item box${course.id}
+                          ${
+                            idx === 0
+                              ? 'finance'
+                              : idx === 1
+                              ? 'wordpress'
+                              : idx === 2
+                              ? 'networking'
+                              : idx === 3
+                              ? 'finance'
+                              : 'wordpress'
+                          }
 
-              }   rounded-[20px] mb-[4%] w-full md:w-[47%] lg:w-[30.83%] p-[30px] group relative z-10 overflow-hidden`}
+                          md:w-[46%] lg:w-[30.83%]
+                          mx-[2%] lg:mx-0 mb-[4%]
+                          p-4 xl:p-[30px] rounded-[20px]
+                          group relative z-10 overflow-hidden `}
             >
               <div className='relative rounded-2xl overflow-hidden'>
                 <div className='hover-bg'>
@@ -226,17 +231,18 @@ const Course = () => {
                   src={course.img}
                   alt='Course'
                   draggable={false}
+                  className='w-full'
                 />
                 <div className='course-price absolute z-20 bottom-5 left-5 size-[70px] flex items-center justify-center text-white text-xl rounded-full font-Outfit font-medium'>
                   {course.price}
                 </div>
               </div>
 
-              <div className='px-3 pt-6 text-left'>
+              <div className='sm:px-3 pt-6 text-left'>
                 <span className='course-category font-Outfit text-sm px-5 py-[5px] rounded-3xl font-medium mb-4 inline-block'>
                   {course.category}
                 </span>
-                <h3 className='course-title font-Outfit text-2xl font-medium text-HeadingColor-0 transition-all duration-500'>
+                <h3 className='course-title font-Outfit text-xl sm:text-2xl font-medium text-HeadingColor-0 transition-all duration-500'>
                   {course.title}
                 </h3>
 
@@ -269,15 +275,11 @@ const Course = () => {
                 <div className='border-t pt-5 relative'>
                   <div className='flex justify-between transition-all duration-500 group-hover:opacity-0'>
                     <div className='font-Outfit text-HeadingColor-0 flex items-center gap-1'>
-                      <span className='icon'>
-                        <IoDocumentTextOutline size={18} />
-                      </span>
+                      <IoDocumentTextOutline size={18} />
                       {course.lessons} Lessons
                     </div>
                     <div className='font-Outfit text-HeadingColor-0 flex items-center gap-2'>
-                      <span className='icon'>
-                        <PiUsersThree size={18} />
-                      </span>
+                      <PiUsersThree size={18} />
                       {course.students} Students
                     </div>
                   </div>

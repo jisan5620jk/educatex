@@ -74,7 +74,7 @@ const Testimonial = () => {
   };
 
   return (
-    <section className='testimonial pt-16 md:pt-20 lg:pt-[120px] bg-BodyBg-0 relative z-20 overflow-hidden'>
+    <section className='testimonial pt-16 pb-28 md:pt-20 lg:pt-[120px] bg-BodyBg-0 relative z-20 overflow-hidden'>
       <div className='absolute -z-10 top-[22%] left-[13%] inline-block'>
         <img
           src={testiShape}
@@ -105,14 +105,14 @@ const Testimonial = () => {
           </h1>
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2 items-start mt-12'>
-          <div className='-mt-2 flex items-center justify-center lg:ml-12 relative'>
+          <div className='lg:-mt-2 flex items-center justify-center lg:ml-12 relative'>
             <img
               src={testiThumb}
               draggable={false}
               alt='Testimonial Image'
             />
           </div>
-          <div className='ml-4'>
+          <div className='lg:ml-4'>
             <Swiper
               {...settings}
               pagination={pagination}
@@ -133,7 +133,7 @@ const Testimonial = () => {
                   }) => {
                     return (
                       <SwiperSlide key={id}>
-                        <div className=''>
+                        <div className='pb-24'>
                           <TestimonialCard
                             testiTitle={testiTitle}
                             testiQuate={testiQuate}

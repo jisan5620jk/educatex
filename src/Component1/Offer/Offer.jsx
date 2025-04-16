@@ -13,7 +13,7 @@ const Offer = () => {
   return (
     <section className='pt-16 md:pt-20 lg:pt-28'>
       <div className='Container'>
-        <div className='grid grid-cols-2 gap-6'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
           <div className='rounded-[20px] overflow-hidden relative z-10 before:absolute before:-left-3/4 before:top-0 before:w-1/2 before:h-full before:bg-gradient-to-r before:to-transparent before:via-white before:from-transparent before:-skew-x-[20deg] before:opacity-30 hover:before:animate-shine'>
             <img
               src={offerImg}
@@ -29,11 +29,11 @@ const Offer = () => {
               </button>
             </div>
           </div>
-          <div className='rounded-[20px] overflow-hidden px-11 pt-[50px] pb-[49px] bg-PrimaryColor-0 bg-opacity-15 relative z-10'>
+          <div className='rounded-[20px] overflow-hidden px-5 sm:px-11 pt-6 sm:pt-[50px] pb-7 sm:pb-[49px] bg-PrimaryColor-0 bg-opacity-15 relative z-10'>
             <h6 className='bg-BodyBg-0 border border-PrimaryColor-0 border-opacity-30 font-Outfit text-sm text-PrimaryColor-0 px-5 py-[5px] rounded-3xl font-medium mb-4 inline-block'>
               Designing
             </h6>
-            <h3 className='font-Outfit text-[28px] font-semibold leading-[36px] text-HeadingColor-0 transition-all duration-500'>
+            <h3 className='font-Outfit text-xl sm:text-[28px] font-semibold sm:leading-[36px] text-HeadingColor-0 transition-all duration-500'>
               Creative Graphic Design
               <br /> With Adobe Suite
             </h3>
@@ -48,7 +48,7 @@ const Offer = () => {
                 (4.5/3 Ratings)
               </span>
             </div>
-            <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+            <div className='absolute top-[62%] sm:top-1/2 left-2/3 sm:left-1/2 -translate-x-1/2 -translate-y-1/2'>
               <div className='w-[68px] h-[70px] flex flex-col items-center justify-center relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-[url("/images/off-price-bg.png")] before:-z-10 before:animate-rotational'>
                 <h5 className='font-Outfit text-white text-[22px] font-medium'>
                   10%
@@ -58,7 +58,7 @@ const Offer = () => {
                 </h6>
               </div>
             </div>
-            <div className='absolute -bottom-[26%] -right-[8%]'>
+            <div className='absolute -bottom-[26%] -right-[8%] hidden sm:block'>
               <img
                 src={offerThumb}
                 draggable={false}

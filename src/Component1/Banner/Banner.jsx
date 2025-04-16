@@ -14,7 +14,7 @@ import './banner.css';
 
 const Banner = () => {
   return (
-    <section className="bg-[url('/images/hero1-bg.png')] bg-cover bg-center bg-no-repeat h-[700px] sm:h-[1350px] md:h-[1450px] lg:h-[750px] xl:h-[870px] flex items-center relative z-10 overflow-hidden">
+    <section className="bg-[url('/images/hero1-bg.png')] bg-cover bg-center bg-no-repeat h-[1200px] sm:h-[1350px] md:h-[1450px] lg:h-[750px] xl:h-[870px] flex items-center relative z-10 overflow-hidden">
       <div className='Container'>
         <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0 mt-[70px] lg:mt-[90px]'>
           <div className='relative'>
@@ -26,7 +26,7 @@ const Banner = () => {
                 100% Satisfaction Gaurantee
               </h5>
             </div>
-            <h1 className='font-Outfit font-semibold text-HeadingColor-0 text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[64px] md:leading-[74px] lg:text-[50px] xl:text-[66px] xl:leading-[76px] 2xl:text-[60px] 2xl:leading-[70px]'>
+            <h1 className='font-Outfit font-semibold text-HeadingColor-0 text-[26px] leading-[32px] sm:text-[56px] sm:leading-[60px] md:text-[64px] md:leading-[74px] lg:text-[50px] xl:text-[66px] xl:leading-[76px] 2xl:text-[60px] 2xl:leading-[70px]'>
               Growup Your Learning <br />
               Skills with Educate
             </h1>
@@ -36,7 +36,7 @@ const Banner = () => {
               <br className='hidden 2xl:block' /> We are committed to
               transforming education
             </p>
-            <div className='flex items-center gap-8'>
+            <div className='flex flex-wrap items-center gap-y-5 gap-x-8'>
               <div>
                 <Link
                   to={'/about'}
@@ -58,7 +58,7 @@ const Banner = () => {
                 </Link>
               </div>
             </div>
-            <div className='flex gap-5 items-start mt-24'>
+            <div className='flex flex-col sm:flex-row gap-5 items-start mt-16 md:mt-24'>
               <div className='flex items-center -space-x-3'>
                 <div>
                   <img
@@ -105,7 +105,7 @@ const Banner = () => {
               </div>
             </div>
           </div>
-          <div className='sm:flex justify-center lg:justify-end relative 2xl:-right-[60px] hidden'>
+          <div className='sm:flex justify-center lg:justify-end relative 2xl:-right-[60px] '>
             <img
               src={bannerImg}
               draggable='false'
@@ -131,7 +131,7 @@ const Banner = () => {
               draggable={false}
               className='absolute top-36 right-0 animate-wiggle hidden md:block lg:hidden 2xl:block'
             />
-            <div className='absolute bottom-32 -left-16 bg-white bg-opacity-40 backdrop-filter backdrop-blur-md border-2 border-white rounded-[20px] px-7 py-7 inline-flex gap-5 items-start'>
+            <div className='hidden absolute bottom-32 -left-16 bg-white bg-opacity-40 backdrop-filter backdrop-blur-md border-2 border-white rounded-[20px] px-7 py-7 md:inline-flex gap-5 items-start'>
               <div>
                 <img
                   src={user}

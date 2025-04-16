@@ -101,7 +101,7 @@ const TeamMember = () => {
   };
   return (
     <section className='bg-white py-16 md:py-20 lg:py-28 relative z-10 team-member'>
-      <div className='absolute left-32 top-26 animate-wiggle'>
+      <div className='absolute left-32 top-26 animate-wiggle hidden xl:block'>
         <img
           src={shape}
           draggable={false}
@@ -160,7 +160,7 @@ const TeamMember = () => {
           </Swiper>
         </div>
       </div>
-      <div className='absolute right-7 bottom-0'>
+      <div className='absolute right-7 bottom-0 hidden xl:block'>
         <img
           src={shape2}
           draggable={false}

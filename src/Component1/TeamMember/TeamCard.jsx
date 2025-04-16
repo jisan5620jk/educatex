@@ -14,7 +14,7 @@ const TeamCard = ({
   ratingContant,
 }) => {
   return (
-    <div className='group relative bg-BodyBg7-0 rounded-[20px] p-5'>
+    <div className='group relative bg-BodyBg7-0 rounded-[20px] p-3 sm:p-5'>
       <div className='team-thumb overflow-hidden rounded-[14px] relative z-10 before:absolute before:left-0 before:bottom-0 before:w-full before:h-0 before:transition-all before:duration-500 group-hover:before:h-full'>
         <img
           src={teamThumb}
