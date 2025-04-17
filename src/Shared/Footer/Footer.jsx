@@ -20,7 +20,7 @@ const Footer = () => {
       <div className='bg-SecondaryColor-0 pt-[60px]'>
         <div className='Container -mb-[70px] relative z-10'>
           <div className='bg-white bg-opacity-5 rounded-[20px] py-5 md:py-7 px-6 md:px-[50px] grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-7 lg:gap-0 lg:grid-cols-3 lg:items-center'>
-            <div className='md:py-4'>
+            <div className='lg:py-4'>
               <Link
                 to={'/'}
                 title='EducateX'
@@ -75,7 +75,7 @@ const Footer = () => {
         <div className='Container'>
           <div className='grid gap-y-7 grid-cols-12 lg:mt-8'>
             <div className='col-span-12 md:col-span-6 lg:col-span-4'>
-              <h4 className='font-Outfit text-2xl text-white font-medium mb-[33px]'>
+              <h4 className='font-Outfit text-2xl lg:text-xl xl:text-2xl text-white font-medium mb-[33px]'>
                 Get in Touch
               </h4>
               <p className='font-OpenSans text-white text-opacity-60 mt-7 lg:mt-0 mb-5 w-full max-w-[272px]'>
@@ -110,7 +110,7 @@ const Footer = () => {
               </div>
             </div>
             <div className='col-span-12 md:col-span-6 lg:col-span-2'>
-              <h4 className='font-Outfit text-2xl text-white font-medium mb-[33px]'>
+              <h4 className='font-Outfit text-2xl lg:text-xl xl:text-2xl text-white font-medium mb-[33px]'>
                 Online Platform
               </h4>
               <ul>
@@ -157,7 +157,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className='col-span-12 md:col-span-6 lg:col-span-3'>
-              <h4 className='font-Outfit text-2xl text-white font-medium mb-[33px]'>
+              <h4 className='font-Outfit text-2xl lg:text-xl xl:text-2xl text-white font-medium mb-[33px]'>
                 Quick Links
               </h4>
               <ul>
@@ -204,7 +204,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className='col-span-12 md:col-span-6 lg:col-span-3'>
-              <h4 className='font-Outfit text-2xl text-white font-medium mb-[33px]'>
+              <h4 className='font-Outfit text-2xl lg:text-xl xl:text-2xl text-white font-medium mb-[33px]'>
                 Recent Posts
               </h4>
               <Link

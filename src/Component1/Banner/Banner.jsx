@@ -26,7 +26,7 @@ const Banner = () => {
                 100% Satisfaction Gaurantee
               </h5>
             </div>
-            <h1 className='font-Outfit font-semibold text-HeadingColor-0 text-[26px] leading-[32px] sm:text-[56px] sm:leading-[60px] md:text-[64px] md:leading-[74px] lg:text-[50px] xl:text-[66px] xl:leading-[76px] 2xl:text-[60px] 2xl:leading-[70px]'>
+            <h1 className='font-Outfit font-semibold text-HeadingColor-0 text-[26px] leading-[32px] sm:text-[36px] sm:leading-[42px] md:text-[56px] md:leading-[62px] lg:text-[42px] lg:leading-[48px] xl:text-[48px] xl:leading-[76px] 2xl:text-[60px] 2xl:leading-[70px]'>
               Growup Your Learning <br />
               Skills with Educate
             </h1>
@@ -105,7 +105,7 @@ const Banner = () => {
               </div>
             </div>
           </div>
-          <div className='sm:flex justify-center lg:justify-end relative 2xl:-right-[60px] '>
+          <div className='sm:flex justify-center lg:justify-end relative 3xl:-right-[60px]'>
             <img
               src={bannerImg}
               draggable='false'
@@ -114,12 +114,12 @@ const Banner = () => {
             <img
               src={bannerShape}
               draggable={false}
-              className='absolute bottom-72 animate-dance3 left-12 hidden md:block'
+              className='absolute bottom-72 animate-dance3 left-16 lg:left-12 hidden md:block lg:hidden xl:block'
             />
             <img
               src={bannerShape2}
               draggable={false}
-              className='absolute top-8 -left-8 animate-rotational hidden md:block lg:hidden 2xl:block'
+              className='absolute top-8 left-6 lg:-left-8 animate-rotational hidden md:block lg:hidden 2xl:block'
             />
             <img
               src={bannerShape3}
@@ -129,9 +129,9 @@ const Banner = () => {
             <img
               src={bannerShape4}
               draggable={false}
-              className='absolute top-36 right-0 animate-wiggle hidden md:block lg:hidden 2xl:block'
+              className='absolute top-36 right-20 lg:right-0 animate-wiggle hidden md:block lg:hidden 2xl:block'
             />
-            <div className='hidden absolute bottom-32 -left-16 bg-white bg-opacity-40 backdrop-filter backdrop-blur-md border-2 border-white rounded-[20px] px-7 py-7 md:inline-flex gap-5 items-start'>
+            <div className='hidden absolute bottom-32 lg:bottom-20 xl:bottom-32 left-0 lg:-left-16 bg-white bg-opacity-40 backdrop-filter backdrop-blur-md border-2 border-white rounded-[20px] px-7 py-7 md:inline-flex gap-5 items-start'>
               <div>
                 <img
                   src={user}

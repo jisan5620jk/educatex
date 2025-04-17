@@ -8,7 +8,7 @@ import blogPostIcon3 from '/images/blog-autor3.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
-import './blog.css'
+import './blog.css';
 import { IoMdLogIn } from 'react-icons/io';
 
 const blogData = [
@@ -70,7 +70,7 @@ const Blog = () => {
       992: {
         slidesPerView: 2,
       },
-      1400: {
+      1200: {
         slidesPerView: 3,
       },
     },
@@ -78,7 +78,7 @@ const Blog = () => {
   return (
     <section className='py-16 md:py-20 lg:py-28 bg-white blog-section'>
       <div className='Container'>
-        <div className='relative grid items-center grid-cols-1 md:grid-cols-2 gap-8'>
+        <div className='relative grid items-center grid-cols-1 lg:grid-cols-2 gap-8'>
           <div className='border-b border-SecondaryColor-0 border-opacity-15 py-6'>
             <h5 className='font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
               LATEST BLOG

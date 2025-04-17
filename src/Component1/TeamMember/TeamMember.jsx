@@ -101,7 +101,7 @@ const TeamMember = () => {
   };
   return (
     <section className='bg-white py-16 md:py-20 lg:py-28 relative z-10 team-member'>
-      <div className='absolute left-32 top-26 animate-wiggle hidden xl:block'>
+      <div className='absolute left-32 top-26 animate-wiggle hidden 3xl:block'>
         <img
           src={shape}
           draggable={false}
@@ -109,7 +109,7 @@ const TeamMember = () => {
         />
       </div>
       <div className='Container'>
-        <div className='relative grid items-center grid-cols-1 md:grid-cols-2 gap-8'>
+        <div className='relative grid items-center grid-cols-1 lg:grid-cols-2 gap-8'>
           <div className='border-b border-SecondaryColor-0 border-opacity-15 py-6'>
             <h5 className='font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
               INSTRUCTOR
@@ -160,7 +160,7 @@ const TeamMember = () => {
           </Swiper>
         </div>
       </div>
-      <div className='absolute right-7 bottom-0 hidden xl:block'>
+      <div className='absolute right-7 bottom-0 hidden 3xl:block'>
         <img
           src={shape2}
           draggable={false}

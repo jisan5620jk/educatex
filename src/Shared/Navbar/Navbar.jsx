@@ -305,7 +305,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className='header-area header-sticky'>
-        <div className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] py-4 bg-SecondaryColor-0 border-t lg:border-t-0 lg:border-b border-white lg:border-HeadingColor-0 border-opacity-10'>
+        <div className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] py-4 lg:py-0 bg-SecondaryColor-0 lg:bg-transparent border-t lg:border-t-0 lg:border-b border-white lg:border-HeadingColor-0 border-opacity-10 lg:border-opacity-10'>
           <div className='flex items-center justify-between'>
             <div>
               <div className='header-logo'>
@@ -313,12 +313,12 @@ const Navbar = () => {
                   <img
                     src={Logo}
                     draggable='false'
-                    className='brightness-0 invert-[1] lg:brightness-1 lg:invert-0'
+                    className='brightness-0 invert-[1] lg:brightness-100 lg:invert-0'
                   />
                 </Link>
               </div>
             </div>
-            <div className='flex-1 hidden lg:block'>
+            <div className='hidden lg:block'>
               <div className='header-main-menu text-right 2xl:text-center'>
                 <nav className='main-menu-content'>
                   <ul>
@@ -517,15 +517,15 @@ const Navbar = () => {
               </div>
             </div>
             <div>
-              <div className='header-right-box flex items-center gap-7 lg:gap-[34px] justify-end'>
-                <div className='sm:flex items-center gap-4 hidden'>
-                  <div className='size-8 md:size-[46px] bg-transparent rounded-full border border-HeadingColor-0 border-opacity-20 overflow-hidden text-HeadingColor-0 transition-all duration-500 flex items-center justify-center cursor-pointer relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:rotate-180 before:scale-0 before:-z-10 hover:before:scale-100 hover:before:rotate-0 hover:text-white hover:border-PrimaryColor-0'>
-                    <button className='menu-cart text-lg sm:text-[22px]'>
+              <div className='header-right-box flex items-center gap-7 lg:gap-5 xl:gap-[34px] justify-end'>
+                <div className='sm:flex items-center gap-4 lg:gap-2 xl:gap-4 hidden'>
+                  <div className='size-8 md:size-[46px] lg:size-9 xl:size-[46px] bg-transparent rounded-full border border-white lg:border-HeadingColor-0 border-opacity-20 lg:border-opacity-20 overflow-hidden text-white lg:text-HeadingColor-0 transition-all duration-500 flex items-center justify-center cursor-pointer relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:rotate-180 before:scale-0 before:-z-10 hover:before:scale-100 hover:before:rotate-0 hover:text-white hover:border-PrimaryColor-0'>
+                    <button className='menu-cart text-lg md:text-[22px] lg:text-lg xl:text-[22px]'>
                       <IoIosSearch />
                     </button>
                   </div>
-                  <div className='size-8 md:size-[46px] bg-transparent rounded-full border border-HeadingColor-0 border-opacity-20 text-HeadingColor-0 transition-all duration-500 flex items-center justify-center cursor-pointer relative z-10 before:absolute before:left-0 before:rounded-full before:top-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-10 hover:before:scale-100 hover:text-white hover:border-PrimaryColor-0'>
-                    <button className='menu-cart relative z-10 text-sm sm:text-lg'>
+                  <div className='size-8 md:size-[46px] lg:size-9 xl:size-[46px] bg-transparent rounded-full border border-white lg:border-HeadingColor-0 border-opacity-20 lg:border-opacity-20 text-white lg:text-HeadingColor-0 transition-all duration-500 flex items-center justify-center cursor-pointer relative z-10 before:absolute before:left-0 before:rounded-full before:top-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-10 hover:before:scale-100 hover:text-white hover:border-PrimaryColor-0'>
+                    <button className='menu-cart relative z-10 text-sm md:text-lg lg:text-sm xl:text-lg'>
                       <GrCart />
                       <span className='absolute -top-[16px] -right-[16px] size-[18px] rounded-full bg-PrimaryColor-0 flex items-center justify-center text-white font-Outfit text-xs'>
                         0

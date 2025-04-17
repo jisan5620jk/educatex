@@ -23,7 +23,7 @@ const WhyChoose = () => {
         className='absolute -top-14 right-[6%] animate-rotational hidden lg:block'
       />
       <div className='Container'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 items-end'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-6 2xl:gap-10 items-end'>
           <div className='relative'>
             <h5 className='font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
               why choose us?
@@ -39,8 +39,8 @@ const WhyChoose = () => {
               education impact global channels without standards compliant
               systems
             </p>
-            <ul className='grid items-center grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-8 mt-9 mb-7'>
-              <li className='flex items-center gap-[10px] px-5 py-4 rounded-[10px] bg-PrimaryColor-0 bg-opacity-10 group relative z-10 overflow-hidden'>
+            <ul className='grid items-center grid-cols-1 sm:grid-cols-2 gap-5 md:gap-8 lg:gap-2 xl:gap-4 2xl:gap-8 mt-9 mb-7'>
+              <li className='flex items-center gap-[10px] lg:gap-[6px] xl:gap-[10px] px-5 sm:px-3 md:px-5 lg:px-1 xl:px-3 2xl:px-5 py-4 lg:py-2 xl:py-4 rounded-[10px] bg-PrimaryColor-0 bg-opacity-10 group relative z-10 overflow-hidden'>
                 <div className='choose-icon-hover-bg'>
                   <span className='absolute left-[12.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
                   <span className='absolute left-[37.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
@@ -55,11 +55,11 @@ const WhyChoose = () => {
                     className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
                   />
                 </div>
-                <h5 className='flex-1 font-Outfit font-medium text-[17px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white'>
+                <h5 className='flex-1 font-Outfit font-medium text-[17px] sm:text-[15px] md:text-[17px] lg:text-[15px] 2xl:text-[17px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white'>
                   Course Management
                 </h5>
               </li>
-              <li className='flex items-center gap-[10px] px-5 py-4 rounded-[10px] bg-PrimaryColor2-0 bg-opacity-10 group relative z-10 overflow-hidden'>
+              <li className='flex items-center gap-[10px] lg:gap-[6px] xl:gap-[10px] px-5 sm:px-3 md:px-5 lg:px-1 xl:px-3 2xl:px-5 py-4 lg:py-2 xl:py-4 rounded-[10px] bg-PrimaryColor2-0 bg-opacity-10 group relative z-10 overflow-hidden'>
                 <div className='choose-icon-hover-bg'>
                   <span className='absolute left-[12.5%] top-0 h-full w-0 bg-PrimaryColor2-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
                   <span className='absolute left-[37.5%] top-0 h-full w-0 bg-PrimaryColor2-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
@@ -74,11 +74,11 @@ const WhyChoose = () => {
                     className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
                   />
                 </div>
-                <h5 className='flex-1 font-Outfit font-medium text-[17px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white'>
+                <h5 className='flex-1 font-Outfit font-medium text-[17px] sm:text-[15px] md:text-[17px] lg:text-[15px] 2xl:text-[17px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white'>
                   Students Progress Tracking
                 </h5>
               </li>
-              <li className='flex items-center gap-[10px] px-5 py-4 rounded-[10px] bg-PrimaryColor4-0 bg-opacity-10 group relative z-10 overflow-hidden'>
+              <li className='flex items-center gap-[10px] lg:gap-[6px] xl:gap-[10px] px-5 sm:px-3 md:px-5 lg:px-1 xl:px-3 2xl:px-5 py-4 lg:py-2 xl:py-4 rounded-[10px] bg-PrimaryColor4-0 bg-opacity-10 group relative z-10 overflow-hidden'>
                 <div className='choose-icon-hover-bg'>
                   <span className='absolute left-[12.5%] top-0 h-full w-0 bg-PrimaryColor4-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
                   <span className='absolute left-[37.5%] top-0 h-full w-0 bg-PrimaryColor4-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
@@ -93,11 +93,11 @@ const WhyChoose = () => {
                     className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
                   />
                 </div>
-                <h5 className='flex-1 font-Outfit font-medium text-[17px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white'>
+                <h5 className='flex-1 font-Outfit font-medium text-[17px] sm:text-[15px] md:text-[17px] lg:text-[15px] 2xl:text-[17px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white'>
                   Interactive Live Class
                 </h5>
               </li>
-              <li className='flex items-center gap-[10px] px-5 py-4 rounded-[10px] bg-PrimaryColor3-0 bg-opacity-10 group relative z-10 overflow-hidden'>
+              <li className='flex items-center gap-[10px] lg:gap-[6px] xl:gap-[10px] px-5 sm:px-3 md:px-5 lg:px-1 xl:px-3 2xl:px-5 py-4 lg:py-2 xl:py-4 rounded-[10px] bg-PrimaryColor3-0 bg-opacity-10 group relative z-10 overflow-hidden'>
                 <div className='choose-icon-hover-bg'>
                   <span className='absolute left-[12.5%] top-0 h-full w-0 bg-PrimaryColor3-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
                   <span className='absolute left-[37.5%] top-0 h-full w-0 bg-PrimaryColor3-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
@@ -112,7 +112,7 @@ const WhyChoose = () => {
                     className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
                   />
                 </div>
-                <h5 className='flex-1 font-Outfit font-medium text-[17px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white'>
+                <h5 className='flex-1 font-Outfit font-medium text-[17px] sm:text-[15px] md:text-[17px] lg:text-[15px] 2xl:text-[17px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white'>
                   Quiz and Assignments
                 </h5>
               </li>
@@ -145,13 +145,13 @@ const WhyChoose = () => {
             <img
               src={whyChooseThumb}
               draggable='false'
-              className='w-full md:w-[inherit] lg:w-full xl:w-[inherit] max-w-[inherit] xl:ml-[104px]'
+              className='w-full xl:w-[inherit] 2xl:max-w-[inherit] 2xl:ml-16 3xl:ml-[104px]'
             />
             <img
               src={shape}
               draggable={false}
               alt='Shape'
-              className='absolute -z-10 bottom-[28%] left-[13%] animate-rotational hidden md:block'
+              className='absolute -z-10 bottom-[28%] left-[13%] 2xl:left-[10%] 3xl:left-[13%] animate-rotational hidden md:block'
             />
             <img
               src={shape2}
@@ -165,7 +165,7 @@ const WhyChoose = () => {
               alt='Shape'
               className='absolute -bottom-[4%] -left-[24%] animate-dance hidden lg:block'
             />
-            <div className='hidden absolute bottom-16 -right-[70px] bg-white rounded-[10px] px-7 py-6 md:inline-flex gap-5 items-start w-full max-w-[278px]'>
+            <div className='hidden absolute bottom-16 right-0 lg:right-0 3xl:-right-[70px] bg-white rounded-[10px] px-7 lg:px-5 xl:px-7 py-6 md:inline-flex gap-5 items-start w-full max-w-[278px] lg:max-w-[240px] xl:max-w-[278px]'>
               <div>
                 <img
                   src={star}

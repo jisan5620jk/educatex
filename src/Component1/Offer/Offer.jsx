@@ -14,11 +14,12 @@ const Offer = () => {
     <section className='pt-16 md:pt-20 lg:pt-28'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
-          <div className='rounded-[20px] overflow-hidden relative z-10 before:absolute before:-left-3/4 before:top-0 before:w-1/2 before:h-full before:bg-gradient-to-r before:to-transparent before:via-white before:from-transparent before:-skew-x-[20deg] before:opacity-30 hover:before:animate-shine'>
+          <div className='rounded-[20px] lg:h-[313px] xl:h-[inherit] overflow-hidden relative z-10 before:absolute before:-left-3/4 before:top-0 before:w-1/2 before:h-full before:bg-gradient-to-r before:to-transparent before:via-white before:from-transparent before:-skew-x-[20deg] before:opacity-30 hover:before:animate-shine'>
             <img
               src={offerImg}
               draggable={false}
               alt='Offer Background Image'
+              className='w-full object-center object-cover lg:h-full xl:h-[inherit]'
             />
             <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
               <button
@@ -29,7 +30,7 @@ const Offer = () => {
               </button>
             </div>
           </div>
-          <div className='rounded-[20px] overflow-hidden px-5 sm:px-11 pt-6 sm:pt-[50px] pb-7 sm:pb-[49px] bg-PrimaryColor-0 bg-opacity-15 relative z-10'>
+          <div className='rounded-[20px] overflow-hidden px-5 sm:px-11 lg:px-6 2xl:px-11 pt-6 sm:pt-[50px] lg:pt-5 2xl:pt-[50px] pb-7 sm:pb-[49px] lg:pb-5 xl:pb-6 2xl:pb-[49px] bg-PrimaryColor-0 bg-opacity-15 relative z-10'>
             <h6 className='bg-BodyBg-0 border border-PrimaryColor-0 border-opacity-30 font-Outfit text-sm text-PrimaryColor-0 px-5 py-[5px] rounded-3xl font-medium mb-4 inline-block'>
               Designing
             </h6>
@@ -48,7 +49,7 @@ const Offer = () => {
                 (4.5/3 Ratings)
               </span>
             </div>
-            <div className='absolute top-[62%] sm:top-1/2 left-2/3 sm:left-1/2 -translate-x-1/2 -translate-y-1/2'>
+            <div className='absolute top-[62%] sm:top-1/2 left-2/3 sm:left-[56%] md:left-1/2 lg:left-2/3 xl:left-1/2 -translate-x-1/2 -translate-y-1/2'>
               <div className='w-[68px] h-[70px] flex flex-col items-center justify-center relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-[url("/images/off-price-bg.png")] before:-z-10 before:animate-rotational'>
                 <h5 className='font-Outfit text-white text-[22px] font-medium'>
                   10%
@@ -58,14 +59,15 @@ const Offer = () => {
                 </h6>
               </div>
             </div>
-            <div className='absolute -bottom-[26%] -right-[8%] hidden sm:block'>
+            <div className='absolute sm:-bottom-10 md:-bottom-[26%] sm:-right-[22%] md:-right-[7%] lg:right-[8%] xl:-right-[15%] hidden sm:block lg:hidden xl:block'>
               <img
                 src={offerThumb}
                 draggable={false}
                 alt='Offer Image'
+                className='w-[70%] md:w-[inherit] xl:w-[84%]'
               />
             </div>
-            <div className='flex items-center gap-4 mb-9'>
+            <div className='flex items-center gap-4 mb-9 lg:mb-4 xl:mb-9'>
               <h5 className='font-Outfit text-[22px] text-PrimaryColor-0'>
                 $35
               </h5>

@@ -16,13 +16,13 @@ const About = () => {
         src={shape4}
         draggable={false}
         alt='Shape'
-        className='absolute top-[16%] right-[7%] animate-rotational hidden lg:block'
+        className='absolute top-[16%] right-[7%] animate-rotational hidden 3xl:block'
       />
       <img
         src={shape5}
         draggable={false}
         alt='Shape'
-        className='absolute bottom-[10%] right-[4%] animate-dance3 hidden 2xl:block'
+        className='absolute bottom-[10%] right-[4%] animate-dance3 hidden 3xl:block'
       />
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 items-end'>
@@ -30,7 +30,7 @@ const About = () => {
             <img
               src={aboutThumb}
               draggable='false'
-              className='w-full md:w-[inherit] lg:w-full xl:w-[inherit] max-w-[inherit] xl:-ml-[224px]'
+              className='w-full lg:w-[inherit] max-w-[inherit] lg:-ml-[350px] xl:-ml-[250px] 2xl:-ml-[224px]'
             />
             <img
               src={shape}
@@ -48,7 +48,7 @@ const About = () => {
               src={shape3}
               draggable={false}
               alt='Shape'
-              className='absolute top-[30%] left-[24%] animate-wiggle hidden md:block'
+              className='absolute top-[30%] left-[24%] animate-wiggle hidden xl:block'
             />
           </div>
           <div className='relative pb-16 md:pb-20 lg:pb-28'>
@@ -75,7 +75,7 @@ const About = () => {
                     alt='Icon'
                   />
                 </div>
-                <h5 className='flex-1 font-Outfit font-medium text-lg text-HeadingColor-0'>
+                <h5 className='flex-1 font-Outfit font-medium text-lg sm:text-base md:text-lg lg:text-base 2xl:text-lg text-HeadingColor-0'>
                   Innovative Learning System
                 </h5>
               </li>
@@ -87,14 +87,14 @@ const About = () => {
                     alt='Icon'
                   />
                 </div>
-                <h5 className='flex-1 font-Outfit font-medium text-lg text-HeadingColor-0'>
+                <h5 className='flex-1 font-Outfit font-medium text-lg sm:text-base md:text-lg lg:text-base 2xl:text-lg text-HeadingColor-0'>
                   Worldwide Intelligent Learner
                 </h5>
               </li>
             </ul>
             <div className='grid grid-cols-1 items-center sm:grid-cols-2 border-y border-SecondaryColor-0 border-opacity-15 py-5 mb-12'>
               <div className='flex gap-10'>
-                <div className='text-2xl md:text-[56px] leading-[56px] tracking-wide font-semibold font-Outfit text-PrimaryColor-0 relative'>
+                <div className='text-2xl md:text-[56px] lg:text-[40px] leading-[56px] tracking-wide font-semibold font-Outfit text-PrimaryColor-0 relative'>
                   <OnScrollCounter
                     start={0}
                     end={30}
@@ -112,7 +112,7 @@ const About = () => {
                 </div>
               </div>
               <div className='flex gap-10'>
-                <div className='text-2xl md:text-[56px] leading-[56px] tracking-wide font-semibold font-Outfit text-PrimaryColor-0 relative flex items-center'>
+                <div className='text-2xl md:text-[56px] lg:text-[40px] leading-[56px] tracking-wide font-semibold font-Outfit text-PrimaryColor-0 relative flex items-center'>
                   <OnScrollCounter
                     start={0}
                     end={6}

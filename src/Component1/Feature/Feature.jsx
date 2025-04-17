@@ -36,7 +36,7 @@ const processData = [
 const Feature = () => {
   return (
     <section className='bg-white py-16 md:py-20 lg:py-28 relative'>
-      <div className='absolute top-28 left-32 animate-dance2 hidden lg:block'>
+      <div className='absolute top-14 3xl:top-28 left-32 animate-dance2 hidden lg:block'>
         <img
           src={featureShape}
           draggable='false'
@@ -44,7 +44,7 @@ const Feature = () => {
         />
       </div>
       <div
-        className='absolute top-28 left-32 animate-dance2 hidden lg:block'
+        className='absolute top-14 3xl:top-28 left-32 animate-dance2 hidden lg:block'
         style={{ animationDelay: '1.5s' }}
       >
         <img
@@ -53,7 +53,7 @@ const Feature = () => {
           alt='Shape'
         />
       </div>
-      <div className='absolute top-28 right-32 animate-rotational hidden lg:block'>
+      <div className='absolute top-14 3xl:top-28 right-32 animate-rotational hidden lg:block'>
         <img
           src={featureShape2}
           draggable='false'
@@ -61,7 +61,7 @@ const Feature = () => {
         />
       </div>
       <div className='Container '>
-        <div className='relative grid items-center grid-cols-1 md:grid-cols-2 gap-8'>
+        <div className='relative grid items-center grid-cols-1 lg:grid-cols-2 gap-8'>
           <div className='border-b border-SecondaryColor-0 border-opacity-15 py-6'>
             <h5 className='font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
               core features

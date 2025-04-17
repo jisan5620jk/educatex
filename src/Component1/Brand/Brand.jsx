@@ -30,21 +30,21 @@ const Brand = () => {
 
   return (
     <section className='bg-BodyBg-0 pt-16 md:pt-20 lg:pt-[110px] pb-[78px] rounded-b-lg lg:rounded-b-2xl relative z-10'>
-      <div className='absolute top-24 left-[40%] animate-rotational hidden md:block'>
+      <div className='absolute top-24 left-[40%] animate-rotational hidden lg:block xl:hidden 2xl:block'>
         <img
           src={shape}
           draggable={false}
           alt='Shape'
         />
       </div>
-      <div className='absolute top-28 left-48 animate-dance3 hidden md:block'>
+      <div className='absolute top-28 left-48 animate-dance3 hidden 2xl:block'>
         <img
           src={shape2}
           draggable={false}
           alt='Shape'
         />
       </div>
-      <div className='absolute -top-16 right-28 animate-wiggle hidden md:block'>
+      <div className='absolute -top-16 right-28 animate-wiggle hidden lg:block'>
         <img
           src={shape3}
           draggable={false}

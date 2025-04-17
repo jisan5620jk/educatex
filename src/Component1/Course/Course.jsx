@@ -121,7 +121,7 @@ const Course = () => {
 
   return (
     <div className='course-filter bg-white pt-[60px] pb-[30px] md:pt-20 md:pb-[60px] lg:pt-[100px] xl:pt-[120px] lg:pb-[60px] xl:pb-20 relative'>
-      <div className='absolute left-7 bottom-0 hidden lg:block'>
+      <div className='absolute left-7 bottom-0 hidden 3xl:block'>
         <img
           src={shape}
           draggable={false}
@@ -130,7 +130,7 @@ const Course = () => {
         />
       </div>
       <div className='Container lg:px-0'>
-        <div className='relative grid items-center grid-cols-1 md:grid-cols-2 gap-8'>
+        <div className='relative grid items-center grid-cols-1 lg:grid-cols-2 gap-8'>
           <div className='border-b border-SecondaryColor-0 border-opacity-15 py-6'>
             <h5 className='font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
               OUR COURSES
@@ -153,7 +153,7 @@ const Course = () => {
               data-filter='*'
               className='active px-3 sm:px-6 md:px-5 lg:px-[30px] py-[5px] sm:py-[9px] mx-[1px] sm:mx-2 md:mx-1 lg:mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize'
             >
-              All <span className='hidden lg:block'>Categories</span>
+              All <span className='hidden lg:inline-block'>Categories</span>
             </button>
             <button
               data-filter='.finance'
@@ -242,7 +242,7 @@ const Course = () => {
                 <span className='course-category font-Outfit text-sm px-5 py-[5px] rounded-3xl font-medium mb-4 inline-block'>
                   {course.category}
                 </span>
-                <h3 className='course-title font-Outfit text-xl sm:text-2xl font-medium text-HeadingColor-0 transition-all duration-500'>
+                <h3 className='course-title font-Outfit text-xl sm:text-2xl lg:text-[22px] xl:text-2xl font-medium text-HeadingColor-0 transition-all duration-500 2xl:mr-12'>
                   {course.title}
                 </h3>
 
