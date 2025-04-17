@@ -21,6 +21,7 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 import { GrCart } from 'react-icons/gr';
 import { LiaTimesSolid } from 'react-icons/lia';
 import { IoSearch } from 'react-icons/io5';
+import { BsBasket3 } from 'react-icons/bs';
 
 const Navbar = () => {
   //sticky
@@ -209,6 +210,28 @@ const Navbar = () => {
   const openCartBtnRef = useRef(null);
   const closeCartBtnRef = useRef(null);
 
+  const [cartItems, setCartItems] = useState([
+    {
+      id: 1,
+      title: 'Business Innovation And Development',
+      price: 60,
+      image: '/images/case-thumb1.jpg',
+    },
+    {
+      id: 2,
+      title: 'Banking Management for Economics Industry',
+      price: 100,
+      image: '/images/case-thumb2.jpg',
+    },
+  ]);
+
+  const handleRemove = (id) => {
+    setCartItems((prev) => prev.filter((item) => item.id !== id));
+  };
+
+  const total = cartItems.reduce((sum, item) => sum + item.price, 0);
+
+  // 🧠 Your original sidebar open/close logic
   useEffect(() => {
     const cartSidebar = cartSidebarRef.current;
     const cartOverlay = cartOverlayRef.current;
@@ -380,7 +403,7 @@ const Navbar = () => {
       </div>
       <div className='header-area header-sticky'>
         <div className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] py-4 lg:py-0 bg-SecondaryColor-0 lg:bg-transparent border-t lg:border-t-0 lg:border-b border-white lg:border-HeadingColor-0 border-opacity-10 lg:border-opacity-10'>
-          <div className='flex items-center justify-between'>
+          <div className='flex items-center gap-5 justify-between'>
             <div>
               <div className='header-logo'>
                 <Link to={'/'}>
@@ -591,24 +614,24 @@ const Navbar = () => {
               </div>
             </div>
             <div>
-              <div className='header-right-box flex items-center gap-7 lg:gap-5 xl:gap-[34px] justify-end'>
-                <div className='sm:flex items-center gap-4 lg:gap-2 xl:gap-4 hidden'>
-                  <div className='size-8 md:size-[46px] lg:size-9 xl:size-[46px] bg-transparent rounded-full border border-white lg:border-HeadingColor-0 border-opacity-20 lg:border-opacity-20 overflow-hidden text-white lg:text-HeadingColor-0 transition-all duration-500 flex items-center justify-center cursor-pointer relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:rotate-180 before:scale-0 before:-z-10 hover:before:scale-100 hover:before:rotate-0 hover:text-white hover:border-PrimaryColor-0'>
-                    <button
-                      className='menu-cart text-lg md:text-[22px] lg:text-lg xl:text-[22px]'
-                      onClick={handleMenuSearchClick}
-                    >
+              <div className='header-right-box flex items-center gap-2 sm:gap-7 lg:gap-5 xl:gap-[34px]'>
+                <div className='flex items-center gap-2 sm:gap-4 lg:gap-2 xl:gap-4'>
+                  <div
+                    className='size-8 md:size-[46px] lg:size-9 xl:size-[46px] bg-transparent rounded-full border border-white lg:border-HeadingColor-0 border-opacity-20 lg:border-opacity-20 overflow-hidden text-white lg:text-HeadingColor-0 transition-all duration-500 flex items-center justify-center cursor-pointer relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:rotate-180 before:scale-0 before:-z-10 hover:before:scale-100 hover:before:rotate-0 hover:text-white hover:border-PrimaryColor-0'
+                    onClick={handleMenuSearchClick}
+                  >
+                    <button className='menu-cart text-lg md:text-[22px] lg:text-lg xl:text-[22px]'>
                       <IoIosSearch />
                     </button>
                   </div>
-                  <div className='size-8 md:size-[46px] lg:size-9 xl:size-[46px] bg-transparent rounded-full border border-white lg:border-HeadingColor-0 border-opacity-20 lg:border-opacity-20 text-white lg:text-HeadingColor-0 transition-all duration-500 flex items-center justify-center cursor-pointer relative z-10 before:absolute before:left-0 before:rounded-full before:top-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-10 hover:before:scale-100 hover:text-white hover:border-PrimaryColor-0'>
-                    <button
-                      className='menu-cart relative z-10 text-sm md:text-lg lg:text-sm xl:text-lg'
-                      ref={openCartBtnRef}
-                    >
+                  <div
+                    className='size-8 md:size-[46px] lg:size-9 xl:size-[46px] bg-transparent rounded-full border border-white lg:border-HeadingColor-0 border-opacity-20 lg:border-opacity-20 text-white lg:text-HeadingColor-0 transition-all duration-500 flex items-center justify-center cursor-pointer relative z-10 before:absolute before:left-0 before:rounded-full before:top-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-10 hover:before:scale-100 hover:text-white hover:border-PrimaryColor-0'
+                    ref={openCartBtnRef}
+                  >
+                    <button className='menu-cart relative z-10 text-sm md:text-lg lg:text-sm xl:text-lg'>
                       <GrCart />
                       <span className='absolute -top-[16px] -right-[16px] size-[18px] rounded-full bg-PrimaryColor-0 flex items-center justify-center text-white font-Outfit text-xs'>
-                        0
+                        2
                       </span>
                     </button>
                   </div>
@@ -829,55 +852,87 @@ const Navbar = () => {
           </div>
         </form>
       </div>
-      <div className='cart-sidebar-content'>
-        <div
-          ref={cartSidebarRef}
-          className='fixed right-0 top-0 h-screen w-[320px] bg-white shadow-lg z-[1000] transition-transform duration-300 translate-x-full'
-        >
-          <div className='flex justify-end p-4 border-b'>
-            <button
-              ref={closeCartBtnRef}
-              className='text-gray-700 hover:text-black'
-            >
-              <FaTimes size={20} />
-            </button>
-          </div>
-          <div className='p-4'>
-            <h4 className='text-lg font-semibold mb-4'>Your Cart</h4>
-            <div className='space-y-4'>
-              {/* Replace with dynamic items later */}
-              <div className='flex justify-between border-b pb-2'>
-                <span>Product Name</span>
-                <span>$99.99</span>
-              </div>
-              <div className='flex justify-between border-b pb-2'>
-                <span>Another Product</span>
-                <span>$49.99</span>
-              </div>
-            </div>
-            <div className='mt-6 flex justify-between font-semibold'>
-              <span>Total:</span>
-              <span>$149.98</span>
-            </div>
-            <div className='mt-6 space-y-2'>
-              <Link to='/cart'>
-                <button className='w-full py-2 px-4 bg-gray-200 hover:bg-gray-300 rounded'>
-                  View Cart
-                </button>
-              </Link>
-              <Link to='/checkout'>
-                <button className='w-full py-2 px-4 bg-black text-white hover:bg-gray-800 rounded'>
-                  Checkout
-                </button>
-              </Link>
-            </div>
-          </div>
+
+      {/* Cart Sidebar */}
+      <div
+        ref={cartSidebarRef}
+        className='fixed top-0 right-0 w-full sm:w-[340px] h-full bg-white shadow-lg z-50 transform transition-transform duration-300 translate-x-full flex flex-col'
+      >
+        {/* Header */}
+        <div className='flex justify-between items-center p-4 border-b'>
+          <h4 className='font-Outfit text-2xl sm:text-[28px] text-HeadingColor-0 font-medium'>
+            Your Cart
+          </h4>
+          <button
+            ref={closeCartBtnRef}
+            className='transition-all duration-300 hover:text-red-500 hover:rotate-180'
+          >
+            <FaTimes size={20} />
+          </button>
         </div>
-        <div
-          ref={cartOverlayRef}
-          className='fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-[900]'
-        ></div>
+
+        {/* Cart Items */}
+        <div className='flex-1 overflow-y-auto p-4'>
+          {cartItems.length === 0 && (
+            <p className='font text-xl sm:text-2xl text-TextColor-0 flex gap-2 items-center justify-center h-full'>
+              <span className='text-PrimaryColor-0'>
+                <BsBasket3 />
+              </span>{' '}
+              Your cart is empty.
+            </p>
+          )}
+
+          {cartItems.map((item) => (
+            <div
+              key={item.id}
+              className='flex gap-4 relative border-b py-5'
+            >
+              <img
+                src={item.image}
+                alt={item.title}
+                draggable={false}
+                className='w-[80px] h-[80px] object-cover object-center rounded'
+              />
+              <div className='flex-1'>
+                <h5 className='font-Outfit text-sm sm:text-base text-HeadingColor-0'>
+                  {item.title}
+                </h5>
+                <p className='text-sm text-gray-500 mt-1'>${item.price}.00</p>
+              </div>
+              <button
+                onClick={() => handleRemove(item.id)}
+                className='absolute top-1/2 -translate-y-1/2 right-0 text-gray-400 transition-all duration-300 size-7 flex items-center justify-center bg-white shadow-xl border border-HeadingColor-0 border-opacity-10 rounded-full hover:text-red-500'
+              >
+                <FaTimes size={12} />
+              </button>
+            </div>
+          ))}
+        </div>
+
+        {/* Footer */}
+        <div className='border-t p-4 flex flex-col gap-5'>
+          <div className='flex items-center justify-between font-Outfit text-2xl sm:text-[28px] text-HeadingColor-0 font-medium'>
+            <span>Total:</span>
+            <span>${total}.00</span>
+          </div>
+          <Link to='/cart'>
+            <button className='font-Outfit w-full py-2 bg-gray-100 transition-all duration-500 hover:bg-gray-200 rounded'>
+              View Cart
+            </button>
+          </Link>
+          <Link to='/checkout'>
+            <button className='font-Outfit w-full py-2 bg-black text-white transition-all duration-500 hover:bg-gray-800 rounded'>
+              Checkout
+            </button>
+          </Link>
+        </div>
       </div>
+
+      {/* Overlay */}
+      <div
+        ref={cartOverlayRef}
+        className='fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-40'
+      ></div>
     </div>
   );
 };
