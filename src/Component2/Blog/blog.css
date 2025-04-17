@@ -1,0 +1,173 @@
+.blog-section .blog-box > div .blog-button:before {
+  clip-path: polygon(50% 0, 50% 0, 50% 50%, 50% 100%, 50% 100%, 50% 50%);
+}
+
+.blog-section .blog-box > div:hover .blog-button:before {
+  clip-path: polygon(
+    25% -70%,
+    75% -70%,
+    120% 50%,
+    75% 170%,
+    25% 170%,
+    -20% 50%
+  );
+}
+
+.blog-section .swiper-wrapper .swiper-slide:nth-child(1) .blog-box > div {
+  background: #f1f9fc;
+}
+
+.blog-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(1)
+  .blog-box
+  > div
+  .blog-thumb
+  span {
+  background: #15c1fa;
+}
+
+.blog-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(1)
+  .blog-box
+  > div:hover
+  .blog-title {
+  color: #15c1fa;
+}
+
+.blog-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(1)
+  .blog-box
+  > div
+  .blog-thumb p {
+  background: #15c1fa;
+}
+
+.blog-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(1)
+  .blog-box
+  > div
+  .blog-button {
+  border-color: #15c1fa4d;
+  background: #15c1fa1a;
+  color: #15c1fa;
+}
+
+.blog-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(1)
+  .blog-box
+  > div
+  .blog-button:before {
+  background: #15c1fa;
+}
+
+.blog-section .swiper-wrapper .swiper-slide:nth-child(2) .blog-box > div {
+  background: #f0fbf8;
+}
+
+.blog-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(2)
+  .blog-box
+  > div
+  .blog-thumb
+  span {
+  background: #1ec28e;
+}
+
+
+.blog-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(2)
+  .blog-box
+  > div
+  .blog-thumb
+  p {
+  background: #1ec28e;
+}
+
+.blog-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(2)
+  .blog-box
+  > div
+  .blog-title:hover {
+  color: #1ec28e;
+}
+
+.blog-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(2)
+  .blog-box
+  > div
+  .blog-button {
+  border-color: #1ec28e4d;
+  background: #1ec28e1a;
+  color: #1ec28e;
+}
+
+.blog-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(2)
+  .blog-box
+  > div
+  .blog-button:before {
+  background: #1ec28e;
+}
+
+.blog-section .swiper-wrapper .swiper-slide:nth-child(3) .blog-box > div {
+  background: #fdf7f3;
+}
+
+.blog-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(3)
+  .blog-box
+  > div
+  .blog-thumb
+  span {
+  background: #ff853f;
+}
+
+.blog-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(3)
+  .blog-box
+  > div
+  .blog-thumb
+  p {
+  background: #ff853f;
+}
+
+.blog-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(3)
+  .blog-box
+  > div:hover
+  .blog-title {
+  color: #ff853f;
+}
+
+.blog-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(3)
+  .blog-box
+  > div
+  .blog-button {
+  border-color: #ff853f4d;
+  background: #ff853f1a;
+  color: #ff853f;
+}
+
+.blog-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(3)
+  .blog-box
+  > div
+  .blog-button:before {
+  background: #ff853f;
+}

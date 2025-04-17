@@ -2,8 +2,8 @@
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  background: transparent;
-  margin: 100px 0 0;
+  background: #1ec28f;
+  padding: 37px 0 33px;
 }
 
 .marquee-animation {
@@ -19,19 +19,19 @@
 
 span.marquee-text-item {
   display: inline-block;
-  font-size: 60px;
-  color: #041424;
-  margin: 0 25px; /* Increased margin */
+  font-size: 34px;
+  color: #fff;
+  margin: 0 17px; /* Increased margin */
   text-transform: uppercase;
   font-family: 'Outfit';
-  font-weight: 700;
+  font-weight: 500;
 }
 
 /* Responsive here */
 
 @media screen and (max-width: 667px) {
   .marquee-text-section {
-    margin: 40px 0 0;
+  padding: 27px 0 23px;
   }
 
   span.marquee-text-item {

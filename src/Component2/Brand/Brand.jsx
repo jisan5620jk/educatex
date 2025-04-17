@@ -1,24 +1,18 @@
-import titleShape from '/images/sub-title-shape.png';
-import brandImg from '/images/AI-2-1.png';
-import brandImg2 from '/images/1.png';
-import brandImg3 from '/images/3.png';
-import brandImg5 from '/images/4.png';
-import OnScrollCounter from '../../Shared/Counter/OnScrollCounter';
-import { IoStarSharp } from 'react-icons/io5';
-import Shape from '/images/AI-2-9.png';
-import Shape2 from '/images/AI-2-10.png';
-import Shape3 from '/images/AI-2-8.png';
-import Shape4 from '/images/triangle.png';
-import Faq from '../Faq/Faq';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
+import brandThumb from '/images/brand-img3.png';
+import brandThumb2 from '/images/brand-img1.png';
+import brandThumb3 from '/images/brand-img2.png';
+import shape from '/images/brand-star.png';
+import shape2 from '/images/brand-arrow.png';
+import shape3 from '/images/brand-line.png';
 
 const Brand = () => {
   const settings = {
     modules: [Autoplay],
     loop: true,
-    spaceBetween: 30,
+    spaceBetween: 26,
     speed: 10000,
     grabCursor: true, // Fixed typo: cursorGrab -> grabCursor
     autoplay: {
@@ -29,229 +23,86 @@ const Brand = () => {
       320: { slidesPerView: 1 },
       576: { slidesPerView: 2 },
       768: { slidesPerView: 3 },
-      992: { slidesPerView: 4 },
-      1400: { slidesPerView: 5 },
+      992: { slidesPerView: 3 },
+      1400: { slidesPerView: 3 },
     },
   };
+
   return (
-    <section className="bg-[url('/images/brand-bg.jpg')] bg-no-repeat bg-center bg-cover pt-16 md:pt-20 lg:pt-[120px] pb-16 md:pb-20 lg:pb-28">
+    <section className='bg-BodyBg-0 pt-16 md:pt-20 lg:pt-[110px] pb-[78px] rounded-b-lg lg:rounded-b-2xl relative z-10'>
+      <div className='absolute top-24 left-[40%] animate-rotational hidden lg:block xl:hidden 2xl:block'>
+        <img
+          src={shape}
+          draggable={false}
+          alt='Shape'
+        />
+      </div>
+      <div className='absolute top-28 left-48 animate-dance3 hidden 2xl:block'>
+        <img
+          src={shape2}
+          draggable={false}
+          alt='Shape'
+        />
+      </div>
+      <div className='absolute -top-16 right-28 animate-wiggle hidden lg:block'>
+        <img
+          src={shape3}
+          draggable={false}
+          alt='Shape'
+        />
+      </div>
       <div className='Container'>
-        <div className='md:flex flex-col md:flex-row md:items-center relative hidden'>
-          <img
-            src={Shape}
-            draggable={false}
-            alt='Shape'
-            className='absolute top-0 left-[22%] animate-swing hidden md:block'
-          />
-          <img
-            src={Shape2}
-            draggable={false}
-            alt='Shape'
-            className='absolute top-0 right-[22%] animate-rotational hidden md:block'
-          />
-          <img
-            src={Shape3}
-            draggable={false}
-            alt='Shape'
-            className='absolute bottom-0 left-1/4 animate-bounce hidden md:block'
-          />
-          <img
-            src={Shape4}
-            draggable={false}
-            alt='Shape'
-            className='absolute bottom-0 right-[29%] animate-dance2 hidden md:block'
-          />
-          <div className='max-w-[374px] w-full space-y-12'>
-            <div>
-              <img
-                src={brandImg}
-                draggable={false}
-                alt='Image'
-                className='shadow-shade'
-              />
-            </div>
-            <div className='flex justify-end'>
-              <img
-                src={brandImg2}
-                draggable={false}
-                alt='Image'
-                className='shadow-shade'
-              />
-            </div>
-            <div>
-              <img
-                src={brandImg3}
-                draggable={false}
-                alt='Image'
-                className='shadow-shade'
-              />
-            </div>
-          </div>
-          <div className='w-full'>
-            <h5 className='flex items-center justify-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
-              <img
-                src={titleShape}
-                draggable={false}
-                alt='Shape'
-              />{' '}
-              Clients{' '}
-              <img
-                src={titleShape}
-                draggable={false}
-                alt='Shape'
-                className='rotate-180'
-              />
+        <div className='flex items-center justify-between flex-wrap gap-y-7'>
+          <div>
+            <h5 className='font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
+              our partners
             </h5>
-            <h1 className='text-center font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
-              Our Trusted Customers
+            <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2'>
+              Our Trusted Partners
             </h1>
-            <div className='size-[220px] lg:size-[260px] mt-16 mb-[50px] mx-auto rounded-full bg-gradient-to-l to-PrimaryColor-0 from-PrimaryColor2-0 text-center flex items-center flex-col justify-center'>
-              <div className='size-[50px] rounded-full flex items-center justify-center text-PrimaryColor-0 bg-white mx-auto'>
-                <IoStarSharp size={38} />
-              </div>
-              <div className='font-Outfit text-white font-bold text-[42px] mt-2 -mb-1'>
-                <OnScrollCounter
-                  start={0}
-                  end={4000}
-                  duration={3000}
-                />
-              </div>
-              <p className='font-OpenSans text-white'>
-                Trusted Companies
-                <br /> With Us
-              </p>
-            </div>
-            <div className='flex justify-center'>
-              <img
-                src={brandImg}
-                draggable={false}
-                alt='Image'
-                className='shadow-shade'
-              />
-            </div>
           </div>
-          <div className='max-w-[374px] w-full space-y-12'>
-            <div className='flex justify-end'>
-              <img
-                src={brandImg5}
-                draggable={false}
-                alt='Image'
-                className='shadow-shade'
-              />
-            </div>
-            <div className='flex justify-start'>
-              <img
-                src={brandImg3}
-                draggable={false}
-                alt='Image'
-                className='shadow-shade'
-              />
-            </div>
-            <div className='flex justify-end'>
-              <img
-                src={brandImg2}
-                draggable={false}
-                alt='Image'
-                className='shadow-shade'
-              />
-            </div>
+          <div className='relative z-10 max-w-[710px] w-full'>
+            <Swiper {...settings}>
+              <SwiperSlide>
+                <div>
+                  <img
+                    src={brandThumb}
+                    draggable='false'
+                    className='m-auto'
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div>
+                  <img
+                    src={brandThumb2}
+                    draggable='false'
+                    className='m-auto'
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div>
+                  <img
+                    src={brandThumb3}
+                    draggable='false'
+                    className='m-auto'
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div>
+                  <img
+                    src={brandThumb2}
+                    draggable='false'
+                    className='m-auto'
+                  />
+                </div>
+              </SwiperSlide>
+            </Swiper>
           </div>
-        </div>
-        <div className='md:hidden'>
-          <div className='w-full'>
-            <h5 className='flex items-center justify-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
-              <img
-                src={titleShape}
-                draggable={false}
-                alt='Shape'
-              />{' '}
-              Clients{' '}
-              <img
-                src={titleShape}
-                draggable={false}
-                alt='Shape'
-                className='rotate-180'
-              />
-            </h5>
-            <h1 className='text-center font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 sm:mt-[14px] mb-4'>
-              Our Trusted Customers
-            </h1>
-            <div className='size-[260px] mt-8 md:mt-16 mb-[50px] mx-auto rounded-full bg-gradient-to-l to-PrimaryColor-0 from-PrimaryColor2-0 text-center flex items-center flex-col justify-center'>
-              <div className='size-[50px] rounded-full flex items-center justify-center text-PrimaryColor-0 bg-white mx-auto'>
-                <IoStarSharp size={38} />
-              </div>
-              <div className='font-Outfit text-white font-bold text-[42px] mt-2 -mb-1'>
-                <OnScrollCounter
-                  start={0}
-                  end={4000}
-                  duration={3000}
-                />
-              </div>
-              <p className='font-OpenSans text-white'>
-                Trusted Companies
-                <br /> With Us
-              </p>
-            </div>
-          </div>
-          <Swiper {...settings}>
-            <SwiperSlide>
-              <div>
-                <img
-                  src={brandImg}
-                  draggable='false'
-                  className='m-auto'
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <img
-                  src={brandImg2}
-                  draggable='false'
-                  className='m-auto'
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <img
-                  src={brandImg3}
-                  draggable='false'
-                  className='m-auto'
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <img
-                  src={brandImg}
-                  draggable='false'
-                  className='m-auto'
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <img
-                  src={brandImg5}
-                  draggable='false'
-                  className='m-auto'
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <img
-                  src={brandImg3}
-                  draggable='false'
-                  className='m-auto'
-                />
-              </div>
-            </SwiperSlide>
-          </Swiper>
         </div>
       </div>
-      <Faq />
     </section>
   );
 };

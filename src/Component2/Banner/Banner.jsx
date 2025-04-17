@@ -1,127 +1,176 @@
 import { Link } from 'react-router-dom';
-import bannerImg from '/images/AI.png';
-import bannerShape from '/images/AI-1.png';
-import bannerShape2 from '/images/AI-2.png';
-import bannerShape3 from '/images/triangle.png';
-import subTilteShape from '/images/hero-title-shape1.png';
-import { FaFacebookF } from 'react-icons/fa';
-import { FaInstagram, FaLinkedinIn, FaXTwitter } from 'react-icons/fa6';
+import { FaCheck } from 'react-icons/fa6';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import { Autoplay, EffectFade } from 'swiper/modules';
+import './banner.css';
+import { HiArrowNarrowRight } from 'react-icons/hi';
+import SliderNavigation from './SliderNavigation';
+import bannerShape from '/images/hero-dot.png';
+import bannerShape2 from '/images/hero-shape31.png';
+import bannerShape3 from '/images/hero-shape33.png';
 
 const Banner = () => {
+  const settings = {
+    loop: true,
+    speed: 2000,
+    modules: [Autoplay],
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    effect: 'fade', // Fade effect for smooth transitions
+    fadeEffect: {
+      crossFade: true,
+    },
+  };
   return (
-    <section className="bg-[url('/images/ai-home.jpg')] bg-cover bg-center bg-no-repeat h-[960px] sm:h-[1200px] md:h-[1400px] lg:h-[760px] xl:h-[850px] 2xl:h-[950px] flex items-center relative z-10 overflow-hidden">
-      <div className='Container'>
-        <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0'>
-          <div className='relative'>
-            <h5 className='font-Outfit text-transparent bg-clip-text bg-gradient-to-r to-PrimaryColor2-0 from-PrimaryColor3-0 text-xl font-semibold flex items-center gap-2 mb-4 md:mb-7 uppercase'>
-              <img
-                src={subTilteShape}
-                alt='Shape'
-                draggable='false'
-                className='animate-swing'
-              />
-              Making Your Life Easier
-            </h5>
-            <h1 className='font-Outfit font-bold uppercase text-HeadingColor-0 -tracking-[2px] text-[30px] leading-[36px] sm:text-[46px] sm:leading-[56px] md:text-[68x] lg:text-[46px] xl:text-[54px] xl:leading-[64px] 2xl:text-[65px] 2xl:leading-[68px]'>
-              Empowering the Future
-              <br />
-              <span className='text-transparent bg-clip-text bg-gradient-to-r to-PrimaryColor2-0 from-PrimaryColor3-0'>
-                robotics
-              </span>{' '}
-              solutions for
-              <br />
-              top Challenges
-            </h1>
-            <p className='font-OpenSans sm:text-lg text-TextColor2-0 mb-9 mt-3'>
-              Continually formulate B2C partnerships orthogonal software
-              solutions
-              <br className='hidden md:block lg:hidden 2xl:block' />{' '}
-              maintainable quality through low budgets
-            </p>
-            <div>
-              <Link
-                to={'/about3'}
-                className='inline-block'
-              >
-                <button className='primary-btn'>
-                  {`Discover More`}
-                  <span className='icon-style'>
-                    <svg
-                      className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
-                      xmlns='http://www.w3.org/2000/svg'
-                      stroke='CurrentColor'
-                      width='14.2'
-                      height='14.2'
-                      viewBox='0 0 14.2 14.2'
-                    >
-                      <g>
-                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                      </g>
-                      <g>
-                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                      </g>
-                    </svg>
-                  </span>
-                </button>
-              </Link>
+    <div className='relative'>
+      <Swiper
+        {...settings}
+        modules={[EffectFade]}
+      >
+        <SwiperSlide>
+          <section className="bg-[url('/images/banner-slider.jpg')] bg-cover bg-left lg:bg-center bg-no-repeat h-[650px] sm:h-[700px] md:h-[700px] lg:h-[760px] xl:h-[850px] flex items-center">
+            <div className='Container'>
+              <div className='pt-[70px] lg:pt-[120px] pb-20 md:pb-0'>
+                <div className='relative banner-content'>
+                  <div className='inline-block mb-4'>
+                    <h5 className='font-Outfit bg-white bg-opacity-5 px-5 py-[6px] rounded border border-white border-opacity-20 text-white text-sm flex items-center gap-3 uppercase'>
+                      <span className='text-PrimaryColor-0'>
+                        <FaCheck size={15} />
+                      </span>
+                      100% Satisfaction Gaurantee
+                    </h5>
+                  </div>
+                  <h1 className='font-Outfit font-semibold text-white text-[26px] leading-[32px] sm:text-[44px] sm:leading-[54px] md:text-[56px] md:leading-[62px] lg:text-[50px] lg:leading-[60px] xl:text-[58px] xl:leading-[68px] 2xl:text-[66px] 2xl:leading-[76px]'>
+                    Grow Your Learning
+                  </h1>
+                  <h1 className='font-Outfit font-semibold text-white text-[26px] leading-[32px] sm:text-[44px] sm:leading-[54px] md:text-[56px] md:leading-[62px] lg:text-[50px] lg:leading-[60px] xl:text-[58px] xl:leading-[68px] 2xl:text-[66px] 2xl:leading-[76px]'>
+                    Educate{' '}
+                    <span className='text-PrimaryColor-0'>University</span>
+                  </h1>
+                  <p className='font-OpenSans text-white text-opacity-70 mb-8 mt-5'>
+                    <span className='text-white'>Educate</span> the ultimate
+                    destination for knowledge seekers and educators
+                    <br className='hidden lg:block xl:hidden' /> alike.
+                    <br className='hidden md:block lg:hidden xl:block' /> We are
+                    committed to transforming education
+                  </p>
+                  <div className='flex flex-wrap items-center gap-y-5 gap-x-8'>
+                    <div>
+                      <Link
+                        to={'/about'}
+                        className='primary-btn'
+                      >
+                        Get Started
+                        <HiArrowNarrowRight size={20} />
+                      </Link>
+                    </div>
+                    <div>
+                      <Link
+                        to={'/about'}
+                        className='font-Outfit text-base text-white transition-all duration-500 inline-flex gap-2 uppercase font-medium relative before:absolute before:bottom-0 before:left-0 before:w-full before:h-[1px] before:bg-white before:bg-opacity-50 before:transition-all before:duration-500 hover:before:bg-PrimaryColor-0 hover:text-PrimaryColor-0'
+                      >
+                        Find Course
+                        <span className='relative top-[2px]'>
+                          <HiArrowNarrowRight size={20} />
+                        </span>
+                      </Link>
+                    </div>
+                  </div>
+                  <img
+                    src={bannerShape}
+                    draggable={false}
+                    className='absolute -top-20 left-[36%] animate-wiggle hidden xl:block'
+                  />
+                  <img
+                    src={bannerShape2}
+                    draggable={false}
+                    className='absolute bottom-12 left-[54%] animate-swing hidden xl:block'
+                  />
+                  <img
+                    src={bannerShape3}
+                    draggable={false}
+                    className='absolute -bottom-32 3xl:-bottom-24 left-0 3xl:-left-[16%] animate-dance2 hidden xl:block'
+                  />
+                </div>
+              </div>
             </div>
-            <img
-              src={bannerShape}
-              draggable={false}
-              className='absolute -bottom-44 -right-10 animate-wiggle hidden sm:block'
-            />
-          </div>
-          <div className='flex justify-center lg:justify-end relative'>
-            <img
-              src={bannerImg}
-              draggable='false'
-              className='2xl:w-[inherit] 2xl:max-w-[inherit] relative 2xl:-right-[128px]'
-            />
-            <img
-              src={bannerShape2}
-              draggable={false}
-              className='absolute top-0 left-10 animate-rotational hidden sm:block'
-            />
-            <img
-              src={bannerShape3}
-              draggable={false}
-              className='absolute top-14 -right-16 animate-dance2 hidden sm:block'
-            />
-          </div>
-        </div>
-      </div>
-      <div className='absolute top-1/2 -left-24 hidden 3xl:block'>
-        <div className='rotate-90 flex items-center gap-5'>
-          <h5 className='font-Outfit font-semibold text-xl text-HeadingColor-0 uppercase relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-[60px] before:w-[50px] before:h-[1px] before:bg-gradient-to-r before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:from-70%'>
-            Follow Us
-          </h5>
-          <ul className='flex items-center gap-3'>
-            <li>
-              <button className='size-[38px] rounded-full flex items-center justify-center bg-white border-PrimaryColor-0 border border-opacity-20 overflow-hidden transition-all duration-500 hover:text-white text-PrimaryColor-0 -rotate-90 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-gradient-to-b before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:transition-all before:duration-500 before:-z-10 before:scale-0 before:rotate-180 hover:before:rotate-0 hover:before:scale-100'>
-                <FaFacebookF />
-              </button>
-            </li>
-            <li>
-              <button className='size-[38px] rounded-full flex items-center justify-center bg-white border-PrimaryColor-0 border border-opacity-20 overflow-hidden transition-all duration-500 hover:text-white text-PrimaryColor-0 -rotate-90 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-gradient-to-b before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:transition-all before:duration-500 before:-z-10 before:scale-0 before:rotate-180 hover:before:rotate-0 hover:before:scale-100'>
-                <FaXTwitter />
-              </button>
-            </li>
-            <li>
-              <button className='size-[38px] rounded-full flex items-center justify-center bg-white border-PrimaryColor-0 border border-opacity-20 overflow-hidden transition-all duration-500 hover:text-white text-PrimaryColor-0 -rotate-90 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-gradient-to-b before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:transition-all before:duration-500 before:-z-10 before:scale-0 before:rotate-180 hover:before:rotate-0 hover:before:scale-100'>
-                <FaLinkedinIn />
-              </button>
-            </li>
-            <li>
-              <button className='size-[38px] rounded-full flex items-center justify-center bg-white border-PrimaryColor-0 border border-opacity-20 overflow-hidden transition-all duration-500 hover:text-white text-PrimaryColor-0 -rotate-90 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-gradient-to-b before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:transition-all before:duration-500 before:-z-10 before:scale-0 before:rotate-180 hover:before:rotate-0 hover:before:scale-100'>
-                <FaInstagram />
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+          </section>
+        </SwiperSlide>
+        <SwiperSlide>
+          <section className="bg-[url('/images/banner-slider2.jpg')] bg-cover bg-left lg:bg-center bg-no-repeat h-[650px] sm:h-[700px] md:h-[700px] lg:h-[760px] xl:h-[850px] flex items-center">
+            <div className='Container'>
+              <div className='pt-[70px] lg:pt-[120px] pb-20 md:pb-0'>
+                <div className='relative banner-content'>
+                  <div className='inline-block mb-4'>
+                    <h5 className='font-Outfit bg-white bg-opacity-5 px-5 py-[6px] rounded border border-white border-opacity-20 text-white text-sm flex items-center gap-3 uppercase'>
+                      <span className='text-PrimaryColor-0'>
+                        <FaCheck size={15} />
+                      </span>
+                      100% Satisfaction Gaurantee
+                    </h5>
+                  </div>
+                  <h1 className='font-Outfit font-semibold text-white text-[26px] leading-[32px] sm:text-[44px] sm:leading-[54px] md:text-[56px] md:leading-[62px] lg:text-[50px] lg:leading-[60px] xl:text-[58px] xl:leading-[68px] 2xl:text-[66px] 2xl:leading-[76px]'>
+                    Grow Your Learning
+                  </h1>
+                  <h1 className='font-Outfit font-semibold text-white text-[26px] leading-[32px] sm:text-[44px] sm:leading-[54px] md:text-[56px] md:leading-[62px] lg:text-[50px] lg:leading-[60px] xl:text-[58px] xl:leading-[68px] 2xl:text-[66px] 2xl:leading-[76px]'>
+                    Educate{' '}
+                    <span className='text-PrimaryColor-0'>University</span>
+                  </h1>
+                  <p className='font-OpenSans text-white text-opacity-70 mb-8 mt-5'>
+                    <span className='text-white'>Educate</span> the ultimate
+                    destination for knowledge seekers and educators
+                    <br className='hidden lg:block xl:hidden' /> alike.
+                    <br className='hidden md:block lg:hidden xl:block' /> We are
+                    committed to transforming education
+                  </p>
+                  <div className='flex flex-wrap items-center gap-y-5 gap-x-8'>
+                    <div>
+                      <Link
+                        to={'/about'}
+                        className='primary-btn'
+                      >
+                        Get Started
+                        <HiArrowNarrowRight size={20} />
+                      </Link>
+                    </div>
+                    <div>
+                      <Link
+                        to={'/about'}
+                        className='font-Outfit text-base text-white transition-all duration-500 inline-flex gap-2 uppercase font-medium relative before:absolute before:bottom-0 before:left-0 before:w-full before:h-[1px] before:bg-white before:bg-opacity-50 before:transition-all before:duration-500 hover:before:bg-PrimaryColor-0 hover:text-PrimaryColor-0'
+                      >
+                        Find Course
+                        <span className='relative top-[2px]'>
+                          <HiArrowNarrowRight size={20} />
+                        </span>
+                      </Link>
+                    </div>
+                  </div>
+                  <img
+                    src={bannerShape}
+                    draggable={false}
+                    className='absolute -top-20 left-[36%] animate-wiggle hidden xl:block'
+                  />
+                  <img
+                    src={bannerShape2}
+                    draggable={false}
+                    className='absolute bottom-12 left-[54%] animate-swing hidden xl:block'
+                  />
+                  <img
+                    src={bannerShape3}
+                    draggable={false}
+                    className='absolute -bottom-32 3xl:-bottom-24 left-0 3xl:-left-[16%] animate-dance2 hidden xl:block'
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+        </SwiperSlide>
+        <SliderNavigation />
+      </Swiper>
+    </div>
   );
 };
 
