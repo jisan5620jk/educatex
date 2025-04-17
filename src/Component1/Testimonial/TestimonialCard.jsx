@@ -26,7 +26,7 @@ const TestimonialCard = ({
             </h5>
           </div>
         </div>
-        <p className='font-OpenSans text-base sm:text-lg text-TextColor-0'>{testiDesc}</p>
+        <p className='font-OpenSans text-base sm:text-lg lg:text-base xl:text-lg text-TextColor-0'>{testiDesc}</p>
         <ul className='flex items-center mt-[22px]'>
           <li className='text-ReviewText-0 text-2xl'>{testiRatingIcon}</li>
           <li className='text-ReviewText-0 text-2xl'>{testiRatingIcon}</li>

@@ -2,8 +2,9 @@ import { Link } from 'react-router-dom';
 import star from '/images/top-star.png';
 import Logo from '/images/logo.png';
 import './navbar.css';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
+  FaArrowUp,
   FaChevronDown,
   FaEnvelope,
   FaFacebookF,
@@ -17,6 +18,8 @@ import { IoIosSearch, IoMdLogIn, IoMdPaperPlane } from 'react-icons/io';
 import { SlUserFollow } from 'react-icons/sl';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { GrCart } from 'react-icons/gr';
+import { LiaTimesSolid } from 'react-icons/lia';
+import { IoSearch } from 'react-icons/io5';
 
 const Navbar = () => {
   //sticky
@@ -167,6 +170,36 @@ const Navbar = () => {
       });
     }
   }, [headerIcon]);
+
+  //Menu Search
+  const handleMenuSearchClick = () => {
+    document.body.classList.add('search-active');
+  };
+
+  const handleCloseSearchClick = () => {
+    document.body.classList.remove('search-active');
+  };
+
+  const searchContentRef = useRef(null);
+  const bodyOverlay3Ref = useRef(null);
+  const searchInputRef = useRef(null); // Reference for the search input
+  const [isSubmitting, setIsSubmitting] = useState(false); // State to track form submission
+
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent default form submission
+    setIsSubmitting(true); // Set submitting state
+
+    // Simulate a submission with a timeout (replace with your actual submission logic)
+    setTimeout(() => {
+      setIsSubmitting(false); // Reset submitting state
+      // Optionally clear the input field or close the overlay
+      if (searchInputRef.current) {
+        searchInputRef.current.value = ''; // Clear the input
+      }
+      bodyOverlay3Ref.current.classList.remove('apply'); // Close overlay on submit (optional)
+      searchContentRef.current.classList.remove('opened'); // Close search content (optional)
+    }, 2000); // Simulate a delay of 2 seconds
+  };
 
   return (
     <div data-lenis-prevent>
@@ -520,7 +553,10 @@ const Navbar = () => {
               <div className='header-right-box flex items-center gap-7 lg:gap-5 xl:gap-[34px] justify-end'>
                 <div className='sm:flex items-center gap-4 lg:gap-2 xl:gap-4 hidden'>
                   <div className='size-8 md:size-[46px] lg:size-9 xl:size-[46px] bg-transparent rounded-full border border-white lg:border-HeadingColor-0 border-opacity-20 lg:border-opacity-20 overflow-hidden text-white lg:text-HeadingColor-0 transition-all duration-500 flex items-center justify-center cursor-pointer relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:rotate-180 before:scale-0 before:-z-10 hover:before:scale-100 hover:before:rotate-0 hover:text-white hover:border-PrimaryColor-0'>
-                    <button className='menu-cart text-lg md:text-[22px] lg:text-lg xl:text-[22px]'>
+                    <button
+                      className='menu-cart text-lg md:text-[22px] lg:text-lg xl:text-[22px]'
+                      onClick={handleMenuSearchClick}
+                    >
                       <IoIosSearch />
                     </button>
                   </div>
@@ -710,7 +746,45 @@ const Navbar = () => {
       <div
         ref={bodyOverlay2Ref}
         className='body-overlay2'
-      ></div>
+      ></div>{' '}
+      <div className='search-popup'>
+        <button
+          className='close-search'
+          onClick={handleCloseSearchClick}
+        >
+          <LiaTimesSolid />
+        </button>
+        <button
+          className='close-search2'
+          onClick={handleCloseSearchClick}
+        >
+          <FaArrowUp />
+        </button>
+        <form
+          method='post'
+          onSubmit={handleSubmit}
+        >
+          <div className='form-group'>
+            <input
+              type='search'
+              name='search-field'
+              placeholder='Search Here'
+              required
+              ref={searchInputRef}
+            />
+            <button
+              type='submit'
+              disabled={isSubmitting} // Disable button if submitting
+            >
+              {isSubmitting ? (
+                <span>Loading...</span> // Show loading text
+              ) : (
+                <IoSearch />
+              )}
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };

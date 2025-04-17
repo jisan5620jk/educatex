@@ -18,7 +18,7 @@ import './testimonial.css';
 const testiData = [
   {
     id: 1,
-    testiTitle: 'Design Quality!',
+    testiTitle: 'Impresive Leasson!',
     testiQuate: testiQuate,
     testiDesc: `Educate the ultimate destination for knowledge seekers and educators we are committed to transforming special education impact global channels  without standards compliant systems attractive learning opinions.`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
@@ -29,7 +29,7 @@ const testiData = [
   },
   {
     id: 2,
-    testiTitle: 'Awesome Support!',
+    testiTitle: 'Awesome Trainer!',
     testiQuate: testiQuate,
     testiDesc: `Educate the ultimate destination for knowledge seekers and educators we are committed to transforming special education impact global channels  without standards compliant systems attractive learning opinions.`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
@@ -40,7 +40,7 @@ const testiData = [
   },
   {
     id: 3,
-    testiTitle: 'Best Development!',
+    testiTitle: 'Best Lecture!',
     testiQuate: testiQuate,
     testiDesc: `Educate the ultimate destination for knowledge seekers and educators we are committed to transforming special education impact global channels  without standards compliant systems attractive learning opinions.`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
@@ -74,7 +74,7 @@ const Testimonial = () => {
   };
 
   return (
-    <section className='testimonial pt-16 pb-28 md:pt-20 lg:pt-[120px] bg-BodyBg-0 relative z-20 overflow-hidden'>
+    <section className='testimonial pt-16 pb-28 lg:pb-20 xl:pb-0 md:pt-20 lg:pt-[120px] bg-BodyBg-0 relative z-20 overflow-hidden'>
       <div className='absolute -z-10 top-[22%] left-[13%] inline-block'>
         <img
           src={testiShape}
