@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import star from '/images/top-star.png';
 import Logo from '/images/logo.png';
+import Logo2 from '/images/footer-logo.png';
 import './navbar.css';
 import { useEffect, useRef, useState } from 'react';
 import {
@@ -200,6 +201,46 @@ const Navbar = () => {
       searchContentRef.current.classList.remove('opened'); // Close search content (optional)
     }, 2000); // Simulate a delay of 2 seconds
   };
+
+  // Menu Cart
+
+  const cartSidebarRef = useRef(null);
+  const cartOverlayRef = useRef(null);
+  const openCartBtnRef = useRef(null);
+  const closeCartBtnRef = useRef(null);
+
+  useEffect(() => {
+    const cartSidebar = cartSidebarRef.current;
+    const cartOverlay = cartOverlayRef.current;
+    const openCartBtn = openCartBtnRef.current;
+    const closeCartBtn = closeCartBtnRef.current;
+
+    const openCart = () => {
+      cartSidebar.classList.remove('translate-x-full');
+      cartOverlay.classList.add('opacity-100', 'pointer-events-auto');
+      cartOverlay.classList.remove('opacity-0', 'pointer-events-none');
+    };
+
+    const closeCart = () => {
+      cartSidebar.classList.add('translate-x-full');
+      cartOverlay.classList.remove('opacity-100', 'pointer-events-auto');
+      cartOverlay.classList.add('opacity-0', 'pointer-events-none');
+    };
+
+    if (cartSidebar && cartOverlay && openCartBtn && closeCartBtn) {
+      openCartBtn.addEventListener('click', openCart);
+      closeCartBtn.addEventListener('click', closeCart);
+      cartOverlay.addEventListener('click', closeCart);
+    }
+
+    return () => {
+      if (cartSidebar && cartOverlay && openCartBtn && closeCartBtn) {
+        openCartBtn.removeEventListener('click', openCart);
+        closeCartBtn.removeEventListener('click', closeCart);
+        cartOverlay.removeEventListener('click', closeCart);
+      }
+    };
+  }, []);
 
   return (
     <div data-lenis-prevent>
@@ -561,7 +602,10 @@ const Navbar = () => {
                     </button>
                   </div>
                   <div className='size-8 md:size-[46px] lg:size-9 xl:size-[46px] bg-transparent rounded-full border border-white lg:border-HeadingColor-0 border-opacity-20 lg:border-opacity-20 text-white lg:text-HeadingColor-0 transition-all duration-500 flex items-center justify-center cursor-pointer relative z-10 before:absolute before:left-0 before:rounded-full before:top-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-10 hover:before:scale-100 hover:text-white hover:border-PrimaryColor-0'>
-                    <button className='menu-cart relative z-10 text-sm md:text-lg lg:text-sm xl:text-lg'>
+                    <button
+                      className='menu-cart relative z-10 text-sm md:text-lg lg:text-sm xl:text-lg'
+                      ref={openCartBtnRef}
+                    >
                       <GrCart />
                       <span className='absolute -top-[16px] -right-[16px] size-[18px] rounded-full bg-PrimaryColor-0 flex items-center justify-center text-white font-Outfit text-xs'>
                         0
@@ -621,7 +665,7 @@ const Navbar = () => {
           <div className='sidebar_logo'>
             <Link to={'/'}>
               <img
-                src={Logo}
+                src={Logo2}
                 draggable='false'
               />
             </Link>
@@ -746,7 +790,7 @@ const Navbar = () => {
       <div
         ref={bodyOverlay2Ref}
         className='body-overlay2'
-      ></div>{' '}
+      ></div>
       <div className='search-popup'>
         <button
           className='close-search'
@@ -784,6 +828,55 @@ const Navbar = () => {
             </button>
           </div>
         </form>
+      </div>
+      <div className='cart-sidebar-content'>
+        <div
+          ref={cartSidebarRef}
+          className='fixed right-0 top-0 h-screen w-[320px] bg-white shadow-lg z-[1000] transition-transform duration-300 translate-x-full'
+        >
+          <div className='flex justify-end p-4 border-b'>
+            <button
+              ref={closeCartBtnRef}
+              className='text-gray-700 hover:text-black'
+            >
+              <FaTimes size={20} />
+            </button>
+          </div>
+          <div className='p-4'>
+            <h4 className='text-lg font-semibold mb-4'>Your Cart</h4>
+            <div className='space-y-4'>
+              {/* Replace with dynamic items later */}
+              <div className='flex justify-between border-b pb-2'>
+                <span>Product Name</span>
+                <span>$99.99</span>
+              </div>
+              <div className='flex justify-between border-b pb-2'>
+                <span>Another Product</span>
+                <span>$49.99</span>
+              </div>
+            </div>
+            <div className='mt-6 flex justify-between font-semibold'>
+              <span>Total:</span>
+              <span>$149.98</span>
+            </div>
+            <div className='mt-6 space-y-2'>
+              <Link to='/cart'>
+                <button className='w-full py-2 px-4 bg-gray-200 hover:bg-gray-300 rounded'>
+                  View Cart
+                </button>
+              </Link>
+              <Link to='/checkout'>
+                <button className='w-full py-2 px-4 bg-black text-white hover:bg-gray-800 rounded'>
+                  Checkout
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div
+          ref={cartOverlayRef}
+          className='fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-[900]'
+        ></div>
       </div>
     </div>
   );
