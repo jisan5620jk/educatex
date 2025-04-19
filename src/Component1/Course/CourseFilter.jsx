@@ -57,7 +57,7 @@ const courses = [
   },
 ];
 
-const Course = () => {
+const CourseFilter = () => {
   const gridRef = useRef(null);
   const isotopeInstance = useRef(null);
   const activeBgRef = useRef(null);
@@ -319,4 +319,4 @@ const Course = () => {
   );
 };
 
-export default Course;
+export default CourseFilter;
