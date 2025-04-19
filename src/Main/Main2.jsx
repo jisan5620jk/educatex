@@ -1,5 +1,5 @@
+import Navbar2 from '../Shared/Navbar/Navbar2';
 import { Outlet } from 'react-router-dom';
-import Navbar from '../Shared/Navbar/Navbar';
 import BackToTop from '../Shared/BackToTop/BackToTop';
 import Footer from '../Shared/Footer/Footer';
 import AOS from 'aos';
@@ -30,7 +30,7 @@ const Main2 = () => {
   return (
     <>
       <HelmetChanger title={'Artificial Intelligence'} />
-      <Navbar />
+      <Navbar2 />
       <BackToTop />
       <div>
         <Outlet />

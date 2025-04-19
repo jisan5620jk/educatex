@@ -3,6 +3,7 @@ import Main from '../Main/Main';
 import ErrorPage from '../Shared/ErrorPage/ErrorPage';
 import Home1 from '../Pages/Home1/Home1';
 import Home2 from '../Pages/Home2/Home2';
+import Main2 from '../Main/Main2';
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
   },
   {
     errorElement: <ErrorPage />,
-    element: <Main />,
+    element: <Main2 />,
     children: [
       {
         path: '/home2',

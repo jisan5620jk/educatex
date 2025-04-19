@@ -18,7 +18,7 @@
 }
 
 .body-overlay:hover {
-  cursor: url(/public/images/cross.png), pointer;
+  cursor: url(/images/cross.png), pointer;
 }
 
 .menu-bar {
@@ -922,10 +922,6 @@ li.has-dropdown a button span {
 
 /* Header Style Two */
 
-.header-area.style-two .header-logo img {
-  filter: brightness(0) invert(1);
-}
-
 .header-area.style-two nav.main-menu-content > ul > li > a {
   color: #ffffff;
 }
@@ -959,7 +955,7 @@ li.has-dropdown a button span {
 }
 
 .body-overlay2:hover {
-  cursor: url(/public/images/cross.png), pointer;
+  cursor: url(/images/cross.png), pointer;
 }
 
 .menu-sidebar span {
@@ -1009,7 +1005,7 @@ li.has-dropdown a button span {
 }
 
 .body-overlay2:hover {
-  cursor: url(/public/images/cross.png), pointer;
+  cursor: url(/images/cross.png), pointer;
 }
 
 .sidebar {
@@ -1277,7 +1273,6 @@ li.has-dropdown a button span {
 .sidebar-social-icon li a:hover::before {
   transform: scale(1);
 }
-
 
 /* Search CSS */
 .search-popup {

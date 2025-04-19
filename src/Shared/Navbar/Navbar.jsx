@@ -406,7 +406,7 @@ const Navbar = () => {
           <div className='flex items-center gap-5 justify-between'>
             <div>
               <div className='header-logo'>
-                <Link to={'/'}>
+                <Link to={'/'} title='EducateX'>
                   <img
                     src={Logo}
                     draggable='false'
