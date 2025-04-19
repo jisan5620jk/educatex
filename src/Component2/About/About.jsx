@@ -158,8 +158,14 @@ const About = () => {
                 size={34}
                 className='text-PrimaryColor-0'
               />
-              <h5 className='font-Outfit text-xl text-HeadingColor-0 font-medium my-4'>Trusted Online<br /> And offline Best<br /> Educations</h5>
-              <p className='font-Outfit text-[15px] text-HeadingColor-0 pl-6 relative z-10 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:h-[2px] before:w-[14px]'>Jhon Doe</p>
+              <h5 className='font-Outfit text-xl text-HeadingColor-0 font-medium my-4'>
+                Trusted Online
+                <br /> And offline Best
+                <br /> Educations
+              </h5>
+              <p className='font-Outfit text-[15px] text-HeadingColor-0 pl-6 relative z-10 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:h-[2px] before:w-[14px]'>
+                Jhon Doe
+              </p>
             </div>
           </div>
         </div>
