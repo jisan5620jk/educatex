@@ -1,34 +1,56 @@
+.course-tab-btn button.active,
+.course-tab-btn button.active svg {
+  color: #fff;
+}
 
+.course-tab-btn button.active span:nth-of-type(1) {
+  opacity: 1;
+  left: 0;
+  width: 25%;
+}
 
-.course-tab-btn::before {
-  position: absolute;
-  content: "";
-  bottom: -13px;
-  right: 0;
-  width: 0;
-  height: 100%;
-  border-bottom: 2px solid #2852fc;
-  transition: all 0.5s ease-in-out;
+.course-tab-btn button.active span:nth-of-type(2) {
+  opacity: 1;
+  left: 25%;
+  width: 25%;
+}
+
+.course-tab-btn button.active span:nth-of-type(3) {
+  opacity: 1;
+  left: 50%;
+  width: 25%;
+}
+
+.course-tab-btn button.active span:nth-of-type(4) {
+  opacity: 1;
+  left: 75%;
+  width: 25%;
 }
 
 .course-tab-btn.active::before {
-  left: 0;
-  width: 100%;
+  left: 75;
+  width: 25%;
 }
 
 .course-tab-content {
   display: none;
-  opacity: 0;
-  transform: translateY(10%);
-  transition: all 0.5s ease-in-out;
+  animation: fadeInUp 0.8s ease-in-out;
 }
 
 .course-tab-content.active {
-  display: block !important;
-  opacity: 1;
-  transform: translateY(0%);
+  display: block;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 .course-section
   .swiper-wrapper
