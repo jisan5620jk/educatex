@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import Isotope from 'isotope-layout';
 import imagesLoaded from 'imagesloaded';
 import courseImg1 from '/images/case-thumb1.jpg';
@@ -15,107 +15,121 @@ import { PiUsersThree } from 'react-icons/pi';
 import { GoArrowRight } from 'react-icons/go';
 import { Link } from 'react-router-dom';
 
+const courses = [
+  {
+    id: 1,
+    img: courseImg1,
+    category: 'Business',
+    title: 'Business Innovation And Development',
+    price: '$30',
+    rating: 4.5,
+    ratingContent: '/3 Ratings',
+    lessons: 12,
+    students: 1200,
+    instructor: 'John D. Alexon',
+    instructorImg: instructorImg,
+  },
+  {
+    id: 2,
+    img: courseImg2,
+    category: 'Design',
+    title: 'Fundamentals of Network And Domains',
+    price: '$40',
+    rating: 4.7,
+    ratingContent: '/7 Ratings',
+    lessons: 15,
+    students: 1500,
+    instructor: 'Jane Smith',
+    instructorImg: instructorImg2,
+  },
+  {
+    id: 3,
+    img: courseImg3,
+    category: 'Finance',
+    title: 'Creative Graphic Design with Adobe Suite',
+    price: '$50',
+    rating: 4.8,
+    ratingContent: '/5 Ratings',
+    lessons: 10,
+    students: 2000,
+    instructor: 'Michael B. Jordan',
+    instructorImg: instructorImg3,
+  },
+];
+
 const Course = () => {
-  const courses = [
-    {
-      id: 1,
-      img: courseImg1,
-      category: 'Business',
-      title: 'Business Innovation And Development',
-      price: '$30',
-      rating: 4.5,
-      ratingContent: '/3 Ratings',
-      lessons: 12,
-      students: 1200,
-      instructor: 'John D. Alexon',
-      instructorImg: instructorImg,
-    },
-    {
-      id: 2,
-      img: courseImg2,
-      category: 'Design',
-      title: 'Fundamentals of Network And Domains',
-      price: '$40',
-      rating: 4.7,
-      ratingContent: '/7 Ratings',
-      lessons: 15,
-      students: 1500,
-      instructor: 'Jane Smith',
-      instructorImg: instructorImg2,
-    },
-    {
-      id: 3,
-      img: courseImg3,
-      category: 'Finance',
-      title: 'Creative Graphic Design with Adobe Suite',
-      price: '$50',
-      rating: 4.8,
-      ratingContent: '/5 Ratings',
-      lessons: 10,
-      students: 2000,
-      instructor: 'Michael B. Jordan',
-      instructorImg: instructorImg3,
-    },
-  ];
+  const gridRef = useRef(null);
+  const isotopeInstance = useRef(null);
+  const activeBgRef = useRef(null);
 
   useEffect(() => {
-    const $grid = new Isotope('.course-box', {
+    if (!gridRef.current) return;
+
+    // Initialize Isotope
+    isotopeInstance.current = new Isotope(gridRef.current, {
+      itemSelector: '.course-item',
+      percentPosition: true,
       masonry: {
         columnWidth: '.course-sizer',
         gutter: '.gutter-sizer',
       },
-      itemSelector: '.course-item',
-      percentPosition: true,
     });
 
-    imagesLoaded('.course-box', () => {
-      $grid.layout();
+    // Layout once images are loaded
+    imagesLoaded(gridRef.current, () => {
+      isotopeInstance.current?.layout();
     });
 
     const filterButtons = document.querySelectorAll(
       '.filter-button-group button'
     );
+
+    // Click handler
+    const handleClick = (e) => {
+      const currentButton = e.currentTarget;
+
+      // Update active class
+      filterButtons.forEach((btn) => btn.classList.remove('active'));
+      currentButton.classList.add('active');
+
+      // Filter isotope items
+      const filterValue = currentButton.getAttribute('data-filter');
+      isotopeInstance.current?.arrange({ filter: filterValue });
+
+      // Move active background
+      updateActiveFilterBtn(currentButton);
+    };
+
+    // Attach event listeners
     filterButtons.forEach((button) => {
-      button.addEventListener('click', function () {
-        filterButtons.forEach((btn) => btn.classList.remove('active'));
-        this.classList.add('active');
-        const filterValue = this.getAttribute('data-filter');
-        $grid.arrange({ filter: filterValue });
-      });
+      button.addEventListener('click', handleClick);
     });
 
-    filter_animation();
+    // Initial active background animation
+    const initialActive = document.querySelector(
+      '.filter-button-group .active'
+    );
+    if (initialActive) updateActiveFilterBtn(initialActive);
 
-    function filter_animation() {
-      const activeBg = document.querySelector('.course-active-bg');
-      const activeElement = document.querySelector(
-        '.filter-button-group .active'
-      );
-      updateActiveFilterBtn(activeBg, activeElement);
+    function updateActiveFilterBtn(element) {
+      if (!activeBgRef.current || !element) return;
 
-      filterButtons.forEach((button) => {
-        button.addEventListener('click', function () {
-          updateActiveFilterBtn(activeBg, this);
-        });
-      });
-    }
-
-    function updateActiveFilterBtn(activeBg, element) {
-      if (!element) return;
-      const leftOff = element.getBoundingClientRect().left;
+      const leftOffset = element.getBoundingClientRect().left;
       const width = element.offsetWidth;
       const menuLeft = document
         .querySelector('.filter-button-group')
         .getBoundingClientRect().left;
 
-      activeBg.style.left = `${leftOff - menuLeft}px`;
-      activeBg.style.width = `${width}px`;
+      activeBgRef.current.style.left = `${leftOffset - menuLeft}px`;
+      activeBgRef.current.style.width = `${width}px`;
     }
 
+    // Cleanup
     return () => {
       filterButtons.forEach((button) => {
-        button.removeEventListener('click', () => {});
+        button.removeEventListener('click', handleClick);
       });
+      isotopeInstance.current?.destroy();
     };
   }, []);
 
@@ -185,7 +199,10 @@ const Course = () => {
             >
               Designing
             </button>
-            <div className='course-active-bg rounded-full top-0 left-0 bottom-0 right-0 absolute -z-10 bg-PrimaryColor-0 transition-all duration-500'></div>
+            <div
+              ref={activeBgRef}
+              className='course-active-bg rounded-full top-0 left-0 bottom-0 right-0 absolute -z-10 bg-PrimaryColor-0 transition-all duration-500'
+            ></div>
           </div>
         </div>
 
@@ -194,6 +211,7 @@ const Course = () => {
           data-aos='fade-up'
           data-aos-delay='500'
           data-aos-duration='1000'
+          ref={gridRef}
         >
           {/* Only needed if you're using Isotope */}
           <div className='course-sizer hidden lg:block w-[30.83%]'></div>
