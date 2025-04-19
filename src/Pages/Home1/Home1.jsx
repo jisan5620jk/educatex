@@ -3,7 +3,6 @@ import Banner from '../../Component1/Banner/Banner';
 import Blog from '../../Component1/Blog/Blog';
 import Brand from '../../Component1/Brand/Brand';
 import CallDoAction from '../../Component1/CallDoAction/CallDoAction';
-import Course from '../../Component1/Course/course';
 import Feature from '../../Component1/Feature/Feature';
 import Marquee from '../../Component1/Marquee/Marquee';
 import Offer from '../../Component1/Offer/Offer';
@@ -18,7 +17,6 @@ const Home1 = () => {
       <Feature />
       <About />
       <Marquee />
-      <Course />
       <WhyChoose />
       <Offer />
       <TeamMember />
