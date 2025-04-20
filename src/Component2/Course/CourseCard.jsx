@@ -31,33 +31,32 @@ const CourseCard = ({
         />
       </div>
 
-      <div className='sm:px-3 pt-6 text-left'>
-        <span className='course-category font-Outfit text-sm px-5 py-[5px] rounded-3xl font-medium mb-4 inline-block'>
+      <div className='sm:px-3 pt-7 text-left'>
+        <span className='course-category font-Outfit text-sm px-5 py-[5px] rounded-3xl font-medium mb-3 inline-block uppercase'>
           {courseCategory}
         </span>
         <h3 className='course-title font-Outfit text-xl sm:text-2xl lg:text-[22px] xl:text-2xl font-medium text-HeadingColor-0 transition-all duration-500 2xl:mr-12'>
           {courseTitle}
         </h3>
 
-        <div className='flex items-center gap-1 text-ReviewText-0 text-sm mt-3 mb-5'>
+        <div className='flex items-center gap-1 text-ReviewText-0 text-sm mt-3 mb-4'>
           {[...Array(Math.floor(courseRating))].map((_, i) => (
             <span
               key={i}
-              className='text-lg'
+              className='text-base'
             >
               {courseRatingIcon}
             </span>
           ))}
           {courseRating % 1 !== 0 && (
-            <span className='text-lg'>{courseRatingIcon2}</span>
+            <span className='text-base'>{courseRatingIcon2}</span>
           )}
           <span className='font-Outfit ml-1 text-HeadingColor-0 text-base'>
             ({courseRating}
             {courseRatingContent})
           </span>
         </div>
-
-        <div className='course-price text-2xl rounded-full font-Outfit font-medium'>
+        <div className='course-price text-2xl rounded-full font-Outfit font-medium mb-6'>
           {coursePrice}
         </div>
         <Link to={courseUrl}>

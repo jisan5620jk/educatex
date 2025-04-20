@@ -11,6 +11,10 @@ import { BsStarFill, BsStarHalf } from 'react-icons/bs';
 import CourseNavigation from './CourseNavigation';
 import CourseCard from './CourseCard';
 import { FaCircleCheck } from 'react-icons/fa6';
+import OnScrollCounter from '../../Shared/Counter/OnScrollCounter';
+import user from '/images/hero-autor.png'
+import shape from '/images/couse-dot.png';
+import shape2 from '/images/couse-arrow.png';
 
 const courses = [
   {
@@ -68,7 +72,7 @@ const Course = () => {
     modules: [Autoplay],
     speed: 1500,
     autoplay: {
-      delay: 300000, // Set delay time in milliseconds
+      delay: 50000, // Set delay time in milliseconds
       disableOnInteraction: false, // Keep autoplay on user interaction
     },
     breakpoints: {
@@ -130,66 +134,106 @@ const Course = () => {
       </div>
       <div className='w-full sm:w-[540px] md:w-[720px] lg:w-[960px] xl:w-[1140px] 2xl:w-[1510px] px-2 md:px-3 lg:px-4 mx-auto mt-12'>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:pl-20'>
-          <div className='course-tab-buttons col-span-1 space-y-5 mr-20'>
-            <div className='course-tab-btn'>
-              <button
-                ref={(el) => (tabRefs.current[0] = el)}
-                className='active group font-Outfit bg-white rounded-[16px] w-full text-HeadingColor-0 text-xl transition-all duration-500 hover:text-white flex items-center gap-2 px-6 py-5 relative z-10 overflow-hidden'
-              >
-                <div>
-                  <span className='absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-0'></span>
-                  <span className='absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[25%]'></span>
-                  <span className='absolute left-[62.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-1/2'></span>
-                  <span className='absolute left-[87.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[75%]'></span>
-                </div>
-                <FaCircleCheck className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                Graduate Program
-              </button>
+          <div className='col-span-1 relative z-10'>
+            <div className='space-y-5 mr-20'>
+              <div className='course-tab-btn'>
+                <button
+                  ref={(el) => (tabRefs.current[0] = el)}
+                  className='active group font-Outfit bg-white rounded-[16px] w-full text-HeadingColor-0 text-xl transition-all duration-500 hover:text-white flex items-center gap-2 px-6 py-5 relative z-10 overflow-hidden'
+                >
+                  <div>
+                    <span className='absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-0'></span>
+                    <span className='absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[25%]'></span>
+                    <span className='absolute left-[62.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-1/2'></span>
+                    <span className='absolute left-[87.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[75%]'></span>
+                  </div>
+                  <FaCircleCheck className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
+                  Graduate Program
+                </button>
+              </div>
+              <div className='course-tab-btn'>
+                <button
+                  ref={(el) => (tabRefs.current[1] = el)}
+                  className='group font-Outfit bg-white rounded-[16px] w-full text-HeadingColor-0 text-xl transition-all duration-500 hover:text-white flex items-center gap-2 px-6 py-5 relative z-10 overflow-hidden'
+                >
+                  <div>
+                    <span className='absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-0'></span>
+                    <span className='absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[25%]'></span>
+                    <span className='absolute left-[62.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-1/2'></span>
+                    <span className='absolute left-[87.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[75%]'></span>
+                  </div>
+                  <FaCircleCheck className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
+                  Under Graduate Program
+                </button>
+              </div>
+              <div className='course-tab-btn'>
+                <button
+                  ref={(el) => (tabRefs.current[2] = el)}
+                  className='group font-Outfit bg-white rounded-[16px] w-full text-HeadingColor-0 text-xl transition-all duration-500 hover:text-white flex items-center gap-2 px-6 py-5 relative z-10 overflow-hidden'
+                >
+                  <div>
+                    <span className='absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-0'></span>
+                    <span className='absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[25%]'></span>
+                    <span className='absolute left-[62.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-1/2'></span>
+                    <span className='absolute left-[87.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[75%]'></span>
+                  </div>
+                  <FaCircleCheck className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
+                  Online Program
+                </button>
+              </div>
+              <div className='course-tab-btn'>
+                <button
+                  ref={(el) => (tabRefs.current[3] = el)}
+                  className='group font-Outfit bg-white rounded-[16px] w-full text-HeadingColor-0 text-xl transition-all duration-500 hover:text-white flex items-center gap-2 px-6 py-5 relative z-10 overflow-hidden'
+                >
+                  <div>
+                    <span className='absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-0'></span>
+                    <span className='absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[25%]'></span>
+                    <span className='absolute left-[62.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-1/2'></span>
+                    <span className='absolute left-[87.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[75%]'></span>
+                  </div>
+                  <FaCircleCheck className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
+                  Scholarship Program
+                </button>
+              </div>
             </div>
-            <div className='course-tab-btn'>
-              <button
-                ref={(el) => (tabRefs.current[1] = el)}
-                className='group font-Outfit bg-white rounded-[16px] w-full text-HeadingColor-0 text-xl transition-all duration-500 hover:text-white flex items-center gap-2 px-6 py-5 relative z-10 overflow-hidden'
-              >
-                <div>
-                  <span className='absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-0'></span>
-                  <span className='absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[25%]'></span>
-                  <span className='absolute left-[62.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-1/2'></span>
-                  <span className='absolute left-[87.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[75%]'></span>
+
+            <div className='absolute bottom-0 left-24'>
+              <div>
+                <img
+                  src={user}
+                  draggable={false}
+                  alt='User Image'
+                />
+              </div>
+              <div className='flex items-center gap-5'>
+                <div className='!font-Outfit font-semibold text-[26px] text-HeadingColor-0 flex gap-1 items-center'>
+                  <OnScrollCounter
+                    start={0}
+                    end={130}
+                    duration={3000}
+                  />
+                  <span>+</span>
                 </div>
-                <FaCircleCheck className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                Under Graduate Program
-              </button>
+                <h5 className='font-OpenSans text-HeadingColor-0'>
+                  Instructor
+                </h5>
+              </div>
             </div>
-            <div className='course-tab-btn'>
-              <button
-                ref={(el) => (tabRefs.current[2] = el)}
-                className='group font-Outfit bg-white rounded-[16px] w-full text-HeadingColor-0 text-xl transition-all duration-500 hover:text-white flex items-center gap-2 px-6 py-5 relative z-10 overflow-hidden'
-              >
-                <div>
-                  <span className='absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-0'></span>
-                  <span className='absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[25%]'></span>
-                  <span className='absolute left-[62.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-1/2'></span>
-                  <span className='absolute left-[87.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[75%]'></span>
-                </div>
-                <FaCircleCheck className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                Online Program
-              </button>
+            <div className='absolute -z-10 bottom-0 left-40'>
+              <img
+                src={shape}
+                draggable={false}
+                alt='Shape'
+                className='animate-wiggle'
+              />
             </div>
-            <div className='course-tab-btn'>
-              <button
-                ref={(el) => (tabRefs.current[3] = el)}
-                className='group font-Outfit bg-white rounded-[16px] w-full text-HeadingColor-0 text-xl transition-all duration-500 hover:text-white flex items-center gap-2 px-6 py-5 relative z-10 overflow-hidden'
-              >
-                <div>
-                  <span className='absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-0'></span>
-                  <span className='absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[25%]'></span>
-                  <span className='absolute left-[62.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-1/2'></span>
-                  <span className='absolute left-[87.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[75%]'></span>
-                </div>
-                <FaCircleCheck className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                Scholarship Program
-              </button>
+            <div className='absolute bottom-12 left-4 animate-dance3'>
+              <img
+                src={shape2}
+                draggable={false}
+                alt='Shape'
+              />
             </div>
           </div>
 
