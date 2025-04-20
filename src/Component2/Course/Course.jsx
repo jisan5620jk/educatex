@@ -239,7 +239,7 @@ const Course = () => {
 
           <div
             ref={(el) => (contentRefs.current[0] = el)}
-            className='course-tab-content col-span-2'
+            className='course-tab-content col-span-2 active'
           >
             <Swiper
               {...settings}
@@ -343,7 +343,7 @@ const Course = () => {
           </div>
           <div
             ref={(el) => (contentRefs.current[2] = el)}
-            className='course-tab-content col-span-2 active'
+            className='course-tab-content col-span-2'
           >
             <Swiper
               {...settings}
@@ -395,7 +395,7 @@ const Course = () => {
           </div>
           <div
             ref={(el) => (contentRefs.current[3] = el)}
-            className='course-tab-content col-span-2 active'
+            className='course-tab-content col-span-2'
           >
             <Swiper
               {...settings}
