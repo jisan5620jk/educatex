@@ -5,6 +5,7 @@ import Brand from '../../Component2/Brand/Brand';
 import CallDoAction from '../../Component2/CallDoAction/CallDoAction';
 import Campus from '../../Component2/Campus/Campus';
 import Course from '../../Component2/Course/Course';
+import Event from '../../Component2/Event/Event';
 import Feature from '../../Component2/Feature/Feature';
 import Testimonial from '../../Component2/Testimonial/Testimonial';
 
@@ -20,6 +21,7 @@ const Home2 = () => {
       <Brand />
       <Testimonial />
       <Admission />
+      <Event />
     </>
   );
 };

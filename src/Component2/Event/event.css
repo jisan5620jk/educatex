@@ -1,0 +1,89 @@
+.event-card .event-card-box:nth-of-type(1) > div {
+  background: #f0fbf7;
+}
+
+.event-card .event-card-box:nth-of-type(1) .event-date {
+  color: #1ec28f;
+}
+
+.event-card .event-card-box:nth-of-type(1) .event-icon {
+  color: #1ec28f;
+}
+
+.event-card .event-card-box:nth-of-type(1) > div .event-title:hover {
+  color: #1ec28f;
+}
+
+.event-card .event-card-box:nth-of-type(1) .event-button {
+  border-color: rgb(30, 194, 143, 0.3);
+  background: rgb(30, 194, 143, 0.1);
+  color: #1ec28f;
+}
+
+.event-card .event-card-box:nth-of-type(1) > div:hover .event-button {
+  color: #fff;
+}
+
+.event-card .event-card-box:nth-of-type(1) .event-button:before {
+  background: rgb(30, 194, 143, 1);
+}
+
+.event-card .event-card-box:nth-of-type(2) > div {
+  background: #fcf7f3;
+}
+
+.event-card .event-card-box:nth-of-type(2) .event-date {
+  color: #ff8945;
+}
+
+.event-card .event-card-box:nth-of-type(2) .event-icon {
+  color: #ff8945;
+}
+
+.event-card .event-card-box:nth-of-type(2) > div .event-title:hover {
+  color: #ff8945;
+}
+
+.event-card .event-card-box:nth-of-type(2) .event-button {
+  border-color: rgb(255, 137, 69, .3);
+  background: rgb(255, 137, 69, .1);
+  color: #ff8945;
+}
+
+.event-card .event-card-box:nth-of-type(2) > div:hover .event-button {
+  color: #fff;
+}
+
+.event-card .event-card-box:nth-of-type(2) .event-button:before {
+  background: #ff8945;
+}
+
+.event-card .event-card-box:nth-of-type(3) > div {
+  background: #f1f9fc;
+}
+
+.event-card .event-card-box:nth-of-type(3) .event-date {
+  color: #17c0f9;
+}
+
+.event-card .event-card-box:nth-of-type(3) .event-icon {
+  color: #17c0f9;
+}
+
+.event-card .event-card-box:nth-of-type(3) .event-button {
+  border-color: rgb(23, 192, 249, .3);
+ background: rgb(23, 192, 249, .1);
+  color: #17c0f9;
+}
+
+.event-card .event-card-box:nth-of-type(3) > div .event-title:hover {
+  color: #17c0f9;
+}
+
+.event-card .event-card-box:nth-of-type(3) > div:hover .event-button {
+  color: #fff;
+}
+
+.event-card .event-card-box:nth-of-type(3) .event-button:before {
+  background: #17c0f9;
+}
