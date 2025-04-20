@@ -1,5 +1,6 @@
 import About from '../../Component2/About/About';
 import Banner from '../../Component2/Banner/Banner';
+import Brand from '../../Component2/Brand/Brand';
 import CallDoAction from '../../Component2/CallDoAction/CallDoAction';
 import Campus from '../../Component2/Campus/Campus';
 import Course from '../../Component2/Course/Course';
@@ -14,6 +15,7 @@ const Home2 = () => {
       <Course />
       <CallDoAction />
       <Campus />
+      <Brand />
     </>
   );
 };
