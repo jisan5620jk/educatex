@@ -5,6 +5,7 @@ import CallDoAction from '../../Component2/CallDoAction/CallDoAction';
 import Campus from '../../Component2/Campus/Campus';
 import Course from '../../Component2/Course/Course';
 import Feature from '../../Component2/Feature/Feature';
+import Testimonial from '../../Component2/Testimonial/Testimonial';
 
 const Home2 = () => {
   return (
@@ -16,6 +17,7 @@ const Home2 = () => {
       <CallDoAction />
       <Campus />
       <Brand />
+      <Testimonial />
     </>
   );
 };
