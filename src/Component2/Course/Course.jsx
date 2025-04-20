@@ -12,7 +12,7 @@ import CourseNavigation from './CourseNavigation';
 import CourseCard from './CourseCard';
 import { FaCircleCheck } from 'react-icons/fa6';
 import OnScrollCounter from '../../Shared/Counter/OnScrollCounter';
-import user from '/images/hero-autor.png'
+import user from '/images/hero-autor.png';
 import shape from '/images/couse-dot.png';
 import shape2 from '/images/couse-arrow.png';
 
@@ -220,7 +220,7 @@ const Course = () => {
                 </h5>
               </div>
             </div>
-            <div className='absolute -z-10 bottom-0 left-40'>
+            <div className='absolute -z-10 bottom-8 left-40'>
               <img
                 src={shape}
                 draggable={false}

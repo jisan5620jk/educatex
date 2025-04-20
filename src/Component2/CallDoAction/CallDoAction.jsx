@@ -1,60 +1,37 @@
-import callDoActionIcon from '/images/call-icon.png';
-import shape from '/images/call-arrow.png';
-import logo from '/images/call-logo.png';
+import { Link } from 'react-router-dom';
+import { HiArrowNarrowRight } from 'react-icons/hi';
+import shape from '/images/call-to-arrow2.png';
 
 const CallDoAction = () => {
   return (
-    <section className='relative z-20 -mt-[92px]'>
+    <section className='bg-[url("/images/call-to-bg2.png")] bg-cover bg-center bg-no-repeat py-[42px] relative z-10'>
       <div className='Container'>
-        <div className='grid grid-cols-1 xl:grid-cols-2 lg:items-center bg-PrimaryColor-0 rounded-[20px] gap-6 lg:gap-0 px-5 lg:px-0 lg:pl-[62px] xl:pl-8 2xl:pl-[62px] py-6 lg:pb-0 xl:py-0'>
+        <div className='flex justify-between items-center relative'>
           <div className='flex relative'>
             <div>
-              <h1 className='font-Outfit font-semibold text-lg leading-6 sm:text-[34px] sm:leading-[44px] md:text-[38px] md:leading-[48px] lg:text-[30px] lg:leading-[40px] xl:text-[34px] xl:leading-[40px] text-white mt-[14px] mb-4'>
-                Learn Anytime, Anywhere
+              <h1 className='font-Outfit font-medium text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] text-white mt-2 mb-4'>
+                Your Learning Journey Begins Here
                 <br />
-                Start Your Free Trial!
+                Explore – all programs Today
               </h1>
             </div>
           </div>
-          <div className='flex flex-wrap xl:flex-nowrap 2xl:flex-wrap items-center gap-7 md:gap-0 justify-between relative'>
-            <div className='absolute top-7 -left-20 animate-dance3 lg:hidden xl:block'>
-              <img
-                src={shape}
-                draggable={false}
-                alt='Shape'
-              />
-            </div>
-            <div className='flex items-center gap-7'>
-              <div>
-                <img
-                  src={callDoActionIcon}
-                  draggable={false}
-                  alt='Icon'
-                  className='rounded-full animate-ripple_white'
-                />
-              </div>
-              <div>
-                <h6 className='font-Outfit text-white'>Call Us Anytime</h6>
-                <a
-                  href='tel:+001234567890'
-                  className='font-Outfit text-white text-lg sm:text-2xl font-medium mt-2'
-                >
-                  +123 (4567) 890
-                </a>
-              </div>
-            </div>
-            <div className='max-w-[294px] xl:max-w-[230px] 2xl:max-w-[294px] w-full rounded-md bg-white lg:m-[10px] pt-[42px] pb-10'>
-              <img
-                src={logo}
-                draggable={logo}
-                alt='Logo'
-                className='mx-auto'
-              />
-              <h5 className='font-OpenSans text-TextColor-0 text-center mt-3'>
-                <span className='text-PrimaryColor-0'>890+</span> Trustpilot 4.9
-                Ratings
-              </h5>
-            </div>
+          <div>
+            <Link
+              to={'/about'}
+              className='primary-btn2 !bg-white !bg-opacity-10 border border-white border-opacity-30 hover:border-PrimaryColor2-0'
+            >
+              All Programs
+              <HiArrowNarrowRight size={20} />
+            </Link>
+          </div>
+          <div className='absolute top-0 right-[20%]'>
+            <img
+              src={shape}
+              draggable={false}
+              alt='Shape'
+              className='animate-swing'
+            />
           </div>
         </div>
       </div>
