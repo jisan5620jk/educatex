@@ -6,6 +6,7 @@ import './event.css';
 import eventThumb from '/images/event-thumb.png';
 import eventThumb2 from '/images/event-thumb2.png';
 import eventThumb3 from '/images/event-thumb3.png';
+import shape from '/images/event-shape.png';
 
 const eventData = [
   {
@@ -19,7 +20,7 @@ const eventData = [
     eventTimeIcon: <LuClock3 />,
     eventTime: '(7.00 am to 9.00 am)',
     eventThumb: eventThumb,
-    eventUrl: '/event/business-innovation',
+    eventUrl: '/event',
     eventBtnText: 'Join Events',
     eventBtnIcon: <HiArrowLongRight />,
   },
@@ -34,7 +35,7 @@ const eventData = [
     eventTimeIcon: <LuClock3 />,
     eventTime: '(7.00 am to 9.00 am)',
     eventThumb: eventThumb2,
-    eventUrl: '/event/career-guidance',
+    eventUrl: '/event',
     eventBtnText: 'Join Events',
     eventBtnIcon: <HiArrowLongRight />,
   },
@@ -49,7 +50,7 @@ const eventData = [
     eventTimeIcon: <LuClock3 />,
     eventTime: '(7.00 am to 9.00 am)',
     eventThumb: eventThumb3,
-    eventUrl: '/event/environmental-awarness',
+    eventUrl: '/event',
     eventBtnText: 'Join Events',
     eventBtnIcon: <HiArrowLongRight />,
   },
@@ -57,7 +58,8 @@ const eventData = [
 
 const Event = () => {
   return (
-    <section className='py-16 md:py-20 lg:py-28'>
+    <section className='pt-16 md:pt-20 lg:pt-28 pb-16 md:pb-20 lg:pb-[120px] relative z-10'>
+      <div className='absolute left-36 top-24'><img src={shape} draggable={false} alt="Shape" className='animate-wiggle' /></div>
       <div className='Container'>
         <div className='relative grid items-center grid-cols-1 lg:grid-cols-2 gap-8'>
           <div className='border-b border-SecondaryColor-0 border-opacity-15 py-6'>

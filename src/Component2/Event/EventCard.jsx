@@ -18,7 +18,7 @@ const EventCard = ({
   eventBtnIcon,
 }) => {
   return (
-    <div className='group grid grid-cols-12 items-center rounded-[20px] relative py-8'>
+    <div className='group grid grid-cols-12 items-center rounded-[20px] relative py-8 before:absolute before:left-[19%] before:top-1/2 before:-translate-y-1/2 before:w-[1px] before:h-[100px] before:bg-SecondaryColor-0 before:bg-opacity-10 after:absolute after:left-[57%] after:top-1/2 after:-translate-y-1/2 after:w-[1px] after:h-[100px] after:bg-SecondaryColor-0 after:bg-opacity-10'>
       <div className='col-span-2 flex items-center justify-end gap-5'>
         <div className='event-date font-Outfit font-semibold text-[80px]'>
           <OnScrollCounter

@@ -1,10 +1,19 @@
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
+import shape2 from '/images/addmission-dot.png';
 
 const Admission = () => {
     return (
       <section className='relative z-10'>
         <div className='absolute top-0 left-0 -z-10 w-full h-[100px] bg-SecondaryColor-0'></div>
+        <div className='absolute -z-10 right-56 -bottom-12'>
+          <img
+            src={shape2}
+            draggable={false}
+            alt='Shape'
+            className='animate-movebtn'
+          />
+        </div>
         <div className='Container'>
           <div className="bg-[url('/images/addmission-bg.png')] bg-cover bg-center bg-no-repeat pt-[92px] pb-[136px] px-20 rounded-[20px] overflow-hidden">
             <div>
@@ -17,7 +26,7 @@ const Admission = () => {
                 Learning Methods.
               </h1>
             </div>
-            <div className="mt-8">
+            <div className='mt-8'>
               <Link
                 to={'/about'}
                 className='primary-btn2'
