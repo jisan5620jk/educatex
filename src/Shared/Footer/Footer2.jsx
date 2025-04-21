@@ -1,269 +1,308 @@
 import { Link } from 'react-router-dom';
+import footerLogo from '/images/footer-logo.png';
 import {
-  FaEnvelope,
   FaFacebookF,
   FaLinkedinIn,
+  FaPhoneVolume,
   FaPinterestP,
-  FaRegCircleCheck,
+  FaRegEnvelope,
   FaXTwitter,
 } from 'react-icons/fa6';
-import { GoArrowRight } from 'react-icons/go';
+import footerImg from '/images/footer-recent-img1.png';
+import footerImg2 from '/images/footer-recent-img2.png';
 import { HiOutlineMail } from 'react-icons/hi';
-import { PiArrowCircleRight } from 'react-icons/pi';
-import logo from '/images/main-logo.png';
+import { IoPaperPlane } from 'react-icons/io5';
+import { IoMdLogIn } from 'react-icons/io';
+import shape from '/images/brand-line.png';
 
-const Footer2 = () => {
+const Footer = () => {
   return (
-    <footer className="bg-[url('/images/footer_bg2.jpg')] bg-no-repeat bg-center bg-cover relative pt-16 md:pt-20 lg:pt-28 overflow-hidden">
-      <div className='Container'>
-        <div className='lg:grid gap-y-7 grid-cols-12 border-b border-HeadingColor-0 border-opacity-10 pb-5 hidden'>
-          <div className='col-span-12 md:col-span-6 lg:col-span-4'>
-            <Link to={'/home2'}>
-              <img
-                src={logo}
-                draggable={false}
-                alt='Brand Logo'
-              />
-            </Link>
-          </div>
-          <div className='col-span-12 md:col-span-6 lg:col-span-2'>
-            <h4 className='font-Outfit text-[28px] text-HeadingColor-0 font-semibold'>
-              Company
-            </h4>
-          </div>
-          <div className='col-span-12 md:col-span-6 lg:col-span-3'>
-            <h4 className='font-Outfit text-[28px] text-HeadingColor-0 font-semibold'>
-              Our Services
-            </h4>
-          </div>
-          <div className='col-span-12 md:col-span-6 lg:col-span-3'>
-            <h4 className='font-Outfit text-[28px] text-HeadingColor-0 font-semibold'>
-              Newsletter
-            </h4>
-          </div>
-        </div>
-        <div className='grid gap-y-7 grid-cols-12 lg:mt-8'>
-          <div className='col-span-12 md:col-span-6 lg:col-span-4'>
-            <div className='lg:hidden mb-7'>
-              <Link to={'/home2'}>
+    <div className='relative z-10'>
+      <div className='absolute -top-16 right-32 animate-wiggle hidden lg:block'>
+        <img
+          src={shape}
+          draggable={false}
+          alt='Shape'
+        />
+      </div>
+      <div className='bg-SecondaryColor-0 pt-[60px]'>
+        <div className='Container -mb-[70px] relative z-10'>
+          <div className='bg-white bg-opacity-5 rounded-[20px] py-5 md:py-7 px-6 md:px-[50px] grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-7 lg:gap-0 lg:grid-cols-3 lg:items-center'>
+            <div className='lg:py-4'>
+              <Link
+                to={'/'}
+                title='EducateX'
+              >
                 <img
-                  src={logo}
-                  draggable={false}
-                  alt='Brand Logo'
-                  title='educatex'
+                  src={footerLogo}
+                  draggable='false'
                 />
               </Link>
             </div>
-            <p className='font-OpenSans text-HeadingColor-0 lg:-mt-1 mb-5 w-full max-w-[340px]'>
-              Globally expedite enterprise-wide action items rather than
-              distinctive architectures. Globally engage market positioning.
-            </p>
-            <div className='flex items-center gap-2'>
-              <div className='text-PrimaryColor-0'>
-                <FaEnvelope size={'18'} />
-              </div>
-              <a
-                href='mailto:example@gmail.com'
-                title='example@gmail.com'
-              >
-                <button className='font-Outfit text-lg text-HeadingColor-0 font-semibold'>
-                  example@gmail.com
-                </button>
-              </a>
+            <div>
+              <h4 className='font-Outfit font-medium tex-xl sm:text-2xl text-white uppercase'>
+                Subscribe{' '}
+                <span className='text-PrimaryColor-0'>Newsletter</span>
+              </h4>
             </div>
-            <ul className='flex gap-3 mt-7'>
-              <li>
-                <button className='size-9 rounded-full text-sm bg-HeadingColor-0 bg-opacity-10 flex items-center justify-center text-HeadingColor-0 overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-gradient-to-l before:to-PrimaryColor-0 before:from-PrimaryColor2-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
-                  <FaFacebookF />
-                </button>
-              </li>
-              <li>
-                <button className='size-9 rounded-full text-sm bg-HeadingColor-0 bg-opacity-10 flex items-center justify-center text-HeadingColor-0 overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-gradient-to-l before:to-PrimaryColor-0 before:from-PrimaryColor2-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
-                  <FaXTwitter />
-                </button>
-              </li>
-              <li>
-                <button className='size-9 rounded-full text-sm bg-HeadingColor-0 bg-opacity-10 flex items-center justify-center text-HeadingColor-0 overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-gradient-to-l before:to-PrimaryColor-0 before:from-PrimaryColor2-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
-                  <FaLinkedinIn />
-                </button>
-              </li>
-              <li>
-                <button className='size-9 rounded-full text-sm bg-HeadingColor-0 bg-opacity-10 flex items-center justify-center text-HeadingColor-0 overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-gradient-to-l before:to-PrimaryColor-0 before:from-PrimaryColor2-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
-                  <FaPinterestP />
-                </button>
-              </li>
-            </ul>
-          </div>
-          <div className='col-span-12 md:col-span-6 lg:col-span-2'>
-            <h4 className='font-Outfit text-[28px] text-HeadingColor-0 font-semibold mb-7 lg:hidden'>
-              Company
-            </h4>
-            <ul>
-              <li>
-                <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-OpenSans text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
-                    <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
-                    About Us
-                  </button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-OpenSans text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
-                    <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
-                    Our Team
-                  </button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-OpenSans text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
-                    <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
-                    Pricing Plan
-                  </button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-OpenSans text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
-                    <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
-                    Latest Blog
-                  </button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-OpenSans text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1'>
-                    <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
-                    Careers
-                  </button>
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className='col-span-12 md:col-span-6 lg:col-span-3'>
-            <h4 className='font-Outfit text-[28px] text-HeadingColor-0 font-semibold mb-7 lg:hidden'>
-              Our Services
-            </h4>
-            <ul>
-              <li>
-                <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-OpenSans text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
-                    <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
-                    IT Solutions
-                  </button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-OpenSans text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
-                    <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
-                    Cyber Security
-                  </button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-OpenSans text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
-                    <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
-                    Digital Marketing
-                  </button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-OpenSans text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1 mb-5'>
-                    <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
-                    Brand Identity
-                  </button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button className='flex items-center gap-2 font-OpenSans text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 hover:gap-1'>
-                    <PiArrowCircleRight className='text-xl text-PrimaryColor-0 relative -top-[1px]' />
-                    SEO Marketing
-                  </button>
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className='col-span-12 md:col-span-6 lg:col-span-3'>
-            <h4 className='font-Outfit text-[28px] text-HeadingColor-0 font-semibold mb-[30px] lg:hidden'>
-              Newsletter
-            </h4>
-            <form
-              action='#'
-              method='post'
-            >
-              <label
-                htmlFor='email'
-                className='relative'
+            <div className='flex lg:justify-end'>
+              <form
+                action='#'
+                method='post'
+                className='relative inline-block z-10'
               >
-                <input
-                  type='email'
-                  name='email'
-                  id='email'
-                  placeholder='Enter Your E-Mail*'
-                  required
-                  className='w-full h-[56px] font-OpenSans rounded-full outline-none focus:outline-none border-none bg-HeadingColor-0 bg-opacity-10 px-8 py-2 text-HeadingColor-0 placeholder:text-HeadingColor-0 mb-3'
-                />
-                <HiOutlineMail className='absolute top-1/2 -translate-y-1/2 right-6 text-HeadingColor-0 text-xl' />
-              </label>
-
-              <div>
-                <button
-                  type='submit'
-                  className='primary-btn !w-full !py-[17px]'
+                <label
+                  htmlFor='email'
+                  className='relative'
                 >
-                  {`Discover More`}
-                  <GoArrowRight size={'22'} />
-                </button>
-              </div>
-            </form>
-            <p className='font-OpenSans flex gap-2 text-HeadingColor-0 font-medium mt-5'>
-              <span className='relative top-[3px] text-green-600'>
-                <FaRegCircleCheck />
-              </span>
-              Protecting Your Service
-            </p>
+                  <input
+                    type='email'
+                    name='email'
+                    id='email'
+                    placeholder='Enter Your E-Mail*'
+                    required
+                    className='w-full sm:w-[388px] h-[52px] font-OpenSans bg-transparent rounded-full outline-none focus:outline-none border border-white border-opacity-15 pl-14 pr-8 py-2 text-white placeholder:text-white placeholder:text-opacity-50'
+                  />
+                  <HiOutlineMail className='absolute top-1/2 -translate-y-1/2 left-6 text-PrimaryColor-0 text-xl' />
+                </label>
+
+                <div className='absolute top-0 right-0'>
+                  <button
+                    type='submit'
+                    className='size-[52px] flex items-center justify-center bg-PrimaryColor-0 rounded-full text-white relative z-10 overflow-hidden before:absolute before:left-0 before:top-0 before:-z-10 before:w-full before:h-full before:bg-PrimaryColor2-0 before:scale-0 before:transition-all before:duration-500 before:rotate-180 hover:before:rotate-0 hover:before:scale-100'
+                  >
+                    <IoPaperPlane size={'22'} />
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-      <div className='bg-HeadingColor-0 bg-opacity-10 mt-14 md:mt-[70px] lg:mt-[96px]'>
+      <footer className='bg-SecondaryColor-0 relative pt-28 overflow-hidden'>
         <div className='Container'>
-          <div className='flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-7'>
-            <div>
-              <p className='font-OpenSans text-HeadingColor-0'>
-                &copy; {new Date().getFullYear()} educatex. Designed By Dream IT
-                Solution
+          <div className='grid gap-y-7 grid-cols-12 lg:mt-8'>
+            <div className='col-span-12 md:col-span-6 lg:col-span-4'>
+              <h4 className='font-Outfit text-2xl lg:text-xl xl:text-2xl text-white font-medium mb-[33px]'>
+                Get in Touch
+              </h4>
+              <p className='font-OpenSans text-white text-opacity-60 mt-7 lg:mt-0 mb-5 w-full max-w-[272px]'>
+                Educate the ultimate destination for We are committed to
+                transforming without standards
               </p>
+              <div className='flex items-center gap-2 mb-3'>
+                <div className='text-PrimaryColor-0'>
+                  <FaPhoneVolume size={'20'} />
+                </div>
+                <a
+                  href='tel:+1234567890'
+                  title='+123 (4567) 890'
+                >
+                  <button className='font-Outfit text-[22px] text-white font-medium'>
+                    +123 (4567) 890
+                  </button>
+                </a>
+              </div>
+              <div className='flex items-center gap-2'>
+                <div className='text-PrimaryColor-0'>
+                  <FaRegEnvelope size={'16'} />
+                </div>
+                <a
+                  href='mailto:example@gmail.com'
+                  title='example@gmail.com'
+                >
+                  <button className='font-Outfit text-lg text-white'>
+                    example@gmail.com
+                  </button>
+                </a>
+              </div>
             </div>
-            <div>
-              <ul className='flex items-center gap-10'>
+            <div className='col-span-12 md:col-span-6 lg:col-span-2'>
+              <h4 className='font-Outfit text-2xl lg:text-xl xl:text-2xl text-white font-medium mb-[33px]'>
+                Online Platform
+              </h4>
+              <ul>
                 <li>
-                  <Link
-                    to={'/'}
-                    className='font-OpenSans text-HeadingColor-0'
-                  >
-                    Terms & Conditions
+                  <Link to={'/'}>
+                    <button className='flex items-center gap-2 font-Outfit text-white text-opacity-60 transition-all duration-500 hover:text-opacity-100 hover:gap-1 mb-[14px]'>
+                      <IoMdLogIn className='text-lg text-PrimaryColor-0' />
+                      About Us
+                    </button>
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    to={'/'}
-                    className='font-OpenSans text-HeadingColor-0'
-                  >
-                    Privacy Policy
+                  <Link to={'/'}>
+                    <button className='flex items-center gap-2 font-Outfit text-white text-opacity-60 transition-all duration-500 hover:text-opacity-100 hover:gap-1 mb-[14px]'>
+                      <IoMdLogIn className='text-lg text-PrimaryColor-0' />
+                      Our Team
+                    </button>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={'/'}>
+                    <button className='flex items-center gap-2 font-Outfit text-white text-opacity-60 transition-all duration-500 hover:text-opacity-100 hover:gap-1 mb-[14px]'>
+                      <IoMdLogIn className='text-lg text-PrimaryColor-0' />
+                      Pricing Plan
+                    </button>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={'/'}>
+                    <button className='flex items-center gap-2 font-Outfit text-white text-opacity-60 transition-all duration-500 hover:text-opacity-100 hover:gap-1 mb-[14px]'>
+                      <IoMdLogIn className='text-lg text-PrimaryColor-0' />
+                      Latest Blog
+                    </button>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={'/'}>
+                    <button className='flex items-center gap-2 font-Outfit text-white text-opacity-60 transition-all duration-500 hover:text-opacity-100 hover:gap-1'>
+                      <IoMdLogIn className='text-lg text-PrimaryColor-0' />
+                      Careers
+                    </button>
                   </Link>
                 </li>
               </ul>
             </div>
+            <div className='col-span-12 md:col-span-6 lg:col-span-3'>
+              <h4 className='font-Outfit text-2xl lg:text-xl xl:text-2xl text-white font-medium mb-[33px]'>
+                Quick Links
+              </h4>
+              <ul>
+                <li>
+                  <Link to={'/'}>
+                    <button className='flex items-center gap-2 font-Outfit text-white text-opacity-60 transition-all duration-500 hover:text-opacity-100 hover:gap-1 mb-[14px]'>
+                      <IoMdLogIn className='text-lg text-PrimaryColor-0' />
+                      IT Solutions
+                    </button>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={'/'}>
+                    <button className='flex items-center gap-2 font-Outfit text-white text-opacity-60 transition-all duration-500 hover:text-opacity-100 hover:gap-1 mb-[14px]'>
+                      <IoMdLogIn className='text-lg text-PrimaryColor-0' />
+                      Cyber Security
+                    </button>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={'/'}>
+                    <button className='flex items-center gap-2 font-Outfit text-white text-opacity-60 transition-all duration-500 hover:text-opacity-100 hover:gap-1 mb-[14px]'>
+                      <IoMdLogIn className='text-lg text-PrimaryColor-0' />
+                      Digital Marketing
+                    </button>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={'/'}>
+                    <button className='flex items-center gap-2 font-Outfit text-white text-opacity-60 transition-all duration-500 hover:text-opacity-100 hover:gap-1 mb-[14px]'>
+                      <IoMdLogIn className='text-lg text-PrimaryColor-0' />
+                      Brand Identity
+                    </button>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={'/'}>
+                    <button className='flex items-center gap-2 font-Outfit text-white text-opacity-60 transition-all duration-500 hover:text-opacity-100 hover:gap-1'>
+                      <IoMdLogIn className='text-lg text-PrimaryColor-0' />
+                      SEO Marketing
+                    </button>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className='col-span-12 md:col-span-6 lg:col-span-3'>
+              <h4 className='font-Outfit text-2xl lg:text-xl xl:text-2xl text-white font-medium mb-[33px]'>
+                Recent Posts
+              </h4>
+              <Link
+                to={'/blog_details'}
+                className='flex items-center gap-[18px] group'
+              >
+                <div>
+                  <img
+                    src={footerImg}
+                    className='rounded'
+                  />
+                </div>
+                <div className='flex-1'>
+                  <h6 className='font-Outfit text-[17px] leading-6 text-white transition-all duration-500 group-hover:text-PrimaryColor-0'>
+                    10 Proven Strategies to
+                    <br className='hidden 2xl:block' /> Online Learning
+                  </h6>
+                  <p className='font-OpenSans text-sm text-PrimaryColor-0 mt-1'>
+                    Sep 26, 2025
+                  </p>
+                </div>
+              </Link>
+              <Link
+                to={'/blog_details'}
+                className='flex items-center gap-[18px] group mt-5'
+              >
+                <div>
+                  <img
+                    src={footerImg2}
+                    className='rounded'
+                  />
+                </div>
+                <div className='flex-1'>
+                  <h6 className='font-Outfit text-[17px] leading-6 text-white transition-all duration-500 group-hover:text-PrimaryColor-0'>
+                    Trends that are shaping
+                    <br className='hidden 2xl:block' /> the Learning...
+                  </h6>
+                  <p className='font-OpenSans text-sm text-PrimaryColor-0 mt-1'>
+                    Nov 16, 2025
+                  </p>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+        <div className='mt-16 md:mt-[96px]'>
+          <div className='Container'>
+            <div className='flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-5 border-t border-white border-opacity-15'>
+              <div>
+                <p className='font-OpenSans text-white text-opacity-60'>
+                  &copy; {new Date().getFullYear()}{' '}
+                  <Link
+                    to={'/'}
+                    className='text-opacity-100 text-PrimaryColor-0'
+                  >
+                    EducateX{' '}
+                  </Link>
+                  . Designed By Dream IT Solution
+                </p>
+              </div>
+              <div>
+                <ul className='flex gap-3'>
+                  <li>
+                    <button className='size-9 rounded-full text-sm bg-white bg-opacity-10 flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
+                      <FaFacebookF />
+                    </button>
+                  </li>
+                  <li>
+                    <button className='size-9 rounded-full text-sm bg-white bg-opacity-10 flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
+                      <FaXTwitter />
+                    </button>
+                  </li>
+                  <li>
+                    <button className='size-9 rounded-full text-sm bg-white bg-opacity-10 flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
+                      <FaLinkedinIn />
+                    </button>
+                  </li>
+                  <li>
+                    <button className='size-9 rounded-full text-sm bg-white bg-opacity-10 flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
+                      <FaPinterestP />
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
   );
 };
 
-export default Footer2;
+export default Footer;

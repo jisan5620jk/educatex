@@ -4,6 +4,10 @@ import faqThumb from '/images/faq-thumb.png';
 import icon from '/images/faq-icon.png';
 import { useEffect, useRef, useState } from 'react';
 import { FaMinus } from 'react-icons/fa6';
+import shape from '/images/faq-circle.png';
+import shape2 from '/images/faq-qestion.png';
+import shape3 from '/images/faq-dot.png';
+import shape4 from '/images/faq-star.png';
 
 const faqData = [
   {
@@ -67,11 +71,37 @@ const Faq = () => {
                 <h5 className='font-Outfit font-medium text-HeadingColor-0 text-[22px]'>
                   24 Hrs
                 </h5>
-                <p className='font-OpenSans text-TextColor-0 text-[15px]'>Ready for Support</p>
+                <p className='font-OpenSans text-TextColor-0 text-[15px]'>
+                  Ready for Support
+                </p>
               </div>
             </div>
+            <div className='absolute top-48 right-24'>
+              <img
+                src={shape2}
+                draggable={false}
+                alt='Shape'
+                className='animate-rotateX'
+              />
+            </div>
+            <div className='absolute -z-10 top-48 left-0'>
+              <img
+                src={shape3}
+                draggable={false}
+                alt='Shape'
+                className='animate-dance'
+              />
+            </div>
+            <div className='absolute -z-10 top-32 left-14'>
+              <img
+                src={shape4}
+                draggable={false}
+                alt='Shape'
+                className='animate-rotational'
+              />
+            </div>
           </div>
-          <div>
+          <div className='relative z-10'>
             <div>
               <h5 className='font-Outfit font-medium text-PrimaryColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
                 freequently asked question
@@ -145,6 +175,14 @@ const Faq = () => {
                 Learn More
                 <HiArrowNarrowRight size={20} />
               </Link>
+            </div>
+            <div className='absolute -z-10 top-24 -right-16'>
+              <img
+                src={shape}
+                draggable={false}
+                alt='shape'
+                className='animate-rotational'
+              />
             </div>
           </div>
         </div>

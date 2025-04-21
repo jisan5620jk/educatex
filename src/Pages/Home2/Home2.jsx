@@ -1,6 +1,7 @@
 import About from '../../Component2/About/About';
 import Admission from '../../Component2/Admission/Admission';
 import Banner from '../../Component2/Banner/Banner';
+import Blog from '../../Component2/Blog/Blog';
 import Brand from '../../Component2/Brand/Brand';
 import CallDoAction from '../../Component2/CallDoAction/CallDoAction';
 import Campus from '../../Component2/Campus/Campus';
@@ -26,6 +27,7 @@ const Home2 = () => {
       <Event />
       <Marquee />
       <Faq />
+      <Blog />
     </>
   );
 };

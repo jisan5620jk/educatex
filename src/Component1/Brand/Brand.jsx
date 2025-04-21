@@ -44,7 +44,7 @@ const Brand = () => {
           alt='Shape'
         />
       </div>
-      <div className='absolute -top-16 right-28 animate-wiggle hidden lg:block'>
+      <div className='absolute -top-16 right-32 animate-wiggle hidden lg:block'>
         <img
           src={shape3}
           draggable={false}
