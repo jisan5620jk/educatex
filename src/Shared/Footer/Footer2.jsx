@@ -18,7 +18,7 @@ import shape from '/images/brand-line.png';
 const Footer = () => {
   return (
     <div className='relative z-10'>
-      <div className='absolute -top-16 right-32 animate-wiggle hidden lg:block'>
+      <div className='absolute -top-16 right-32 animate-wiggle hidden 3xl:block'>
         <img
           src={shape}
           draggable={false}

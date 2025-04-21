@@ -18,11 +18,13 @@ const TestimonialCard = ({
             alt='Quote'
           />
         </div>
-        <h5 className='font-Outlet text-xl sm:text-2xl 2xl:text-2xl text-white font-medium'>
+        <h5 className='font-Outlet text-xl sm:text-2xl lg:text-xl xl:text-[22px] text-white font-medium'>
           {testiTitle}
         </h5>
       </div>
-      <p className='font-OpenSans sm:text-[17px] text-white text-opacity-60 mt-8 mb-7'>{testiDesc}</p>
+      <p className='font-OpenSans sm:text-[17px] lg:text-base xl:text-[17px] text-white text-opacity-60 mt-8 mb-7'>
+        {testiDesc}
+      </p>
       <ul className='flex items-center mb-8'>
         <li className='text-ReviewText-0 text-[22px]'>{testiRatingIcon}</li>
         <li className='text-ReviewText-0 text-[22px]'>{testiRatingIcon}</li>
@@ -39,7 +41,7 @@ const TestimonialCard = ({
           />
         </div>
         <div>
-          <h5 className='font-Outlet font-medium inline-block text-white text-xl sm:text-[22px] relative'>
+          <h5 className='font-Outlet font-medium inline-block text-white text-xl sm:text-[22px] lg:text-xl xl:text-[22px] relative'>
             {testiName}
           </h5>
           <p className='font-OpenSans text-[15px] text-white text-opacity-60 mt-[6px]'>

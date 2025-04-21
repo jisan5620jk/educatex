@@ -95,7 +95,7 @@ const Testimonial = () => {
 
   return (
     <section className='testimonial2 relative z-10 overflow-hidden bg-SecondaryColor-0 py-16 md:py-20 lg:py-28'>
-      <div className='absolute top-32 left-[37%]'><img src={shape} draggable={false} alt="Shape" className='animate-rotational' /></div>
+      <div className='absolute top-32 left-[37%] hidden lg:block'><img src={shape} draggable={false} alt="Shape" className='animate-rotational' /></div>
       <div className='Container'>
         <div className='relative grid items-center grid-cols-1 lg:grid-cols-2 gap-8'>
           <div className='border-b border-white border-opacity-15 py-6'>

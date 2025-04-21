@@ -17,7 +17,7 @@ const About = () => {
         src={shape}
         draggable={false}
         alt='Shape'
-        className='absolute -top-16 right-28 animate-wiggle hidden lg:block'
+        className='absolute -top-16 right-28 animate-wiggle hidden 3xl:block'
       />
       <img
         src={shape2}
@@ -31,9 +31,9 @@ const About = () => {
             <img
               src={aboutThumb}
               draggable='false'
-              className='w-full lg:w-[inherit] max-w-[inherit] lg:-ml-[150px] xl:-ml-[100px] 2xl:-ml-[52px]'
+              className='w-full lg:w-[inherit] max-w-[inherit] lg:-ml-[180px] xl:-ml-[100px] 2xl:-ml-[52px]'
             />
-            <div className='absolute -left-8 bottom-14 hidden md:block'>
+            <div className='absolute -left-8 bottom-14 hidden md:block lg:hidden xl:block'>
               <img
                 src={shape3}
                 draggable={false}
@@ -41,7 +41,7 @@ const About = () => {
                 className='animate-swing'
               />
             </div>
-            <div className='absolute top-0 right-[50px] sm:flex items-center gap-5 px-9 py-8 bg-PrimaryColor-0 rounded-[10px] max-w-[302px] w-full hidden'>
+            <div className='absolute top-0 right-0 2xl:right-[50px] sm:flex items-center gap-5 px-9 py-6 md:py-8 bg-PrimaryColor-0 rounded-[10px] sm:max-w-[252px] md:max-w-[335px] lg:max-w-[302px] w-full hidden'>
               <div>
                 <img
                   src={icon}
@@ -49,19 +49,19 @@ const About = () => {
                   alt='Icon'
                 />
               </div>
-              <h5 className='flex-1 font-Outfit font-medium text-lg sm:text-base md:text-[22px] lg:text-xl 2xl:text-[22px] text-white'>
+              <h5 className='flex-1 font-Outfit font-medium text-lg md:text-[22px] lg:text-[22px] text-white'>
                 Learm Online
                 <br /> Anywhere
               </h5>
             </div>
-            <div className='absolute bottom-0 sm:bottom-7 left-0 sm:left-5 flex gap-6 sm:gap-10'>
-              <div className='text-2xl md:text-[56px] lg:text-[60px] leading-[56px] tracking-tight font-semibold font-Outfit text-PrimaryColor-0 relative'>
+            <div className='absolute bottom-0 sm:bottom-7 left-0 sm:left-5 lg:-left-5 xl:left-5 flex gap-6 sm:gap-10 lg:gap-6 xl:gap-10'>
+              <div className='text-2xl sm:text-[56px] lg:text-[46px] xl:text-[60px] leading-[56px] tracking-tight font-semibold font-Outfit text-PrimaryColor-0 relative'>
                 <OnScrollCounter
                   start={0}
                   end={16}
                   duration={1000}
                 />
-                <h2 className='absolute -top-0 -right-3 sm:-right-5 font-Outfit text-2xl sm:text-3xl'>
+                <h2 className='absolute -top-0 -right-3 sm:-right-5 lg:-right-4 xl:-right-5 font-Outfit text-2xl sm:text-3xl'>
                   +
                 </h2>
               </div>
@@ -144,7 +144,7 @@ const About = () => {
                 </a>
               </div>
             </div>
-            <div className='md:absolute bottom-8 right-0 bg-BodyBg-0 rounded-2xl px-7 pt-8 pb-7'>
+            <div className='sm:absolute bottom-8 lg:-bottom-20 xl:bottom-8 right-0 inline-block bg-BodyBg-0 rounded-2xl px-7 pt-8 pb-7'>
               <GoCheckCircleFill
                 size={34}
                 className='text-PrimaryColor-0'

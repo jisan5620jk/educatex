@@ -49,9 +49,9 @@ const Faq = () => {
   };
 
   return (
-    <section className='bg-BodyBg-0 pt-16 md:mt-20 lg:pt-28'>
+    <section className='bg-BodyBg-0 pt-16 md:pt-20 lg:pt-28'>
       <div className='Container'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-0 items-start'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-5 2xl:gap-0 lg:items-end xl:items-start'>
           <div className='relative z-10 hidden lg:block'>
             <img
               src={faqThumb}
@@ -101,7 +101,7 @@ const Faq = () => {
               />
             </div>
           </div>
-          <div className='relative z-10'>
+          <div className='relative z-10 lg:pb-20'>
             <div>
               <h5 className='font-Outfit font-medium text-PrimaryColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
                 freequently asked question
