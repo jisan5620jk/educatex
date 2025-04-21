@@ -15,7 +15,7 @@ const Admission = () => {
           />
         </div>
         <div className='Container'>
-          <div className="bg-[url('/images/addmission-bg.png')] bg-cover bg-center bg-no-repeat pt-[92px] pb-[136px] px-20 rounded-[20px] overflow-hidden">
+          <div className="bg-[url('/images/addmission-bg.png')] bg-cover bg-left md:bg-center bg-no-repeat pt-7 sm:pt-16 md:pt-[92px] pb-10 sm:pb-20 md:pb-[136px] px-7 sm:px-10 md:px-20 rounded-[20px] overflow-hidden">
             <div>
               <h5 className='font-Outfit font-medium text-PrimaryColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
               Admission

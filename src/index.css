@@ -117,8 +117,8 @@ body {
 
 @media screen and (max-width: 575px) {
   .primary-btn2 {
-    font-size: 16px;
-    padding: 14px 30px;
+    padding: 10px 25px;
+    font-size: 15px;
   }
 }
 

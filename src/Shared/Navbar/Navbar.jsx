@@ -406,7 +406,10 @@ const Navbar = () => {
           <div className='flex items-center gap-5 justify-between'>
             <div>
               <div className='header-logo'>
-                <Link to={'/'} title='EducateX'>
+                <Link
+                  to={'/'}
+                  title='EducateX'
+                >
                   <img
                     src={Logo}
                     draggable='false'
@@ -931,7 +934,7 @@ const Navbar = () => {
       {/* Overlay */}
       <div
         ref={cartOverlayRef}
-        className='fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-40'
+        className='fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-40 cursor-[url("/images/cross.png"),_pointer]'
       ></div>
     </div>
   );

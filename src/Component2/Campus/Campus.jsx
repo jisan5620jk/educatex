@@ -34,7 +34,7 @@ const Campus = () => {
               draggable='false'
               className='w-full lg:w-[inherit] max-w-[inherit] lg:-ml-[150px] xl:-ml-[100px] 2xl:-ml-[180px]'
             />
-            <div className='absolute top-20 right-20'>
+            <div className='absolute top-0 right-0 sm:top-20 sm:right-20'>
               <button
                 className='size-20 bg-PrimaryColor-0 rounded-full text-white text-2xl flex items-center justify-center animate-ripple_white'
                 onClick={() => setToggler(!toggler)}
@@ -58,7 +58,7 @@ const Campus = () => {
               education impact global channels without standards compliant
               systems
             </p>
-            <ul className='flex items-center gap-5 my-9'>
+            <ul className='flex flex-col sm:flex-row items-center gap-5 my-9'>
               <li className='text-center group w-full bg-PrimaryColor-0 bg-opacity-10 rounded-[20px] px-7 pt-10 pb-8 relative z-10 overflow-hidden'>
                 <div>
                   <span className='absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-0'></span>

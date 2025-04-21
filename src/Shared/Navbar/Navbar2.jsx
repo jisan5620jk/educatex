@@ -934,7 +934,7 @@ const Navbar2 = () => {
       {/* Overlay */}
       <div
         ref={cartOverlayRef}
-        className='fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-40'
+        className='fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-40 cursor-[url("/images/cross.png"),_pointer]'
       ></div>
     </div>
   );

@@ -33,7 +33,7 @@ const About = () => {
               draggable='false'
               className='w-full lg:w-[inherit] max-w-[inherit] lg:-ml-[150px] xl:-ml-[100px] 2xl:-ml-[52px]'
             />
-            <div className='absolute -left-8 bottom-14'>
+            <div className='absolute -left-8 bottom-14 hidden md:block'>
               <img
                 src={shape3}
                 draggable={false}
@@ -41,7 +41,7 @@ const About = () => {
                 className='animate-swing'
               />
             </div>
-            <div className='absolute top-0 right-[50px] flex items-center gap-5 px-9 py-8 bg-PrimaryColor-0 rounded-[10px] max-w-[302px] w-full'>
+            <div className='absolute top-0 right-[50px] sm:flex items-center gap-5 px-9 py-8 bg-PrimaryColor-0 rounded-[10px] max-w-[302px] w-full hidden'>
               <div>
                 <img
                   src={icon}
@@ -54,14 +54,14 @@ const About = () => {
                 <br /> Anywhere
               </h5>
             </div>
-            <div className='absolute bottom-7 left-5 flex gap-10'>
+            <div className='absolute bottom-0 sm:bottom-7 left-0 sm:left-5 flex gap-6 sm:gap-10'>
               <div className='text-2xl md:text-[56px] lg:text-[60px] leading-[56px] tracking-tight font-semibold font-Outfit text-PrimaryColor-0 relative'>
                 <OnScrollCounter
                   start={0}
                   end={16}
                   duration={1000}
                 />
-                <h2 className='absolute -top-0 -right-5 font-Outfit text-3xl'>
+                <h2 className='absolute -top-0 -right-3 sm:-right-5 font-Outfit text-2xl sm:text-3xl'>
                   +
                 </h2>
               </div>
@@ -144,16 +144,7 @@ const About = () => {
                 </a>
               </div>
             </div>
-            <div>
-              <Link
-                to={'/about'}
-                className='primary-btn2'
-              >
-                More About
-                <HiArrowNarrowRight size={20} />
-              </Link>
-            </div>
-            <div className='absolute bottom-8 right-0 bg-BodyBg-0 rounded-2xl px-7 pt-8 pb-7'>
+            <div className='md:absolute bottom-8 right-0 bg-BodyBg-0 rounded-2xl px-7 pt-8 pb-7'>
               <GoCheckCircleFill
                 size={34}
                 className='text-PrimaryColor-0'
@@ -166,6 +157,15 @@ const About = () => {
               <p className='font-Outfit text-[15px] text-HeadingColor-0 pl-6 relative z-10 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:h-[2px] before:w-[14px]'>
                 Jhon Doe
               </p>
+            </div>
+            <div className='mt-8 sm:mt-0'>
+              <Link
+                to={'/about'}
+                className='primary-btn2'
+              >
+                More About
+                <HiArrowNarrowRight size={20} />
+              </Link>
             </div>
           </div>
         </div>

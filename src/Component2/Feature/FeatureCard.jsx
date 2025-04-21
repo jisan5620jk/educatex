@@ -19,7 +19,7 @@ const FeatureCard = ({
       <div className='flex-1 -mt-[6px]'>
         <Link
           to={featureUrl}
-          className='font-Outfit font-medium text-2xl sm:text-2xl lg:text-xl xl:text-[22px] 2xl:text-2xl text-HeadingColor-0 transition-all duration-500 mt-7 mb-3'
+          className='font-Outfit font-medium text-xl sm:text-2xl lg:text-xl xl:text-[22px] 2xl:text-2xl text-HeadingColor-0 transition-all duration-500 mt-7 mb-3'
         >
           {featureTitle}
         </Link>
