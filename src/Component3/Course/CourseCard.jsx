@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 const CourseCard = ({
   courseImg,
   coursePrice,
+  discountPrice,
   courseCategory,
   courseTitle,
   courseRating,
@@ -18,10 +19,10 @@ const CourseCard = ({
     <div className='course-item2 bg-[url("/images/box-bg.png")] bg-center bg-cover bg-no-repeat p-4 xl:p-[30px] rounded-[20px] group relative z-10 overflow-hidden'>
       <div className='relative overflow-hidden'>
         <div className='hover-bg'>
-          <span className='absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-0'></span>
-          <span className='absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-[25%]'></span>
-          <span className='absolute left-[62.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-1/2'></span>
-          <span className='absolute left-[87.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-[75%]'></span>
+          <span className='absolute left-[12.5%] top-0 h-full w-0 opacity-40 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-0'></span>
+          <span className='absolute left-[37.5%] top-0 h-full w-0 opacity-40 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-[25%]'></span>
+          <span className='absolute left-[62.5%] top-0 h-full w-0 opacity-40 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-1/2'></span>
+          <span className='absolute left-[87.5%] top-0 h-full w-0 opacity-40 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-[75%]'></span>
         </div>
         <img
           src={courseImg}
@@ -56,8 +57,11 @@ const CourseCard = ({
             {courseRatingContent})
           </span>
         </div>
-        <div className='course-price text-2xl rounded-full font-Outfit font-medium mb-6'>
+        <div className='course-price text-2xl rounded-full flex items-center gap-3 font-Outfit font-medium mb-6'>
           {coursePrice}
+          <span className='line-through text-HeadingColor-0 text-opacity-30'>
+            {discountPrice}
+          </span>
         </div>
         <Link to={courseUrl}>
           <button className='course-button font-Outfit inline-flex items-center gap-2 uppercase text-sm justify-between px-7 py-[12px] border overflow-hidden rounded-full transition-all duration-500 relative z-10 before:absolute before:right-0 before:top-0 before:w-0 before:h-full before:transition-all before:duration-500 before:-z-10 group-hover:before:w-full group-hover:before:left-0'>
