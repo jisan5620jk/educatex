@@ -15,11 +15,11 @@ import './banner.css';
 const Banner = () => {
   return (
     <section className="bg-[url('/images/hero-bg4.png')] bg-cover bg-bottom bg-no-repeat h-[1200px] sm:h-[1350px] md:h-[1450px] lg:h-[750px] xl:h-[890px] flex items-center relative z-10 overflow-hidden">
-      <div className='absolute top-[30%] left-6 lg:left-20 hidden md:block lg:hidden 2xl:block'>
+      <div className='absolute top-[26%] left-6 lg:left-20 hidden md:block lg:hidden 2xl:block'>
         <img
           src={bannerShape5}
           draggable={false}
-          className='animate-wiggle'
+          className='animate-float'
         />
       </div>
       <div className='absolute bottom-36 left-6 lg:left-36 hidden md:block lg:hidden 2xl:block'>

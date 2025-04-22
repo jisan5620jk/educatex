@@ -1,93 +1,227 @@
-.button-group button.active {
-  color: white;
+.course-tab-btn button.active,
+.course-tab-btn button.active svg {
+  color: #fff;
 }
 
-.course-item.box1 {
-  background: #f0fbf7;
+.course-tab-btn button.active span:nth-of-type(1) {
+  opacity: 1;
+  left: 0;
+  width: 25%;
 }
 
-.course-item.box1 .hover-bg span {
+.course-tab-btn button.active span:nth-of-type(2) {
+  opacity: 1;
+  left: 25%;
+  width: 25%;
+}
+
+.course-tab-btn button.active span:nth-of-type(3) {
+  opacity: 1;
+  left: 50%;
+  width: 25%;
+}
+
+.course-tab-btn button.active span:nth-of-type(4) {
+  opacity: 1;
+  left: 75%;
+  width: 25%;
+}
+
+.course-tab-btn.active::before {
+  left: 75;
+  width: 25%;
+}
+
+.course-tab-content {
+  display: none;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+.course-tab-content.active {
+  display: block;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.course-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(1)
+  .course-item2
+  .hover-bg
+  span {
   background: #1ec28f;
 }
 
-.course-item.box1 .course-price {
-  background: #1ec28f;
+.course-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(1)
+  .course-item2
+  .course-price {
+  color: #1ec28f;
 }
 
-.course-item.box1 .course-category {
+.course-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(1)
+  .course-item2
+  .course-category {
   color: #1ec28f;
   background: rgb(30, 194, 143, 0.1);
   border: 1px solid rgb(30, 194, 143, 0.3);
 }
 
-.course-item.box1:hover .course-title {
+.course-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(1)
+  .course-item2:hover
+  .course-title {
   color: #1ec28f;
 }
 
-.course-item.box1 .icon {
+.course-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(1)
+  .course-item2
+  .course-button {
   color: #1ec28f;
+  border-color: #1ec28e81;
 }
 
-.course-item.box1 .course-button {
+.course-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(1)
+  .course-item2
+  .course-button:before {
   background: #1ec28f;
 }
 
-.course-item.box2 {
-  background: #f0fbf7;
-}
-
-.course-item.box2 .hover-bg span {
+.course-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(2)
+  .course-item2
+  .hover-bg
+  span {
   background: #ff853f;
 }
 
-.course-item.box2 .course-price {
-  background: #ff853f;
+.course-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(2)
+  .course-item2
+  .course-price {
+  color: #ff853f;
 }
 
-.course-item.box2 .course-category {
+.course-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(2)
+  .course-item2
+  .course-category {
   color: #ff853f;
   background: #ff853f1a;
   border: 1px solid rgba(255, 133, 63, 0.3);
 }
 
-.course-item.box2:hover .course-title {
+.course-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(2)
+  .course-item2:hover
+  .course-title {
   color: #ff853f;
 }
 
-.course-item.box2 .icon {
+.course-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(2)
+  .course-item2
+  .course-button {
   color: #ff853f;
+  border-color: #ff853f83;
 }
 
-.course-item.box2 .course-button {
+.course-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(2)
+  .course-item2
+  .course-button:before {
   background: #ff853f;
 }
 
-.course-item.box3 {
-  background: #f0fbf7;
-}
-
-.course-item.box3 .hover-bg span {
+.course-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(3)
+  .course-item2
+  .hover-bg
+  span {
   background: #15c1fa;
 }
 
-.course-item.box3 .course-price {
-  background: #15c1fa;
+.course-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(3)
+  .course-item2
+  .course-price {
+  color: #15c1fa;
 }
 
-.course-item.box3 .course-category {
+.course-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(3)
+  .course-item2
+  .course-category {
   color: #15c1fa;
   background: #15c1fa1a;
   border: 1px solid rgba(21, 193, 250, 0.3);
 }
 
-.course-item.box3:hover .course-title {
+.course-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(3)
+  .course-item2:hover
+  .course-title {
   color: #15c1fa;
 }
 
-.course-item.box3 .icon {
+.course-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(3)
+  .course-item2
+  .course-button {
   color: #15c1fa;
+  border-color: #15c1fa81;
 }
 
-.course-item.box3 .course-button {
+.course-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(3)
+  .course-item2
+  .course-button:before {
   background: #15c1fa;
+}
+
+.course-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(1)
+  .course-item2:hover
+  .course-button,
+.course-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(2)
+  .course-item2:hover
+  .course-button,
+.course-section
+  .swiper-wrapper
+  .swiper-slide:nth-child(3)
+  .course-item2:hover
+  .course-button {
+  color: #fff;
 }
