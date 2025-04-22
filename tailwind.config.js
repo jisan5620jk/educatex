@@ -153,6 +153,11 @@ export default {
         shine: {
           '100%': { left: '100%', opacity: '0' },
         },
+        flip: {
+          '0%': { transform: 'rotateY(0deg)' },
+          '50%': { transform: 'rotateY(20deg)' },
+          '100%': { transform: 'rotateY(0deg)' },
+        },
       },
       animation: {
         movebtn: 'movebtn 3s linear infinite',
@@ -174,6 +179,7 @@ export default {
         wobble_vertical: 'wobble_vertical 1s forwards ease-in-out',
         ripple_white: 'ripple_white 1s linear infinite',
         shine: 'shine 800ms',
+        flip: 'flip 1.5s ease-in-out infinite',
       },
       boxShadow: {
         cases: '0px 10px 15px rgba(187, 187, 187, 0.2)',

@@ -1,16 +1,18 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
-import brandThumb from '/images/brand-1.webp';
-import brandThumb2 from '/images/brand-2.webp';
-import brandThumb3 from '/images/brand-3.webp';
-import brandThumb4 from '/images/brand-4.webp';
+import brandThumb from '/images/brand-img3.png';
+import brandThumb2 from '/images/brand-img1.png';
+import brandThumb3 from '/images/brand-img2.png';
+import shape from '/images/brand-star.png';
+import shape2 from '/images/brand-arrow.png';
+import shape3 from '/images/brand-line.png';
 
 const Brand = () => {
   const settings = {
     modules: [Autoplay],
     loop: true,
-    spaceBetween: 30,
+    spaceBetween: 26,
     speed: 10000,
     grabCursor: true, // Fixed typo: cursorGrab -> grabCursor
     autoplay: {
@@ -21,84 +23,84 @@ const Brand = () => {
       320: { slidesPerView: 1 },
       576: { slidesPerView: 2 },
       768: { slidesPerView: 3 },
-      992: { slidesPerView: 4 },
-      1400: { slidesPerView: 5 },
+      992: { slidesPerView: 3 },
+      1400: { slidesPerView: 3 },
     },
   };
 
   return (
-    <section className="mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] bg-[url('/images/brand-bg.webp')] bg-cover bg-center bg-no-repeat pt-[100px] pb-[92px] rounded-b-lg lg:rounded-b-2xl -mt-5">
+    <section className='bg-BodyBg-0 pt-16 md:pt-20 lg:pt-[110px] pb-[78px] rounded-b-lg lg:rounded-b-2xl relative z-10'>
+      <div className='absolute top-24 left-[40%] animate-rotational hidden lg:block xl:hidden 2xl:block'>
+        <img
+          src={shape}
+          draggable={false}
+          alt='Shape'
+        />
+      </div>
+      <div className='absolute top-28 left-48 animate-dance3 hidden 2xl:block'>
+        <img
+          src={shape2}
+          draggable={false}
+          alt='Shape'
+        />
+      </div>
+      <div className='absolute -top-16 right-32 animate-wiggle hidden lg:block'>
+        <img
+          src={shape3}
+          draggable={false}
+          alt='Shape'
+        />
+      </div>
       <div className='Container'>
-        <div className='flex items-center gap-2 sm:gap-4'>
-          <h5 className='font-Outfit font-semibold text-base sm:text-lg text-HeadingColor-0 uppercase'>
-            See our happy customers
-          </h5>{' '}
-          <div className='flex-1 w-full h-[1px] bg-HeadingColor-0 bg-opacity-10'></div>
-        </div>
-        <div className='relative z-10 py-[52px]'>
-          <Swiper {...settings}>
-            <SwiperSlide>
-              <div>
-                <img
-                  src={brandThumb}
-                  draggable='false'
-                  className='m-auto'
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <img
-                  src={brandThumb2}
-                  draggable='false'
-                  className='m-auto'
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <img
-                  src={brandThumb3}
-                  draggable='false'
-                  className='m-auto'
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <img
-                  src={brandThumb4}
-                  draggable='false'
-                  className='m-auto'
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <img
-                  src={brandThumb}
-                  draggable='false'
-                  className='m-auto'
-                />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <img
-                  src={brandThumb3}
-                  draggable='false'
-                  className='m-auto'
-                />
-              </div>
-            </SwiperSlide>
-          </Swiper>
-        </div>
-        <div className='flex items-center gap-2 sm:gap-4'>
-          <div className='flex-1 w-full h-[1px] bg-HeadingColor-0 bg-opacity-10'></div>{' '}
-          <h5 className='font-Outfit font-semibold text-base sm:text-lg text-HeadingColor-0 uppercase'>
-            About <span className='text-PrimaryColor-0'>10k+</span> customers
-            worldwide
-          </h5>
+        <div className='flex items-center justify-between flex-wrap gap-y-7'>
+          <div>
+            <h5 className='font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
+              our partners
+            </h5>
+            <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2'>
+              Our Trusted Partners
+            </h1>
+          </div>
+          <div className='relative z-10 max-w-[710px] w-full'>
+            <Swiper {...settings}>
+              <SwiperSlide>
+                <div>
+                  <img
+                    src={brandThumb}
+                    draggable='false'
+                    className='m-auto'
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div>
+                  <img
+                    src={brandThumb2}
+                    draggable='false'
+                    className='m-auto'
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div>
+                  <img
+                    src={brandThumb3}
+                    draggable='false'
+                    className='m-auto'
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div>
+                  <img
+                    src={brandThumb2}
+                    draggable='false'
+                    className='m-auto'
+                  />
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
         </div>
       </div>
     </section>

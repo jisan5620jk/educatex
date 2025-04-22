@@ -1,139 +1,195 @@
-import titleShape from '/images/sub-title-shape.png';
-import whyChooseThumb from '/images/choose-us-thumb-1.webp';
-import whyChooseShape from '/images/choose-us-shape.webp';
-import itemIcon from '/images/icon1.webp';
-import itemIcon2 from '/images/icon2.webp';
-import itemIcon3 from '/images/icon3.webp';
+import whyChooseThumb from '/images/choose-thumb1.png';
+import itemIcon from '/images/choose-icon1.png';
+import itemIcon2 from '/images/choose-icon2.png';
+import itemIcon3 from '/images/choose-icon3.png';
+import itemIcon4 from '/images/choose-icon4.png';
+import icon from '/images/top-star.png';
+import shape from '/images/choose-star.png';
+import shape2 from '/images/choose-dot.png';
+import shape3 from '/images/choose-shape1.png';
+import shape4 from '/images/choose-circle.png';
+import star from '/images/choose-rat-icon.png';
 import { Link } from 'react-router-dom';
-import shape from '/images/shape.webp';
+import { HiArrowNarrowRight } from 'react-icons/hi';
+import OnScrollCounter from '../../Shared/Counter/OnScrollCounter';
 
 const WhyChoose = () => {
   return (
-    <section className='bg-white py-16 md:py-20 lg:py-28 relative z-10'>
+    <section className='bg-[url(/images/choose-bg1.png)] py-16 md:py-20 lg:py-28 bg-no-repeat bg-center bg-cover relative'>
+      <img
+        src={shape4}
+        draggable={false}
+        alt='Shape'
+        className='absolute -top-14 right-[6%] animate-rotational hidden lg:block'
+      />
       <div className='Container'>
-        <div className='grid grid-cols-1 gap-10 lg:gap-0 lg:grid-cols-2 items-end relative'>
-          <div>
-            <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
-              <img
-                src={titleShape}
-                draggable={false}
-                alt='Shape'
-              />{' '}
-              Why Choose us?
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-6 2xl:gap-10 items-end'>
+          <div className='relative'>
+            <h5 className='font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
+              why choose us?
             </h5>
-            <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-6'>
-              Brain Storming, Researcing and
+            <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 mb-4'>
+              Innovative and Effective
               <br />
-              Work Strategist Create
+              Learning Approaches
             </h1>
-            <div className='space-y-7 border-t border-SecondaryColor-0 border-opacity-10 pt-8'>
-              <div className='flex gap-5 group'>
-                <div className='size-[62px] rounded-full flex items-center justify-center border border-BorderColor2-0 shadow-shadows relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-gradient-to-t before:from-PrimaryColor2-0 before:to-PrimaryColor3-0 before:rounded-full before:transition-all before:duration-500 before:scale-0 before:-z-10 group-hover:before:scale-100'>
+            <p className='font-OpenSans text-TextColor-0 max-w-[570px] w-full'>
+              Educate the ultimate destination for knowledge seekers and
+              educators alike. We are committed to transforming special
+              education impact global channels without standards compliant
+              systems
+            </p>
+            <ul className='grid items-center grid-cols-1 sm:grid-cols-2 gap-5 md:gap-8 lg:gap-2 xl:gap-4 2xl:gap-8 mt-9 mb-7'>
+              <li className='flex items-center gap-[10px] lg:gap-[6px] xl:gap-[10px] px-5 sm:px-3 md:px-5 lg:px-1 xl:px-3 2xl:px-5 py-4 lg:py-2 xl:py-4 rounded-[10px] bg-PrimaryColor-0 bg-opacity-10 group relative z-10 overflow-hidden'>
+                <div className='choose-icon-hover-bg'>
+                  <span className='absolute left-[12.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
+                  <span className='absolute left-[37.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
+                  <span className='absolute left-[62.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-1/2'></span>
+                  <span className='absolute left-[87.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[75%]'></span>
+                </div>
+                <div>
                   <img
                     src={itemIcon}
                     draggable={false}
                     alt='Icon'
-                    className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1] group-hover:animate-wobble_vertical'
+                    className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
                   />
                 </div>
-                <div className='flex-1 -mt-1'>
-                  <h5 className='font-Outfit font-semibold text-2xl pb-[6px]'>
-                    Free Integrations
-                  </h5>
-                  <p className='font-OpenSans text-TextColor2-0 max-w-[370px] w-full'>
-                    Competently leverage existing top-line technology maximize
-                    cost effective service done
-                  </p>
+                <h5 className='flex-1 font-Outfit font-medium text-[17px] sm:text-[15px] md:text-[17px] lg:text-[15px] 2xl:text-[17px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white'>
+                  Course Management
+                </h5>
+              </li>
+              <li className='flex items-center gap-[10px] lg:gap-[6px] xl:gap-[10px] px-5 sm:px-3 md:px-5 lg:px-1 xl:px-3 2xl:px-5 py-4 lg:py-2 xl:py-4 rounded-[10px] bg-PrimaryColor2-0 bg-opacity-10 group relative z-10 overflow-hidden'>
+                <div className='choose-icon-hover-bg'>
+                  <span className='absolute left-[12.5%] top-0 h-full w-0 bg-PrimaryColor2-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
+                  <span className='absolute left-[37.5%] top-0 h-full w-0 bg-PrimaryColor2-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
+                  <span className='absolute left-[62.5%] top-0 h-full w-0 bg-PrimaryColor2-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-1/2'></span>
+                  <span className='absolute left-[87.5%] top-0 h-full w-0 bg-PrimaryColor2-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[75%]'></span>
                 </div>
-              </div>
-              <div className='flex gap-5 group'>
-                <div className='size-[62px] rounded-full flex items-center justify-center border border-BorderColor2-0 shadow-shadows relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-gradient-to-t before:from-PrimaryColor2-0 before:to-PrimaryColor3-0 before:rounded-full before:transition-all before:duration-500 before:scale-0 before:-z-10 group-hover:before:scale-100'>
+                <div>
                   <img
                     src={itemIcon2}
                     draggable={false}
                     alt='Icon'
-                    className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1] group-hover:animate-wobble_vertical'
+                    className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
                   />
                 </div>
-                <div className='flex-1 -mt-1'>
-                  <h5 className='font-Outfit font-semibold text-2xl pb-[6px]'>
-                    Premium Resource
-                  </h5>
-                  <p className='font-OpenSans text-TextColor2-0 max-w-[370px] w-full'>
-                    Competently leverage existing top-line technology maximize
-                    cost effective service done
-                  </p>
+                <h5 className='flex-1 font-Outfit font-medium text-[17px] sm:text-[15px] md:text-[17px] lg:text-[15px] 2xl:text-[17px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white'>
+                  Students Progress Tracking
+                </h5>
+              </li>
+              <li className='flex items-center gap-[10px] lg:gap-[6px] xl:gap-[10px] px-5 sm:px-3 md:px-5 lg:px-1 xl:px-3 2xl:px-5 py-4 lg:py-2 xl:py-4 rounded-[10px] bg-PrimaryColor4-0 bg-opacity-10 group relative z-10 overflow-hidden'>
+                <div className='choose-icon-hover-bg'>
+                  <span className='absolute left-[12.5%] top-0 h-full w-0 bg-PrimaryColor4-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
+                  <span className='absolute left-[37.5%] top-0 h-full w-0 bg-PrimaryColor4-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
+                  <span className='absolute left-[62.5%] top-0 h-full w-0 bg-PrimaryColor4-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-1/2'></span>
+                  <span className='absolute left-[87.5%] top-0 h-full w-0 bg-PrimaryColor4-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[75%]'></span>
                 </div>
-              </div>
-              <div className='flex gap-5 group'>
-                <div className='size-[62px] rounded-full flex items-center justify-center border border-BorderColor2-0 shadow-shadows relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-gradient-to-t before:from-PrimaryColor2-0 before:to-PrimaryColor3-0 before:rounded-full before:transition-all before:duration-500 before:scale-0 before:-z-10 group-hover:before:scale-100'>
+                <div>
                   <img
                     src={itemIcon3}
                     draggable={false}
                     alt='Icon'
-                    className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1] group-hover:animate-wobble_vertical'
+                    className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
                   />
                 </div>
-                <div className='flex-1 -mt-1'>
-                  <h5 className='font-Outfit font-semibold text-2xl pb-[6px]'>
-                    Unlimited Supports
-                  </h5>
-                  <p className='font-OpenSans text-TextColor2-0 max-w-[370px] w-full'>
-                    Competently leverage existing top-line technology maximize
-                    cost effective service done
-                  </p>
+                <h5 className='flex-1 font-Outfit font-medium text-[17px] sm:text-[15px] md:text-[17px] lg:text-[15px] 2xl:text-[17px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white'>
+                  Interactive Live Class
+                </h5>
+              </li>
+              <li className='flex items-center gap-[10px] lg:gap-[6px] xl:gap-[10px] px-5 sm:px-3 md:px-5 lg:px-1 xl:px-3 2xl:px-5 py-4 lg:py-2 xl:py-4 rounded-[10px] bg-PrimaryColor3-0 bg-opacity-10 group relative z-10 overflow-hidden'>
+                <div className='choose-icon-hover-bg'>
+                  <span className='absolute left-[12.5%] top-0 h-full w-0 bg-PrimaryColor3-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
+                  <span className='absolute left-[37.5%] top-0 h-full w-0 bg-PrimaryColor3-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
+                  <span className='absolute left-[62.5%] top-0 h-full w-0 bg-PrimaryColor3-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-1/2'></span>
+                  <span className='absolute left-[87.5%] top-0 h-full w-0 bg-PrimaryColor3-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[75%]'></span>
                 </div>
+                <div>
+                  <img
+                    src={itemIcon4}
+                    draggable={false}
+                    alt='Icon'
+                    className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
+                  />
+                </div>
+                <h5 className='flex-1 font-Outfit font-medium text-[17px] sm:text-[15px] md:text-[17px] lg:text-[15px] 2xl:text-[17px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white'>
+                  Quiz and Assignments
+                </h5>
+              </li>
+            </ul>
+            <div className='flex items-center gap-2 mb-9'>
+              <div>
+                <img
+                  src={icon}
+                  draggable={false}
+                  alt='Icon'
+                />
+              </div>
+              <div>
+                <h5 className='font-Outfit text-HeadingColor-0 '>
+                  24/7 Hrs Ready to our support team
+                </h5>
               </div>
             </div>
-            <Link
-              to={'/about3'}
-              className='inline-block mt-11'
-            >
-              <button className='primary-btn'>
-                {`Learn More`}
-                <span className='icon-style'>
-                  <svg
-                    className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
-                    xmlns='http://www.w3.org/2000/svg'
-                    stroke='CurrentColor'
-                    width='14.2'
-                    height='14.2'
-                    viewBox='0 0 14.2 14.2'
-                  >
-                    <g>
-                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                    </g>
-                    <g>
-                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                    </g>
-                  </svg>
-                </span>
-              </button>
-            </Link>
+            <div>
+              <Link
+                to={'/whyChoose'}
+                className='primary-btn2'
+              >
+                Get Started
+                <HiArrowNarrowRight size={20} />
+              </Link>
+            </div>
           </div>
-          <div className='relative inline-block'>
+          <div className='relative z-10'>
             <img
               src={whyChooseThumb}
-              draggable={false}
-              alt='Why Choose Image'
+              draggable='false'
+              className='w-full xl:w-[inherit] 2xl:max-w-[inherit] 2xl:ml-16 3xl:ml-[104px]'
             />
             <img
-              src={whyChooseShape}
+              src={shape}
               draggable={false}
-              alt='Why Choose Shape'
-              className='absolute right-44 lg:right-32 xl:right-44 -top-28 animate-dance3 hidden md:block'
+              alt='Shape'
+              className='absolute -z-10 bottom-[28%] left-[13%] 2xl:left-[10%] 3xl:left-[13%] animate-rotational hidden md:block'
             />
+            <img
+              src={shape2}
+              draggable={false}
+              alt='Shape'
+              className='absolute -z-10 -top-[1%] left-1/2 md:left-[59%] animate-swing'
+            />
+            <img
+              src={shape3}
+              draggable={false}
+              alt='Shape'
+              className='absolute -bottom-[4%] -left-[24%] animate-dance hidden lg:block'
+            />
+            <div className='hidden absolute bottom-16 right-0 lg:right-0 3xl:-right-[70px] bg-white rounded-[10px] px-7 lg:px-5 xl:px-7 py-6 md:inline-flex gap-5 items-start w-full max-w-[278px] lg:max-w-[240px] xl:max-w-[278px]'>
+              <div>
+                <img
+                  src={star}
+                  draggable={false}
+                  alt='User Image'
+                />
+              </div>
+              <div className='-mt-1'>
+                <div className='!font-Outfit font-semibold text-[26px] leading-7 text-HeadingColor-0 flex gap-1 items-center'>
+                  <OnScrollCounter
+                    start={0}
+                    end={26}
+                    duration={1000}
+                  />
+                  <span>+</span>
+                </div>
+                <h5 className='font-OpenSans text-TextColor-0 text-sm'>
+                  Years of Experiences
+                </h5>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <img
-        src={shape}
-        draggable={false}
-        alt='Shape'
-        className='absolute bottom-0 left-24 animate-dance3 hidden 3xl:block'
-      />
     </section>
   );
 };

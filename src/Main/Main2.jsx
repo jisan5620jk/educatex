@@ -29,7 +29,7 @@ const Main2 = () => {
 
   return (
     <>
-      <HelmetChanger title={'Artificial Intelligence'} />
+      <HelmetChanger title={'Online Univercity'} />
       <Navbar2 />
       <BackToTop />
       <div>

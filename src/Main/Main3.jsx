@@ -1,15 +1,15 @@
 import { Outlet } from 'react-router-dom';
-import BackToTop from '../Shared/BackToTop/BackToTop';
-import Footer3 from '../Shared/Footer/Footer3';
+import Footer from '../Shared/Footer/Footer';
+import Navbar from '../Shared/Navbar/Navbar';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import HelmetChanger from '../Shared/Helmet/Helmet';
+import BackToTop from '../Shared/BackToTop/BackToTop';
 import { useEffect } from 'react';
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Navbar2 from '../Shared/Navbar/Navbar2';
 
 const Main3 = () => {
   useEffect(() => {
@@ -29,13 +29,13 @@ const Main3 = () => {
 
   return (
     <>
-      <HelmetChanger title={'Software Agency'} />
-      <Navbar2 />
+      <HelmetChanger title={'Kinder Garden School'} />
+      <Navbar />
       <BackToTop />
       <div>
         <Outlet />
       </div>
-      <Footer3 />
+      <Footer />
     </>
   );
 };
