@@ -1,58 +1,44 @@
-import aboutThumb from '/images/about-thumb1.png';
+import aboutThumb from '/images/about-thumb4.png';
 import itemIcon from '/images/about-icon.png';
-import shape from '/images/about-shape2.png';
-import shape2 from '/images/about-shape1.png';
-import shape3 from '/images/about-shape3.png';
-import shape4 from '/images/about-shape5.png';
-import shape5 from '/images/about-shape4.png';
+import subTilteIcon from '/images/sub-title2.png';
+import shape from '/images/about-shpae2.png';
+import shape2 from '/images/about-shpae1.png';
 import { Link } from 'react-router-dom';
-import { HiArrowNarrowRight } from 'react-icons/hi';
 import OnScrollCounter from '../../Shared/Counter/OnScrollCounter';
+import btnIcon from '/images/book-icon.png';
+import aboutIcon from '/images/about-call2.png';
 
 const About = () => {
   return (
-    <section className='bg-[url(/images/about-bg11.png)] pt-16 md:pt-20 lg:pt-28 bg-no-repeat bg-center bg-cover relative'>
-      <img
-        src={shape4}
-        draggable={false}
-        alt='Shape'
-        className='absolute top-[16%] right-[7%] animate-rotational hidden 3xl:block'
-      />
-      <img
-        src={shape5}
-        draggable={false}
-        alt='Shape'
-        className='absolute bottom-[10%] right-[4%] animate-dance3 hidden 3xl:block'
-      />
+    <section className='py-16 md:py-20 lg:py-28 relative'>
       <div className='Container'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 items-end'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 items-center'>
           <div className='relative z-10'>
             <img
               src={aboutThumb}
               draggable='false'
-              className='w-full lg:w-[inherit] max-w-[inherit] lg:-ml-[350px] xl:-ml-[250px] 2xl:-ml-[224px]'
+              className='w-full lg:w-[inherit] max-w-[inherit] lg:-ml-[35px] xl:-[50px]'
             />
             <img
               src={shape}
               draggable={false}
               alt='Shape'
-              className='absolute -z-10 -top-[3%] right-0 lg:right-[12%] animate-rotational'
+              className='absolute -z-10 bottom-12 lg:left-[5%] animate-dance'
             />
             <img
               src={shape2}
               draggable={false}
               alt='Shape'
-              className='absolute -z-10 -top-4 lg:top-[2%] left-5 lg:-left-[6%] animate-swing'
-            />
-            <img
-              src={shape3}
-              draggable={false}
-              alt='Shape'
-              className='absolute top-[30%] left-[24%] animate-wiggle hidden xl:block'
+              className='absolute -z-10 top-[12%] right-[13%] animate-rotateX'
             />
           </div>
           <div className='relative pb-16 md:pb-20 lg:pb-28'>
-            <h5 className='font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
+            <h5 className='font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center gap-3'>
+              <img
+                src={subTilteIcon}
+                draggable={false}
+                alt='Icon'
+              />{' '}
               ABOUT US
             </h5>
             <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 mb-4'>
@@ -60,74 +46,99 @@ const About = () => {
               <br />
               Educate Online Platform
             </h1>
-            <p className='font-OpenSans text-TextColor-0 max-w-[570px] w-full'>
-              Educate the ultimate destination for knowledge seekers and
-              educators alike. We are committed to transforming special
-              education impact global channels without standards compliant
-              systems
-            </p>
-            <ul className='grid items-center grid-cols-1 sm:grid-cols-2 gap-y-4 my-7'>
-              <li className='flex items-center gap-[10px]'>
+            <div className='grid grid-cols-2 items-center gap-5 mt-8 mb-9'>
+              <div className='bg-PrimaryColor-0 bg-opacity-[7%] h-[316px] flex flex-col justify-between rounded-[20px] px-7 pt-8 pb-9'>
                 <div>
-                  <img
-                    src={itemIcon}
-                    draggable={false}
-                    alt='Icon'
-                  />
-                </div>
-                <h5 className='flex-1 font-Outfit font-medium text-lg sm:text-base md:text-lg lg:text-base 2xl:text-lg text-HeadingColor-0'>
-                  Innovative Learning System
-                </h5>
-              </li>
-              <li className='flex items-center gap-[10px]'>
-                <div>
-                  <img
-                    src={itemIcon}
-                    draggable={false}
-                    alt='Icon'
-                  />
-                </div>
-                <h5 className='flex-1 font-Outfit font-medium text-lg sm:text-base md:text-lg lg:text-base 2xl:text-lg text-HeadingColor-0'>
-                  Worldwide Intelligent Learner
-                </h5>
-              </li>
-            </ul>
-            <div className='grid grid-cols-1 items-center sm:grid-cols-2 border-y border-SecondaryColor-0 border-opacity-15 py-5 mb-12'>
-              <div className='flex gap-10'>
-                <div className='text-2xl md:text-[56px] lg:text-[40px] leading-[56px] tracking-wide font-semibold font-Outfit text-PrimaryColor-0 relative'>
-                  <OnScrollCounter
-                    start={0}
-                    end={30}
-                    duration={2000}
-                  />
-                  <h2 className='absolute -top-0 -right-5 font-Outfit text-3xl'>
-                    +
-                  </h2>
-                </div>
-                <div className='flex-1'>
-                  <p className='font-OpenSans text-TextColor-0 mt-2'>
-                    Expert and Professional
-                    <br /> all Instructor
+                  <h4 className='font-Outfit text-HeadingColor-0 font-medium text-[26px]'>
+                    Our Mission
+                  </h4>
+                  <p className='font-OpenSans text-TextColor-0 max-w-[570px] w-full pt-[6px]'>
+                    Educate the ultimate destination transforming to education
+                    best educational environment
                   </p>
                 </div>
+                <ul className='space-y-2'>
+                  <li className='flex items-center gap-[10px]'>
+                    <div>
+                      <img
+                        src={itemIcon}
+                        draggable={false}
+                        alt='Icon'
+                        className='w-[16px]'
+                      />
+                    </div>
+                    <h5 className='flex-1 font-Outfit text-base text-HeadingColor-0'>
+                      Quick Learning System
+                    </h5>
+                  </li>
+                  <li className='flex items-center gap-[10px]'>
+                    <div>
+                      <img
+                        src={itemIcon}
+                        draggable={false}
+                        alt='Icon'
+                        className='w-[16px]'
+                      />
+                    </div>
+                    <h5 className='flex-1 font-Outfit text-base text-HeadingColor-0'>
+                      Super Fast Online Platform
+                    </h5>
+                  </li>
+                  <li className='flex items-center gap-[10px]'>
+                    <div>
+                      <img
+                        src={itemIcon}
+                        draggable={false}
+                        alt='Icon'
+                        className='w-[16px]'
+                      />
+                    </div>
+                    <h5 className='flex-1 font-Outfit text-base text-HeadingColor-0'>
+                      Weekly Assignments
+                    </h5>
+                  </li>
+                </ul>
               </div>
-              <div className='flex gap-10'>
-                <div className='text-2xl md:text-[56px] lg:text-[40px] leading-[56px] tracking-wide font-semibold font-Outfit text-PrimaryColor-0 relative flex items-center'>
-                  <OnScrollCounter
-                    start={0}
-                    end={6}
-                    duration={1000}
-                  />
-                  <h2 className='font-Outfit'>K</h2>
-                  <h2 className='absolute -top-0 -right-5 font-Outfit text-3xl'>
-                    +
-                  </h2>
+              <div className='bg-PrimaryColor2-0 bg-opacity-[7%] h-[316px] flex flex-col justify-between rounded-[20px] px-7 pt-8 pb-9'>
+                <div className=''>
+                  <div className='text-2xl md:text-[56px] lg:text-[56px] leading-[56px] tracking-wide font-semibold font-Outfit text-PrimaryColor2-0 inline-flex items-center relative'>
+                    <OnScrollCounter
+                      start={0}
+                      end={6}
+                      duration={1000}
+                    />
+                    <h1>K</h1>
+                    <h2 className='absolute -top-0 -right-5 font-Outfit text-3xl'>
+                      +
+                    </h2>
+                  </div>
+                  <div>
+                    <p className='font-OpenSans text-TextColor-0 mt-2'>
+                      Enrolled Students all
+                      <br /> Over the World
+                    </p>
+                  </div>
                 </div>
-                <div className='flex-1'>
-                  <p className='font-OpenSans text-TextColor-0 mt-2'>
-                    Enrolled Students all
-                    <br /> Over the World
-                  </p>
+                <div className='flex items-start gap-4 pt-1'>
+                  <div>
+                    <img
+                      src={aboutIcon}
+                      draggable={false}
+                      alt='Icon'
+                    />
+                  </div>
+                  <div className='flex-1 -mt-1'>
+                    <h6 className='font-Outfit text-HeadingColor-0'>
+                      Call Us AnyTime
+                    </h6>
+                    <a
+                      href='tel:+6803290570'
+                      title='+(680) 3290 570'
+                      className='font-Outfit text-xl font-medium text-HeadingColor-0 pt-1'
+                    >
+                      +(680) 3290 570
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -136,8 +147,12 @@ const About = () => {
                 to={'/about'}
                 className='primary-btn2'
               >
+                <img
+                  src={btnIcon}
+                  draggable={false}
+                  alt='Button Icon'
+                />
                 More About
-                <HiArrowNarrowRight size={20} />
               </Link>
             </div>
           </div>
