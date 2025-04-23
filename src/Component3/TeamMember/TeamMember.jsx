@@ -110,10 +110,7 @@ const TeamMember = () => {
       </div>
       <div className='Container'>
         <div className='relative grid items-center grid-cols-1 lg:grid-cols-2 gap-8'>
-          <div
-            className='border-b border-SecondaryColor-0 border-opacity-15 
-pb-6 lg:py-6'
-          >
+          <div className='border-b border-SecondaryColor-0 border-opacity-15 pb-6 lg:py-6'>
             <h5 className='font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
               INSTRUCTOR
             </h5>

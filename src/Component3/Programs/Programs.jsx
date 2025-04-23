@@ -1,87 +1,85 @@
-import courseImg1 from '/images/course-thumb41.png';
-import courseImg2 from '/images/course-thumb42.png';
-import courseImg3 from '/images/course-thumb43.png';
-import shape from '/images/course-shape1.png';
-import shape2 from '/images/course-shape2.png';
-import './course.css';
+import programsImg1 from '/images/program-thumb1.png';
+import programsImg2 from '/images/program-thumb2.png';
+import programsImg3 from '/images/program-thumb3.png';
+import './programs.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
 import { BsStarFill, BsStarHalf } from 'react-icons/bs';
 import { HiArrowNarrowRight } from 'react-icons/hi';
-import CourseCard from './CourseCard';
-import CourseNavigation from './CourseNavigation';
+import ProgramsCard from './ProgramsCard';
+import ProgramsNavigation from './ProgramsNavigation';
 import subTilteIcon from '/images/sub-title2.png';
 import { useRef } from 'react';
 
-const courses = [
+const programss = [
   {
     id: 1,
-    img: courseImg1,
+    img: programsImg1,
     category: 'Academic',
     title: 'Business Innovation And Development',
     price: '$30',
-    courseRatingIcon: <BsStarFill />,
-    courseRatingIcon2: <BsStarHalf />,
+    programsRatingIcon: <BsStarFill />,
+    programsRatingIcon2: <BsStarHalf />,
     rating: 4.5,
     ratingContent: '/3 Ratings',
     lessons: 12,
     students: 1200,
-    courseUrl: '/course',
+    programsUrl: '/programs',
     enrollBtn: 'Enroll Now',
     enrollBtnIcon: <HiArrowNarrowRight />,
   },
   {
     id: 2,
-    img: courseImg2,
+    img: programsImg2,
     category: 'Healths',
     title: 'Introduction to General Math Concepts',
     price: '$40',
     discountPrice: '$50',
-    courseRatingIcon: <BsStarFill />,
-    courseRatingIcon2: <BsStarHalf />,
+    programsRatingIcon: <BsStarFill />,
+    programsRatingIcon2: <BsStarHalf />,
     rating: 4.7,
     ratingContent: '/7 Ratings',
     lessons: 15,
     students: 1500,
-    courseUrl: '/course',
+    programsUrl: '/programs',
     enrollBtn: 'Enroll Now',
     enrollBtnIcon: <HiArrowNarrowRight />,
   },
   {
     id: 3,
-    img: courseImg3,
+    img: programsImg3,
     category: 'Finance',
     title: 'Physical Development and Motor Skills',
     price: '$50',
-    courseRatingIcon: <BsStarFill />,
-    courseRatingIcon2: <BsStarHalf />,
+    programsRatingIcon: <BsStarFill />,
+    programsRatingIcon2: <BsStarHalf />,
     rating: 4.8,
     ratingContent: '/5 Ratings',
-    courseUrl: '/course',
+    programsUrl: '/programs',
     enrollBtn: 'Enroll Now',
     enrollBtnIcon: <HiArrowNarrowRight />,
   },
   {
     id: 4,
-    img: courseImg2,
+    img: programsImg2,
     category: 'Social',
     title: 'Building Early Literacy and Communication',
     price: '$80',
     discountPrice: '$100',
-    courseRatingIcon: <BsStarFill />,
-    courseRatingIcon2: <BsStarHalf />,
+    programsRatingIcon: <BsStarFill />,
+    programsRatingIcon2: <BsStarHalf />,
     rating: 4.6,
     ratingContent: '/6 Ratings',
     lessons: 10,
     students: 1300,
-    courseUrl: '/course',
+    programsUrl: '/programs',
     enrollBtn: 'Enroll Now',
     enrollBtnIcon: <HiArrowNarrowRight />,
   },
 ];
 
-const Course = () => {
+const Programs = () => {
   const swiperRef = useRef(null);
 
   const settings = {
@@ -105,23 +103,7 @@ const Course = () => {
   };
 
   return (
-    <div className='course-section3 bg-[url("/images/course-bg4.png")] bg-cover bg-center bg-no-repeat pt-[60px] md:pt-20 lg:pt-[140px] xl:pt-[170px] pb-16 md:pb-20 lg:pb-[204px] relative'>
-      <div className='absolute left-52 top-48 hidden 3xl:block'>
-        <img
-          src={shape}
-          draggable={false}
-          alt='Shape'
-          className='animate-rotateZoom'
-        />
-      </div>
-      <div className='absolute right-32 top-60 hidden 3xl:block'>
-        <img
-          src={shape2}
-          draggable={false}
-          alt='Shape'
-          className='animate-flip'
-        />
-      </div>
+    <div className='programs-section bg-[url("/images/program-bg4.png")] bg-cover bg-center bg-no-repeat py-16 md:py-20 lg:py-[180px] relative'>
       <div className='Container'>
         <div className='text-center'>
           <h5 className='font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center justify-center gap-3'>
@@ -130,10 +112,10 @@ const Course = () => {
               draggable={false}
               alt='Icon'
             />{' '}
-            OUR COURSES
+            OUR programsS
           </h5>
           <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 mb-4'>
-            Browse Our Courses – Comprehensive <br /> Teaching Kindness and
+            Browse Our programss – Comprehensive <br /> Teaching Kindness and
             Empathy
           </h1>
         </div>
@@ -145,7 +127,7 @@ const Course = () => {
             {...settings}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
-            {courses.map(
+            {programss.map(
               ({
                 id,
                 img,
@@ -154,44 +136,44 @@ const Course = () => {
                 price,
                 discountPrice,
                 rating,
-                courseRatingIcon,
-                courseRatingIcon2,
+                programsRatingIcon,
+                programsRatingIcon2,
                 ratingContent,
                 lessons,
                 students,
                 enrollBtn,
                 enrollBtnIcon,
-                courseUrl,
+                programsUrl,
               }) => (
                 <SwiperSlide key={id}>
-                  <div className='course-box pb-20 lg:pb-0'>
-                    <CourseCard
-                      courseImg={img}
-                      courseCategory={category}
-                      courseTitle={title}
-                      coursePrice={price}
+                  <div className='programs-box pb-20 lg:pb-0'>
+                    <ProgramsCard
+                      programsImg={img}
+                      programsCategory={category}
+                      programsTitle={title}
+                      programsPrice={price}
                       discountPrice={discountPrice}
-                      courseRating={rating}
-                      courseRatingIcon={courseRatingIcon}
-                      courseRatingIcon2={courseRatingIcon2}
-                      courseRatingContent={ratingContent}
-                      courseLessons={lessons}
-                      courseStudents={students}
+                      programsRating={rating}
+                      programsRatingIcon={programsRatingIcon}
+                      programsRatingIcon2={programsRatingIcon2}
+                      programsRatingContent={ratingContent}
+                      programsLessons={lessons}
+                      programsStudents={students}
                       enrollBtn={enrollBtn}
                       enrollBtnIcon={enrollBtnIcon}
-                      courseUrl={courseUrl}
+                      programsUrl={programsUrl}
                     />
                   </div>
                 </SwiperSlide>
               )
             )}
           </Swiper>
-          {/* Move CourseNavigation outside the Swiper */}
-          <CourseNavigation swiperRef={swiperRef} />
+          {/* Move programsNavigation outside the Swiper */}
+          <ProgramsNavigation swiperRef={swiperRef} />
         </div>
       </div>
     </div>
   );
 };
 
-export default Course;
+export default Programs;

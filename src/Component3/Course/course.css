@@ -156,58 +156,6 @@
 
 .course-section3
   .swiper-wrapper
-  .swiper-slide:nth-child(4)
-  .course-item2
-  .hover-bg
-  span {
-  background: #15c1fa;
-}
-
-.course-section3
-  .swiper-wrapper
-  .swiper-slide:nth-child(4)
-  .course-item2
-  .course-price {
-  color: #a64cf9;
-}
-
-.course-section3
-  .swiper-wrapper
-  .swiper-slide:nth-child(4)
-  .course-item2
-  .course-category {
-  color: #a64cf9;
-  background: #a64cf91a;
-  border: 1px solid rgb(166, 76, 249, .1);
-}
-
-.course-section3
-  .swiper-wrapper
-  .swiper-slide:nth-child(4)
-  .course-item2:hover
-  .course-title {
-  color: #a64cf9;
-}
-
-.course-section3
-  .swiper-wrapper
-  .swiper-slide:nth-child(4)
-  .course-item2
-  .course-button {
-  color: #a64cf9;
-  border-color: #a64cf981;
-}
-
-.course-section3
-  .swiper-wrapper
-  .swiper-slide:nth-child(4)
-  .course-item2
-  .course-button:before {
-  background: #a64cf9;
-}
-
-.course-section3
-  .swiper-wrapper
   .swiper-slide:nth-child(1)
   .course-item2:hover
   .course-button,
@@ -219,11 +167,6 @@
 .course-section3
   .swiper-wrapper
   .swiper-slide:nth-child(3)
-  .course-item2:hover
-  .course-button ,
-.course-section3
-  .swiper-wrapper
-  .swiper-slide:nth-child(4)
   .course-item2:hover
   .course-button {
   color: #fff;
