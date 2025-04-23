@@ -1,24 +1,7 @@
 .programs-section
   .swiper-wrapper
   .swiper-slide:nth-child(1)
-  .programs-item2
-  .hover-bg
-  span {
-  background: #1ec28f;
-}
-
-.programs-section
-  .swiper-wrapper
-  .swiper-slide:nth-child(1)
-  .programs-item2
-  .programs-price {
-  color: #1ec28f;
-}
-
-.programs-section
-  .swiper-wrapper
-  .swiper-slide:nth-child(1)
-  .programs-item2
+  .programs-box
   .programs-category {
   color: #1ec28f;
   background: rgb(30, 194, 143, 0.1);
@@ -28,49 +11,15 @@
 .programs-section
   .swiper-wrapper
   .swiper-slide:nth-child(1)
-  .programs-item2:hover
-  .programs-title {
+  .programs-box
+  .programs-title:hover {
   color: #1ec28f;
 }
 
 .programs-section
   .swiper-wrapper
-  .swiper-slide:nth-child(1)
-  .programs-item2
-  .programs-button {
-  color: #1ec28f;
-  border-color: #1ec28e81;
-}
-
-.programs-section
-  .swiper-wrapper
-  .swiper-slide:nth-child(1)
-  .programs-item2
-  .programs-button:before {
-  background: #1ec28f;
-}
-
-.programs-section
-  .swiper-wrapper
   .swiper-slide:nth-child(2)
-  .programs-item2
-  .hover-bg
-  span {
-  background: #ff853f;
-}
-
-.programs-section
-  .swiper-wrapper
-  .swiper-slide:nth-child(2)
-  .programs-item2
-  .programs-price {
-  color: #ff853f;
-}
-
-.programs-section
-  .swiper-wrapper
-  .swiper-slide:nth-child(2)
-  .programs-item2
+  .programs-box
   .programs-category {
   color: #ff853f;
   background: #ff853f1a;
@@ -80,49 +29,15 @@
 .programs-section
   .swiper-wrapper
   .swiper-slide:nth-child(2)
-  .programs-item2:hover
-  .programs-title {
+  .programs-box
+  .programs-title:hover {
   color: #ff853f;
 }
 
 .programs-section
   .swiper-wrapper
-  .swiper-slide:nth-child(2)
-  .programs-item2
-  .programs-button {
-  color: #ff853f;
-  border-color: #ff853f83;
-}
-
-.programs-section
-  .swiper-wrapper
-  .swiper-slide:nth-child(2)
-  .programs-item2
-  .programs-button:before {
-  background: #ff853f;
-}
-
-.programs-section
-  .swiper-wrapper
   .swiper-slide:nth-child(3)
-  .programs-item2
-  .hover-bg
-  span {
-  background: #15c1fa;
-}
-
-.programs-section
-  .swiper-wrapper
-  .swiper-slide:nth-child(3)
-  .programs-item2
-  .programs-price {
-  color: #15c1fa;
-}
-
-.programs-section
-  .swiper-wrapper
-  .swiper-slide:nth-child(3)
-  .programs-item2
+  .programs-box
   .programs-category {
   color: #15c1fa;
   background: #15c1fa1a;
@@ -132,49 +47,15 @@
 .programs-section
   .swiper-wrapper
   .swiper-slide:nth-child(3)
-  .programs-item2:hover
-  .programs-title {
+  .programs-box
+  .programs-title:hover {
   color: #15c1fa;
 }
 
 .programs-section
   .swiper-wrapper
-  .swiper-slide:nth-child(3)
-  .programs-item2
-  .programs-button {
-  color: #15c1fa;
-  border-color: #15c1fa81;
-}
-
-.programs-section
-  .swiper-wrapper
-  .swiper-slide:nth-child(3)
-  .programs-item2
-  .programs-button:before {
-  background: #15c1fa;
-}
-
-.programs-section
-  .swiper-wrapper
   .swiper-slide:nth-child(4)
-  .programs-item2
-  .hover-bg
-  span {
-  background: #15c1fa;
-}
-
-.programs-section
-  .swiper-wrapper
-  .swiper-slide:nth-child(4)
-  .programs-item2
-  .programs-price {
-  color: #a64cf9;
-}
-
-.programs-section
-  .swiper-wrapper
-  .swiper-slide:nth-child(4)
-  .programs-item2
+  .programs-box
   .programs-category {
   color: #a64cf9;
   background: #a64cf91a;
@@ -184,47 +65,7 @@
 .programs-section
   .swiper-wrapper
   .swiper-slide:nth-child(4)
-  .programs-item2:hover
-  .programs-title {
+  .programs-box
+  .programs-title:hover {
   color: #a64cf9;
-}
-
-.programs-section
-  .swiper-wrapper
-  .swiper-slide:nth-child(4)
-  .programs-item2
-  .programs-button {
-  color: #a64cf9;
-  border-color: #a64cf981;
-}
-
-.programs-section
-  .swiper-wrapper
-  .swiper-slide:nth-child(4)
-  .programs-item2
-  .programs-button:before {
-  background: #a64cf9;
-}
-
-.programs-section
-  .swiper-wrapper
-  .swiper-slide:nth-child(1)
-  .programs-item2:hover
-  .programs-button,
-.programs-section
-  .swiper-wrapper
-  .swiper-slide:nth-child(2)
-  .programs-item2:hover
-  .programs-button,
-.programs-section
-  .swiper-wrapper
-  .swiper-slide:nth-child(3)
-  .programs-item2:hover
-  .programs-button,
-.programs-section
-  .swiper-wrapper
-  .swiper-slide:nth-child(4)
-  .programs-item2:hover
-  .programs-button {
-  color: #fff;
 }

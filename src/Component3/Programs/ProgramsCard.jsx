@@ -4,27 +4,14 @@ import { Link } from 'react-router-dom';
 
 const ProgramsCard = ({
   programsImg,
-  programsPrice,
-  discountPrice,
   programsCategory,
   programsTitle,
-  programsRating,
-  programsRatingIcon,
-  programsRatingIcon2,
-  programsRatingContent,
   programsUrl,
-  enrollBtn,
-  enrollBtnIcon,
+  programsDesc,
 }) => {
   return (
     <div className='programs-item2 bg-white p-4 xl:p-[30px] rounded-[20px] group relative z-10 overflow-hidden'>
-      <div className='relative overflow-hidden'>
-        <div className='hover-bg'>
-          <span className='absolute left-[12.5%] top-0 h-full w-0 opacity-40 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-0'></span>
-          <span className='absolute left-[37.5%] top-0 h-full w-0 opacity-40 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-[25%]'></span>
-          <span className='absolute left-[62.5%] top-0 h-full w-0 opacity-40 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-1/2'></span>
-          <span className='absolute left-[87.5%] top-0 h-full w-0 opacity-40 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-[75%]'></span>
-        </div>
+      <div className='relative overflow-hidden before:absolute before:-left-3/4 before:top-0 before:w-1/2 before:h-full before:bg-gradient-to-r before:to-transparent before:via-white before:from-transparent before:-skew-x-[20deg] before:opacity-50 group-hover:before:animate-shine'>
         <img
           src={programsImg}
           alt='programs'
@@ -33,43 +20,20 @@ const ProgramsCard = ({
         />
       </div>
 
-      <div className='sm:px-3 lg:px-0 xl:px-3 pt-7 text-left'>
-        <span className='programs-category font-Outfit text-sm px-5 py-[5px] rounded-3xl font-medium mb-3 inline-block uppercase'>
+      <div className='pt-7 pb-2 text-center'>
+        <h6 className='programs-category font-Outfit text-sm px-5 py-[5px] rounded-3xl font-medium mb-4 inline-block uppercase'>
           {programsCategory}
-        </span>
-        <h3 className='programs-title font-Outfit text-xl sm:text-2xl md:text-[22px] lg:text-xl 2xl:text-[22px] 3xl:text-2xl font-medium text-HeadingColor-0 transition-all duration-500 2xl:mr-12'>
-          {programsTitle}
-        </h3>
+        </h6>
 
-        <div className='flex items-center gap-1 text-ReviewText-0 text-sm mt-3 mb-4'>
-          {[...Array(Math.floor(programsRating))].map((_, i) => (
-            <span
-              key={i}
-              className='text-base'
-            >
-              {programsRatingIcon}
-            </span>
-          ))}
-          {programsRating % 1 !== 0 && (
-            <span className='text-base'>{programsRatingIcon2}</span>
-          )}
-          <span className='font-Outfit ml-1 text-HeadingColor-0 text-base'>
-            ({programsRating}
-            {programsRatingContent})
-          </span>
-        </div>
-        <div className='programs-price text-2xl rounded-full flex items-center gap-3 font-Outfit font-medium mb-6'>
-          {programsPrice}
-          <span className='line-through text-HeadingColor-0 text-opacity-30'>
-            {discountPrice}
-          </span>
-        </div>
-        <Link to={programsUrl}>
-          <button className='programs-button font-Outfit inline-flex items-center gap-2 uppercase text-sm justify-between px-7 py-[12px] border overflow-hidden rounded-full transition-all duration-500 relative z-10 before:absolute before:right-0 before:top-0 before:w-0 before:h-full before:transition-all before:duration-500 before:-z-10 group-hover:before:w-full group-hover:before:left-0'>
-            {enrollBtn}
-            <span className='text-xl'>{enrollBtnIcon}</span>
-          </button>
+        <Link
+          to={programsUrl}
+          className='programs-title font-Outfit text-xl sm:text-2xl md:text-[22px] lg:text-xl 2xl:text-[22px] 3xl:text-2xl block font-medium text-HeadingColor-0 transition-all duration-500'
+        >
+          {programsTitle}
         </Link>
+        <p className='font-OpenSans text-TextColor-0 max-w-[326px] w-full mx-auto mt-4'>
+          {programsDesc}
+        </p>
       </div>
     </div>
   );

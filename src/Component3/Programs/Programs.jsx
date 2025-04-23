@@ -5,8 +5,6 @@ import './programs.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
-import { BsStarFill, BsStarHalf } from 'react-icons/bs';
-import { HiArrowNarrowRight } from 'react-icons/hi';
 import ProgramsCard from './ProgramsCard';
 import ProgramsNavigation from './ProgramsNavigation';
 import subTilteIcon from '/images/sub-title2.png';
@@ -16,66 +14,38 @@ const programss = [
   {
     id: 1,
     img: programsImg1,
-    category: 'Academic',
-    title: 'Business Innovation And Development',
-    price: '$30',
-    programsRatingIcon: <BsStarFill />,
-    programsRatingIcon2: <BsStarHalf />,
-    rating: 4.5,
-    ratingContent: '/3 Ratings',
-    lessons: 12,
-    students: 1200,
+    category: '1st School',
+    title: '1st School (01–02 Years)',
     programsUrl: '/programs',
-    enrollBtn: 'Enroll Now',
-    enrollBtnIcon: <HiArrowNarrowRight />,
+    programsDesc:
+      'Ultimate destination for knowledge seekers\nWe are committed to transforming special education impact global',
   },
   {
     id: 2,
     img: programsImg2,
-    category: 'Healths',
-    title: 'Introduction to General Math Concepts',
-    price: '$40',
-    discountPrice: '$50',
-    programsRatingIcon: <BsStarFill />,
-    programsRatingIcon2: <BsStarHalf />,
-    rating: 4.7,
-    ratingContent: '/7 Ratings',
-    lessons: 15,
-    students: 1500,
+    category: 'Pre School',
+    title: 'Pre School (02–03 Years)',
     programsUrl: '/programs',
-    enrollBtn: 'Enroll Now',
-    enrollBtnIcon: <HiArrowNarrowRight />,
+    programsDesc:
+      'Ultimate destination for knowledge seekers\nWe are committed to transforming special education impact global',
   },
   {
     id: 3,
     img: programsImg3,
-    category: 'Finance',
-    title: 'Physical Development and Motor Skills',
-    price: '$50',
-    programsRatingIcon: <BsStarFill />,
-    programsRatingIcon2: <BsStarHalf />,
-    rating: 4.8,
-    ratingContent: '/5 Ratings',
+    category: 'Kinder Garden',
+    title: 'Kindergarted (03–05 Years)',
     programsUrl: '/programs',
-    enrollBtn: 'Enroll Now',
-    enrollBtnIcon: <HiArrowNarrowRight />,
+    programsDesc:
+      'Ultimate destination for knowledge seekers\nWe are committed to transforming special education impact global',
   },
   {
     id: 4,
     img: programsImg2,
-    category: 'Social',
-    title: 'Building Early Literacy and Communication',
-    price: '$80',
-    discountPrice: '$100',
-    programsRatingIcon: <BsStarFill />,
-    programsRatingIcon2: <BsStarHalf />,
-    rating: 4.6,
-    ratingContent: '/6 Ratings',
-    lessons: 10,
-    students: 1300,
+    category: 'Pre School',
+    title: 'Pre School (02–03 Years)',
     programsUrl: '/programs',
-    enrollBtn: 'Enroll Now',
-    enrollBtnIcon: <HiArrowNarrowRight />,
+    programsDesc:
+      'Ultimate destination for knowledge seekers\nWe are committed to transforming special education impact global',
   },
 ];
 
@@ -128,40 +98,15 @@ const Programs = () => {
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
             {programss.map(
-              ({
-                id,
-                img,
-                category,
-                title,
-                price,
-                discountPrice,
-                rating,
-                programsRatingIcon,
-                programsRatingIcon2,
-                ratingContent,
-                lessons,
-                students,
-                enrollBtn,
-                enrollBtnIcon,
-                programsUrl,
-              }) => (
+              ({ id, img, category, title, programsUrl, programsDesc }) => (
                 <SwiperSlide key={id}>
                   <div className='programs-box pb-20 lg:pb-0'>
                     <ProgramsCard
                       programsImg={img}
                       programsCategory={category}
                       programsTitle={title}
-                      programsPrice={price}
-                      discountPrice={discountPrice}
-                      programsRating={rating}
-                      programsRatingIcon={programsRatingIcon}
-                      programsRatingIcon2={programsRatingIcon2}
-                      programsRatingContent={ratingContent}
-                      programsLessons={lessons}
-                      programsStudents={students}
-                      enrollBtn={enrollBtn}
-                      enrollBtnIcon={enrollBtnIcon}
                       programsUrl={programsUrl}
+                      programsDesc={programsDesc}
                     />
                   </div>
                 </SwiperSlide>
