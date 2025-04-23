@@ -9,6 +9,8 @@ import ProgramsCard from './ProgramsCard';
 import ProgramsNavigation from './ProgramsNavigation';
 import subTilteIcon from '/images/sub-title2.png';
 import { useRef } from 'react';
+import shape from '/images/program-shape1.png';
+import shape2 from '/images/program-shape2.png';
 
 const programss = [
   {
@@ -74,6 +76,22 @@ const Programs = () => {
 
   return (
     <div className='programs-section bg-[url("/images/program-bg4.png")] bg-cover bg-center bg-no-repeat py-16 md:py-20 lg:py-[180px] relative'>
+      <div className='absolute top-[21%] left-[22%]'>
+        <img
+          src={shape}
+          draggable={false}
+          alt='Shape'
+          className='animate-flip'
+        />
+      </div>
+      <div className='absolute top-[21%] right-[25%]'>
+        <img
+          src={shape2}
+          draggable={false}
+          alt='Shape'
+          className='animate-zigzagWriteExtreme'
+        />
+      </div>
       <div className='Container'>
         <div className='text-center'>
           <h5 className='font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center justify-center gap-3'>
@@ -85,8 +103,9 @@ const Programs = () => {
             OUR programsS
           </h5>
           <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 mb-4'>
-            Browse Our programss – Comprehensive <br /> Teaching Kindness and
-            Empathy
+            Every Child Matters Nurturing
+            <br />
+            Growth at Every Stage
           </h1>
         </div>
       </div>

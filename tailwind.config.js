@@ -168,6 +168,35 @@ export default {
           '50%': { transform: 'scale(1.1) rotate(10deg)', opacity: '0.8' },
           '100%': { transform: 'scale(1) rotate(0deg)', opacity: '1' },
         },
+        write: {
+          '0%': { transform: 'translateX(0) rotate(0deg)' },
+          '100%': { transform: 'translateX(100px) rotate(-10deg)' },
+        },
+        zigzagWriteExtreme: {
+          '0%': { transform: 'translateX(0) translateY(0) rotate(0deg)' },
+          '12.5%': {
+            transform: 'translateX(20px) translateY(1px) rotate(-5deg)',
+          },
+          '25%': {
+            transform: 'translateX(40px) translateY(-1px) rotate(5deg)',
+          },
+          '37.5%': {
+            transform: 'translateX(60px) translateY(1px) rotate(-5deg)',
+          },
+          '50%': {
+            transform: 'translateX(80px) translateY(-1px) rotate(5deg)',
+          },
+          '62.5%': {
+            transform: 'translateX(100px) translateY(1px) rotate(-5deg)',
+          },
+          '75%': {
+            transform: 'translateX(120px) translateY(-1px) rotate(5deg)',
+          },
+          '87.5%': {
+            transform: 'translateX(140px) translateY(5px) rotate(-5deg)',
+          },
+          '100%': { transform: 'translateX(160px) translateY(0) rotate(0deg)' },
+        },
       },
       animation: {
         movebtn: 'movebtn 3s linear infinite',
@@ -192,6 +221,8 @@ export default {
         flip: 'flip 1.5s ease-in-out infinite',
         float: 'float 3s ease-in-out infinite',
         rotateZoom: 'rotateZoom 3s infinite ease-in-out',
+        write: 'write 2s ease-in-out infinite',
+        zigzagWriteExtreme: 'zigzagWriteExtreme 1.5s ease-in-out infinite',
       },
       boxShadow: {
         cases: '0px 10px 15px rgba(187, 187, 187, 0.2)',

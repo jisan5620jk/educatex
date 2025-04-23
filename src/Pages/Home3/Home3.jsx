@@ -2,6 +2,7 @@ import About from '../../Component3/About/About';
 import Activities from '../../Component3/Activities/Activities';
 import Banner from '../../Component3/Banner/Banner';
 import Course from '../../Component3/Course/Course';
+import Offer from '../../Component3/Offer/Offer';
 import Programs from '../../Component3/Programs/Programs';
 
 const Home3 = () => {
@@ -12,6 +13,7 @@ const Home3 = () => {
       <Course />
       <Activities />
       <Programs />
+      <Offer />
     </>
   );
 };

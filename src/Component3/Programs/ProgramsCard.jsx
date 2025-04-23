@@ -10,7 +10,7 @@ const ProgramsCard = ({
   programsDesc,
 }) => {
   return (
-    <div className='programs-item2 bg-white p-4 xl:p-[30px] rounded-[20px] group relative z-10 overflow-hidden'>
+    <div className='bg-white p-4 xl:p-[30px] rounded-[20px] group relative z-10 overflow-hidden'>
       <div className='relative overflow-hidden before:absolute before:-left-3/4 before:top-0 before:w-1/2 before:h-full before:bg-gradient-to-r before:to-transparent before:via-white before:from-transparent before:-skew-x-[20deg] before:opacity-50 group-hover:before:animate-shine'>
         <img
           src={programsImg}
