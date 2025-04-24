@@ -32,7 +32,7 @@ const About = () => {
               className='absolute -z-10 top-[12%] right-[13%] animate-rotateX'
             />
           </div>
-          <div className='relative pb-16 md:pb-20 lg:pb-28'>
+          <div className='relative'>
             <h5 className='font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center gap-3'>
               <img
                 src={subTilteIcon}

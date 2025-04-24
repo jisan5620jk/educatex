@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 import { MdOutlineStarHalf, MdOutlineStarPurple500 } from 'react-icons/md';
@@ -60,17 +60,6 @@ const Testimonial = () => {
       delay: 3000, // Set delay time in milliseconds
       disableOnInteraction: false, // Keep autoplay on user interaction
     },
-    effect: 'fade', // Fade effect for smooth transitions
-    fadeEffect: {
-      crossFade: true,
-    },
-  };
-
-  const pagination = {
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + ' pagination-bullet"></span>';
-    },
   };
 
   return (
@@ -115,8 +104,6 @@ const Testimonial = () => {
           <div className='lg:ml-4'>
             <Swiper
               {...settings}
-              pagination={pagination}
-              modules={[Pagination, EffectFade]}
             >
               <div>
                 {testiData.map(
