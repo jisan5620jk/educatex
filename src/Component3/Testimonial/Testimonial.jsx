@@ -9,10 +9,14 @@ import testiImg from '/images/testi-autor1.png';
 import testiImg2 from '/images/testi-autor3.png';
 import testiImg3 from '/images/testi-autor4.png';
 import testiQuate from '/images/testi-quote.png';
-import testiThumb from '/images/testi-thumb.png';
-import testiShape from '/images/testi-map.png';
+import testiThumb from '/images/testi-thumb41.png';
+import testiThumb2 from '/images/testi-thumb42.png';
 import testiShape2 from '/images/hero-dot.png';
+import testiShape3 from '/images/testi-like.png';
+import testiShape4 from '/images/testi-arrow4.png';
+import testiShape5 from '/images/testi-book4.png';
 import TestiNavigation from './TestiNavigation';
+import subTilteIcon from '/images/sub-title2.png';
 import './testimonial.css';
 
 const testiData = [
@@ -63,48 +67,71 @@ const Testimonial = () => {
   };
 
   return (
-    <section className='testimonial pt-16 pb-28 lg:pb-20 xl:pb-0 md:pt-20 lg:pt-[120px] bg-BodyBg-0 relative z-20 overflow-hidden'>
-      <div className='absolute -z-10 top-[22%] left-[13%] inline-block'>
-        <img
-          src={testiShape}
-          draggable={false}
-          alt='Testimonial Shape'
-          className='animate-rotational'
-        />
-      </div>
-      <div className='absolute -z-10 top-[56%] left-[12%] inline-block'>
-        <img
-          src={testiShape2}
-          draggable={false}
-          alt='Testimonial Shape'
-          className='animate-wiggle'
-        />
-      </div>
-      <div className='Container'>
-        <div className='relative grid items-center grid-cols-1 lg:grid-cols-2 gap-8'>
-          <div className='border-b border-SecondaryColor-0 border-opacity-15 pb-6 lg:py-6'>
-            <h5 className='font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
-              TESTIMONIALS
-            </h5>
+    <section className='py-16 md:py-20 lg:py-[120px] bg-white relative z-20 overflow-hidden'>
+          <div className='absolute right-28 top-28 hidden xl:block'>
+            <img
+              src={testiShape5}
+              draggable={false}
+              alt='Shape'
+              className='animate-flip'
+            />
           </div>
-          <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0'>
-            Real Experiences From Our
-            <br />
-            Dedicated Learners
-          </h1>
-        </div>
-        <div className='grid grid-cols-1 lg:grid-cols-2 items-start mt-12'>
-          <div className='lg:-mt-2 flex items-center justify-center lg:ml-12 relative'>
+      <div className='Container'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 items-start'>
+          <div className='relative h-full'>
             <img
               src={testiThumb}
               draggable={false}
               alt='Testimonial Image'
             />
+            <img
+              src={testiThumb2}
+              draggable={false}
+              alt='Testimonial Image'
+              className='absolute bottom-0 right-[70px]'
+            />
+            <div className='absolute -z-10 top-[25%] right-28 inline-block rotate-[25deg]'>
+              <img
+                src={testiShape2}
+                draggable={false}
+                alt='Testimonial Shape'
+                className='animate-wiggle'
+              />
+            </div>
+            <div className='absolute -z-10 bottom-16 left-24 inline-block'>
+              <img
+                src={testiShape3}
+                draggable={false}
+                alt='Testimonial Shape'
+                className='animate-rotateX'
+              />
+            </div>
+            <div className='absolute -z-10 bottom-28 left-4 inline-block'>
+              <img
+                src={testiShape4}
+                draggable={false}
+                alt='Testimonial Shape'
+                className='animate-swing'
+              />
+            </div>
           </div>
-          <div className='lg:ml-4'>
-            <Swiper
-              {...settings}
-            >
+          <div className='lg:ml-4 pt-5 pb-8'>
+            <div>
+              <h5 className='font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center gap-3'>
+                <img
+                  src={subTilteIcon}
+                  draggable={false}
+                  alt='Icon'
+                />{' '}
+                ABOUT US
+              </h5>
+              <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 mb-4'>
+                Who We Are – Introduction to
+                <br />
+                Educate Online Platform
+              </h1>
+            </div>
+            <Swiper {...settings}>
               <div>
                 {testiData.map(
                   ({

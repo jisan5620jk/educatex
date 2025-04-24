@@ -11,7 +11,7 @@ const TestimonialCard = ({
 }) => {
   return (
     <div>
-      <div className='relative text-left bg-white px-5 sm:px-10 py-4 sm:py-12 mb-8 rounded-[20px]'>
+      <div className='relative text-left bg-PrimaryColor2-0 bg-opacity-5 px-5 sm:px-10 py-4 sm:py-12 mb-8 rounded-[20px]'>
         <div className='flex items-center gap-4 mb-4 sm:mb-10'>
           <div>
             <img

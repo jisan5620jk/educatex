@@ -5,6 +5,7 @@ import Course from '../../Component3/Course/Course';
 import Event from '../../Component3/Event/Event';
 import Offer from '../../Component3/Offer/Offer';
 import Programs from '../../Component3/Programs/Programs';
+import Testimonial from '../../Component3/Testimonial/Testimonial';
 
 const Home3 = () => {
   return (
@@ -16,6 +17,7 @@ const Home3 = () => {
       <Programs />
       <Offer />
       <Event />
+      <Testimonial />
     </>
   );
 };
