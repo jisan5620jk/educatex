@@ -111,6 +111,14 @@ export default {
           '0%': { transform: 'scale(0.5)' },
           '100%': { transform: 'scale(1.2)' },
         },
+        zoomIn: {
+          '0%': { transform: 'scale(0.5)' },
+          '100%': { transform: 'scale(1)' },
+        },
+        zoomOut: {
+          '0%': { transform: 'scale(1)' },
+          '100%': { transform: 'scale(.5)' },
+        },
         swing: {
           '0%': { transform: 'rotate(-25deg)' },
           '100%': { transform: 'rotate(0deg)' },
@@ -218,6 +226,8 @@ export default {
         wobble_vertical: 'wobble_vertical 1s forwards ease-in-out',
         ripple_white: 'ripple_white 1s linear infinite',
         shine: 'shine 800ms',
+        zoomIn: 'zoomIn 800ms forwards',
+        zoomOut: 'zoomOut 800ms forwards',
         flip: 'flip 1.5s ease-in-out infinite',
         float: 'float 3s ease-in-out infinite',
         rotateZoom: 'rotateZoom 3s infinite ease-in-out',

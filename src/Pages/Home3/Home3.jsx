@@ -1,6 +1,7 @@
 import About from '../../Component3/About/About';
 import Activities from '../../Component3/Activities/Activities';
 import Banner from '../../Component3/Banner/Banner';
+import Blog from '../../Component3/Blog/Blog';
 import Course from '../../Component3/Course/Course';
 import Event from '../../Component3/Event/Event';
 import Offer from '../../Component3/Offer/Offer';
@@ -18,6 +19,7 @@ const Home3 = () => {
       <Offer />
       <Event />
       <Testimonial />
+      <Blog />
     </>
   );
 };

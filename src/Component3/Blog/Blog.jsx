@@ -10,6 +10,7 @@ import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
 import './blog.css';
 import { IoMdLogIn } from 'react-icons/io';
+import subTilteIcon from '/images/sub-title2.png';
 
 const blogData = [
   {
@@ -76,15 +77,18 @@ const Blog = () => {
     },
   };
   return (
-    <section className='py-16 md:py-20 lg:py-28 bg-white blog-section'>
+    <section className='bg-[url("/images/blog-bg4.png")] bg-cover bg-top bg-no-repeat pb-16 md:pyb-20 lg:pb-28  pt-16 md:pt-20 lg:pt-[180px] bg-white blog-section3'>
       <div className='Container'>
-        <div className='relative grid items-center grid-cols-1 lg:grid-cols-2 gap-8'>
-          <div className='border-b border-SecondaryColor-0 border-opacity-15 pb-6 lg:py-6'>
-            <h5 className='font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
-              LATEST BLOG
-            </h5>
-          </div>
-          <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0'>
+        <div className='text-center'>
+          <h5 className='font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center justify-center gap-3'>
+            <img
+              src={subTilteIcon}
+              draggable={false}
+              alt='Icon'
+            />{' '}
+            LATEST BLOG
+          </h5>
+          <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 mb-4'>
             Read the Latest Insights and
             <br />
             Updates Educate Blog
