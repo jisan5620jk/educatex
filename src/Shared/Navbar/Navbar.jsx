@@ -23,6 +23,7 @@ import { LiaTimesSolid } from 'react-icons/lia';
 import { IoSearch } from 'react-icons/io5';
 import { BsBasket3 } from 'react-icons/bs';
 import LogInPopup from './LogInPopup';
+import RegisterForm from './RegisterForm';
 
 const Navbar = () => {
   //sticky
@@ -270,6 +271,9 @@ const Navbar = () => {
 
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
+  // Register Popup
+  const [isVisible, setIsVisible] = useState(false);
+
   return (
     <div data-lenis-prevent>
       <div className='offcanvas-area'>
@@ -395,15 +399,16 @@ const Navbar = () => {
             </button>
           </div>
           <div>
-            <Link
-              to={'/'}
+            <button
+              type='button'
               className='flex items-center gap-[6px] text-white font-medium text-[15px] font-Outfit uppercase'
+              onClick={() => setIsVisible(true)}
             >
               <span className='text-PrimaryColor-0'>
                 <SlUserFollow size={16} />
               </span>
               Registration
-            </Link>
+            </button>
           </div>
         </div>
       </div>
@@ -945,6 +950,9 @@ const Navbar = () => {
 
       {/* LogIn Popup */}
       {isPopupVisible && <LogInPopup setIsPopupVisible={setIsPopupVisible} />}
+
+      {/* Register Form */}
+      {isVisible && <RegisterForm setIsVisible={setIsVisible} />}
     </div>
   );
 };

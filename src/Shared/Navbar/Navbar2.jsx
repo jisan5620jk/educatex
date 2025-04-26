@@ -22,6 +22,8 @@ import { GrCart } from 'react-icons/gr';
 import { LiaTimesSolid } from 'react-icons/lia';
 import { IoSearch } from 'react-icons/io5';
 import { BsBasket3 } from 'react-icons/bs';
+import LogInPopup from './LogInPopup';
+import RegisterForm from './RegisterForm';
 
 const Navbar2 = () => {
   //sticky
@@ -265,6 +267,13 @@ const Navbar2 = () => {
     };
   }, []);
 
+  // LogIn Popup
+
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+  // Register Popup
+  const [isVisible, setIsVisible] = useState(false);
+
   return (
     <div data-lenis-prevent>
       <div className='offcanvas-area'>
@@ -378,26 +387,28 @@ const Navbar2 = () => {
         </div>
         <div className='py-[14px] flex items-center gap-7 '>
           <div>
-            <Link
-              to={'/'}
-              className='flex items-center gap-1 text-white font-medium text-[15px] font-Outfit uppercase'
+            <button
+              type='button'
+              className='flex items-center gap-1 text-white font-medium text-[15px] font-Outfit uppercase cursor-pointer'
+              onClick={() => setIsPopupVisible(true)}
             >
               <span className='text-PrimaryColor-0'>
                 <IoMdLogIn size={20} />
               </span>
               LogIn
-            </Link>
+            </button>
           </div>
           <div>
-            <Link
-              to={'/'}
+            <button
+              type='button'
               className='flex items-center gap-[6px] text-white font-medium text-[15px] font-Outfit uppercase'
+              onClick={() => setIsVisible(true)}
             >
               <span className='text-PrimaryColor-0'>
                 <SlUserFollow size={16} />
               </span>
               Registration
-            </Link>
+            </button>
           </div>
         </div>
       </div>
@@ -936,6 +947,12 @@ const Navbar2 = () => {
         ref={cartOverlayRef}
         className='fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-40 cursor-[url("/images/cross.png"),_pointer]'
       ></div>
+
+      {/* LogIn Popup */}
+      {isPopupVisible && <LogInPopup setIsPopupVisible={setIsPopupVisible} />}
+
+      {/* Register Form */}
+      {isVisible && <RegisterForm setIsVisible={setIsVisible} />}
     </div>
   );
 };
