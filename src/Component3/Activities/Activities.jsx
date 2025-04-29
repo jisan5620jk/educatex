@@ -12,7 +12,7 @@ import Shape3 from '/images/about-shape31.png';
 
 const Activities = () => {
   return (
-    <section className='py-10 md:py-20 lg:py-28 relative'>
+    <section className='py-10 md:py-20 xl:py-28 relative'>
       <div className='absolute left-24 top-32 hidden 3xl:block'>
         <img
           src={Shape}
@@ -21,7 +21,7 @@ const Activities = () => {
           className='animate-float'
         />
       </div>
-      <div className='absolute top-36 right-32 animate-dance2 hidden lg:block'>
+      <div className='absolute top-36 right-32 animate-dance2 hidden 2xl:block'>
         <img
           src={Shape2}
           draggable='false'
@@ -29,7 +29,7 @@ const Activities = () => {
         />
       </div>
       <div
-        className='absolute top-36 right-32 animate-dance2 hidden lg:block'
+        className='absolute top-36 right-32 animate-dance2 hidden 2xl:block'
         style={{ animationDelay: '1.5s' }}
       >
         <img

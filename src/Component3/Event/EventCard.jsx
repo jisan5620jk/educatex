@@ -40,7 +40,7 @@ const EventCard = ({
 
         <Link
           to={eventUrl}
-          className='event-title transition-all duration-500 font-Outfit text-base md:text-2xl text-HeadingColor-0 hover:text-PrimaryColor-0 block mb-4 mr-10'
+          className='event-title transition-all duration-500 font-Outfit text-base md:text-[22px] lg:text-2xl text-HeadingColor-0 hover:text-PrimaryColor-0 block mb-4 mr-10'
         >
           {eventTitle}
         </Link>

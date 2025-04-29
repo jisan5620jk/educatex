@@ -105,7 +105,7 @@ const Course = () => {
   };
 
   return (
-    <div className='course-section3 bg-[url("/images/course-bg4.png")] bg-cover bg-center bg-no-repeat pt-24 sm:pt-32 md:pt-32 lg:pt-[140px] xl:pt-[170px] pb-16 sm:pb-24 md:pb-20 lg:pb-[204px] relative'>
+    <div className='course-section3 bg-[url("/images/course-bg4.png")] bg-cover bg-center bg-no-repeat pt-24 sm:pt-32 md:pt-32 lg:pt-[140px] xl:pt-[170px] pb-16 sm:pb-24 md:pb-20 lg:pb-[140px] xl:pb-[204px] relative'>
       <div className='absolute left-52 top-48 hidden 3xl:block'>
         <img
           src={shape}
@@ -133,14 +133,14 @@ const Course = () => {
             OUR COURSES
           </h5>
           <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[30px] sm:leading-[40px] md:text-[40px] md:leading-[50px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 mb-4'>
-            Browse Our Courses – Comprehensive <br className='hidden sm:block' /> Teaching Kindness and
-            Empathy
+            Browse Our Courses – Comprehensive{' '}
+            <br className='hidden sm:block' /> Teaching Kindness and Empathy
           </h1>
         </div>
       </div>
 
       <div className='w-full sm:w-[540px] md:w-[720px] lg:w-[960px] xl:w-[1140px] 2xl:w-[1350px] 3xl:w-[1450px] px-2 md:px-3 lg:px-4 mx-auto pt-5 md:pt-11'>
-        <div className='relative z-10 pr-0 lg:px-[70px]'>
+        <div className='relative z-10 pr-0 lg:px-10 xl:px-[70px]'>
           <Swiper
             {...settings}
             onSwiper={(swiper) => (swiperRef.current = swiper)}

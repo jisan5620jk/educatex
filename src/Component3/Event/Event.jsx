@@ -111,7 +111,7 @@ const Event = () => {
             Upcoming Events and Celebrations <br className='hidden sm:block' /> For Our Little Learners
           </h1>
         </div>
-        <div className='event-card2 grid grid-cols-1 lg:grid-cols-2 items-center gap-6 mt-[50px]'>
+        <div className='event-card2 grid grid-cols-1 xl:grid-cols-2 items-center gap-6 mt-[50px]'>
           {eventData.map(
             ({
               id,

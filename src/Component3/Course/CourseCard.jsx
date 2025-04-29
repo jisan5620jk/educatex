@@ -36,7 +36,7 @@ const CourseCard = ({
         <span className='course-category font-Outfit text-sm px-5 py-[5px] rounded-3xl font-medium mb-3 inline-block uppercase'>
           {courseCategory}
         </span>
-        <h3 className='course-title font-Outfit text-xl sm:text-2xl md:text-[22px] lg:text-xl 2xl:text-[22px] 3xl:text-2xl font-medium text-HeadingColor-0 transition-all duration-500 2xl:mr-12'>
+        <h3 className='course-title font-Outfit text-xl sm:text-2xl md:text-[22px] lg:text-[22px] 2xl:text-[22px] 3xl:text-2xl font-medium text-HeadingColor-0 transition-all duration-500 2xl:mr-12'>
           {courseTitle}
         </h3>
 

@@ -32,14 +32,15 @@ const Banner = () => {
       <div className='Container lg:px-0'>
         <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0 mt-[70px] lg:mt-[90px]'>
           <div className='relative'>
-            <h1 className='font-Outfit font-semibold text-HeadingColor-0 text-[26px] leading-[32px] sm:text-[36px] sm:leading-[42px] md:text-[56px] md:leading-[62px] lg:text-[42px] lg:leading-[48px] xl:text-[48px] xl:leading-[76px] 2xl:text-[60px] 2xl:leading-[70px]'>
+            <h1 className='font-Outfit font-semibold text-HeadingColor-0 text-[26px] leading-[32px] sm:text-[36px] sm:leading-[42px] md:text-[56px] md:leading-[62px] lg:text-[42px] lg:leading-[48px] xl:text-[48px] xl:leading-[54px] 2xl:text-[60px] 2xl:leading-[70px]'>
               Unlocking the Magic of <br />
               Learning – Bright Future <br />
               Strong Foundation
             </h1>
             <p className='font-OpenSans text-TextColor2-0 mb-8 mt-5'>
               <span className='text-HeadingColor-0'>Educate</span> the ultimate
-              destination for knowledge seekers and educators alike.
+              destination for knowledge seekers and educators
+              <br className='lg:block xl:block' /> alike.
               <br className='hidden 2xl:block' /> We are committed to
               transforming education
             </p>

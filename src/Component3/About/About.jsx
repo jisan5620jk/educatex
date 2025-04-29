@@ -10,14 +10,14 @@ import aboutIcon from '/images/about-call2.png';
 
 const About = () => {
   return (
-    <section className='py-16 md:py-20 lg:py-28 relative'>
+    <section className='py-16 md:py-20 lg:pt-28 lg:pb-20 xl:py-28 relative'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 items-center'>
           <div className='relative z-10'>
             <img
               src={aboutThumb}
               draggable='false'
-              className='w-full lg:w-[inherit] max-w-[inherit] lg:-ml-[35px] xl:-[50px]'
+              className='w-full 2xl:w-[inherit] max-w-[inherit] 2xl:-ml-[35px] xl:-[50px]'
             />
             <img
               src={shape}
@@ -47,12 +47,12 @@ const About = () => {
               Educate Online Platform
             </h1>
             <div className='grid grid-cols-1 sm:grid-cols-2 items-center gap-5 mt-8 mb-9'>
-              <div className='bg-PrimaryColor-0 bg-opacity-[7%] h-[316px] flex flex-col justify-between rounded-[20px] px-7 pt-8 pb-9'>
+              <div className='bg-PrimaryColor-0 bg-opacity-[7%] h-[316px] flex flex-col justify-between rounded-[20px] px-7 lg:px-4 xl:px-7 pt-8 pb-9'>
                 <div>
                   <h4 className='font-Outfit text-HeadingColor-0 font-medium text-[26px]'>
                     Our Mission
                   </h4>
-                  <p className='font-OpenSans text-TextColor-0 max-w-[570px] w-full pt-[6px]'>
+                  <p className='font-OpenSans lg:text-sm xl:text-base text-TextColor-0 max-w-[570px] w-full pt-[6px]'>
                     Educate the ultimate destination transforming to education
                     best educational environment
                   </p>
@@ -67,7 +67,7 @@ const About = () => {
                         className='w-[16px]'
                       />
                     </div>
-                    <h5 className='flex-1 font-Outfit text-base text-HeadingColor-0'>
+                    <h5 className='flex-1 font-Outfit text-base lg:text-sm xl:text-base text-HeadingColor-0'>
                       Quick Learning System
                     </h5>
                   </li>
@@ -80,7 +80,7 @@ const About = () => {
                         className='w-[16px]'
                       />
                     </div>
-                    <h5 className='flex-1 font-Outfit text-base text-HeadingColor-0'>
+                    <h5 className='flex-1 font-Outfit text-base lg:text-sm xl:text-base text-HeadingColor-0'>
                       Super Fast Online Platform
                     </h5>
                   </li>
@@ -93,7 +93,7 @@ const About = () => {
                         className='w-[16px]'
                       />
                     </div>
-                    <h5 className='flex-1 font-Outfit text-base text-HeadingColor-0'>
+                    <h5 className='flex-1 font-Outfit text-base lg:text-sm xl:text-base text-HeadingColor-0'>
                       Weekly Assignments
                     </h5>
                   </li>
@@ -113,13 +113,13 @@ const About = () => {
                     </h2>
                   </div>
                   <div>
-                    <p className='font-OpenSans text-TextColor-0 mt-2'>
+                    <p className='font-OpenSans lg:text-sm text-TextColor-0 mt-2'>
                       Enrolled Students all
                       <br /> Over the World
                     </p>
                   </div>
                 </div>
-                <div className='flex items-start gap-4 pt-1'>
+                <div className='flex lg:flex-col xl:flex-row items-start gap-4 pt-1'>
                   <div>
                     <img
                       src={aboutIcon}

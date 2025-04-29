@@ -35,7 +35,7 @@ const Offer = () => {
                 (4.5/3 Ratings)
               </span>
             </div>
-            <div className='absolute top-12 right-[32%] sm:right-[22%] md:right-[32%] hidden sm:block'>
+            <div className='absolute top-12 right-[32%] sm:right-[22%] md:right-[32%] lg:right-[32%] hidden sm:block lg:hidden xl:block'>
               <div className='w-[68px] h-[70px] flex flex-col items-center justify-center relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-[url("/images/off-price-bg.png")] before:-z-10 before:animate-rotational'>
                 <h5 className='font-Outfit text-white text-[22px] font-medium'>
                   10%
@@ -45,12 +45,12 @@ const Offer = () => {
                 </h6>
               </div>
             </div>
-            <div className='absolute -bottom-3 -right-24 md:-right-9 hidden sm:block lg:hidden xl:block'>
+            <div className='absolute -bottom-3 -right-24 md:-right-9 lg:-right-36 xl:-right-9 hidden sm:block'>
               <img
                 src={offerThumb}
                 draggable={false}
                 alt='Offer Image'
-                className='w-[70%] md:w-[inherit] xl:w-[84%] 2xl:w-[inherit]'
+                className='w-[70%] md:w-[inherit] lg:w-[70%] xl:w-[84%] 2xl:w-[inherit]'
               />
             </div>
             <div className='flex items-center gap-4 mb-9 lg:mb-4 xl:mb-9'>

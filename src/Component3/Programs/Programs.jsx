@@ -75,8 +75,8 @@ const Programs = () => {
   };
 
   return (
-    <div className='programs-section bg-[url("/images/program-bg4.png")] bg-cover bg-center bg-no-repeat py-24 md:py-20 lg:py-[180px] relative'>
-      <div className='absolute top-[21%] left-[22%] hidden xl:block'>
+    <div className='programs-section bg-[url("/images/program-bg4.png")] bg-cover bg-center bg-no-repeat py-24 md:py-32 lg:py-[180px] relative'>
+      <div className='absolute top-[21%] xl:left-[14%] 2xl:left-[22%] hidden xl:block'>
         <img
           src={shape}
           draggable={false}
