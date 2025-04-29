@@ -1,74 +1,51 @@
-import { useEffect, useState, useRef } from 'react';
-import './back-to-top.css'; // Ensure to import the styles
-import { BsArrowUp } from 'react-icons/bs';
-import { useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 const BackToTop = () => {
-  const [isActive, setIsActive] = useState(false);
-  const progressRef = useRef(null);
-  const { pathname } = useLocation();
+  const [scrollPercent, setScrollPercent] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const progressPath = progressRef.current;
-    if (progressPath) {
-      const totalLength = progressPath.getTotalLength();
-      progressPath.style.transition = 'none';
-      progressPath.style.strokeDasharray = `${totalLength} ${totalLength}`;
-      progressPath.style.strokeDashoffset = totalLength;
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const docHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+      const percent = Math.round((scrollTop / docHeight) * 100);
 
-      const handleScroll = () => {
-        const scrollTop = window.scrollY;
-        const documentHeight = document.documentElement.scrollHeight;
-        const windowHeight = window.innerHeight;
-        const maxScroll = documentHeight - windowHeight;
+      setScrollPercent(percent);
+      setIsVisible(scrollTop > 200);
+    };
 
-        const dashOffset = totalLength - (scrollTop * totalLength) / maxScroll;
-        progressPath.style.strokeDashoffset = dashOffset;
+    window.addEventListener('scroll', handleScroll);
 
-        setIsActive(scrollTop > 50);
-      };
-
-      handleScroll(); // Initial call to set the progress
-      window.addEventListener('scroll', handleScroll);
-
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  const handleClick = (e) => {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  // Custom smooth scroll to top
+  const scrollToTop = () => {
+    const c = document.documentElement.scrollTop || document.body.scrollTop;
+    if (c > 0) {
+      window.requestAnimationFrame(scrollToTop);
+      window.scrollTo(0, c - c / 10); 
+    }
   };
 
   return (
-    <div
-      className={`progress-wrap cursor-pointer ${
-        isActive ? 'active-progress' : ''
+    <button
+      onClick={scrollToTop}
+      className={`fixed z-50 right-8 size-14 rounded-full flex items-center justify-center font-bold text-white cursor-pointer transition-all duration-500 shadow-xl ${
+        isVisible ? 'opacity-100 bottom-8' : 'opacity-0 -bottom-24'
       }`}
-      id='scrollUp'
-      onClick={handleClick}
+      style={{
+        background: `conic-gradient(#17c0f9 ${scrollPercent}%, #1e1e1e29 ${scrollPercent}%)`,
+      }}
+      aria-label='Back to Top'
     >
-      <span>
-        <BsArrowUp className='!fill-PrimaryColor-0' />
-      </span>
-      <svg
-        className='progress-circle svg-content'
-        width='100%'
-        height='100%'
-        viewBox='-1 -1 102 102'
-      >
-        <path
-          ref={progressRef}
-          d='M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98'
-        />
-      </svg>
-    </div>
+      <div className='absolute size-12 bg-PrimaryColor2-0 rounded-full font-Outfit font-normal flex items-center justify-center shadow-md'>
+        {scrollPercent}%
+      </div>
+    </button>
   );
 };
 
