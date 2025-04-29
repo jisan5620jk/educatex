@@ -75,8 +75,8 @@ const Programs = () => {
   };
 
   return (
-    <div className='programs-section bg-[url("/images/program-bg4.png")] bg-cover bg-center bg-no-repeat py-16 md:py-20 lg:py-[180px] relative'>
-      <div className='absolute top-[21%] left-[22%]'>
+    <div className='programs-section bg-[url("/images/program-bg4.png")] bg-cover bg-center bg-no-repeat py-24 md:py-20 lg:py-[180px] relative'>
+      <div className='absolute top-[21%] left-[22%] hidden xl:block'>
         <img
           src={shape}
           draggable={false}
@@ -84,7 +84,7 @@ const Programs = () => {
           className='animate-flip'
         />
       </div>
-      <div className='absolute top-[21%] right-[25%]'>
+      <div className='absolute top-[21%] right-[25%] hidden xl:block'>
         <img
           src={shape2}
           draggable={false}
@@ -111,7 +111,7 @@ const Programs = () => {
       </div>
 
       <div className='w-full sm:w-[540px] md:w-[720px] lg:w-[960px] xl:w-[1140px] 2xl:w-[1350px] 3xl:w-[1450px] px-2 md:px-3 lg:px-4 mx-auto pt-11'>
-        <div className='relative z-10 pr-0 md:px-[70px]'>
+        <div className='relative z-10 pr-0 lg:px-[70px]'>
           <Swiper
             {...settings}
             onSwiper={(swiper) => (swiperRef.current = swiper)}

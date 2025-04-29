@@ -77,7 +77,7 @@ const Blog = () => {
     },
   };
   return (
-    <section className='bg-[url("/images/blog-bg4.png")] bg-cover bg-top bg-no-repeat pb-16 md:pyb-20 lg:pb-28  pt-16 md:pt-20 lg:pt-[180px] bg-white blog-section3'>
+    <section className='bg-[url("/images/blog-bg4.png")] bg-cover bg-top bg-no-repeat pb-16 md:pb-20 lg:pb-28 pt-24 sm:pt-32 md:pt-40 lg:pt-[180px] bg-white blog-section3'>
       <div className='Container'>
         <div className='text-center'>
           <h5 className='font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center justify-center gap-3'>
@@ -94,7 +94,7 @@ const Blog = () => {
             Updates Educate Blog
           </h1>
         </div>
-        <div className='mt-[46px]'>
+        <div className='mt-6 md:mt-[46px]'>
           <Swiper {...settings}>
             {blogData.map(
               ({

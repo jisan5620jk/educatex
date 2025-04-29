@@ -67,17 +67,17 @@ const Testimonial = () => {
   };
 
   return (
-    <section className='py-16 md:py-20 lg:py-[120px] bg-white relative z-20 overflow-hidden'>
-          <div className='absolute right-28 top-28 hidden xl:block'>
-            <img
-              src={testiShape5}
-              draggable={false}
-              alt='Shape'
-              className='animate-flip'
-            />
-          </div>
+    <section className='py-0 md:py-10 lg:py-[120px] bg-white relative z-20 overflow-hidden'>
+      <div className='absolute right-28 top-28 hidden xl:block'>
+        <img
+          src={testiShape5}
+          draggable={false}
+          alt='Shape'
+          className='animate-flip'
+        />
+      </div>
       <div className='Container'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 items-start'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0 items-start'>
           <div className='relative h-full'>
             <img
               src={testiThumb}
@@ -88,9 +88,9 @@ const Testimonial = () => {
               src={testiThumb2}
               draggable={false}
               alt='Testimonial Image'
-              className='absolute bottom-0 right-[70px]'
+              className='absolute bottom-0 right-0 md:right-[70px] hidden sm:block'
             />
-            <div className='absolute -z-10 top-[25%] right-28 inline-block rotate-[25deg]'>
+            <div className='absolute -z-10 top-[25%] right-28 md:inline-block rotate-[25deg] hidden'>
               <img
                 src={testiShape2}
                 draggable={false}
@@ -98,7 +98,7 @@ const Testimonial = () => {
                 className='animate-wiggle'
               />
             </div>
-            <div className='absolute -z-10 bottom-16 left-24 inline-block'>
+            <div className='absolute -z-10 bottom-16 left-24 md:inline-block hidden'>
               <img
                 src={testiShape3}
                 draggable={false}
@@ -106,7 +106,7 @@ const Testimonial = () => {
                 className='animate-rotateX'
               />
             </div>
-            <div className='absolute -z-10 bottom-28 left-4 inline-block'>
+            <div className='absolute -z-10 bottom-28 left-4 md:inline-block hidden'>
               <img
                 src={testiShape4}
                 draggable={false}
@@ -123,12 +123,12 @@ const Testimonial = () => {
                   draggable={false}
                   alt='Icon'
                 />{' '}
-                ABOUT US
+                PARENTS TESTIMONIAL
               </h5>
               <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 mb-4'>
-                Who We Are – Introduction to
+                Real Experiences From Our
                 <br />
-                Educate Online Platform
+                Dedicated Learners
               </h1>
             </div>
             <Swiper {...settings}>

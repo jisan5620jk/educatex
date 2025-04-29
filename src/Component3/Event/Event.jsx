@@ -80,7 +80,7 @@ const eventData = [
 
 const Event = () => {
   return (
-    <section className='bg-[url("/images/event-bg4.png")] bg-cover bg-center bg-no-repeat py-16 md:py-20 lg:py-[180px] relative z-10'>
+    <section className='bg-[url("/images/event-bg4.png")] bg-cover bg-center bg-no-repeat py-52 sm:py-40 md:py-40 lg:py-[180px] relative z-10'>
       <div className='absolute left-60 top-52 hidden xl:block'>
         <img
           src={shape}
@@ -107,8 +107,8 @@ const Event = () => {
             />{' '}
             JOIN EVENTS
           </h5>
-          <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 mb-4'>
-            Upcoming Events and Celebrations <br /> For Our Little Learners
+          <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[30px] sm:leading-[40px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 mb-4'>
+            Upcoming Events and Celebrations <br className='hidden sm:block' /> For Our Little Learners
           </h1>
         </div>
         <div className='event-card2 grid grid-cols-1 lg:grid-cols-2 items-center gap-6 mt-[50px]'>

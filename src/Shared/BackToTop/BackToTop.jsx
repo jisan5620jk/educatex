@@ -42,7 +42,7 @@ const BackToTop = () => {
       }}
       aria-label='Back to Top'
     >
-      <div className='absolute size-12 bg-PrimaryColor2-0 rounded-full font-Outfit font-normal flex items-center justify-center shadow-md'>
+      <div className='absolute size-12 bg-PrimaryColor2-0 rounded-full font-Outfit font-normal flex items-center justify-center'>
         {scrollPercent}%
       </div>
     </button>

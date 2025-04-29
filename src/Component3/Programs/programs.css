@@ -54,7 +54,7 @@
 
 .programs-section
   .swiper-wrapper
-  .swiper-slide:nth-child(4)
+  .swiper-slide:last-child
   .programs-box
   .programs-category {
   color: #a64cf9;
@@ -64,7 +64,7 @@
 
 .programs-section
   .swiper-wrapper
-  .swiper-slide:nth-child(4)
+  .swiper-slide:last-child
   .programs-box
   .programs-title:hover {
   color: #a64cf9;

@@ -29,7 +29,7 @@ const About = () => {
               src={shape2}
               draggable={false}
               alt='Shape'
-              className='absolute -z-10 top-[12%] right-[13%] animate-rotateX'
+              className='absolute -z-10 top-[12%] right-[13%] animate-rotateX hidden sm:block'
             />
           </div>
           <div className='relative'>
@@ -46,7 +46,7 @@ const About = () => {
               <br />
               Educate Online Platform
             </h1>
-            <div className='grid grid-cols-2 items-center gap-5 mt-8 mb-9'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 items-center gap-5 mt-8 mb-9'>
               <div className='bg-PrimaryColor-0 bg-opacity-[7%] h-[316px] flex flex-col justify-between rounded-[20px] px-7 pt-8 pb-9'>
                 <div>
                   <h4 className='font-Outfit text-HeadingColor-0 font-medium text-[26px]'>
@@ -101,7 +101,7 @@ const About = () => {
               </div>
               <div className='bg-PrimaryColor2-0 bg-opacity-[7%] h-[316px] flex flex-col justify-between rounded-[20px] px-7 pt-8 pb-9'>
                 <div className=''>
-                  <div className='text-2xl md:text-[56px] lg:text-[56px] leading-[56px] tracking-wide font-semibold font-Outfit text-PrimaryColor2-0 inline-flex items-center relative'>
+                  <div className='text-5xl md:text-[56px] lg:text-[56px] leading-[56px] tracking-wide font-semibold font-Outfit text-PrimaryColor2-0 inline-flex items-center relative'>
                     <OnScrollCounter
                       start={0}
                       end={6}

@@ -16,7 +16,7 @@ const CourseCard = ({
   enrollBtnIcon,
 }) => {
   return (
-    <div className='course-item2 bg-[url("/images/box-bg.png")] bg-center bg-cover bg-no-repeat p-4 xl:p-[30px] rounded-[20px] group relative z-10 overflow-hidden'>
+    <div className='course-item2 bg-[url("/images/box-bg.png")] bg-center bg-cover bg-no-repeat p-4 sm:p-[30px] rounded-[20px] group relative z-10 overflow-hidden'>
       <div className='relative overflow-hidden'>
         <div className='hover-bg'>
           <span className='absolute left-[12.5%] top-0 h-full w-0 opacity-40 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-0'></span>
@@ -32,7 +32,7 @@ const CourseCard = ({
         />
       </div>
 
-      <div className='sm:px-3 lg:px-0 xl:px-3 pt-7 text-left'>
+      <div className='sm:px-5 lg:px-0 xl:px-3 pt-7 text-left'>
         <span className='course-category font-Outfit text-sm px-5 py-[5px] rounded-3xl font-medium mb-3 inline-block uppercase'>
           {courseCategory}
         </span>

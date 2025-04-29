@@ -19,9 +19,9 @@ const EventCard = ({
 }) => {
 
   return (
-    <div className='group flex items-center gap-8 p-6 rounded-[20px] bg-white transition-all duration-300 relative overflow-hidden'>
+    <div className='group flex flex-col sm:flex-row sm:items-center gap-8 p-6 rounded-[20px] bg-white transition-all duration-300 relative overflow-hidden'>
       {/* Left Side: Event Image */}
-      <div className='flex-shrink-0 w-[140px] md:w-[180px] xl:w-[220px] rounded-[15px] overflow-hidden'>
+      <div className='flex-shrink-0 w-[220px] sm:w-[200px] md:w-[180px] xl:w-[220px] rounded-[15px] overflow-hidden'>
         <img
           src={eventThumb}
           draggable={false}
@@ -40,7 +40,7 @@ const EventCard = ({
 
         <Link
           to={eventUrl}
-          className='event-title transition-all duration-500 font-Outfit text-xl md:text-2xl text-HeadingColor-0 hover:text-PrimaryColor-0 block mb-4 mr-10'
+          className='event-title transition-all duration-500 font-Outfit text-base md:text-2xl text-HeadingColor-0 hover:text-PrimaryColor-0 block mb-4 mr-10'
         >
           {eventTitle}
         </Link>
