@@ -1,11 +1,13 @@
 import Banner from '../../Component4/Banner/Banner';
-import TeamMember from '../../Component4/TeamMember/TeamMember';
+import Feature from '../../Component4/Feature/Feature';
+import TeamGallery from '../../Component4/TeamGallery/TeamGallery';
 
 const Home4 = () => {
   return (
     <>
       <Banner />
-      <TeamMember />
+      <Feature />
+      <TeamGallery />
     </>
   );
 };
