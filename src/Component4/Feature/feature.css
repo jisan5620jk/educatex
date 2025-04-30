@@ -1,0 +1,27 @@
+.feature-box1 {
+  border-radius: 10px;
+}
+
+.feature-box1:nth-child(1) > div {
+  background: #f0fbf8;
+}
+
+.feature-box1:nth-child(1) > div > span {
+  background: #1ec28f;
+}
+
+.feature-box1:nth-child(2) > div {
+  background: #fdf7f3;
+}
+
+.feature-box1:nth-child(2) > div > span {
+  background: #ff853f;
+}
+
+.feature-box1:nth-child(3) > div {
+  background: #f1f9fc;
+}
+
+.feature-box1:nth-child(3) > div > span {
+  background: #15c1fa;
+}

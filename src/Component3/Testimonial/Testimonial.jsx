@@ -68,7 +68,7 @@ const Testimonial = () => {
 
   return (
     <section className='py-0 md:py-10 lg:pt-28 lg:pb-[70px] xl:py-[120px] bg-white relative z-20 overflow-hidden'>
-      <div className='absolute right-28 top-28 hidden xl:block'>
+      <div className='absolute right-28 top-16 2xl:top-28 hidden xl:block'>
         <img
           src={testiShape5}
           draggable={false}

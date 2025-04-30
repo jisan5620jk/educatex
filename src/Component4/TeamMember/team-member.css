@@ -1,0 +1,119 @@
+.team-member .swiper-wrapper .swiper-slide:nth-child(1) .team-member-box > div {
+  background: #f1f9fc;
+}
+
+.team-member
+  .swiper-wrapper
+  .swiper-slide:nth-child(1)
+  .team-member-box
+  > div
+  .team-thumb::before {
+  background-image: linear-gradient(
+    0deg,
+    rgba(21, 193, 250, 0.9999999999999999) 0%,
+    rgba(21, 193, 250, 0.9999999999999999) 20%,
+    rgba(29, 193, 141, 0) 50%,
+    rgba(29, 193, 141, 0) 100%
+  );
+}
+
+.team-member
+  .swiper-wrapper
+  .swiper-slide:nth-child(1)
+  .team-member-box
+  > div
+  .team-desc {
+  border-color: #15c1fa4d;
+  background: #15c1fa1a;
+  color: #15c1fa;
+}
+
+.team-member .swiper-wrapper .swiper-slide:nth-child(2) .team-member-box > div {
+  background: #f0fbf8;
+}
+
+.team-member
+  .swiper-wrapper
+  .swiper-slide:nth-child(2)
+  .team-member-box
+  > div
+  .team-thumb::before {
+  background-image: linear-gradient(
+    0deg,
+    rgb(30, 194, 142) 0%,
+    rgba(29, 193, 141, 0.9999999999999999) 20%,
+    rgba(29, 193, 141, 0) 50%,
+    rgba(29, 193, 141, 0) 100%
+  );
+}
+
+.team-member
+  .swiper-wrapper
+  .swiper-slide:nth-child(2)
+  .team-member-box
+  > div
+  .team-desc {
+  border-color: #1ec28e4d;
+  background: #1ec28e1a;
+  color: #1ec28e;
+}
+
+.team-member .swiper-wrapper .swiper-slide:nth-child(3) .team-member-box > div {
+  background: #fdf7f3;
+}
+
+.team-member
+  .swiper-wrapper
+  .swiper-slide:nth-child(3)
+  .team-member-box
+  > div
+  .team-thumb::before {
+  background-image: linear-gradient(
+    0deg,
+    rgb(255, 133, 63) 0%,
+    rgba(255, 133, 63, 0.9999999999999999) 20%,
+    rgba(29, 193, 141, 0) 50%,
+    rgba(29, 193, 141, 0) 100%
+  );
+}
+
+.team-member
+  .swiper-wrapper
+  .swiper-slide:nth-child(3)
+  .team-member-box
+  > div
+  .team-desc {
+  border-color: #ff853f4d;
+  background: #ff853f1a;
+  color: #ff853f;
+}
+
+.team-member .swiper-wrapper .swiper-slide:nth-child(4) .team-member-box > div {
+  background: #f8f4fb;
+}
+
+.team-member
+  .swiper-wrapper
+  .swiper-slide:nth-child(4)
+  .team-member-box
+  > div
+  .team-thumb::before {
+  background-image: linear-gradient(
+    0deg,
+    rgb(166, 76, 249) 0%,
+    rgba(166, 76, 249, 0.9999999999999999) 20%,
+    rgba(29, 193, 141, 0) 50%,
+    rgba(29, 193, 141, 0) 100%
+  );
+}
+
+.team-member
+  .swiper-wrapper
+  .swiper-slide:nth-child(4)
+  .team-member-box
+  > div
+  .team-desc {
+  border-color: #a64cf94d;
+  background: #a64cf91a;
+  color: #a64cf9;
+}

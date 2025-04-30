@@ -1,146 +1,175 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import titleShape from '/images/sub-title-shape.png';
-import { MdOutlineStarPurple500 } from 'react-icons/md';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
+import { MdOutlineStarHalf, MdOutlineStarPurple500 } from 'react-icons/md';
 import TestimonialCard from './TestimonialCard';
-import testiShape from '/images/g-logo.webp';
-import testiProfile from '/images/t-author1.webp';
-import testiProfile2 from '/images/t-author2.webp';
-import testiProfile3 from '/images/t-author3.webp';
-import testiProfile4 from '/images/t-author2.webp';
+import testiImg from '/images/testi-autor1.png';
+import testiImg2 from '/images/testi-autor3.png';
+import testiImg3 from '/images/testi-autor4.png';
+import testiQuate from '/images/testi-quote.png';
+import testiThumb from '/images/testi-thumb41.png';
+import testiThumb2 from '/images/testi-thumb42.png';
+import testiShape2 from '/images/hero-dot.png';
+import testiShape3 from '/images/testi-like.png';
+import testiShape4 from '/images/testi-arrow4.png';
+import testiShape5 from '/images/testi-book4.png';
 import TestiNavigation from './TestiNavigation';
+import subTilteIcon from '/images/sub-title2.png';
+import './testimonial.css';
 
 const testiData = [
   {
     id: 1,
-    testiShape: testiShape,
-    testiTitle: 'Great 3d Modal',
-    testiDesc: `Competently leverage existing top-line bandwidth 
-client centric supply chains enthusiastically maxim 
-cost effective technologies the`,
+    testiTitle: 'Impresive Leasson!',
+    testiQuate: testiQuate,
+    testiDesc: `Educate the ultimate destination for knowledge seekers and educators we are committed to transforming special education impact global channels  without standards compliant systems attractive learning opinions.`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiProfile: testiProfile,
-    testiName: 'Jhon D. Alexon',
-    testiDesignation: 'Web Developer',
+    testiRatingIcon2: <MdOutlineStarHalf />,
+    testiName: 'Anjelina Watson',
+    testiImg: testiImg,
+    testiDesignation: 'Student',
   },
   {
     id: 2,
-    testiShape: testiShape,
-    testiTitle: 'Awesome Design',
-    testiDesc: `Competently leverage existing top-line bandwidth 
-client centric supply chains enthusiastically maxim 
-cost effective technologies the`,
+    testiTitle: 'Awesome Trainer!',
+    testiQuate: testiQuate,
+    testiDesc: `Educate the ultimate destination for knowledge seekers and educators we are committed to transforming special education impact global channels  without standards compliant systems attractive learning opinions.`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiProfile: testiProfile2,
-    testiName: 'Mariya Watson',
-    testiDesignation: 'UI/UX Designer',
+    testiRatingIcon2: <MdOutlineStarHalf />,
+    testiName: 'Jhon D. Alexon',
+    testiImg: testiImg2,
+    testiDesignation: 'Student',
   },
   {
     id: 3,
-    testiShape: testiShape,
-    testiTitle: 'Great Supports',
-    testiDesc: `Competently leverage existing top-line bandwidth 
-client centric supply chains enthusiastically maxim 
-cost effective technologies the`,
+    testiTitle: 'Best Lecture!',
+    testiQuate: testiQuate,
+    testiDesc: `Educate the ultimate destination for knowledge seekers and educators we are committed to transforming special education impact global channels  without standards compliant systems attractive learning opinions.`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiProfile: testiProfile3,
-    testiName: 'Anjelina Jholi',
-    testiDesignation: 'App Developer',
-  },
-  {
-    id: 4,
-    testiShape: testiShape,
-    testiTitle: 'Smart Development',
-    testiDesc: `Competently leverage existing top-line bandwidth 
-client centric supply chains enthusiastically maxim 
-cost effective technologies the`,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiProfile: testiProfile4,
-    testiName: 'Mariya Watson',
-    testiDesignation: 'Mock-Up Developer',
+    testiRatingIcon2: <MdOutlineStarHalf />,
+    testiName: 'Murad Junaid',
+    testiImg: testiImg3,
+    testiDesignation: 'Student',
   },
 ];
 
 const Testimonial = () => {
   const settings = {
+    modules: [Autoplay],
     loop: true,
-    spaceBetween: 30,
-    speed: 1500,
+    speed: 2000,
     autoplay: {
       delay: 3000, // Set delay time in milliseconds
       disableOnInteraction: false, // Keep autoplay on user interaction
     },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      576: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 1,
-      },
-      992: {
-        slidesPerView: 2,
-      },
-      1200: {
-        slidesPerView: 3,
-      },
-    },
   };
+
   return (
-    <div className='bg-BodyBgDark3-0 pb-8'>
-      <section className='mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] bg-BodyBgDark2-0 relative z-10 overflow-hidden px-4 sm:px-8 lg:px-2 xl:px-16 2xl:px-14 3xl:px-[100px] py-16 md:py-20 lg:py-[120px] rounded-b-lg lg:rounded-b-2xl'>
-        <div className='Container md:-mb-[130px]'>
-          <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-white uppercase'>
+    <section className='py-0 md:py-10 lg:pt-28 lg:pb-[70px] xl:py-[120px] bg-white relative z-20 overflow-hidden'>
+      <div className='absolute right-28 top-16 2xl:top-28 hidden xl:block'>
+        <img
+          src={testiShape5}
+          draggable={false}
+          alt='Shape'
+          className='animate-flip'
+        />
+      </div>
+      <div className='Container'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-0 items-start'>
+          <div className='relative h-full'>
             <img
-              src={titleShape}
+              src={testiThumb}
               draggable={false}
-              alt='Shape'
-              className='brightness-0 invert-[1]'
-            />{' '}
-            Testimonials
-          </h5>
-          <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
-            Trusted By Industry Leader
-            <br /> Clients Testimonial
-          </h1>
+              alt='Testimonial Image'
+            />
+            <img
+              src={testiThumb2}
+              draggable={false}
+              alt='Testimonial Image'
+              className='absolute bottom-0 right-0 md:right-[70px] hidden sm:block'
+            />
+            <div className='absolute -z-10 top-[25%] right-28 md:inline-block rotate-[25deg] hidden'>
+              <img
+                src={testiShape2}
+                draggable={false}
+                alt='Testimonial Shape'
+                className='animate-wiggle'
+              />
+            </div>
+            <div className='absolute -z-10 bottom-16 left-24 md:inline-block hidden'>
+              <img
+                src={testiShape3}
+                draggable={false}
+                alt='Testimonial Shape'
+                className='animate-rotateX'
+              />
+            </div>
+            <div className='absolute -z-10 bottom-28 left-4 md:inline-block hidden'>
+              <img
+                src={testiShape4}
+                draggable={false}
+                alt='Testimonial Shape'
+                className='animate-swing'
+              />
+            </div>
+          </div>
+          <div className='lg:ml-4 pt-5 pb-8'>
+            <div>
+              <h5 className='font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center gap-3'>
+                <img
+                  src={subTilteIcon}
+                  draggable={false}
+                  alt='Icon'
+                />{' '}
+                PARENTS TESTIMONIAL
+              </h5>
+              <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 mb-4'>
+                Real Experiences From Our
+                <br />
+                Dedicated Learners
+              </h1>
+            </div>
+            <Swiper {...settings}>
+              <div>
+                {testiData.map(
+                  ({
+                    id,
+                    testiTitle,
+                    testiQuate,
+                    testiRatingIcon,
+                    testiRatingIcon2,
+                    testiName,
+                    testiImg,
+                    testiDesc,
+                    testiDesignation,
+                  }) => {
+                    return (
+                      <SwiperSlide key={id}>
+                        <div className='pb-24 sm:pb-0'>
+                          <TestimonialCard
+                            testiTitle={testiTitle}
+                            testiQuate={testiQuate}
+                            testiRatingIcon={testiRatingIcon}
+                            testiRatingIcon2={testiRatingIcon2}
+                            testiName={testiName}
+                            testiImg={testiImg}
+                            testiDesc={testiDesc}
+                            testiDesignation={testiDesignation}
+                          />
+                        </div>
+                      </SwiperSlide>
+                    );
+                  }
+                )}
+              </div>
+              <TestiNavigation />
+            </Swiper>
+          </div>
         </div>
-        <div className='mt-[46px]'>
-          <Swiper {...settings}>
-            {testiData.map(
-              ({
-                id,
-                testiShape,
-                testiTitle,
-                testiRatingIcon,
-                testiName,
-                testiProfile,
-                testiDesignation,
-                testiDesc,
-              }) => {
-                return (
-                  <SwiperSlide key={id}>
-                    <div className='pt-[100px] md:pt-[138px]'>
-                      <TestimonialCard
-                        testiShape={testiShape}
-                        testiTitle={testiTitle}
-                        testiRatingIcon={testiRatingIcon}
-                        testiName={testiName}
-                        testiProfile={testiProfile}
-                        testiDesignation={testiDesignation}
-                        testiDesc={testiDesc}
-                      />
-                    </div>
-                  </SwiperSlide>
-                );
-              }
-            )}
-            <TestiNavigation />
-          </Swiper>
-        </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 

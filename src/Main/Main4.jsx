@@ -1,10 +1,10 @@
 import { Outlet } from 'react-router-dom';
-import BackToTop from '../Shared/BackToTop/BackToTop';
-import Navbar2 from '../Shared/Navbar/Navbar2';
-import Footer4 from '../Shared/Footer/Footer4';
+import Footer from '../Shared/Footer/Footer';
+import Navbar4 from '../Shared/Navbar/Navbar4';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import HelmetChanger from '../Shared/Helmet/Helmet';
+import BackToTop from '../Shared/BackToTop/BackToTop';
 import { useEffect } from 'react';
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
@@ -29,13 +29,13 @@ const Main4 = () => {
 
   return (
     <>
-      <HelmetChanger title={'Software Agency Dark'} />
-      <Navbar2 />
+      <HelmetChanger title={'Kinder Garden School'} />
+      <Navbar4 />
       <BackToTop />
       <div>
         <Outlet />
       </div>
-      <Footer4 />
+      <Footer />
     </>
   );
 };

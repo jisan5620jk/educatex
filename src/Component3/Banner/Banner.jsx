@@ -15,14 +15,14 @@ import './banner.css';
 const Banner = () => {
   return (
     <section className="bg-[url('/images/hero-bg4.png')] bg-cover bg-bottom bg-no-repeat h-[900px] sm:h-[1100px] md:h-[1450px] lg:h-[750px] xl:h-[890px] flex items-center relative z-10 overflow-hidden">
-      <div className='absolute top-[26%] left-6 lg:left-20 hidden 2xl:block'>
+      <div className='absolute top-[26%] left-6 lg:left-20 hidden 3xl:block'>
         <img
           src={bannerShape5}
           draggable={false}
           className='animate-float'
         />
       </div>
-      <div className='absolute bottom-36 left-6 lg:left-36 hidden 2xl:block'>
+      <div className='absolute bottom-36 2xl:bottom-24 3xl:bottom-36 left-6 lg:left-36 hidden 2xl:block'>
         <img
           src={bannerShape6}
           draggable={false}
@@ -40,7 +40,7 @@ const Banner = () => {
             <p className='font-OpenSans text-TextColor2-0 mb-8 mt-5'>
               <span className='text-HeadingColor-0'>Educate</span> the ultimate
               destination for knowledge seekers and educators
-              <br className='lg:block xl:block' /> alike.
+              <br className='lg:block xl:block 2xl:hidden' /> alike.
               <br className='hidden 2xl:block' /> We are committed to
               transforming education
             </p>

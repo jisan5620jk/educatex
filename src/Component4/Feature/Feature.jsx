@@ -1,149 +1,91 @@
-import featureIcon from '/images/service-icon4.webp';
-import featureIcon2 from '/images/service-icon1.webp';
-import featureIcon3 from '/images/service-icon2.webp';
-import featureIcon4 from '/images/service-icon3.webp';
-import featureIcon5 from '/images/icon.webp';
-import featureIcon6 from '/images/service-icon5.webp';
-import titleShape from '/images/sub-title-shape.png';
+import featureIcon from '/images/feature-icon1.png';
+import featureIcon2 from '/images/feature-icon2.png';
+import featureIcon3 from '/images/feature-icon3.png';
+import featureShape from '/images/feature-shape1.png';
+import featureShape2 from '/images/feature-shape2.png';
 import FeatureCard from './FeatureCard';
-import { GoArrowRight } from 'react-icons/go';
-import { Link } from 'react-router-dom';
+import './feature.css';
 
 const processData = [
   {
     id: 1,
     featureIcon: featureIcon,
-    featureTitle: 'Custom Softwares Development',
+    featureTitle: 'Learning Experiences',
     featureDesc:
-      'Competently leverage existing top-line maximize cost effective done',
+      'The ultimate destination for knowledge for We are committed to transforming',
     featureUrl: '/service',
-    featureBtnText: 'Learn More',
-    featureBtnIcon: <GoArrowRight />,
   },
   {
     id: 2,
     featureIcon: featureIcon2,
-    featureTitle: 'Website Design and Development',
+    featureTitle: 'Professional Instructor',
     featureDesc:
-      'Competently leverage existing top-line maximize cost effective done',
+      'The ultimate destination for knowledge for We are committed to transforming',
     featureUrl: '/service',
-    featureBtnText: 'Learn More',
-    featureBtnIcon: <GoArrowRight />,
   },
   {
     id: 3,
     featureIcon: featureIcon3,
-    featureTitle: 'Cloud Computing and Hosting Service',
+    featureTitle: 'Moneyback Gaurantee',
     featureDesc:
-      'Competently leverage existing top-line maximize cost effective done',
+      'The ultimate destination for knowledge for We are committed to transforming',
     featureUrl: '/service',
-    featureBtnText: 'Learn More',
-    featureBtnIcon: <GoArrowRight />,
-  },
-  {
-    id: 4,
-    featureIcon: featureIcon4,
-    featureTitle: 'Ai & Machine Learning Integrations',
-    featureDesc:
-      'Competently leverage existing top-line maximize cost effective done',
-    featureUrl: '/service',
-    featureBtnText: 'Learn More',
-    featureBtnIcon: <GoArrowRight />,
-  },
-  {
-    id: 5,
-    featureIcon: featureIcon5,
-    featureTitle: 'Androind and IOS Apps Development',
-    featureDesc:
-      'Competently leverage existing top-line maximize cost effective done',
-    featureUrl: '/service',
-    featureBtnText: 'Learn More',
-    featureBtnIcon: <GoArrowRight />,
-  },
-  {
-    id: 6,
-    featureIcon: featureIcon6,
-    featureTitle: '3D Graphics & Vector Designing',
-    featureDesc:
-      'Competently leverage existing top-line maximize cost effective done',
-    featureUrl: '/service',
-    featureBtnText: 'Learn More',
-    featureBtnIcon: <GoArrowRight />,
   },
 ];
 
 const Feature = () => {
   return (
-    <section className='bg-BodyBgDark3-0 pb-16 md:pb-20 lg:pb-28 pt-16 md:pt-20 lg:pt-[138px] relative z-10 overflow-hidden -mt-[26px]'>
-      <div className='absolute -z-10 -top-[100%] left-1/2 -translate-x-1/2 size-[1245px] rounded-full blur-[150px] bg-PrimaryColor2-0 bg-opacity-50'></div>
-      <div className='Container'>
-        <div className='flex flex-col gap-5 md:gap-0 md:flex-row justify-between md:items-center'>
-          <div>
-            <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-white uppercase'>
-              <img
-                src={titleShape}
-                draggable={false}
-                alt='Shape'
-                className='brightness-0 invert-[1]'
-              />{' '}
-              WAHT WE PROVIDE
+    <section className='bg-white py-16 md:py-20 lg:py-28 relative'>
+      <div className='absolute top-14 3xl:top-28 left-32 animate-dance2 hidden lg:block'>
+        <img
+          src={featureShape}
+          draggable='false'
+          alt='Shape'
+        />
+      </div>
+      <div
+        className='absolute top-14 3xl:top-28 left-32 animate-dance2 hidden lg:block'
+        style={{ animationDelay: '1.5s' }}
+      >
+        <img
+          src={featureShape}
+          draggable='false'
+          alt='Shape'
+        />
+      </div>
+      <div className='absolute top-14 3xl:top-28 right-32 animate-rotational hidden lg:block'>
+        <img
+          src={featureShape2}
+          draggable='false'
+          alt='Shape'
+        />
+      </div>
+      <div className='Container '>
+        <div className='relative grid items-center grid-cols-1 lg:grid-cols-2 gap-8'>
+          <div className='border-b border-SecondaryColor-0 border-opacity-15 pb-6 lg:py-6'>
+            <h5 className='font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
+              core features
             </h5>
-            <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
-              Provide High Quality Software’s
-              <br />
-              Service for All Industry
-            </h1>
           </div>
-          <div className=''>
-            <Link
-              to={'/service'}
-              className='inline-block'
-            >
-              <button className='primary-btn'>
-                {`All Service`}
-                <span className='icon-style'>
-                  <svg
-                    className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
-                    xmlns='http://www.w3.org/2000/svg'
-                    stroke='CurrentColor'
-                    width='14.2'
-                    height='14.2'
-                    viewBox='0 0 14.2 14.2'
-                  >
-                    <g>
-                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                    </g>
-                    <g>
-                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                    </g>
-                  </svg>
-                </span>
-              </button>
-            </Link>
-          </div>
+          <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0'>
+            Interactive Online Learning
+            <br />
+            Key Features & Benefits
+          </h1>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 relative z-10 mt-11'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start gap-7 relative z-10 mt-[52px]'>
           {processData.map(
-            ({
-              id,
-              featureIcon,
-              featureTitle,
-              featureDesc,
-              featureUrl,
-              featureBtnText,
-              featureBtnIcon,
-            }) => {
+            ({ id, featureIcon, featureTitle, featureDesc, featureUrl }) => {
               return (
-                <div key={id}>
+                <div
+                  key={id}
+                  className='feature-box1'
+                >
                   <FeatureCard
                     featureIcon={featureIcon}
                     featureTitle={featureTitle}
                     featureDesc={featureDesc}
                     featureUrl={featureUrl}
-                    featureBtnText={featureBtnText}
-                    featureBtnIcon={featureBtnIcon}
                   />
                 </div>
               );
