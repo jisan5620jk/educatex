@@ -13,7 +13,7 @@ const Banner = () => {
     <section className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[58px] bg-SecondaryColor-0 relative z-10 overflow-hidden'>
       <div className='grid grid-cols-1 lg:grid-cols-2 items-center gap-6'>
         <div className='bg-[url("/images/hero-left-bg2.png")] bg-cover bg-bottom bg-no-repeat h-full flex items-center rounded-[20px] relative z-10 overflow-hidden'>
-          <div className='pl-[104px]'>
+          <div className='pl-5 xl:pl-[104px] py-10 md:py-16 lg:py-0'>
             <div className='inline-block mb-4'>
               <h5 className='font-OpenSans bg-white bg-opacity-5 pl-4 pr-5 py-[7px] rounded-r-full border border-white text-HeadingColor-0 text-sm flex items-center gap-2 uppercase'>
                 <span className='text-PrimaryColor2-0'>
@@ -27,7 +27,7 @@ const Banner = () => {
               <br />
               Lessons of <span className='text-PrimaryColor-0'>Quran</span>
             </h1>
-            <p className='font-OpenSans text-TextColor2-0 sm:text-lg mb-12 mt-8 max-w-[570px] w-full border-t border-SecondaryColor-0 border-opacity-10 pt-8'>
+            <p className='font-OpenSans text-TextColor2-0 sm:text-lg mb-7 md:mb-12 mt-5 md:mt-8 max-w-[570px] w-full border-t border-SecondaryColor-0 border-opacity-10 pt-5 md:pt-8'>
               Embark on a transformative journey of knowledge and spiritual pro
               filled with wisdom, guidance, and life lessons.
             </p>
@@ -42,7 +42,7 @@ const Banner = () => {
                 </Link>
               </div>
 
-              <div>
+              <div className='hidden sm:block'>
                 <img
                   src={bannerShape4}
                   draggable={false}
@@ -51,14 +51,14 @@ const Banner = () => {
               </div>
             </div>
           </div>
-          <div className='absolute -z-10 -bottom-[32%] -right-[21%]'>
+          <div className='absolute -z-10 -bottom-[32%] -right-[21%] hidden md:block'>
             <img
               src={bannerShape2}
               draggable={false}
               className='animate-rotational'
             />
           </div>
-          <div className='absolute -z-10 top-16 right-16'>
+          <div className='absolute -z-10 top-16 right-16 hidden md:block'>
             <img
               src={bannerShape3}
               draggable={false}

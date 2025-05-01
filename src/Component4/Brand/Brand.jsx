@@ -6,7 +6,6 @@ import brandThumb2 from '/images/brand-img1.png';
 import brandThumb3 from '/images/brand-img2.png';
 import shape from '/images/brand-star.png';
 import shape2 from '/images/brand-arrow.png';
-import shape3 from '/images/brand-line.png';
 
 const Brand = () => {
   const settings = {
@@ -40,13 +39,6 @@ const Brand = () => {
       <div className='absolute top-28 left-48 animate-dance3 hidden 2xl:block'>
         <img
           src={shape2}
-          draggable={false}
-          alt='Shape'
-        />
-      </div>
-      <div className='absolute -top-16 right-32 animate-wiggle hidden lg:block'>
-        <img
-          src={shape3}
           draggable={false}
           alt='Shape'
         />

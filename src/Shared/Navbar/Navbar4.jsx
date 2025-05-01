@@ -367,7 +367,7 @@ const Navbar4 = () => {
         ref={bodyOverlayRef}
         className='body-overlay'
       ></div>
-      <div className='bg-SecondaryColor-0 px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[58px] flex justify-between items-center relative z-10 before:absolute before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:w-[28%] before:h-[.5px] before:bg-gradient-to-r before:to-SecondaryColor-0 before:via-PrimaryColor-0 before:from-SecondaryColor-0'>
+      <div className='bg-SecondaryColor-0 px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[58px] flex justify-between items-center relative z-10 before:absolute before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 md:before:w-[28%] before:h-[.5px] before:bg-gradient-to-r before:to-SecondaryColor-0 before:via-PrimaryColor-0 before:from-SecondaryColor-0'>
         <div className='sm:flex items-center gap-10 hidden'>
           <div className='flex items-center gap-3'>
             <div className='text-PrimaryColor-0'>
@@ -418,7 +418,7 @@ const Navbar4 = () => {
       </div>
       <div className='header-area header-sticky style-four'>
         <div className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[58px] py-4 lg:py-0 bg-SecondaryColor-0 lg:bg-transparent border-t lg:border-t-0 lg:border-b border-white lg:border-HeadingColor-0 border-opacity-10 lg:border-opacity-10'>
-          <div className='flex items-center gap-5 justify-between border-t border-white border-opacity-20'>
+          <div className='flex items-center gap-5 justify-between lg:border-t border-white border-opacity-20'>
             <div className='hidden lg:block'>
               <div className='header-main-menu'>
                 <nav className='main-menu-content'>
@@ -626,7 +626,6 @@ const Navbar4 = () => {
                   <img
                     src={Logo}
                     draggable='false'
-                    className='brightness-0 invert-[1] lg:brightness-100 lg:invert-0'
                   />
                 </Link>
               </div>
@@ -635,7 +634,7 @@ const Navbar4 = () => {
               <div className='header-right-box flex items-center gap-2 sm:gap-7 lg:gap-5 xl:gap-[34px]'>
                 <div className='header-right-box flex items-center gap-2 sm:gap-7 lg:gap-5 xl:gap-5'>
                   <div
-                    className='size-8 md:size-[46px] lg:size-9 xl:size-[46px] bg-BodyBg-0 rounded-full border border-white text-white lg:text-HeadingColor-0 transition-all duration-500 flex items-center justify-center cursor-pointer relative z-10 before:absolute before:left-0 before:rounded-full before:top-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-10 hover:before:scale-100 hover:text-white hover:border-PrimaryColor-0'
+                    className='size-8 md:size-[46px] lg:size-9 xl:size-[46px] bg-BodyBg-0 rounded-full border border-white text-HeadingColor-0 transition-all duration-500 flex items-center justify-center cursor-pointer relative z-10 before:absolute before:left-0 before:rounded-full before:top-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-10 hover:before:scale-100 hover:text-white hover:border-PrimaryColor-0'
                     ref={openCartBtnRef}
                   >
                     <button className='menu-cart relative z-10 text-sm md:text-lg lg:text-sm xl:text-lg'>
@@ -664,7 +663,7 @@ const Navbar4 = () => {
                       </button>
                     </div>
                   </div>
-                  <div className='py-[14px] flex items-center gap-1'>
+                  <div className='py-[14px] md:flex items-center gap-1 hidden'>
                     <div>
                       <button
                         type='button'
@@ -684,16 +683,6 @@ const Navbar4 = () => {
                         Register
                       </button>
                     </div>
-                  </div>
-                  <div className='header-bar lg:hidden'>
-                    <button
-                      ref={menuBarRef}
-                      className='menu-bar'
-                    >
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </button>
                   </div>
                 </div>
                 <div className='header-bar lg:hidden'>
