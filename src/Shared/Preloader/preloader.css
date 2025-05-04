@@ -33,9 +33,9 @@ body.loaded {
 }
 
 .preloader .preloader-heading .load-text {
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 200;
-  letter-spacing: 35px;
+  letter-spacing: 32px;
   text-transform: uppercase;
   font-family: 'Outfit', sans-serif;
   z-index: 20;
@@ -44,8 +44,8 @@ body.loaded {
 
 @media screen and (max-width: 575px) {
   .preloader .preloader-heading .load-text {
-    font-size: 20px;
-    letter-spacing: 15px;
+    font-size: 18px;
+    letter-spacing: 14px;
   }
 }
 
