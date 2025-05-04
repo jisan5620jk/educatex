@@ -13,9 +13,30 @@ const teamMembers = [
 const TeamGallery = () => {
   return (
     <section className='bg-SecondaryColor-0 py-16 md:py-20 lg:py-28 relative'>
-      <div className='absolute left-1/2 -translate-x-1/2 bottom-14 hidden md:block'><img src={shape} draggable={false} alt="Shape" className='animate-flip' /></div>
-      <div className='absolute right-24 top-24 hidden md:block'><img src={shape2} draggable={false} alt="Shape" className='animate-dance2' /></div>
-      <div className='absolute left-28 top-28 hidden md:block'><img src={shape3} draggable={false} alt="Shape" className='animate-dance' /></div>
+      <div className='absolute left-1/2 -translate-x-1/2 bottom-14 hidden md:block'>
+        <img
+          src={shape}
+          draggable={false}
+          alt='Shape'
+          className='animate-flip'
+        />
+      </div>
+      <div className='absolute right-24 top-24 hidden md:block'>
+        <img
+          src={shape2}
+          draggable={false}
+          alt='Shape'
+          className='animate-dance2'
+        />
+      </div>
+      <div className='absolute left-28 top-28 hidden md:block'>
+        <img
+          src={shape3}
+          draggable={false}
+          alt='Shape'
+          className='animate-dance'
+        />
+      </div>
       <div className='Container'>
         <div className='text-center'>
           <h5 className='font-Outfit text-sm text-PrimaryColor-0 uppercase pb-1 relative z-10 before:absolute before:left-1/2 before:top-full before:-translate-x-1/2 before:w-[48%] md:before:w-[11%] before:h-[.5px] before:bg-gradient-to-r before:to-SecondaryColor-0 before:via-PrimaryColor-0 before:from-SecondaryColor-0'>
