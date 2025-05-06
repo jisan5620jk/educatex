@@ -2,73 +2,84 @@
 import { Link } from 'react-router-dom';
 
 const CourseCard = ({
-  courseImg,
-  coursePrice,
-  discountPrice,
-  courseCategory,
-  courseTitle,
-  courseRating,
-  courseRatingIcon,
-  courseRatingIcon2,
-  courseRatingContent,
-  courseUrl,
-  enrollBtn,
-  enrollBtnIcon,
+  image,
+  category,
+  price,
+  title,
+  rating,
+  ratingCount,
+  description,
+  readMoreText,
+  readMoreUrl,
+  readMoreIcon,
+  bottomRightIcon,
+  starIcon,
 }) => {
   return (
-    <div className='course-item2 bg-[url("/images/box-bg.png")] bg-center bg-cover bg-no-repeat p-4 sm:p-[30px] rounded-[20px] group relative z-10 overflow-hidden'>
-      <div className='relative overflow-hidden'>
-        <div className='hover-bg'>
-          <span className='absolute left-[12.5%] top-0 h-full w-0 opacity-40 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-0'></span>
-          <span className='absolute left-[37.5%] top-0 h-full w-0 opacity-40 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-[25%]'></span>
-          <span className='absolute left-[62.5%] top-0 h-full w-0 opacity-40 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-1/2'></span>
-          <span className='absolute left-[87.5%] top-0 h-full w-0 opacity-40 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-[75%]'></span>
-        </div>
+    <div className='group rounded-[20px] overflow-hidden flex flex-col md:flex-row'>
+      <div className='w-full overflow-hidden relative z-10 before:absolute before:-left-3/4 before:top-0 before:w-1/2 before:h-full before:bg-gradient-to-r before:to-transparent before:via-white before:from-transparent before:-skew-x-[20deg] before:opacity-50 group-hover:before:animate-shine'>
         <img
-          src={courseImg}
-          alt='Course'
+          src={image}
+          alt={title}
+          className='w-full md:w-[inherit] md:max-w-[inherit] h-auto object-cover'
           draggable={false}
-          className='w-full'
         />
       </div>
-
-      <div className='sm:px-5 lg:px-0 xl:px-3 pt-7 text-left'>
-        <span className='course-category font-Outfit text-sm px-5 py-[5px] rounded-3xl font-medium mb-3 inline-block uppercase'>
-          {courseCategory}
-        </span>
-        <h3 className='course-title font-Outfit text-xl sm:text-2xl md:text-[22px] lg:text-[22px] 2xl:text-[22px] 3xl:text-2xl font-medium text-HeadingColor-0 transition-all duration-500 2xl:mr-12'>
-          {courseTitle}
-        </h3>
-
-        <div className='flex items-center gap-1 text-ReviewText-0 text-sm mt-3 mb-4'>
-          {[...Array(Math.floor(courseRating))].map((_, i) => (
-            <span
-              key={i}
-              className='text-base'
-            >
-              {courseRatingIcon}
+      <div className='bg-BodyBg2-0 -ml-[76px] rounded-[20px] pl-10 pr-8 flex items-center w-full relative z-10 overflow-hidden'>
+        <span className='absolute left-[12.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
+        <span className='absolute left-[37.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
+        <span className='absolute left-[62.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-1/2'></span>
+        <span className='absolute left-[87.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[75%]'></span>
+        <div>
+          <div className='flex justify-between items-center mb-2.5'>
+            <span className='font-OpenSans text-[15px] text-PrimaryColor-0 bg-PrimaryColor-0 bg-opacity-10 border border-PrimaryColor-0 border-opacity-30 px-5 py-1 rounded-full uppercase transition-all duration-500 group-hover:bg-white group-hover:bg-opacity-10 group-hover:border-white group-hover:border-opacity-30 group-hover:text-white'>
+              {category}
             </span>
-          ))}
-          {courseRating % 1 !== 0 && (
-            <span className='text-base'>{courseRatingIcon2}</span>
-          )}
-          <span className='font-Outfit ml-1 text-HeadingColor-0 text-base'>
-            ({courseRating}
-            {courseRatingContent})
-          </span>
+            <span className='font-Outfit font-medium text-HeadingColor-0 uppercase transition-all duration-500 group-hover:text-white'>
+              {price}
+            </span>
+          </div>
+
+          <h3 className='font-Outfit text-xl md:text-2xl font-medium text-HeadingColor-0 border-b border-SecondaryColor-0 group-hover:border-white group-hover:border-opacity-20 border-opacity-10 transition-all duration-500 group-hover:text-white pb-4 mb-[2px]'>
+            {title}
+          </h3>
+
+          <div className='flex items-center text-PrimaryColor-0 transition-all duration-500 group-hover:text-white'>
+            {[...Array(Math.floor(rating))].map((_, index) => (
+              <span
+                key={index}
+                className='text-PrimaryColor-0 text-xl transition-all duration-500 group-hover:text-white'
+              >
+                {starIcon}
+              </span>
+            ))}
+            <span className='font-OpenSans text-sm text-HeadingColor-0 transition-all duration-500 group-hover:text-white ml-2'>
+              ({ratingCount})
+            </span>
+          </div>
+
+          <p className='font-OpenSans text-TextColor-0 transition-all duration-500 group-hover:text-white'>
+            {description}
+          </p>
+          <div className='flex items-center justify-between'>
+            <div className='inline-block overflow-hidden'>
+              <Link
+                to={readMoreUrl}
+                className='inline-flex gap-2 items-center font-Outfit text-HeadingColor-0 uppercase transition-all duration-500 -ml-[100px] group-hover:ml-0 group-hover:text-white'
+              >
+                {readMoreText} <span className='text-xl'>{readMoreIcon}</span>
+              </Link>
+            </div>
+            <div className=''>
+              <img
+                src={bottomRightIcon}
+                draggable={false}
+                alt='Shape'
+                className='animate-flip transition-all duration-500 group-hover:brightness-0 group-hover:invert'
+              />
+            </div>
+          </div>
         </div>
-        <div className='course-price text-2xl rounded-full flex items-center gap-3 font-Outfit font-medium mb-6'>
-          {coursePrice}
-          <span className='line-through text-HeadingColor-0 text-opacity-30'>
-            {discountPrice}
-          </span>
-        </div>
-        <Link to={courseUrl}>
-          <button className='course-button font-Outfit inline-flex items-center gap-2 uppercase text-sm justify-between px-7 py-[12px] border overflow-hidden rounded-full transition-all duration-500 relative z-10 before:absolute before:right-0 before:top-0 before:w-0 before:h-full before:transition-all before:duration-500 before:-z-10 group-hover:before:w-full group-hover:before:left-0'>
-            {enrollBtn}
-            <span className='text-xl'>{enrollBtnIcon}</span>
-          </button>
-        </Link>
       </div>
     </div>
   );
