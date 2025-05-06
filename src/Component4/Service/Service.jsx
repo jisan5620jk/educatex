@@ -1,6 +1,11 @@
 import serviceIcon from '/images/learn-icon1.png';
 import serviceIcon2 from '/images/learn-icon2.png';
 import serviceIcon3 from '/images/learn-icon3.png';
+import serviceShape from '/images/circle-hover1.png';
+import serviceShape2 from '/images/learn-circle.png';
+import shape from '/images/learn-arabic.png';
+import shape2 from '/images/learn-round.png';
+import shape3 from '/images/learn-book.png';
 import ServiceCard from './ServiceCard';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 
@@ -14,6 +19,8 @@ const serviceCard = [
     serviceBtnIcon: <HiArrowNarrowRight />,
     serviceDesc:
       'Embark on a transformative journey knowledge and spiritual growth with in. Delve into its timeless teachings, wisdom, guidance, and life lessons.',
+    serviceShape: serviceShape,
+    serviceShape2: serviceShape2,
   },
   {
     id: 2,
@@ -24,6 +31,8 @@ const serviceCard = [
     serviceBtnIcon: <HiArrowNarrowRight />,
     serviceDesc:
       'Embark on a transformative journey knowledge and spiritual growth with in. Delve into its timeless teachings, wisdom, guidance, and life lessons.',
+    serviceShape: serviceShape,
+    serviceShape2: serviceShape2,
   },
   {
     id: 3,
@@ -34,14 +43,23 @@ const serviceCard = [
     serviceBtnIcon: <HiArrowNarrowRight />,
     serviceDesc:
       'Embark on a transformative journey knowledge and spiritual growth with in. Delve into its timeless teachings, wisdom, guidance, and life lessons.',
+    serviceShape: serviceShape,
+    serviceShape2: serviceShape2,
   },
 ];
 
-
-
 const Service = () => {
   return (
-    <section className='relative pt-16 md:py-20 lg:pt-28 pb-6 md:pb-48 lg:pb-[190px] bg-SecondaryColor-0'>
+    <section className='relative py-16 md:py-20 lg:py-28  bg-SecondaryColor-0 overflow-hidden'>
+      <div className='absolute left-28 top-32'>
+        <img src={shape} draggable={false} alt="Shape" className='animate-dance2' />
+      </div>
+      <div className='absolute -bottom-60 -left-8'>
+        <img src={shape2} draggable={false} alt="Shape" className='animate-dance' />
+      </div>
+      <div className='absolute right-24 bottom-[24%]'>
+        <img src={shape3} draggable={false} alt="Shape" className='animate-flip' />
+      </div>
       <div className='Container'>
         <div className='text-center'>
           <h5 className='font-Outfit text-sm text-PrimaryColor-0 uppercase pb-1 relative z-10 before:absolute before:left-1/2 before:top-full before:-translate-x-1/2 before:w-[48%] md:before:w-[11%] before:h-[.5px] before:bg-gradient-to-r before:to-SecondaryColor-0 before:via-PrimaryColor-0 before:from-SecondaryColor-0'>
@@ -52,9 +70,19 @@ const Service = () => {
             <span className='text-PrimaryColor-0'>Learning</span>
           </h1>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-7'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-7 mt-[58px]'>
           {serviceCard.map(
-            ({ id, serviceIcon, serviceTitle, serviceUrl, serviceDesc, serviceBtnText , serviceBtnIcon }) => (
+            ({
+              id,
+              serviceIcon,
+              serviceTitle,
+              serviceUrl,
+              serviceDesc,
+              serviceBtnText,
+              serviceBtnIcon,
+              serviceShape,
+              serviceShape2,
+            }) => (
               <div key={id}>
                 <ServiceCard
                   serviceIcon={serviceIcon}
@@ -63,6 +91,8 @@ const Service = () => {
                   serviceBtnText={serviceBtnText}
                   serviceBtnIcon={serviceBtnIcon}
                   serviceDesc={serviceDesc}
+                  serviceShape={serviceShape}
+                  serviceShape2={serviceShape2}
                 />
               </div>
             )

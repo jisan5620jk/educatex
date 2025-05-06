@@ -1,16 +1,14 @@
 import aboutThumb from '/images/about-thumb4.png';
-import itemIcon from '/images/about-icon.png';
-import subTilteIcon from '/images/sub-title2.png';
 import shape from '/images/about-shpae2.png';
 import shape2 from '/images/about-shpae1.png';
+import shape3 from '/images/about-shape83.png';
+import shape4 from '/images/about-shape82.png';
 import { Link } from 'react-router-dom';
-import OnScrollCounter from '../../Shared/Counter/OnScrollCounter';
-import btnIcon from '/images/book-icon.png';
-import aboutIcon from '/images/about-call2.png';
+import { HiArrowNarrowRight } from 'react-icons/hi';
 
 const About = () => {
   return (
-    <section className='py-16 md:py-20 lg:pt-28 lg:pb-20 xl:py-28 relative'>
+    <section className='bg-[url("/images/about-bg8.png")] bg-no-repeat bg-center bg-cover py-16 md:py-20 lg:pt-28 lg:pb-20 xl:py-28 relative z-10'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 items-center'>
           <div className='relative z-10'>
@@ -33,130 +31,72 @@ const About = () => {
             />
           </div>
           <div className='relative'>
-            <h5 className='font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center gap-3'>
-              <img
-                src={subTilteIcon}
-                draggable={false}
-                alt='Icon'
-              />{' '}
-              ABOUT US
+            <h5 className='font-OpenSans font-medium text-sm text-SecondaryColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor2-0 before:rounded-full before:size-[9px]'>
+              about our educate
             </h5>
-            <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 mb-4'>
-              Who We Are – Introduction to
+            <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-4 mb-4'>
+              Join Online Quran Classes
               <br />
-              Educate Online Platform
+              for Kids <span className='text-PrimaryColor-0'>and Adults</span>
             </h1>
-            <div className='grid grid-cols-1 sm:grid-cols-2 items-center gap-5 mt-8 mb-9'>
-              <div className='bg-PrimaryColor-0 bg-opacity-[7%] h-[316px] flex flex-col justify-between rounded-[20px] px-7 lg:px-4 xl:px-7 pt-8 pb-9'>
-                <div>
-                  <h4 className='font-Outfit text-HeadingColor-0 font-medium text-[26px]'>
-                    Our Mission
-                  </h4>
-                  <p className='font-OpenSans lg:text-sm xl:text-base text-TextColor-0 max-w-[570px] w-full pt-[6px]'>
-                    Educate the ultimate destination transforming to education
-                    best educational environment
-                  </p>
-                </div>
-                <ul className='space-y-2'>
-                  <li className='flex items-center gap-[10px]'>
-                    <div>
-                      <img
-                        src={itemIcon}
-                        draggable={false}
-                        alt='Icon'
-                        className='w-[16px]'
-                      />
-                    </div>
-                    <h5 className='flex-1 font-Outfit text-base lg:text-sm xl:text-base text-HeadingColor-0'>
-                      Quick Learning System
-                    </h5>
-                  </li>
-                  <li className='flex items-center gap-[10px]'>
-                    <div>
-                      <img
-                        src={itemIcon}
-                        draggable={false}
-                        alt='Icon'
-                        className='w-[16px]'
-                      />
-                    </div>
-                    <h5 className='flex-1 font-Outfit text-base lg:text-sm xl:text-base text-HeadingColor-0'>
-                      Super Fast Online Platform
-                    </h5>
-                  </li>
-                  <li className='flex items-center gap-[10px]'>
-                    <div>
-                      <img
-                        src={itemIcon}
-                        draggable={false}
-                        alt='Icon'
-                        className='w-[16px]'
-                      />
-                    </div>
-                    <h5 className='flex-1 font-Outfit text-base lg:text-sm xl:text-base text-HeadingColor-0'>
-                      Weekly Assignments
-                    </h5>
-                  </li>
-                </ul>
-              </div>
-              <div className='bg-PrimaryColor2-0 bg-opacity-[7%] h-[316px] flex flex-col justify-between rounded-[20px] px-7 pt-8 pb-9'>
-                <div className=''>
-                  <div className='text-5xl md:text-[56px] lg:text-[56px] leading-[56px] tracking-wide font-semibold font-Outfit text-PrimaryColor2-0 inline-flex items-center relative'>
-                    <OnScrollCounter
-                      start={0}
-                      end={6}
-                      duration={1000}
-                    />
-                    <h1>K</h1>
-                    <h2 className='absolute -top-0 -right-5 font-Outfit text-3xl'>
-                      +
-                    </h2>
-                  </div>
-                  <div>
-                    <p className='font-OpenSans lg:text-sm text-TextColor-0 mt-2'>
-                      Enrolled Students all
-                      <br /> Over the World
-                    </p>
-                  </div>
-                </div>
-                <div className='flex lg:flex-col xl:flex-row items-start gap-4 pt-1'>
-                  <div>
-                    <img
-                      src={aboutIcon}
-                      draggable={false}
-                      alt='Icon'
-                    />
-                  </div>
-                  <div className='flex-1 -mt-1'>
-                    <h6 className='font-Outfit text-HeadingColor-0'>
-                      Call Us AnyTime
-                    </h6>
-                    <a
-                      href='tel:+6803290570'
-                      title='+(680) 3290 570'
-                      className='font-Outfit text-xl font-medium text-HeadingColor-0 pt-1'
-                    >
-                      +(680) 3290 570
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <p className='font-OpenSans text-TextColor-0 text-[17px] w-full max-w-[500px] mb-9'>
+              Experience future of learning our education-focused to main
+              backgroud courses pro designed to and empower learners courses
+              combine teaching tools.
+            </p>
+            <ul className='w-full max-w-[430px] grid gap-x-9 gap-y-6 grid-cols-2'>
+              <li>
+                <h5 className='font-Outfit font-medium text-SecondaryColor-0 uppercase pl-5 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor2-0 before:rounded-full before:size-[9px]'>
+                  Create Your Profile
+                </h5>
+              </li>
+              <li>
+                <h5 className='font-Outfit font-medium text-SecondaryColor-0 uppercase pl-5 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor2-0 before:rounded-full before:size-[9px]'>
+                  Set Your Schedule
+                </h5>
+              </li>
+              <li>
+                <h5 className='font-Outfit font-medium text-SecondaryColor-0 uppercase pl-5 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor2-0 before:rounded-full before:size-[9px]'>
+                  Connect Students
+                </h5>
+              </li>
+              <li>
+                <h5 className='font-Outfit font-medium text-SecondaryColor-0 uppercase pl-5 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor2-0 before:rounded-full before:size-[9px]'>
+                  Start Tutoring
+                </h5>
+              </li>
+            </ul>
+            <p className='font-OpenSans text-TextColor-0 text-[17px] w-full max-w-[500px] mt-8 mb-12'>
+              Backgroud courses pro designed to and empower learners courses
+              combine teaching tools.
+            </p>
             <div>
               <Link
                 to={'/about'}
                 className='primary-btn2'
               >
-                <img
-                  src={btnIcon}
-                  draggable={false}
-                  alt='Button Icon'
-                />
-                More About
+                Start Trial
+                <HiArrowNarrowRight size={20} />
               </Link>
             </div>
           </div>
         </div>
+      </div>
+      <div className='absolute bottom-0 right-44 z-10'>
+        <img
+          src={shape3}
+          draggable={false}
+          alt='Shape'
+          className='animate-dance'
+        />
+      </div>
+      <div className='absolute top-24 right-28 z-10'>
+        <img
+          src={shape4}
+          draggable={false}
+          alt='Shape'
+          className='animate-dance2'
+        />
       </div>
     </section>
   );
