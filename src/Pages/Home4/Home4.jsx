@@ -2,6 +2,7 @@ import About from '../../Component4/About/About';
 import Banner from '../../Component4/Banner/Banner';
 import Brand from '../../Component4/Brand/Brand';
 import Courses from '../../Component4/Course/Course';
+import Faq from '../../Component4/Faq/Faq';
 import Feature from '../../Component4/Feature/Feature';
 import Service from '../../Component4/Service/Service';
 import TeamGallery from '../../Component4/TeamGallery/TeamGallery';
@@ -14,6 +15,7 @@ const Home4 = () => {
       <Service />
       <About />
       <Courses />
+      <Faq />
       <TeamGallery />
       <Brand />
     </>
