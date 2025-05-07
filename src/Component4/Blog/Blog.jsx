@@ -7,10 +7,13 @@ import { Link } from 'react-router-dom';
 import { IoMdLogIn } from 'react-icons/io';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import boxShape from '/images/blog-dot-shape.png';
+import shape from '/images/blog-shape81.png';
+import shape2 from '/images/blog-shape82.png';
+import shape3 from '/images/faq-shape81.png';
 
 const Blog = () => {
   return (
-    <section className='bg-[url("/images/blog-bg8.png")] bg-cover bg-center bg-no-repeat py-16 md:py-20 lg:py-28 bg-white'>
+    <section className='bg-[url("/images/blog-bg8.png")] bg-cover bg-center bg-no-repeat py-16 md:py-20 lg:py-28 bg-white overflow-hidden relative z-10'>
       <div className='Container'>
         <div className='flex items-center justify-between flex-wrap gap-7'>
           <div>
@@ -38,7 +41,7 @@ const Blog = () => {
             </Link>
           </div>
         </div>
-        <div className='grid grid-cols-12 gap-10 mt-6 md:mt-[46px]'>
+        <div className='grid grid-cols-12 gap-10 lg:gap-0 mt-6 md:mt-[46px]'>
           <div className='col-span-5'>
             <div className='p-6 rounded-[20px] border border-SecondaryColor-0 border-opacity-20'>
               <div className='group bg-white transition-all duration-500 rounded-[20px]'>
@@ -49,11 +52,11 @@ const Blog = () => {
                   <span className='absolute left-[87.5%] top-0 h-full w-0 transition-all duration-500 bg-PrimaryColor3-0 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-[75%]'></span>
                   <img
                     src={blogThumb}
-                    className='w-full'
+                    className='w-full h-[322px] object-cover object-center'
                   />
                 </div>
                 <div className='relative z-20 rounded-lg transition-all duration-500 px-10 pb-10'>
-                  <p className='font-Outfit font-medium text-HeadingColor-0 flex gap-3 items-center mt-7 mb-4'>
+                  <p className='font-Outfit font-medium text-HeadingColor-0 flex gap-3 items-center mt-8 mb-6'>
                     <img
                       src={blogPostIcon}
                       draggable={false}
@@ -62,7 +65,7 @@ const Blog = () => {
                     Jhon D. Alexon
                   </p>
                   <Link to={'/blog_details'}>
-                    <button className='font-Outfit text-left font-medium text-lg sm:text-[22px] md:text-xl lg:text-2xl xl:text-[21px] 2xl:text-2xl text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor3-0 mb-7'>
+                    <button className='font-Outfit text-left font-medium text-lg sm:text-[22px] md:text-xl lg:text-2xl xl:text-[21px] 2xl:text-2xl text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor3-0 mb-[34px]'>
                       10 Essential Strategies for a More Rewarding Ramadan
                     </button>
                   </Link>
@@ -78,17 +81,17 @@ const Blog = () => {
               </div>
             </div>
           </div>
-          <div className='col-span-7 space-y-6'>
+          <div className='col-span-7 space-y-6 lg:ml-10'>
             <div className='group rounded-[20px] overflow-hidden flex flex-col md:flex-row'>
               <div className='w-full overflow-hidden relative z-10 before:absolute before:-left-3/4 before:top-0 before:w-1/2 before:h-full before:bg-gradient-to-r before:to-transparent before:via-white before:from-transparent before:-skew-x-[20deg] before:opacity-50 group-hover:before:animate-shine'>
                 <img
                   src={blogThumb2}
                   alt='Blog Image'
-                  className='w-full md:w-[inherit] md:max-w-[inherit] h-[318px] object-cover'
+                  className='w-full md:w-[inherit] md:max-w-[inherit] h-[315px] object-cover object-left'
                   draggable={false}
                 />
               </div>
-              <div className='bg-white -ml-[76px] rounded-[20px] pl-10 pr-8 flex items-center w-full relative z-10 overflow-hidden'>
+              <div className='bg-white -ml-[30px] rounded-[20px] pl-10 pr-8 flex items-center w-full relative z-10 overflow-hidden'>
                 <span className='absolute left-[12.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
                 <span className='absolute left-[37.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
                 <span className='absolute left-[62.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-1/2'></span>
@@ -97,19 +100,17 @@ const Blog = () => {
                   <div className='font-OpenSans text-[15px] text-PrimaryColor-0 bg-PrimaryColor-0 bg-opacity-10 border border-PrimaryColor-0 border-opacity-30 px-5 py-1 inline-block rounded-full uppercase transition-all duration-500 group-hover:bg-white group-hover:bg-opacity-10 group-hover:border-white group-hover:border-opacity-30 group-hover:text-white'>
                     Science
                   </div>
-
-                  <h3 className='font-Outfit text-xl md:text-2xl font-medium text-HeadingColor-0 border-b border-SecondaryColor-0 group-hover:border-white group-hover:border-opacity-20 border-opacity-10 transition-all duration-500 group-hover:text-white pb-4 mb-[2px]'>
+                  <h3 className='font-Outfit text-xl md:text-2xl font-medium text-HeadingColor-0 border-b border-SecondaryColor-0 group-hover:border-white group-hover:border-opacity-20 border-opacity-10 transition-all duration-500 group-hover:text-white pb-[18px] mt-6 mb-5'>
                     A Journey Through Wisdom
                   </h3>
-
                   <p className='font-OpenSans text-TextColor-0 transition-all duration-500 group-hover:text-white'>
                     Backgroud to courses to and learners our education-focused.
                   </p>
-                  <div className='flex items-center justify-between'>
+                  <div className='flex items-center justify-between mt-10'>
                     <div className='inline-block overflow-hidden'>
                       <Link
                         to={'/blog_details'}
-                        className='inline-flex gap-2 items-center font-Outfit text-HeadingColor-0 uppercase transition-all duration-500 group-hover:text-white'
+                        className='inline-flex gap-2 items-center font-Outfit text-PrimaryColor-0 uppercase transition-all duration-500 group-hover:text-white'
                       >
                         Read More
                         <span className='text-xl'>
@@ -134,11 +135,11 @@ const Blog = () => {
                 <img
                   src={blogThumb3}
                   alt='Blog Image'
-                  className='w-full md:w-[inherit] md:max-w-[inherit] h-auto object-cover'
+                  className='w-full md:w-[inherit] md:max-w-[inherit] h-[315px] object-cover object-left'
                   draggable={false}
                 />
               </div>
-              <div className='bg-white -ml-[76px] rounded-[20px] pl-10 pr-8 flex items-center w-full relative z-10 overflow-hidden'>
+              <div className='bg-white -ml-[30px] rounded-[20px] pl-10 pr-8 flex items-center w-full relative z-10 overflow-hidden'>
                 <span className='absolute left-[12.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
                 <span className='absolute left-[37.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
                 <span className='absolute left-[62.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-1/2'></span>
@@ -147,19 +148,17 @@ const Blog = () => {
                   <div className='font-OpenSans text-[15px] text-PrimaryColor-0 bg-PrimaryColor-0 bg-opacity-10 border border-PrimaryColor-0 border-opacity-30 px-5 py-1 inline-block rounded-full uppercase transition-all duration-500 group-hover:bg-white group-hover:bg-opacity-10 group-hover:border-white group-hover:border-opacity-30 group-hover:text-white'>
                     Science
                   </div>
-
-                  <h3 className='font-Outfit text-xl md:text-2xl font-medium text-HeadingColor-0 border-b border-SecondaryColor-0 group-hover:border-white group-hover:border-opacity-20 border-opacity-10 transition-all duration-500 group-hover:text-white pb-4 mb-[2px]'>
+                  <h3 className='font-Outfit text-xl md:text-2xl font-medium text-HeadingColor-0 border-b border-SecondaryColor-0 group-hover:border-white group-hover:border-opacity-20 border-opacity-10 transition-all duration-500 group-hover:text-white pb-[18px] mt-6 mb-5'>
                     A Journey Through Wisdom
                   </h3>
-
                   <p className='font-OpenSans text-TextColor-0 transition-all duration-500 group-hover:text-white'>
                     Backgroud to courses to and learners our education-focused.
                   </p>
-                  <div className='flex items-center justify-between'>
+                  <div className='flex items-center justify-between mt-10'>
                     <div className='inline-block overflow-hidden'>
                       <Link
                         to={'/blog_details'}
-                        className='inline-flex gap-2 items-center font-Outfit text-HeadingColor-0 uppercase transition-all duration-500 group-hover:text-white'
+                        className='inline-flex gap-2 items-center font-Outfit text-PrimaryColor-0 uppercase transition-all duration-500 group-hover:text-white'
                       >
                         Read More
                         <span className='text-xl'>
@@ -172,7 +171,7 @@ const Blog = () => {
                         src={boxShape}
                         draggable={false}
                         alt='Shape'
-                        className='animate-flip transition-all duration-500 group-hover:brightness-0 group-hover:invert'
+                        className='animate-dance transition-all duration-500 group-hover:brightness-0 group-hover:invert'
                       />
                     </div>
                   </div>
@@ -181,6 +180,30 @@ const Blog = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className='absolute top-36 right-[42%]'>
+        <img
+          src={shape}
+          draggable={false}
+          alt='Shape'
+          className='animate-dance2'
+        />
+      </div>
+      <div className='absolute bottom-28 left-28'>
+        <img
+          src={shape2}
+          draggable={false}
+          alt='Shape'
+          className='animate-flip'
+        />
+      </div>
+      <div className='absolute -z-10 -top-[25%] -right-6'>
+        <img
+          src={shape3}
+          draggable={false}
+          alt='Shape'
+          className='animate-dance'
+        />
       </div>
     </section>
   );
