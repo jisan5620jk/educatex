@@ -1,5 +1,6 @@
 import About from '../../Component4/About/About';
 import Banner from '../../Component4/Banner/Banner';
+import Blog from '../../Component4/Blog/Blog';
 import Brand from '../../Component4/Brand/Brand';
 import Courses from '../../Component4/Course/Course';
 import Faq from '../../Component4/Faq/Faq';
@@ -17,6 +18,7 @@ const Home4 = () => {
       <Courses />
       <Faq />
       <TeamGallery />
+      <Blog />
       <Brand />
     </>
   );
