@@ -46,143 +46,99 @@ const Navbar = () => {
 
   //Menu Sidebar
 
-  const menuSideBarRef = useRef(null);
-  const sidebarContentRef = useRef(null);
-  const bodyOverlay2Ref = useRef(null);
-  const closeBtn2Ref = useRef(null);
+ const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {
-    const menuSideBar = menuSideBarRef.current;
-    const sidebarContent = sidebarContentRef.current;
-    const bodyOverlay2 = bodyOverlay2Ref.current;
-    const closeBtn2 = closeBtn2Ref.current;
+    const menuBarRef = useRef(null);
+    const offcanvasRef = useRef(null);
+    const bodyOverlayRef = useRef(null);
+    const closeBtnRef = useRef(null);
 
-    const addClasses = () => {
-      sidebarContent.classList.add('opened');
-      bodyOverlay2.classList.add('apply');
-    };
+    const headerIcon = `
+    <span class="header-icon">
+      <svg fill="currentColor" viewBox="0 0 320 512" height="15px" width="15px" xmlns="http://www.w3.org/2000/svg">
+        <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
+      </svg>
+    </span>`;
 
-    const removeClasses = () => {
-      sidebarContent.classList.remove('opened');
-      bodyOverlay2.classList.remove('apply');
-    };
+    // Sticky Header
+    useEffect(() => {
+      const isSticky = () => {
+        const header = document.querySelector('.header-sticky');
+        window.scrollY >= 250
+          ? header.classList.add('is-sticky')
+          : header.classList.remove('is-sticky');
+      };
+      window.addEventListener('scroll', isSticky);
+      return () => window.removeEventListener('scroll', isSticky);
+    }, []);
 
-    if (menuSideBar && sidebarContent && bodyOverlay2 && closeBtn2) {
-      menuSideBar.addEventListener('click', addClasses);
-      closeBtn2.addEventListener('click', removeClasses);
-      bodyOverlay2.addEventListener('click', removeClasses);
-    }
+    // Mobile Offcanvas Menu
+    useEffect(() => {
+      const menuBar = menuBarRef.current;
+      const offcanvas = offcanvasRef.current;
+      const bodyOverlay = bodyOverlayRef.current;
+      const closeBtn = closeBtnRef.current;
 
-    return () => {
-      if (menuSideBar && sidebarContent && bodyOverlay2 && closeBtn2) {
-        menuSideBar.removeEventListener('click', addClasses);
-        closeBtn2.removeEventListener('click', removeClasses);
-        bodyOverlay2.removeEventListener('click', removeClasses);
-      }
-    };
-  }, []);
+      const openMenu = () => {
+        offcanvas.classList.add('opened');
+        bodyOverlay.classList.add('apply');
+      };
+      const closeMenu = () => {
+        offcanvas.classList.remove('opened');
+        bodyOverlay.classList.remove('apply');
+      };
 
-  //Menu Bar
-  const menuBarRef = useRef(null);
-  const offcanvasRef = useRef(null);
-  const bodyOverlayRef = useRef(null);
-  const closeBtnRef = useRef(null);
-
-  useEffect(() => {
-    const menuBar = menuBarRef.current;
-    const offcanvas = offcanvasRef.current;
-    const bodyOverlay = bodyOverlayRef.current;
-    const closeBtn = closeBtnRef.current;
-
-    const addClasses = () => {
-      offcanvas.classList.add('opened');
-      bodyOverlay.classList.add('apply');
-    };
-
-    const removeClasses = () => {
-      offcanvas.classList.remove('opened');
-      bodyOverlay.classList.remove('apply');
-    };
-
-    if (menuBar && offcanvas && bodyOverlay && closeBtn) {
-      menuBar.addEventListener('click', addClasses);
-      closeBtn.addEventListener('click', removeClasses);
-      bodyOverlay.addEventListener('click', removeClasses);
-    }
-
-    return () => {
       if (menuBar && offcanvas && bodyOverlay && closeBtn) {
-        menuBar.removeEventListener('click', addClasses);
-        closeBtn.removeEventListener('click', removeClasses);
-        bodyOverlay.removeEventListener('click', removeClasses);
+        menuBar.addEventListener('click', openMenu);
+        closeBtn.addEventListener('click', closeMenu);
+        bodyOverlay.addEventListener('click', closeMenu);
       }
-    };
-  }, []);
 
-  let headerIcon = `  
-  <span class="header-icon">  
-    <svg fill="currentColor" viewBox="0 0 320 512" height="15px" width="15px" xmlns="http://www.w3.org/2000/svg">
-      <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
-    </svg>
-  </span>  
-  `;
+      return () => {
+        if (menuBar && offcanvas && bodyOverlay && closeBtn) {
+          menuBar.removeEventListener('click', openMenu);
+          closeBtn.removeEventListener('click', closeMenu);
+          bodyOverlay.removeEventListener('click', closeMenu);
+        }
+      };
+    }, []);
 
-  useEffect(() => {
-    const mainMenuContent = document.querySelector('.main-menu-content');
-    const mainMenuMobile = document.querySelector('.main-menu-mobile');
+    // Clone Desktop Menu to Mobile & Add Submenu Buttons
+    useEffect(() => {
+      const mainMenuContent = document.querySelector('.main-menu-content');
+      const mainMenuMobile = document.querySelector('.main-menu-mobile');
 
-    if (mainMenuContent && mainMenuMobile) {
-      const navContent = mainMenuContent.outerHTML;
-      mainMenuMobile.innerHTML = navContent;
+      if (mainMenuContent && mainMenuMobile) {
+        mainMenuMobile.innerHTML = mainMenuContent.outerHTML;
 
-      const arrows = document.querySelectorAll(
-        '.main-menu-mobile .has-dropdown > a'
-      );
+        const dropdownLinks =
+          mainMenuMobile.querySelectorAll('.has-dropdown > a');
+        dropdownLinks.forEach((link) => {
+          const btn = document.createElement('button');
+          btn.className = 'dropdown-toggle-btn';
+          btn.innerHTML = headerIcon;
+          link.appendChild(btn);
 
-      arrows.forEach((arrow) => {
-        const arrowBtn = document.createElement('BUTTON');
-        arrowBtn.classList.add('dropdown-toggle-btn');
-        arrowBtn.innerHTML = headerIcon;
-
-        arrow.appendChild(arrowBtn);
-
-        arrowBtn.addEventListener('click', (e) => {
-          e.preventDefault();
-          arrowBtn.classList.toggle('dropdown-opened');
-          arrow.parentElement.classList.toggle('expanded');
-          arrow.parentElement.parentElement.classList.add('dropdown-opened');
-          arrow.parentElement.parentElement
-            .querySelectorAll('.submenu')
-            .forEach((submenu) => {
-              if (submenu.style.maxHeight) {
-                submenu.style.maxHeight = null;
-              } else {
-                submenu.style.maxHeight = submenu.scrollHeight + 'px';
-              }
-            });
-          arrow.parentElement.parentElement
-            .querySelectorAll('.has-dropdown')
-            .forEach((sibling) => {
-              if (sibling !== arrow.parentElement) {
-                sibling.classList.remove('dropdown-opened');
-                sibling.querySelectorAll('.submenu').forEach((submenu) => {
-                  submenu.style.maxHeight = null;
-                });
-              }
-            });
+          btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const parent = link.parentElement;
+            const submenu = parent.querySelector('.submenu');
+            parent.classList.toggle('expanded');
+            if (submenu.style.maxHeight) {
+              submenu.style.maxHeight = null;
+            } else {
+              submenu.style.maxHeight = submenu.scrollHeight + 'px';
+            }
+          });
         });
-      });
-    }
-  }, [headerIcon]);
+      }
+    }, [headerIcon]);
 
   //Menu Search
-  const handleMenuSearchClick = () => {
-    document.body.classList.add('search-active');
-  };
+  const [isSearchActive, setIsSearchActive] = useState(false);
 
-  const handleCloseSearchClick = () => {
-    document.body.classList.remove('search-active');
-  };
+  const handleMenuSearchClick = () => setIsSearchActive(true);
+  const handleCloseSearchClick = () => setIsSearchActive(false);
 
   const searchContentRef = useRef(null);
   const bodyOverlay3Ref = useRef(null);
@@ -276,6 +232,51 @@ const Navbar = () => {
 
   return (
     <div data-lenis-prevent>
+      <div className='bg-SecondaryColor-0 px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] flex justify-between items-center'>
+        <div className='sm:flex items-center gap-3 hidden'>
+          <img
+            src={star}
+            draggable={false}
+            alt='Star'
+          />
+          <p className='font-OpenSans text-[15px] text-white text-opacity-80'>
+            Welcome to{' '}
+            <Link
+              to={'#'}
+              className='text-PrimaryColor-0 text-opacity-100'
+            >
+              Educate
+            </Link>{' '}
+            – Unlocking the Power of Education!
+          </p>
+        </div>
+        <div className='py-[14px] flex items-center gap-7 '>
+          <div>
+            <button
+              type='button'
+              className='flex items-center gap-1 text-white font-medium text-[15px] font-Outfit uppercase cursor-pointer'
+              onClick={() => setIsPopupVisible(true)}
+            >
+              <span className='text-PrimaryColor-0'>
+                <IoMdLogIn size={20} />
+              </span>
+              LogIn
+            </button>
+          </div>
+          <div>
+            <button
+              type='button'
+              className='flex items-center gap-[6px] text-white font-medium text-[15px] font-Outfit uppercase'
+              onClick={() => setIsVisible(true)}
+            >
+              <span className='text-PrimaryColor-0'>
+                <SlUserFollow size={16} />
+              </span>
+              Registration
+            </button>
+          </div>
+        </div>
+      </div>
       <div className='offcanvas-area'>
         <div
           ref={offcanvasRef}
@@ -367,51 +368,6 @@ const Navbar = () => {
         ref={bodyOverlayRef}
         className='body-overlay'
       ></div>
-      <div className='bg-SecondaryColor-0 px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] flex justify-between items-center'>
-        <div className='sm:flex items-center gap-3 hidden'>
-          <img
-            src={star}
-            draggable={false}
-            alt='Star'
-          />
-          <p className='font-OpenSans text-[15px] text-white text-opacity-80'>
-            Welcome to{' '}
-            <Link
-              to={'#'}
-              className='text-PrimaryColor-0 text-opacity-100'
-            >
-              Educate
-            </Link>{' '}
-            – Unlocking the Power of Education!
-          </p>
-        </div>
-        <div className='py-[14px] flex items-center gap-7 '>
-          <div>
-            <button
-              type='button'
-              className='flex items-center gap-1 text-white font-medium text-[15px] font-Outfit uppercase cursor-pointer'
-              onClick={() => setIsPopupVisible(true)}
-            >
-              <span className='text-PrimaryColor-0'>
-                <IoMdLogIn size={20} />
-              </span>
-              LogIn
-            </button>
-          </div>
-          <div>
-            <button
-              type='button'
-              className='flex items-center gap-[6px] text-white font-medium text-[15px] font-Outfit uppercase'
-              onClick={() => setIsVisible(true)}
-            >
-              <span className='text-PrimaryColor-0'>
-                <SlUserFollow size={16} />
-              </span>
-              Registration
-            </button>
-          </div>
-        </div>
-      </div>
       <div className='header-area header-sticky'>
         <div className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] py-4 lg:py-0 bg-SecondaryColor-0 lg:bg-transparent border-t lg:border-t-0 lg:border-b border-white lg:border-HeadingColor-0 border-opacity-10 lg:border-opacity-10'>
           <div className='flex items-center gap-5 justify-between'>
@@ -627,6 +583,10 @@ const Navbar = () => {
                 </nav>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
             <div>
               <div className='header-right-box flex items-center gap-2 sm:gap-7 lg:gap-5 xl:gap-[34px]'>
                 <div className='flex items-center gap-2 sm:gap-4 lg:gap-2 xl:gap-4'>
@@ -661,13 +621,13 @@ const Navbar = () => {
                     </Link>
                   </div>
                   <div
-                    className='header-sidebar hidden size-[46px] bg-SecondaryColor-0 rounded-full 2xl:flex items-center justify-center cursor-pointer'
-                    ref={menuSideBarRef}
+                    className='group hidden size-[46px] bg-SecondaryColor-0 rounded-full 2xl:flex items-center justify-center cursor-pointer'
+                    onClick={() => setIsOpen(true)}
                   >
-                    <button className='menu-sidebar'>
-                      <span></span>
-                      <span></span>
-                      <span></span>
+                    <button className='menu-sidebar space-y-1'>
+                      <span className='bg-white w-5 h-0.5 rounded-xl block'></span>
+                      <span className='bg-white w-5 h-0.5 rounded-xl block'></span>
+                      <span className='bg-white w-3 h-0.5 rounded-xl block transition-all duration-500 group-hover:w-5'></span>
                     </button>
                   </div>
                 </div>
@@ -683,190 +643,196 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div className='sidebar-content'>
-        <div
-          ref={sidebarContentRef}
-          className='sidebar'
+      {/* Sidebar */}
+      <div
+        className={`fixed top-0 right-0 z-[99] h-full w-full max-w-[400px] bg-[#041424] p-9 overflow-y-auto shadow-[0_20px_50px_0_#04142466] transition-all duration-500 ${
+          isOpen
+            ? 'translate-x-0 opacity-100 visible'
+            : 'translate-x-full opacity-0 invisible'
+        }`}
+      >
+        <button
+          onClick={() => setIsOpen(false)}
+          className='absolute top-7 right-7 h-10 w-10 bg-[#1ec28f] text-white flex items-center justify-center transition-transform duration-500 hover:rotate-180'
         >
-          <div className='sidebar_close-btn'>
-            <button
-              ref={closeBtn2Ref}
-              className='close-btn2'
-            >
-              <FaTimes />
-            </button>
-          </div>
-          <div className='sidebar_logo'>
-            <Link to={'/'}>
-              <img
-                src={Logo2}
-                draggable='false'
-              />
-            </Link>
-          </div>
-          <div className='sidebar_title'>
-            <p>
-              Business consultation provides expert advice to improve
-              performance.
-            </p>
-          </div>
-          <div>
-            <div className='sidebar_service-title'>
-              <h5>What Services We Provide?</h5>
-            </div>
-            <ul className='service_list'>
-              <li>
-                <Link to={'/'}>
-                  <button>Managed IT Services</button>
+          <FaTimes className='text-lg' />
+        </button>
+
+        <div className='mb-6'>
+          <Link to='/'>
+            <img
+              src={Logo2}
+              alt='Logo'
+              draggable='false'
+            />
+          </Link>
+        </div>
+
+        <p className='text-sm text-[#a3b7b7] mb-5'>
+          Business consultation provides expert advice to improve performance.
+        </p>
+
+        <div>
+          <h5 className='text-white text-xl font-medium mb-5 font-outfit'>
+            What Services We Provide?
+          </h5>
+          <ul className='list-disc list-inside text-[#a3b7b7] font-medium font-outfit space-y-2'>
+            {[
+              'Managed IT Services',
+              'Cloud Services',
+              'Cybersecurity Services',
+              'Network Services',
+              'Data Analytics',
+              'IT Consulting Services',
+              'Backup and Disaster Recovery',
+              'Website Development',
+            ].map((service, i) => (
+              <li key={i}>
+                <Link
+                  to='/'
+                  className='hover:text-white transition'
+                >
+                  {service}
                 </Link>
               </li>
-              <li>
-                <Link to={'/'}>
-                  <button>Cloud Services</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button>Cybersecurity Services</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button>Network Services</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button>Data Analytics</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button>IT Consulting Services</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button>Backup and Disaster Recovery</button>
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'}>
-                  <button>Website Development</button>
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className='sidebar_contact-info'>
-            <div className='sidebar_contact-title'>
-              <h5>Have Questions? Contact Our Team!</h5>
-            </div>
-            <ul>
-              <li>
-                <MdLocationPin />
-                <Link to={'/'}>Melbone st, Australia, Ny 12099</Link>
-              </li>
-              <li>
-                <FaEnvelope />
-                <Link to={'/'}>needhelp@company.com</Link>
-              </li>
-              <li>
-                <FaPhoneAlt />
-                <Link to={'/'}>+48 555 223 224</Link>
-              </li>
-            </ul>
-          </div>
-          <div className='sidebar_input'>
-            <div className='offcanvas_input-title'>
-              <h4>Get Update</h4>
-            </div>
-            <form
-              action='#'
-              method='post'
-            >
-              <div className='relative'>
-                <input
-                  type='email'
-                  name='email'
-                  placeholder='Enter E-Mail'
-                  required
-                />
-                <button type='submit'>
-                  <IoMdPaperPlane />
-                </button>
-              </div>
-            </form>
-          </div>
-          <ul className='sidebar-social-icon'>
-            <li>
-              <Link to={'/'}>
-                <FaFacebookF />
+            ))}
+          </ul>
+        </div>
+
+        <div className='mt-8 mb-12'>
+          <h5 className='text-white text-xl font-medium font-outfit mb-6'>
+            Have Questions? Contact Our Team!
+          </h5>
+          <ul className='space-y-4 text-white text-sm font-outfit'>
+            <li className='flex items-center'>
+              <MdLocationPin className='text-[#1ec28f]' />
+              <Link
+                to='/'
+                className='ml-2 hover:text-[#1ec28f] transition'
+              >
+                Melbone st, Australia, Ny 12099
               </Link>
             </li>
-            <li>
-              <Link to={'/'}>
-                <FaXTwitter />
+            <li className='flex items-center'>
+              <FaEnvelope className='text-[#1ec28f]' />
+              <Link
+                to='/'
+                className='ml-2 hover:text-[#1ec28f] transition'
+              >
+                needhelp@company.com
               </Link>
             </li>
-            <li>
-              <Link to={'/'}>
-                <FaPinterestP />
-              </Link>
-            </li>
-            <li>
-              <Link to={'/'}>
-                <FaLinkedinIn />
+            <li className='flex items-center'>
+              <FaPhoneAlt className='text-[#1ec28f]' />
+              <Link
+                to='/'
+                className='ml-2 hover:text-[#1ec28f] transition'
+              >
+                +48 555 223 224
               </Link>
             </li>
           </ul>
         </div>
+
+        <div className='mb-10'>
+          <h4 className='text-white text-xl font-normal font-outfit mb-6'>
+            Get Update
+          </h4>
+          <form className='relative'>
+            <input
+              type='email'
+              name='email'
+              placeholder='Enter E-Mail'
+              required
+              className='w-full h-[60px] pl-5 pr-[80px] bg-transparent border border-white/10 text-white placeholder:text-white/35 outline-none'
+            />
+            <button
+              type='submit'
+              className='absolute bottom-0 right-0 h-[60px] w-[60px] bg-[#1ec28f] text-white text-xl flex items-center justify-center'
+            >
+              <IoMdPaperPlane />
+            </button>
+          </form>
+        </div>
+
+        <ul className='flex items-center space-x-4 mt-6'>
+          {[FaFacebookF, FaXTwitter, FaPinterestP, FaLinkedinIn].map(
+            (Icon, i) => (
+              <li key={i}>
+                <Link
+                  to='/'
+                  className='relative z-10 h-[45px] w-[45px] flex items-center justify-center rounded-full text-white bg-white/5 hover:text-white transition'
+                >
+                  <span className='absolute inset-0 bg-[#1ec28f] scale-0 rounded-full transition-transform duration-500 z-[-1] hover:scale-100'></span>
+                  <Icon />
+                </Link>
+              </li>
+            )
+          )}
+        </ul>
       </div>
+
+      {/* Overlay */}
       <div
-        ref={bodyOverlay2Ref}
-        className='body-overlay2'
+        onClick={() => setIsOpen(false)}
+        className={`fixed inset-0 z-50 bg-black/50 backdrop-blur-sm transition-all duration-500 ${
+          isOpen ? 'opacity-100 visible left-0' : 'opacity-0 invisible left-1/2'
+        }`}
+        style={{ cursor: 'url(/images/cross.png), pointer' }}
       ></div>
-      <div className='search-popup'>
+
+
+      {/* Search */}
+      <div
+        className={`fixed top-0 left-0 h-screen w-full z-[99999] backdrop-blur-sm bg-black/20 transition-all duration-[1500ms] ease-[cubic-bezier(0.86,0,0.07,1)] ${
+          isSearchActive
+            ? 'translate-y-0 mt-0'
+            : '-translate-y-full -mt-[540px]'
+        }`}
+      >
         <button
-          className='close-search'
           onClick={handleCloseSearchClick}
+          className='absolute top-10 right-10 w-10 h-10 rounded-full border-2 border-red-600 text-red-600 flex items-center justify-center text-[20px]'
         >
           <LiaTimesSolid />
         </button>
+
         <button
-          className='close-search2'
           onClick={handleCloseSearchClick}
+          className={`absolute left-0 right-0 mx-auto rounded-full bg-gradient-to-r from-PrimaryColor-0 to-PrimaryColor3-0 w-[70px] h-[70px] cursor-pointer border-4 border-t-white border-l-[#a64cf9] border-b-white border-r-[#a64cf9] shadow-md flex items-center justify-center transition-all duration-500 ease-in-out ${
+            isSearchActive
+              ? 'visible opacity-100 top-[25%] delay-[1500ms]'
+              : 'invisible opacity-0 top-[75%] -mt-[200px]'
+          }`}
         >
-          <FaArrowUp />
+          <FaArrowUp className='text-white text-[30px]' />
         </button>
+
         <form
-          method='post'
           onSubmit={handleSubmit}
+          className={`absolute max-w-[700px] top-1/2 left-[15px] right-[15px] mx-auto -mt-[35px] bg-transparent transition-all duration-300 ease-in-out ${
+            isSearchActive ? 'scale-x-100 delay-[1200ms]' : 'scale-x-0'
+          }`}
         >
-          <div className='form-group'>
+          <div className='relative m-0 overflow-hidden rounded-md'>
             <input
               type='search'
               name='search-field'
               placeholder='Search Here'
               required
               ref={searchInputRef}
+              className="block w-full h-[70px] text-[18px] leading-[50px] px-[30px] py-[10px] text-black bg-white border-2 border-[#1ec28f] rounded-md font-['Outfit'] appearance-none transition-all duration-500 ease-in-out focus:outline-none"
             />
             <button
               type='submit'
-              disabled={isSubmitting} // Disable button if submitting
+              disabled={isSubmitting}
+              className='absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#1ec28f] h-full px-[25px] text-white text-[24px] cursor-pointer border-none transition-all duration-500 ease-in-out'
             >
-              {isSubmitting ? (
-                <span>Loading...</span> // Show loading text
-              ) : (
-                <IoSearch />
-              )}
+              {isSubmitting ? <span>Loading...</span> : <IoSearch />}
             </button>
           </div>
         </form>
       </div>
-
       {/* Cart Sidebar */}
       <div
         ref={cartSidebarRef}
@@ -941,16 +907,13 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-
       {/* Overlay */}
       <div
         ref={cartOverlayRef}
         className='fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-40 cursor-[url("/images/cross.png"),_pointer]'
       ></div>
-
       {/* LogIn Popup */}
       {isPopupVisible && <LogInPopup setIsPopupVisible={setIsPopupVisible} />}
-
       {/* Register Form */}
       {isVisible && <RegisterForm setIsVisible={setIsVisible} />}
     </div>
