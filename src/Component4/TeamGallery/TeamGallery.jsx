@@ -2,13 +2,42 @@ import { FaUser } from 'react-icons/fa6';
 import shape from '/images/team_shape2.png';
 import shape2 from '/images/team_shape1.png';
 import shape3 from '/images/team-shape3.png';
+import { Link } from 'react-router-dom';
 
 const teamMembers = [
-  { id: 1, image: '/images/team-thumb81.png', icon: <FaUser /> },
-  { id: 2, image: '/images/team-thumb82.png', icon: <FaUser /> },
-  { id: 3, image: '/images/team-thumb83.png', icon: <FaUser /> },
-  { id: 4, image: '/images/team-thumb84.png', icon: <FaUser /> },
+  {
+    id: 1,
+    image: '/images/team-thumb81.png',
+    icon: <FaUser />,
+    link: '/team_details',
+  },
+  {
+    id: 2,
+    image: '/images/team-thumb82.png',
+    icon: <FaUser />,
+    link: '/team_details',
+  },
+  {
+    id: 3,
+    image: '/images/team-thumb83.png',
+    icon: <FaUser />,
+    link: '/team_details',
+  },
+  {
+    id: 4,
+    image: '/images/team-thumb84.png',
+    icon: <FaUser />,
+    link: '/team_details',
+  },
 ];
+
+// Define top positions per member ID
+const topPositions = {
+  1: 'top-14',
+  2: 'top-9',
+  3: 'top-8',
+  4: 'top-9',
+};
 
 const TeamGallery = () => {
   return (
@@ -58,9 +87,14 @@ const TeamGallery = () => {
                 alt='Team Image'
                 className='w-full object-cover object-center'
               />
-              <div className='absolute z-10 top-8 -right-14 transition-all duration-500 group-hover:right-7 size-[54px] flex justify-center items-center rounded-full border border-white border-opacity-50 bg-white bg-opacity-20 text-2xl text-white text-center'>
+              <Link
+                to={member.link}
+                className={`absolute z-10 ${
+                  topPositions[member.id]
+                } -right-14 transition-all duration-500 group-hover:right-7 size-[54px] flex justify-center items-center rounded-full border border-white border-opacity-50 bg-white bg-opacity-20 text-2xl text-white text-center`}
+              >
                 {member.icon}
-              </div>
+              </Link>
             </div>
           ))}
         </div>

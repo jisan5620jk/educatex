@@ -16,33 +16,50 @@ const BackToTop = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Custom smooth scroll to top
+  // Custom smooth scroll to top in 1 second
   const scrollToTop = () => {
-    const c = document.documentElement.scrollTop || document.body.scrollTop;
-    if (c > 0) {
-      window.requestAnimationFrame(scrollToTop);
-      window.scrollTo(0, c - c / 10); 
-    }
+    const start = performance.now();
+    const duration = 1000; // 1 second
+    const initialY = window.scrollY;
+
+    const animateScroll = (timestamp) => {
+      const elapsed = timestamp - start;
+      const progress = Math.min(elapsed / duration, 1); // Clamps between 0-1
+      const ease = 1 - Math.pow(1 - progress, 3); // Ease-out cubic effect
+
+      window.scrollTo(0, initialY * (1 - ease));
+
+      if (progress < 1) {
+        requestAnimationFrame(animateScroll);
+      }
+    };
+
+    requestAnimationFrame(animateScroll);
   };
 
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed z-50 right-8 size-14 rounded-full flex items-center justify-center font-bold text-white cursor-pointer transition-all duration-500 shadow-xl ${
-        isVisible ? 'opacity-100 bottom-8' : 'opacity-0 -bottom-24'
-      }`}
+      className={`fixed z-50 right-8 bottom-8 size-14 rounded-full flex items-center justify-center 
+        font-bold text-white cursor-pointer transition-all duration-500 ease-in-out 
+        transform shadow-lg
+        ${
+          isVisible
+            ? 'opacity-100 translate-y-0 pointer-events-auto'
+            : 'opacity-0 translate-y-8 pointer-events-none'
+        }`}
       style={{
-        background: `conic-gradient(#17c0f9 ${scrollPercent}%, #1e1e1e29 ${scrollPercent}%)`,
+        background: `conic-gradient(#1ec28f ${scrollPercent}%, #1e1e1e39 ${scrollPercent}%)`,
       }}
       aria-label='Back to Top'
     >
-      <div className='absolute size-12 bg-PrimaryColor2-0 rounded-full font-Outfit font-normal flex items-center justify-center'>
+      <div
+        className='absolute size-12 rounded-full font-Outfit 
+        flex items-center justify-center font-normal bg-HeadingColor-0'
+      >
         {scrollPercent}%
       </div>
     </button>

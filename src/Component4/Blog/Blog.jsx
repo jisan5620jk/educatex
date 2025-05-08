@@ -2,7 +2,6 @@ import blogThumb from '/images/blog-thumb81.png';
 import blogThumb2 from '/images/blog-thumb82.png';
 import blogThumb3 from '/images/blog-thumb83.png';
 import blogPostIcon from '/images/blog-autor1.png';
-import subTilteIcon from '/images/sub-title2.png';
 import { Link } from 'react-router-dom';
 import { IoMdLogIn } from 'react-icons/io';
 import { HiArrowNarrowRight } from 'react-icons/hi';
@@ -17,18 +16,13 @@ const Blog = () => {
       <div className='Container'>
         <div className='flex items-center justify-between flex-wrap gap-7'>
           <div>
-            <h5 className='font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center justify-center gap-3'>
-              <img
-                src={subTilteIcon}
-                draggable={false}
-                alt='Icon'
-              />{' '}
-              LATEST BLOG
+            <h5 className='font-OpenSans font-medium text-sm text-SecondaryColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor2-0 before:rounded-full before:size-[9px]'>
+              about our educate
             </h5>
-            <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 mb-4'>
-              Read the Latest Insights and
+            <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-4 mb-4'>
+              Join Online Quran Classes
               <br />
-              Updates Educate Blog
+              for Kids <span className='text-PrimaryColor-0'>and Adults</span>
             </h1>
           </div>
           <div>

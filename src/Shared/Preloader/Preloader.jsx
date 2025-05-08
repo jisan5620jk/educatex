@@ -1,4 +1,3 @@
-import './preloader.css';
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 
@@ -8,9 +7,7 @@ const Preloader = () => {
 
   useEffect(() => {
     const svg = svgRef.current;
-    const tl = gsap.timeline({
-      onComplete: startStrokeAnimation,
-    });
+    const tl = gsap.timeline({ onComplete: startStrokeAnimation });
 
     const curve = 'M0 502S175 272 500 272s500 230 500 230V0H0Z';
     const flat = 'M0 2S175 1 500 1s500 1 500 1V0H0Z';
@@ -39,18 +36,19 @@ const Preloader = () => {
       });
 
     function startStrokeAnimation() {
-      // Your stroke animation logic here
+      // Add stroke animation logic if needed
     }
   }, []);
 
   return (
     <div
-      className='preloader'
+      className='fixed inset-0 flex items-center justify-center bg-transparent z-[99999999999]'
       ref={preloaderRef}
     >
       <svg
         viewBox='0 0 1000 1000'
         preserveAspectRatio='none'
+        className='absolute top-0 w-screen h-[110vh] fill-PrimaryColor-0'
       >
         <path
           id='preloaderSvg'
@@ -59,14 +57,16 @@ const Preloader = () => {
         ></path>
       </svg>
       <div className='preloader-heading'>
-        <div className='load-text'>
-          <span>L</span>
-          <span>o</span>
-          <span>a</span>
-          <span>d</span>
-          <span>i</span>
-          <span>n</span>
-          <span>g</span>
+        <div className='text-2xl font-light tracking-[35px] uppercase font-Outfit text-white z-20 load-text'>
+          {['L', 'o', 'a', 'd', 'i', 'n', 'g'].map((char, index) => (
+            <span
+              key={index}
+              className='animate-pulse'
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              {char}
+            </span>
+          ))}
         </div>
       </div>
     </div>

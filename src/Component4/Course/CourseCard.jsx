@@ -31,7 +31,7 @@ const CourseCard = ({
         <span className='absolute left-[62.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-1/2'></span>
         <span className='absolute left-[87.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[75%]'></span>
         <div>
-          <div className='flex justify-between items-center mb-2.5'>
+          <div className='flex justify-between items-center mb-5'>
             <span className='font-OpenSans text-[15px] text-PrimaryColor-0 bg-PrimaryColor-0 bg-opacity-10 border border-PrimaryColor-0 border-opacity-30 px-5 py-1 rounded-full uppercase transition-all duration-500 group-hover:bg-white group-hover:bg-opacity-10 group-hover:border-white group-hover:border-opacity-30 group-hover:text-white'>
               {category}
             </span>
@@ -40,11 +40,11 @@ const CourseCard = ({
             </span>
           </div>
 
-          <h3 className='font-Outfit text-xl md:text-2xl font-medium text-HeadingColor-0 border-b border-SecondaryColor-0 group-hover:border-white group-hover:border-opacity-20 border-opacity-10 transition-all duration-500 group-hover:text-white pb-4 mb-[2px]'>
+          <h3 className='font-Outfit text-xl md:text-2xl font-medium text-HeadingColor-0 border-b border-SecondaryColor-0 group-hover:border-white group-hover:border-opacity-20 border-opacity-10 transition-all duration-500 group-hover:text-white pb-5 mb-4'>
             {title}
           </h3>
 
-          <div className='flex items-center text-PrimaryColor-0 transition-all duration-500 group-hover:text-white'>
+          <div className='flex items-center text-PrimaryColor-0 transition-all duration-500 group-hover:text-white mb-3'>
             {[...Array(Math.floor(rating))].map((_, index) => (
               <span
                 key={index}
@@ -58,7 +58,7 @@ const CourseCard = ({
             </span>
           </div>
 
-          <p className='font-OpenSans text-TextColor-0 transition-all duration-500 group-hover:text-white'>
+          <p className='font-OpenSans text-TextColor-0 transition-all duration-500 group-hover:text-white mb-6'>
             {description}
           </p>
           <div className='flex items-center justify-between'>

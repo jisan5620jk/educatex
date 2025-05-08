@@ -205,6 +205,10 @@ export default {
           },
           '100%': { transform: 'translateX(160px) translateY(0) rotate(0deg)' },
         },
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
       },
       animation: {
         movebtn: 'movebtn 3s linear infinite',
@@ -233,6 +237,7 @@ export default {
         rotateZoom: 'rotateZoom 3s infinite ease-in-out',
         write: 'write 2s ease-in-out infinite',
         zigzagWriteExtreme: 'zigzagWriteExtreme 1.5s ease-in-out infinite',
+        marquee: 'marquee 30s linear infinite',
       },
       boxShadow: {
         cases: '0px 10px 15px rgba(187, 187, 187, 0.2)',

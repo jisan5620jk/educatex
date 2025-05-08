@@ -6,6 +6,10 @@ import bottomRightIcon from '/images/trending-book.png';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import CourseCard from './CourseCard';
 import { MdOutlineStar } from 'react-icons/md';
+import shape from '/images/trending-shape81.png';
+import shape2 from '/images/trending-shape84.png';
+import shape3 from '/images/trending-shape83.png';
+import shape4 from '/images/trending-shape82.png';
 
 const quranCourses = [
   {
@@ -72,7 +76,7 @@ const quranCourses = [
 
 const Course = () => {
   return (
-    <div className='bg-SecondaryColor-0 py-16 md:py-20 lg:py-28'>
+    <div className='bg-SecondaryColor-0 py-16 md:py-20 lg:py-28 relative overflow-hidden'>
       <div className='Container'>
         <div className='text-center'>
           <h5 className='font-Outfit text-sm text-PrimaryColor-0 uppercase pb-1 relative z-10 before:absolute before:left-1/2 before:top-full before:-translate-x-1/2 before:w-[48%] md:before:w-[11%] before:h-[.5px] before:bg-gradient-to-r before:to-SecondaryColor-0 before:via-PrimaryColor-0 before:from-SecondaryColor-0'>
@@ -92,6 +96,10 @@ const Course = () => {
           ))}
         </div>
       </div>
+      <div className='absolute top-32 left-24'><img src={shape} draggable={false} alt="Shape" className='animate-flip' /></div>
+      <div className='absolute bottom-32 right-32'><img src={shape2} draggable={false} alt="Shape" className='animate-dance' /></div>
+      <div className='absolute top-32 right-32'><img src={shape3} draggable={false} alt="Shape" className='animate-dance2' /></div>
+      <div className='absolute -top-[22%] -right-7'><img src={shape4} draggable={false} alt="Shape" className='animate-dance' /></div>
     </div>
   );
 };
