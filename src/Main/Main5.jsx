@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import Navbar5 from '../Shared/Navbar/Navbar5';
 import BackToTop from '../Shared/BackToTop/BackToTop';
-import Footer5 from '../Shared/Footer/Footer5';
+import Footer from '../Shared/Footer/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -29,13 +29,13 @@ const Main5 = () => {
 
   return (
     <>
-      <HelmetChanger title={'Start Up Technology'} />
+      <HelmetChanger title={'Online Education'} />
       <Navbar5 />
       <BackToTop />
       <div>
         <Outlet />
       </div>
-      <Footer5 />
+      <Footer />
     </>
   );
 };

@@ -1,3 +1,4 @@
+import star from '/images/top-star.png';
 import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import {
@@ -13,7 +14,7 @@ import {
 import logo from '/images/logo.png';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { GrCart } from 'react-icons/gr';
-import { IoIosSearch, IoMdPaperPlane } from 'react-icons/io';
+import { IoIosSearch, IoMdLogIn, IoMdPaperPlane } from 'react-icons/io';
 import { LiaTimesSolid } from 'react-icons/lia';
 import { IoSearch } from 'react-icons/io5';
 import LogInPopup from './LogInPopup';
@@ -21,6 +22,7 @@ import RegisterForm from './RegisterForm';
 import { BsBasket3 } from 'react-icons/bs';
 import { FaXTwitter } from 'react-icons/fa6';
 import { MdLocationPin } from 'react-icons/md';
+import { SlUserFollow } from 'react-icons/sl';
 
 const Navbar11 = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -180,6 +182,51 @@ const Navbar11 = () => {
 
   return (
     <div data-lenis-prevent>
+      <div className='bg-SecondaryColor-0 px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] flex justify-between items-center'>
+        <div className='sm:flex items-center gap-3 hidden'>
+          <img
+            src={star}
+            draggable={false}
+            alt='Star'
+          />
+          <p className='font-OpenSans text-[15px] text-white text-opacity-80'>
+            Welcome to{' '}
+            <Link
+              to={'#'}
+              className='text-PrimaryColor-0 text-opacity-100'
+            >
+              Educate
+            </Link>{' '}
+            – Unlocking the Power of Education!
+          </p>
+        </div>
+        <div className='py-[14px] flex items-center gap-7 '>
+          <div>
+            <button
+              type='button'
+              className='flex items-center gap-1 text-white font-medium text-[15px] font-Outfit uppercase cursor-pointer'
+              onClick={() => setIsPopupVisible(true)}
+            >
+              <span className='text-PrimaryColor-0'>
+                <IoMdLogIn size={20} />
+              </span>
+              LogIn
+            </button>
+          </div>
+          <div>
+            <button
+              type='button'
+              className='flex items-center gap-[6px] text-white font-medium text-[15px] font-Outfit uppercase'
+              onClick={() => setIsVisible(true)}
+            >
+              <span className='text-PrimaryColor-0'>
+                <SlUserFollow size={16} />
+              </span>
+              Registration
+            </button>
+          </div>
+        </div>
+      </div>
       <header
         className={`absolute w-full z-50 transition-all duration-300 bg-SecondaryColor-0 lg:bg-transparent border-b border-SecondaryColor-0 border-opacity-10 ${
           isSticky

@@ -396,7 +396,8 @@ const Navbar4 = () => {
             </a>
           </div>
         </div>
-        <div className='py-[6px]'>
+        <div className='py-[6px] flex gap-5 items-center'>
+          <h4 className='font-Outfit text-xl text-PrimaryColor-0 pr-[88px] relative z-10 before:absolute before:right-0 before:top-3.5 before:w-[70px] before:h-[2px] before:bg-PrimaryColor-0'>Follow Us</h4>
           <ul className='flex items-center gap-5'>
             <li>
               <button className='size-[38px] rounded-full text-sm bg-transparent flex items-center justify-center text-white border-2 border-white border-opacity-50 overflow-hidden transition-all duration-500 hover:text-PrimaryColor-0 hover:border-PrimaryColor-0 hover:border-opacity-100 relative z-10'>
