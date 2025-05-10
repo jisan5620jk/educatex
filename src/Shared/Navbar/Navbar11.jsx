@@ -179,7 +179,7 @@ const Navbar11 = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   return (
-    <>
+    <div data-lenis-prevent>
       <header
         className={`absolute w-full z-50 transition-all duration-300 bg-SecondaryColor-0 lg:bg-transparent border-b border-SecondaryColor-0 border-opacity-10 ${
           isSticky
@@ -233,7 +233,7 @@ const Navbar11 = () => {
                               to={link.to}
                               className={`block px-7 py-3 border-b border-SecondaryColor-0 border-opacity-10 font-OpenSans font-medium transition-all duration-500 relative z-10 before:absolute before:left-0 before:top-auto before:bottom-0 before:w-full before:h-0 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:bottom-auto hover:before:top-0 hover:text-white ${
                                 currentPath === link.to
-                                  ? 'bg-PrimaryColor-0 text-white'
+                                  ? 'before:h-full text-white'
                                   : ''
                               }`}
                             >
@@ -291,69 +291,76 @@ const Navbar11 = () => {
                     </button>
                   </div>
                 </div>
-              {/* Hamburger Icon */}
+                {/* Hamburger Icon */}
 
-              <div
-                className='group lg:hidden size-[46px] bg-transparent border border-SecondaryColor-0 border-opacity-10 rounded-full flex items-center justify-center cursor-pointer'
-                onClick={() => setMobileOpen(true)}
-              >
-                <button className='space-y-1'>
-                  <span className='bg-white w-5 h-0.5 rounded-xl block'></span>
-                  <span className='bg-white w-5 h-0.5 rounded-xl block'></span>
-                  <span className='bg-white w-3 h-0.5 rounded-xl block transition-all duration-500 group-hover:w-5'></span>
-                </button>
+                <div
+                  className='group lg:hidden size-8 md:size-[46px] bg-transparent border border-white border-opacity-10 rounded-full flex items-center justify-center cursor-pointer'
+                  onClick={() => setMobileOpen(true)}
+                >
+                  <button className='space-y-[3px] md:space-y-1'>
+                    <span className='bg-white w-4 md:w-5 h-0.5 rounded-xl block'></span>
+                    <span className='bg-white w-4 md:w-5 h-0.5 rounded-xl block'></span>
+                    <span className='bg-white w-2 md:w-3 h-0.5 rounded-xl block transition-all duration-500 group-hover:w-4 md:group-hover:w-5'></span>
+                  </button>
+                </div>
               </div>
-              </div>
-
             </div>
           </div>
         </div>
 
         {/* Mobile Menu */}
         <div
-          className={`fixed top-0 right-0 h-full w-72 bg-white text-black shadow-lg transform transition-transform duration-300 z-50 ${
+          className={`fixed top-0 right-0 h-full w-full sm:w-[350px] md:w-[380px] overflow-y-auto bg-white text-black shadow-lg transform transition-transform duration-300 z-50 ${
             mobileOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
           <div className='p-4 flex justify-between items-center border-b'>
-            <h2 className='text-lg font-semibold'>Menu</h2>
+            <h2 className='font-OpenSans text-2xl font-medium'>Menu</h2>
             <button
               onClick={() => setMobileOpen(false)}
-              className='text-xl'
+              className='text-xl transition-all duration-500 hover:rotate-180'
             >
               <FaTimes />
             </button>
           </div>
-          <ul className='p-4 space-y-4'>
+          <ul className='p-4 mt-6'>
             {menuItems.map((item, idx) => (
               <li key={idx}>
                 <button
                   onClick={() => toggleMobileMenu(item.label)}
-                  className='w-full text-left flex justify-between items-center font-semibold'
+                  className={`w-full text-left inline-flex items-center justify-between py-3 ${
+                    idx !== 0
+                      ? 'border-t border-SecondaryColor-0 border-opacity-10'
+                      : ''
+                  } font-OpenSans font-medium uppercase transition-all duration-500 relative z-10 overflow-hidden before:absolute before:top-0 before:left-auto before:right-0 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:-z-10 group-hover:before:w-full group-hover:right-auto group-hover:before:left-0 group-hover:text-white`}
                 >
                   {item.label}
                   <FaChevronDown
-                    className={`transition-transform duration-200 ${
+                    className={`transition-transform duration-500 ${
                       activeMobileMenu === item.label ? 'rotate-180' : ''
                     }`}
                   />
                 </button>
 
                 <div
-                  className={`overflow-hidden transition-[max-height] duration-300 ${
+                  className={`overflow-hidden transition-all duration-500 ${
                     activeMobileMenu === item.label ? 'max-h-96' : 'max-h-0'
                   }`}
                 >
-                  <ul className='pl-3 mt-2 space-y-1 text-sm'>
+                  <ul className='pl-3 mt-2 text-sm'>
                     {item.links.map((link, i) => (
                       <li key={i}>
                         <Link
                           to={link.to}
                           onClick={() => setMobileOpen(false)}
-                          className={`block rounded ${
+                          className={`block px-5 py-3 ${
+                            idx !== 0
+                              ? 'border-t border-SecondaryColor-0 border-opacity-10'
+                              : ''
+                          } font-OpenSans font-medium transition-all duration-500 relative z-10 before:absolute before:left-0 before:top-auto before:bottom-0 before:w-full before:h-0 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:bottom-auto hover:before:top-0 hover:text-white ${
                             currentPath === link.to
-                              ? 'bg-red-500 text-white px-2 py-1'
-                              : 'text-gray-700 hover:text-black'
+                              ? 'before:h-full text-white'
+                              : ''
                           }`}
                         >
                           {link.label}
@@ -368,12 +375,14 @@ const Navbar11 = () => {
         </div>
 
         {/* Overlay */}
-        {mobileOpen && (
-          <div
-            className='fixed inset-0 bg-black bg-opacity-50 z-[9998]'
-            onClick={() => setMobileOpen(false)}
-          ></div>
-        )}
+        <div
+          className={`fixed inset-0 bg-black/50 backdrop-blur-sm transition-all duration-500 cursor-[url('/images/cross.png'),_pointer] ${
+            mobileOpen
+              ? 'opacity-100 visible left-0'
+              : 'opacity-0 invisible left-1/2'
+          }`}
+          onClick={() => setMobileOpen(false)}
+        ></div>
       </header>
       {/* Sidebar */}
       <div
@@ -506,10 +515,9 @@ const Navbar11 = () => {
       {/* Overlay */}
       <div
         onClick={() => setIsOpen(false)}
-        className={`fixed inset-0 z-50 bg-black/50 backdrop-blur-sm transition-all duration-500 ${
+        className={`fixed inset-0 z-50 bg-black/50 backdrop-blur-sm transition-all duration-500 cursor-[url("/images/cross.png"),_pointer] ${
           isOpen ? 'opacity-100 visible left-0' : 'opacity-0 invisible left-1/2'
         }`}
-        style={{ cursor: 'url(/images/cross.png), pointer' }}
       ></div>
       {/* Search */}
       <div
@@ -650,7 +658,7 @@ const Navbar11 = () => {
       {isPopupVisible && <LogInPopup setIsPopupVisible={setIsPopupVisible} />}
       {/* Register Form */}
       {isVisible && <RegisterForm setIsVisible={setIsVisible} />}{' '}
-    </>
+    </div>
   );
 };
 
