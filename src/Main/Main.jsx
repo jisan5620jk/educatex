@@ -1,6 +1,5 @@
 import { Outlet } from 'react-router-dom';
 import Footer from '../Shared/Footer/Footer';
-import Navbar from '../Shared/Navbar/Navbar';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import HelmetChanger from '../Shared/Helmet/Helmet';
@@ -10,6 +9,7 @@ import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Navbar11 from '../Shared/Navbar/Navbar11';
 
 const Main = () => {
   useEffect(() => {
@@ -30,7 +30,7 @@ const Main = () => {
   return (
     <>
       <HelmetChanger title={'Online School'} />
-      <Navbar />
+      <Navbar11 />
       <BackToTop />
       <div>
         <Outlet />

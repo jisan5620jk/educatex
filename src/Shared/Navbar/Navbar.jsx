@@ -46,93 +46,93 @@ const Navbar = () => {
 
   //Menu Sidebar
 
- const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-    const menuBarRef = useRef(null);
-    const offcanvasRef = useRef(null);
-    const bodyOverlayRef = useRef(null);
-    const closeBtnRef = useRef(null);
+  const menuBarRef = useRef(null);
+  const offcanvasRef = useRef(null);
+  const bodyOverlayRef = useRef(null);
+  const closeBtnRef = useRef(null);
 
-    const headerIcon = `
+  const headerIcon = `
     <span class="header-icon">
       <svg fill="currentColor" viewBox="0 0 320 512" height="15px" width="15px" xmlns="http://www.w3.org/2000/svg">
         <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
       </svg>
     </span>`;
 
-    // Sticky Header
-    useEffect(() => {
-      const isSticky = () => {
-        const header = document.querySelector('.header-sticky');
-        window.scrollY >= 250
-          ? header.classList.add('is-sticky')
-          : header.classList.remove('is-sticky');
-      };
-      window.addEventListener('scroll', isSticky);
-      return () => window.removeEventListener('scroll', isSticky);
-    }, []);
+  // Sticky Header
+  useEffect(() => {
+    const isSticky = () => {
+      const header = document.querySelector('.header-sticky');
+      window.scrollY >= 250
+        ? header.classList.add('is-sticky')
+        : header.classList.remove('is-sticky');
+    };
+    window.addEventListener('scroll', isSticky);
+    return () => window.removeEventListener('scroll', isSticky);
+  }, []);
 
-    // Mobile Offcanvas Menu
-    useEffect(() => {
-      const menuBar = menuBarRef.current;
-      const offcanvas = offcanvasRef.current;
-      const bodyOverlay = bodyOverlayRef.current;
-      const closeBtn = closeBtnRef.current;
+  // Mobile Offcanvas Menu
+  useEffect(() => {
+    const menuBar = menuBarRef.current;
+    const offcanvas = offcanvasRef.current;
+    const bodyOverlay = bodyOverlayRef.current;
+    const closeBtn = closeBtnRef.current;
 
-      const openMenu = () => {
-        offcanvas.classList.add('opened');
-        bodyOverlay.classList.add('apply');
-      };
-      const closeMenu = () => {
-        offcanvas.classList.remove('opened');
-        bodyOverlay.classList.remove('apply');
-      };
+    const openMenu = () => {
+      offcanvas.classList.add('opened');
+      bodyOverlay.classList.add('apply');
+    };
+    const closeMenu = () => {
+      offcanvas.classList.remove('opened');
+      bodyOverlay.classList.remove('apply');
+    };
 
+    if (menuBar && offcanvas && bodyOverlay && closeBtn) {
+      menuBar.addEventListener('click', openMenu);
+      closeBtn.addEventListener('click', closeMenu);
+      bodyOverlay.addEventListener('click', closeMenu);
+    }
+
+    return () => {
       if (menuBar && offcanvas && bodyOverlay && closeBtn) {
-        menuBar.addEventListener('click', openMenu);
-        closeBtn.addEventListener('click', closeMenu);
-        bodyOverlay.addEventListener('click', closeMenu);
+        menuBar.removeEventListener('click', openMenu);
+        closeBtn.removeEventListener('click', closeMenu);
+        bodyOverlay.removeEventListener('click', closeMenu);
       }
+    };
+  }, []);
 
-      return () => {
-        if (menuBar && offcanvas && bodyOverlay && closeBtn) {
-          menuBar.removeEventListener('click', openMenu);
-          closeBtn.removeEventListener('click', closeMenu);
-          bodyOverlay.removeEventListener('click', closeMenu);
-        }
-      };
-    }, []);
+  // Clone Desktop Menu to Mobile & Add Submenu Buttons
+  useEffect(() => {
+    const mainMenuContent = document.querySelector('.main-menu-content');
+    const mainMenuMobile = document.querySelector('.main-menu-mobile');
 
-    // Clone Desktop Menu to Mobile & Add Submenu Buttons
-    useEffect(() => {
-      const mainMenuContent = document.querySelector('.main-menu-content');
-      const mainMenuMobile = document.querySelector('.main-menu-mobile');
+    if (mainMenuContent && mainMenuMobile) {
+      mainMenuMobile.innerHTML = mainMenuContent.outerHTML;
 
-      if (mainMenuContent && mainMenuMobile) {
-        mainMenuMobile.innerHTML = mainMenuContent.outerHTML;
+      const dropdownLinks =
+        mainMenuMobile.querySelectorAll('.has-dropdown > a');
+      dropdownLinks.forEach((link) => {
+        const btn = document.createElement('button');
+        btn.className = 'dropdown-toggle-btn';
+        btn.innerHTML = headerIcon;
+        link.appendChild(btn);
 
-        const dropdownLinks =
-          mainMenuMobile.querySelectorAll('.has-dropdown > a');
-        dropdownLinks.forEach((link) => {
-          const btn = document.createElement('button');
-          btn.className = 'dropdown-toggle-btn';
-          btn.innerHTML = headerIcon;
-          link.appendChild(btn);
-
-          btn.addEventListener('click', (e) => {
-            e.preventDefault();
-            const parent = link.parentElement;
-            const submenu = parent.querySelector('.submenu');
-            parent.classList.toggle('expanded');
-            if (submenu.style.maxHeight) {
-              submenu.style.maxHeight = null;
-            } else {
-              submenu.style.maxHeight = submenu.scrollHeight + 'px';
-            }
-          });
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const parent = link.parentElement;
+          const submenu = parent.querySelector('.submenu');
+          parent.classList.toggle('expanded');
+          if (submenu.style.maxHeight) {
+            submenu.style.maxHeight = null;
+          } else {
+            submenu.style.maxHeight = submenu.scrollHeight + 'px';
+          }
         });
-      }
-    }, [headerIcon]);
+      });
+    }
+  }, [headerIcon]);
 
   //Menu Search
   const [isSearchActive, setIsSearchActive] = useState(false);
@@ -377,6 +377,7 @@ const Navbar = () => {
                   to={'/'}
                   title='EducateX'
                 >
+                  origin-top
                   <img
                     src={Logo}
                     draggable='false'
@@ -583,10 +584,6 @@ const Navbar = () => {
                 </nav>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
             <div>
               <div className='header-right-box flex items-center gap-2 sm:gap-7 lg:gap-5 xl:gap-[34px]'>
                 <div className='flex items-center gap-2 sm:gap-4 lg:gap-2 xl:gap-4'>
@@ -643,6 +640,10 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
       {/* Sidebar */}
       <div
         className={`fixed top-0 right-0 z-[99] h-full w-full max-w-[400px] bg-[#041424] p-9 overflow-y-auto shadow-[0_20px_50px_0_#04142466] transition-all duration-500 ${
@@ -780,7 +781,6 @@ const Navbar = () => {
         }`}
         style={{ cursor: 'url(/images/cross.png), pointer' }}
       ></div>
-
 
       {/* Search */}
       <div

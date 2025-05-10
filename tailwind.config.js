@@ -107,6 +107,10 @@ export default {
           '0%': { margin: '-150px 0 0' },
           '100%': { margin: '0' },
         },
+        headerSlideUp: {
+          '0%': { margin: '0' },
+          '100%': { margin: '-150px 0 0' },
+        },
         zoomInOut: {
           '0%': { transform: 'scale(0.5)' },
           '100%': { transform: 'scale(1.2)' },
@@ -227,6 +231,8 @@ export default {
         rotateX: 'rotateX 5s linear infinite',
         headerSlideDown:
           '500ms ease-in-out 0s normal none 1 running headerSlideDown',
+        headerSlideUp:
+          '500ms ease-in-out 0s normal none 1 running headerSlideUp',
         wobble_vertical: 'wobble_vertical 1s forwards ease-in-out',
         ripple_white: 'ripple_white 1s linear infinite',
         shine: 'shine 800ms',
