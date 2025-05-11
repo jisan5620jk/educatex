@@ -20,7 +20,7 @@ import { IoSearch } from 'react-icons/io5';
 import { LiaTimesSolid } from 'react-icons/lia';
 import { IoIosSearch } from 'react-icons/io';
 
-const Navbar = () => {
+const Navbar5 = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeMobileMenu, setActiveMobileMenu] = useState(null);
@@ -199,10 +199,10 @@ const Navbar = () => {
           </div>
         </div>
         <div className='py-[6px] flex gap-5 items-center'>
-          <h4 className='font-Outfit text-xl text-PrimaryColor-0 pr-[88px] relative z-10 before:absolute before:right-0 before:top-3.5 before:w-[70px] before:h-[2px] before:bg-PrimaryColor-0'>
+          <h4 className='font-Outfit text-xl text-PrimaryColor-0 mr-12 md:pr-[88px] relative z-10 before:absolute before:right-0 before:top-3.5 before:w-10 md:before:w-[70px] before:h-[2px] before:bg-PrimaryColor-0'>
             Follow Us
           </h4>
-          <ul className='flex items-center gap-5'>
+          <ul className='flex items-center gap-3 md:gap-5'>
             <li>
               <button className='size-[38px] rounded-full text-sm bg-transparent flex items-center justify-center text-white border-2 border-white border-opacity-50 overflow-hidden transition-all duration-500 hover:text-PrimaryColor-0 hover:border-PrimaryColor-0 hover:border-opacity-100 relative z-10'>
                 <FaFacebookF />
@@ -222,17 +222,17 @@ const Navbar = () => {
         </div>
       </div>
       {/* Header Main */}
-      <header className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] transition-all duration-300 bg-SecondaryColor-0'>
+      <header className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] transition-all duration-300 bg-SecondaryColor-0 relative z-50'>
         <div
-          className={`px-2 sm:px-3 md:px-5 lg:px-10 xl:px-14 2xl:px-20 3xl:px-[120px] py-4 lg:py-0 rounded-t-[30px] bg-white overflow-hidden ${
+          className={`px-2 sm:px-3 md:px-5 lg:px-10 xl:px-14 2xl:px-20 3xl:px-[120px] py-4 lg:py-0 rounded-t-[30px] bg-white ${
             isSticky
-              ? '!fixed top-0 shadow-shadows bg-SecondaryColor-0 lg:bg-white animate-headerSlideDown border-transparent'
+              ? '!fixed top-0 left-0 rounded-t-none w-full shadow-shadows bg-SecondaryColor-0 lg:bg-white animate-headerSlideDown border-transparent'
               : ''
           }`}
         >
           <div className='flex items-center justify-between gap-5'>
             {/* Logo */}
-            <div className='header-logo'>
+            <div className=''>
               <Link
                 to='/'
                 title='EducateX'
@@ -259,7 +259,7 @@ const Navbar = () => {
                         className={`inline-flex items-center gap-1.5 py-1 px-0 mx-1 my-[35px] font-OpenSans font-medium uppercase rounded-[5px] transition-all duration-500 relative z-10 overflow-hidden before:absolute before:top-0 before:left-auto before:right-0 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:-z-10 group-hover:before:w-full group-hover:right-auto group-hover:before:left-0 group-hover:text-white group-hover:px-3 ${
                           isParentActive(item.links)
                             ? 'px-3 before:w-full text-white'
-                            : 'text-HeadingColor-0 hover:text-primary'
+                            : 'text-HeadingColor-0'
                         }`}
                       >
                         {item.label}
@@ -308,9 +308,9 @@ const Navbar = () => {
                   <div className='hidden lg:block'>
                     <Link
                       to={'/contact'}
-                      className='header-btn'
+                      className='header-btn !py-[15px]'
                     >
-                      Free Trial
+                      Apply Now
                       <HiArrowNarrowRight size={18} />
                     </Link>
                   </div>
@@ -585,4 +585,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar5;

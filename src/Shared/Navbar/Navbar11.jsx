@@ -237,7 +237,7 @@ const Navbar11 = () => {
         <div className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] py-4 lg:py-0'>
           <div className='flex items-center justify-between gap-5'>
             {/* Logo */}
-            <div className='header-logo'>
+            <div className=''>
               <Link
                 to='/'
                 title='EducateX'

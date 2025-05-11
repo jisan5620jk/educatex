@@ -13,7 +13,7 @@ const ServiceCard = ({
   serviceShape2,
 }) => {
   return (
-    <div className='group p-6 border border-white border-opacity-10 rounded-[20px]'>
+    <div className='group p-3 sm:p-6 border border-white border-opacity-10 rounded-[20px]'>
       <div className='bg-BodyBg2-0 rounded-2xl px-4 sm:px-[34px] md:px-4 lg:px-7 2xl:px-10 pt-4 sm:pt-7 md:pt-4 lg:pt-[60px] pb-4 sm:pb-8 md:pb-4 lg:pb-14 relative z-10 overflow-hidden'>
         <span className='absolute left-[12.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
         <span className='absolute left-[37.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
@@ -26,10 +26,10 @@ const ServiceCard = ({
             className='group-hover:animate-wobble_vertical transition-all duration-500 group-hover:brightness-0 group-hover:invert'
           />
         </div>
-        <h5 className='font-Outfit font-semibold text-xl sm:text-2xl xl:text-[22px] 2xl:text-[26px] pb-[10px] pt-8 mt-10 mb-1 text-HeadingColor-0 transition-all duration-500 group-hover:text-white border-t border-SecondaryColor-0 border-opacity-10 relative before:absolute before:-left-14 before:-top-[.5px] before:w-20 before:h-[.5px] before:z-20 before:bg-PrimaryColor2-0 before:transition-all before:duration-500 before:animate-dance5 group-hover:before:bg-white overflow-x-hidden overflow-y-visible'>
+        <h5 className='font-Outfit font-semibold text-xl sm:text-2xl xl:text-[22px] 2xl:text-[26px] pb-[10px] pt-5 sm:pt-8 mt-6 sm:mt-10 mb-1 text-HeadingColor-0 transition-all duration-500 group-hover:text-white border-t border-SecondaryColor-0 border-opacity-10 relative before:absolute before:-left-14 before:-top-[.5px] before:w-20 before:h-[.5px] before:z-20 before:bg-PrimaryColor2-0 before:transition-all before:duration-500 before:animate-dance5 group-hover:before:bg-white overflow-x-hidden overflow-y-visible'>
           {serviceTitle}
         </h5>
-        <p className='font-OpenSans text-TextColor2-0 mb-10 transition-all duration-500 group-hover:text-white'>
+        <p className='font-OpenSans text-TextColor2-0 mb-6 sm:mb-10 transition-all duration-500 group-hover:text-white'>
           {serviceDesc}
         </p>
         <div className='inline-block overflow-hidden'>
@@ -48,7 +48,7 @@ const ServiceCard = ({
             alt='Shape'
           />
         </div>
-        <div className='absolute -bottom-[37%] -right-[35%] transition-all duration-500 group-hover:opacity-20'>
+        <div className='absolute -z-10 -bottom-[37%] -right-[35%] transition-all duration-500 group-hover:opacity-20'>
           <img
             src={serviceShape2}
             draggable={false}

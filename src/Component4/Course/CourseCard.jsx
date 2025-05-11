@@ -25,7 +25,7 @@ const CourseCard = ({
           draggable={false}
         />
       </div>
-      <div className='bg-BodyBg2-0 -ml-[76px] rounded-[20px] pl-10 pr-8 flex items-center w-full relative z-10 overflow-hidden'>
+      <div className='bg-BodyBg2-0 -mt-8 md:mt-0 md:-ml-[76px] rounded-[20px] pt-5 sm:pt-8 md:pt-0 px-4 sm:pl-10 sm:pr-8 flex items-center w-full relative z-10 overflow-hidden'>
         <span className='absolute left-[12.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
         <span className='absolute left-[37.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
         <span className='absolute left-[62.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-1/2'></span>
@@ -58,10 +58,10 @@ const CourseCard = ({
             </span>
           </div>
 
-          <p className='font-OpenSans text-TextColor-0 transition-all duration-500 group-hover:text-white mb-6'>
+          <p className='font-OpenSans text-TextColor-0 transition-all duration-500 group-hover:text-white mb-3 sm:mb-6'>
             {description}
           </p>
-          <div className='flex items-center justify-between'>
+          <div className='flex items-center justify-between pb-4 md:pb-0'>
             <div className='inline-block overflow-hidden'>
               <Link
                 to={readMoreUrl}

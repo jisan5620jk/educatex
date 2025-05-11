@@ -233,7 +233,7 @@ const Navbar = () => {
         <div className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] py-4 lg:py-0'>
           <div className='flex items-center justify-between gap-5'>
             {/* Logo */}
-            <div className='header-logo'>
+            <div className=''>
               <Link
                 to='/'
                 title='EducateX'
@@ -260,7 +260,7 @@ const Navbar = () => {
                         className={`inline-flex items-center gap-1.5 py-1 px-0 mx-1 my-[35px] font-OpenSans font-medium uppercase rounded-[5px] transition-all duration-500 relative z-10 overflow-hidden before:absolute before:top-0 before:left-auto before:right-0 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:-z-10 group-hover:before:w-full group-hover:right-auto group-hover:before:left-0 group-hover:text-white group-hover:px-3 ${
                           isParentActive(item.links)
                             ? 'px-3 before:w-full text-white'
-                            : 'text-HeadingColor-0 hover:text-primary'
+                            : 'text-HeadingColor-0'
                         }`}
                       >
                         {item.label}

@@ -26,18 +26,18 @@ const About = () => {
               src={shape}
               draggable={false}
               alt='Shape'
-              className='absolute -z-10 top-6 lg:left-10 animate-movebtn'
+              className='absolute -z-10 top-6 lg:left-10 animate-movebtn hidden md:block'
             />
-            <div className='absolute top-14 left-[28%]'>
+            <div className='absolute top-6 md:top-14 left-[28%]'>
               <button
-                className='size-[68px] bg-white/20 rounded-full text-white backdrop-filter backdrop-blur-md text-3xl border border-white border-opacity-40 outline-[1.8px] outline outline-white/40 outline-offset-[15px] flex items-center justify-center '
+                className='size-10 sm:size-[68px] bg-white/20 rounded-full text-white backdrop-filter backdrop-blur-md text-2xl md:text-3xl border border-white border-opacity-40 outline-[1.8px] outline outline-white/40 outline-offset-8 md:outline-offset-[15px] flex items-center justify-center '
                 onClick={() => setToggler(!toggler)}
               >
                 <IoPlaySharp />
               </button>
             </div>
-            <div className='hidden absolute bottom-24 lg:bottom-10 xl:bottom-[40px] right-[88px] bg-white/20 backdrop-filter backdrop-blur-md border-2 border-white rounded-[20px] px-7 py-7 md:inline-flex gap-5 items-start animate-wiggle'>
-              <div>
+            <div className='absolute bottom-0 sm:bottom-24 lg:bottom-10 xl:bottom-[40px] right-0 sm:right-[88px] bg-white/20 backdrop-filter backdrop-blur-md border-2 border-white rounded-[20px] px-3 sm:px-7 pb-2 sm:py-7 inline-flex gap-5 items-start animate-wiggle'>
+              <div className='hidden sm:block'>
                 <img
                   src={user}
                   draggable={false}
@@ -45,7 +45,7 @@ const About = () => {
                 />
               </div>
               <div>
-                <div className='!font-Outfit font-semibold text-[26px] text-HeadingColor-0 flex gap-1 items-center'>
+                <div className='!font-Outfit font-semibold text-2xl sm:text-[26px] text-HeadingColor-0 flex gap-1 items-center'>
                   <OnScrollCounter
                     start={0}
                     end={130}
@@ -73,7 +73,7 @@ const About = () => {
               backgroud courses pro designed to and empower learners courses
               combine teaching tools.
             </p>
-            <ul className='w-full max-w-[430px] grid gap-x-9 gap-y-6 grid-cols-2'>
+            <ul className='w-full max-w-[430px] grid gap-x-9 gap-y-6 grid-cols-1 sm:grid-cols-2'>
               <li>
                 <h5 className='font-Outfit font-medium text-SecondaryColor-0 uppercase pl-5 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor2-0 before:rounded-full before:size-[9px]'>
                   Create Your Profile
@@ -111,7 +111,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className='absolute bottom-0 right-44 z-10'>
+      <div className='absolute bottom-0 right-44 z-10 hidden md:block'>
         <img
           src={shape3}
           draggable={false}
@@ -119,7 +119,7 @@ const About = () => {
           className='animate-dance'
         />
       </div>
-      <div className='absolute top-24 right-28 z-10'>
+      <div className='absolute top-24 right-28 z-10 hidden md:block'>
         <img
           src={shape4}
           draggable={false}

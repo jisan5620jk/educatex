@@ -263,7 +263,7 @@ const Navbar8 = () => {
         <div className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px]'>
           <div className='flex items-center justify-between lg:grid lg:grid-cols-12'>
             <div className='col-span-2'>
-              <div className='header-logo'>
+              <div className=''>
                 <Link to={'/'}>
                   <img
                     src={Logo3}

@@ -331,7 +331,7 @@ const Navbar6 = () => {
         <div className='px-4 sm:px-6 md:px-10 lg:px-4 xl:px-10 2xl:px-14 3xl:px-[90px]'>
           <div className='flex items-center justify-between lg:grid lg:grid-cols-12'>
             <div className='col-span-2'>
-              <div className='header-logo lg:hidden'>
+              <div className=' lg:hidden'>
                 <Link to={'/'}>
                   <img
                     src={Logo3}
@@ -339,7 +339,7 @@ const Navbar6 = () => {
                   />
                 </Link>
               </div>
-              <div className='header-logo hidden lg:block'>
+              <div className=' hidden lg:block'>
                 <Link to={'/'}>
                   <img
                     src={Logo}
