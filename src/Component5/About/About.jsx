@@ -8,10 +8,11 @@ import { Link } from 'react-router-dom';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import OnScrollCounter from '../../Shared/Counter/OnScrollCounter';
 import { FaCircle } from 'react-icons/fa';
+import Category from '../Category/Category';
 
 const About = () => {
   return (
-    <section className='bg-PrimaryColor-0 py-16 md:py-20 lg:pt-28 lg:pb-20 xl:py-28 relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-[85%] before:bg-[url("/images/about-bg7.png")] before:bg-no-repeat before:bg-cover before:bg-center'>
+    <section className='bg-PrimaryColor-0 pt-16 md:pt-20 lg:pt-28 relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-[80%] before:bg-[url("/images/about-bg7.png")] before:bg-no-repeat before:bg-cover before:bg-center'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-[92px] lg:gap-10 items-center'>
           <div className='col-span-1 lg:col-span-7 relative z-10 inline-block'>
@@ -97,7 +98,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className='absolute bottom-20 left-24 z-10 hidden lg:block'>
+      <div className='absolute bottom-[51%] left-24 z-10 hidden lg:block'>
         <img
           src={shape3}
           draggable={false}
@@ -105,6 +106,7 @@ const About = () => {
           className='animate-dance2'
         />
       </div>
+      <Category />
     </section>
   );
 };
