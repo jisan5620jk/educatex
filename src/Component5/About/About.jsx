@@ -1,163 +1,110 @@
-import aboutThumb from '/images/about-thumb.webp';
-import titleShape from '/images/sub-title-shape.png';
-import itemIcon from '/images/tam1.png';
-import itemIcon2 from '/images/terget-1.png';
-import itemIcon3 from '/images/time.png';
-import itemIcon4 from '/images/message.png';
-import arrowShape from '/images/arrow-shape.png';
-import shape from '/images/about-shape1.webp';
-import shape2 from '/images/about-shape2.webp';
-import shape3 from '/images/about-shape3.webp';
-import dotShape from '/images/testi-shape.png';
+import aboutThumb from '/images/about-thumb71.png';
+import aboutThumb2 from '/images/about-thumb72.png';
+import shape from '/images/about-shape72.png';
+import user from '/images/autor-ins8.png';
+import shape3 from '/images/about-shape71.png';
+import icon from '/images/about-icon7.png';
 import { Link } from 'react-router-dom';
+import { HiArrowNarrowRight } from 'react-icons/hi';
+import OnScrollCounter from '../../Shared/Counter/OnScrollCounter';
+import { FaCircle } from 'react-icons/fa';
 
 const About = () => {
   return (
-    <section className='pt-16 md:pt-20 lg:pt-28 pb-16 md:pb-20 lg:pb-28 bg-white relative z-10'>
+    <section className='bg-PrimaryColor-0 py-16 md:py-20 lg:pt-28 lg:pb-20 xl:py-28 relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-[85%] before:bg-[url("/images/about-bg7.png")] before:bg-no-repeat before:bg-cover before:bg-center'>
       <div className='Container'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'>
-          <div className='relative z-10 xl:right-[50px]'>
-            <img
-              src={aboutThumb}
-              draggable='false'
-              className='w-full md:w-[inherit] lg:w-full xl:w-[inherit]'
-            />
+        <div className='grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-[92px] lg:gap-10 items-center'>
+          <div className='col-span-1 lg:col-span-7 relative z-10 inline-block'>
+            <div className='flex gap-6 h-[600px] w-auto'>
+              <img
+                src={aboutThumb}
+                draggable='false'
+                className='w-full 2xl:w-[inherit] max-w-[inherit] mb-auto'
+              />
+              <img
+                src={aboutThumb2}
+                draggable='false'
+                className='w-full 2xl:w-[inherit] max-w-[inherit] mt-auto'
+              />
+            </div>
             <img
               src={shape}
-              draggable='false'
+              draggable={false}
               alt='Shape'
-              className='absolute bottom-[127px] left-[84px] animate-wiggle hidden sm:block lg:hidden xl:block'
+              className='absolute -z-10 bottom-2 lg:left-16 animate-wiggle hidden md:block'
             />
-            <img
-              src={shape2}
-              draggable='false'
-              alt='Shape'
-              className='absolute bottom-0 left-20 animate-dance2 hidden sm:block'
-            />
-            <img
-              src={shape3}
-              draggable='false'
-              alt='Shape'
-              className='absolute bottom-0 right-0 animate-dance3 hidden sm:block'
-            />
-          </div>
-          <div className='relative'>
-            <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
-              <img
-                src={titleShape}
-                draggable={false}
-                alt='Shape'
-              />{' '}
-              About Us
-            </h5>
-            <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
-              Innovations Excellence Building
-              <br />
-              Digital Future Together
-            </h1>
-            <p className='font-OpenSans text-TextColor2-0 pb-7 max-w-[580px] w-full'>
-              Competently leverage existing top-line bandwidth vis-a-vis
-              client-centric supply chains. Enthusiastically maximize cost
-              effective technologies
-            </p>
-            <div className='mb-11'>
-              <ul className='grid items-center grid-cols-1 sm:grid-cols-2 gap-y-8'>
-                <li className='flex items-center gap-4'>
-                  <div>
-                    <img
-                      src={itemIcon}
-                      draggable={false}
-                      alt='Icon'
-                    />
-                  </div>
-                  <h5 className='flex-1 font-Outfit font-semibold text-xl md:text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] leading-[28px] text-HeadingColor-0'>
-                    Real time Performance Report send
-                  </h5>
-                </li>
-                <li className='flex items-center gap-4'>
-                  <div>
-                    <img
-                      src={itemIcon2}
-                      draggable={false}
-                      alt='Icon2'
-                    />
-                  </div>
-                  <h5 className='flex-1 font-Outfit font-semibold text-xl md:text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] leading-[28px] text-HeadingColor-0'>
-                    User Friendly SEO Dashboard
-                  </h5>
-                </li>
-                <li className='flex items-center gap-4'>
-                  <div>
-                    <img
-                      src={itemIcon3}
-                      draggable={false}
-                      alt='Icon3'
-                    />
-                  </div>
-                  <h5 className='flex-1 font-Outfit font-semibold text-xl md:text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] leading-[28px] text-HeadingColor-0'>
-                    Local SEO & Business Integrations
-                  </h5>
-                </li>
-                <li className='flex items-center gap-4'>
-                  <div>
-                    <img
-                      src={itemIcon4}
-                      draggable={false}
-                      alt='Icon4'
-                    />
-                  </div>
-                  <h5 className='flex-1 font-Outfit font-semibold text-xl md:text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] leading-[28px] text-HeadingColor-0'>
-                    Social Media Integration and Sharing
-                  </h5>
-                </li>
-              </ul>
-            </div>
-            <div className='flex items-center gap-16'>
-              <Link
-                to={'/about3'}
-                className='inline-block'
-              >
-                <button className='primary-btn'>
-                  {`More About`}
-                  <span className='icon-style'>
-                    <svg
-                      className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
-                      xmlns='http://www.w3.org/2000/svg'
-                      stroke='CurrentColor'
-                      width='14.2'
-                      height='14.2'
-                      viewBox='0 0 14.2 14.2'
-                    >
-                      <g>
-                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                      </g>
-                      <g>
-                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                      </g>
-                    </svg>
-                  </span>
-                </button>
-              </Link>
+            <div className='hidden absolute top-5 right-24 bg-BodyBg3-0 border-2 border-white rounded-se-[30px] rounded-bl-[30px] px-6 py-5 md:inline-flex gap-4 items-start'>
               <div>
                 <img
-                  src={arrowShape}
+                  src={user}
                   draggable={false}
-                  alt='Shape'
-                  className='animate-dance3 hidden sm:block'
+                  alt='User Image'
                 />
               </div>
+              <div>
+                <div className='!font-Outfit font-semibold text-[26px] text-HeadingColor-0 flex gap-1 items-center'>
+                  <OnScrollCounter
+                    start={0}
+                    end={130}
+                    duration={3000}
+                  />
+                  <span>+</span>
+                </div>
+                <h5 className='font-OpenSans text-HeadingColor-0 -mt-1'>
+                  Expert Instructor
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div className='col-span-1 lg:col-span-5 relative'>
+            <h5 className='font-OpenSans bg-white bg-opacity-20 pl-4 pr-5 py-[7px] rounded-r-full border border-PrimaryColor-0 border-opacity-20 text-HeadingColor-0 text-sm inline-flex items-center gap-2 uppercase'>
+              <span className='text-PrimaryColor2-0'>
+                <FaCircle size={10} />
+              </span>
+              about our educate
+            </h5>
+            <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[45px] 2xl:leading-[55px] text-HeadingColor-0 mt-[18px] mb-4'>
+              Tools and Techniques for
+              <br />
+              Online <span className='text-PrimaryColor-0'>Teaching</span>
+            </h1>
+            <p className='font-OpenSans text-TextColor-0 text-[17px] w-full max-w-[500px] mb-9'>
+              Experience future of learning our education-focused to main
+              backgroud courses pro designed to and empower learners courses
+              combine teaching tools.
+            </p>
+            <h5 className='font-Outfit font-medium text-SecondaryColor-0 text-xl flex items-end gap-5'>
+              <img
+                src={icon}
+                draggable={false}
+                alt='Icon'
+              />
+              Flexible Shedule Classes
+            </h5>
+            <p className='font-OpenSans text-TextColor-0 text-[17px] w-full max-w-[500px] mt-8 mb-12'>
+              Backgroud courses pro designed to and empower learners courses
+              combine teaching tools.
+            </p>
+            <div>
+              <Link
+                to={'/about'}
+                className='primary-btn2'
+              >
+                Start Trial
+                <HiArrowNarrowRight size={20} />
+              </Link>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src={dotShape}
-        draggable={false}
-        alt='Shape'
-        className='absolute bottom-0 right-0 hidden 2xl:block'
-      />
+      <div className='absolute bottom-20 left-24 z-10 hidden lg:block'>
+        <img
+          src={shape3}
+          draggable={false}
+          alt='Shape'
+          className='animate-dance2'
+        />
+      </div>
     </section>
   );
 };

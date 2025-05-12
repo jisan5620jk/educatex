@@ -19,7 +19,7 @@ export default {
         ReviewText: ['#ffb108'],
         BodyBg: ['#f0fbf7'],
         BodyBg2: ['#e5f6f0'],
-        BodyBg3: ['#152433'],
+        BodyBg3: ['#f2eeeb'],
         BodyBg4: ['#233342'],
         BodyBg5: ['#f7fcff'],
         BodyBg6: ['#ecf5fc'],
