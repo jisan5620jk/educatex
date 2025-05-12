@@ -53,12 +53,12 @@ const Faq = () => {
               />
             </div>
           </div>
-          <div className='max-w-[602px] w-full ml-auto'>
+          <div className='max-w-[602px] w-full lg:ml-auto'>
             <p className='font-OpenSans text-TextColor-0 text-[17px] w-full max-w-[575px] mt-7 lg:mt-0 mb-9'>
               Memorizing the Quran (Hifz) brings immense spiritual rewards,
               strengs memory, and increases closeness to
             </p>
-            <div className=' mt-10 space-y-[30px]'>
+            <div className='mt-10 space-y-[30px]'>
               {faqs.map((faq, index) => {
                 const isOpen = openIndex === index;
                 const ref = (contentRefs.current[index] ||= React.createRef());
@@ -112,7 +112,7 @@ const Faq = () => {
           </div>
         </div>
       </div>
-      <div className='absolute top-32 right-[38%] hidden md:block'>
+      <div className='absolute top-32 right-[38%] hidden lg:block'>
         <img
           src={shape}
           draggable={false}
@@ -120,7 +120,7 @@ const Faq = () => {
           className='animate-dance'
         />
       </div>
-      <div className='absolute bottom-28 left-28 hidden md:block'>
+      <div className='absolute bottom-28 left-28 hidden lg:block'>
         <img
           src={shape2}
           draggable={false}
@@ -128,7 +128,7 @@ const Faq = () => {
           className='animate-flip'
         />
       </div>
-      <div className='absolute top-28 right-24 hidden md:block'>
+      <div className='absolute top-28 right-24 hidden lg:block'>
         <img
           src={shape3}
           draggable={false}
@@ -136,7 +136,7 @@ const Faq = () => {
           className='animate-flip'
         />
       </div>
-      <div className='absolute -z-10 -top-[32%] -right-6 hidden md:block'>
+      <div className='absolute -z-10 -top-[32%] -right-6 hidden lg:block'>
         <img
           src={shape4}
           draggable={false}

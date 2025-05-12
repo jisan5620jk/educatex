@@ -21,7 +21,7 @@ const Marquee = () => {
             </span>
             <span
               key={`star-${index}`}
-              className='inline-block w-5 md:w-[35px] pt-1 md:pb-1'
+              className='inline-block w-5 md:w-[35px] pt-1 md:pt-0 md:pb-1'
             >
               <img
                 src={star}
@@ -44,7 +44,7 @@ const Marquee = () => {
             </span>
             <span
               key={`star-${index}`}
-              className='inline-block w-5 md:w-[35px] pt-1 md:pb-1'
+              className='inline-block w-5 md:w-[35px] pt-1 md:pt-0 md:pb-1'
             >
               <img
                 src={star}

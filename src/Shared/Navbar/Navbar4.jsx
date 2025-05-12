@@ -169,7 +169,7 @@ const Navbar4 = () => {
   return (
     <div data-lenis-prevent>
       {/* Header Top */}
-      <div className='bg-SecondaryColor-0 px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] flex justify-between items-center relative z-10 before:absolute before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 md:before:w-[28%] before:h-[.5px] before:bg-gradient-to-r before:to-SecondaryColor-0 before:via-PrimaryColor-0 before:from-SecondaryColor-0'>
+      <div className='bg-SecondaryColor-0 px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] flex justify-between items-center relative z-10 before:absolute before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 lg:before:w-[28%] before:h-[.5px] before:bg-gradient-to-r before:to-SecondaryColor-0 before:via-PrimaryColor-0 before:from-SecondaryColor-0'>
         <div className='sm:flex items-center gap-10 hidden'>
           <div className='flex items-center gap-3'>
             <div className='text-PrimaryColor-0'>
@@ -189,17 +189,17 @@ const Navbar4 = () => {
               <FaRegEnvelope size={'20'} />
             </div>
             <a
-              href='mailto:adminsupport@gmail.com'
-              title='adminsupport@gmail.com'
+              href='mailto:support@gmail.com'
+              title='support@gmail.com'
             >
               <button className='font-Outfit text-white text-opacity-70 transition-all duration-500 hover:text-PrimaryColor-0 hover:text-opacity-100'>
-                adminsupport@gmail.com
+                support@gmail.com
               </button>
             </a>
           </div>
         </div>
         <div className='py-[6px] flex gap-5 items-center'>
-          <h4 className='font-Outfit text-xl text-PrimaryColor-0 pr-12 md:pr-[88px] relative z-10 before:absolute before:right-0 before:top-3.5 before:w-10 md:before:w-[70px] before:h-[2px] before:bg-PrimaryColor-0'>
+          <h4 className='sm:hidden md:block font-Outfit text-xl text-PrimaryColor-0 pr-12 lg:pr-[88px] relative z-10 before:absolute before:right-0 before:top-3.5 before:w-10 lg:before:w-[70px] before:h-[2px] before:bg-PrimaryColor-0'>
             Follow Us
           </h4>
           <ul className='flex items-center gap-2 sm:gap-3 md:gap-5'>
@@ -289,7 +289,7 @@ const Navbar4 = () => {
               </Link>
             </div>
             <div>
-              <div className='flex items-center gap-2 sm:gap-7 lg:gap-5'>
+              <div className='flex items-center gap-2 sm:gap-4 md:gap-5 lg:gap-5'>
                 <div className='flex items-center'>
                   <div
                     className='size-8 md:size-[46px] lg:size-9 xl:size-[46px] bg-transparent rounded-full border border-white border-opacity-20 text-white transition-all duration-500 flex items-center justify-center cursor-pointer relative z-10 before:absolute before:left-0 before:rounded-full before:top-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-10 hover:before:scale-100 hover:text-white hover:border-PrimaryColor-0'

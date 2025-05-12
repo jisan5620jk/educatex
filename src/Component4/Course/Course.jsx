@@ -87,7 +87,7 @@ const Course = () => {
             <span className='text-PrimaryColor-0'>Courses</span>
           </h1>
         </div>
-        <div className='grid gap-6 md:grid-cols-2 xl:grid-cols-2 mt-8 md:mt-14'>
+        <div className='grid gap-6 md:grid-cols-1 lg:grid-cols-2 mt-8 md:mt-14'>
           {quranCourses.map((course) => (
             <CourseCard
               key={course.id}

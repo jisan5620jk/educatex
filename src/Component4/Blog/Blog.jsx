@@ -174,7 +174,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <div className='absolute top-36 right-[42%] hidden md:block'>
+      <div className='absolute top-36 right-[42%] hidden lg:block'>
         <img
           src={shape}
           draggable={false}
@@ -182,7 +182,7 @@ const Blog = () => {
           className='animate-dance2'
         />
       </div>
-      <div className='absolute bottom-28 left-2 hidden md:block8'>
+      <div className='absolute bottom-28 left-2 hidden lg:block'>
         <img
           src={shape2}
           draggable={false}
@@ -190,7 +190,7 @@ const Blog = () => {
           className='animate-flip'
         />
       </div>
-      <div className='absolute -z-10 -top-[25%] -right-6 hidden md:block'>
+      <div className='absolute -z-10 -top-[25%] -right-6 hidden lg:block'>
         <img
           src={shape3}
           draggable={false}

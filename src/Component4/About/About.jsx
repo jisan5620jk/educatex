@@ -111,7 +111,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className='absolute bottom-0 right-44 z-10 hidden md:block'>
+      <div className='absolute bottom-0 right-44 z-10 hidden lg:block'>
         <img
           src={shape3}
           draggable={false}
@@ -119,7 +119,7 @@ const About = () => {
           className='animate-dance'
         />
       </div>
-      <div className='absolute top-24 right-28 z-10 hidden md:block'>
+      <div className='absolute top-24 right-28 z-10 hidden lg:block'>
         <img
           src={shape4}
           draggable={false}

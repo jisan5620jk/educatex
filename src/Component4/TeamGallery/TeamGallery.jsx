@@ -33,16 +33,16 @@ const teamMembers = [
 
 // Define top positions per member ID
 const topPositions = {
-  1: 'top-14',
-  2: 'top-9',
-  3: 'top-8',
-  4: 'top-9',
+  1: 'top-14 md:top-6 lg:top-14',
+  2: 'top-9 md:top-4 lg:top-9',
+  3: 'top-8 md:top-3 lg:top-8',
+  4: 'top-9 md:top-4 lg:top-9',
 };
 
 const TeamGallery = () => {
   return (
     <section className='bg-SecondaryColor-0 py-16 md:py-20 lg:py-28 relative'>
-      <div className='absolute left-1/2 -translate-x-1/2 bottom-14 hidden md:block'>
+      <div className='absolute left-1/2 -translate-x-1/2 bottom-14 hidden lg:block'>
         <img
           src={shape}
           draggable={false}
@@ -50,7 +50,7 @@ const TeamGallery = () => {
           className='animate-flip'
         />
       </div>
-      <div className='absolute right-24 top-24 hidden md:block'>
+      <div className='absolute right-24 top-24 hidden lg:block'>
         <img
           src={shape2}
           draggable={false}
@@ -58,7 +58,7 @@ const TeamGallery = () => {
           className='animate-dance2'
         />
       </div>
-      <div className='absolute left-28 top-28 hidden md:block'>
+      <div className='absolute left-28 top-28 hidden lg:block'>
         <img
           src={shape3}
           draggable={false}
@@ -91,7 +91,7 @@ const TeamGallery = () => {
                 to={member.link}
                 className={`absolute z-10 ${
                   topPositions[member.id]
-                } -right-14 transition-all duration-500 group-hover:right-7 size-[54px] flex justify-center items-center rounded-full border border-white border-opacity-50 bg-white bg-opacity-20 text-2xl text-white text-center`}
+                } -right-14 transition-all duration-500 group-hover:right-7  md:group-hover:right-3  lg:group-hover:right-7 size-[54px] md:size-10 lg:size-[54px] flex justify-center items-center rounded-full border border-white border-opacity-50 bg-white bg-opacity-20 text-2xl text-white text-center`}
               >
                 {member.icon}
               </Link>

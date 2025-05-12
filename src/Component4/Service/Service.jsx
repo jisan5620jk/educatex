@@ -52,13 +52,13 @@ const Service = () => {
   return (
     <section className='relative py-16 md:py-20 lg:py-28  bg-SecondaryColor-0 overflow-hidden'>
       <div className='absolute left-28 top-32'>
-        <img src={shape} draggable={false} alt="Shape" className='animate-dance2 hidden md:block' />
+        <img src={shape} draggable={false} alt="Shape" className='animate-dance2 hidden lg:block' />
       </div>
       <div className='absolute -bottom-60 -left-8'>
-        <img src={shape2} draggable={false} alt="Shape" className='animate-dance hidden md:block' />
+        <img src={shape2} draggable={false} alt="Shape" className='animate-dance hidden lg:block' />
       </div>
       <div className='absolute right-24 bottom-[24%]'>
-        <img src={shape3} draggable={false} alt="Shape" className='animate-flip hidden md:block' />
+        <img src={shape3} draggable={false} alt="Shape" className='animate-flip hidden lg:block' />
       </div>
       <div className='Container'>
         <div className='text-center'>
