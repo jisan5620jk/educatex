@@ -35,7 +35,7 @@ const Faq = () => {
   return (
     <section className='py-16 md:py-20 lg:py-28 bg-[url("/images/faq-bg2.png")] bg-cover bg-center bg-no-repeat relative z-10 overflow-hidden'>
       <div className='Container'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 items-end'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 lg:gap-7 2xl:gap-0 items-end'>
           <div>
             <h5 className='font-OpenSans font-medium text-sm text-SecondaryColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor2-0 before:rounded-full before:size-[9px]'>
               Free Consultation
@@ -72,7 +72,7 @@ const Faq = () => {
                   >
                     <button
                       onClick={() => toggleFAQ(index)}
-                      className={`w-full flex items-center justify-between fotn-Outfit text-xl sm:text-[22px] text-left pl-3 sm:pl-[30px] pr-3.5 py-2.5 rounded-t-xl transition-colors duration-500 ${
+                      className={`w-full flex items-center justify-between fotn-Outfit text-xl sm:text-[22px] lg:text-xl xl:text-[22px] text-left pl-3 sm:pl-[30px] pr-3.5 py-2.5 rounded-t-xl transition-colors duration-500 ${
                         isOpen
                           ? 'bg-PrimaryColor-0 text-white font-semibold'
                           : 'text-HeadingColor-0 font-semibold'
@@ -112,7 +112,7 @@ const Faq = () => {
           </div>
         </div>
       </div>
-      <div className='absolute top-32 right-[38%] hidden lg:block'>
+      <div className='absolute top-32 right-[38%] hidden xl:block'>
         <img
           src={shape}
           draggable={false}
@@ -120,7 +120,7 @@ const Faq = () => {
           className='animate-dance'
         />
       </div>
-      <div className='absolute bottom-28 left-28 hidden lg:block'>
+      <div className='absolute bottom-28 left-28 hidden xl:block'>
         <img
           src={shape2}
           draggable={false}
@@ -128,7 +128,7 @@ const Faq = () => {
           className='animate-flip'
         />
       </div>
-      <div className='absolute top-28 right-24 hidden lg:block'>
+      <div className='absolute top-28 right-24 hidden xl:block'>
         <img
           src={shape3}
           draggable={false}
@@ -136,7 +136,7 @@ const Faq = () => {
           className='animate-flip'
         />
       </div>
-      <div className='absolute -z-10 -top-[32%] -right-6 hidden lg:block'>
+      <div className='absolute -z-10 -top-[32%] -right-6 hidden xl:block'>
         <img
           src={shape4}
           draggable={false}

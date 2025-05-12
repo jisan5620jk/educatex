@@ -33,10 +33,10 @@ const teamMembers = [
 
 // Define top positions per member ID
 const topPositions = {
-  1: 'top-14 md:top-6 lg:top-14',
-  2: 'top-9 md:top-4 lg:top-9',
-  3: 'top-8 md:top-3 lg:top-8',
-  4: 'top-9 md:top-4 lg:top-9',
+  1: 'top-14 md:top-6 xl:top-14',
+  2: 'top-9 md:top-4 xl:top-9',
+  3: 'top-8 md:top-3 xl:top-8',
+  4: 'top-9 md:top-4 xl:top-9',
 };
 
 const TeamGallery = () => {
@@ -91,7 +91,7 @@ const TeamGallery = () => {
                 to={member.link}
                 className={`absolute z-10 ${
                   topPositions[member.id]
-                } -right-14 transition-all duration-500 group-hover:right-7  md:group-hover:right-3  lg:group-hover:right-7 size-[54px] md:size-10 lg:size-[54px] flex justify-center items-center rounded-full border border-white border-opacity-50 bg-white bg-opacity-20 text-2xl text-white text-center`}
+                } -right-14 transition-all duration-500 group-hover:right-7 md:group-hover:right-3 xl:group-hover:right-7 size-[54px] md:size-10 xl:size-[54px] flex justify-center items-center rounded-full border border-white border-opacity-50 bg-white bg-opacity-20 text-2xl text-white text-center`}
               >
                 {member.icon}
               </Link>

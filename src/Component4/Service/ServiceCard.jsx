@@ -13,8 +13,8 @@ const ServiceCard = ({
   serviceShape2,
 }) => {
   return (
-    <div className='group p-3 sm:p-6 border border-white border-opacity-10 rounded-[20px]'>
-      <div className='bg-BodyBg2-0 rounded-2xl px-4 sm:px-[34px] md:px-4 lg:px-7 2xl:px-10 pt-4 sm:pt-7 md:pt-4 lg:pt-[60px] pb-4 sm:pb-8 md:pb-4 lg:pb-14 relative z-10 overflow-hidden'>
+    <div className='group p-3 sm:p-6 lg:p-3 xl:p-6 border border-white border-opacity-10 rounded-[20px]'>
+      <div className='bg-BodyBg2-0 rounded-2xl px-4 sm:px-[34px] md:px-4 lg:px-5 xl:px-7 2xl:px-10 pt-4 sm:pt-7 md:pt-4 lg:pt-8 xl:pt-[60px] pb-4 sm:pb-8 md:pb-4 lg:pb-7 xl:pb-14 relative z-10 overflow-hidden'>
         <span className='absolute left-[12.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
         <span className='absolute left-[37.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
         <span className='absolute left-[62.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-1/2'></span>

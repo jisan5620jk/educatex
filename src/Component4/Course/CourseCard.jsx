@@ -21,7 +21,7 @@ const CourseCard = ({
         <img
           src={image}
           alt={title}
-          className='w-full md:w-[inherit] md:max-w-[inherit] h-auto object-cover'
+          className='w-full md:w-[inherit] md:max-w-[inherit] h-auto lg:h-[325px] 2xl:h-auto object-cover'
           draggable={false}
         />
       </div>

@@ -36,7 +36,7 @@ const About = () => {
                 <IoPlaySharp />
               </button>
             </div>
-            <div className='absolute bottom-0 sm:bottom-24 lg:bottom-10 xl:bottom-[40px] right-0 sm:right-[88px] bg-white/20 backdrop-filter backdrop-blur-md border-2 border-white rounded-[20px] px-3 sm:px-7 pb-2 sm:py-7 inline-flex gap-5 items-start animate-wiggle'>
+            <div className='absolute bottom-0 sm:bottom-24 lg:bottom-10 xl:bottom-[40px] right-0 sm:right-[88px] lg:right-5 xl:right-[88px] bg-white/20 backdrop-filter backdrop-blur-md border-2 border-white rounded-[20px] px-3 sm:px-7 pb-2 sm:py-7 inline-flex gap-5 items-start animate-wiggle'>
               <div className='hidden sm:block'>
                 <img
                   src={user}
@@ -111,7 +111,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className='absolute bottom-0 right-44 z-10 hidden lg:block'>
+      <div className='absolute bottom-0 right-44 z-10 hidden 3xl:block'>
         <img
           src={shape3}
           draggable={false}

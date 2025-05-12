@@ -29,14 +29,14 @@ const processData = [
 const Feature = () => {
   return (
     <section className='bg-SecondaryColor-0 pt-10 md:pt-[50px] relative'>
-      <div className='absolute top-1/2 -translate-y-1/2 left-32 animate-dance hidden lg:block'>
+      <div className='absolute top-1/2 -translate-y-1/2 left-32 animate-dance hidden 2xl:block'>
         <img
           src={featureShape}
           draggable='false'
           alt='Shape'
         />
       </div>
-      <div className='absolute top-1/2 -translate-y-1/2 right-32 animate-dance hidden lg:block'>
+      <div className='absolute top-1/2 -translate-y-1/2 right-32 animate-dance hidden 2xl:block'>
         <img
           src={featureShape2}
           draggable='false'
