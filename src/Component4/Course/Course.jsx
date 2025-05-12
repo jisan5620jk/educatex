@@ -87,7 +87,7 @@ const Course = () => {
             <span className='text-PrimaryColor-0'>Courses</span>
           </h1>
         </div>
-        <div className='grid gap-6 md:grid-cols-2 xl:grid-cols-2 mt-14'>
+        <div className='grid gap-6 md:grid-cols-2 xl:grid-cols-2 mt-8 md:mt-14'>
           {quranCourses.map((course) => (
             <CourseCard
               key={course.id}
@@ -96,10 +96,10 @@ const Course = () => {
           ))}
         </div>
       </div>
-      <div className='absolute top-32 left-24'><img src={shape} draggable={false} alt="Shape" className='animate-flip' /></div>
-      <div className='absolute bottom-32 right-32'><img src={shape2} draggable={false} alt="Shape" className='animate-dance' /></div>
-      <div className='absolute top-32 right-32'><img src={shape3} draggable={false} alt="Shape" className='animate-dance2' /></div>
-      <div className='absolute -top-[22%] -right-7'><img src={shape4} draggable={false} alt="Shape" className='animate-dance' /></div>
+      <div className='absolute top-32 left-24 hidden md:block'><img src={shape} draggable={false} alt="Shape" className='animate-flip' /></div>
+      <div className='absolute bottom-32 right-32 hidden md:block'><img src={shape2} draggable={false} alt="Shape" className='animate-dance' /></div>
+      <div className='absolute top-32 right-32 hidden md:block'><img src={shape3} draggable={false} alt="Shape" className='animate-dance2' /></div>
+      <div className='absolute -top-[22%] -right-7 hidden md:block'><img src={shape4} draggable={false} alt="Shape" className='animate-dance' /></div>
     </div>
   );
 };

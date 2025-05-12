@@ -14,15 +14,14 @@ const Blog = () => {
   return (
     <section className='bg-[url("/images/blog-bg8.png")] bg-cover bg-center bg-no-repeat py-16 md:py-20 lg:py-28 bg-white overflow-hidden relative z-10'>
       <div className='Container'>
-        <div className='flex items-center justify-between flex-wrap gap-7'>
+        <div className='flex items-center justify-between flex-wrap gap-4'>
           <div>
             <h5 className='font-OpenSans font-medium text-sm text-SecondaryColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor2-0 before:rounded-full before:size-[9px]'>
-              about our educate
+              latest news & blog
             </h5>
             <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-4 mb-4'>
-              Join Online Quran Classes
-              <br />
-              for Kids <span className='text-PrimaryColor-0'>and Adults</span>
+              Read Latest Blog
+              <span className='text-PrimaryColor-0'> & Inside</span>
             </h1>
           </div>
           <div>
@@ -35,9 +34,9 @@ const Blog = () => {
             </Link>
           </div>
         </div>
-        <div className='grid grid-cols-12 gap-10 lg:gap-0 mt-6 md:mt-[46px]'>
-          <div className='col-span-5'>
-            <div className='p-6 rounded-[20px] border border-SecondaryColor-0 border-opacity-20'>
+        <div className='grid lg:grid-cols-12 gap-10 lg:gap-0 mt-8 md:mt-[46px]'>
+          <div className='col-span-1 lg:col-span-5'>
+            <div className='p-3 sm:p-6 rounded-[20px] border border-SecondaryColor-0 border-opacity-20'>
               <div className='group bg-white transition-all duration-500 rounded-[20px]'>
                 <div className='relative rounded-[10px] overflow-hidden'>
                   <span className='absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 bg-PrimaryColor3-0 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-0'></span>
@@ -46,11 +45,11 @@ const Blog = () => {
                   <span className='absolute left-[87.5%] top-0 h-full w-0 transition-all duration-500 bg-PrimaryColor3-0 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-[75%]'></span>
                   <img
                     src={blogThumb}
-                    className='w-full h-[322px] object-cover object-center'
+                    className='w-full h-64 sm:h-[322px] object-cover object-center'
                   />
                 </div>
-                <div className='relative z-20 rounded-lg transition-all duration-500 px-10 pb-10'>
-                  <p className='font-Outfit font-medium text-HeadingColor-0 flex gap-3 items-center mt-8 mb-6'>
+                <div className='relative z-20 rounded-lg transition-all duration-500 px-4 sm:px-10 pb-4 sm:pb-10'>
+                  <p className='font-Outfit font-medium text-HeadingColor-0 flex gap-3 items-center mt-4 md:mt-8 mb-4 sm:mb-6'>
                     <img
                       src={blogPostIcon}
                       draggable={false}
@@ -59,7 +58,7 @@ const Blog = () => {
                     Jhon D. Alexon
                   </p>
                   <Link to={'/blog_details'}>
-                    <button className='font-Outfit text-left font-medium text-lg sm:text-[22px] md:text-xl lg:text-2xl xl:text-[21px] 2xl:text-2xl text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor3-0 mb-[34px]'>
+                    <button className='font-Outfit text-left font-medium text-lg sm:text-[22px] md:text-xl lg:text-2xl xl:text-[21px] 2xl:text-2xl text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor3-0 pb-6 md:mb-[34px]'>
                       10 Essential Strategies for a More Rewarding Ramadan
                     </button>
                   </Link>
@@ -75,7 +74,7 @@ const Blog = () => {
               </div>
             </div>
           </div>
-          <div className='col-span-7 space-y-6 lg:ml-10'>
+          <div className='col-span-1 lg:col-span-7 space-y-6 lg:ml-10'>
             <div className='group rounded-[20px] overflow-hidden flex flex-col md:flex-row'>
               <div className='w-full overflow-hidden relative z-10 before:absolute before:-left-3/4 before:top-0 before:w-1/2 before:h-full before:bg-gradient-to-r before:to-transparent before:via-white before:from-transparent before:-skew-x-[20deg] before:opacity-50 group-hover:before:animate-shine'>
                 <img
@@ -85,7 +84,7 @@ const Blog = () => {
                   draggable={false}
                 />
               </div>
-              <div className='bg-white -ml-[30px] rounded-[20px] pl-10 pr-8 flex items-center w-full relative z-10 overflow-hidden'>
+              <div className='bg-white -mt-8 md:mt-0 md:-ml-[30px] rounded-[20px] pl-4 md:pl-10 pr-3 md:pr-8 pt-6 pb-6 md:pt-0 md:pb-0 flex items-center w-full relative z-10 overflow-hidden'>
                 <span className='absolute left-[12.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
                 <span className='absolute left-[37.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
                 <span className='absolute left-[62.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-1/2'></span>
@@ -133,7 +132,7 @@ const Blog = () => {
                   draggable={false}
                 />
               </div>
-              <div className='bg-white -ml-[30px] rounded-[20px] pl-10 pr-8 flex items-center w-full relative z-10 overflow-hidden'>
+              <div className='bg-white -mt-8 md:mt-0 md:-ml-[30px] rounded-[20px] pl-4 md:pl-10 pr-3 md:pr-8 pt-6 pb-6 md:pt-0 md:pb-0 flex items-center w-full relative z-10 overflow-hidden'>
                 <span className='absolute left-[12.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
                 <span className='absolute left-[37.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
                 <span className='absolute left-[62.5%] top-0 h-full w-0 bg-PrimaryColor-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-1/2'></span>
@@ -175,7 +174,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <div className='absolute top-36 right-[42%]'>
+      <div className='absolute top-36 right-[42%] hidden md:block'>
         <img
           src={shape}
           draggable={false}
@@ -183,7 +182,7 @@ const Blog = () => {
           className='animate-dance2'
         />
       </div>
-      <div className='absolute bottom-28 left-28'>
+      <div className='absolute bottom-28 left-2 hidden md:block8'>
         <img
           src={shape2}
           draggable={false}
@@ -191,7 +190,7 @@ const Blog = () => {
           className='animate-flip'
         />
       </div>
-      <div className='absolute -z-10 -top-[25%] -right-6'>
+      <div className='absolute -z-10 -top-[25%] -right-6 hidden md:block'>
         <img
           src={shape3}
           draggable={false}

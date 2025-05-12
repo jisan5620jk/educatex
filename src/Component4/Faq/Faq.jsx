@@ -40,7 +40,7 @@ const Faq = () => {
             <h5 className='font-OpenSans font-medium text-sm text-SecondaryColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor2-0 before:rounded-full before:size-[9px]'>
               Free Consultation
             </h5>
-            <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-4 mb-[62px]'>
+            <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-4 mb-8 md:mb-[62px]'>
               10+ Years of Excellence in
               <br />
               Distance <span className='text-PrimaryColor-0'>Learnings</span>
@@ -54,7 +54,7 @@ const Faq = () => {
             </div>
           </div>
           <div className='max-w-[602px] w-full ml-auto'>
-            <p className='font-OpenSans text-TextColor-0 text-[17px] w-full max-w-[575px] mb-9'>
+            <p className='font-OpenSans text-TextColor-0 text-[17px] w-full max-w-[575px] mt-7 lg:mt-0 mb-9'>
               Memorizing the Quran (Hifz) brings immense spiritual rewards,
               strengs memory, and increases closeness to
             </p>
@@ -72,27 +72,21 @@ const Faq = () => {
                   >
                     <button
                       onClick={() => toggleFAQ(index)}
-                      className={`w-full flex items-center justify-between fotn-Outfit text-[22px] text-left pl-[30px] pr-3.5 py-2.5 rounded-t-xl transition-colors duration-500 ${
+                      className={`w-full flex items-center justify-between fotn-Outfit text-xl sm:text-[22px] text-left pl-3 sm:pl-[30px] pr-3.5 py-2.5 rounded-t-xl transition-colors duration-500 ${
                         isOpen
                           ? 'bg-PrimaryColor-0 text-white font-semibold'
                           : 'text-HeadingColor-0 font-semibold'
                       }`}
                     >
-                      {faq.question}
+                      <span className='flex-1'>{faq.question}</span>
 
                       {isOpen ? (
-                        <div className='size-10 rounded-full bg-white flex items-center justify-center'>
-                          <FiMinus
-                            className='text-SecondaryColor-0'
-                            size={22}
-                          />
+                        <div className='size-7 sm:size-10 rounded-full bg-white flex items-center justify-center'>
+                          <FiMinus className='text-SecondaryColor-0 text-lg sm:text-[22px]' />
                         </div>
                       ) : (
-                        <div className='size-10 rounded-full border border-SecondaryColor-0 border-opacity-20 flex items-center justify-center'>
-                          <FiPlus
-                            className='text-SecondaryColor-0'
-                            size={22}
-                          />
+                        <div className='size-7 sm:size-10 rounded-full border border-SecondaryColor-0 border-opacity-20 flex items-center justify-center'>
+                          <FiPlus className='text-SecondaryColor-0 text-lg sm:text-[22px]' />
                         </div>
                       )}
                     </button>
@@ -107,7 +101,7 @@ const Faq = () => {
                       }}
                       className='overflow-hidden transition-all duration-500 ease-in-out'
                     >
-                      <div className='font-OpenSans text-TextColor-0 text-[17px] px-6 py-7'>
+                      <div className='font-OpenSans text-TextColor-0 text-[17px] px-3 sm:px-6 py-4 sm:py-7'>
                         {faq.answer}
                       </div>
                     </div>
@@ -118,7 +112,7 @@ const Faq = () => {
           </div>
         </div>
       </div>
-      <div className='absolute top-32 right-[38%]'>
+      <div className='absolute top-32 right-[38%] hidden md:block'>
         <img
           src={shape}
           draggable={false}
@@ -126,7 +120,7 @@ const Faq = () => {
           className='animate-dance'
         />
       </div>
-      <div className='absolute bottom-28 left-28'>
+      <div className='absolute bottom-28 left-28 hidden md:block'>
         <img
           src={shape2}
           draggable={false}
@@ -134,7 +128,7 @@ const Faq = () => {
           className='animate-flip'
         />
       </div>
-      <div className='absolute top-28 right-24'>
+      <div className='absolute top-28 right-24 hidden md:block'>
         <img
           src={shape3}
           draggable={false}
@@ -142,7 +136,7 @@ const Faq = () => {
           className='animate-flip'
         />
       </div>
-      <div className='absolute -z-10 -top-[32%] -right-6'>
+      <div className='absolute -z-10 -top-[32%] -right-6 hidden md:block'>
         <img
           src={shape4}
           draggable={false}
