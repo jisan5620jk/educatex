@@ -3,7 +3,7 @@ import CourseCard from './CourseCard';
 import { Link } from 'react-router-dom';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { FaGraduationCap, FaUser } from 'react-icons/fa6';
-import { BsFillCalendar2WeekFill  } from 'react-icons/bs';
+import { BsFillCalendar2WeekFill } from 'react-icons/bs';
 
 const courses = [
   {
@@ -19,7 +19,7 @@ const courses = [
     lessons: '16 Lessons',
     lessonIcon: <FaGraduationCap />,
     duration: '10 weeks',
-    durationIcon: <BsFillCalendar2WeekFill  />,
+    durationIcon: <BsFillCalendar2WeekFill />,
     bgColor: 'bg-PrimaryColor3-0 bg-opacity-5',
     hoverBgColor: 'bg-PrimaryColor3-0',
     hoverTextColor: 'hover:text-PrimaryColor3-0',
@@ -38,7 +38,7 @@ const courses = [
     lessons: '16 Lessons',
     lessonIcon: <FaGraduationCap />,
     duration: '10 weeks',
-    durationIcon: <BsFillCalendar2WeekFill  />,
+    durationIcon: <BsFillCalendar2WeekFill />,
     bgColor: 'bg-PrimaryColor-0 bg-opacity-5',
     hoverBgColor: 'bg-PrimaryColor-0',
     hoverTextColor: 'hover:text-PrimaryColor-0',
@@ -57,7 +57,7 @@ const courses = [
     lessons: '16 Lessons',
     lessonIcon: <FaGraduationCap />,
     duration: '10 weeks',
-    durationIcon: <BsFillCalendar2WeekFill  />,
+    durationIcon: <BsFillCalendar2WeekFill />,
     bgColor: 'bg-PrimaryColor2-0 bg-opacity-5',
     hoverBgColor: 'bg-PrimaryColor2-0',
     hoverTextColor: 'hover:text-PrimaryColor2-0',
@@ -76,7 +76,7 @@ const courses = [
     lessons: '16 Lessons',
     lessonIcon: <FaGraduationCap />,
     duration: '10 weeks',
-    durationIcon: <BsFillCalendar2WeekFill  />,
+    durationIcon: <BsFillCalendar2WeekFill />,
     bgColor: 'bg-PrimaryColor4-0 bg-opacity-5',
     hoverBgColor: 'bg-PrimaryColor4-0',
     hoverTextColor: 'hover:text-PrimaryColor4-0',

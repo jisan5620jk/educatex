@@ -1,5 +1,6 @@
 import { FaCircle } from 'react-icons/fa';
 import TeamCard from './TeamCard';
+import Testimonial from '../Testimonial/Testimonial';
 
 const teamMembers = [
   {
@@ -11,7 +12,7 @@ const teamMembers = [
   },
   {
     image: '/images/team-thumb72.png',
-    name: 'Brendan Fraser',
+    name: 'Nita Nikolus',
     title: 'Instructor',
     profileLink: '/portfolio/brendan-fraser',
     bgColor: 'bg-green-50',
@@ -59,6 +60,7 @@ const TeamMember = () => {
           </div>
         </div>
       </div>
+      <Testimonial />
     </section>
   );
 };

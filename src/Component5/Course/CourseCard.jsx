@@ -42,41 +42,43 @@ const CourseCard = ({
         ></span>
       </div>
 
-      <div className='flex justify-between items-center mt-4'>
-        <span
-          className={`font-OpenSans text-[15px] px-5 py-[5px] rounded-3xl mb-3 inline-block uppercase border ${categoryColor}`}
+      <div className='px-3'>
+        <div className='flex justify-between items-center mt-9 mb-6'>
+          <span
+            className={`font-OpenSans text-[15px] px-5 py-[5px] rounded-3xl inline-block uppercase border ${categoryColor}`}
+          >
+            {category}
+          </span>
+          <span className='font-Outfit font-medium text-HeadingColor-0'>
+            {price}
+          </span>
+        </div>
+
+        <Link
+          to={courseLink}
+          className={`mt-3 font-Outfit text-lg font-semibold text-HeadingColor-0 transition-all duration-500 uppercase ${hoverTextColor}`}
         >
-          {category}
-        </span>
-        <span className='text-2xl rounded-full font-Outfit font-medium'>
-          {price}
-        </span>
-      </div>
-
-      <Link
-        to={courseLink}
-        className={`mt-3 font-Outfit text-lg font-semibold text-HeadingColor-0 transition-all duration-500 uppercase ${hoverTextColor}`}
-      >
-        {title}
-      </Link>
-
-      <div className='flex items-center mt-4 text-sm text-gray-600'>
-        <div className='flex items-center gap-2'>
+          {title}
+        </Link>
+        <hr className='bg-SecondaryColor-0 bg-opacity-15 mt-4' />
+        <div className='flex items-center gap-2 mt-5'>
           <span
             className={`size-9 rounded-full flex items-center justify-center text-white ${hoverBgColor}`}
           >
             {authorIcon}
           </span>
-          {author}
+          <span className='font-Outfit text-TextColor-0 text-lg'>{author}</span>
         </div>
-      </div>
 
-      <div className='flex justify-between text-sm text-gray-500 mt-4'>
-        <div className='flex items-center gap-1'>
-          <span className={`text-xl ${textColor}`}>{lessonIcon}</span> {lessons}
-        </div>
-        <div className='flex items-center gap-1'>
-          <span className={`text-[17px] ${textColor}`}>{durationIcon}</span> {duration}
+        <div className='flex items-center gap-8 font-OpenSans text-gray-500 mt-7 mb-4'>
+          <div className='flex items-center gap-2'>
+            <span className={`text-xl ${textColor}`}>{lessonIcon}</span>{' '}
+            {lessons}
+          </div>
+          <div className='flex items-center gap-2'>
+            <span className={`text-[17px] ${textColor}`}>{durationIcon}</span>{' '}
+            {duration}
+          </div>
         </div>
       </div>
     </div>

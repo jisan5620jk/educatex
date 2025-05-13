@@ -1,63 +1,34 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import titleShape from '/images/sub-title-shape.png';
+import { Autoplay, EffectFade } from 'swiper/modules';
+import testiImg from '/images/testi-thumb7.png';
 import { MdOutlineStarPurple500 } from 'react-icons/md';
 import TestimonialCard from './TestimonialCard';
-import testiShape from '/images/g-logo.webp';
-import testiProfile from '/images/t-author1.webp';
-import testiProfile2 from '/images/t-author2.webp';
-import testiProfile3 from '/images/t-author3.webp';
-import testiProfile4 from '/images/t-author2.webp';
+import testiProfile from '/images/testi-autor7.png';
 import TestiNavigation from './TestiNavigation';
 
 const testiData = [
   {
     id: 1,
-    testiShape: testiShape,
-    testiTitle: 'Great 3d Modal',
-    testiDesc: `Competently leverage existing top-line bandwidth 
-client centric supply chains enthusiastically maxim 
-cost effective technologies the`,
+    testiImg: testiImg,
+    testiTitle: 'Explore Genuine Feedback',
+    testiSubTitle: 'Clients Feedback',
+    testiDesc: `Enrolling in the Advanced digital marketing learning course was transfors pro lessons and personalized feedback enabled me to master marketing techniques I've already noticed a significant boost camp toun recommend this course to digital marketing skills!`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
     testiProfile: testiProfile,
-    testiName: 'Jhon D. Alexon',
-    testiDesignation: 'Web Developer',
+    testiName: 'Emily Jhonson',
+    testiDesignation: 'Teacher',
   },
   {
     id: 2,
-    testiShape: testiShape,
-    testiTitle: 'Awesome Design',
-    testiDesc: `Competently leverage existing top-line bandwidth 
-client centric supply chains enthusiastically maxim 
-cost effective technologies the`,
+    testiImg: testiImg,
+    testiTitle: 'Explore Genuine Feedback',
+    testiSubTitle: 'Clients Feedback',
+    testiDesc: `Enrolling in the Advanced digital marketing learning course was transfors pro lessons and personalized feedback enabled me to master marketing techniques I've already noticed a significant boost camp toun recommend this course to digital marketing skills!`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiProfile: testiProfile2,
+    testiProfile: testiProfile,
     testiName: 'Mariya Watson',
-    testiDesignation: 'UI/UX Designer',
-  },
-  {
-    id: 3,
-    testiShape: testiShape,
-    testiTitle: 'Great Supports',
-    testiDesc: `Competently leverage existing top-line bandwidth 
-client centric supply chains enthusiastically maxim 
-cost effective technologies the`,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiProfile: testiProfile3,
-    testiName: 'Anjelina Jholi',
-    testiDesignation: 'App Developer',
-  },
-  {
-    id: 4,
-    testiShape: testiShape,
-    testiTitle: 'Smart Development',
-    testiDesc: `Competently leverage existing top-line bandwidth 
-client centric supply chains enthusiastically maxim 
-cost effective technologies the`,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiProfile: testiProfile4,
-    testiName: 'Mariya Watson',
-    testiDesignation: 'Mock-Up Developer',
+    testiDesignation: 'Instructor',
   },
 ];
 
@@ -66,76 +37,34 @@ const Testimonial = () => {
     loop: true,
     spaceBetween: 30,
     speed: 1500,
+    modules: [Autoplay],
     autoplay: {
       delay: 3000, // Set delay time in milliseconds
       disableOnInteraction: false, // Keep autoplay on user interaction
     },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      576: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 1,
-      },
-      992: {
-        slidesPerView: 2,
-      },
-      1200: {
-        slidesPerView: 3,
-      },
+    effect: 'fade', // Fade effect for smooth transitions
+    fadeEffect: {
+      crossFade: true,
     },
   };
   return (
-    <section className="mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] bg-[url('/images/teasti-bg-2.webp')] bg-cover bg-center relative z-10 overflow-hidden px-4 sm:px-8 lg:px-2 xl:px-16 2xl:px-14 3xl:px-[100px] py-16 md:py-20 lg:py-[120px] rounded-b-lg lg:rounded-b-2xl">
-      <div className='Container md:-mb-[130px]'>
-        <h5 className='flex items-center gap-2 font-Outfit text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
-          <img
-            src={titleShape}
-            draggable={false}
-            alt='Shape'
-          />{' '}
-          Testimonials
-        </h5>
-        <h1 className='font-Outfit font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
-          Trusted By Industry Leader
-          <br /> Clients Testimonial
-        </h1>
-      </div>
-      <div className='mt-[46px]'>
-        <Swiper {...settings}>
-          {testiData.map(
-            ({
-              id,
-              testiShape,
-              testiTitle,
-              testiRatingIcon,
-              testiName,
-              testiProfile,
-              testiDesignation,
-              testiDesc,
-            }) => {
+    <section className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] mt-16 md:mt-20 lg:mt-28'>
+      <div className='bg-white rounded-[30px] relative z-10 pb-16 md:pb-20 lg:pb-28'>
+        <div className='Container'>
+          <Swiper
+            {...settings}
+            modules={[EffectFade]}
+          >
+            {testiData.map((testiData, index) => {
               return (
-                <SwiperSlide key={id}>
-                  <div className='pt-[100px] md:pt-[138px]'>
-                    <TestimonialCard
-                      testiShape={testiShape}
-                      testiTitle={testiTitle}
-                      testiRatingIcon={testiRatingIcon}
-                      testiName={testiName}
-                      testiProfile={testiProfile}
-                      testiDesignation={testiDesignation}
-                      testiDesc={testiDesc}
-                    />
-                  </div>
+                <SwiperSlide key={index}>
+                  <TestimonialCard {...testiData} />
                 </SwiperSlide>
               );
-            }
-          )}
-          <TestiNavigation />
-        </Swiper>
+            })}
+            <TestiNavigation />
+          </Swiper>
+        </div>
       </div>
     </section>
   );

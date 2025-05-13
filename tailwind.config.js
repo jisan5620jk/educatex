@@ -213,6 +213,10 @@ export default {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-100%)' },
         },
+        fadeUp: {
+          '0%': { opacity: 0, transform: 'translateY(100px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
       },
       animation: {
         movebtn: 'movebtn 3s linear infinite',
@@ -244,6 +248,7 @@ export default {
         write: 'write 2s ease-in-out infinite',
         zigzagWriteExtreme: 'zigzagWriteExtreme 1.5s ease-in-out infinite',
         marquee: 'marquee 30s linear infinite',
+        fadeUp: 'fadeUp 1s ease forwards',
       },
       boxShadow: {
         cases: '0px 10px 15px rgba(187, 187, 187, 0.2)',
@@ -254,5 +259,16 @@ export default {
       lineHeight: {},
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const delays = {
+        '.delay-500': { 'animation-delay': '0.5s' },
+        '.delay-900': { 'animation-delay': '0.9s' },
+        '.delay-1300': { 'animation-delay': '1.3s' },
+        '.delay-1700': { 'animation-delay': '1.7s' },
+        '.delay-2000': { 'animation-delay': '2s' },
+      };
+      addUtilities(delays, ['responsive', 'hover']);
+    },
+  ],
 };
