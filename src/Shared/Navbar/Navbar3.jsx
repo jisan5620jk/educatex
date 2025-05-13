@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import Logo2 from '/images/logo2.png';
 import Logo3 from '/images/main-logo.png';
-import './navbar.css';
 import { useEffect, useRef } from 'react';
 import {
   FaChevronDown,

@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import star from '/images/top-star.png';
 import Logo from '/images/logo.png';
 import Logo2 from '/images/footer-logo.png';
-import './navbar.css';
 import { useEffect, useRef, useState } from 'react';
 import {
   FaArrowUp,
