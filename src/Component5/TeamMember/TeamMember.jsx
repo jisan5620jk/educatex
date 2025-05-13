@@ -21,8 +21,6 @@ const teamMembers = [
     name: 'Brendan Fraser',
     title: 'Instructor',
     profileLink: '/portfolio/brendan-fraser',
-    buttonColor: 'bg-green-500',
-    buttonTextColor: 'text-white',
     bgColor: 'bg-yellow-50',
   },
   {
@@ -30,7 +28,7 @@ const teamMembers = [
     name: 'David R. Konnor',
     title: 'Instructor',
     profileLink: '/portfolio/david-konnor',
-    bgColor: 'bg-purple-100',
+    bgColor: 'bg-purple-50',
   },
 ];
 
@@ -44,14 +42,14 @@ const TeamMember = () => {
               <span className='text-PrimaryColor2-0'>
                 <FaCircle size={8} />
               </span>
-              Top CATEGORIES
+              team member
             </h5>
-            <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-black mt-[18px] mb-4'>
-              Educate Trending{' '}
-              <span className='text-PrimaryColor-0'>Courses</span>
+            <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[45px] 2xl:leading-[55px] text-black mt-[18px] mb-4'>
+              Educate Awesome{' '}
+              <span className='text-PrimaryColor-0'>Teams</span>
             </h1>
           </div>
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-14'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-[52px]'>
             {teamMembers.map((member, index) => (
               <TeamCard
                 key={index}

@@ -63,12 +63,12 @@ const Category = () => {
             </span>
             Top CATEGORIES
           </h5>
-          <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-4'>
-            Educate Trending{' '}
-            <span className='text-PrimaryColor-0'>Courses</span>
+          <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[45px] 2xl:leading-[55px] text-HeadingColor-0 mt-[18px] mb-4'>
+            Educate Popular{' '}
+            <span className='text-PrimaryColor-0'>Categories</span>
           </h1>
         </div>
-        <div className='max-w-[1500px] w-full mx-auto flex flex-wrap justify-center gap-6 mt-[58px]'>
+        <div className='max-w-[1500px] w-full mx-auto flex flex-wrap justify-center gap-6 mt-[52px]'>
           {categories.map((category, index) => (
             <CategoryBox
               key={index}

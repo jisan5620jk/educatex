@@ -1,0 +1,86 @@
+/* eslint-disable react/prop-types */
+
+import { Link } from 'react-router-dom';
+
+const CourseCard = ({
+  image,
+  category,
+  categoryColor,
+  title,
+  price,
+  author,
+  authorIcon,
+  lessons,
+  lessonIcon,
+  duration,
+  durationIcon,
+  courseLink,
+  bgColor,
+  hoverBgColor,
+  hoverTextColor,
+  textColor,
+}) => {
+  return (
+    <div className={`group rounded-xl overflow-hidden ${bgColor} p-4`}>
+      <div className='relative rounded-xl overflow-hidden'>
+        <img
+          src={image}
+          alt={title}
+          className='w-full rounded-lg'
+        />
+        <span
+          className={`absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 z-10 ${hoverBgColor} group-hover:opacity-0 group-hover:w-[25%] group-hover:left-0`}
+        ></span>
+        <span
+          className={`absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 z-10 ${hoverBgColor} group-hover:opacity-0 group-hover:w-[25%] group-hover:left-[25%]`}
+        ></span>
+        <span
+          className={`absolute left-[62.5%] top-0 h-full w-0 transition-all duration-500 z-10 ${hoverBgColor} group-hover:opacity-0 group-hover:w-[25%] group-hover:left-1/2`}
+        ></span>
+        <span
+          className={`absolute left-[87.5%] top-0 h-full w-0 transition-all duration-500 z-10 ${hoverBgColor} group-hover:opacity-0 group-hover:w-[25%] group-hover:left-[75%]`}
+        ></span>
+      </div>
+
+      <div className='flex justify-between items-center mt-4'>
+        <span
+          className={`font-OpenSans text-[15px] px-5 py-[5px] rounded-3xl mb-3 inline-block uppercase border ${categoryColor}`}
+        >
+          {category}
+        </span>
+        <span className='text-2xl rounded-full font-Outfit font-medium'>
+          {price}
+        </span>
+      </div>
+
+      <Link
+        to={courseLink}
+        className={`mt-3 font-Outfit text-lg font-semibold text-HeadingColor-0 transition-all duration-500 uppercase ${hoverTextColor}`}
+      >
+        {title}
+      </Link>
+
+      <div className='flex items-center mt-4 text-sm text-gray-600'>
+        <div className='flex items-center gap-2'>
+          <span
+            className={`size-9 rounded-full flex items-center justify-center text-white ${hoverBgColor}`}
+          >
+            {authorIcon}
+          </span>
+          {author}
+        </div>
+      </div>
+
+      <div className='flex justify-between text-sm text-gray-500 mt-4'>
+        <div className='flex items-center gap-1'>
+          <span className={`text-xl ${textColor}`}>{lessonIcon}</span> {lessons}
+        </div>
+        <div className='flex items-center gap-1'>
+          <span className={`text-[17px] ${textColor}`}>{durationIcon}</span> {duration}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default CourseCard;

@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 
 const TeamCard = ({
   image,
@@ -8,11 +10,9 @@ const TeamCard = ({
   title,
   profileLink = '#',
   bgColor = 'bg-white',
-  buttonColor = 'bg-white',
-  buttonTextColor = 'text-black',
 }) => {
   return (
-    <div className='flex flex-col items-center bg-white rounded-2xl p-3 w-72 space-y-4 relative z-10'>
+    <div className='flex flex-col items-center bg-white rounded-2xl p-3 relative z-10'>
       <div className='relative z-10 py-9 w-full flex justify-center items-center'>
         <span
           className={`absolute -z-10 top-0 left-0 h-1/2 w-full rounded-2xl ${bgColor}`}
@@ -23,35 +23,50 @@ const TeamCard = ({
         />
       </div>
 
-      <div className='text-center'>
-        <a href={profileLink}>
-          <h3 className='text-xl font-semibold hover:underline'>{name}</h3>
-        </a>
-        <a href={profileLink}>
-          <p className='text-green-600 font-medium uppercase text-sm hover:underline'>
-            {title}
-          </p>
-        </a>
+      <div className='text-center mt-1'>
+        <Link to={profileLink}>
+          <h3 className='font-Outfit text-[26px] text-HeadingColor-0 font-medium'>
+            {name}
+          </h3>
+        </Link>
+        <p className='font-OpenSans text-PrimaryColor-0 uppercase text-[15px] mt-1 mb-6'>
+          {title}
+        </p>
       </div>
 
-      <a
-        href={profileLink}
-        className={`rounded-full px-6 py-2 font-medium border ${buttonColor} ${buttonTextColor} border-gray-300 hover:shadow transition`}
+      <Link
+        to={profileLink}
+        className={`font-Outfit rounded-full px-7 py-3 font-medium border border-SecondaryColor-0 border-opacity-10 uppercase transition-all duration-500 hover:text-white hover:border-PrimaryColor-0 relative z-10 overflow-hidden before:absolute before:right-0 before:top-0 before:w-0 before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0`}
       >
         View Portfolio
-      </a>
+      </Link>
 
-      <div className='flex space-x-4 text-gray-500'>
-        <a href='#'>
-          <FaFacebookF className='hover:text-green-500' />
-        </a>
-        <a href='#'>
-          <FaTwitter className='hover:text-green-500' />
-        </a>
-        <a href='#'>
-          <FaLinkedinIn className='hover:text-green-500' />
-        </a>
-      </div>
+      <ul className='flex gap-4 items-center mt-8 mb-7'>
+        <li>
+          <Link
+            to='#'
+            className='size-[38px] rounded-full flex items-center justify-center text-TextColor-0 border border-SecondaryColor-0 border-opacity-10 transition-all duration-500 hover:text-white hover:border-PrimaryColor-0 relative z-10 overflow-hidden before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 before:rotate-180 hover:before:scale-100 hover:before:rotate-0'
+          >
+            <FaFacebookF />
+          </Link>
+        </li>
+        <li>
+          <Link
+            to='#'
+            className='size-[38px] rounded-full flex items-center justify-center text-TextColor-0 border border-SecondaryColor-0 border-opacity-10 transition-all duration-500 hover:text-white hover:border-PrimaryColor-0 relative z-10 overflow-hidden before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 before:rotate-180 hover:before:scale-100 hover:before:rotate-0'
+          >
+            <FaXTwitter />
+          </Link>
+        </li>
+        <li>
+          <Link
+            to='#'
+            className='size-[38px] rounded-full flex items-center justify-center text-TextColor-0 border border-SecondaryColor-0 border-opacity-10 transition-all duration-500 hover:text-white hover:border-PrimaryColor-0 relative z-10 overflow-hidden before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:-z-10 before:transition-all before:duration-500 before:scale-0 before:rotate-180 hover:before:scale-100 hover:before:rotate-0'
+          >
+            <FaLinkedinIn />
+          </Link>
+        </li>
+      </ul>
     </div>
   );
 };
