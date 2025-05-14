@@ -6,6 +6,10 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
+import SliderNavigation from './SliderNavigation';
+import bannerShape from '/images/hero-dot.png';
+import bannerShape2 from '/images/hero-shape31.png';
+import bannerShape3 from '/images/hero-shape33.png';
 
 const Banner = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -38,7 +42,7 @@ const Banner = () => {
   };
 
   return (
-    <div className='relative'>
+    <div className='relative z-10'>
       <Swiper
         {...settings}
         onSlideChange={handleSlideChange}
@@ -47,7 +51,8 @@ const Banner = () => {
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <section
-              className={`bg-[url('${slide.image}')] bg-cover bg-left lg:bg-center bg-no-repeat h-[700px] lg:h-[850px] flex items-center`}
+              className='bg-cover bg-left lg:bg-center bg-no-repeat h-[700px] lg:h-[850px] flex items-center relative z-10'
+              style={{ backgroundImage: `url(${slide.image})` }}
             >
               <div className='Container pt-[70px] lg:pt-[120px] pb-20 md:pb-0'>
                 <div className='relative'>
@@ -123,11 +128,27 @@ const Banner = () => {
                       </span>
                     </Link>
                   </div>
+                  <img
+                    src={bannerShape}
+                    draggable={false}
+                    className='absolute -top-20 left-[36%] animate-wiggle hidden xl:block'
+                  />
+                  <img
+                    src={bannerShape2}
+                    draggable={false}
+                    className='absolute bottom-12 left-[54%] animate-swing hidden xl:block'
+                  />
+                  <img
+                    src={bannerShape3}
+                    draggable={false}
+                    className='absolute -bottom-32 3xl:-bottom-24 left-0 3xl:-left-[16%] animate-dance2 hidden xl:block'
+                  />
                 </div>
               </div>
             </section>
           </SwiperSlide>
         ))}
+        <SliderNavigation />
       </Swiper>
     </div>
   );
