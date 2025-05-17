@@ -1,27 +1,34 @@
 import blogThumb from '/images/blog-thumb1.png';
 import blogThumb2 from '/images/blog-thumb2.png';
 import blogThumb3 from '/images/blog-thumb3.png';
-import BlogCard from './BlogCard';
 import blogPostIcon from '/images/blog-autor1.png';
 import blogPostIcon2 from '/images/blog-autor2.png';
 import blogPostIcon3 from '/images/blog-autor3.png';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import { Autoplay } from 'swiper/modules';
-import './blog.css';
 import { IoMdLogIn } from 'react-icons/io';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import BlogCard from './BlogCard';
 
 const blogData = [
   {
     id: 1,
-    blogThumb: blogThumb,
+    blogThumb,
     blogDate: '04 Feb',
-    blogPostIcon: blogPostIcon,
+    blogPostIcon,
     blogPost: 'By - Jhon D. Alexon',
     blogUrl: '/blog_details2',
     blogTitle: '10 Proven Strategies to excel Online Learning',
     blogBtnText: 'Continue Reading',
     blogBtnIcon: <IoMdLogIn />,
+    bgColor: 'bg-PrimaryColor3-0 bg-opacity-[7%]',
+    spanBg: 'bg-PrimaryColor3-0',
+    dateBg: 'bg-PrimaryColor3-0',
+    titleHover: 'hover:text-PrimaryColor3-0',
+    borderColor: 'border-PrimaryColor3-0 border-opacity-30',
+    buttonBg: 'bg-PrimaryColor3-0 bg-opacity-10',
+    buttonText: 'text-PrimaryColor3-0',
+    buttonBefore: 'before:bg-PrimaryColor3-0',
   },
   {
     id: 2,
@@ -33,6 +40,14 @@ const blogData = [
     blogTitle: 'Trends that are shaping the Learning experience',
     blogBtnText: 'Continue Reading',
     blogBtnIcon: <IoMdLogIn />,
+    bgColor: 'bg-PrimaryColor-0 bg-opacity-[7%]',
+    spanBg: 'bg-PrimaryColor-0',
+    dateBg: 'bg-PrimaryColor-0',
+    titleHover: 'hover:text-PrimaryColor-0',
+    borderColor: 'border-PrimaryColor-0 border-opacity-30',
+    buttonBg: 'bg-PrimaryColor-0 bg-opacity-10',
+    buttonText: 'text-PrimaryColor-0',
+    buttonBefore: 'before:bg-PrimaryColor-0',
   },
   {
     id: 3,
@@ -44,6 +59,14 @@ const blogData = [
     blogTitle: 'Learning is the Key soft skills and Professional',
     blogBtnText: 'Continue Reading',
     blogBtnIcon: <IoMdLogIn />,
+    bgColor: 'bg-PrimaryColor2-0 bg-opacity-[7%]',
+    spanBg: 'bg-PrimaryColor2-0',
+    dateBg: 'bg-PrimaryColor2-0',
+    titleHover: 'hover:text-PrimaryColor2-0',
+    borderColor: 'border-PrimaryColor2-0 border-opacity-30',
+    buttonBg: 'bg-PrimaryColor2-0 bg-opacity-10',
+    buttonText: 'text-PrimaryColor2-0',
+    buttonBefore: 'before:bg-PrimaryColor2-0',
   },
 ];
 
@@ -54,29 +77,20 @@ const Blog = () => {
     modules: [Autoplay],
     speed: 2000,
     autoplay: {
-      delay: 3000, // Set delay time in milliseconds
-      disableOnInteraction: false, // Keep autoplay on user interaction
+      delay: 3000,
+      disableOnInteraction: false,
     },
     breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      576: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      992: {
-        slidesPerView: 2,
-      },
-      1200: {
-        slidesPerView: 3,
-      },
+      320: { slidesPerView: 1 },
+      576: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      992: { slidesPerView: 2 },
+      1200: { slidesPerView: 3 },
     },
   };
+
   return (
-    <section className='py-16 md:py-20 lg:py-28 bg-white blog-section'>
+    <section className='py-16 md:py-20 lg:py-28 bg-white'>
       <div className='Container'>
         <div className='relative grid items-center grid-cols-1 lg:grid-cols-2 gap-8'>
           <div className='border-b border-SecondaryColor-0 border-opacity-15 pb-6 lg:py-6'>
@@ -90,38 +104,14 @@ const Blog = () => {
             Updates Educate Blog
           </h1>
         </div>
+
         <div className='mt-[46px]'>
           <Swiper {...settings}>
-            {blogData.map(
-              ({
-                id,
-                blogThumb,
-                blogDate,
-                blogPostIcon,
-                blogPost,
-                blogUrl,
-                blogTitle,
-                blogBtnText,
-                blogBtnIcon,
-              }) => {
-                return (
-                  <SwiperSlide key={id}>
-                    <div className='blog-box'>
-                      <BlogCard
-                        blogThumb={blogThumb}
-                        blogDate={blogDate}
-                        blogPostIcon={blogPostIcon}
-                        blogPost={blogPost}
-                        blogUrl={blogUrl}
-                        blogTitle={blogTitle}
-                        blogBtnText={blogBtnText}
-                        blogBtnIcon={blogBtnIcon}
-                      />
-                    </div>
-                  </SwiperSlide>
-                );
-              }
-            )}
+            {blogData.map((item) => (
+              <SwiperSlide key={item.id}>
+                <BlogCard {...item} />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>

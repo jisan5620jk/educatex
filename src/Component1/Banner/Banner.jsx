@@ -10,7 +10,6 @@ import { Link } from 'react-router-dom';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { RxStarFilled } from 'react-icons/rx';
 import OnScrollCounter from '../../Shared/Counter/OnScrollCounter';
-import './banner.css';
 
 const Banner = () => {
   return (

@@ -122,18 +122,6 @@ body {
   }
 }
 
-.primary-btn3 {
-  @apply flex items-center gap-2 overflow-hidden border border-PrimaryColor-0 bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-9 py-[16px] relative rounded text-base text-white font-medium font-OpenSans before:bg-SecondaryColor-0 before:h-full before:w-0 before:absolute before:top-0 before:right-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0;
-}
-
-.primary-btn4 {
-  @apply flex items-center gap-2 overflow-hidden border uppercase border-PrimaryColor-0 bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-9 py-[15px] relative rounded-full text-base text-white font-medium font-OpenSans before:bg-SecondaryColor-0 before:h-full before:w-0 before:absolute before:top-0 before:right-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0;
-}
-
-.primary-btn5 {
-  @apply flex items-center gap-2 overflow-hidden border uppercase border-PrimaryColor-0 bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-9 py-[13px] relative rounded-full text-lg text-white font-semibold font-Outfit before:bg-SecondaryColor-0 before:h-full before:w-0 before:absolute before:top-0 before:right-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0;
-}
-
 /* Progress Bar */
 
 .progress-bar-rect-wrap-container {
@@ -429,4 +417,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   .feature-box:nth-child(2n + 2) {
     margin-top: 44px;
   }
+}
+
+
+/* Filter */
+
+.button-group button.active {
+  color: white;
 }

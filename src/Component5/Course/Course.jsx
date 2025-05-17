@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { FaGraduationCap, FaUser } from 'react-icons/fa6';
 import { BsFillCalendar2WeekFill } from 'react-icons/bs';
+import shape from '/images/trending-shape1.png';
+import shape2 from '/images/trending-shape2.png';
 
 const courses = [
   {
@@ -120,6 +122,8 @@ const Course = () => {
           ))}
         </div>
       </div>
+      <div className='absolute top-28 right-24'><img src={shape} draggable={false} alt="Shape" className='animate-swing' /></div>
+      <div className='absolute bottom-20 left-32'><img src={shape2} draggable={false} alt="Shape" className='animate-bounce' /></div>
     </section>
   );
 };

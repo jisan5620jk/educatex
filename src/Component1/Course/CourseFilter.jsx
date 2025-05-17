@@ -8,7 +8,6 @@ import instructorImg from '/images/case-autor.png';
 import instructorImg2 from '/images/case-autor2.png';
 import instructorImg3 from '/images/case-autor3.png';
 import shape from '/images/case-shape1.png';
-import './course.css';
 import { BsStarFill, BsStarHalf } from 'react-icons/bs';
 import { IoDocumentTextOutline } from 'react-icons/io5';
 import { PiUsersThree } from 'react-icons/pi';
@@ -28,6 +27,15 @@ const courses = [
     students: 1200,
     instructor: 'John D. Alexon',
     instructorImg: instructorImg,
+    bgColor: 'bg-[#f0fbf7]',
+    hoverSpan: 'bg-[#1ec28f]',
+    priceBg: 'bg-[#1ec28f]',
+    categoryColor: 'text-[#1ec28f]',
+    categoryBg:
+      'bg-[rgba(30,194,143,0.1)] border border-[rgba(30,194,143,0.3)]',
+    hoverTitle: 'group-hover:text-[#1ec28f]',
+    iconColor: 'text-[#1ec28f]',
+    buttonBg: 'bg-[#1ec28f]',
   },
   {
     id: 2,
@@ -41,6 +49,14 @@ const courses = [
     students: 1500,
     instructor: 'Jane Smith',
     instructorImg: instructorImg2,
+    bgColor: 'bg-[#f0fbf7]',
+    hoverSpan: 'bg-[#ff853f]',
+    priceBg: 'bg-[#ff853f]',
+    categoryColor: 'text-[#ff853f]',
+    categoryBg: 'bg-[#ff853f1a] border border-[rgba(255,133,63,0.3)]',
+    hoverTitle: 'group-hover:text-[#ff853f]',
+    iconColor: 'text-[#ff853f]',
+    buttonBg: 'bg-[#ff853f]',
   },
   {
     id: 3,
@@ -54,8 +70,18 @@ const courses = [
     students: 2000,
     instructor: 'Michael B. Jordan',
     instructorImg: instructorImg3,
+    bgColor: 'bg-[#f0fbf7]',
+    hoverSpan: 'bg-[#15c1fa]',
+    priceBg: 'bg-[#15c1fa]',
+    categoryColor: 'text-[#15c1fa]',
+    categoryBg: 'bg-[#15c1fa1a] border border-[rgba(21,193,250,0.3)]',
+    hoverTitle: 'group-hover:text-[#15c1fa]',
+    iconColor: 'text-[#15c1fa]',
+    buttonBg: 'bg-[#15c1fa]',
   },
 ];
+
+
 
 const CourseFilter = () => {
   const gridRef = useRef(null);
@@ -145,9 +171,7 @@ const CourseFilter = () => {
       </div>
       <div className='Container lg:px-0'>
         <div className='relative grid items-center grid-cols-1 lg:grid-cols-2 gap-8'>
-          <div
-            className='border-b border-SecondaryColor-0 border-opacity-15 pb-6 lg:py-6'
-          >
+          <div className='border-b border-SecondaryColor-0 border-opacity-15 pb-6 lg:py-6'>
             <h5 className='font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
               OUR COURSES
             </h5>
@@ -242,10 +266,18 @@ const CourseFilter = () => {
             >
               <div className='relative rounded-2xl overflow-hidden'>
                 <div className='hover-bg'>
-                  <span className='absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-0'></span>
-                  <span className='absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-[25%]'></span>
-                  <span className='absolute left-[62.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-1/2'></span>
-                  <span className='absolute left-[87.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-[75%]'></span>
+                  <span
+                    className={`absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-0 ${course.hoverSpan}`}
+                  ></span>
+                  <span
+                    className={`absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-[25%] ${course.hoverSpan}`}
+                  ></span>
+                  <span
+                    className={`absolute left-[62.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-1/2 ${course.hoverSpan}`}
+                  ></span>
+                  <span
+                    className={`absolute left-[87.5%] top-0 h-full w-0 transition-all duration-500 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-[75%] ${course.hoverSpan}`}
+                  ></span>
                 </div>
                 <img
                   src={course.img}
@@ -253,24 +285,35 @@ const CourseFilter = () => {
                   draggable={false}
                   className='w-full'
                 />
-                <div className='course-price absolute z-20 bottom-5 left-5 size-[70px] flex items-center justify-center text-white text-xl rounded-full font-Outfit font-medium'>
+                <div
+                  className={`course-price absolute z-20 bottom-5 left-5 size-[70px] flex items-center justify-center text-white text-xl rounded-full font-Outfit font-medium ${course.priceBg}`}
+                >
                   {course.price}
                 </div>
               </div>
 
               <div className='sm:px-3 pt-6 text-left'>
-                <span className='course-category font-Outfit text-sm px-5 py-[5px] rounded-3xl font-medium mb-4 inline-block'>
+                <span
+                  className={`course-category font-Outfit text-sm px-5 py-[5px] rounded-3xl font-medium mb-4 inline-block ${course.categoryColor} ${course.categoryBg}`}
+                >
                   {course.category}
                 </span>
-                <h3 className='course-title font-Outfit text-xl sm:text-2xl lg:text-[22px] xl:text-2xl font-medium text-HeadingColor-0 transition-all duration-500 2xl:mr-12'>
+                <h3
+                  className={`course-title font-Outfit text-xl sm:text-2xl lg:text-[22px] xl:text-2xl font-medium text-HeadingColor-0 transition-all duration-500 2xl:mr-12 ${course.hoverTitle}`}
+                >
                   {course.title}
                 </h3>
 
                 <div className='flex items-center gap-1 text-ReviewText-0 text-sm mt-3 mb-5'>
                   {[...Array(Math.floor(course.rating))].map((_, i) => (
-                    <BsStarFill key={i} />
+                    <BsStarFill
+                      key={i}
+                      className={course.iconColor}
+                    />
                   ))}
-                  {course.rating % 1 !== 0 && <BsStarHalf />}
+                  {course.rating % 1 !== 0 && (
+                    <BsStarHalf className={course.iconColor} />
+                  )}
                   <span className='font-Outfit ml-1 text-HeadingColor-0 text-base'>
                     ({course.rating}
                     {course.ratingContent})
@@ -294,17 +337,29 @@ const CourseFilter = () => {
 
                 <div className='border-t pt-5 relative'>
                   <div className='flex justify-between transition-all duration-500 group-hover:opacity-0'>
-                    <div className='font-Outfit text-HeadingColor-0 flex items-center gap-1'>
-                      <IoDocumentTextOutline size={18} />
+                    <div
+                      className={`font-Outfit text-HeadingColor-0 flex items-center gap-1`}
+                    >
+                      <IoDocumentTextOutline
+                        size={18}
+                        className={course.iconColor}
+                      />
                       {course.lessons} Lessons
                     </div>
-                    <div className='font-Outfit text-HeadingColor-0 flex items-center gap-2'>
-                      <PiUsersThree size={18} />
+                    <div
+                      className={`font-Outfit text-HeadingColor-0 flex items-center gap-2`}
+                    >
+                      <PiUsersThree
+                        size={18}
+                        className={course.iconColor}
+                      />
                       {course.students} Students
                     </div>
                   </div>
-                  <Link to={'/course'}>
-                    <button className='course-button absolute left-0 -bottom-20 font-Outfit inline-flex items-center gap-2 uppercase text-sm justify-between px-7 py-[12px] border z-10 overflow-hidden rounded-full text-white transition-all duration-500 group-hover:-bottom-4'>
+                  <Link to='/course'>
+                    <button
+                      className={`course-button absolute left-0 -bottom-20 font-Outfit inline-flex items-center gap-2 uppercase text-sm justify-between px-7 py-[12px] border z-10 overflow-hidden rounded-full text-white transition-all duration-500 group-hover:-bottom-4 ${course.buttonBg}`}
+                    >
                       Enroll Now
                       <span className='text-xl'>
                         <GoArrowRight />

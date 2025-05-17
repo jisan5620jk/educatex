@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { FaStar } from 'react-icons/fa';
+import { MdStar } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
 const CourseCard = ({
@@ -14,14 +14,16 @@ const CourseCard = ({
   durationIcon,
   lessonIcon,
   textColor,
-  bgColor,authorIcon,
+  bgColor,
+  authorIcon,
   image,
-  categoryColor,hoverTextColor,
+  categoryColor,
+  hoverTextColor,
   hoverBgColor,
 }) => {
   return (
     <div
-      className={`flex flex-col md:flex-row gap-7 items-center p-4 rounded-2xl ${bgColor}`}
+      className={`flex flex-col md:flex-row gap-9 items-center p-5 rounded-2xl ${bgColor}`}
     >
       <div className='relative rounded-xl overflow-hidden'>
         <img
@@ -42,7 +44,7 @@ const CourseCard = ({
         ></span>
       </div>
       <div className='flex-1'>
-        <div className='flex justify-between items-center mb-2'>
+        <div className='flex justify-between items-center mb-6'>
           <span
             className={`font-OpenSans text-[15px] px-5 py-[5px] rounded-3xl inline-block uppercase border ${categoryColor}`}
           >
@@ -54,38 +56,41 @@ const CourseCard = ({
         </div>
         <Link
           to={courseLink}
-          className={`mt-3 font-Outfit text-lg font-semibold text-HeadingColor-0 transition-all duration-500 uppercase ${hoverTextColor}`}
+          className={`mt-3 font-Outfit text-xl font-semibold text-HeadingColor-0 transition-all duration-500 uppercase ${hoverTextColor}`}
         >
           {title}
         </Link>
-        <hr className='bg-SecondaryColor-0 bg-opacity-15 mt-4' />
-        <div className='flex items-center gap-8 font-OpenSans text-gray-500 mt-7 mb-4'>
-          <div className='flex items-center gap-2'>
+        <div className='flex items-center gap-8 font-OpenSans border-t border-HeadingColor-0 border-opacity-20 pt-5 mt-4 mb-7'>
+          <div className='flex items-center gap-2 font-OpenSans text-TextColor-0'>
             <span className={`text-xl ${textColor}`}>{lessonIcon}</span>{' '}
             {lessons}
           </div>
-          <div className='flex items-center gap-2'>
+          <div className='flex items-center gap-2 font-OpenSans text-TextColor-0'>
             <span className={`text-[17px] ${textColor}`}>{durationIcon}</span>{' '}
             {duration}
           </div>
         </div>
         <div className='flex items-center gap-2 text-sm text-gray-800'>
-          <div className='flex items-center gap-2 mt-5'>
+          <div className='flex items-center gap-4'>
             <span
               className={`size-9 rounded-full flex items-center justify-center text-white ${hoverBgColor}`}
             >
               {authorIcon}
             </span>
+            <span className='font-Outfit text-TextColor-0 text-lg'>
+              {tutor}
+            </span>
           </div>
-          <span className='font-Outfit text-TextColor-0 text-lg'>{tutor}</span>
-          <span className='flex items-center gap-1 text-green-500 ml-3'>
+          <span className={`flex items-center ${textColor} ml-3`}>
             {[...Array(5)].map((_, i) => (
-              <FaStar
+              <MdStar
                 key={i}
-                className='text-sm'
+                className='text-xl'
               />
             ))}
-            <span className='text-gray-500 ml-1'>({rating})</span>
+            <span className='text-HeadingColor-0 font-Outfit ml-1'>
+              ({rating})
+            </span>
           </span>
         </div>
       </div>

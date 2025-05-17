@@ -1,6 +1,9 @@
 import { FaGraduationCap, FaUser } from 'react-icons/fa6';
 import CourseCard from './CourseCard';
 import { BsFillCalendar2WeekFill } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
+import { HiArrowNarrowRight } from 'react-icons/hi';
+import { FaCircle } from 'react-icons/fa';
 
 const courses = [
   {
@@ -77,20 +80,29 @@ const FeatureCourse = () => {
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
           <div className=''>
-            <span className='inline-flex items-center gap-2 text-sm font-medium text-gray-600 bg-blue-100 px-3 py-1 rounded-full'>
-              <span className='w-2 h-2 bg-orange-400 rounded-full' />
-              FEATURE COURSES
-            </span>
-            <h2 className='text-4xl font-bold mt-4'>
-              Explore Featured <span className='text-green-500'>Courses</span>
-            </h2>
-            <p className='text-gray-600 mt-2'>
+            <h5 className='font-OpenSans bg-PrimaryColor-0 bg-opacity-20 pl-4 pr-5 py-[7px] rounded-r-full border border-PrimaryColor-0 border-opacity-20 text-HeadingColor-0 text-sm inline-flex items-center gap-2 uppercase'>
+              <span className='text-PrimaryColor2-0'>
+                <FaCircle size={10} />
+              </span>
+              Featured Courses
+            </h5>
+            <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[45px] 2xl:leading-[55px] text-HeadingColor-0 mt-[18px] mb-4'>
+              Explore Featured{' '}
+              <span className='text-PrimaryColor-0'>Courses</span>
+            </h1>
+            <p className='font-OpenSans text-TextColor-0 text-[17px] w-full max-w-[525px] mb-9'>
               Our online education platform offers accessible, and creative pro
               learning experience tailored to your needs.
             </p>
-            <button className='mt-6 px-6 py-3 bg-green-500 text-white font-semibold rounded-full hover:bg-green-600 transition'>
-              START TRIAL →
-            </button>
+            <div>
+              <Link
+                to={'/about'}
+                className='primary-btn2'
+              >
+                Start Trial
+                <HiArrowNarrowRight size={20} />
+              </Link>
+            </div>
           </div>
           {courses.map((course) => (
             <CourseCard

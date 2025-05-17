@@ -1,5 +1,7 @@
 import About from '../../Component5/About/About';
 import Banner from '../../Component5/Banner/Banner';
+import Blog from '../../Component5/Blog/Blog';
+import Brand from '../../Component5/Brand/Brand';
 import CallDoAction from '../../Component5/CallDoAction/CallDoAction';
 import Course from '../../Component5/Course/Course';
 import FeaturedCourse from '../../Component5/FeatureCourse/FeatureCourse';
@@ -15,6 +17,8 @@ const Home5 = () => {
       <FeaturedCourse />
       <TeamMember />
       <CallDoAction />
+      <Blog />
+      <Brand />
     </>
   );
 };
