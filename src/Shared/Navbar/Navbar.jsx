@@ -317,7 +317,7 @@ const Navbar = () => {
                   <div className='hidden lg:block'>
                     <Link
                       to={'/contact'}
-                      className='header-btn'
+                      className='inline-flex items-center gap-2 text-base uppercase text-white font-medium font-Outfit rounded-full bg-PrimaryColor-0 px-[30px] py-3 transition-all duration-500 relative z-10 overflow-hidden before:absolute before:h-full before:w-0 before:bg-PrimaryColor2-0 before:opacity-50 before:top-0 before:left-auto before:right-0 before:transition-all before:duration-500 before:-z-10 hover:before:left-0 hover:before:opacity-100 hover:before:w-full hover:right-auto'
                     >
                       Free Trial
                       <HiArrowNarrowRight size={18} />
