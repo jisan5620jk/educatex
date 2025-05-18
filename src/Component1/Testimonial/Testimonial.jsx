@@ -1,8 +1,10 @@
+import { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
 import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
+import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
+
 import { MdOutlineStarHalf, MdOutlineStarPurple500 } from 'react-icons/md';
 import TestimonialCard from './TestimonialCard';
 import testiImg from '/images/testi-autor1.png';
@@ -13,7 +15,6 @@ import testiThumb from '/images/testi-thumb.png';
 import testiShape from '/images/testi-map.png';
 import testiShape2 from '/images/hero-dot.png';
 import TestiNavigation from './TestiNavigation';
-import './testimonial.css';
 
 const testiData = [
   {
@@ -52,25 +53,29 @@ const testiData = [
 ];
 
 const Testimonial = () => {
+  const swiperRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleBulletClick = (index) => {
+    if (swiperRef.current) {
+      swiperRef.current.slideToLoop(index);
+    }
+  };
+
+  const paginationImages = [testiImg, testiImg2, testiImg3];
+
   const settings = {
-    modules: [Autoplay],
+    modules: [Autoplay, Pagination, EffectFade],
     loop: true,
     speed: 2000,
     autoplay: {
-      delay: 3000, // Set delay time in milliseconds
-      disableOnInteraction: false, // Keep autoplay on user interaction
+      delay: 3000,
+      disableOnInteraction: false,
     },
-    effect: 'fade', // Fade effect for smooth transitions
-    fadeEffect: {
-      crossFade: true,
-    },
-  };
-
-  const pagination = {
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + ' pagination-bullet"></span>';
-    },
+    effect: 'fade',
+    fadeEffect: { crossFade: true },
+    onSwiper: (swiper) => (swiperRef.current = swiper),
+    onSlideChange: (swiper) => setActiveIndex(swiper.realIndex),
   };
 
   return (
@@ -78,16 +83,16 @@ const Testimonial = () => {
       <div className='absolute -z-10 top-[22%] left-[13%] inline-block'>
         <img
           src={testiShape}
+          alt='Shape'
           draggable={false}
-          alt='Testimonial Shape'
           className='animate-rotational'
         />
       </div>
       <div className='absolute -z-10 top-[56%] left-[12%] inline-block'>
         <img
           src={testiShape2}
+          alt='Shape'
           draggable={false}
-          alt='Testimonial Shape'
           className='animate-wiggle'
         />
       </div>
@@ -108,50 +113,43 @@ const Testimonial = () => {
           <div className='lg:-mt-2 flex items-center justify-center lg:ml-12 relative'>
             <img
               src={testiThumb}
+              alt='Testimonial'
               draggable={false}
-              alt='Testimonial Image'
             />
           </div>
-          <div className='lg:ml-4'>
-            <Swiper
-              {...settings}
-              pagination={pagination}
-              modules={[Pagination, EffectFade]}
-            >
-              <div>
-                {testiData.map(
-                  ({
-                    id,
-                    testiTitle,
-                    testiQuate,
-                    testiRatingIcon,
-                    testiRatingIcon2,
-                    testiName,
-                    testiImg,
-                    testiDesc,
-                    testiDesignation,
-                  }) => {
-                    return (
-                      <SwiperSlide key={id}>
-                        <div className='pb-24 sm:pb-0'>
-                          <TestimonialCard
-                            testiTitle={testiTitle}
-                            testiQuate={testiQuate}
-                            testiRatingIcon={testiRatingIcon}
-                            testiRatingIcon2={testiRatingIcon2}
-                            testiName={testiName}
-                            testiImg={testiImg}
-                            testiDesc={testiDesc}
-                            testiDesignation={testiDesignation}
-                          />
-                        </div>
-                      </SwiperSlide>
-                    );
-                  }
-                )}
-              </div>
+          <div className='lg:ml-4 relative'>
+            <Swiper {...settings}>
+              {testiData.map((testimonial) => (
+                <SwiperSlide key={testimonial.id}>
+                  <div className='pb-24 sm:pb-0'>
+                    <TestimonialCard {...testimonial} />
+                  </div>
+                </SwiperSlide>
+              ))}
+
               <TestiNavigation />
             </Swiper>
+
+            {/* Custom Pagination */}
+            <div className='absolute top-14 left-[-100%] -translate-x-[2%] flex flex-col justify-start items-start gap-[68px] z-10'>
+              {paginationImages.map((img, i) => (
+                <button
+                  key={i}
+                  onClick={() => handleBulletClick(i)}
+                  className={`relative size-[74px] transition-all duration-500 ${
+                    activeIndex === i ? 'size-[60px]' : ''
+                  } ${i === 1 ? 'ml-[450px]' : ''}`}
+                >
+                  <span
+                    className='absolute top-0 left-0 w-full h-full bg-cover bg-no-repeat rounded-full transition-all duration-500'
+                    style={{ backgroundImage: `url(${img})` }}
+                  ></span>
+                  {activeIndex === i && (
+                    <span className='absolute -top-[7px] -left-[7px] size-[74px] border border-[#0084ff] rounded-full'></span>
+                  )}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -6,13 +6,25 @@ const FeatureCard = ({
   featureTitle,
   featureDesc,
   featureUrl,
+  boxBg,
+  hoverBg,
 }) => {
   return (
-    <div className='group px-4 sm:px-8 lg:px-4 xl:px-6 2xl:px-9 py-5 sm:py-12 lg:py-4 xl:py-7 2xl:py-12 transition-all duration-500 rounded-[20px] relative z-10 overflow-hidden'>
-      <span className='absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-0'></span>
-      <span className='absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[25%]'></span>
-      <span className='absolute left-[62.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-1/2'></span>
-      <span className='absolute left-[87.5%] top-0 h-full w-0 transition-all duration-500 -z-10 group-hover:w-[25%] group-hover:left-[75%]'></span>
+    <div
+      className={`group ${boxBg} px-4 sm:px-8 lg:px-4 xl:px-6 2xl:px-9 py-5 sm:py-12 lg:py-4 xl:py-7 2xl:py-12 transition-all duration-500 rounded-[20px] relative z-10 overflow-hidden`}
+    >
+      <span
+        className={`absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 ${hoverBg} -z-10 group-hover:w-[25%] group-hover:left-0`}
+      ></span>
+      <span
+        className={`absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 ${hoverBg} -z-10 group-hover:w-[25%] group-hover:left-[25%]`}
+      ></span>
+      <span
+        className={`absolute left-[62.5%] top-0 h-full w-0 transition-all duration-500 ${hoverBg} -z-10 group-hover:w-[25%] group-hover:left-1/2`}
+      ></span>
+      <span
+        className={`absolute left-[87.5%] top-0 h-full w-0 transition-all duration-500 ${hoverBg} -z-10 group-hover:w-[25%] group-hover:left-[75%]`}
+      ></span>
       <div className='mb-6'>
         <img
           src={featureIcon}

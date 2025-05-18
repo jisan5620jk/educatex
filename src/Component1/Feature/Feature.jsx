@@ -4,32 +4,34 @@ import featureIcon3 from '/images/feature-icon3.png';
 import featureShape from '/images/feature-shape1.png';
 import featureShape2 from '/images/feature-shape2.png';
 import FeatureCard from './FeatureCard';
-import './feature.css';
 
-const processData = [
+const featureData = [
   {
-    id: 1,
     featureIcon: featureIcon,
     featureTitle: 'Learning Experiences',
     featureDesc:
       'The ultimate destination for knowledge for We are committed to transforming',
     featureUrl: '/service',
+    boxBg: 'bg-PrimaryColor-0 bg-opacity-10',
+    hoverBg: 'bg-PrimaryColor-0',
   },
   {
-    id: 2,
     featureIcon: featureIcon2,
     featureTitle: 'Professional Instructor',
     featureDesc:
       'The ultimate destination for knowledge for We are committed to transforming',
     featureUrl: '/service',
+    boxBg: 'bg-PrimaryColor2-0 bg-opacity-10',
+    hoverBg: 'bg-PrimaryColor2-0',
   },
   {
-    id: 3,
     featureIcon: featureIcon3,
     featureTitle: 'Moneyback Gaurantee',
     featureDesc:
       'The ultimate destination for knowledge for We are committed to transforming',
     featureUrl: '/service',
+    boxBg: 'bg-PrimaryColor3-0 bg-opacity-10',
+    hoverBg: 'bg-PrimaryColor3-0',
   },
 ];
 
@@ -62,9 +64,7 @@ const Feature = () => {
       </div>
       <div className='Container '>
         <div className='relative grid items-center grid-cols-1 lg:grid-cols-2 gap-8'>
-          <div
-            className='border-b border-SecondaryColor-0 border-opacity-15 pb-6 lg:py-6'
-          >
+          <div className='border-b border-SecondaryColor-0 border-opacity-15 pb-6 lg:py-6'>
             <h5 className='font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
               core features
             </h5>
@@ -76,23 +76,12 @@ const Feature = () => {
           </h1>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start gap-7 relative z-10 mt-[52px]'>
-          {processData.map(
-            ({ id, featureIcon, featureTitle, featureDesc, featureUrl }) => {
-              return (
-                <div
-                  key={id}
-                  className='feature-box1'
-                >
-                  <FeatureCard
-                    featureIcon={featureIcon}
-                    featureTitle={featureTitle}
-                    featureDesc={featureDesc}
-                    featureUrl={featureUrl}
-                  />
-                </div>
-              );
-            }
-          )}
+          {featureData.map((feature, index) => (
+            <FeatureCard
+              key={index}
+              {...feature}
+            />
+          ))}
         </div>
       </div>
     </section>

@@ -2,11 +2,10 @@ import courseImg1 from '/images/case-thumb1.jpg';
 import courseImg2 from '/images/case-thumb2.jpg';
 import courseImg3 from '/images/case-thumb3.jpg';
 import { HiArrowNarrowRight } from 'react-icons/hi';
-import './course.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
-import { useEffect, useRef } from 'react';
+import { useState } from 'react';
 import { BsStarFill, BsStarHalf } from 'react-icons/bs';
 import CourseNavigation from './CourseNavigation';
 import CourseCard from './CourseCard';
@@ -23,8 +22,8 @@ const courses = [
     category: 'Business',
     title: 'Business Innovation And Development',
     price: '$30',
-    courseRatingIcon: <BsStarFill />,
-    courseRatingIcon2: <BsStarHalf />,
+    RatingIcon: <BsStarFill />,
+    RatingIcon2: <BsStarHalf />,
     rating: 4.5,
     ratingContent: '/3 Ratings',
     lessons: 12,
@@ -32,6 +31,13 @@ const courses = [
     courseUrl: '/course',
     enrollBtn: 'Enroll Now',
     enrollBtnIcon: <HiArrowNarrowRight />,
+    hoverBg: 'bg-PrimaryColor3-0',
+    categoryColor:
+      'text-PrimaryColor3-0 bg-PrimaryColor3-0 bg-opacity-10 border-PrimaryColor3-0 border-opacity-30',
+    hoverText: 'hover:text-PrimaryColor3-0',
+    textColor: 'text-PrimaryColor3-0',
+    btnColor:
+      'text-PrimaryColor3-0 border-PrimaryColor3-0 border-opacity-50 before:bg-PrimaryColor3-0',
   },
   {
     id: 2,
@@ -39,8 +45,8 @@ const courses = [
     category: 'Design',
     title: 'Fundamentals of Network And Domains',
     price: '$40',
-    courseRatingIcon: <BsStarFill />,
-    courseRatingIcon2: <BsStarHalf />,
+    RatingIcon: <BsStarFill />,
+    RatingIcon2: <BsStarHalf />,
     rating: 4.7,
     ratingContent: '/7 Ratings',
     lessons: 15,
@@ -48,6 +54,13 @@ const courses = [
     courseUrl: '/course',
     enrollBtn: 'Enroll Now',
     enrollBtnIcon: <HiArrowNarrowRight />,
+    hoverBg: 'bg-PrimaryColor2-0',
+    categoryColor:
+      'text-PrimaryColor2-0 bg-PrimaryColor2-0 bg-opacity-10 border-PrimaryColor2-0 border-opacity-30',
+    hoverText: 'hover:text-PrimaryColor2-0',
+    textColor: 'text-PrimaryColor2-0',
+    btnColor:
+      'text-PrimaryColor2-0 border-PrimaryColor2-0 border-opacity-50 before:bg-PrimaryColor2-0',
   },
   {
     id: 3,
@@ -55,13 +68,20 @@ const courses = [
     category: 'Finance',
     title: 'Creative Graphic Design with Adobe Suite',
     price: '$50',
-    courseRatingIcon: <BsStarFill />,
+    RatingIcon: <BsStarFill />,
     courseRatingIcon2: <BsStarHalf />,
     rating: 4.8,
     ratingContent: '/5 Ratings',
     courseUrl: '/course',
     enrollBtn: 'Enroll Now',
     enrollBtnIcon: <HiArrowNarrowRight />,
+    hoverBg: 'bg-PrimaryColor-0',
+    categoryColor:
+      'text-PrimaryColor-0 bg-PrimaryColor-0 bg-opacity-10 border-PrimaryColor-0 border-opacity-30',
+    hoverText: 'hover:text-PrimaryColor-0',
+    textColor: 'text-PrimaryColor-0',
+    btnColor:
+      'text-PrimaryColor-0 border-PrimaryColor-0 border-opacity-50 before:bg-PrimaryColor-0',
   },
 ];
 
@@ -97,24 +117,14 @@ const Course = () => {
     },
   };
 
-  const tabRefs = useRef([]);
-  const contentRefs = useRef([]);
+  const tabs = [
+    'Graduate Program',
+    'Under Graduate Program',
+    'Online Program',
+    'Scholarship Program',
+  ];
 
-  useEffect(() => {
-    tabRefs.current.forEach((tab, index) => {
-      const handleClick = () => {
-        tabRefs.current.forEach((t) => t?.classList.remove('active'));
-        tab?.classList.add('active');
-
-        contentRefs.current.forEach((c) => c?.classList.remove('active'));
-        contentRefs.current[index]?.classList.add('active');
-      };
-
-      tab?.addEventListener('click', handleClick);
-
-      return () => tab?.removeEventListener('click', handleClick);
-    });
-  }, []);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <div className='course-section bg-BodyBg-0 py-16 md:py-20 lg:py-[100px] xl:py-[120px] relative'>
@@ -135,67 +145,47 @@ const Course = () => {
       <div className='w-full sm:w-[540px] md:w-[720px] lg:w-[960px] xl:w-[1140px] 2xl:w-[1350px] 3xl:w-[1510px] px-2 md:px-3 lg:px-4 mx-auto mt-12'>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 3xl:pl-20 gap-y-10 lg:gap-0'>
           <div className='col-span-1 relative z-10'>
-            <div className='space-y-5 lg:mr-10 2xl:mr-20'>
-              <div className='course-tab-btn'>
-                <button
-                  ref={(el) => (tabRefs.current[0] = el)}
-                  className='active group font-Outfit bg-white rounded-[16px] w-full text-HeadingColor-0 text-lg sm:text-xl lg:text-[17px] xl:text-xl transition-all duration-500 hover:text-white flex items-center gap-2 px-3 sm:px-6 lg:px-3 xl:px-6 py-4 sm:py-5 relative z-10 overflow-hidden'
+            {/* Tab Buttons */}
+            <div className='space-y-5 lg:mr-10 2xl:mr-20 w-full lg:w-auto'>
+              {tabs.map((tab, index) => (
+                <div
+                  key={index}
+                  className='course-tab-btn'
                 >
-                  <div>
-                    <span className='absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-0'></span>
-                    <span className='absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[25%]'></span>
-                    <span className='absolute left-[62.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-1/2'></span>
-                    <span className='absolute left-[87.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[75%]'></span>
-                  </div>
-                  <FaCircleCheck className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                  Graduate Program
-                </button>
-              </div>
-              <div className='course-tab-btn'>
-                <button
-                  ref={(el) => (tabRefs.current[1] = el)}
-                  className='group font-Outfit bg-white rounded-[16px] w-full text-HeadingColor-0 text-lg sm:text-xl lg:text-[17px] xl:text-xl transition-all duration-500 hover:text-white flex items-center gap-2 px-3 sm:px-6 lg:px-3 xl:px-6 py-4 sm:py-5 relative z-10 overflow-hidden'
-                >
-                  <div>
-                    <span className='absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-0'></span>
-                    <span className='absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[25%]'></span>
-                    <span className='absolute left-[62.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-1/2'></span>
-                    <span className='absolute left-[87.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[75%]'></span>
-                  </div>
-                  <FaCircleCheck className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                  Under Graduate Program
-                </button>
-              </div>
-              <div className='course-tab-btn'>
-                <button
-                  ref={(el) => (tabRefs.current[2] = el)}
-                  className='group font-Outfit bg-white rounded-[16px] w-full text-HeadingColor-0 text-lg sm:text-xl lg:text-[17px] xl:text-xl transition-all duration-500 hover:text-white flex items-center gap-2 px-3 sm:px-6 lg:px-3 xl:px-6 py-4 sm:py-5 relative z-10 overflow-hidden'
-                >
-                  <div>
-                    <span className='absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-0'></span>
-                    <span className='absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[25%]'></span>
-                    <span className='absolute left-[62.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-1/2'></span>
-                    <span className='absolute left-[87.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[75%]'></span>
-                  </div>
-                  <FaCircleCheck className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                  Online Program
-                </button>
-              </div>
-              <div className='course-tab-btn'>
-                <button
-                  ref={(el) => (tabRefs.current[3] = el)}
-                  className='group font-Outfit bg-white rounded-[16px] w-full text-HeadingColor-0 text-lg sm:text-xl lg:text-[17px] xl:text-xl transition-all duration-500 hover:text-white flex items-center gap-2 px-3 sm:px-6 lg:px-3 xl:px-6 py-4 sm:py-5 relative z-10 overflow-hidden'
-                >
-                  <div>
-                    <span className='absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-0'></span>
-                    <span className='absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[25%]'></span>
-                    <span className='absolute left-[62.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-1/2'></span>
-                    <span className='absolute left-[87.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[75%]'></span>
-                  </div>
-                  <FaCircleCheck className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                  Scholarship Program
-                </button>
-              </div>
+                  <button
+                    onClick={() => setActiveIndex(index)}
+                    className={`group font-Outfit bg-white rounded-[16px] w-full text-HeadingColor-0 text-lg sm:text-xl lg:text-[17px] xl:text-xl transition-all duration-500 hover:text-white flex items-center gap-2 px-3 sm:px-6 lg:px-3 xl:px-6 py-4 sm:py-5 relative z-10 overflow-hidden
+                ${activeIndex === index ? 'active text-white' : ''}`}
+                  >
+                    <span
+                      className={`absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-0  ${
+                        activeIndex === index ? 'w-1/4 !left-0' : 'w-0'
+                      }`}
+                    ></span>
+                    <span
+                      className={`absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[25%]  ${
+                        activeIndex === index ? 'w-1/4 !left-1/4' : 'w-0'
+                      }`}
+                    ></span>
+                    <span
+                      className={`absolute left-[62.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-1/2  ${
+                        activeIndex === index ? 'w-1/4 !left-1/2' : 'w-0'
+                      }`}
+                    ></span>
+                    <span
+                      className={`absolute left-[87.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[75%]  ${
+                        activeIndex === index ? 'w-1/4 !left-[75%]' : 'w-0'
+                      }`}
+                    ></span>
+
+                    <FaCircleCheck
+                      className={`text-PrimaryColor-0 transition-all duration-500 group-hover:text-white
+                  ${activeIndex === index ? 'text-white' : ''}`}
+                    />
+                    {tab}
+                  </button>
+                </div>
+              ))}
             </div>
 
             <div className='absolute bottom-0 left-24 hidden lg:block'>
@@ -237,213 +227,32 @@ const Course = () => {
             </div>
           </div>
 
-          <div
-            ref={(el) => (contentRefs.current[0] = el)}
-            className='course-tab-content col-span-2 active'
-          >
-            <Swiper
-              {...settings}
-              className='pr-0 md:!pr-20'
-            >
-              {courses.map(
-                ({
-                  id,
-                  img,
-                  category,
-                  title,
-                  price,
-                  rating,
-                  courseRatingIcon,
-                  courseRatingIcon2,
-                  ratingContent,
-                  lessons,
-                  students,
-                  enrollBtn,
-                  enrollBtnIcon,
-                  courseUrl,
-                }) => {
-                  return (
-                    <SwiperSlide key={id}>
+          {/* Tab Contents */}
+          <div className='w-full lg:col-span-2'>
+            {[0, 1, 2, 3].map((index) => (
+              <div
+                key={index}
+                className={`col-span-2 transition-opacity duration-500 ${
+                  activeIndex === index
+                    ? 'opacity-100 visible block animate-fadeInUp'
+                    : 'opacity-0 invisible hidden pointer-events-none'
+                }`}
+              >
+                <Swiper
+                  {...settings}
+                  className='pr-0 md:!pr-20'
+                >
+                  {courses.map((course) => (
+                    <SwiperSlide key={course.id}>
                       <div className='course-box pb-20 lg:pb-0'>
-                        <CourseCard
-                          courseImg={img}
-                          courseCategory={category}
-                          courseTitle={title}
-                          coursePrice={price}
-                          courseRating={rating}
-                          courseRatingIcon={courseRatingIcon}
-                          courseRatingIcon2={courseRatingIcon2}
-                          courseRatingContent={ratingContent}
-                          courseLessons={lessons}
-                          courseStudents={students}
-                          enrollBtn={enrollBtn}
-                          enrollBtnIcon={enrollBtnIcon}
-                          courseUrl={courseUrl}
-                        />
+                        <CourseCard {...course} />
                       </div>
                     </SwiperSlide>
-                  );
-                }
-              )}
-
-              <CourseNavigation />
-            </Swiper>
-          </div>
-          <div
-            ref={(el) => (contentRefs.current[1] = el)}
-            className='course-tab-content col-span-2'
-          >
-            <Swiper
-              {...settings}
-              className='pr-0 md:!pr-20'
-            >
-              {courses.map(
-                ({
-                  id,
-                  img,
-                  category,
-                  title,
-                  price,
-                  rating,
-                  courseRatingIcon,
-                  courseRatingIcon2,
-                  ratingContent,
-                  lessons,
-                  students,
-                  enrollBtn,
-                  enrollBtnIcon,
-                  courseUrl,
-                }) => {
-                  return (
-                    <SwiperSlide key={id}>
-                      <div className='course-box pb-20 lg:pb-0'>
-                        <CourseCard
-                          courseImg={img}
-                          courseCategory={category}
-                          courseTitle={title}
-                          coursePrice={price}
-                          courseRating={rating}
-                          courseRatingIcon={courseRatingIcon}
-                          courseRatingIcon2={courseRatingIcon2}
-                          courseRatingContent={ratingContent}
-                          courseLessons={lessons}
-                          courseStudents={students}
-                          enrollBtn={enrollBtn}
-                          enrollBtnIcon={enrollBtnIcon}
-                          courseUrl={courseUrl}
-                        />
-                      </div>
-                    </SwiperSlide>
-                  );
-                }
-              )}
-
-              <CourseNavigation />
-            </Swiper>
-          </div>
-          <div
-            ref={(el) => (contentRefs.current[2] = el)}
-            className='course-tab-content col-span-2'
-          >
-            <Swiper
-              {...settings}
-              className='pr-0 md:!pr-20'
-            >
-              {courses.map(
-                ({
-                  id,
-                  img,
-                  category,
-                  title,
-                  price,
-                  rating,
-                  courseRatingIcon,
-                  courseRatingIcon2,
-                  ratingContent,
-                  lessons,
-                  students,
-                  enrollBtn,
-                  enrollBtnIcon,
-                  courseUrl,
-                }) => {
-                  return (
-                    <SwiperSlide key={id}>
-                      <div className='course-box pb-20 lg:pb-0'>
-                        <CourseCard
-                          courseImg={img}
-                          courseCategory={category}
-                          courseTitle={title}
-                          coursePrice={price}
-                          courseRating={rating}
-                          courseRatingIcon={courseRatingIcon}
-                          courseRatingIcon2={courseRatingIcon2}
-                          courseRatingContent={ratingContent}
-                          courseLessons={lessons}
-                          courseStudents={students}
-                          enrollBtn={enrollBtn}
-                          enrollBtnIcon={enrollBtnIcon}
-                          courseUrl={courseUrl}
-                        />
-                      </div>
-                    </SwiperSlide>
-                  );
-                }
-              )}
-
-              <CourseNavigation />
-            </Swiper>
-          </div>
-          <div
-            ref={(el) => (contentRefs.current[3] = el)}
-            className='course-tab-content col-span-2'
-          >
-            <Swiper
-              {...settings}
-              className='pr-0 md:!pr-20'
-            >
-              {courses.map(
-                ({
-                  id,
-                  img,
-                  category,
-                  title,
-                  price,
-                  rating,
-                  courseRatingIcon,
-                  courseRatingIcon2,
-                  ratingContent,
-                  lessons,
-                  students,
-                  enrollBtn,
-                  enrollBtnIcon,
-                  courseUrl,
-                }) => {
-                  return (
-                    <SwiperSlide key={id}>
-                      <div className='course-box pb-20 lg:pb-0'>
-                        <CourseCard
-                          courseImg={img}
-                          courseCategory={category}
-                          courseTitle={title}
-                          coursePrice={price}
-                          courseRating={rating}
-                          courseRatingIcon={courseRatingIcon}
-                          courseRatingIcon2={courseRatingIcon2}
-                          courseRatingContent={ratingContent}
-                          courseLessons={lessons}
-                          courseStudents={students}
-                          enrollBtn={enrollBtn}
-                          enrollBtnIcon={enrollBtnIcon}
-                          courseUrl={courseUrl}
-                        />
-                      </div>
-                    </SwiperSlide>
-                  );
-                }
-              )}
-
-              <CourseNavigation />
-            </Swiper>
+                  ))}
+                  <CourseNavigation />
+                </Swiper>
+              </div>
+            ))}
           </div>
         </div>
       </div>

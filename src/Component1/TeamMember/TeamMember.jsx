@@ -11,7 +11,6 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Autoplay } from 'swiper/modules';
 import { BsStarFill, BsStarHalf } from 'react-icons/bs';
-import './team-member.css';
 
 const teamData = [
   {
@@ -26,6 +25,14 @@ const teamData = [
     ratingFill: <BsStarFill />,
     ratingHalf: <BsStarHalf />,
     ratingContant: '(4.5)',
+    cardBg: 'bg-PrimaryColor3-0 bg-opacity-[7%]',
+    descBg: 'bg-PrimaryColor3-0 bg-opacity-10',
+    descBorder: 'border-PrimaryColor3-0 border-opacity-30',
+    descText: 'text-PrimaryColor3-0',
+    hoverText: 'hover:text-PrimaryColor3-0',
+    gradientFrom: 'from-PrimaryColor3-0 from-20%',
+    gradientVia: 'via-transparent',
+    gradientTo: 'to-transparent',
   },
   {
     id: 2,
@@ -39,6 +46,14 @@ const teamData = [
     ratingFill: <BsStarFill />,
     ratingHalf: <BsStarHalf />,
     ratingContant: '(4.5)',
+    cardBg: 'bg-PrimaryColor-0 bg-opacity-[7%]',
+    descBg: 'bg-PrimaryColor-0 bg-opacity-10',
+    descBorder: 'border-PrimaryColor-0 border-opacity-30',
+    descText: 'text-PrimaryColor-0',
+    hoverText: 'hover:text-PrimaryColor-0',
+    gradientFrom: 'from-PrimaryColor-0 from-20%',
+    gradientVia: 'via-transparent',
+    gradientTo: 'to-transparent',
   },
   {
     id: 3,
@@ -52,6 +67,14 @@ const teamData = [
     ratingFill: <BsStarFill />,
     ratingHalf: <BsStarHalf />,
     ratingContant: '(4.5)',
+    cardBg: 'bg-PrimaryColor2-0 bg-opacity-[7%]',
+    descBg: 'bg-PrimaryColor2-0 bg-opacity-10',
+    descBorder: 'border-PrimaryColor2-0 border-opacity-30',
+    descText: 'text-PrimaryColor2-0',
+    hoverText: 'hover:text-PrimaryColor2-0',
+    gradientFrom: 'from-PrimaryColor2-0 from-20%',
+    gradientVia: 'via-transparent',
+    gradientTo: 'to-transparent',
   },
   {
     id: 4,
@@ -65,6 +88,14 @@ const teamData = [
     ratingFill: <BsStarFill />,
     ratingHalf: <BsStarHalf />,
     ratingContant: '(4.5)',
+    cardBg: 'bg-PrimaryColor4-0 bg-opacity-[7%]',
+    descBg: 'bg-PrimaryColor4-0 bg-opacity-10',
+    descBorder: 'border-PrimaryColor4-0 border-opacity-30',
+    descText: 'text-PrimaryColor4-0',
+    hoverText: 'hover:text-PrimaryColor4-0',
+    gradientFrom: 'from-PrimaryColor4-0 from-20%',
+    gradientVia: 'via-transparent',
+    gradientTo: 'to-transparent',
   },
 ];
 
@@ -123,40 +154,13 @@ const TeamMember = () => {
         </div>
         <div className='mt-[48px]'>
           <Swiper {...settings}>
-            {teamData.map(
-              ({
-                id,
-                teamThumb,
-                teamUrl,
-                teamTitle,
-                socialIcon,
-                socialIcon2,
-                socialIcon3,
-                teamDesc,
-                ratingFill,
-                ratingHalf,
-                ratingContant,
-              }) => {
-                return (
-                  <SwiperSlide key={id}>
-                    <div className='team-member-box'>
-                      <TeamCard
-                        teamThumb={teamThumb}
-                        teamUrl={teamUrl}
-                        teamTitle={teamTitle}
-                        socialIcon={socialIcon}
-                        socialIcon2={socialIcon2}
-                        socialIcon3={socialIcon3}
-                        teamDesc={teamDesc}
-                        ratingFill={ratingFill}
-                        ratingHalf={ratingHalf}
-                        ratingContant={ratingContant}
-                      />
-                    </div>
-                  </SwiperSlide>
-                );
-              }
-            )}
+            {teamData.map((teams) => {
+              return (
+                <SwiperSlide key={teams.id}>
+                  <TeamCard {...teams} />
+                </SwiperSlide>
+              );
+            })}
           </Swiper>
         </div>
       </div>
