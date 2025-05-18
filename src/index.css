@@ -4,423 +4,58 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-  box-sizing: border-box;
-}
+@layer components {
+  html {
+    @apply scroll-smooth box-border;
+  }
 
-html,
-body {
-  overflow-x: hidden;
-}
+  html,
+  body {
+    @apply overflow-hidden;
+  }
 
-/*Common Tailwind CSS Start Here*/
+  /*Common Tailwind CSS Start Here*/
 
-.Container {
-  @apply w-full sm:w-[540px] md:w-[720px] lg:w-[960px] xl:w-[1140px] 2xl:w-[1320px] px-2 md:px-3 lg:px-3 mx-auto;
-}
+  .Container {
+    @apply w-full sm:w-[540px] md:w-[720px] lg:w-[960px] xl:w-[1140px] 2xl:w-[1320px] px-2 md:px-3 lg:px-3 mx-auto;
+  }
 
-.primary-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #ffffff;
-  font-weight: 500;
-  font-family: 'Outfit';
-  border-radius: 28px;
-  background-color: #1ec28f;
-  padding: 16px 40px;
-  transition: all 0.5s;
-  position: relative;
-  z-index: 1;
-}
-
-.primary-btn::before {
-  position: absolute;
-  content: '';
-  height: 100%;
-  width: 100%;
-  background: #fe853c;
-  border-radius: 30px;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  transition: 0.5s;
-  clip-path: polygon(50% 0, 50% 0, 50% 50%, 50% 100%, 50% 100%, 50% 50%);
-  z-index: -1;
-}
-
-.primary-btn:hover:before {
-  clip-path: polygon(
-    25% -70%,
-    75% -70%,
-    120% 50%,
-    75% 170%,
-    25% 170%,
-    -20% 50%
-  );
-}
-
-@media screen and (max-width: 575px) {
   .primary-btn {
-    font-size: 16px;
-    padding: 14px 30px;
+    @apply inline-flex items-center gap-2 text-base uppercase text-white font-medium font-Outfit rounded-full bg-PrimaryColor-0 px-10 py-4 transition-all duration-500 relative z-10 before:absolute before:h-full before:w-full before:bg-PrimaryColor2-0 before:rounded-full before:left-0 before:top-0 before:right-0 before:bottom-0 before:transition-all before:duration-500 before:-z-10 before:[clip-path:polygon(50%_0,_50%_0,_50%_50%,_50%_100%,_50%_100%,_50%_50%)] hover:before:[clip-path:polygon(_25%_-70%,_75%_-70%,_120%_50%,_75%_170%,_25%_170%,_-20%_50%_)];
   }
-}
 
-.primary-btn2 {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #ffffff;
-  font-weight: 500;
-  font-family: 'Outfit';
-  border-radius: 28px;
-  background-color: #1ec28f;
-  padding: 14px 35px;
-  transition: all 0.5s;
-  position: relative;
-  z-index: 1;
-}
-
-.primary-btn2::before {
-  position: absolute;
-  content: '';
-  height: 100%;
-  width: 100%;
-  background: #fe853c;
-  border-radius: 30px;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  transition: 0.5s;
-  clip-path: polygon(50% 0, 50% 0, 50% 50%, 50% 100%, 50% 100%, 50% 50%);
-  z-index: -1;
-}
-
-.primary-btn2:hover:before {
-  clip-path: polygon(
-    25% -70%,
-    75% -70%,
-    120% 50%,
-    75% 170%,
-    25% 170%,
-    -20% 50%
-  );
-}
-
-@media screen and (max-width: 575px) {
   .primary-btn2 {
-    padding: 10px 25px;
-    font-size: 15px;
+    @apply inline-flex items-center gap-2 text-base uppercase text-white font-medium font-Outfit rounded-full bg-PrimaryColor-0 px-9 py-3.5 transition-all duration-500 relative z-10 before:absolute before:h-full before:w-full before:bg-PrimaryColor2-0 before:rounded-full before:left-0 before:top-0 before:right-0 before:bottom-0 before:transition-all before:duration-500 before:-z-10 before:[clip-path:polygon(50%_0,_50%_0,_50%_50%,_50%_100%,_50%_100%,_50%_50%)] hover:before:[clip-path:polygon(_25%_-70%,_75%_-70%,_120%_50%,_75%_170%,_25%_170%,_-20%_50%_)];
   }
-}
 
-/* Progress Bar */
-
-.progress-bar-rect-wrap-container {
-  position: relative;
-  z-index: 999;
-  display: flex;
-  gap: 50px;
-}
-
-.rect-progress-bar-percent {
-  @apply !m-0 leading-[10px] !text-HeadingColor-0 font-Outfit;
-}
-
-/* React Tab */
-
-.react-tabs__tab--selected::before {
-  width: 20px !important;
-}
-
-/* Project */
-
-.swiper-slide:hover .project-thumb-title,
-.swiper-slide.swiper-slide-active .project-thumb-title {
-  left: 25px;
-  opacity: 1;
-}
-
-/* Project */
-
-.swiper-slide:hover .project-content,
-.swiper-slide.swiper-slide-active .project-content {
-  bottom: 0px;
-}
-
-.swiper-slide:hover .project-content3,
-.swiper-slide.swiper-slide-active .project-content3 {
-  bottom: 0;
-}
-
-/* Pagination */
-
-.swiper-pagination {
-  bottom: inherit !important;
-  top: inherit !important;
-  bottom: 10px !important;
-  left: 95% !important;
-  transform: translatex(-50%) !important;
-  width: 100% !important;
-  display: flex !important;
-  align-items: center !important;
-  gap: 7px !important;
-}
-
-@media screen and (max-width: 575px) {
-  .swiper-pagination {
-    left: 75% !important;
+  /* Mobile responsiveness */
+  @media (max-width: 575px) {
+    .primary-btn {
+      @apply text-base px-[30px] py-[14px];
+    }
+    .primary-btn2 {
+      @apply text-[15px] px-[25px] py-[10px];
+    }
   }
-}
 
-span.swiper-pagination-bullet {
-  background: transparent !important;
-  opacity: 0.7 !important;
-  border-radius: 50%;
-  transition: all 0.5s;
-  height: 14px !important;
-  width: 14px !important;
-  position: relative;
-}
-
-span.swiper-pagination-bullet::before {
-  position: absolute;
-  content: '';
-  top: 0px;
-  left: 0px;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  border: 2px solid #1a90ff57;
-  transition: all 0.5s;
-  transform: scale(1);
-}
-
-span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
-  top: -6px;
-  left: -6px;
-  width: 26px;
-  height: 26px;
-  border-color: #1a90ff;
-}
-
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  opacity: 1 !important;
-  height: 14px !important;
-  width: 14px !important;
-  background: linear-gradient(to right, #1a90ff, #3326fc) !important;
-}
-
-.portfolio .swiper-pagination {
-  bottom: 0 !important;
-  top: inherit !important;
-  left: 50% !important;
-  transform: translatex(-50%) !important;
-  width: 100% !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  gap: 8px !important;
-  flex-direction: row !important;
-}
-
-.portfolio .swiper-pagination-bullet {
-  background: transparent !important;
-  opacity: 1 !important;
-  background: #35435d !important;
-  border: none !important;
-  border-radius: 50%;
-  height: 10px !important;
-  width: 10px !important;
-  position: relative;
-}
-
-.portfolio .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  opacity: 1 !important;
-  height: 12px !important;
-  width: 12px !important;
-  background: #0c59db !important;
-}
-
-.portfolio span.swiper-pagination-bullet::before {
-  scale: 0;
-}
-
-/* Faq */
-
-.faq-button[aria-expanded='true'],
-.faq-button:hover {
-  border-radius: 5px;
-  background: #0c59db;
-  border-color: transparent;
-  padding: 0 20px 0 30px;
-}
-
-.faq-button3[aria-expanded='true'],
-.faq-button3:hover {
-  background: #0b59db;
-  border-radius: 6px 6px 0 0;
-}
-
-.faq-button3:hover img,
-.faq-button3[aria-expanded='true'] img {
-  filter: brightness(0) invert(1);
-}
-
-.faq-button2[aria-expanded='true'] {
-  background: #0b59db;
-  border-radius: 6px 6px 0 0;
-}
-
-.faq-button2:hover img,
-.faq-button2[aria-expanded='true'] img {
-  filter: brightness(0) invert(1);
-}
-
-/* Pricing */
-
-.pricing-box.active::before,
-.pricing-box:hover::before {
-  left: 0;
-  width: 100%;
-}
-
-.pricing-box.active .pricing-quality,
-.pricing-box:hover .pricing-quality {
-  background: #fff;
-  color: #0c59db;
-}
-
-.pricing-box.active .pricing-icon,
-.pricing-box:hover .pricing-icon {
-  color: #0c59db !important;
-}
-
-.pricing-box.active .pricing-icon::before,
-.pricing-box:hover .pricing-icon::before {
-  transform: scale(1);
-}
-
-.pricing-box.active .pricing-limit,
-.pricing-box.active .pricing-price,
-.pricing-box.active .pricing-title,
-.pricing-box.active .pricing-desc,
-.pricing-box:hover .pricing-limit,
-.pricing-box:hover .pricing-price,
-.pricing-box:hover .pricing-title,
-.pricing-box:hover .pricing-desc {
-  color: #fff;
-}
-
-.pricing-box.active .pricing-btn,
-.pricing-box:hover .pricing-btn {
-  color: white;
-  border-color: white;
-}
-
-/* Pricing */
-
-.choose-box.active::before,
-.choose-box:hover::before {
-  left: 0;
-  width: 100%;
-}
-
-.choose-box.active .choose-icon,
-.choose-box:hover .choose-icon {
-  color: #0c59db !important;
-}
-
-.choose-box.active .choose-price,
-.choose-box.active .choose-title,
-.choose-box.active .choose-desc,
-.choose-box.active .choose-list,
-.choose-box:hover .choose-price,
-.choose-box:hover .choose-title,
-.choose-box:hover .choose-desc,
-.choose-box:hover .choose-list {
-  color: #fff;
-}
-
-.choose-box.active .choose-btn,
-.choose-box:hover .choose-btn {
-  color: white;
-  background: #0c59db;
-}
-
-/* Benefits */
-
-.benefits .rect-progress-bar-percent {
-  color: #fff !important;
-  font-weight: 400;
-}
-
-/* Portfolio */
-
-.portfolio .swiper-slide.swiper-slide-active .portfolio-content {
-  border-start-end-radius: 0;
-}
-
-.portfolio .swiper-slide.swiper-slide-active .portfolio-img::before {
-  height: 100%;
-  opacity: 0.2;
-}
-
-.portfolio .portfolio-box:hover .portfolio-icon,
-.portfolio .swiper-slide.swiper-slide-active .portfolio-icon {
-  -webkit-text-stroke: 1px #0c59db;
-}
-
-.portfolio .swiper-slide.swiper-slide-active .portfolio-title {
-  color: #0c59db;
-}
-
-.portfolio .swiper-slide.swiper-slide-active .portfolio-btn {
-  top: -50px;
-  opacity: 1;
-}
-
-.portfolio2 .swiper-slide.swiper-slide-active .portfolio-box-content {
-  bottom: 20px;
-}
-
-.portfolio2 .swiper-slide.swiper-slide-active .portfolio-box-thumb::before {
-  left: 0;
-  width: 100%;
-  opacity: 0.6;
-}
-
-/* Project */
-
-.project .swiper-slide.swiper-slide-active .project-btn {
-  right: -25px;
-  opacity: 1;
-}
-
-/* Team Member */
-
-.team-member-box:nth-child(2n + 2) {
-  margin-top: 50px;
-}
-
-/* Feature */
-
-@media screen and (min-width: 992px) {
-  .feature-box:nth-child(2n + 2) {
-    margin-top: 44px;
+  /* Progress bar wrapper */
+  .progress-bar-rect-wrap-container {
+    @apply relative z-[999] flex gap-[50px];
   }
-}
 
-/* Filter */
+  /* Progress text */
+  .rect-progress-bar-percent {
+    @apply !m-0 leading-[10px] !text-HeadingColor-0 font-Outfit;
+  }
 
-.button-group button.active {
-  color: white;
+  /* Filter button active */
+  .button-group button.active {
+    @apply text-white;
+  }
+
+  /* Odometer font */
+  .odometer.odometer-auto-theme,
+  .odometer.odometer-theme-default {
+    @apply font-Outfit leading-inherit;
+  }
 }

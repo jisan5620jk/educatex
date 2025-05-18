@@ -1,7 +1,6 @@
 import programsImg1 from '/images/program-thumb1.png';
 import programsImg2 from '/images/program-thumb2.png';
 import programsImg3 from '/images/program-thumb3.png';
-import './programs.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
@@ -21,6 +20,9 @@ const programss = [
     programsUrl: '/programs',
     programsDesc:
       'Ultimate destination for knowledge seekers\nWe are committed to transforming special education impact global',
+    categoryColor:
+      'text-PrimaryColor3-0 bg-PrimaryColor3-0 bg-opacity-10 border-PrimaryColor3-0 border-opacity-30',
+    hoverText: 'hover:text-PrimaryColor3-0',
   },
   {
     id: 2,
@@ -30,6 +32,9 @@ const programss = [
     programsUrl: '/programs',
     programsDesc:
       'Ultimate destination for knowledge seekers\nWe are committed to transforming special education impact global',
+    categoryColor:
+      'text-PrimaryColor-0 bg-PrimaryColor-0 bg-opacity-10 border-PrimaryColor-0 border-opacity-30',
+    hoverText: 'hover:text-PrimaryColor-0',
   },
   {
     id: 3,
@@ -39,6 +44,9 @@ const programss = [
     programsUrl: '/programs',
     programsDesc:
       'Ultimate destination for knowledge seekers\nWe are committed to transforming special education impact global',
+    categoryColor:
+      'text-PrimaryColor2-0 bg-PrimaryColor2-0 bg-opacity-10 border-PrimaryColor2-0 border-opacity-30',
+    hoverText: 'hover:text-PrimaryColor2-0',
   },
   {
     id: 4,
@@ -48,6 +56,9 @@ const programss = [
     programsUrl: '/programs',
     programsDesc:
       'Ultimate destination for knowledge seekers\nWe are committed to transforming special education impact global',
+    categoryColor:
+      'text-PrimaryColor4-0 bg-PrimaryColor4-0 bg-opacity-10 border-PrimaryColor4-0 border-opacity-30',
+    hoverText: 'hover:text-PrimaryColor4-0',
   },
 ];
 
@@ -116,21 +127,13 @@ const Programs = () => {
             {...settings}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
-            {programss.map(
-              ({ id, img, category, title, programsUrl, programsDesc }) => (
-                <SwiperSlide key={id}>
-                  <div className='programs-box pb-20 lg:pb-0'>
-                    <ProgramsCard
-                      programsImg={img}
-                      programsCategory={category}
-                      programsTitle={title}
-                      programsUrl={programsUrl}
-                      programsDesc={programsDesc}
-                    />
-                  </div>
-                </SwiperSlide>
-              )
-            )}
+            {programss.map((program) => (
+              <SwiperSlide key={program.id}>
+                <div className='pb-20 lg:pb-0'>
+                  <ProgramsCard {...program} />
+                </div>
+              </SwiperSlide>
+            ))}
           </Swiper>
           {/* Move programsNavigation outside the Swiper */}
           <ProgramsNavigation swiperRef={swiperRef} />

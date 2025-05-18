@@ -3,7 +3,6 @@ import courseImg2 from '/images/course-thumb42.png';
 import courseImg3 from '/images/course-thumb43.png';
 import shape from '/images/course-shape1.png';
 import shape2 from '/images/course-shape2.png';
-import './course.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
@@ -30,6 +29,13 @@ const courses = [
     courseUrl: '/course',
     enrollBtn: 'Enroll Now',
     enrollBtnIcon: <HiArrowNarrowRight />,
+    hoverBg: 'bg-PrimaryColor3-0',
+    categoryColor:
+      'text-PrimaryColor3-0 bg-PrimaryColor3-0 bg-opacity-10 border-PrimaryColor3-0 border-opacity-30',
+    textHover: 'group-hover:text-PrimaryColor3-0',
+    textColor: 'text-PrimaryColor3-0',
+    btnColor:
+      'text-PrimaryColor3-0 border-PrimaryColor3-0 border-opacity-50 before:bg-PrimaryColor3-0',
   },
   {
     id: 2,
@@ -47,6 +53,13 @@ const courses = [
     courseUrl: '/course',
     enrollBtn: 'Enroll Now',
     enrollBtnIcon: <HiArrowNarrowRight />,
+    hoverBg: 'bg-PrimaryColor-0',
+    categoryColor:
+      'text-PrimaryColor-0 bg-PrimaryColor-0 bg-opacity-10 border-PrimaryColor-0 border-opacity-30',
+    textHover: 'group-hover:text-PrimaryColor-0',
+    textColor: 'text-PrimaryColor-0',
+    btnColor:
+      'text-PrimaryColor-0 border-PrimaryColor-0 border-opacity-50 before:bg-PrimaryColor-0',
   },
   {
     id: 3,
@@ -61,6 +74,13 @@ const courses = [
     courseUrl: '/course',
     enrollBtn: 'Enroll Now',
     enrollBtnIcon: <HiArrowNarrowRight />,
+    hoverBg: 'bg-PrimaryColor-0',
+    categoryColor:
+      'text-PrimaryColor2-0 bg-PrimaryColor2-0 bg-opacity-10 border-PrimaryColor2-0 border-opacity-30',
+    textHover: 'group-hover:text-PrimaryColor2-0',
+    textColor: 'text-PrimaryColor2-0',
+    btnColor:
+      'text-PrimaryColor2-0 border-PrimaryColor2-0 border-opacity-50 before:bg-PrimaryColor2-0',
   },
   {
     id: 4,
@@ -78,6 +98,13 @@ const courses = [
     courseUrl: '/course',
     enrollBtn: 'Enroll Now',
     enrollBtnIcon: <HiArrowNarrowRight />,
+    hoverBg: 'bg-PrimaryColor-0',
+    categoryColor:
+      'text-PrimaryColor4-0 bg-PrimaryColor4-0 bg-opacity-10 border-PrimaryColor4-0 border-opacity-30',
+    textHover: 'group-hover:text-PrimaryColor4-0',
+    textColor: 'text-PrimaryColor4-0',
+    btnColor:
+      'text-PrimaryColor4-0 border-PrimaryColor4-0 border-opacity-50 before:bg-PrimaryColor4-0',
   },
 ];
 
@@ -145,46 +172,13 @@ const Course = () => {
             {...settings}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
-            {courses.map(
-              ({
-                id,
-                img,
-                category,
-                title,
-                price,
-                discountPrice,
-                rating,
-                courseRatingIcon,
-                courseRatingIcon2,
-                ratingContent,
-                lessons,
-                students,
-                enrollBtn,
-                enrollBtnIcon,
-                courseUrl,
-              }) => (
-                <SwiperSlide key={id}>
-                  <div className='course-box pb-20 lg:pb-0'>
-                    <CourseCard
-                      courseImg={img}
-                      courseCategory={category}
-                      courseTitle={title}
-                      coursePrice={price}
-                      discountPrice={discountPrice}
-                      courseRating={rating}
-                      courseRatingIcon={courseRatingIcon}
-                      courseRatingIcon2={courseRatingIcon2}
-                      courseRatingContent={ratingContent}
-                      courseLessons={lessons}
-                      courseStudents={students}
-                      enrollBtn={enrollBtn}
-                      enrollBtnIcon={enrollBtnIcon}
-                      courseUrl={courseUrl}
-                    />
-                  </div>
-                </SwiperSlide>
-              )
-            )}
+            {courses.map((course) => (
+              <SwiperSlide key={course.id}>
+                <div className='pb-20 lg:pb-0'>
+                  <CourseCard {...course} />
+                </div>
+              </SwiperSlide>
+            ))}
           </Swiper>
           {/* Move CourseNavigation outside the Swiper */}
           <CourseNavigation swiperRef={swiperRef} />

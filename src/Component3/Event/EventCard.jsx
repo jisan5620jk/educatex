@@ -16,8 +16,11 @@ const EventCard = ({
   eventUrl,
   eventBtnText,
   eventBtnIcon,
+  textColor,
+  hoverText,
+  iconColor,
+  btnColor,
 }) => {
-
   return (
     <div className='group flex flex-col sm:flex-row sm:items-center gap-8 xl:gap-6 2xl:gap-8 p-6 rounded-[20px] bg-white transition-all duration-300 relative overflow-hidden'>
       {/* Left Side: Event Image */}
@@ -31,33 +34,31 @@ const EventCard = ({
       </div>
 
       <div className='flex-1'>
-        <div className='event-date flex items-center gap-2 text-PrimaryColor-0 mb-3'>
+        <div
+          className={`${textColor} flex items-center gap-2 text-PrimaryColor-0 mb-3`}
+        >
           <span className='text-xl'>{eventDateIcon}</span>
           <p className='uppercase font-Outfit text-base'>
-           {eventDate}, {eventMonth}, {eventYear}
+            {eventDate}, {eventMonth}, {eventYear}
           </p>
         </div>
 
         <Link
           to={eventUrl}
-          className='event-title transition-all duration-500 font-Outfit text-base md:text-[22px] lg:text-2xl xl:text-xl 2xl:text-2xl text-HeadingColor-0 hover:text-PrimaryColor-0 block mb-4 mr-10'
+          className={`${hoverText} transition-all duration-500 font-Outfit text-base md:text-[22px] lg:text-2xl xl:text-xl 2xl:text-2xl text-HeadingColor-0 hover:text-PrimaryColor-0 block mb-4 mr-10`}
         >
           {eventTitle}
         </Link>
 
         <div className='flex flex-col gap-2 mb-6 text-[16px]'>
           <div className='flex items-center gap-2'>
-            <div className='event-icon text-PrimaryColor-0 text-xl'>
-              {eventTimeIcon}
-            </div>
+            <div className={`${iconColor} text-xl`}>{eventTimeIcon}</div>
             <p className='font-OpenSans text-TextColor-0 text-[15px]'>
               {eventTime}
             </p>
           </div>
           <div className='flex items-center gap-2'>
-            <div className='event-icon text-PrimaryColor-0 text-xl'>
-              {eventPlaceIcon}
-            </div>
+            <div className={`${iconColor} text-xl`}>{eventPlaceIcon}</div>
             <p className='font-OpenSans text-TextColor-0 text-[15px]'>
               {eventPlace}
             </p>
@@ -65,7 +66,9 @@ const EventCard = ({
         </div>
 
         <Link to={eventUrl}>
-          <button className='event-button font-Outfit flex items-center gap-2 uppercase text-sm bg-PrimaryColor-0 text-white px-5 py-2 rounded-full transition-all duration-500'>
+          <button
+            className={`${btnColor} font-Outfit flex items-center gap-2 uppercase text-sm bg-PrimaryColor-0 text-white px-5 py-2 rounded-full transition-all duration-500`}
+          >
             {eventBtnText}
             <span className='text-lg'>{eventBtnIcon}</span>
           </button>

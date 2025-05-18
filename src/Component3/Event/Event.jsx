@@ -1,6 +1,5 @@
 import { LuCalendarCheck } from 'react-icons/lu';
 import EventCard from './EventCard';
-import './event.css';
 import eventThumb1 from '/images/event-thumb41.png';
 import eventThumb2 from '/images/event-thumb42.png';
 import eventThumb3 from '/images/event-thumb43.png';
@@ -27,6 +26,10 @@ const eventData = [
     eventUrl: '/event',
     eventBtnText: 'Join Events',
     eventBtnIcon: <HiArrowNarrowRight />,
+    textColor: 'text-PrimaryColor3-0',
+    hoverText: 'hover:text-PrimaryColor3-0',
+    iconColor: 'text-PrimaryColor3-0',
+    btnColor: 'bg-PrimaryColor3-0',
   },
   {
     id: 2,
@@ -43,6 +46,10 @@ const eventData = [
     eventUrl: '/event',
     eventBtnText: 'Join Events',
     eventBtnIcon: <HiArrowNarrowRight />,
+    textColor: 'text-PrimaryColor-0',
+    hoverText: 'hover:text-PrimaryColor-0',
+    iconColor: 'text-PrimaryColor-0',
+    btnColor: 'bg-PrimaryColor-0',
   },
   {
     id: 3,
@@ -59,6 +66,10 @@ const eventData = [
     eventUrl: '/event',
     eventBtnText: 'Join Events',
     eventBtnIcon: <HiArrowNarrowRight />,
+    textColor: 'text-PrimaryColor2-0',
+    hoverText: 'hover:text-PrimaryColor2-0',
+    iconColor: 'text-PrimaryColor2-0',
+    btnColor: 'bg-PrimaryColor2-0',
   },
   {
     id: 4,
@@ -75,6 +86,10 @@ const eventData = [
     eventUrl: '/event',
     eventBtnText: 'Join Events',
     eventBtnIcon: <HiArrowNarrowRight />,
+    textColor: 'text-PrimaryColor4-0',
+    hoverText: 'hover:text-PrimaryColor4-0',
+    iconColor: 'text-PrimaryColor4-0',
+    btnColor: 'bg-PrimaryColor4-0',
   },
 ];
 
@@ -112,46 +127,12 @@ const Event = () => {
             For Our Little Learners
           </h1>
         </div>
-        <div className='event-card2 grid grid-cols-1 xl:grid-cols-2 items-center gap-6 mt-[50px]'>
-          {eventData.map(
-            ({
-              id,
-              eventDate,
-              eventMonth,
-              eventYear,
-              eventDateIcon,
-              eventTitle,
-              eventPlaceIcon,
-              eventPlace,
-              eventTimeIcon,
-              eventTime,
-              eventThumb,
-              eventUrl,
-              eventBtnText,
-              eventBtnIcon,
-            }) => (
-              <div
-                key={id}
-                className='event-card2-box'
-              >
-                <EventCard
-                  eventDate={eventDate}
-                  eventMonth={eventMonth}
-                  eventYear={eventYear}
-                  eventDateIcon={eventDateIcon}
-                  eventTitle={eventTitle}
-                  eventPlaceIcon={eventPlaceIcon}
-                  eventPlace={eventPlace}
-                  eventTimeIcon={eventTimeIcon}
-                  eventTime={eventTime}
-                  eventThumb={eventThumb}
-                  eventUrl={eventUrl}
-                  eventBtnText={eventBtnText}
-                  eventBtnIcon={eventBtnIcon}
-                />
-              </div>
-            )
-          )}
+        <div className='grid grid-cols-1 xl:grid-cols-2 items-center gap-6 mt-[50px]'>
+          {eventData.map((events) => (
+            <div key={events.id}>
+              <EventCard {...events} />
+            </div>
+          ))}
         </div>
       </div>
     </section>

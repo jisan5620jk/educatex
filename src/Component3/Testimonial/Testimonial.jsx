@@ -17,7 +17,6 @@ import testiShape4 from '/images/testi-arrow4.png';
 import testiShape5 from '/images/testi-book4.png';
 import TestiNavigation from './TestiNavigation';
 import subTilteIcon from '/images/sub-title2.png';
-import './testimonial.css';
 
 const testiData = [
   {

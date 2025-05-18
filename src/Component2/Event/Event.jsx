@@ -2,7 +2,6 @@ import { FaLocationDot } from 'react-icons/fa6';
 import { LuClock3 } from 'react-icons/lu';
 import { HiArrowLongRight } from 'react-icons/hi2';
 import EventCard from './EventCard';
-import './event.css';
 import eventThumb from '/images/event-thumb.png';
 import eventThumb2 from '/images/event-thumb2.png';
 import eventThumb3 from '/images/event-thumb3.png';
@@ -23,6 +22,12 @@ const eventData = [
     eventUrl: '/event',
     eventBtnText: 'Join Events',
     eventBtnIcon: <HiArrowLongRight />,
+    bgColor: 'bg-PrimaryColor3-0 bg-opacity-10',
+    textColor: 'text-PrimaryColor3-0',
+    hoverText: 'group-hover:text-PrimaryColor3-0',
+    iconColor: 'text-PrimaryColor3-0',
+    btnColor:
+      'text-PrimaryColor3-0 bg-PrimaryColor3-0 bg-opacity-10 border-PrimaryColor3-0 border-opacity-30 before:bg-PrimaryColor3-0',
   },
   {
     id: 2,
@@ -38,6 +43,12 @@ const eventData = [
     eventUrl: '/event',
     eventBtnText: 'Join Events',
     eventBtnIcon: <HiArrowLongRight />,
+    bgColor: 'bg-PrimaryColor2-0 bg-opacity-10',
+    textColor: 'text-PrimaryColor2-0',
+    hoverText: 'group-hover:text-PrimaryColor2-0',
+    iconColor: 'text-PrimaryColor2-0',
+    btnColor:
+      'text-PrimaryColor2-0 bg-PrimaryColor2-0 bg-opacity-10 border-PrimaryColor2-0 border-opacity-30 before:bg-PrimaryColor2-0',
   },
   {
     id: 3,
@@ -53,6 +64,12 @@ const eventData = [
     eventUrl: '/event',
     eventBtnText: 'Join Events',
     eventBtnIcon: <HiArrowLongRight />,
+    bgColor: 'bg-PrimaryColor-0 bg-opacity-10',
+    textColor: 'text-PrimaryColor-0',
+    hoverText: 'group-hover:text-PrimaryColor-0',
+    iconColor: 'text-PrimaryColor-0',
+    btnColor:
+      'text-PrimaryColor-0 bg-PrimaryColor-0 bg-opacity-10 border-PrimaryColor-0 border-opacity-30 before:bg-PrimaryColor-0',
   },
 ];
 
@@ -69,9 +86,7 @@ const Event = () => {
       </div>
       <div className='Container'>
         <div className='relative grid items-center grid-cols-1 lg:grid-cols-2 gap-8'>
-          <div
-            className='border-b border-SecondaryColor-0 border-opacity-15 pb-6 lg:py-6'
-          >
+          <div className='border-b border-SecondaryColor-0 border-opacity-15 pb-6 lg:py-6'>
             <h5 className='font-Outfit font-medium text-PrimaryColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
               OUR COURSES
             </h5>
@@ -83,43 +98,12 @@ const Event = () => {
           </h1>
         </div>
         <div className='event-card space-y-[18px] mt-[58px]'>
-          {eventData.map(
-            ({
-              id,
-              eventDate,
-              eventMonth,
-              eventYear,
-              eventTitle,
-              eventPlaceIcon,
-              eventPlace,
-              eventTimeIcon,
-              eventTime,
-              eventThumb,
-              eventUrl,
-              eventBtnText,
-              eventBtnIcon,
-            }) => (
-              <div
-                key={id}
-                className='event-card-box'
-              >
-                <EventCard
-                  eventDate={eventDate}
-                  eventMonth={eventMonth}
-                  eventYear={eventYear}
-                  eventTitle={eventTitle}
-                  eventPlaceIcon={eventPlaceIcon}
-                  eventPlace={eventPlace}
-                  eventTimeIcon={eventTimeIcon}
-                  eventTime={eventTime}
-                  eventThumb={eventThumb}
-                  eventUrl={eventUrl}
-                  eventBtnText={eventBtnText}
-                  eventBtnIcon={eventBtnIcon}
-                />
-              </div>
-            )
-          )}
+          {eventData.map((events) => (
+            <EventCard
+              key={events.id}
+              {...events}
+            />
+          ))}
         </div>
       </div>
     </section>
