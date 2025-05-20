@@ -55,9 +55,9 @@ const categories = [
 const Category = () => {
   return (
     <section className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] mt-16 md:mt-20 lg:mt-28'>
-      <div className='bg-white rounded-[30px] relative z-10 py-16 md:py-20 lg:py-28'>
+      <div className='bg-white rounded-lg sm:rounded-2xl md:rounded-[30px] relative z-10 py-16 md:py-20 lg:py-28'>
         <div className='text-center'>
-          <h5 className='font-Outfit text-sm text-HeadingColor-0 uppercase pb-1 flex items-center gap-3 justify-center relative z-10 before:absolute before:left-1/2 before:top-full before:-translate-x-1/2 before:w-[44%] md:before:w-[11%] before:h-[.5px] before:bg-gradient-to-r before:to-white before:via-PrimaryColor-0 before:from-white'>
+          <h5 className='font-Outfit text-sm text-HeadingColor-0 uppercase flex items-center gap-3 justify-center relative z-10 before:absolute before:left-1/2 before:top-full before:-translate-x-1/2 before:w-[44%] md:before:w-[11%] before:h-[.5px] before:bg-gradient-to-r before:to-white before:via-PrimaryColor-0 before:from-white'>
             <span className='text-PrimaryColor2-0'>
               <FaCircle size={8} />
             </span>

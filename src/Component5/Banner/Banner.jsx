@@ -52,7 +52,7 @@ const Banner = () => {
                 </span>
                 Welcome to Online Education
               </h5>
-              <h1 className='font-Outfit font-semibold text-HeadingColor-0 text-3xl sm:text-[36px] sm:leading-[42px] md:text-[56px] md:leading-[62px] lg:text-[42px] lg:leading-[48px] xl:text-[48px] xl:leading-[54px] 2xl:text-[65px] 2xl:leading-[75px]'>
+              <h1 className='font-Outfit font-semibold text-HeadingColor-0 text-3xl sm:text-[50px] sm:leading-[60px] md:text-[60px] md:leading-[70px] lg:text-[42px] lg:leading-[48px] xl:text-[58px] xl:leading-[68px] 2xl:text-[65px] 2xl:leading-[75px]'>
                 <span className='flex gap-3 items-center md:-mb-2'>
                   Explore
                   <div className='flex items-center gap-1'>
@@ -119,12 +119,12 @@ const Banner = () => {
                 draggable={false}
                 className='absolute -top-10 animate-rotateX left-28 hidden md:block lg:hidden xl:block'
               />
-              <div className='absolute top-0 left-0 md:left-[23.3%] rounded-2xl md:rounded-[20px] overflow-hidden bg-PrimaryColor2-0 h-20 md:h-[138px] w-[34%] md:w-[25.7%] pt-1 md:pt-8 pl-2 md:pl-5'>
+              <div className='absolute top-0 left-0 md:left-[14.4%] lg:left-[0.4%] xl:left-[10%] 2xl:left-[23.3%] rounded-2xl md:rounded-[20px] overflow-hidden bg-PrimaryColor2-0 h-20 sm:h-[138px] lg:h-[130px] xl:h-[138px] w-[34%] md:w-[23.5%] lg:w-[33%] xl:w-[30%] 2xl:w-[25.7%] pt-1 sm:pt-8 pl-2 sm:pl-5'>
                 <img
                   src={author}
                   draggable={false}
                   alt='User'
-                  className='w-8 md:w-inherit'
+                  className='w-8 sm:w-inherit'
                 />
                 <h5 className='text-sm sm:text-base font-Outfit text-white uppercase sm:mt-3'>
                   Ui/Ux Designer

@@ -11,7 +11,7 @@ const CategoryBox = ({
 }) => {
   return (
     <div
-      className={`w-[218px] flex flex-col items-center justify-between px-6 py-10 rounded-2xl ${bgColor} transition`}
+      className={`w-[218px] 2xl:w-[200px] 3xl:w-[218px] flex flex-col items-center justify-between px-6 py-10 rounded-2xl ${bgColor} transition`}
     >
       <div>
         <img
@@ -21,10 +21,10 @@ const CategoryBox = ({
         />
       </div>
       <div className='text-center mt-11 mb-[38px]'>
-        <h4 className='foont-Outfit text-lg text-HeadingColor-0 font-semibold'>
+        <h4 className='foont-Outfit text-lg 2xl:text-base 3xl:text-lg text-HeadingColor-0 font-semibold'>
           {title}
         </h4>
-        <p className='foont-Outfit text-lg text-HeadingColor-0 font-semibold'>
+        <p className='foont-Outfit text-lg 2xl:text-base 3xl:text-lg text-HeadingColor-0 font-semibold'>
           {subtitle}
         </p>
       </div>

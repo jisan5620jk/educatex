@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
@@ -65,15 +65,13 @@ const Testimonial = () => {
   const paginationImages = [testiImg, testiImg2, testiImg3];
 
   const settings = {
-    modules: [Autoplay, Pagination, EffectFade],
+    modules: [Autoplay, Pagination],
     loop: true,
-    speed: 2000,
+    speed: 1500,
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
     },
-    effect: 'fade',
-    fadeEffect: { crossFade: true },
     onSwiper: (swiper) => (swiperRef.current = swiper),
     onSlideChange: (swiper) => setActiveIndex(swiper.realIndex),
   };
@@ -137,7 +135,7 @@ const Testimonial = () => {
                   key={i}
                   onClick={() => handleBulletClick(i)}
                   className={`relative size-[74px] transition-all duration-500 ${
-                    activeIndex === i ? 'size-[60px]' : ''
+                    activeIndex === i ? '!size-[60px]' : ''
                   } ${i === 1 ? 'ml-[450px]' : ''}`}
                 >
                   <span

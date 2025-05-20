@@ -10,10 +10,10 @@ const TestimonialCard = ({
   testiProfile,
   testiDesignation,
   testiDesc,
-  isActive, // <-- new prop
+  isActive,
 }) => {
   return (
-    <div className='flex items-end justify-between flex-wrap'>
+    <div className='flex items-end justify-between flex-col lg:flex-row gap-7 pb-24 lg:pb-0'>
       <div>
         <img
           src={testiImg}
@@ -26,7 +26,7 @@ const TestimonialCard = ({
           }`}
         />
       </div>
-      <div className='group relative max-w-[670px] w-full transition-all duration-500 pb-1'>
+      <div className='group relative max-w-[670px] lg:max-w-[500px] xl:max-w-[600px] 2xl:max-w-[670px] w-full transition-all duration-500 pb-1'>
         <div className='bg-PrimaryColor-0 bg-opacity-[.07] px-4 sm:px-9 lg:px-4 xl:px-9 2xl:px-10 pt-4 sm:pt-10 lg:pt-4 xl:pt-12 pb-5 sm:pb-10 lg:pb-5 xl:pb-11 rounded-2xl'>
           <h5
             className={`font-OpenSans bg-white bg-opacity-30 pl-4 pr-5 py-2 transition-all duration-500 rounded-r-full border border-PrimaryColor-0 border-opacity-20 text-HeadingColor-0 text-sm font-medium inline-flex items-center gap-2 uppercase ${
@@ -71,7 +71,7 @@ const TestimonialCard = ({
           </ul>
 
           <p
-            className={`font-OpenSans text-TextColor2-0 leading-8 text-[17px] transition-all duration-500 ${
+            className={`font-OpenSans text-TextColor2-0 leading-8 sm:text-[17px] transition-all duration-500 ${
               isActive
                 ? 'translate-y-0 opacity-100 delay-[800ms]'
                 : 'translate-y-[100px] opacity-0'

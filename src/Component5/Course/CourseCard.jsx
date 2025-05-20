@@ -21,7 +21,7 @@ const CourseCard = ({
   textColor,
 }) => {
   return (
-    <div className={`group rounded-xl overflow-hidden ${bgColor} p-4`}>
+    <div className={`group rounded-xl overflow-hidden ${bgColor} p-4 lg:p-2 2xl:p-4`}>
       <div className='relative rounded-xl overflow-hidden'>
         <img
           src={image}
@@ -42,7 +42,7 @@ const CourseCard = ({
         ></span>
       </div>
 
-      <div className='px-3'>
+      <div className='sm:px-3 lg:px-0 2xl:px-3'>
         <div className='flex justify-between items-center mt-9 mb-6'>
           <span
             className={`font-OpenSans text-[15px] px-5 py-[5px] rounded-3xl inline-block uppercase border ${categoryColor}`}
@@ -56,7 +56,7 @@ const CourseCard = ({
 
         <Link
           to={courseLink}
-          className={`mt-3 font-Outfit text-lg font-semibold text-HeadingColor-0 transition-all duration-500 uppercase ${hoverTextColor}`}
+          className={`mt-3 font-Outfit text-lg lg:text-base xl:text-lg font-semibold text-HeadingColor-0 transition-all duration-500 uppercase ${hoverTextColor}`}
         >
           {title}
         </Link>
@@ -70,7 +70,7 @@ const CourseCard = ({
           <span className='font-Outfit text-TextColor-0 text-lg'>{author}</span>
         </div>
 
-        <div className='flex items-center gap-8 font-OpenSans text-gray-500 mt-7 mb-4'>
+        <div className='flex items-center flex-wrap gap-y-3 gap-x-8 font-OpenSans text-gray-500 mt-7 mb-4'>
           <div className='flex items-center gap-2'>
             <span className={`text-xl ${textColor}`}>{lessonIcon}</span>{' '}
             {lessons}

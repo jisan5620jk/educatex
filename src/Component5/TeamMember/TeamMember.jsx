@@ -39,15 +39,14 @@ const TeamMember = () => {
       <div className='relative z-10'>
         <div className='Container'>
           <div className='text-center'>
-            <h5 className='font-Outfit text-sm text-HeadingColor-0 uppercase pb-1 flex items-center gap-3 justify-center relative z-10 before:absolute before:left-1/2 before:top-full before:-translate-x-1/2 before:w-[44%] md:before:w-[11%] before:h-[.5px] before:bg-gradient-to-r before:to-transparent before:via-PrimaryColor-0 before:from-transparent'>
+            <h5 className='font-Outfit text-sm text-HeadingColor-0 uppercase flex items-center gap-3 justify-center relative z-10 before:absolute before:left-1/2 before:top-full before:-translate-x-1/2 before:w-[44%] md:before:w-[11%] before:h-[.5px] before:bg-gradient-to-r before:to-transparent before:via-PrimaryColor-0 before:from-transparent'>
               <span className='text-PrimaryColor2-0'>
                 <FaCircle size={8} />
               </span>
               team member
             </h5>
-            <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[45px] 2xl:leading-[55px] text-black mt-[18px] mb-4'>
-              Educate Awesome{' '}
-              <span className='text-PrimaryColor-0'>Teams</span>
+            <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[45px] 2xl:leading-[55px] text-HeadingColor-0 mt-2 md:mt-[18px] mb-4'>
+              Educate Awesome <span className='text-PrimaryColor-0'>Teams</span>
             </h1>
           </div>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-[52px]'>

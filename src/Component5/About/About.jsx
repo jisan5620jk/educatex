@@ -16,25 +16,25 @@ const About = () => {
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-[92px] lg:gap-10 items-center'>
           <div className='col-span-1 lg:col-span-7 relative z-10 inline-block'>
-            <div className='flex gap-6 h-auto sm:h-[600px] w-auto'>
+            <div className='flex gap-6 h-auto sm:h-[600px] w-full'>
               <img
                 src={aboutThumb}
                 draggable='false'
-                className='w-full 2xl:w-[inherit] max-w-[inherit] mb-auto'
+                className='w-full md:max-w-[inherit] lg:w-[48%] 2xl:!w-auto lg:max-w-full 2xl:max-w-[inherit] mb-auto'
               />
               <img
                 src={aboutThumb2}
                 draggable='false'
-                className='w-full 2xl:w-[inherit] max-w-[inherit] mt-auto'
+                className='w-full md:max-w-[inherit] lg:w-[48%] 2xl:!w-auto lg:max-w-full 2xl:max-w-[inherit] mt-auto'
               />
             </div>
             <img
               src={shape}
               draggable={false}
               alt='Shape'
-              className='absolute -z-10 bottom-2 lg:left-16 animate-wiggle hidden md:block'
+              className='absolute -z-10 bottom-2 lg:left-16 animate-wiggle hidden sm:block'
             />
-            <div className='hidden absolute top-5 right-24 bg-BodyBg3-0 border-2 border-white rounded-se-[30px] rounded-bl-[30px] px-6 py-5 md:inline-flex gap-4 items-start'>
+            <div className='hidden absolute top-2 lg:top-5 right-10 lg:right-0 xl:right-5 2xl:right-24 bg-BodyBg3-0 border-2 border-white rounded-se-[30px] rounded-bl-[30px] px-6 py-5 md:inline-flex gap-4 items-start'>
               <div>
                 <img
                   src={user}
@@ -98,7 +98,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className='absolute bottom-[51%] left-24 z-10 hidden lg:block'>
+      <div className='absolute bottom-[51%] left-24 z-10 hidden 2xl:block'>
         <img
           src={shape3}
           draggable={false}

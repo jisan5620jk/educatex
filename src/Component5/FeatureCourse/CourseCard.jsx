@@ -23,7 +23,7 @@ const CourseCard = ({
 }) => {
   return (
     <div
-      className={`flex flex-col md:flex-row gap-9 items-center p-5 rounded-2xl ${bgColor}`}
+      className={`flex flex-col md:flex-row gap-9 xl:gap-4 2xl:gap-9 md:items-center p-5 xl:p-3 2xl:p-5 rounded-2xl ${bgColor}`}
     >
       <div className='relative rounded-xl overflow-hidden'>
         <img
@@ -56,7 +56,7 @@ const CourseCard = ({
         </div>
         <Link
           to={courseLink}
-          className={`mt-3 font-Outfit text-xl font-semibold text-HeadingColor-0 transition-all duration-500 uppercase ${hoverTextColor}`}
+          className={`mt-3 font-Outfit text-xl xl:text-[17px] 2xl:text-xl font-semibold text-HeadingColor-0 transition-all duration-500 uppercase ${hoverTextColor}`}
         >
           {title}
         </Link>
@@ -70,7 +70,7 @@ const CourseCard = ({
             {duration}
           </div>
         </div>
-        <div className='flex items-center gap-2 text-sm text-gray-800'>
+        <div className='flex flex-col sm:flex-row sm:items-center xl:flex-col xl:items-start 2xl:flex-row 2xl:items-center gap-2 text-sm text-gray-800'>
           <div className='flex items-center gap-4'>
             <span
               className={`size-9 rounded-full flex items-center justify-center text-white ${hoverBgColor}`}
@@ -81,7 +81,7 @@ const CourseCard = ({
               {tutor}
             </span>
           </div>
-          <span className={`flex items-center ${textColor} ml-3`}>
+          <span className={`flex items-center ${textColor} sm:ml-3 xl:ml-0 2xl:ml-3`}>
             {[...Array(5)].map((_, i) => (
               <MdStar
                 key={i}
