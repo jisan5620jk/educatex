@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 const TestimonialCard = ({
-  testiShape,
+  testQuote,
   testiTitle,
   testiRatingIcon,
   testiName,
@@ -9,46 +9,44 @@ const TestimonialCard = ({
   testiDesc,
 }) => {
   return (
-    <div className='group px-4 sm:px-9 lg:px-4 xl:px-9 2xl:px-8 3xl:px-9 pt-4 sm:pt-10 lg:pt-4 xl:pt-10 pb-5 sm:pb-10 lg:pb-5 xl:pb-10 transition-all duration-500 hover:bg-opacity-100 rounded-[10px] bg-gradient-to-t to-BoxBg-0 from-BoxBg2-0 overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:w-0 before:opacity-0 before:h-full before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-BoxBg3-0 before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 hover:before:opacity-100'>
-      <div className='flex gap-1 items-center mb-2'>
-        <h5 className='font-Outfit text-[22px] sm:text-2xl 2xl:text-2xl 3xl:text-[28px] text-white font-semibold'>
+    <div className='relative group px-4 sm:px-9 lg:px-4 xl:px-9 2xl:px-10 pt-4 sm:pt-8 lg:pt-4 xl:pt-12 pb-5 sm:pb-10 lg:pb-5 xl:pb-10 bg-white bg-opacity-5  rounded-[20px] ease-linear transition-all duration-500 hover:border-PrimaryColor-0'>
+      <div className='flex gap-4 items-center'>
+        <div className=''>
+          <img
+            src={testQuote}
+            draggable={false}
+            alt='Quote'
+          />
+        </div>
+        <h5 className='font-Outlet text-xl sm:text-2xl lg:text-xl xl:text-[22px] text-white font-medium'>
           {testiTitle}
         </h5>
       </div>
-      <ul className='flex items-center mb-[22px]'>
-        <li className='text-[#ffae14] text-[22px]'>{testiRatingIcon}</li>
-        <li className='text-[#ffae14] text-[22px]'>{testiRatingIcon}</li>
-        <li className='text-[#ffae14] text-[22px]'>{testiRatingIcon}</li>
-        <li className='text-[#ffae14] text-[22px]'>{testiRatingIcon}</li>
-        <li className='text-[#ffae14] text-[22px]'>{testiRatingIcon}</li>
-      </ul>
-      <p className='font-OpenSans text-white text-opacity-80 text-lg'>
+      <p className='font-OpenSans sm:text-[17px] lg:text-base xl:text-[17px] text-white text-opacity-60 mt-8 mb-7'>
         {testiDesc}
       </p>
-      <div className='flex items-center justify-between border-t border-HeadingColor-0 border-opacity-10 transition-all duration-300 ease-linear group-hover:border-PrimaryColor-0 group-hover:border-opacity-100 pt-[26px] mt-[26px]'>
-        <div className='flex items-center gap-2 sm:gap-4'>
-          <div>
-            <img
-              src={testiProfile}
-              draggable={false}
-              alt='User Image'
-            />
-          </div>
-          <div>
-            <h5 className='font-Outfit font-semibold inline-block text-white text-[22px] sm:text-2xl relative'>
-              {testiName}
-            </h5>
-            <p className='font-OpenSans text-white text-opacity-80'>
-              {testiDesignation}
-            </p>
-          </div>
-        </div>
-        <div className='hidden 3xl:block'>
+      <ul className='flex items-center mb-8'>
+        <li className='text-ReviewText-0 text-[22px]'>{testiRatingIcon}</li>
+        <li className='text-ReviewText-0 text-[22px]'>{testiRatingIcon}</li>
+        <li className='text-ReviewText-0 text-[22px]'>{testiRatingIcon}</li>
+        <li className='text-ReviewText-0 text-[22px]'>{testiRatingIcon}</li>
+        <li className='text-ReviewText-0 text-[22px]'>{testiRatingIcon}</li>
+      </ul>
+      <div className='flex items-center gap-4 border-t border-white border-opacity-10 transition-all duration-300 ease-linear group-hover:border-PrimaryColor-0 group-hover:border-opacity-100 pt-[34px]'>
+        <div>
           <img
-            src={testiShape}
+            src={testiProfile}
             draggable={false}
-            alt='Shape'
+            alt='User Image'
           />
+        </div>
+        <div>
+          <h5 className='font-Outlet font-medium inline-block text-white text-xl sm:text-[22px] lg:text-xl xl:text-[22px] relative'>
+            {testiName}
+          </h5>
+          <p className='font-OpenSans text-[15px] text-white text-opacity-60 mt-[6px]'>
+            {testiDesignation}
+          </p>
         </div>
       </div>
     </div>
