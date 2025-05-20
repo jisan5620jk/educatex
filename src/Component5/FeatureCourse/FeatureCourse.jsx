@@ -86,7 +86,7 @@ const FeatureCourse = () => {
               </span>
               Featured Courses
             </h5>
-            <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[45px] 2xl:leading-[55px] text-HeadingColor-0 mt-[18px] mb-4'>
+            <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[45px] 2xl:leading-[55px] text-HeadingColor-0 mt-2 sm:mt-[18px] mb-4'>
               Explore Featured{' '}
               <span className='text-PrimaryColor-0'>Courses</span>
             </h1>

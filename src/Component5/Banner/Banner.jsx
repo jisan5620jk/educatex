@@ -42,18 +42,18 @@ const Banner = () => {
   const [toggler, setToggler] = useState(false);
   return (
     <div className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] bg-SecondaryColor-0 overflow-hidden'>
-      <section className="bg-[url('/images/hero-bg7.png')] bg-cover bg-center bg-no-repeat flex items-center relative z-20 rounded-b-[30px] overflow-hidden py-16 md:py-20 lg:py-[110px]">
+      <section className="bg-BodyBg-0 bg-[url('/images/hero-bg7.png')] bg-cover bg-center bg-no-repeat flex items-center relative z-20 rounded-b-[30px] overflow-hidden py-16 md:py-20 lg:py-[110px]">
         <div className='Container'>
           <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0'>
             <div className='relative'>
-              <h5 className='font-OpenSans bg-white bg-opacity-30 pl-4 pr-5 py-[7px] rounded-r-full border border-white text-HeadingColor-0 text-sm inline-flex items-center gap-2 uppercase mb-2'>
+              <h5 className='font-OpenSans bg-white bg-opacity-30 pl-2 sm:pl-4 pr-5 py-[7px] rounded-r-full border border-white text-HeadingColor-0 text-sm inline-flex items-center gap-2 uppercase mb-4 md:mb-2'>
                 <span className='text-PrimaryColor2-0'>
                   <FaCircle size={10} />
                 </span>
                 Welcome to Online Education
               </h5>
-              <h1 className='font-Outfit font-semibold text-HeadingColor-0 text-[26px] leading-[32px] sm:text-[36px] sm:leading-[42px] md:text-[56px] md:leading-[62px] lg:text-[42px] lg:leading-[48px] xl:text-[48px] xl:leading-[54px] 2xl:text-[65px] 2xl:leading-[75px]'>
-                <span className='flex gap-3 items-center -mb-2'>
+              <h1 className='font-Outfit font-semibold text-HeadingColor-0 text-3xl sm:text-[36px] sm:leading-[42px] md:text-[56px] md:leading-[62px] lg:text-[42px] lg:leading-[48px] xl:text-[48px] xl:leading-[54px] 2xl:text-[65px] 2xl:leading-[75px]'>
+                <span className='flex gap-3 items-center md:-mb-2'>
                   Explore
                   <div className='flex items-center gap-1'>
                     <span className='text-PrimaryColor-0'>
@@ -81,13 +81,13 @@ const Banner = () => {
               <div className='flex items-center gap-8 mt-10'>
                 <div>
                   <button
-                    className='size-10 sm:size-20 bg-PrimaryColor-0 rounded-full text-white backdrop-filter backdrop-blur-md text-2xl md:text-4xl flex items-center justify-center '
+                    className='size-20 bg-PrimaryColor-0 rounded-full text-white backdrop-filter backdrop-blur-md text-2xl md:text-4xl flex items-center justify-center '
                     onClick={() => setToggler(!toggler)}
                   >
                     <IoPlaySharp />
                   </button>
                 </div>
-                <div className='flex gap-5 items-center'>
+                <div className='flex gap-2 sm:gap-5 flex-col sm:flex-row sm:items-center'>
                   <div>
                     <img
                       src={user}
@@ -119,20 +119,21 @@ const Banner = () => {
                 draggable={false}
                 className='absolute -top-10 animate-rotateX left-28 hidden md:block lg:hidden xl:block'
               />
-              <div className='absolute top-0 left-[23.3%] rounded-[20px] overflow-hidden bg-PrimaryColor2-0 h-[138px] w-[25.7%] pt-8 pl-5'>
+              <div className='absolute top-0 left-0 md:left-[23.3%] rounded-2xl md:rounded-[20px] overflow-hidden bg-PrimaryColor2-0 h-20 md:h-[138px] w-[34%] md:w-[25.7%] pt-1 md:pt-8 pl-2 md:pl-5'>
                 <img
                   src={author}
                   draggable={false}
                   alt='User'
+                  className='w-8 md:w-inherit'
                 />
-                <h5 className='font-Outfit text-white uppercase mt-3'>
+                <h5 className='text-sm sm:text-base font-Outfit text-white uppercase sm:mt-3'>
                   Ui/Ux Designer
                 </h5>
               </div>
             </div>
           </div>
         </div>
-        <div className='absolute -z-10 left-5 top-14'>
+        <div className='absolute -z-10 left-5 top-14 hidden md:block'>
           <img
             src={shape}
             draggable={false}
@@ -140,7 +141,7 @@ const Banner = () => {
             className='animate-dance2'
           />
         </div>
-        <div className='absolute -z-10 right-0 top-6'>
+        <div className='absolute -z-10 right-0 top-6 hidden md:block'>
           <img
             src={shape2}
             draggable={false}
@@ -148,7 +149,7 @@ const Banner = () => {
             className='animate-wiggle'
           />
         </div>
-        <div className='absolute -z-10 left-[46%] top-[74%]'>
+        <div className='absolute -z-10 left-[46%] top-[74%] hidden md:block'>
           <img
             src={shape3}
             draggable={false}
@@ -164,7 +165,7 @@ const Banner = () => {
 
       {/* Feature */}
       <div className='Container'>
-        <div className='flex justify-between items-center flex-wrap py-[54px] relative z-10'>
+        <div className='flex justify-between items-center flex-wrap gap-6 py-[54px] relative z-10'>
           {featureData.map((feature) => (
             <FeatureCard
               key={feature.id}

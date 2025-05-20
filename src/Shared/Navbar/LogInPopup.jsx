@@ -62,7 +62,7 @@ const LogInPopup = ({ setIsPopupVisible }) => {
           }`}
         >
           <form className='bg-white flex flex-col items-center justify-center px-[50px] h-full text-center'>
-            <h1 className='font-medium text-3xl font-Outfit'>Create Account</h1>
+            <h1 className='font-medium text-2xl md:text-3xl font-Outfit'>Create Account</h1>
             <div className='flex my-5'>
               {[FaFacebookF, FaGooglePlusG, FaLinkedinIn].map((Icon, idx) => (
                 <a
@@ -105,7 +105,7 @@ const LogInPopup = ({ setIsPopupVisible }) => {
           }`}
         >
           <form className='bg-white flex flex-col items-center justify-center px-8 h-full text-center'>
-            <h1 className='font-medium text-3xl font-Outfit uppercase'>
+            <h1 className='font-medium text-2xl md:text-3xl font-Outfit uppercase'>
               Sign in
             </h1>
             <div className='flex my-5'>
@@ -158,7 +158,7 @@ const LogInPopup = ({ setIsPopupVisible }) => {
                 isRightPanelActive ? 'translate-x-0' : '-translate-x-[20%]'
               }`}
             >
-              <h1 className='text-3xl font-medium font-Outfit'>
+              <h1 className='text-2xl md:text-3xl font-medium font-Outfit'>
                 Welcome Back!
               </h1>
               <p className='font-OpenSans leading-5 my-6'>
@@ -176,7 +176,7 @@ const LogInPopup = ({ setIsPopupVisible }) => {
                 isRightPanelActive ? 'translate-x-[20%]' : 'translate-x-0'
               }`}
             >
-              <h1 className='text-3xl font-medium font-Outfit'>
+              <h1 className='text-2xl md:text-3xl font-medium font-Outfit'>
                 Hello, Friend!
               </h1>
               <p className='leading-5 font-OpenSans my-6'>

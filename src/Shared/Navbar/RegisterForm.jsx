@@ -54,7 +54,7 @@ const RegisterForm = ({ setIsVisible }) => {
   }, []);
 
   return (
-    <div className='fixed inset-0 z-50 flex justify-center items-center w-full h-full'>
+    <div className='fixed inset-0 top-0 z-50 md:flex items-center justify-center overflow-y-auto w-full h-full'>
       <div
         ref={containerRef}
         className={`relative bg-white rounded-[20px] shadow-shadows w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 overflow-hidden transition-all duration-500 ease-in-out 
@@ -66,7 +66,7 @@ const RegisterForm = ({ setIsVisible }) => {
       >
         <button
           onClick={closePopup}
-          className='absolute top-4 right-4 size-9 rounded-full border border-white flex items-center justify-center text-white z-50 font-Outfit'
+          className='absolute top-4 right-4 size-9 rounded-full border border-white flex items-center justify-center text-HeadingColor-0 z-50 font-Outfit'
           title='Close'
         >
           <FaTimes size={24} />

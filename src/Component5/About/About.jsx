@@ -16,7 +16,7 @@ const About = () => {
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-[92px] lg:gap-10 items-center'>
           <div className='col-span-1 lg:col-span-7 relative z-10 inline-block'>
-            <div className='flex gap-6 h-[600px] w-auto'>
+            <div className='flex gap-6 h-auto sm:h-[600px] w-auto'>
               <img
                 src={aboutThumb}
                 draggable='false'
@@ -64,7 +64,7 @@ const About = () => {
               </span>
               about our educate
             </h5>
-            <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[45px] 2xl:leading-[55px] text-HeadingColor-0 mt-[18px] mb-4'>
+            <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[45px] 2xl:leading-[55px] text-HeadingColor-0 mt-2 sm:mt-[18px] mb-4'>
               Tools and Techniques for
               <br />
               Online <span className='text-PrimaryColor-0'>Teaching</span>

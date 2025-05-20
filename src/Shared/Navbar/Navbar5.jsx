@@ -169,7 +169,7 @@ const Navbar5 = () => {
   return (
     <div data-lenis-prevent>
       {/* Header Top */}
-      <div className='bg-SecondaryColor-0 px-2 sm:px-3 md:px-5 lg:px-10 xl:px-14 2xl:px-20 3xl:px-[170px] flex justify-between items-center relative z-10 before:absolute before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 md:before:w-[28%] before:h-[.5px] before:bg-gradient-to-r before:to-SecondaryColor-0 before:via-PrimaryColor-0 before:from-SecondaryColor-0'>
+      <div className='bg-SecondaryColor-0 px-2 sm:px-3 md:px-5 lg:px-10 xl:px-6 2xl:px-8 3xl:px-[170px] flex justify-between items-center relative z-10 before:absolute before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 xl:before:w-[28%] before:h-[.5px] before:bg-gradient-to-r before:to-SecondaryColor-0 before:via-PrimaryColor-0 before:from-SecondaryColor-0'>
         <div className='sm:flex items-center gap-10 hidden'>
           <div className='flex items-center gap-3'>
             <div className='text-PrimaryColor-0'>
@@ -189,20 +189,20 @@ const Navbar5 = () => {
               <FaRegEnvelope size={'20'} />
             </div>
             <a
-              href='mailto:adminsupport@gmail.com'
-              title='adminsupport@gmail.com'
+              href='mailto:support@gmail.com'
+              title='support@gmail.com'
             >
               <button className='font-Outfit text-white text-opacity-70 transition-all duration-500 hover:text-PrimaryColor-0 hover:text-opacity-100'>
-                adminsupport@gmail.com
+                support@gmail.com
               </button>
             </a>
           </div>
         </div>
         <div className='py-[6px] flex gap-5 items-center'>
-          <h4 className='font-Outfit text-xl text-PrimaryColor-0 mr-12 md:pr-[88px] relative z-10 before:absolute before:right-0 before:top-3.5 before:w-10 md:before:w-[70px] before:h-[2px] before:bg-PrimaryColor-0'>
+          <h4 className='sm:hidden md:block font-Outfit text-xl text-PrimaryColor-0 pr-12 lg:pr-[88px] relative z-10 before:absolute before:right-0 before:top-3.5 before:w-10 lg:before:w-[70px] before:h-[2px] before:bg-PrimaryColor-0'>
             Follow Us
           </h4>
-          <ul className='flex items-center gap-3 md:gap-5'>
+          <ul className='flex items-center gap-2 sm:gap-3 md:gap-5'>
             <li>
               <button className='size-[38px] rounded-full text-sm bg-transparent flex items-center justify-center text-white border-2 border-white border-opacity-50 overflow-hidden transition-all duration-500 hover:text-PrimaryColor-0 hover:border-PrimaryColor-0 hover:border-opacity-100 relative z-10'>
                 <FaFacebookF />
@@ -224,7 +224,7 @@ const Navbar5 = () => {
       {/* Header Main */}
       <header className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] transition-all duration-300 bg-SecondaryColor-0 relative z-50'>
         <div
-          className={`px-2 sm:px-3 md:px-5 lg:px-10 xl:px-14 2xl:px-20 3xl:px-[120px] py-4 lg:py-0 rounded-t-[30px] bg-white ${
+          className={`px-2 sm:px-3 md:px-5 lg:px-5 xl:px-4 2xl:px-5 3xl:px-[120px] py-4 lg:py-0 rounded-t-lg md:rounded-t-[30px] bg-white ${
             isSticky
               ? '!fixed top-0 left-0 rounded-t-none w-full shadow-shadows bg-SecondaryColor-0 lg:bg-white animate-headerSlideDown border-transparent'
               : ''
@@ -240,15 +240,14 @@ const Navbar5 = () => {
                 <img
                   src={logo}
                   draggable='false'
-                  className='brightness-0 invert-[1] lg:brightness-100 lg:invert-0'
                 />
               </Link>
             </div>
 
             {/* Desktop Menu */}
-            <div className='hidden lg:block lg:ml-24'>
+            <div className='hidden lg:block 3xl:ml-24'>
               <nav>
-                <ul className='flex gap-6 text-sm font-medium'>
+                <ul className='flex gap-6 lg:gap-2 xl:gap-3 2xl:gap-4 3xl:gap-6 text-sm font-medium'>
                   {menuItems.map((item, idx) => (
                     <li
                       key={idx}
@@ -290,10 +289,10 @@ const Navbar5 = () => {
               </nav>
             </div>
             <div>
-              <div className='flex items-center gap-2 sm:gap-7 lg:gap-5'>
+              <div className='flex items-center gap-2 sm:gap-4 md:gap-5 lg:gap-2 xl:gap-5'>
                 <div className='flex items-center'>
                   <div
-                    className='size-8 md:size-[46px] lg:size-9 xl:size-[46px] bg-transparent rounded-full border border-white lg:border-HeadingColor-0 border-opacity-20 lg:border-opacity-20 text-white lg:text-HeadingColor-0 transition-all duration-500 flex items-center justify-center cursor-pointer relative z-10 before:absolute before:left-0 before:rounded-full before:top-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-10 hover:before:scale-100 hover:text-white hover:border-PrimaryColor-0'
+                    className='size-8 md:size-[46px] lg:size-9 xl:size-[46px] bg-transparent rounded-full border border-HeadingColor-0 border-opacity-20 text-HeadingColor-0 transition-all duration-500 flex items-center justify-center cursor-pointer relative z-10 before:absolute before:left-0 before:rounded-full before:top-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-10 hover:before:scale-100 hover:text-white hover:border-PrimaryColor-0'
                     onClick={() => setIsCartOpen(true)}
                   >
                     <button className='menu-cart relative z-10 text-sm md:text-lg lg:text-sm xl:text-lg'>
@@ -305,7 +304,7 @@ const Navbar5 = () => {
                   </div>
                 </div>
                 <div className='flex items-center gap-4'>
-                  <div className='hidden lg:block'>
+                  <div className='hidden 2xl:block'>
                     <Link
                       to={'/contact'}
                       className='inline-flex items-center gap-2 text-base uppercase text-white font-medium font-Outfit rounded-full bg-PrimaryColor-0 px-[30px] py-3.5 transition-all duration-500 relative z-10 overflow-hidden before:absolute before:h-full before:w-0 before:bg-PrimaryColor2-0 before:opacity-50 before:top-0 before:left-auto before:right-0 before:transition-all before:duration-500 before:-z-10 hover:before:left-0 hover:before:opacity-100 hover:before:w-full hover:right-auto'
@@ -316,7 +315,7 @@ const Navbar5 = () => {
                   </div>
                 </div>
                 <div
-                  className='size-8 md:size-[46px] lg:size-9 xl:size-[46px] bg-transparent lg:bg-SecondaryColor-0 rounded-full border border-white lg:border-HeadingColor-0 border-opacity-20 lg:border-opacity-20 overflow-hidden text-white transition-all duration-500 flex items-center justify-center cursor-pointer relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:rotate-180 before:scale-0 before:-z-10 hover:before:scale-100 hover:before:rotate-0 hover:text-white hover:border-PrimaryColor-0'
+                  className='size-8 md:size-[46px] lg:size-9 xl:size-[46px] bg-transparent lg:bg-SecondaryColor-0 rounded-full border border-HeadingColor-0 border-opacity-20 overflow-hidden text-HeadingColor-0 lg:text-white transition-all duration-500 flex items-center justify-center cursor-pointer relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:rotate-180 before:scale-0 before:-z-10 hover:before:scale-100 hover:before:rotate-0 hover:text-white hover:border-PrimaryColor-0'
                   onClick={handleMenuSearchClick}
                 >
                   <button className='menu-cart text-lg md:text-[22px] lg:text-lg xl:text-[22px]'>
@@ -324,7 +323,7 @@ const Navbar5 = () => {
                   </button>
                 </div>
 
-                <div className='inline-flex gap-1'>
+                <div className='sm:inline-flex gap-1 hidden'>
                   <div>
                     <button
                       type='button'
@@ -349,13 +348,13 @@ const Navbar5 = () => {
                 {/* Hamburger Icon */}
 
                 <div
-                  className='group lg:hidden size-8 md:size-[46px] bg-transparent border border-white border-opacity-10 rounded-full flex items-center justify-center cursor-pointer'
+                  className='group lg:hidden size-8 md:size-[46px] bg-transparent border border-HeadingColor-0 border-opacity-20 rounded-full flex items-center justify-center cursor-pointer'
                   onClick={() => setMobileOpen(true)}
                 >
                   <button className='space-y-[3px] md:space-y-1'>
-                    <span className='bg-white w-4 md:w-5 h-0.5 rounded-xl block'></span>
-                    <span className='bg-white w-4 md:w-5 h-0.5 rounded-xl block'></span>
-                    <span className='bg-white w-2 md:w-3 h-0.5 rounded-xl block transition-all duration-500 group-hover:w-4 md:group-hover:w-5'></span>
+                    <span className='bg-HeadingColor-0 w-4 md:w-5 h-0.5 rounded-xl block'></span>
+                    <span className='bg-HeadingColor-0 w-4 md:w-5 h-0.5 rounded-xl block'></span>
+                    <span className='bg-HeadingColor-0 w-2 md:w-3 h-0.5 rounded-xl block transition-all duration-500 group-hover:w-4 md:group-hover:w-5'></span>
                   </button>
                 </div>
               </div>

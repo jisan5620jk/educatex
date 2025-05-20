@@ -90,15 +90,15 @@ const Course = () => {
   return (
     <section className='bg-white py-16 md:py-20 lg:py-28 relative z-10'>
       <div className='Container'>
-        <div className='flex items-center justify-between flex-wrap'>
+        <div className='flex items-center justify-between flex-wrap gap-5'>
           <div>
-            <h5 className='font-Outfit text-sm text-HeadingColor-0 uppercase pb-1 flex items-center gap-3 relative z-10 before:absolute before:left-0 before:top-full before:w-[44%] md:before:w-[35%] before:h-[.5px] before:bg-gradient-to-r before:to-white before:via-PrimaryColor-0 before:from-white'>
+            <h5 className='font-Outfit text-sm text-HeadingColor-0 uppercase flex items-center gap-3 relative z-10 before:absolute before:left-0 before:top-full before:w-[44%] md:before:w-[35%] before:h-[.5px] before:bg-gradient-to-r before:to-white before:via-PrimaryColor-0 before:from-white'>
               <span className='text-PrimaryColor2-0'>
                 <FaCircle size={10} />
               </span>
               Educate Courses
             </h5>
-            <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[45px] 2xl:leading-[55px] text-HeadingColor-0 mt-[18px]'>
+            <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[45px] 2xl:leading-[55px] text-HeadingColor-0 mt-2 sm:mt-[18px]'>
               Educate Trending{' '}
               <span className='text-PrimaryColor-0'>Courses</span>
             </h1>
@@ -122,8 +122,8 @@ const Course = () => {
           ))}
         </div>
       </div>
-      <div className='absolute top-28 right-24'><img src={shape} draggable={false} alt="Shape" className='animate-swing' /></div>
-      <div className='absolute bottom-20 left-32'><img src={shape2} draggable={false} alt="Shape" className='animate-bounce' /></div>
+      <div className='absolute top-28 right-24 hidden 2xl:block'><img src={shape} draggable={false} alt="Shape" className='animate-swing' /></div>
+      <div className='absolute bottom-20 left-32 hidden 2xl:block'><img src={shape2} draggable={false} alt="Shape" className='animate-bounce' /></div>
     </section>
   );
 };

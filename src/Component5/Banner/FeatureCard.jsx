@@ -7,7 +7,7 @@ const FeatureCard = ({
   featureUrl,
 }) => {
   return (
-    <div className='group flex items-center gap-6 relative z-10 overflow-hidden'>
+    <div className='group flex items-center gap-6 relative z-10'>
       <div className=''>
         <img
           src={featureIcon}
