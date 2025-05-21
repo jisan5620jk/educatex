@@ -1,53 +1,42 @@
 /* eslint-disable react/prop-types */
 const TestimonialCard = ({
-  testQuote,
-  testiTitle,
   testiRatingIcon,
+  testiRatingIcon2,
   testiName,
-  testiProfile,
-  testiDesignation,
+  testiImg,
   testiDesc,
+  testiDesignation,
 }) => {
   return (
-    <div className='relative group px-4 sm:px-9 lg:px-4 xl:px-9 2xl:px-10 pt-4 sm:pt-8 lg:pt-4 xl:pt-12 pb-5 sm:pb-10 lg:pb-5 xl:pb-10 bg-white bg-opacity-5  rounded-[20px] ease-linear transition-all duration-500 hover:border-PrimaryColor-0'>
-      <div className='flex gap-4 items-center'>
-        <div className=''>
+    <div className='relative text-left bg-white px-5 sm:px-10 py-4 sm:py-10 mb-8 rounded-[20px] shadow-shades'>
+      <div className='flex items-center gap-6'>
+        <div>
           <img
-            src={testQuote}
+            src={testiImg}
             draggable={false}
-            alt='Quote'
+            alt='Image'
           />
         </div>
-        <h5 className='font-Outlet text-xl sm:text-2xl lg:text-xl xl:text-[22px] text-white font-medium'>
-          {testiTitle}
-        </h5>
+        <p className='flex-1 font-OpenSans text-base sm:text-[17px] text-TextColor-0'>
+          {testiDesc}
+        </p>
       </div>
-      <p className='font-OpenSans sm:text-[17px] lg:text-base xl:text-[17px] text-white text-opacity-60 mt-8 mb-7'>
-        {testiDesc}
-      </p>
-      <ul className='flex items-center mb-8'>
-        <li className='text-ReviewText-0 text-[22px]'>{testiRatingIcon}</li>
-        <li className='text-ReviewText-0 text-[22px]'>{testiRatingIcon}</li>
-        <li className='text-ReviewText-0 text-[22px]'>{testiRatingIcon}</li>
-        <li className='text-ReviewText-0 text-[22px]'>{testiRatingIcon}</li>
-        <li className='text-ReviewText-0 text-[22px]'>{testiRatingIcon}</li>
-      </ul>
-      <div className='flex items-center gap-4 border-t border-white border-opacity-10 transition-all duration-300 ease-linear group-hover:border-PrimaryColor-0 group-hover:border-opacity-100 pt-[34px]'>
+      <div className='flex items-center gap-3 justify-between flex-wrap border-t border-HeadingColor-0 border-opacity-10 pt-5 mt-7'>
         <div>
-          <img
-            src={testiProfile}
-            draggable={false}
-            alt='User Image'
-          />
-        </div>
-        <div>
-          <h5 className='font-Outlet font-medium inline-block text-white text-xl sm:text-[22px] lg:text-xl xl:text-[22px] relative'>
+          <h5 className='font-Outfit font-medium inline-block text-HeadingColor-0 text-2xl relative'>
             {testiName}
           </h5>
-          <p className='font-OpenSans text-[15px] text-white text-opacity-60 mt-[6px]'>
+          <p className='font-OpenSans text-TextColor-0 text-[15px] mt-1.5'>
             {testiDesignation}
           </p>
         </div>
+        <ul className='flex items-center'>
+          <li className='text-ReviewText-0 text-2xl'>{testiRatingIcon}</li>
+          <li className='text-ReviewText-0 text-2xl'>{testiRatingIcon}</li>
+          <li className='text-ReviewText-0 text-2xl'>{testiRatingIcon}</li>
+          <li className='text-ReviewText-0 text-2xl'>{testiRatingIcon}</li>
+          <li className='text-ReviewText-0 text-2xl'>{testiRatingIcon2}</li>
+        </ul>
       </div>
     </div>
   );
