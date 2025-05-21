@@ -1,16 +1,22 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectFade } from 'swiper/modules';
+import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
-import SliderNavigation from './SliderNavigation';
 import bannerShape from '/images/hero-arrow5.png';
 import scroolShape from '/images/hero-scrool.png';
 
 const Banner = () => {
+  const swiperRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleBulletClick = (index) => {
+    if (swiperRef.current) {
+      swiperRef.current.slideToLoop(index);
+    }
+  };
 
   const slides = [
     {
@@ -19,33 +25,37 @@ const Banner = () => {
     {
       image: '/images/hero-bg5.png',
     },
+    {
+      image: '/images/hero-bg52.png',
+    },
   ];
-
-  const handleSlideChange = (swiper) => {
-    setActiveIndex(swiper.realIndex);
-  };
 
   const settings = {
     loop: true,
     speed: 2000,
-    modules: [Autoplay, EffectFade],
+    modules: [Autoplay, EffectFade, Pagination],
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,
     },
-    effect: 'fade', // Fade effect for smooth transitions
+    onSwiper: (swiper) => (swiperRef.current = swiper),
+    onSlideChange: (swiper) => setActiveIndex(swiper.realIndex),
+    effect: 'fade',
     fadeEffect: {
-      crossFade: false,
+      crossFade: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'custom',
+      renderCustom: (swiper, current, total) => {
+        return `<span class="text-white font-Outfit text-sm">${current} / ${total}</span>`;
+      },
     },
   };
 
   return (
     <div className='relative z-10'>
-      <Swiper
-        {...settings}
-        onSlideChange={handleSlideChange}
-        onSwiper={(swiper) => setActiveIndex(swiper.realIndex)}
-      >
+      <Swiper {...settings}>
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <section
@@ -128,8 +138,12 @@ const Banner = () => {
             </section>
           </SwiperSlide>
         ))}
-        <SliderNavigation />
       </Swiper>
+
+      {/* Custom Number Pagination */}
+      <div className='swiper-pagination absolute bottom-10 left-1/2 -translate-x-1/2 z-10' />
+
+      {/* Scroll Icon Section */}
       <div className='absolute z-10 -bottom-20 left-1/2 -translate-x-1/2 size-[74px] sm:size-[142px] lg:size-[170px] flex items-center justify-center'>
         <div className='relative z-10'>
           <div className='size-14 sm:size-24 lg:size-28 xl:size-[120px] animate-rotational relative'>
@@ -140,13 +154,12 @@ const Banner = () => {
             >
               <path
                 d='M.25,125.25a125,125,0,1,1,125,125,125,125,0,0,1-125-125'
-                id='e-path-35ee1b2'
+                id='textPath'
                 className='fill-transparent'
               ></path>
               <text className='font-Outfit text-[33px] uppercase'>
                 <textPath
-                  id='e-text-path-35ee1b2'
-                  href='#e-path-35ee1b2'
+                  href='#textPath'
                   startOffset='0%'
                   className='fill-HeadingColor-0'
                 >
@@ -164,6 +177,25 @@ const Banner = () => {
             />
           </div>
         </div>
+      </div>
+
+      {/* Custom Bullets (Optional) */}
+      <div className='absolute top-1/2 left-14 -translate-y-1/2 flex flex-col gap-5 z-10'>
+        {slides.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => handleBulletClick(i)}
+            className={`rounded-full size-[52px] relative z-10 flex items-center justify-center border border-white border-opacity-30 before:absolute before:-left-[7px] before:-top-[7px] before:size-[64px] before:border-2 before:border-PrimaryColor-0 before:border-dashed before:transition-all before:duration-500 before:rounded-full before:scale-0 ${
+              activeIndex === i
+                ? 'bg-PrimaryColor-0 before:scale-100 border-PrimaryColor-0 before:animate-rotational'
+                : 'bg-white bg-opacity-10'
+            } transition-all duration-500`}
+          >
+            <span className='text-white font-Outfit text-lg font-medium'>
+              {String(i + 1).padStart(2, '0')}
+            </span>
+          </button>
+        ))}
       </div>
     </div>
   );

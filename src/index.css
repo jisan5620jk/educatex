@@ -56,6 +56,6 @@
   /* Odometer font */
   .odometer.odometer-auto-theme,
   .odometer.odometer-theme-default {
-    @apply font-Outfit leading-inherit;
+    @apply !font-Outfit leading-inherit;
   }
 }
