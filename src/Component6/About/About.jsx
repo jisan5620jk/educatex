@@ -10,7 +10,7 @@ import { GiCheckMark } from 'react-icons/gi';
 
 const About = () => {
   return (
-    <section className='bg-white pt-32 md:pt-40 lg:pt-[202px] pb-16 md:pb-20 lg:pb-28 relative overflow-hidden'>
+    <section className='bg-white pt-32 md:pt-40 lg:pt-[202px] pb-16 md:pb-20 lg:pb-28 relative overflow-hidden' id='about'>
       <img
         src={shape}
         draggable={false}

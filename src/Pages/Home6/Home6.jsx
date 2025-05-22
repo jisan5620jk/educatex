@@ -5,6 +5,7 @@ import Brand from '../../Component6/Brand/Brand';
 import Counter from '../../Component6/Counter/Counter';
 import Feature from '../../Component6/Feature/Feature';
 import Marquee from '../../Component6/Marquee/Marquee';
+import NewsletterForm from '../../Component6/NewsletterForm/NewsletterForm';
 import Pricing from '../../Component6/Pricing/Pricing';
 import Testimonial from '../../Component6/Testimonial/Testimonial';
 
@@ -20,6 +21,7 @@ const Home6 = () => {
       <Testimonial />
       <Brand />
       <Blog />
+      <NewsletterForm />
     </>
   );
 };

@@ -1,13 +1,14 @@
 /* eslint-disable react/prop-types */
 
 import { GiCheckMark } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 const PricingCard = ({
   title,
   price,
   pricingPlan,
   features,
-  bgColor,
+  bgColor,Url,
   buttonColor,
   textColor,
 }) => {
@@ -39,11 +40,11 @@ const PricingCard = ({
         ))}
       </ul>
 
-      <button
-        className={`mb-3 w-full rounded-full py-3 font-Outfit font-medium text-[17px] transition-all duration-500 group-hover:text-white overflow-hidden relative z-10 before:absolute before:right-0 before:top-0 before:w-0 before:h-full before:transition-all before:duration-500 before:-z-10 group-hover:before:w-full group-hover:before:left-0 ${buttonColor}`}
+      <Link to={Url}
+        className={`mb-3 w-full rounded-full py-3 font-Outfit font-medium text-[17px] inline-block text-center transition-all duration-500 group-hover:text-white overflow-hidden relative z-10 before:absolute before:right-0 before:top-0 before:w-0 before:h-full before:transition-all before:duration-500 before:-z-10 group-hover:before:w-full group-hover:before:left-0 ${buttonColor}`}
       >
         Choose Plan
-      </button>
+      </Link>
     </div>
   );
 };

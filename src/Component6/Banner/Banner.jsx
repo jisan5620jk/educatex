@@ -168,14 +168,17 @@ const Banner = () => {
               </text>
             </svg>
           </div>
-          <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[105px]'>
+          <a
+            href={'#about'}
+            className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[105px]'
+          >
             <img
               src={scroolShape}
               draggable={false}
               alt='Shape'
               className=''
             />
-          </div>
+          </a>
         </div>
       </div>
 

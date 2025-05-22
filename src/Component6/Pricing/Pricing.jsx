@@ -14,6 +14,7 @@ const Pricing = () => {
       bgColor: 'bg-PrimaryColor4-0 bg-opacity-10',
       textColor: 'text-HeadingColor-0 group-hover:text-PrimaryColor4-0',
       buttonColor: 'bg-PrimaryColor4-0 bg-opacity-10 before:bg-PrimaryColor4-0',
+      Url: '/pricing',
     },
     {
       title: 'GOLD PLAN',
@@ -22,6 +23,7 @@ const Pricing = () => {
       bgColor: 'bg-PrimaryColor3-0 bg-opacity-10',
       textColor: 'text-HeadingColor-0 group-hover:text-PrimaryColor3-0',
       buttonColor: 'bg-PrimaryColor3-0 bg-opacity-10 before:bg-PrimaryColor3-0',
+      Url: '/pricing',
     },
     {
       title: 'DIAMOND PLAN',
@@ -30,6 +32,7 @@ const Pricing = () => {
       bgColor: 'bg-PrimaryColor-0 bg-opacity-10',
       textColor: 'text-HeadingColor-0 group-hover:text-PrimaryColor-0',
       buttonColor: 'bg-PrimaryColor-0 bg-opacity-10 before:bg-PrimaryColor-0',
+      Url: '/pricing',
     },
   ];
 

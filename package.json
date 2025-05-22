@@ -12,7 +12,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "fslightbox-react": "^1.7.6",
-    "gsap": "^3.12.7",
+    "gsap": "^3.13.0",
     "imagesloaded": "^5.0.0",
     "isotope-layout": "^3.0.6",
     "lenis": "^1.1.20",
