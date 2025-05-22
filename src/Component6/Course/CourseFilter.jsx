@@ -27,7 +27,6 @@ const courses = [
     students: 1200,
     instructor: 'John D. Alexon',
     instructorImg: instructorImg,
-    bgColor: 'bg-PrimaryColor3-0 bg-opacity-[7%]',
     hoverSpan: 'bg-PrimaryColor3-0',
     priceBg: 'bg-PrimaryColor3-0',
     categoryColor: 'text-PrimaryColor3-0',
@@ -49,7 +48,6 @@ const courses = [
     students: 1500,
     instructor: 'Jane Smith',
     instructorImg: instructorImg2,
-    bgColor: 'bg-PrimaryColor2-0 bg-opacity-[7%]',
     hoverSpan: 'bg-PrimaryColor2-0',
     priceBg: 'bg-PrimaryColor2-0',
     categoryColor: 'text-PrimaryColor2-0',
@@ -71,7 +69,6 @@ const courses = [
     students: 2000,
     instructor: 'Michael B. Jordan',
     instructorImg: instructorImg3,
-    bgColor: 'bg-PrimaryColor-0 bg-opacity-[7%]',
     hoverSpan: 'bg-PrimaryColor-0',
     priceBg: 'bg-PrimaryColor-0',
     categoryColor: 'text-PrimaryColor-0',
@@ -160,7 +157,7 @@ const CourseFilter = () => {
   }, []);
 
   return (
-    <div className='bg-white pt-[60px] pb-[30px] md:pt-20 md:pb-[60px] lg:pt-[100px] xl:pt-[120px] lg:pb-[60px] xl:pb-20 relative'>
+    <div className='bg-BodyBg-0 pt-[60px] pb-[30px] md:pt-20 md:pb-[60px] lg:pt-[100px] xl:pt-[120px] lg:pb-[60px] xl:pb-20 relative'>
       <div className='absolute left-7 bottom-0 hidden 3xl:block'>
         <img
           src={shape}
@@ -246,7 +243,7 @@ const CourseFilter = () => {
           {courses.map((course, idx) => (
             <div
               key={idx}
-              className={` course-item ${course.bgColor}
+              className={`course-item bg-white
                           ${
                             idx === 0
                               ? 'finance'
