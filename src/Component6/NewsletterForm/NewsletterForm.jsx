@@ -1,7 +1,6 @@
 import { MdEmail } from 'react-icons/md';
 
 const NewsletterForm = () => {
-
   return (
     <section className='bg-BodyBg-0 py-16 md:py-20 lg:py-28'>
       <div className='Container'>
@@ -30,7 +29,7 @@ const NewsletterForm = () => {
             </div>
             <button
               type='submit'
-              className='bg-PrimaryColor-0 hover:bg-emerald-600 text-white font-semibold text-sm px-7 py-5 rounded-full transition-all'
+              className='font-Outfit bg-PrimaryColor-0 hover:bg-emerald-600 text-white font-semibold text-sm px-7 py-5 rounded-full transition-all'
             >
               Subscribe Now
             </button>
