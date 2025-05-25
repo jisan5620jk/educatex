@@ -2,8 +2,6 @@ import { Outlet } from 'react-router-dom';
 import Navbar6 from '../Shared/Navbar/Navbar6';
 import BackToTop from '../Shared/BackToTop/BackToTop';
 import Footer from '../Shared/Footer/Footer';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -17,12 +15,9 @@ const Main6 = () => {
   const smootherRef = useRef(null);
 
   useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-
     smootherRef.current = ScrollSmoother.create({
-      wrapper: '#smooth-wrapper', // add wrapper ID here
-      content: '#smooth-content', // add content ID here
+      wrapper: '#smooth-wrapper',
+      content: '#smooth-content',
       smooth: 1.5,
       effects: true,
       normalizeScroll: true,

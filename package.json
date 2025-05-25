@@ -10,16 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "aos": "^2.3.4",
     "fslightbox-react": "^1.7.6",
     "gsap": "^3.13.0",
     "imagesloaded": "^5.0.0",
     "isotope-layout": "^3.0.6",
-    "lenis": "^1.1.20",
     "node": "^23.5.0",
     "react": "^18.3.1",
     "react-animated-progress-bar": "^1.1.2",
-    "react-countup": "^6.5.3",
     "react-dom": "^18.3.1",
     "react-helmet-async": "^2.0.5",
     "react-icons": "^5.4.0",

@@ -2,8 +2,6 @@ import { Outlet } from 'react-router-dom';
 import Navbar2 from '../Shared/Navbar/Navbar2';
 import BackToTop from '../Shared/BackToTop/BackToTop';
 import Footer7 from '../Shared/Footer/Footer7';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
@@ -12,10 +10,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import HelmetChanger from '../Shared/Helmet/Helmet';
 
 const Main7 = () => {
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
+  useEffect(() => {}, []);
 
   const lenis = new Lenis();
 

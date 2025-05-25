@@ -1,42 +1,80 @@
-import Navbar2 from '../Shared/Navbar/Navbar2';
 import { Outlet } from 'react-router-dom';
+import Navbar2 from '../Shared/Navbar/Navbar2';
 import BackToTop from '../Shared/BackToTop/BackToTop';
-import Footer2 from '../Shared/Footer/Footer2';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import HelmetChanger from '../Shared/Helmet/Helmet';
-import { useEffect } from 'react';
-import Lenis from 'lenis';
-import 'lenis/dist/lenis.css';
+import Footer from '../Shared/Footer/Footer';
+import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import ScrollSmoother from 'gsap/ScrollSmoother';
+import ScrollToPlugin from 'gsap/ScrollToPlugin';
+import HelmetChanger from '../Shared/Helmet/Helmet';
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
 
 const Main2 = () => {
+  const smootherRef = useRef(null);
+
   useEffect(() => {
-    AOS.init();
-    AOS.refresh();
+    smootherRef.current = ScrollSmoother.create({
+      wrapper: '#smooth-wrapper',
+      content: '#smooth-content',
+      smooth: 1.5,
+      effects: true,
+      normalizeScroll: true,
+      smoothTouch: 0.1,
+    });
+
+    return () => {
+      if (smootherRef.current) smootherRef.current.kill();
+    };
   }, []);
 
-  const lenis = new Lenis();
+  useEffect(() => {
+    // Attach click handler to all anchor links with href starting with #
+    const links = document.querySelectorAll('a[href^="#"]');
 
-  lenis.on('scroll', ScrollTrigger.update);
+    links.forEach((link) => {
+      link.addEventListener('click', (e) => {
+        const targetId = link.getAttribute('href');
+        const targetEl = document.querySelector(targetId);
 
-  gsap.ticker.add((time) => {
-    lenis.raf(time * 1000);
-  });
+        if (targetEl) {
+          e.preventDefault();
 
-  gsap.ticker.lagSmoothing(0);
+          gsap.to(window, {
+            duration: 1.2,
+            scrollTo: { y: targetEl, offsetY: 0 },
+            ease: 'power2.inOut',
+          });
+        }
+      });
+    });
+
+    // Cleanup
+    return () => {
+      links.forEach((link) => link.removeEventListener('click', () => {}));
+    };
+  }, []);
 
   return (
     <>
-      <HelmetChanger title={'Online Univercity'} />
-      <Navbar2 />
+      <HelmetChanger title={'Online Education'} />
       <BackToTop />
-      <div>
-        <Outlet />
+      <Navbar2 />
+      <div
+        id='smooth-wrapper'
+        className='overflow-hidden h-full pt-[50px]'
+      >
+        <div
+          id='smooth-content'
+          className='min-h-screen will-change-transform'
+        >
+          <Outlet />
+          <Footer />
+        </div>
       </div>
-      <Footer2 />
     </>
   );
 };
+
 export default Main2;

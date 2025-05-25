@@ -12,6 +12,7 @@ import Home5 from '../Pages/Home5/Home5';
 import Main5 from '../Main/Main5';
 import Home6 from '../Pages/Home6/Home6';
 import Main6 from '../Main/Main6';
+import PricingInner from '../Pages/InnerPage/PricingInner/PricingInner';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home1 />,
       },
+      {
+        path:'/pricing',
+        element: <PricingInner />
+      }
     ],
   },
   {
