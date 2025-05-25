@@ -13,7 +13,7 @@ const PricingCard = ({
   textColor,
 }) => {
   return (
-    <div className='group rounded-2xl p-4 sm:p-7 bg-white flex flex-col items-center shadow-shades'>
+    <div className='group rounded-2xl p-4 sm:p-7 lg:p-5 xl:p-7 bg-white flex flex-col items-center shadow-shades'>
       <div className={`w-full pt-12 pb-10 rounded-xl text-center ${bgColor}`}>
         <h3 className='font-Outfit text-xl font-medium mb-2'>{title}</h3>
         <p className='font-Outfit text-[45px] font-semibold'>

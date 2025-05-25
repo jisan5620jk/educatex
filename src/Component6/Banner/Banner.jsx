@@ -183,7 +183,7 @@ const Banner = () => {
       </div>
 
       {/* Custom Bullets (Optional) */}
-      <div className='absolute top-[74%] sm:top-1/2 left-1/2 -translate-x-1/2 sm:-translate-x-0 sm:left-14 sm:-translate-y-1/2 flex sm:flex-col gap-5 z-10'>
+      <div className='absolute top-[74%] lg:top-1/2 left-1/2 -translate-x-1/2 lg:-translate-x-0 lg:left-14 lg:-translate-y-1/2 flex lg:flex-col gap-5 z-10'>
         {slides.map((_, i) => (
           <button
             key={i}

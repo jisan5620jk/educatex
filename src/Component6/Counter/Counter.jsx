@@ -35,7 +35,7 @@ const Counter = () => {
   return (
     <section className='py-16 md:py-20 lg:py-28 bg-BodyBg-0'>
       <div className='Container'>
-        <div className='flex items-center justify-between flex-wrap gap-7'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7'>
           {counterData.map((counter, index) => (
             <CounterCard
               key={index}

@@ -10,7 +10,10 @@ import { GiCheckMark } from 'react-icons/gi';
 
 const About = () => {
   return (
-    <section className='bg-white pt-32 md:pt-40 lg:pt-[202px] pb-16 md:pb-20 lg:pb-28 relative overflow-hidden' id='about'>
+    <section
+      className='bg-white pt-32 md:pt-40 xl:pt-[202px] pb-16 md:pb-20 lg:pb-28 relative overflow-hidden'
+      id='about'
+    >
       <img
         src={shape}
         draggable={false}
@@ -37,14 +40,14 @@ const About = () => {
         style={{ animationDelay: '1.5s' }}
       />
       <div className='Container'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-20 items-center'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-10 2xl:gap-20 items-center'>
           <div className='relative'>
             <img
               src={aboutThumb}
               draggable='false'
-              className='w-full lg:w-[inherit] max-w-[inherit] '
+              className='w-full xl:w-[inherit] max-w-[inherit]'
             />
-            <div className='absolute bottom-0 sm:bottom-7 right-0 flex gap-6 sm:gap-10 lg:gap-6 xl:gap-10'>
+            <div className='absolute bottom-0 sm:bottom-7 right-0 sm:right-7 xl:right-0 flex gap-6 sm:gap-10 lg:gap-6 xl:gap-10'>
               <div className='flex items-center gap-5 pl-7 pt-7 pb-10 pr-8 bg-white rounded-2xl shadow-shadows'>
                 <div className='rounded-full size-[64px] bg-PrimaryColor-0 bg-opacity-20 text-PrimaryColor-0 text-xl relative z-10 flex items-center justify-center border border-white border-opacity-30 before:absolute before:-left-[5px] before:-top-[5px] before:size-[72px] before:border before:border-PrimaryColor-0 before:border-dashed before:transition-all before:duration-500 before:rounded-full before:animate-rotational'>
                   <FaPhoneAlt />

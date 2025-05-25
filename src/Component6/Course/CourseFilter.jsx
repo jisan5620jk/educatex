@@ -157,7 +157,7 @@ const CourseFilter = () => {
   }, []);
 
   return (
-    <div className='bg-BodyBg-0 pt-[60px] pb-[30px] md:pt-20 md:pb-[60px] lg:pt-[100px] xl:pt-[120px] lg:pb-[60px] xl:pb-20 relative'>
+    <div className='bg-BodyBg-0 pt-[60px] pb-[30px] md:pt-20 md:pb-[60px] lg:pt-[100px] xl:pt-[120px] xl:pb-[60px] 2xl:pb-20 relative'>
       <div className='absolute left-7 bottom-0 hidden 3xl:block'>
         <img
           src={shape}
