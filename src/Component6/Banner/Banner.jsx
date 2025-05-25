@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import bannerShape from '/images/hero-arrow5.png';
 import scroolShape from '/images/hero-scrool.png';
+import TextReveal from '../../Shared/TextAnim/TextReveal';
 
 const Banner = () => {
   const swiperRef = useRef(null);
@@ -81,7 +82,7 @@ const Banner = () => {
                         : 'translate-y-[100px] opacity-0'
                     }`}
                   >
-                    Unlock Career
+                    <TextReveal text='Unlock Career'/>
                   </h1>
 
                   <h1
@@ -91,7 +92,7 @@ const Banner = () => {
                         : 'translate-y-[100px] opacity-0'
                     }`}
                   >
-                    Opportunities with Our
+                    <TextReveal text='Opportunities with Our'/>
                   </h1>
 
                   <h1
@@ -101,7 +102,7 @@ const Banner = () => {
                         : 'translate-y-[100px] opacity-0'
                     }`}
                   >
-                    Programs
+                    <TextReveal text='Programs'/>
                   </h1>
 
                   <div

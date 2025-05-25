@@ -2,6 +2,7 @@ import { useState } from 'react';
 import PricingCard from './PricingCard';
 import shape from '/images/pricing-shape11.png';
 import shape2 from '/images/pricing-shape12.png';
+import TextReveal from '../../Shared/TextAnim/TextReveal';
 
 const Pricing = () => {
   const [billing, setBilling] = useState('monthly');
@@ -64,9 +65,8 @@ const Pricing = () => {
             pricing plan
           </h5>
           <h1 className='font-Outfit font-semibold text-lg leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 md:mt-[14px] mb-4'>
-            Comprehensive Course Guide and
-            <br />
-            Best Fee Schedule
+            <TextReveal text='Comprehensive Course Guide and'/>
+            <TextReveal text='Best Fee Schedule'/>
           </h1>
         </div>
         {/* Toggle Switch */}

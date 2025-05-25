@@ -5,6 +5,7 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 import { GiCheckMark } from 'react-icons/gi';
 import FsLightbox from 'fslightbox-react';
 import { useState } from 'react';
+import TextReveal from '../../Shared/TextAnim/TextReveal';
 
 const Feature = () => {
   const [toggler, setToggler] = useState(false);
@@ -39,10 +40,9 @@ const Feature = () => {
             <h5 className='font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
               Our Features
             </h5>
-            <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 md:mt-[14px] mb-4'>
-              Upgrade Your Skills with the
-              <br />
-              Newest Trends
+            <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[40px] 2xl:leading-[50px] text-HeadingColor-0 mt-2 md:mt-[14px] mb-4'>
+              <TextReveal text='Upgrade Your Skills with the'/>
+              <TextReveal text='Newest Trends'/>
             </h1>
             <p className='font-OpenSans text-TextColor2-0 max-w-[430px] w-full'>
               Combining a rich history cutting-edge technology this fostering

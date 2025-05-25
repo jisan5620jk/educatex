@@ -1,6 +1,7 @@
 import { FaRegEnvelope } from 'react-icons/fa6';
 import shape from '/images/subscribe-shape2.png';
 import shape2 from '/images/brand-line.png';
+import TextReveal from '../../Shared/TextAnim/TextReveal';
 
 const NewsletterForm = () => {
   return (
@@ -22,8 +23,8 @@ const NewsletterForm = () => {
       <div className='Container'>
         <div className='flex flex-col lg:flex-row lg:items-center justify-between gap-6'>
           <h2 className='text-xl md:text-[40px] md:leading-[50px] lg:text-[36px] lg:leading-[46px] 2xl:text-[40px] 2xl:leading-[50px] font-semibold font-Outfit text-HeadingColor-0 text-left'>
-            Subscribe Our Newsletter For <br className='hidden sm:block' />
-            Regular Updates
+            <TextReveal text='Subscribe Our Newsletter For'/>
+            <TextReveal text='Regular Updates'/>
           </h2>
 
           <form

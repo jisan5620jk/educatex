@@ -13,6 +13,7 @@ import { IoDocumentTextOutline } from 'react-icons/io5';
 import { PiUsersThree } from 'react-icons/pi';
 import { GoArrowRight } from 'react-icons/go';
 import { Link } from 'react-router-dom';
+import TextReveal from '../../Shared/TextAnim/TextReveal';
 
 const courses = [
   {
@@ -174,9 +175,8 @@ const CourseFilter = () => {
             </h5>
           </div>
           <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0'>
-            Our Courses – Comprehensive
-            <br />
-            Available all Programs
+            <TextReveal text='Our Courses – Comprehensive'/>
+            <TextReveal text='Available all Programs'/>
           </h1>
         </div>
 

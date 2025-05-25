@@ -8,9 +8,10 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ScrollSmoother from 'gsap/ScrollSmoother';
+import ScrollToPlugin from 'gsap/ScrollToPlugin';
 import HelmetChanger from '../Shared/Helmet/Helmet';
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
 
 const Main6 = () => {
   const smootherRef = useRef(null);
@@ -33,6 +34,33 @@ const Main6 = () => {
     };
   }, []);
 
+  useEffect(() => {
+    // Attach click handler to all anchor links with href starting with #
+    const links = document.querySelectorAll('a[href^="#"]');
+
+    links.forEach((link) => {
+      link.addEventListener('click', (e) => {
+        const targetId = link.getAttribute('href');
+        const targetEl = document.querySelector(targetId);
+
+        if (targetEl) {
+          e.preventDefault();
+
+          gsap.to(window, {
+            duration: 1.2,
+            scrollTo: { y: targetEl, offsetY: 0 },
+            ease: 'power2.inOut',
+          });
+        }
+      });
+    });
+
+    // Cleanup
+    return () => {
+      links.forEach((link) => link.removeEventListener('click', () => {}));
+    };
+  }, []);
+
   return (
     <>
       <HelmetChanger title={'Online Education'} />
@@ -40,9 +68,12 @@ const Main6 = () => {
       <Navbar6 />
       <div
         id='smooth-wrapper'
-        className='overflow-hidden pt-28 sm:pt-[120px] lg:pt-[150px]'
+        className='overflow-hidden h-full pt-28 sm:pt-[120px] lg:pt-[150px]'
       >
-        <div id='smooth-content'>
+        <div
+          id='smooth-content'
+          className='min-h-screen will-change-transform'
+        >
           <Outlet />
           <Footer />
         </div>

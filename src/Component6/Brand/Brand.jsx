@@ -6,6 +6,7 @@ import brandThumb2 from '/images/brand-img1.png';
 import brandThumb3 from '/images/brand-img2.png';
 import shape from '/images/brand-star.png';
 import shape2 from '/images/brand-arrow.png';
+import TextReveal from '../../Shared/TextAnim/TextReveal';
 
 const Brand = () => {
   const settings = {
@@ -50,7 +51,7 @@ const Brand = () => {
               our partners
             </h5>
             <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2'>
-              Our Trusted Partners
+              <TextReveal text='Our Trusted Partners'/>
             </h1>
           </div>
           <div className='relative z-10 max-w-[710px] w-full'>

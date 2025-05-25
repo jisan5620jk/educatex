@@ -7,6 +7,7 @@ import testiImg from '/images/testi-autor51.png';
 import testiImg2 from '/images/testi-autor52.png';
 import shape from '/images/testi-shape55.png';
 import { useRef, useState } from 'react';
+import TextReveal from '../../Shared/TextAnim/TextReveal';
 
 const testiData = [
   {
@@ -95,7 +96,7 @@ const Testimonial = () => {
             Testimonial
           </h5>
           <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 md:mt-[14px] mb-4'>
-            What Our Students Think
+            <TextReveal text='What Our Students Think'/>
           </h1>
         </div>
 
