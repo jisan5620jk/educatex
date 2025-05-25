@@ -40,7 +40,7 @@ const Main6 = () => {
       <Navbar6 />
       <div
         id='smooth-wrapper'
-        className='overflow-hidden'
+        className='overflow-hidden pt-[120px] lg:pt-[150px]'
       >
         <div id='smooth-content'>
           <Outlet />

@@ -63,7 +63,7 @@ const Pricing = () => {
           <h5 className='font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 inline-block relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
             pricing plan
           </h5>
-          <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 md:mt-[14px] mb-4'>
+          <h1 className='font-Outfit font-semibold text-lg leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 md:mt-[14px] mb-4'>
             Comprehensive Course Guide and
             <br />
             Best Fee Schedule
@@ -72,7 +72,7 @@ const Pricing = () => {
         {/* Toggle Switch */}
         <div className='flex items-center justify-center space-x-4 mb-16 mt-10'>
           <span
-            className={`font-Outfit text-[22px] font-medium transition-all duration-500 ${
+            className={`font-Outfit text-lg sm:text-[22px] font-medium transition-all duration-500 ${
               billing === 'yearly' ? 'text-gray-900' : 'text-gray-400'
             }`}
           >
@@ -93,7 +93,7 @@ const Pricing = () => {
             />
           </button>
           <span
-            className={`font-Outfit text-[22px] transition-all duration-500 ${
+            className={`font-Outfit text-lg sm:text-[22px] transition-all duration-500 ${
               billing === 'monthly' ? 'text-gray-900' : 'text-gray-400'
             }`}
           >

@@ -59,7 +59,7 @@ const Banner = () => {
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <section
-              className='bg-cover bg-center bg-no-repeat pt-[188px] pb-[250px] flex items-center relative z-10'
+              className='bg-cover bg-center bg-no-repeat pt-[140px] md:pt-[188px] pb-[250px] flex items-center relative z-10'
               style={{ backgroundImage: `url(${slide.image})` }}
             >
               <div className='Container'>
@@ -105,7 +105,7 @@ const Banner = () => {
                   </h1>
 
                   <div
-                    className={`flex flex-wrap items-center justify-center gap-y-5 gap-x-8 transition-all duration-500 mt-12 ${
+                    className={`flex flex-wrap items-center justify-center gap-y-5 gap-x-8 transition-all duration-500 mt-8 md:mt-12 ${
                       activeIndex === index
                         ? 'translate-y-0 opacity-100 delay-[500ms]'
                         : 'translate-y-[100px] opacity-0'
@@ -144,9 +144,9 @@ const Banner = () => {
       <div className='swiper-pagination absolute bottom-10 left-1/2 -translate-x-1/2 z-10' />
 
       {/* Scroll Icon Section */}
-      <div className='absolute z-10 -bottom-20 left-1/2 -translate-x-1/2 size-[74px] sm:size-[142px] lg:size-[170px] flex items-center justify-center'>
+      <div className='absolute z-10 -bottom-[90px] sm:-bottom-20 left-1/2 -translate-x-1/2 size-[170px] flex items-center justify-center'>
         <div className='relative z-10'>
-          <div className='size-14 sm:size-24 lg:size-28 xl:size-[120px] animate-rotational relative'>
+          <div className='size-[120px] animate-rotational relative'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 250.5 250.5'
@@ -183,12 +183,12 @@ const Banner = () => {
       </div>
 
       {/* Custom Bullets (Optional) */}
-      <div className='absolute top-1/2 left-14 -translate-y-1/2 flex flex-col gap-5 z-10'>
+      <div className='absolute top-[74%] sm:top-1/2 left-1/2 -translate-x-1/2 sm:-translate-x-0 sm:left-14 sm:-translate-y-1/2 flex sm:flex-col gap-5 z-10'>
         {slides.map((_, i) => (
           <button
             key={i}
             onClick={() => handleBulletClick(i)}
-            className={`rounded-full size-[52px] relative z-10 flex items-center justify-center border border-white border-opacity-30 before:absolute before:-left-[7px] before:-top-[7px] before:size-[64px] before:border-2 before:border-PrimaryColor-0 before:border-dashed before:transition-all before:duration-500 before:rounded-full before:scale-0 ${
+            className={`rounded-full size-10 sm:size-[52px] relative z-10 flex items-center justify-center border border-white border-opacity-30 before:absolute before:-left-[7px] before:-top-[7px] before:size-[52px] sm:before:size-[64px] before:border-2 before:border-PrimaryColor-0 before:border-dashed before:transition-all before:duration-500 before:rounded-full before:scale-0 ${
               activeIndex === i
                 ? 'bg-PrimaryColor-0 before:scale-100 border-PrimaryColor-0 before:animate-rotational'
                 : 'bg-white bg-opacity-10'

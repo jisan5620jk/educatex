@@ -17,19 +17,19 @@ const Feature = () => {
         className='absolute bottom-[16%] right-[7%] animate-dance hidden 3xl:block'
       />
       <div className='Container lg:px-0'>
-        <div className='grid grid-cols-1 lg:grid-cols-12 items-center'>
+        <div className='grid grid-cols-1 lg:grid-cols-12 gap-7 xl:gap-0 items-center'>
           <div className='lg:col-span-7 relative'>
             <img
               src={featureThumb}
               draggable='false'
               className='w-full lg:w-[inherit] max-w-[inherit] '
             />
-            <div className='absolute bottom-2 right-[70px] flex gap-6 sm:gap-10 lg:gap-6 xl:gap-10'>
+            <div className='absolute bottom-0 right-0 sm:bottom-2 sm:right-[70px] flex gap-6 sm:gap-10 lg:gap-6 xl:gap-10'>
               <button
-                className='rounded-full size-[100px] bg-[url("/images/play-img.png")] bg-cover bg-no-repeat text-PrimaryColor-0 relative z-10 flex items-center justify-center border border-white border-opacity-30 before:absolute before:-left-[9px] before:-top-[9px] before:size-[115px] before:border-2 before:border-PrimaryColor-0 before:border-dashed before:transition-all before:duration-500 before:rounded-full before:animate-rotational '
+                className='rounded-full size-12 sm:size-[100px] bg-[url("/images/play-img.png")] bg-cover bg-no-repeat text-PrimaryColor-0 relative z-10 flex items-center justify-center border border-white border-opacity-30 before:absolute before:-left-[9px] before:-top-[9px] before:size-[63px] sm:before:size-[115px] before:border-2 before:border-PrimaryColor-0 before:border-dashed before:transition-all before:duration-500 before:rounded-full before:animate-rotational '
                 onClick={() => setToggler(!toggler)}
               >
-                <span className='size-[68px] bg-BodyBg-0 rounded-full flex items-center justify-center font-Outfit uppercase'>
+                <span className='size-9 sm:size-[68px] text-xs sm:text-base bg-BodyBg-0 rounded-full flex items-center justify-center font-Outfit uppercase'>
                   Play
                 </span>
               </button>

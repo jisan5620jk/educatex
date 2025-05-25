@@ -9,7 +9,7 @@ const TestimonialCard = ({
 }) => {
   return (
     <div className='relative text-left bg-white px-5 sm:px-10 py-4 sm:py-10 mb-8 rounded-[20px] shadow-shades'>
-      <div className='flex items-center gap-6'>
+      <div className='flex flex-col sm:flex-row sm:items-center gap-6'>
         <div>
           <img
             src={testiImg}
