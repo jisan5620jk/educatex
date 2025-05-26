@@ -14,6 +14,7 @@ import Home6 from '../Pages/Home6/Home6';
 import Main6 from '../Main/Main6';
 import PricingInner from '../Pages/InnerPage/PricingInner/PricingInner';
 import AboutInner from '../Pages/InnerPage/AboutInner/AboutInner';
+import CourseInner from '../Pages/InnerPage/CourseInner/CourseInner';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path:'/about',
         element: <AboutInner />
+      },
+      {
+        path:'/course',
+        element: <CourseInner />
       }
     ],
   },
