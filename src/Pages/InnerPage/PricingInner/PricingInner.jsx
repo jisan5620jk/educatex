@@ -1,7 +1,7 @@
-import { FaArrowRightLong } from "react-icons/fa6";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb"
 import Pricing from "./Pricing/Pricing";
 import HelmetChanger from "../../../Shared/Helmet/Helmet";
+import { BsArrowUpRight } from "react-icons/bs";
 
 const PricingInner = () => {
   return (
@@ -9,7 +9,7 @@ const PricingInner = () => {
       <HelmetChanger title={'Pricing Inner Page Style Two'} />
       <BreadCrumb
         breadCrumbTitle={'Affordable Price'}
-        breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbIcon={<BsArrowUpRight />}
         breadCrumbLink={'Pricing Plan'}
       />
       <Pricing />

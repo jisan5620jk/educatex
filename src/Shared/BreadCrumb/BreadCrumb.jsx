@@ -1,9 +1,11 @@
 /* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
+import shape from '/images/breadcumb-dot.png';
+import shape2 from '/images/breadcumb-ball.png';
 
 const BreadCrumb = ({ breadCrumbTitle, breadCrumbIcon, breadCrumbLink }) => {
   return (
-    <div className="bg-[url('/images/breadcrumb-bg.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start pt-[250px] pb-[150px]">
+    <div className="bg-[url('/images/breadcrumb-bg.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start pt-[258px] pb-[154px] relative z-10">
       <div className='Container'>
         <h1 className='font-Outfit font-semibold text-4xl sm:text-[40px] md:text-[50px] text-HeadingColor-0 capitalize'>
           {breadCrumbTitle}
@@ -11,22 +13,36 @@ const BreadCrumb = ({ breadCrumbTitle, breadCrumbIcon, breadCrumbLink }) => {
         <ul className='flex flex-col sm:flex-row gap-2 sm:gap-4 sm:items-center justify-start mt-6'>
           <li>
             <Link to={'/'}>
-              <button className='font-Outfit font-medium text-PrimaryColor-0 flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor-0'>
+              <button className='font-Outfit font-medium uppercase text-PrimaryColor-0 flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor-0'>
                 Home
               </button>
             </Link>
           </li>
           <li>
-            <div className='text-PrimaryColor-0 hidden sm:block'>
+            <div className='text-PrimaryColor-0 text-2xl rotate-45 hidden sm:block'>
               {breadCrumbIcon}
             </div>
           </li>
           <li>
-            <button className='font-Outfit font-medium capitalize text-HeadingColor-0'>
+            <button className='font-Outfit font-medium uppercase text-HeadingColor-0'>
               {breadCrumbLink}
             </button>
           </li>
         </ul>
+      </div>
+      <div className='absolute left-[40%] top-[35%] animate-wiggle'>
+        <img
+          src={shape}
+          draggable={false}
+          alt='Shape'
+        />
+      </div>
+      <div className='absolute right-[12%] top-[38%] animate-dance2'>
+        <img
+          src={shape2}
+          draggable={false}
+          alt='Shape'
+        />
       </div>
     </div>
   );
