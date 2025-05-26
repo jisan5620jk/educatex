@@ -46,7 +46,7 @@ const FaqInner = () => {
       <HelmetChanger title={'Faq Inner Page Style One'} />
       <BreadCrumb
         breadCrumbTitle={'FAQ'}
-        breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbIcon={<BsArrowUpRight />}
         breadCrumbLink={'FAQ'}
       />
       <section className='relative overflow-hidden py-28 bg-BodyBg-0'>

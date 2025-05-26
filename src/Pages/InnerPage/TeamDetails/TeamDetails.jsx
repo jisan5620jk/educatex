@@ -1,10 +1,7 @@
-import {
-  FaArrowRightLong,
-} from "react-icons/fa6";
-import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import TeamDetailsMain from "./TeamDetailsMain";
-import HelmetChanger from "../../../Shared/Helmet/Helmet";
-
+import { FaArrowRightLong } from 'react-icons/fa6';
+import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
+import TeamDetailsMain from './TeamDetailsMain';
+import HelmetChanger from '../../../Shared/Helmet/Helmet';
 
 const TeamDetails = () => {
   return (
@@ -12,7 +9,7 @@ const TeamDetails = () => {
       <HelmetChanger title={'Team Details Inner Page'} />
       <BreadCrumb
         breadCrumbTitle={'Team Details'}
-        breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbIcon={<BsArrowUpRight />}
         breadCrumbLink={'Team Details'}
       />
       <TeamDetailsMain />
@@ -21,5 +18,3 @@ const TeamDetails = () => {
 };
 
 export default TeamDetails;
-
-

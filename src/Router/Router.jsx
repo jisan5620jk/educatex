@@ -13,6 +13,7 @@ import Main5 from '../Main/Main5';
 import Home6 from '../Pages/Home6/Home6';
 import Main6 from '../Main/Main6';
 import PricingInner from '../Pages/InnerPage/PricingInner/PricingInner';
+import AboutInner from '../Pages/InnerPage/AboutInner/AboutInner';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path:'/pricing',
         element: <PricingInner />
+      },
+      {
+        path:'/about',
+        element: <AboutInner />
       }
     ],
   },

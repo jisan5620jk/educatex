@@ -100,7 +100,7 @@ const ServiceInner = () => {
       <HelmetChanger title={'Service Inner Page'} />
       <BreadCrumb2
         breadCrumbTitle={'Our Services'}
-        breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbIcon={<BsArrowUpRight />}
         breadCrumbLink={'Our Services'}
       />
       <section className='py-16 md:py-0 lg:py-28 relative z-10 bg-BodyBg-0'>

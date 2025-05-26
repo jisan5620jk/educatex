@@ -14,7 +14,7 @@ const ProjectDetails = () => {
       <HelmetChanger title={'Project Details Inner Page Style One'} />
       <BreadCrumb
         breadCrumbTitle={'Project Details'}
-        breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbIcon={<BsArrowUpRight />}
         breadCrumbLink={'Project Details'}
       />
       <section className='py-[120px]'>

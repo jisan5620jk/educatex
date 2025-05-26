@@ -91,7 +91,7 @@ const BlogGrid = () => {
       <HelmetChanger title={'Blog Grid Inner Page Style One'} />
       <BreadCrumb
         breadCrumbTitle={'Blog Grid'}
-        breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbIcon={<BsArrowUpRight />}
         breadCrumbLink={'Blog Grid'}
       />
       <section className='pt-28'>

@@ -1,11 +1,8 @@
-import {
-  FaArrowRightLong,
-} from "react-icons/fa6";
-import BreadCrumb2 from "../../../Shared/BreadCrumb/BreadCrumb2";
-import HelmetChanger from "../../../Shared/Helmet/Helmet";
-import CallDoAction from "../AboutInner3/CallDoAction";
-import TeamMember from "./TeamMember/TeamMember";
-
+import { FaArrowRightLong } from 'react-icons/fa6';
+import BreadCrumb2 from '../../../Shared/BreadCrumb/BreadCrumb2';
+import HelmetChanger from '../../../Shared/Helmet/Helmet';
+import CallDoAction from '../AboutInner3/CallDoAction';
+import TeamMember from './TeamMember/TeamMember';
 
 const TeamInner2 = () => {
   return (
@@ -13,7 +10,7 @@ const TeamInner2 = () => {
       <HelmetChanger title={'Team Member Inner Page Style Two'} />
       <BreadCrumb2
         breadCrumbTitle={'Leadership Team'}
-        breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbIcon={<BsArrowUpRight />}
         breadCrumbLink={'Team Member'}
       />
       <TeamMember />
@@ -23,5 +20,3 @@ const TeamInner2 = () => {
 };
 
 export default TeamInner2;
-
-

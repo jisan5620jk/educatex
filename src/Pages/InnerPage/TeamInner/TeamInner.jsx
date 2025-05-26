@@ -113,7 +113,7 @@ const TeamInner = () => {
       <HelmetChanger title={'Team Member Inner Page Style One'} />
       <BreadCrumb
         breadCrumbTitle={'Team Member'}
-        breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbIcon={<BsArrowUpRight />}
         breadCrumbLink={'Team Member'}
       />
       <section className="bg-[url('/images/team-bg.jpg')] bg-no-repeat bg-cover bg-center py-28 relative">

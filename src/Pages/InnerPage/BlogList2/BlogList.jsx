@@ -66,7 +66,7 @@ const BlogList = () => {
       <BreadCrumb
         breadCrumbTitle={'Blog left Sidebar'}
         url={'/blog'}
-        breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbIcon={<BsArrowUpRight />}
         breadCrumbIcon2={<FaArrowRightLong />}
         breadCrumbLink={'Blog'}
         breadCrumbContent={'Blog left Sidebar'}

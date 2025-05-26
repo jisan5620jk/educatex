@@ -22,9 +22,7 @@ const TeamCard = ({
     gradientTo= 'to-transparent',
 }) => {
   return (
-    <div
-      className={`group relative rounded-[20px] p-3 sm:p-5 ${cardBg}`}
-    >
+    <div className={`group relative rounded-[20px] p-3 sm:p-5 ${cardBg}`}>
       <div className='team-thumb overflow-hidden rounded-[14px] relative z-10'>
         <div
           className={`
@@ -43,9 +41,10 @@ const TeamCard = ({
         {[socialIcon, socialIcon2, socialIcon3].map((icon, i) => (
           <div
             key={i}
-            className={`absolute z-20 -bottom-10 left-[${
-              25 + i * 18
-            }%] transition-all duration-${300 + i * 200} group-hover:bottom-5`}
+            style={{ left: `${25 + i * 18}%` }}
+            className={`absolute z-20 -bottom-10 transition-all duration-${
+              300 + i * 200
+            } group-hover:bottom-5`}
           >
             <Link to={'/'}>
               <button className='size-9 text-sm flex justify-center items-center rounded-full overflow-hidden relative bg-white bg-opacity-30 border border-white transition-all duration-500 hover:text-PrimaryColor-0 text-white z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:rounded-full before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>

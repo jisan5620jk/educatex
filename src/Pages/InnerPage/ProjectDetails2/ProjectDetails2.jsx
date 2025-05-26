@@ -13,7 +13,7 @@ const ProjectDetails2 = () => {
       <HelmetChanger title={'Project Details Inner Page Style Two'} />
       <BreadCrumb2
         breadCrumbTitle={'Project Details'}
-        breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbIcon={<BsArrowUpRight />}
         breadCrumbLink={'Project Details'}
       />
       <section className='py-16 md:py-20 lg:py-28'>

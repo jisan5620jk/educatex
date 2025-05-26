@@ -15,7 +15,7 @@ const AboutInner3 = () => {
       <HelmetChanger title={'About Inner Page Three'} />
       <BreadCrumb2
         breadCrumbTitle={'About educatex'}
-        breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbIcon={<BsArrowUpRight />}
         breadCrumbLink={'About educatex'}
       />
       <About />

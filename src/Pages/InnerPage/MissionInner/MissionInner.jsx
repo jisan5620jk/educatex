@@ -13,7 +13,7 @@ const MissionInner = () => {
       <HelmetChanger title={'Mission & Vision Inner Page Style Two'} />
       <BreadCrumb
         breadCrumbTitle={'Our Mission vision & Goal'}
-        breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbIcon={<BsArrowUpRight />}
         breadCrumbLink={'Our Mission vision & Goal'}
       />
       <section className='relative pt-28 pb-[120px] bg-[#f5f8ed] z-10'>

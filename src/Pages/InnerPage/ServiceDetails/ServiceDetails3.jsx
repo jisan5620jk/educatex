@@ -24,7 +24,7 @@ const ServiceDetails3 = () => {
       <HelmetChanger title={'Service Details Inner Page'} />
       <BreadCrumb2
         breadCrumbTitle={'IT Solution'}
-        breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbIcon={<BsArrowUpRight />}
         breadCrumbLink={'Service Details'}
       />
       <section className='py-[120px] bg-white'>

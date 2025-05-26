@@ -24,7 +24,7 @@ const BlogDetails2 = () => {
       <HelmetChanger title={'Blog Details Inner Page Style Two'} />
       <BreadCrumb2
         breadCrumbTitle={'Blog Details'}
-        breadCrumbIcon={<FaArrowRightLong />}
+        breadCrumbIcon={<BsArrowUpRight />}
         breadCrumbLink={'Blog Details'}
       />
       <section className='py-16 md:py-20 lg:py-28'>
