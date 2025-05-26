@@ -8,10 +8,17 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ScrollSmoother from 'gsap/ScrollSmoother';
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
 import HelmetChanger from '../Shared/Helmet/Helmet';
+import ImageReveal from '../Shared/ImageReveal/ImageReveal';
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
 
 const Main6 = () => {
+  //image Reveal
+
+  ImageReveal();
+
+  //Scroll Smoother
+
   const smootherRef = useRef(null);
 
   useEffect(() => {

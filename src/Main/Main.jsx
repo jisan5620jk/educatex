@@ -13,8 +13,12 @@ import ImageReveal from '../Shared/ImageReveal/ImageReveal';
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
 
 const Main = () => {
+  //image Reveal 
+
   ImageReveal();
 
+  //Scroll Smoother 
+  
   const smootherRef = useRef(null);
 
   useEffect(() => {
