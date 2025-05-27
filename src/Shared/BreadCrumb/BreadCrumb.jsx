@@ -10,10 +10,10 @@ const BreadCrumb = ({ breadCrumbTitle, breadCrumbIcon, breadCrumbLink }) => {
         <h1 className='font-Outfit font-semibold text-4xl sm:text-[40px] md:text-[50px] text-HeadingColor-0 capitalize'>
           {breadCrumbTitle}
         </h1>
-        <ul className='flex flex-col sm:flex-row gap-2 sm:gap-4 sm:items-center justify-start mt-6'>
+        <ul className='flex flex-col sm:flex-row gap-2 sm:gap-3 sm:items-center justify-start mt-6'>
           <li>
             <Link to={'/'}>
-              <button className='font-Outfit font-medium uppercase text-PrimaryColor-0 flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor-0'>
+              <button className='font-Outfit font-medium uppercase text-PrimaryColor-0 flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor2-0'>
                 Home
               </button>
             </Link>
