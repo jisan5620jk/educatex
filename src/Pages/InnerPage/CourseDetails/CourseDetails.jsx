@@ -15,6 +15,8 @@ import {
 import { MdPlayCircle } from 'react-icons/md';
 import { IoMdStar } from 'react-icons/io';
 import { FaXTwitter } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
+import { HiArrowNarrowRight } from 'react-icons/hi';
 
 const sections = [
   {
@@ -188,7 +190,7 @@ const CourseDetails = () => {
                     >
                       <button
                         onClick={() => setExpandedIndex(isOpen ? null : idx)}
-                        className={`flex items-center justify-between w-full px-[30px] py-5 bg-BodyBg-0 font-Outfit text-HeadingColor-0 text-[20px] text-left transition-all duration-500 overflow-hidden ${
+                        className={`flex items-center justify-between border-b border-SecondaryColor-0 border-opacity-10 last:border-none w-full px-[30px] py-5 bg-BodyBg-0 font-Outfit text-HeadingColor-0 text-[20px] text-left transition-all duration-500 overflow-hidden ${
                           isOpen ? 'bg-PrimaryColor-0 text-white' : ''
                         }`}
                         aria-expanded={isOpen}
@@ -306,7 +308,7 @@ const CourseDetails = () => {
               <div className='flex items-center gap-5 w-full h-[224px]'>
                 {/* Average Rating Section */}
                 <div className='max-w-[312px] w-full h-full bg-PrimaryColor-0 bg-opacity-[7%] rounded-2xl flex flex-col items-center justify-center mb-6 text-center'>
-                  <div className='text-5xl font-bold text-gray-800'>
+                  <div className='text-5xl font-bold text-HeadingColor-0'>
                     {averageRating.toFixed(2)}
                   </div>
                   <div className='text-gray-500 mt-1'>{`${ratingsCount} Ratings`}</div>
@@ -353,44 +355,190 @@ const CourseDetails = () => {
                   ))}
                 </div>
               </div>
+              <div className='max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg'>
+                <h2 className='text-2xl font-semibold mb-4'>
+                  Student’s Reviews
+                </h2>
+
+                {/* Review 1 */}
+                <div className='flex items-start mb-6'>
+                  {/* Avatar/Initials */}
+                  <div className='flex-shrink-0 w-10 h-10 bg-green-500 text-white flex items-center justify-center rounded-full font-semibold uppercase text-lg'>
+                    JA
+                  </div>
+                  {/* Review Content */}
+                  <div className='ml-4 w-full'>
+                    <div className='flex items-center justify-between border-b border-SecondaryColor-0 border-opacity-10 last:border-none mb-2'>
+                      <h3 className='font-semibold text-gray-900'>
+                        John D. Alexon
+                      </h3>
+                      <div className='flex items-center space-x-1'>
+                        {/* Star Ratings */}
+                        {Array.from({ length: 5 }).map((_, index) => (
+                          <svg
+                            key={index}
+                            className='w-4 h-4 text-orange-400'
+                            fill='currentColor'
+                            viewBox='0 0 20 20'
+                          >
+                            <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.318 4.055a1 1 0 00.95.69h4.292c.969 0 1.371 1.24.588 1.81l-3.477 2.528a1 1 0 00-.364 1.118l1.318 4.055c.3.921-.755 1.688-1.54 1.118l-3.477-2.528a1 1 0 00-1.175 0l-3.477 2.528c-.784.57-1.838-.197-1.539-1.118l1.318-4.055a1 1 0 00-.364-1.118L2.354 10.48c-.783-.57-.38-1.81.588-1.81h4.292a1 1 0 00.95-.69l1.318-4.055z' />
+                          </svg>
+                        ))}
+                      </div>
+                    </div>
+                    {/* Time Ago */}
+                    <p className='text-sm text-gray-500 mb-2'>6 min ago</p>
+                    {/* Review Text */}
+                    <p className='text-gray-700'>
+                      Educate the ultimate destination for knowledge seekers and
+                      educators alike distinctively restore. We are committed to
+                      transforming special education.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Review 2 */}
+                <div className='flex items-start mb-6'>
+                  {/* Avatar/Initials */}
+                  <div className='flex-shrink-0 w-10 h-10 bg-orange-400 text-white flex items-center justify-center rounded-full font-semibold uppercase text-lg'>
+                    AW
+                  </div>
+                  {/* Review Content */}
+                  <div className='ml-4 w-full'>
+                    <div className='flex items-center justify-between border-b border-SecondaryColor-0 border-opacity-10 last:border-none mb-2'>
+                      <h3 className='font-semibold text-gray-900'>
+                        Anjelina Watson
+                      </h3>
+                      <div className='flex items-center space-x-1'>
+                        {/* Star Ratings */}
+                        {Array.from({ length: 5 }).map((_, index) => (
+                          <svg
+                            key={index}
+                            className='w-4 h-4 text-orange-400'
+                            fill='currentColor'
+                            viewBox='0 0 20 20'
+                          >
+                            <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.318 4.055a1 1 0 00.95.69h4.292c.969 0 1.371 1.24.588 1.81l-3.477 2.528a1 1 0 00-.364 1.118l1.318 4.055c.3.921-.755 1.688-1.54 1.118l-3.477-2.528a1 1 0 00-1.175 0l-3.477 2.528c-.784.57-1.838-.197-1.539-1.118l1.318-4.055a1 1 0 00-.364-1.118L2.354 10.48c-.783-.57-.38-1.81.588-1.81h4.292a1 1 0 00.95-.69l1.318-4.055z' />
+                          </svg>
+                        ))}
+                      </div>
+                    </div>
+                    {/* Time Ago */}
+                    <p className='text-sm text-gray-500 mb-2'>6 min ago</p>
+                    {/* Review Text */}
+                    <p className='text-gray-700'>
+                      Dramatically implement just-in-time e-commerce via timely
+                      architectures. Objectively formulate bleeding-edge quality
+                      vectors and cost-effective growth.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className='col-span-3 lg:col-span-1'>
-              <div className='rounded-lg overflow-hidden bg-BodyBg-0 mb-7'>
-                <div className='mx-9 pt-9 border-b border-dashed border-[#D9DDEC] pb-4'>
-                  <p className='font-OpenSans text-TextColor2-0'>Clients :</p>
-                  <h5 className='font-Outfit text-xl font-semibold text-HeadingColor-0 pt-1'>
-                    MR. Dolon Khan
-                  </h5>
+              <div className='border-t-[5px] border-PrimaryColor-0 bg-white rounded-lg shadow-lg overflow-hidden transition-shadow hover:shadow-xl p-4'>
+                {/* Image with Play Button */}
+                <div className='relative'>
+                  <img
+                    className='w-full h-48 object-cover rounded-lg'
+                    src='https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-4.0.4&auto=format&fit=crop&w=800&q=80'
+                    alt='Course'
+                  />
+                  <div className='absolute inset-0 flex items-center justify-center bg-black bg-opacity-25 rounded-lg'>
+                    <div className='bg-white p-3 rounded-full shadow-md cursor-pointer hover:bg-gray-100'>
+                      {/* Play Icon */}
+                      <svg
+                        className='w-6 h-6 text-gray-700'
+                        fill='currentColor'
+                        viewBox='0 0 20 20'
+                      >
+                        <path d='M4 4l12 6-12 6V4z' />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
-                <div className='mx-9 pt-3 border-b border-dashed border-[#D9DDEC] pb-4'>
-                  <p className='font-OpenSans text-TextColor2-0'>Category :</p>
-                  <h5 className='font-Outfit text-xl font-semibold text-HeadingColor-0 pt-1'>
-                    IT Solution
-                  </h5>
-                </div>
-                <div className='mx-9 pt-3 border-b border-dashed border-[#D9DDEC] pb-4'>
-                  <p className='font-OpenSans text-TextColor2-0'>
-                    Starting Date :
-                  </p>
-                  <h5 className='font-Outfit text-xl font-semibold text-HeadingColor-0 pt-1'>
-                    02 January, 2025
-                  </h5>
-                </div>
-                <div className='mx-9 pt-3 border-b border-dashed border-[#D9DDEC] pb-4'>
-                  <p className='font-OpenSans text-TextColor2-0'>
-                    Ending Date :
-                  </p>
-                  <h5 className='font-Outfit text-xl font-semibold text-HeadingColor-0 pt-1'>
-                    05 June, 2025
-                  </h5>
-                </div>
-                <div className='mx-9 pt-3'>
-                  <p className='font-OpenSans text-TextColor2-0'>
-                    Project Value :
-                  </p>
-                  <h5 className='font-Outfit text-xl font-semibold text-HeadingColor-0 pt-1 pb-8'>
-                    $5,000
-                  </h5>
+
+                {/* Course Details */}
+                <div className='mt-4 px-2'>
+                  <h3 className='text-lg font-semibold text-HeadingColor-0 mb-2'>
+                    Complete React Developer Course
+                  </h3>
+                  {/* Price */}
+                  <div className='flex items-center justify-between border-b border-SecondaryColor-0 border-opacity-10 last:border-none mb-2'>
+                    <span className='text-gray-600 font-medium'>Price</span>
+                    <span className='text-green-600 font-bold text-xl'>
+                      $60
+                    </span>
+                  </div>
+                  {/* Instructor */}
+                  <div className='flex items-center justify-between border-b border-SecondaryColor-0 border-opacity-10 last:border-none mb-2'>
+                    <span className='text-gray-600 font-medium w-24'>
+                      Instructor
+                    </span>
+                    <span className='text-HeadingColor-0'>John D. Alexon</span>
+                  </div>
+                  {/* Lessons */}
+                  <div className='flex items-center justify-between border-b border-SecondaryColor-0 border-opacity-10 last:border-none mb-2'>
+                    <span className='text-gray-600 font-medium w-24'>
+                      Lessons
+                    </span>
+                    <span className='text-HeadingColor-0'>10 Lessons</span>
+                  </div>
+                  {/* Enrolled */}
+                  <div className='flex items-center justify-between border-b border-SecondaryColor-0 border-opacity-10 last:border-none mb-2'>
+                    <span className='text-gray-600 font-medium w-24'>
+                      Enrolled
+                    </span>
+                    <span className='text-HeadingColor-0'>120 Students</span>
+                  </div>
+                  {/* Certifications */}
+                  <div className='flex items-center justify-between border-b border-SecondaryColor-0 border-opacity-10 last:border-none mb-2'>
+                    <span className='text-gray-600 font-medium w-24'>
+                      Certifications
+                    </span>
+                    <span className='text-HeadingColor-0'>Yes</span>
+                  </div>
+                  {/* Language */}
+                  <div className='flex items-center justify-between border-b border-SecondaryColor-0 border-opacity-10 last:border-none'>
+                    <span className='text-gray-600 font-medium w-24'>
+                      Language
+                    </span>
+                    <span className='text-HeadingColor-0'>English (US)</span>
+                  </div>
+                  <div className='mt-10'>
+                    <Link
+                      to={'/about'}
+                      className='primary-btn2 w-full justify-center'
+                    >
+                      Enroll Now
+                      <HiArrowNarrowRight size={20} />
+                    </Link>
+                  </div>
+                  <h4 className='font-Outfit text-HeadingColor-0 text-2xl my-4'>
+                    Share Now
+                  </h4>
+                  <ul className='flex gap-3'>
+                    <li>
+                      <button className='size-9 rounded-full text-sm bg-white border border-SecondaryColor-0 border-opacity-15 flex items-center justify-center text-HeadingColor-0 overflow-hidden transition-all duration-500 hover:border-PrimaryColor-0 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
+                        <FaFacebookF />
+                      </button>
+                    </li>
+                    <li>
+                      <button className='size-9 rounded-full text-sm bg-white border border-SecondaryColor-0 border-opacity-15 flex items-center justify-center text-HeadingColor-0 overflow-hidden transition-all duration-500 hover:border-PrimaryColor-0 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
+                        <FaXTwitter />
+                      </button>
+                    </li>
+                    <li>
+                      <button className='size-9 rounded-full text-sm bg-white border border-SecondaryColor-0 border-opacity-15 flex items-center justify-center text-HeadingColor-0 overflow-hidden transition-all duration-500 hover:border-PrimaryColor-0 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
+                        <FaLinkedinIn />
+                      </button>
+                    </li>
+                    <li>
+                      <button className='size-9 rounded-full text-sm bg-white border border-SecondaryColor-0 border-opacity-15 flex items-center justify-center text-HeadingColor-0 overflow-hidden transition-all duration-500 hover:border-PrimaryColor-0 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
+                        <FaPinterestP />
+                      </button>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
