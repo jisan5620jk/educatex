@@ -18,6 +18,7 @@ import CourseInner from '../Pages/InnerPage/CourseInner/CourseInner';
 import CourseDetails from '../Pages/InnerPage/CourseDetails/CourseDetails';
 import ShopDetails from '../Pages/InnerPage/ShopDetails/ShopDetails';
 import BlogDetails from '../Pages/InnerPage/BlogDetails/BlogDetails';
+import ShopInner from '../Pages/InnerPage/ShopInner/ShopInner';
 
 const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       {
         path:'/blog_details',
         element: <BlogDetails />
+      },
+      {
+        path:'/shop',
+        element: <ShopInner />
       }
     ],
   },

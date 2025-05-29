@@ -1,0 +1,59 @@
+import BreadCrumb2 from "../../../Shared/BreadCrumb/BreadCrumb2";
+import HelmetChanger from "../../../Shared/Helmet/Helmet";
+import { BsArrowUpRight } from "react-icons/bs";
+import PriceRange from "./PriceRange";
+import ShopItem from "./ShopItem";
+
+const ShopInner = () => {
+  const categories = [
+    { name: "Historical Fiction", count: 18 },
+    { name: "Mystery and Thriller", count: 13 },
+    { name: "Biography and Memoir", count: 10 },
+    { name: "Business and Finance", count: 9 },
+    { name: "Non-Fiction", count: 5 },
+    { name: "Poetry", count: 2 },
+  ];
+
+
+
+  return (
+    <>
+      <HelmetChanger title={"Shop Inner Page Style Two"} />
+      <BreadCrumb2
+        breadCrumbTitle={"Shop"}
+        breadCrumbIcon={<BsArrowUpRight />}
+        breadCrumbText={"Shop"}
+      />
+      <section className="relative pt-28 pb-[120px] z-10">
+        <div className="Container">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 rounded-md mb-8 lg:mb-0">
+            <div>
+              <div className="bg-green-50 p-6 rounded-lg shadow-md mb-8">
+                <h3 className="text-xl font-semibold text-gray-700">
+                  Categories
+                </h3>
+                <ul className="mt-4 space-y-2">
+                  {categories.map((category) => (
+                    <li
+                      key={category.name}
+                      className="flex justify-between items-center"
+                    >
+                      <span className="text-gray-600">{category.name}</span>
+                      <span className="text-gray-400">({category.count})</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <PriceRange />
+            </div>
+            <div className="col-span-1 lg:col-span-2">
+              <ShopItem />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default ShopInner;
