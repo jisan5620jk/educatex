@@ -1,412 +1,208 @@
-import { Link } from 'react-router-dom';
-import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
-import blog_detailsThumb from '/images/blog-details.jpg';
-import blog_detailsImg from '/images/blog-details-benifis-thumb-1.png';
-import blog_detailsImg2 from '/images/blog-details-benifis-thumb-2.png';
-import itemthumb from '/images/recent-post-1.png';
-import itemthumb2 from '/images/recent-post-2.png';
-import itemthumb3 from '/images/recent-post-3.png';
-import { IoSearch } from 'react-icons/io5';
-import {
-  FaArrowRightLong,
-  FaCircleCheck,
-  FaFacebookF,
-  FaLinkedinIn,
-  FaPinterestP,
-  FaRegFolderOpen,
-  FaXTwitter,
-} from 'react-icons/fa6';
-import { BiSolidQuoteAltRight } from 'react-icons/bi';
+import blog_detailsThumb from "/images/blog-details-thumb.png";
 import HelmetChanger from '../../../Shared/Helmet/Helmet';
+import BreadCrumb2 from '../../../Shared/BreadCrumb/BreadCrumb2';
+import { BsArrowUpRight } from 'react-icons/bs';
+import { FaCheckCircle } from 'react-icons/fa';
+import { FaArrowLeft, FaArrowRight, FaReply } from 'react-icons/fa6';
 
 const BlogDetails = () => {
   return (
     <>
-      <HelmetChanger title={'Blog Details Inner Page Style One'} />
-      <BreadCrumb
-        breadCrumbTitle={'Blog Details'}
+      <HelmetChanger title={"Blog Details Inner Page Style One"} />
+      <BreadCrumb2
+        breadCrumbTitle={"Blog Details"}
         breadCrumbIcon={<BsArrowUpRight />}
-        breadCrumbLink={'Blog Details'}
+        breadCrumbIcon2={<BsArrowUpRight />}
+        url={"/blog"}
+        breadCrumbLink={"Blog"}
+        breadCrumbText={"trends that are shipping the..."}
       />
-      <section className='py-28'>
-        <div className='Container'>
-          <div className='grid grid-cols-2 lg:grid-cols-3 gap-12'>
-            <div className='col-span-2'>
-              <div className='border-l border-b border-BorderColor2-0 rounded-md'>
-                <div className='relative overflow-hidden rounded-md'>
-                  <img
-                    draggable='false'
-                    src={blog_detailsThumb}
-                    className='w-full'
-                  />
-                  <div className='absolute top-0 left-0'>
-                    <h6 className='font-OpenSans text-white pl-7 pr-12 py-2 overflow-hidden bg-PrimaryColor-0 relative z-10 before:absolute before:-right-4 before:top-1 before:w-8 before:h-8 before:!rotate-45 before:bg-SecondaryColor-0'>
-                      Cyber Security
-                    </h6>
-                  </div>
-                </div>
-                <div className='px-4 sm:px-8 ml-8 bg-white shadow-cases rounded-b-md rounded-ss-md -mt-[50px] relative z-10'>
-                  <div className='flex items-center justify-between gap-5 pt-9 pb-7 border-b-2  relative before:absolute before:left-0 before:-bottom-[2px] before:w-8 before:h-[2px] before:bg-PrimaryColor-0 before:animate-dance5'>
-                    <h6 className='flex items-center gap-2 font-Outfit text-[17px] text-PrimaryColor-0 font-medium'>
-                      Admin : Mera
-                    </h6>
-                    <h6 className='flex items-center font-Outfit text-[17px] text-TextColor2-0 font-medium'>
-                      Comments (04)
-                    </h6>
-                  </div>
-                  <Link to={'blog_details'}>
-                    <button className='font-Outfit font-bold text-left text-lg sm:text-2xl text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-7 mb-5'>
-                      Solution This Business For is Marketing Blog
-                    </button>
-                  </Link>
-                  <p className='font-OpenSans text-TextColor2-0 pb-9'>
-                    Alternative innovation to ethical network environmental
-                    whiteboard pursue compelling results for methods
-                    empowerment. Dramatically architect go forward opportunities
-                    transition mission top critical supply chains after
-                    enterprise
-                  </p>
-                </div>{' '}
-                <div className='px-4 sm:px-8'>
-                  <div className='flex flex-col bg-BodyBg-0 sm:flex-row gap-7 px-4 sm:px-11 py-4 sm:py-10 rounded-md mt-12'>
-                    <div className='text-6xl text-PrimaryColor-0'>
-                      <BiSolidQuoteAltRight />
-                    </div>
-                    <div className='flex-1'>
-                      <p className='font-OpenSans text-HeadingColor-0 sm:text-lg italic'>
-                        “Competently architect intermandated deliverables client
-                        with niches continually underwhelm build cross-media
-                        growth strategies without robust.”
-                      </p>
-                      <h6 className='font-OpenSans text-HeadingColor-0 pl-16 mt-4 relative before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:w-14 before:h-[1px] before:bg-PrimaryColor-0'>
-                        CEO & Founder
-                      </h6>
-                    </div>
-                  </div>
-                  <Link to={'/blog_details'}>
-                    <button className='font-Outfit font-bold text-left text-lg sm:text-[28px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-14 mb-4'>
-                      Our Begin Now To Beingonl
-                    </button>
-                  </Link>
-                  <p className='font-OpenSans text-TextColor2-0'>
-                    Dramatically matrix cross-media vortals wireless
-                    deliverables. Phosfluorescently underwhelm market driven
-                    e-services and 24/365 infrastructures. Intrinsicly
-                    incentivize resource.
-                  </p>
-                  <ul className='flex flex-col gap-[14px] mt-7'>
-                    <li className='flex gap-3 items-center font-OpenSans font-light text-TextColor2-0'>
-                      <FaCircleCheck
-                        size={'20'}
-                        className='text-PrimaryColor-0'
-                      />
-                      Innovate wireless market
-                    </li>
-                    <li className='flex gap-3 items-center font-OpenSans font-light text-TextColor2-0'>
-                      <FaCircleCheck
-                        size={'20'}
-                        className='text-PrimaryColor-0'
-                      />
-                      Productivate resource sucking
-                    </li>
-                    <li className='flex gap-3 items-center font-OpenSans font-light text-TextColor2-0'>
-                      <FaCircleCheck
-                        size={'20'}
-                        className='text-PrimaryColor-0'
-                      />
-                      Proactively unleash oriented communities
-                    </li>
-                    <li className='flex gap-3 items-center font-OpenSans font-light text-TextColor2-0'>
-                      <FaCircleCheck
-                        size={'20'}
-                        className='text-PrimaryColor-0'
-                      />
-                      Credibly develop progressive archi
-                    </li>
-                    <li className='flex gap-3 items-center font-OpenSans font-light text-TextColor2-0'>
-                      <FaCircleCheck
-                        size={'20'}
-                        className='text-PrimaryColor-0'
-                      />
-                      Phosfluorescently to customer
-                    </li>
-                  </ul>
-                  <div className='grid grid-cols-1 md:grid-cols-2 gap-7 mt-16'>
-                    <div>
-                      <img
-                        draggable='false'
-                        src={blog_detailsImg}
-                      />
-                    </div>
-                    <div>
-                      <img
-                        draggable='false'
-                        src={blog_detailsImg2}
-                      />
-                    </div>
-                  </div>
-                  <Link to={'/blog_details'}>
-                    <button className='font-Outfit font-bold text-left text-lg sm:text-[28px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-10 mb-4'>
-                      Tree Plantation for Human
-                    </button>
-                  </Link>
-                  <p className='font-OpenSans font-light text-TextColor2-0'>
-                    Dramatically matrix cross-media vortals wireless
-                    deliverables. Phosfluorescently underwhelm market driven
-                    e-services and 24/365 infrastructures. Intrinsicly
-                    incentivize resource.
-                  </p>
-                </div>
-                <div className='flex flex-col sm:flex-row gap-5 items-start sm:justify-between border-t border-BorderColor1-0 mt-9 py-5 px-4 md:px-8 border-r border-BorderColor2-0'>
-                  <div className='font-OpenSans text-lg font-medium flex flex-col sm:flex-row gap-2'>
-                    <Link to={'/'}>
-                      <button className='font-OpenSans px-5 py-2 text-HeadingColor-0 text-sm rounded bg-BodyBg-0 transition-all duration-500 hover:bg-PrimaryColor-0 hover:text-white'>
-                        Digital Marketing
-                      </button>
-                    </Link>
-                    <Link to={'/'}>
-                      <button className='font-OpenSans px-5 py-2 text-HeadingColor-0 text-sm rounded bg-BodyBg-0 transition-all duration-500 hover:bg-PrimaryColor-0 hover:text-white'>
-                        Development
-                      </button>
-                    </Link>
-                  </div>
-                  <div>
-                    <ul className='flex justify-center items-center gap-2'>
-                      <li>
-                        <Link to={'/'}>
-                          <button className='text-white w-9 h-9 rounded-full bg-[#1673ea] flex justify-center items-center'>
-                            <FaFacebookF size={'13'} />
-                          </button>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to={'/'}>
-                          <button className='text-white w-9 h-9 rounded-full bg-[#38ceff] flex justify-center items-center'>
-                            <FaXTwitter size={'13'} />
-                          </button>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to={'/'}>
-                          <button className='text-white w-9 h-9 rounded-full bg-[#0b4ab1] flex justify-center items-center'>
-                            <FaLinkedinIn size={'13'} />
-                          </button>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to={'/'}>
-                          <button className='text-white w-9 h-9 rounded-full bg-[#e92928] flex justify-center items-center'>
-                            <FaPinterestP size={'13'} />
-                          </button>
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='col-span-2 lg:col-span-1'>
-              <div className='relative inline-block w-full mb-7 p-4 sm:p-8 lg:p-6 xl:p-8 rounded-md bg-BodyBg-0'>
-                <input
-                  type='text'
-                  name='search'
-                  id='search'
-                  placeholder='Search here...'
-                  required
-                  className='w-full h-[56px] p-6 rounded font-OpenSans'
-                />
-                <button
-                  type='submit'
-                  className=' text-xl text-white rounded h-[56px] w-[56px] bg-PrimaryColor-0 transition-all duration-500 flex items-center justify-center hover:hue-rotate-[360deg] absolute right-7 top-1/2 -translate-y-1/2'
-                >
-                  <IoSearch />
-                </button>
-              </div>
-              <div className='bg-BodyBg-0 rounded-md px-4 sm:px-8 lg:px-6 xl:px-8 pt-7 pb-4 mb-7'>
-                <h4 className='font-Outfit font-bold text-left text-[28px] text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0'>
-                  Categories
-                </h4>
-                <ul className='mt-8'>
-                  <li>
-                    <Link to={'/service_details'}>
-                      <button className='w-full font-OpenSans text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white'>
-                        <span className='flex items-center gap-3 lg:gap-1 xl:gap-3'>
-                          <FaRegFolderOpen className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                          Web Development
-                        </span>
-                        <FaArrowRightLong className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                      </button>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={'/service_details2'}>
-                      <button className='w-full font-OpenSans text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white'>
-                        <span className='flex items-center gap-3 lg:gap-1 xl:gap-3'>
-                          <FaRegFolderOpen className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                          Digital Marketing
-                        </span>
-                        <FaArrowRightLong className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                      </button>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={'/service_details3'}>
-                      <button className='w-full font-OpenSans text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white'>
-                        <span className='flex items-center gap-3 lg:gap-1 xl:gap-3'>
-                          <FaRegFolderOpen className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                          IT Solution
-                        </span>
-                        <FaArrowRightLong className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                      </button>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={'/service_details4'}>
-                      <button className='w-full font-OpenSans text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white'>
-                        <span className='flex items-center gap-3 lg:gap-1 xl:gap-3'>
-                          <FaRegFolderOpen className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                          App Development
-                        </span>
-                        <FaArrowRightLong className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                      </button>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={'/service_details5'}>
-                      <button className='w-full font-OpenSans text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white'>
-                        <span className='flex items-center gap-3 lg:gap-1 xl:gap-3'>
-                          <FaRegFolderOpen className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                          Web Design
-                        </span>
-                        <FaArrowRightLong className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                      </button>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={'/service_details6'}>
-                      <button className='w-full font-OpenSans text-left text-HeadingColor-0 transition-all duration-500 group px-7 py-4 flex items-center justify-between rounded bg-white mb-3 overflow-hidden z-[1] relative before:absolute before:top-0 before:right-0 before:w-0 before:-z-[1] before:h-full before:bg-PrimaryColor-0 before:rounded before:transition-all before:duration-500 hover:before:w-full hover:before:left-0 hover:text-white'>
-                        <span className='flex items-center gap-3 lg:gap-1 xl:gap-3'>
-                          <FaRegFolderOpen className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                          UI/UX Design
-                        </span>
-                        <FaArrowRightLong className='text-PrimaryColor-0 transition-all duration-500 group-hover:text-white' />
-                      </button>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className='px-4 sm:px-8 lg:px-6 xl:px-8 bg-BodyBg-0 rounded-md pt-7 pb-4 mb-7'>
-                <h4 className='font-Outfit font-bold text-left text-[28px] text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0'>
-                  Popular Post
-                </h4>
-                <Link to={'/blog_details'}>
-                  <button className='group flex gap-4 mb-6'>
-                    <div className='rounded overflow-hidden'>
-                      <img
-                        draggable='false'
-                        src={itemthumb}
-                      />
-                    </div>
-                    <div className='flex-1 text-left'>
-                      <h6 className='font-Outfit font-semibold sm:text-lg lg:text-base xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0'>
-                        Digital Marketing Strategy Action P…
-                      </h6>
-                      <p className='font-OpenSans text-PrimaryColor-0 text-sm mt-1'>
-                        01 Jan, 2025
-                      </p>
-                    </div>
-                  </button>
-                </Link>
-                <Link to={'/blog_details'}>
-                  <button className='group flex gap-4 my-6'>
-                    <div className='rounded overflow-hidden'>
-                      <img
-                        draggable='false'
-                        src={itemthumb2}
-                      />
-                    </div>
-                    <div className='flex-1 text-left'>
-                      <h6 className='font-Outfit font-semibold sm:text-lg lg:text-base xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0'>
-                        6 Things You Must Know Before Hirin…
-                      </h6>
-                      <p className='font-OpenSans text-PrimaryColor-0 text-sm mt-1'>
-                        16 Jan, 2025
-                      </p>
-                    </div>
-                  </button>
-                </Link>
-                <Link to={'/blog_details'}>
-                  <button className='group flex gap-4 my-6'>
-                    <div className='rounded overflow-hidden'>
-                      <img
-                        draggable='false'
-                        src={itemthumb3}
-                      />
-                    </div>
-                    <div className='flex-1 text-left'>
-                      <h6 className='font-Outfit font-semibold sm:text-lg lg:text-base xl:text-lg leading-6 text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0'>
-                        IT Solution And IT Related Services
-                      </h6>
-                      <p className='font-OpenSans text-PrimaryColor-0 text-sm mt-1'>
-                        27 Jan, 2025
-                      </p>
-                    </div>
-                  </button>
-                </Link>
-              </div>
-              <div className='bg-BodyBg-0 rounded-md px-4 sm:px-8 lg:px-6 xl:px-8 pt-7 pb-10 mb-7'>
-                <h4 className='font-Outfit font-bold text-left text-[28px] text-HeadingColor-0 pb-3 mb-8 relative before:absolute before:bottom-0 before:left-0 before:w-7 before:h-[2px] before:bg-PrimaryColor-0'>
-                  Tags
-                </h4>
-                <ul className='inline-block'>
-                  <li className='inline-block mr-[10px] mb-[10px]'>
-                    <Link to={'/'}>
-                      <button className='bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-OpenSans text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white'>
-                        Cyber Security
-                      </button>
-                    </Link>
-                  </li>
-                  <li className='inline-block mr-[10px] mb-[10px]'>
-                    <Link to={'/'}>
-                      <button className='bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-OpenSans text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white'>
-                        Learning
-                      </button>
-                    </Link>
-                  </li>
-                  <li className='inline-block mr-[10px] mb-[10px]'>
-                    <Link to={'/'}>
-                      <button className='bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-OpenSans text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white'>
-                        Web Drvelopment
-                      </button>
-                    </Link>
-                  </li>
-                  <li className='inline-block mr-[10px] mb-[10px]'>
-                    <Link to={'/'}>
-                      <button className='bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-OpenSans text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white'>
-                        IT Solution
-                      </button>
-                    </Link>
-                  </li>
-                  <li className='inline-block mr-[10px] mb-[10px]'>
-                    <Link to={'/'}>
-                      <button className='bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-OpenSans text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white'>
-                        Marketing
-                      </button>
-                    </Link>
-                  </li>
-                  <li className='inline-block mr-[10px] mb-[10px]'>
-                    <Link to={'/'}>
-                      <button className='bg-white rounded flex items-center justify-center text-HeadingColor-0 transition-all duration-500 font-medium px-5 py-2 font-OpenSans text-sm relative z-[1] before:absolute before:top-0 before:left-0 before:rounded before:w-full before:h-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-[1] hover:before:scale-100 hover:text-white'>
-                        Technology
-                      </button>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
+      <div className="py-16 md:py-20 lg:py-28 text-gray-800">
+        <div className="Container">
+          <div className="mb-10">
+            <img
+              src={blog_detailsThumb}
+              draggable={false}
+              alt="Blog Details Image"
+            />
           </div>
+          {/* Article Content */}
+          <article className="space-y-8">
+            <h1 className="text-3xl font-bold text-gray-900">
+              Trends that are shaping the Learning experience
+            </h1>
+
+            <p>
+              Globally engage cross-media leadership skills before cross-media
+              innovation forward meaning flexible whereas process-centric models
+              problem. Efficiently transform customer-directed alignments for
+              future mindshare. Dramatically harness cross-platform business
+              models before proactive internal or organic sources. Assertively
+              incentivize standards in services. Collaboratively formulate
+              standards in innovation with worldwide value.
+            </p>
+
+            <p>
+              Dramatically harness cross-platform best practices whereas
+              business services. Conveniently standardize innovation with
+              schemas. Globally engage leadership skills before tactical
+              internal or organic sources. Efficiently transform
+              customer-directed alignments for future mindshare. Collaboratively
+              formulate standards in innovation with worldwide value.
+              Interactively recaptiualize clicks-and-mortar results whereas
+              intuitive total tactical capital before global architectures.
+              Holisticly engage cross-media leadership skills before proactive
+              customer service.
+            </p>
+
+            {/* Quote Block */}
+            <blockquote className="p-4 border-l-4 border-PrimaryColor-0 bg-gray-100 italic text-lg">
+              “Globally engage cross-media leadership skills before cross-media
+              great opportunities whereas process-centric models efficiently.”
+            </blockquote>
+
+            {/* Learn Benefits */}
+            <h2 className="text-2xl font-semibold mt-8">Learn Benefits</h2>
+
+            <p>
+              Globally engage cross-media leadership skills before cross-media
+              innovation forward meaning flexible whereas process-centric models
+              problem. Efficiently transform customer-directed alignments for
+              the future mindshare. Dramatically harness cross-platform best
+              practices whereas process-centric models business services. After
+              cross-media leadership skills in information without wireless
+              scenario. Interactively recaptiualize clicks-and-mortar results
+              whereas intuitive total tactical capital before global
+              architectures. Holisticly engage proactive service.
+            </p>
+
+            {/* Benefits Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+              {[
+                "Professional Team Member",
+                "24/7 Problem Solving",
+                "Solutions for Clients Problems",
+                "24/7 Supports Available",
+                "Free Tools Provides for Clients",
+                "Free Tools Provides for Clients",
+                "Free Tools Provides for Clients",
+                "Extra Facilities Sales Increase",
+                "Extra Facilities Sales Increase",
+              ].map((benefit, index) => (
+                <div
+                  key={index}
+                  className="flex items-center gap-2 text-sm text-gray-700"
+                >
+                  <FaCheckCircle className="text-green-500" />
+                  {benefit}
+                </div>
+              ))}
+            </div>
+
+            {/* Tags */}
+            <div className="flex flex-wrap items-center gap-2 mt-8">
+              {["Technology", "Education", "Learning"].map((tag, index) => (
+                <span
+                  key={index}
+                  className="px-3 py-1 text-sm font-medium bg-green-100 text-green-700 rounded-full"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+
+            {/* Post Navigation */}
+            <div className="flex justify-between items-center mt-8 border-t pt-6">
+              <button className="flex items-center gap-2 text-sm text-PrimaryColor-0 hover:underline">
+                <FaArrowLeft /> Previous Posts
+              </button>
+              <button className="flex items-center gap-2 text-sm text-PrimaryColor-0 hover:underline">
+                Next Posts <FaArrowRight />
+              </button>
+            </div>
+          </article>
+
+          {/* Comments Section */}
+          <section className="mt-16 space-y-6">
+            <h3 className="text-xl font-semibold">Comments (1)</h3>
+
+            <div className="p-4 rounded-md border bg-gray-50">
+              <div className="flex items-start gap-4">
+                <img
+                  src="https://i.pravatar.cc/60?img=1"
+                  alt="Avatar"
+                  className="w-12 h-12 rounded-full"
+                />
+                <div>
+                  <div className="flex justify-between items-center">
+                    <h4 className="font-semibold text-gray-800">
+                      John D. Alexson
+                    </h4>
+                    <button className="text-sm text-PrimaryColor-0 hover:underline flex items-center gap-1">
+                      <FaReply className="text-xs" /> Reply
+                    </button>
+                  </div>
+                  <p className="text-sm text-gray-700 mt-2">
+                    Media leadership skills before cross-media innovation
+                    forward meaning flexible whereas process-centric models new
+                    online education. Efficiently transform customer directed
+                    alignments for the future and more.
+                  </p>
+                  <span className="text-xs text-gray-500 mt-1 block">
+                    May 5, 2025
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Comment Form */}
+          <section className="mt-12">
+            <h3 className="text-xl font-semibold mb-4">Post a Comment</h3>
+            <p className="text-sm text-gray-500 mb-6">
+              Your email address will not be published. So, don’t worry.
+            </p>
+            <form className="space-y-6">
+              <textarea
+                className="w-full p-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-PrimaryColor-0"
+                rows="5"
+                placeholder="Write Comments..."
+              ></textarea>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input
+                  type="text"
+                  placeholder="Enter your Name *"
+                  className="p-3 border rounded-md w-full focus:outline-none focus:ring-2 focus:ring-PrimaryColor-0"
+                />
+                <input
+                  type="email"
+                  placeholder="Your E-Mail *"
+                  className="p-3 border rounded-md w-full focus:outline-none focus:ring-2 focus:ring-PrimaryColor-0"
+                />
+              </div>
+
+              <input
+                type="url"
+                placeholder="Website URL"
+                className="p-3 border rounded-md w-full focus:outline-none focus:ring-2 focus:ring-PrimaryColor-0"
+              />
+
+              <label className="flex items-center gap-2 text-sm">
+                <input type="checkbox" className="accent-PrimaryColor-0" />
+                Save my information in this browser for next comments
+              </label>
+
+              <button
+                type="submit"
+                className="bg-PrimaryColor-0 text-white px-6 py-3 rounded-md hover:bg-PrimaryColor-0-dark transition"
+              >
+                Post Comment
+              </button>
+            </form>
+          </section>
         </div>
-      </section>
+      </div>
     </>
   );
 };
