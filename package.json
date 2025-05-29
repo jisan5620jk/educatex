@@ -14,7 +14,7 @@
     "gsap": "^3.13.0",
     "imagesloaded": "^5.0.0",
     "isotope-layout": "^3.0.6",
-    "node": "^23.5.0",
+    "node": "^23.11.1",
     "react": "^18.3.1",
     "react-animated-progress-bar": "^1.1.2",
     "react-dom": "^18.3.1",
