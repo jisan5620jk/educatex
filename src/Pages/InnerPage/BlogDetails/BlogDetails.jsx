@@ -1,9 +1,9 @@
 import blog_detailsThumb from "/images/blog-details-thumb.png";
-import HelmetChanger from '../../../Shared/Helmet/Helmet';
-import BreadCrumb2 from '../../../Shared/BreadCrumb/BreadCrumb2';
-import { BsArrowUpRight } from 'react-icons/bs';
-import { FaCheckCircle } from 'react-icons/fa';
-import { FaArrowLeft, FaArrowRight, FaReply } from 'react-icons/fa6';
+import HelmetChanger from "../../../Shared/Helmet/Helmet";
+import BreadCrumb2 from "../../../Shared/BreadCrumb/BreadCrumb2";
+import { BsArrowUpRight } from "react-icons/bs";
+import { FaCheckCircle } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight, FaReply } from "react-icons/fa6";
 
 const BlogDetails = () => {
   return (
@@ -93,7 +93,7 @@ const BlogDetails = () => {
                   key={index}
                   className="flex items-center gap-2 text-sm text-gray-700"
                 >
-                  <FaCheckCircle className="text-green-500" />
+                  <FaCheckCircle className="text-PrimaryColor-0" />
                   {benefit}
                 </div>
               ))}
