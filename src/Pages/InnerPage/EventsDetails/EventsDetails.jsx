@@ -1,14 +1,10 @@
-import {
-  FaCalendarAlt,
-  FaDollarSign,
-  FaMapMarkerAlt,
-  FaUsers,
-} from "react-icons/fa";
 import eventDetailsImg from "/images/event-detail-thumb.png";
 import { useEffect, useState } from "react";
-import { FaClock } from "react-icons/fa6";
 import { GiCheckMark } from "react-icons/gi";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { CiDollar, CiLocationOn } from "react-icons/ci";
+import { LiaCalendar } from "react-icons/lia";
+import { PiClockAfternoonLight, PiUsersThreeLight } from "react-icons/pi";
 
 const EventsDetails = () => {
   // Helper function to calculate remaining time
@@ -61,14 +57,14 @@ const EventsDetails = () => {
             <h1 className="font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[34px] xl:leading-[44px] 2xl:text-[38px] 2xl:leading-[48px] text-HeadingColor-0 mt-[30px] mb-6">
               Business Innovation and Development Conf.
             </h1>
-            <p className="font-OpenSans text-TextColor-0">
+            <p className="font-OpenSans text-TextColor-0 max-w-[785px] w-full">
               Educate the ultimate destination for knowledge seekers and
               educators alike distinctively restore installed We are committed
               to transforming special education impact global channels base
               information with user without standards compliant systems base
               information with
             </p>
-            <p className="font-OpenSans text-TextColor-0 mt-6 mb-[52px]">
+            <p className="font-OpenSans text-TextColor-0 mt-6 mb-[52px] max-w-[810px] w-full">
               Quickly deploy performance based architectures vis-a-vis business
               bandwidth. Professionally disseminate best-of-breed customer
               service and virtual catalysts for change. Proactively visualize
@@ -95,68 +91,70 @@ const EventsDetails = () => {
                 </div>
               ))}
             </div>
-            <p className="font-OpenSans text-TextColor-0">
+            <p className="font-OpenSans text-TextColor-0 max-w-[785px] w-full">
               Educate the ultimate destination for knowledge seekers and
               educators alike distinctively restore installed We are committed
               to transforming special education impact global
             </p>
           </div>
           <div>
-            <div className="bg-white rounded-2xl p-6 border-t-4 border-green-500 rounded-t shadow-shades">
-              <div className=" "></div>
+            <div className="bg-white px-10 pb-10 border-t-[5px] border-PrimaryColor-0 rounded-t rounded-2xl shadow-shades">
+              <div className="pt-6 pb-5">
+                <h2 className="font-Outfit text-2xl font-medium text-HeadingColor-0 mt-4 mb-0.5">
+                  Event Info
+                </h2>
 
-              <h2 className="text-xl font-semibold text-gray-800 mt-4 mb-6">
-                Event Info
-              </h2>
+                <div className="font-Outfit text-TextColor-0">
+                  <div className="flex items-center justify-between border-b border-SecondaryColor-0 border-opacity-10 py-4">
+                    <span className="flex items-center gap-2">
+                      <CiDollar className="text-xl" />
+                      Cost
+                    </span>
+                    <span className="text-xl text-PrimaryColor-0 font-medium">
+                      $60
+                    </span>
+                  </div>
 
-              <div className="space-y-4 text-sm text-gray-600">
-                <div className="flex items-center justify-between">
-                  <span className="flex items-center gap-2">
-                    <FaDollarSign className="text-PrimaryColor-0" />
-                    Cost
-                  </span>
-                  <span className="text-PrimaryColor-0 font-semibold">$60</span>
+                  <div className="flex items-center justify-between border-b border-SecondaryColor-0 border-opacity-10 py-4">
+                    <span className="flex items-center gap-2">
+                      <LiaCalendar className="text-xl" />
+                      Start Date
+                    </span>
+                    <span className="text-HeadingColor-0">31 Dec, 2024</span>
+                  </div>
+
+                  <div className="flex items-center justify-between border-b border-SecondaryColor-0 border-opacity-10 py-4">
+                    <span className="flex items-center gap-2">
+                      <PiClockAfternoonLight className="text-xl" />
+                      Time
+                    </span>
+                    <span className="text-HeadingColor-0">12.30 - 02.30</span>
+                  </div>
+
+                  <div className="flex items-center justify-between border-b border-SecondaryColor-0 border-opacity-10 py-4">
+                    <span className="flex items-center gap-2">
+                      <PiUsersThreeLight className="text-lg" />
+                      Total Slot
+                    </span>
+                    <span className="text-HeadingColor-0">560+</span>
+                  </div>
+
+                  <div className="flex items-center justify-between py-4 mb-3">
+                    <span className="flex items-center gap-2">
+                      <CiLocationOn className="text-xl" />
+                      Location
+                    </span>
+                    <span className="text-HeadingColor-0">California, USA</span>
+                  </div>
                 </div>
 
-                <div className="flex items-center justify-between">
-                  <span className="flex items-center gap-2">
-                    <FaCalendarAlt className="text-gray-500" />
-                    Start Date
-                  </span>
-                  <span>31 Dec, 2024</span>
-                </div>
-
-                <div className="flex items-center justify-between">
-                  <span className="flex items-center gap-2">
-                    <FaClock className="text-gray-500" />
-                    Time
-                  </span>
-                  <span>12.30 - 02.30</span>
-                </div>
-
-                <div className="flex items-center justify-between">
-                  <span className="flex items-center gap-2">
-                    <FaUsers className="text-gray-500" />
-                    Total Slot
-                  </span>
-                  <span>560+</span>
-                </div>
-
-                <div className="flex items-center justify-between">
-                  <span className="flex items-center gap-2">
-                    <FaMapMarkerAlt className="text-gray-500" />
-                    Location
-                  </span>
-                  <span>California, USA</span>
-                </div>
+                <button className="mt-6 primary-btn2 w-full justify-center">
+                  BOOK NOW <HiArrowNarrowRight size={20} />
+                </button>
               </div>
 
-              <button className="mt-6 primary-btn2 w-full justify-center">
-                BOOK NOW <HiArrowNarrowRight size={20} />
-              </button>
-
               {/* Dynamic Countdown */}
-              <div className="mt-6 px-4 2xl:px-7 pt-4 2xl:pt-7 pb-3 2xl:pb-6 bg-BodyBg-0 rounded-xl flex justify-between items-center gap-1 flex-wrap text-center">
+              <div className="mt-6 px-4 2xl:px-7 pt-4 2xl:pt-7 pb-3 2xl:pb-6 bg-BodyBg-0 border border-PrimaryColor-0 border-opacity-15 rounded-xl flex justify-between items-center gap-1 flex-wrap text-center">
                 <div className="font-Outfit text-TextColor2-0 uppercase">
                   <div className="font-Outfit text-2xl text-PrimaryColor-0 flex flex-col items-center justify-center py-4 px-4 rounded-lg bg-white mb-2">
                     {timeLeft.days}
@@ -183,7 +181,10 @@ const EventsDetails = () => {
                 </div>
               </div>
             </div>
-            <div className="px-10 pt-8 pb-7 bg-BodyBg-0 mt-8 rounded-2xl">
+            <div className="px-10 pt-8 pb-10 bg-BodyBg-0 mt-7 rounded-2xl">
+              <h2 className="font-Outfit text-2xl font-medium text-HeadingColor-0 mb-6">
+                Event Location
+              </h2>
               <div className="border-4 border-white w-full">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d615750.1120117789!2d34.09446658476134!3d31.50847548965568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14fd7f054e542767%3A0x7ff98dc913046392!2sGaza!5e0!3m2!1sen!2sbd!4v1748773470312!5m2!1sen!2sbd"
