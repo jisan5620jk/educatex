@@ -16,7 +16,7 @@ const ImageReveal = () => {
           gsap.fromTo(
             img,
             {
-              clipPath: "inset(100% 100% 100% 100%)",
+              clipPath: "inset(60% 60% 60% 60%)",
               opacity: 0,
             },
             {
