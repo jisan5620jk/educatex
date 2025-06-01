@@ -1,35 +1,33 @@
-import { useEffect } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const ImageReveal = () => {
   useEffect(() => {
     const animateImages = () => {
-      const images = document.querySelectorAll('img');
+      const images = document.querySelectorAll("img");
 
       gsap.utils.toArray(images).forEach((img) => {
         if (!img.dataset.gsapAnimated) {
-          img.dataset.gsapAnimated = 'true';
+          img.dataset.gsapAnimated = "true";
 
           gsap.fromTo(
             img,
             {
+              clipPath: "inset(100% 100% 100% 100%)",
               opacity: 0,
-              scale: 0.8,
-              y: 50,
             },
             {
+              clipPath: "inset(0% 0% 0% 0%)",
               opacity: 1,
-              scale: 1,
-              y: 0,
               duration: 1,
-              ease: 'power3.out',
+              ease: "power2.out",
               scrollTrigger: {
                 trigger: img,
-                start: 'top 90%',
-                toggleActions: 'play none none none',
+                start: "top 95%",
+                toggleActions: "play none none none",
                 // markers: true, // uncomment for debugging
               },
             }
@@ -37,10 +35,9 @@ const ImageReveal = () => {
         }
       });
 
-      ScrollTrigger.refresh(); // force ScrollTrigger to re-check layout
+      ScrollTrigger.refresh();
     };
 
-    // slight delay to ensure all images have mounted
     const timeout = setTimeout(animateImages, 100);
 
     return () => {

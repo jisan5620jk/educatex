@@ -39,10 +39,10 @@ const Blog = () => {
             <div className='p-3 sm:p-6 rounded-[20px] border border-SecondaryColor-0 border-opacity-20'>
               <div className='group bg-white transition-all duration-500 rounded-[20px]'>
                 <div className='relative rounded-[10px] overflow-hidden'>
-                  <span className='absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 bg-PrimaryColor3-0 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-0'></span>
-                  <span className='absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 bg-PrimaryColor3-0 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-[25%]'></span>
-                  <span className='absolute left-[62.5%] top-0 h-full w-0 transition-all duration-500 bg-PrimaryColor3-0 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-1/2'></span>
-                  <span className='absolute left-[87.5%] top-0 h-full w-0 transition-all duration-500 bg-PrimaryColor3-0 z-10 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-[75%]'></span>
+                  <span className='absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 bg-PrimaryColor3-0 z-10 group-hover:bg-opacity-0 group-hover:w-[25%] group-hover:left-0'></span>
+                  <span className='absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 bg-PrimaryColor3-0 z-10 group-hover:bg-opacity-0 group-hover:w-[25%] group-hover:left-[25%]'></span>
+                  <span className='absolute left-[62.5%] top-0 h-full w-0 transition-all duration-500 bg-PrimaryColor3-0 z-10 group-hover:bg-opacity-0 group-hover:w-[25%] group-hover:left-1/2'></span>
+                  <span className='absolute left-[87.5%] top-0 h-full w-0 transition-all duration-500 bg-PrimaryColor3-0 z-10 group-hover:bg-opacity-0 group-hover:w-[25%] group-hover:left-[75%]'></span>
                   <img
                     src={blogThumb}
                     className='w-full h-64 sm:h-[322px] object-cover object-center'
