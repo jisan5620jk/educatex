@@ -21,6 +21,7 @@ import BlogDetails from "../Pages/InnerPage/BlogDetails/BlogDetails";
 import ShopInner from "../Pages/InnerPage/ShopInner/ShopInner";
 import InstructorInner from "../Pages/InnerPage/InstructorInner/InstructorInner";
 import EventsInner from "../Pages/InnerPage/EventsInner/EventsInner";
+import ContactInner from "../Pages/InnerPage/ContactInner/ContactInner";
 
 const router = createBrowserRouter([
   {
@@ -67,6 +68,10 @@ const router = createBrowserRouter([
       {
         path: "/shop",
         element: <ShopInner />,
+      },
+      {
+        path: "/contact",
+        element: <ContactInner />,
       },
     ],
   },
