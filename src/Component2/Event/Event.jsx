@@ -75,34 +75,30 @@ const eventData = [
 
 const Event = () => {
   return (
-    <section className='pt-16 md:pt-20 lg:pt-28 pb-16 md:pb-20 lg:pb-[120px] relative z-10'>
-      <div className='absolute left-36 top-24 hidden xl:hidden'>
+    <section className="pt-16 md:pt-20 lg:pt-28 pb-16 md:pb-20 lg:pb-[120px] relative z-10">
+      <div className="absolute left-36 top-24 hidden xl:hidden">
         <img
           src={shape}
           draggable={false}
-          alt='Shape'
-          className='animate-wiggle'
+          alt="Shape"
+          className="animate-wiggle"
         />
       </div>
-      <div className='Container'>
-        <div className='relative grid items-center grid-cols-1 lg:grid-cols-2 gap-8'>
-          <div className='border-b border-SecondaryColor-0 border-opacity-15 pb-6 lg:py-6'>
-            <h5 className='font-Outfit font-medium text-PrimaryColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
-              OUR COURSES
+      <div className="Container">
+        <div className="relative grid items-center grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="border-b border-SecondaryColor-0 border-opacity-15 pb-6 lg:py-6">
+            <h5 className="font-Outfit font-medium text-PrimaryColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]">
+              participate our events
             </h5>
           </div>
-          <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0'>
-            Our Courses – Comprehensive
-            <br />
-            Available all Programs
+          <h1 className="font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0">
+            Upcoming Academic Meetups
+            <br /> Workshops and Seminars
           </h1>
         </div>
-        <div className='event-card space-y-[18px] mt-[58px]'>
+        <div className="event-card space-y-[18px] mt-[58px]">
           {eventData.map((events) => (
-            <EventCard
-              key={events.id}
-              {...events}
-            />
+            <EventCard key={events.id} {...events} />
           ))}
         </div>
       </div>

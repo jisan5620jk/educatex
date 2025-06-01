@@ -20,6 +20,7 @@ import ShopDetails from "../Pages/InnerPage/ShopDetails/ShopDetails";
 import BlogDetails from "../Pages/InnerPage/BlogDetails/BlogDetails";
 import ShopInner from "../Pages/InnerPage/ShopInner/ShopInner";
 import InstructorInner from "../Pages/InnerPage/InstructorInner/InstructorInner";
+import EventsInner from "../Pages/InnerPage/EventsInner/EventsInner";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/pricing",
         element: <PricingInner />,
+      },
+      {
+        path: "/events",
+        element: <EventsInner />,
       },
       {
         path: "/instructor",
