@@ -1,9 +1,11 @@
 import BreadCrumb2 from "../../../Shared/BreadCrumb/BreadCrumb2";
 import HelmetChanger from "../../../Shared/Helmet/Helmet";
-import { BsArrowUpRight } from "react-icons/bs";
-import { FaRegStar, FaStar } from "react-icons/fa6";
+import { BsArrowUpRight, BsCartPlus } from "react-icons/bs";
+import { FaStar } from "react-icons/fa6";
 import { useEffect, useRef, useState } from "react";
 import productImage from "/images/shop-details-thumb.png";
+import { IoMdStar, IoMdStarHalf } from "react-icons/io";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const ShopDetails = () => {
   // Rating
@@ -46,36 +48,40 @@ const ShopDetails = () => {
         breadCrumbLink={"Shop"}
         breadCrumbText={"Brave New Brand"}
       />
-      <section className="pt-16 md:pt-20 lg:pt-28 bg-white shadow rounded-lg">
+      <section className="">
         <div className="Container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8">
-            <div className="w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-0 p-10 bg-white rounded-2xl shadow-shades relative z-20 -mt-[62px]">
+            <div className="w-full 2xl:pr-[60px]">
               <img
                 src={productImage}
                 alt="Brave New World"
-                className="rounded-lg w-full object-cover"
+                className="rounded-lg"
               />
             </div>
 
             <div className="">
               <div>
-                <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+                <h2 className="font-Outfit text-[32px] font-semibold text-HeadingColor-0 mb-1">
                   Brave New World
                 </h2>
-                <div className="flex items-center space-x-2 mb-2">
-                  <span className="flex text-yellow-500">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="flex text-ReviewText-0 text-2xl">
                     {[...Array(4)].map((_, i) => (
-                      <FaStar key={i} />
+                      <IoMdStar key={i} />
                     ))}
-                    <FaRegStar />
+                    <IoMdStarHalf />
                   </span>
-                  <span className="text-sm text-gray-500">(02 Reviews)</span>
+                  <span className="font-Outfit text-HeadingColor-0 text-lg">
+                    (02 Reviews)
+                  </span>
                 </div>
-                <p className="text-green-600 text-xl font-semibold">
+                <p className="font-Outfit text-PrimaryColor-0 text-[22px] font-medium">
                   $70{" "}
-                  <span className="text-gray-400 line-through ml-1">$100</span>
+                  <span className="text-gray-400 line-through font-normal ml-1">
+                    $100
+                  </span>
                 </p>
-                <p className="text-gray-600 mt-3">
+                <p className="font-OpenSans text-TextColor-0 mt-5 max-w-[580px] w-full">
                   Educate the ultimate destination for knowledge seekers and
                   educators alike. We are committed to transforming special
                   education impact global channels without standards compliant
@@ -84,64 +90,65 @@ const ShopDetails = () => {
                 </p>
               </div>
 
-              <div className="flex items-center space-x-4 my-7">
+              <div className="flex items-center space-x-4 my-9">
                 {/* Quantity Selector */}
-                <div className="flex items-center border rounded-md bg-gray-100">
+                <div className="flex items-center border border-SecondaryColor-0 border-opacity-10 rounded-full w-[160px] relative">
                   <button
-                    onClick={decreaseQuantity}
-                    className="px-3 py-2 text-gray-700 hover:bg-gray-300"
+                    onClick={increaseQuantity}
+                    className="absolute top-2 right-5 inline-block text-sm text-TextColor-0"
                   >
-                    -
+                    <FaChevronUp />
                   </button>
                   <input
                     type="text"
                     value={quantity}
-                    readOnly
-                    className="w-12 text-center border-none bg-transparent focus:outline-none"
+                    className="w-full h-[50px] text-left pl-7 border-none bg-transparent outline-none"
                   />
                   <button
-                    onClick={increaseQuantity}
-                    className="px-3 py-2 text-gray-700 hover:bg-gray-300"
+                    onClick={decreaseQuantity}
+                    className="absolute bottom-2 right-5 inline-block text-sm text-TextColor-0"
                   >
-                    +
+                    <FaChevronDown />
                   </button>
                 </div>
 
                 {/* Add to Cart Button */}
-                <button className="bg-green-500 text-white px-6 py-2 rounded-md hover:bg-green-600 flex items-center">
+                <button className="primary-btn2 capitalize">
                   Add to Cart
-                  <svg
-                    className="w-5 h-5 ml-2"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-1.4 5M17 13l1.4 5M9 21h6m-6-4h6"
-                    />
-                  </svg>
+                  <BsCartPlus />
                 </button>
               </div>
 
               <div className="mt-6">
-                <ul className="text-sm text-gray-600 space-y-1">
-                  <li>
-                    <span className="font-semibold">Colors:</span> Black &
-                    Yellow
-                  </li>
-                  <li>
-                    <span className="font-semibold">Category:</span> Historical
-                    Fiction
-                  </li>
-                  <li>
-                    <span className="font-semibold">Tags:</span> Design,
-                    Business
-                  </li>
-                </ul>
+                <div className="space-y-2 text-base font-medium text-black">
+                  <div className="flex">
+                    <span className="w-24 font-Outfit text-HeadingColor-0">
+                      Colors
+                    </span>
+                    <span className="mr-2">:</span>
+                    <span className="font-Outfit text-TextColor-0 font-light">
+                      Black & Yellow
+                    </span>
+                  </div>
+                  <div className="flex">
+                    <span className="w-24 font-Outfit text-HeadingColor-0">
+                      Category
+                    </span>
+                    <span className="mr-2">:</span>
+                    <span className="font-Outfit text-TextColor-0 font-light">
+                      Historical Fiction
+                    </span>
+                  </div>
+                  <div className="flex">
+                    <span className="w-24 font-Outfit text-HeadingColor-0">
+                      Tags
+                    </span>
+                    <span className="mr-2">:</span>
+                    <span className="font-Outfit text-TextColor-0 font-light">
+                      Design, Business
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -153,20 +160,20 @@ const ShopDetails = () => {
           <div className="border-b border-gray-200 mb-6">
             <ul className="flex space-x-6 text-sm font-medium">
               <li
-                className={`cursor-pointer pb-2 ${
+                className={`cursor-pointer font-Outfit text-xl transition-all duration-500 font-medium pb-2 ${
                   activeTab === 0
-                    ? "border-b-2 border-emerald-500 text-emerald-600"
-                    : "text-gray-500 hover:text-gray-800"
+                    ? "border-b-2 border-PrimaryColor-0 text-PrimaryColor-0"
+                    : "text-HeadingColor-0 hover:text-PrimaryColor-0"
                 }`}
                 onClick={() => setActiveTab(0)}
               >
                 Reviews
               </li>
               <li
-                className={`cursor-pointer pb-2 ${
+                className={`cursor-pointer font-Outfit text-xl transition-all duration-500 font-medium pb-2 ${
                   activeTab === 1
-                    ? "border-b-2 border-emerald-500 text-emerald-600"
-                    : "text-gray-500 hover:text-gray-800"
+                    ? "border-b-2 border-PrimaryColor-0 text-PrimaryColor-0"
+                    : "text-HeadingColor-0 hover:text-PrimaryColor-0"
                 }`}
                 onClick={() => setActiveTab(1)}
               >
@@ -264,7 +271,7 @@ const ShopDetails = () => {
             className="overflow-hidden transition-all duration-500 ease-in-out"
           >
             <div className="text-TextColor-0 font-OpenSans max-w-[930px] w-full">
-              <p>
+              <p className="font-OpenSans text-TextColor-0 mt-6">
                 Certainly! Brave New World by Aldous Huxley is a dystopian novel
                 that envisions a future society governed by technological
                 advancements and strict social control. Set in the World State,
@@ -272,7 +279,7 @@ const ShopDetails = () => {
                 conditioned from birth, the novel explores themes of conformity,
                 consumerism, and the loss of individuality.
               </p>
-              <p className="mt-3">
+              <p className="mt-6 font-OpenSans text-TextColor-0">
                 In this world, emotions and deep relationships are discouraged,
                 replaced by instant gratification and artificial happiness
                 through the use of a drug called soma. The population is divided
@@ -283,7 +290,7 @@ const ShopDetails = () => {
                 natural human emotions with the sterile, controlled world of the
                 future.
               </p>
-              <p className="mt-3">
+              <p className="mt-6 font-OpenSans text-TextColor-0">
                 Huxley’s work is often compared to 1984 by George Orwell, but
                 while Orwell’s dystopia is ruled by oppression and fear, Brave
                 New World presents a world where people are controlled through

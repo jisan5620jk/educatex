@@ -61,9 +61,7 @@ const Navbar = () => {
     },
     {
       label: "About",
-      links: [
-        { to: "/about", label: "About Page" },
-      ],
+      links: [{ to: "/about", label: "About Page" }],
     },
     {
       label: "Pages",
@@ -74,8 +72,8 @@ const Navbar = () => {
         { to: "/team_inner", label: "Team Member Style One" },
         { to: "/team_inner2", label: "Team Member Style Two" },
         { to: "/pricing_inner", label: "Pricing Style One" },
-        { to: "/pricing2", label: "Pricing Style Two" },
-        { to: "/why_choose", label: "Why Choose Us Style One" },
+        { to: "/shop", label: "Shop Page" },
+        { to: "/shop_details", label: "Shop Details Page" },
         { to: "/why_choose2", label: "Why Choose Us Style Two" },
       ],
     },
@@ -97,9 +95,7 @@ const Navbar = () => {
     },
     {
       label: "Contact",
-      links: [
-        { to: "/contact", label: "Contact Page" },
-      ],
+      links: [{ to: "/contact", label: "Contact Page" }],
     },
   ];
 

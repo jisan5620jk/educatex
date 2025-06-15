@@ -26,6 +26,7 @@ import EventsDetailsInner from "../Pages/InnerPage/EventsDetails/EventsDetailsIn
 import BlogRightSideBar from "../Pages/InnerPage/BlogList/BlogRightSideBar";
 import BlogLeftSideBar from "../Pages/InnerPage/BlogList/BlogLeftSideBar";
 import BlogNoSideBar from "../Pages/InnerPage/BlogList/BlogNoSideBar";
+import InstructorDetails from "../Pages/InnerPage/InstructorDetails/InstructorDetails";
 
 const router = createBrowserRouter([
   {
@@ -55,7 +56,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/instructor_details",
-        element: <InstructorInner />,
+        element: <InstructorDetails />,
       },
       {
         path: "/about",
