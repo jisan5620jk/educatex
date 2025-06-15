@@ -1,7 +1,7 @@
-import { FaArrowRightLong } from 'react-icons/fa6';
 import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
-import TeamDetailsMain from './TeamDetailsMain';
+import TeamDetailsMain from './InstructorInfo';
 import HelmetChanger from '../../../Shared/Helmet/Helmet';
+import { BsArrowUpRight } from 'react-icons/bs';
 
 const TeamDetails = () => {
   return (

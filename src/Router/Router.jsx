@@ -23,6 +23,9 @@ import InstructorInner from "../Pages/InnerPage/InstructorInner/InstructorInner"
 import EventsInner from "../Pages/InnerPage/EventsInner/EventsInner";
 import ContactInner from "../Pages/InnerPage/ContactInner/ContactInner";
 import EventsDetailsInner from "../Pages/InnerPage/EventsDetails/EventsDetailsInner";
+import BlogRightSideBar from "../Pages/InnerPage/BlogList/BlogRightSideBar";
+import BlogLeftSideBar from "../Pages/InnerPage/BlogList/BlogLeftSideBar";
+import BlogNoSideBar from "../Pages/InnerPage/BlogList/BlogNoSideBar";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +54,10 @@ const router = createBrowserRouter([
         element: <InstructorInner />,
       },
       {
+        path: "/instructor_details",
+        element: <InstructorInner />,
+      },
+      {
         path: "/about",
         element: <AboutInner />,
       },
@@ -63,8 +70,16 @@ const router = createBrowserRouter([
         element: <CourseDetails />,
       },
       {
-        path: "/shop_details",
-        element: <ShopDetails />,
+        path: "/blog_left_sidebar",
+        element: <BlogLeftSideBar />,
+      },
+      {
+        path: "/blog_right_sidebar",
+        element: <BlogRightSideBar />,
+      },
+      {
+        path: "/blog_no_sidebar",
+        element: <BlogNoSideBar />,
       },
       {
         path: "/blog_details",
@@ -73,6 +88,10 @@ const router = createBrowserRouter([
       {
         path: "/shop",
         element: <ShopInner />,
+      },
+      {
+        path: "/shop_details",
+        element: <ShopDetails />,
       },
       {
         path: "/contact",
