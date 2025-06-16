@@ -26,27 +26,27 @@ const ShopInner = () => {
       />
       <section className="relative pt-28 pb-[120px] z-10">
         <div className="Container">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 rounded-md mb-8 lg:mb-0">
-            <div>
-              <div className="bg-green-50 p-6 rounded-lg shadow-md mb-8">
-                <h3 className="text-xl font-semibold text-gray-700">
+          <div className="grid grid-cols-1 md:grid-cols-8 gap-7 rounded-md mb-8 lg:mb-0">
+            <div className="col-span-1 md:col-span-2">
+              <div className="bg-BodyBg-0 px-7 pt-7 pb-5 rounded-lg mb-8">
+                <h3 className="font-Outfit text-2xl font-medium text-HeadingColor-0">
                   Categories
                 </h3>
-                <ul className="mt-4 space-y-2">
+                <ul className="mt-4">
                   {categories.map((category) => (
                     <li
                       key={category.name}
-                      className="flex justify-between items-center"
+                      className="font-Outfit text-HeadingColor-0 border-b border-SecondaryColor-0 border-opacity-10 last:border-none py-3 flex justify-between items-center"
                     >
-                      <span className="text-gray-600">{category.name}</span>
-                      <span className="text-gray-400">({category.count})</span>
+                      <span>{category.name}</span>
+                      <span>({category.count})</span>
                     </li>
                   ))}
                 </ul>
               </div>
               <PriceRange />
             </div>
-            <div className="col-span-1 lg:col-span-2">
+            <div className="col-span-1 md:col-span-6">
               <ShopItem />
             </div>
           </div>

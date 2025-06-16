@@ -13,7 +13,8 @@ const BreadCrumb3 = ({
 }) => {
   return (
     <div className="bg-[url('/images/breadcrumb-bg2.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start pt-[196px] pb-[100px] relative z-10">
-      <div className='Container'>
+      <div className='Container relative'>
+        <div className='absolute -bottom-32 -right-10'><img src="/images/bread-dot.png" draggable={false} alt="shape" className='animate-dance' /></div>
         <h1 className='font-Outfit font-semibold text-4xl sm:text-[40px] md:text-[50px] text-HeadingColor-0 capitalize'>
           {breadCrumbTitle}
         </h1>

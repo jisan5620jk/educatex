@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import productImage from "/images/shop-details-thumb.png";
 import { IoMdStar, IoMdStarHalf } from "react-icons/io";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { HiUserCircle } from "react-icons/hi";
 
 const ShopDetails = () => {
   // Rating
@@ -188,38 +189,44 @@ const ShopDetails = () => {
             className="overflow-hidden transition-all duration-500 ease-in-out"
           >
             <div>
-              <div className="mt-10 bg-white shadow rounded-lg">
-                <div className="mb-6">
-                  <div className="flex items-start space-x-4">
-                    <img
-                      src="https://i.pravatar.cc/40"
-                      className="w-10 h-10 rounded-full"
-                      alt="avatar"
-                    />
-                    <div>
-                      <h4 className="font-semibold text-gray-800">
-                        David Alsson
-                      </h4>
-                      <p className="text-sm text-gray-400 mb-1">Feb 29, 2025</p>
-                      <div className="flex text-yellow-500 mb-2">
-                        {[...Array(4)].map((_, i) => (
-                          <FaStar key={i} />
-                        ))}
-                        <FaStar className="text-gray-300" />
-                      </div>
-                      <p className="text-gray-600">
-                        Dramatically reinvent adaptive bandwidth...
-                      </p>
-                    </div>
+              <div className="flex items-start gap-3 mt-8">
+                <div className="text-[80px] text-gray-300 -mt-2">
+                  <HiUserCircle />
+                </div>
+                <div>
+                  <div className="flex text-ReviewText-0 mb-2">
+                    {[...Array(4)].map((_, i) => (
+                      <FaStar key={i} />
+                    ))}
+                    <FaStar className="text-gray-300" />
                   </div>
+                  <div className="flex items-center gap-10 mb-1">
+                    <h4 className="font-Outfit text-HeadingColor-0 font-medium text-lg">
+                      Jhon D. Alexon
+                    </h4>
+                    <p className="font-OpenSans text-TextColor-0 relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-[26px] before:w-3 before:h-[1px] before:bg-SecondaryColor-0">
+                      Feb 29, 2025
+                    </p>
+                  </div>
+                  <p className="font-OpenSans text-TextColor-0">
+                    Dramatically reinvent adaptive bandwidth vis reliable
+                    infrastructures to the progressively iterate distributed
+                    interfaces.
+                  </p>
                 </div>
               </div>
-              <div className="mt-6 p-6 bg-white shadow rounded-lg">
-                <h3 className="text-lg font-semibold mb-4">Add a Review</h3>
+              <div className="mt-16">
+                <h3 className="font-Outfit text-HeadingColor-0 text-xl mb-2">
+                  Add a Review
+                </h3>
+                <p className="font-OpenSans text-TextColor-0 mb-6">
+                  Your email address will not be published. Required fields are
+                  marked *
+                </p>
 
                 <form className="space-y-5">
                   <div className="flex items-center space-x-2">
-                    <span className="text-sm font-medium text-gray-700">
+                    <span className="font-Outfit text-HeadingColor-0 font-light">
                       Your Rating:
                     </span>
                     <div className="flex space-x-1">
@@ -236,28 +243,40 @@ const ShopDetails = () => {
                   </div>
 
                   <div className="grid md:grid-cols-2 gap-4">
-                    <input
-                      type="text"
-                      placeholder="Enter Your Name"
-                      className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                    />
-                    <input
-                      type="email"
-                      placeholder="Enter E-Mail"
-                      className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                    />
+                    <label htmlFor="name">
+                      Name*
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Enter Your Name"
+                        className="mt-2 w-full border border-gray-200 px-6 py-3.5 rounded-md hover:border-PrimaryColor-0 focus:border-PrimaryColor-0 transition-all duration-500 outline-none"
+                        required
+                      />
+                    </label>
+                    <label htmlFor="email">
+                      E-Mail*
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Enter E-Mail"
+                        className="mt-2 w-full border border-gray-200 px-6 py-3.5 rounded-md hover:border-PrimaryColor-0 focus:border-PrimaryColor-0 transition-all duration-500 outline-none"
+                      />
+                    </label>
                   </div>
 
-                  <textarea
-                    rows="4"
-                    placeholder="Write Comments"
-                    className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                  />
-
-                  <button
-                    type="submit"
-                    className="px-6 py-2 bg-emerald-500 text-white font-semibold rounded hover:bg-emerald-600 transition"
-                  >
+                  <label htmlFor="message">
+                    Comment
+                    <textarea
+                      rows="5"
+                      name="message"
+                      id="message"
+                      placeholder="Write Comments"
+                      className="mt-2 w-full border border-gray-200 px-6 py-3.5 rounded-md hover:border-PrimaryColor-0 focus:border-PrimaryColor-0 transition-all duration-500 outline-none resize-none"
+                    />
+                  </label>
+                  <button type="submit" className="primary-btn2">
                     Submit Now
                   </button>
                 </form>
