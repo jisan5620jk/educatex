@@ -120,7 +120,7 @@ const EventsDetails = () => {
                       <LiaCalendar className="text-xl" />
                       Start Date
                     </span>
-                    <span className="text-HeadingColor-0">31 Dec, 2024</span>
+                    <span className="text-HeadingColor-0">31 Dec, 2025</span>
                   </div>
 
                   <div className="flex items-center justify-between border-b border-SecondaryColor-0 border-opacity-10 py-4">

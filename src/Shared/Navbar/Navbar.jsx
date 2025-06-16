@@ -51,51 +51,49 @@ const Navbar = () => {
     {
       label: "Home",
       links: [
-        { to: "/", label: "Online Education Main Demo" },
-        { to: "/home2", label: "Online University" },
-        { to: "/home3", label: "Kinder Garden" },
+        { to: "/", label: "Main Demo" },
+        { to: "/home2", label: "University Demo" },
+        { to: "/home3", label: "Kindergarten Demo" },
         { to: "/home4", label: "Islamic Education" },
-        { to: "/home5", label: "Online Education" },
-        { to: "/home6", label: "Trainning Center" },
+        { to: "/home5", label: "Modern Online Learning" },
+        { to: "/home6", label: "Training Center" },
       ],
     },
     {
       label: "About",
-      links: [{ to: "/about", label: "About Page" }],
+      links: [{ to: "/about", label: "Who We Are" }],
     },
     {
       label: "Pages",
       links: [
-        { to: "/mission_inner", label: "Mission & Vision Style One" },
-        { to: "/mission_inner2", label: "Mission & Vision Style Two" },
-        { to: "/career", label: "IT Solution Career" },
-        { to: "/team_inner", label: "Team Member Style One" },
-        { to: "/team_inner2", label: "Team Member Style Two" },
-        { to: "/pricing_inner", label: "Pricing Style One" },
-        { to: "/shop", label: "Shop Page" },
-        { to: "/shop_details", label: "Shop Details Page" },
-        { to: "/why_choose2", label: "Why Choose Us Style Two" },
+        { to: "/pricing", label: "Pricing Plans" },
+        { to: "/events", label: "All Events" },
+        { to: "/event_details", label: "Event Details" },
+        { to: "/instructor", label: "Our Instructors" },
+        { to: "/instructor_details", label: "Instructor Profile" },
+        { to: "/shop", label: "Shop" },
+        { to: "/shop_details", label: "Product Details" },
       ],
     },
     {
       label: "Courses",
       links: [
-        { to: "/course", label: "Course Page" },
-        { to: "/course_details", label: "Course Details Page" },
+        { to: "/course", label: "All Courses" },
+        { to: "/course_details", label: "Course Details" },
       ],
     },
     {
       label: "Blog",
       links: [
-        { to: "/blog_left_sidebar", label: "Blog Left Sidebar" },
-        { to: "/blog_right_sidebar", label: "Blog Right Sidebar" },
-        { to: "/blog_no_sidebar", label: "Blog No Sidebar" },
-        { to: "/blog_details", label: "Blog Details Page" },
+        { to: "/blog_left_sidebar", label: "Blog - Left Sidebar" },
+        { to: "/blog_right_sidebar", label: "Blog - Right Sidebar" },
+        { to: "/blog_no_sidebar", label: "Blog - No Sidebar" },
+        { to: "/blog_details", label: "Blog Details" },
       ],
     },
     {
       label: "Contact",
-      links: [{ to: "/contact", label: "Contact Page" }],
+      links: [{ to: "/contact", label: "Get in Touch" }],
     },
   ];
 
@@ -161,7 +159,7 @@ const Navbar = () => {
   return (
     <div data-lenis-prevent>
       {/* Header Top */}
-      <div className="bg-SecondaryColor-0 px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] flex justify-between items-center">
+      <div className="bg-SecondaryColor-0 px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] flex justify-between items-center border-b border-white border-opacity-10 lg:border-none">
         <div className="sm:flex items-center gap-3 hidden">
           <img src={star} draggable={false} alt="Star" />
           <p className="font-OpenSans text-[15px] text-white text-opacity-80">
@@ -172,7 +170,7 @@ const Navbar = () => {
             – Unlocking the Power of Education!
           </p>
         </div>
-        <div className="py-[14px] flex items-center gap-7 ">
+        <div className="py-[13px] flex items-center gap-7">
           <div>
             <button
               type="button"
@@ -201,7 +199,7 @@ const Navbar = () => {
       </div>
       {/* Header Main */}
       <header
-        className={`absolute w-full z-50 transition-all duration-300 bg-SecondaryColor-0 lg:bg-transparent border-b border-SecondaryColor-0 border-opacity-10 ${
+        className={`absolute w-full z-50 transition-all duration-300 bg-SecondaryColor-0 lg:bg-transparent lg:border-b border-SecondaryColor-0 border-opacity-10 ${
           isSticky
             ? "!fixed top-0 shadow-shadows bg-SecondaryColor-0 lg:bg-white animate-headerSlideDown border-transparent"
             : ""
@@ -221,7 +219,7 @@ const Navbar = () => {
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden lg:block lg:ml-24">
+            <div className="hidden lg:block 2xl:ml-24">
               <nav>
                 <ul className="flex gap-6 text-sm font-medium">
                   {menuItems.map((item, idx) => (
@@ -282,7 +280,7 @@ const Navbar = () => {
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="hidden lg:block">
+                  <div className="hidden xl:block">
                     <Link
                       to={"/contact"}
                       className="inline-flex items-center gap-2 text-base uppercase text-white font-medium font-Outfit rounded-full bg-PrimaryColor-0 px-[30px] py-3 transition-all duration-500 relative z-10 overflow-hidden before:absolute before:h-full before:w-0 before:bg-PrimaryColor2-0 before:opacity-50 before:top-0 before:left-auto before:right-0 before:transition-all before:duration-500 before:-z-10 hover:before:left-0 hover:before:opacity-100 hover:before:w-full hover:right-auto"

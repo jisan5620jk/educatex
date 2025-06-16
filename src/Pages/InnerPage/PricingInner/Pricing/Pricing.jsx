@@ -89,8 +89,9 @@ const Pricing = () => {
             <img src={subTilteIcon} draggable={false} alt="Icon" /> PRICING
             PLANS
           </h5>
-          <h1 className="font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 md:mt-[14px] mb-4">
-            Great Plans for Dedicated Learners<br /> Aiming Higher Features
+          <h1 className="font-Outfit font-semibold text-lg leading-7 sm:text-[30px] sm:leading-[40px] md:text-[40px] md:leading-[50px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 md:mt-[14px] mb-4">
+            Great Plans for Dedicated Learners
+            <br /> Aiming Higher Features
           </h1>
         </div>
         {/* Toggle Switch */}

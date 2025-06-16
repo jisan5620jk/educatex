@@ -57,7 +57,7 @@ const Preloader = () => {
         ></path>
       </svg>
       <div className='preloader-heading'>
-        <div className='text-2xl font-light tracking-[35px] uppercase font-Outfit text-white z-20 load-text'>
+        <div className='text-xl md:text-2xl font-light tracking-[20px] md:tracking-[35px] uppercase font-Outfit text-white z-20 load-text'>
           {['L', 'o', 'a', 'd', 'i', 'n', 'g'].map((char, index) => (
             <span
               key={index}

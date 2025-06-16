@@ -16,11 +16,11 @@ const PricingCard = ({
 }) => {
   return (
     <div
-      className={`rounded-xl px-10 pt-[52px] pb-[50px] group ${bgColor}`}
+      className={`rounded-xl px-7 sm:px-10 lg:px-7 xl:px-10 pt-8 sm:pt-[52px] pb-8 sm:pb-[50px] group ${bgColor}`}
     >
       <div className='flex items-center gap-5'>
         <div
-          className={`size-[76px] flex items-center justify-center border border-opacity-30 rounded-full relative z-10 overflow-hidden before:absolute before:right-0 before:top-0 before:w-full before:h-full before:scale-0 before:rounded-full before:transition-all before:duration-500 before:-z-10 group-hover:before:scale-100 ${iconColor}`}
+          className={`size-[76px] lg:size-[72px] xl:size-[76px] flex items-center justify-center border border-opacity-30 rounded-full relative z-10 overflow-hidden before:absolute before:right-0 before:top-0 before:w-full before:h-full before:scale-0 before:rounded-full before:transition-all before:duration-500 before:-z-10 group-hover:before:scale-100 ${iconColor}`}
         >
           <img
             src={icon}

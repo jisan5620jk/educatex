@@ -59,7 +59,7 @@ const TeamCard = ({
       <div className='bg-transparent relative transition-all duration-500 rounded-md text-center pt-3 sm:pt-7 pb-1'>
         <Link
           to={teamUrl}
-          className={`font-Outfit font-medium text-2xl text-HeadingColor-0 transition-all duration-500 ${hoverText}`}
+          className={`font-Outfit font-medium text-2xl text-HeadingColor-0 block transition-all duration-500 ${hoverText}`}
         >
           {teamTitle}
         </Link>

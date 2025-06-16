@@ -1,5 +1,5 @@
 import BreadCrumb3 from "../../../Shared/BreadCrumb/BreadCrumb3";
-import instructorImg from "/images/breadcumb-autor.png";
+import instructorImage from "/images/breadcumb-autor.png";
 import instructorThumb from "/images/instructor-details-thumb.png";
 import HelmetChanger from "../../../Shared/Helmet/Helmet";
 import { BsArrowUpRight } from "react-icons/bs";
@@ -18,6 +18,82 @@ import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { CiDollar } from "react-icons/ci";
+import courseImg1 from "/images/case-thumb1.jpg";
+import courseImg2 from "/images/case-thumb2.jpg";
+import courseImg3 from "/images/case-thumb3.jpg";
+import instructorImg from "/images/case-autor.png";
+import instructorImg2 from "/images/case-autor2.png";
+import instructorImg3 from "/images/case-autor3.png";
+import CourseCard from "./CourseCard";
+
+const courses = [
+  {
+    id: 1,
+    img: courseImg1,
+    category: "Business",
+    title: "Business Innovation And Development",
+    price: "$30",
+    rating: 4.5,
+    ratingContent: "/3 Ratings",
+    lessons: 12,
+    students: 1200,
+    instructor: "John D. Alexon",
+    instructorImg: instructorImg,
+    bgColor: "bg-PrimaryColor3-0 bg-opacity-[7%]",
+    hoverSpan: "bg-PrimaryColor3-0",
+    priceBg: "bg-PrimaryColor3-0",
+    categoryColor: "text-PrimaryColor3-0",
+    categoryBg:
+      "bg-PrimaryColor3-0 bg-opacity-10 border border-PrimaryColor3-0 border-opacity-30",
+    hoverTitle: "group-hover:text-PrimaryColor3-0",
+    iconColor: "text-PrimaryColor3-0",
+    buttonBg: "bg-PrimaryColor3-0",
+  },
+  {
+    id: 2,
+    img: courseImg2,
+    category: "Design",
+    title: "Fundamentals of Network And Domains",
+    price: "$40",
+    rating: 4.7,
+    ratingContent: "/7 Ratings",
+    lessons: 15,
+    students: 1500,
+    instructor: "Jane Smith",
+    instructorImg: instructorImg2,
+    bgColor: "bg-PrimaryColor2-0 bg-opacity-[7%]",
+    hoverSpan: "bg-PrimaryColor2-0",
+    priceBg: "bg-PrimaryColor2-0",
+    categoryColor: "text-PrimaryColor2-0",
+    categoryBg:
+      "bg-PrimaryColor2-0 bg-opacity-10 border border-PrimaryColor2-0 border-opacity-30",
+    hoverTitle: "group-hover:text-PrimaryColor2-0",
+    iconColor: "text-PrimaryColor2-0",
+    buttonBg: "bg-PrimaryColor2-0",
+  },
+  {
+    id: 3,
+    img: courseImg3,
+    category: "Finance",
+    title: "Creative Graphic Design with Adobe Suite",
+    price: "$50",
+    rating: 4.8,
+    ratingContent: "/5 Ratings",
+    lessons: 10,
+    students: 2000,
+    instructor: "Michael B. Jordan",
+    instructorImg: instructorImg3,
+    bgColor: "bg-PrimaryColor-0 bg-opacity-[7%]",
+    hoverSpan: "bg-PrimaryColor-0",
+    priceBg: "bg-PrimaryColor-0",
+    categoryColor: "text-PrimaryColor-0",
+    categoryBg:
+      "bg-PrimaryColor-0 bg-opacity-10 border border-PrimaryColor-0 border-opacity-30",
+    hoverTitle: "group-hover:text-PrimaryColor-0",
+    iconColor: "text-PrimaryColor-0",
+    buttonBg: "bg-PrimaryColor-0",
+  },
+];
 
 const sections = [
   {
@@ -107,7 +183,7 @@ const CourseDetails = () => {
 
   return (
     <>
-      <HelmetChanger title={"Project Details Inner Page Style One"} />
+      <HelmetChanger title={"Project Details Page"} />
       <BreadCrumb3
         breadCrumbTitle={"Course Details"}
         breadCrumbIcon={<BsArrowUpRight />}
@@ -115,9 +191,9 @@ const CourseDetails = () => {
         url={"/course"}
         breadCrumbLink={"Course"}
         breadCrumbText={"Business innovation and development"}
-        instructorImg={instructorImg}
+        instructorImg={instructorImage}
       />
-      <section className="pb-16 md:pb-20 lg:pb-28">
+      <section>
         <div className="Container">
           <div className="grid grid-cols-3 gap-7">
             <div className="col-span-3 lg:col-span-2 mt-16 md:mt-20 lg:mt-28">
@@ -553,6 +629,16 @@ const CourseDetails = () => {
           </div>
         </div>
       </section>
+          <section className="py-16 md:py-20 lg:py-28">
+        <div className="Container">
+          <h1 className="font-Outfit text-HeadingColor-0 text-[42px] font-semibold mb-[52px] text-center">Similiar Course You Like</h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+            {courses.map((course) => (
+              <CourseCard key={course.id} {...course} />
+            ))}
+          </div>
+        </div>
+      </section>                
     </>
   );
 };

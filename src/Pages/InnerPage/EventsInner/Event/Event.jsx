@@ -1,11 +1,11 @@
-import { FaLocationDot } from 'react-icons/fa6';
-import { LuClock3 } from 'react-icons/lu';
-import { HiArrowLongRight } from 'react-icons/hi2';
-import EventCard from './EventCard';
-import eventThumb from '/images/event-thumb.png';
-import eventThumb2 from '/images/event-thumb2.png';
-import eventThumb3 from '/images/event-thumb3.png';
-import shape from '/images/event-shape.png';
+import { FaLocationDot } from "react-icons/fa6";
+import { LuClock3 } from "react-icons/lu";
+import { HiArrowLongRight } from "react-icons/hi2";
+import EventCard from "./EventCard";
+import eventThumb from "/images/event-thumb.png";
+import eventThumb2 from "/images/event-thumb2.png";
+import eventThumb3 from "/images/event-thumb3.png";
+import shape from "/images/event-shape.png";
 import subTilteIcon from "/images/sub-title2.png";
 
 const eventData = [
@@ -20,7 +20,7 @@ const eventData = [
     eventTimeIcon: <LuClock3 />,
     eventTime: "(7.00 am to 9.00 am)",
     eventThumb: eventThumb,
-    eventUrl: "/event",
+    eventUrl: "/event_details",
     eventBtnText: "Join Events",
     eventBtnIcon: <HiArrowLongRight />,
     bgColor: "bg-PrimaryColor3-0 bg-opacity-10",
@@ -41,7 +41,7 @@ const eventData = [
     eventTimeIcon: <LuClock3 />,
     eventTime: "(7.00 am to 9.00 am)",
     eventThumb: eventThumb2,
-    eventUrl: "/event",
+    eventUrl: "/event_details",
     eventBtnText: "Join Events",
     eventBtnIcon: <HiArrowLongRight />,
     bgColor: "bg-PrimaryColor2-0 bg-opacity-10",
@@ -62,7 +62,7 @@ const eventData = [
     eventTimeIcon: <LuClock3 />,
     eventTime: "(7.00 am to 9.00 am)",
     eventThumb: eventThumb3,
-    eventUrl: "/event",
+    eventUrl: "/event_details",
     eventBtnText: "Join Events",
     eventBtnIcon: <HiArrowLongRight />,
     bgColor: "bg-PrimaryColor-0 bg-opacity-10",
@@ -83,7 +83,7 @@ const eventData = [
     eventTimeIcon: <LuClock3 />,
     eventTime: "(10.00 am to 1.00 pm)",
     eventThumb: eventThumb2,
-    eventUrl: "/event",
+    eventUrl: "/event_details",
     eventBtnText: "Join Events",
     eventBtnIcon: <HiArrowLongRight />,
     bgColor: "bg-PrimaryColor4-0 bg-opacity-10",

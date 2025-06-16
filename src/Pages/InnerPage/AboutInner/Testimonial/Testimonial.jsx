@@ -92,10 +92,10 @@ const Testimonial = () => {
   return (
     <section className="relative z-10 overflow-hidden bg-BodyBg-0 py-16 md:py-20 lg:py-28">
       <div className="Container">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-7 2xl:gap-10 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 xl:gap-7 2xl:gap-10 relative z-10">
           <div className="lg:col-span-1">
             <h5 className="font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center gap-3">
-              <img src={subTilteIcon} draggable={false} alt="Icon" /> ABOUT US
+              <img src={subTilteIcon} draggable={false} alt="Icon" /> Testimonial
             </h5>
             <h1 className="font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 md:mt-[14px] mb-4">
               All Real Experiences<br /> From Our Dedicated<br /> Learners
@@ -120,7 +120,7 @@ const Testimonial = () => {
             >
               {testiData.map((testimonial) => (
                 <SwiperSlide key={testimonial.id}>
-                  <div className="pb-16">
+                  <div className="pb-16 lg:pb-0">
                     <TestimonialCard {...testimonial} />
                   </div>
                 </SwiperSlide>
