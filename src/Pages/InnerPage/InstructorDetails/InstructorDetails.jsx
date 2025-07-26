@@ -66,8 +66,8 @@ const courses = [
     price: "$50",
     rating: 4.8,
     ratingContent: "/5 Ratings",
-    lessons: 10,
-    students: 2000,
+    lessons: 11,
+    students: 2001,
     instructor: "Michael B. Jordan",
     instructorImg: instructorImg3,
     bgColor: "bg-PrimaryColor-0 bg-opacity-[7%]",
@@ -132,8 +132,8 @@ const courses = [
     price: "$50",
     rating: 4.8,
     ratingContent: "/5 Ratings",
-    lessons: 10,
-    students: 2000,
+    lessons: 11,
+    students: 2001,
     instructor: "Michael B. Jordan",
     instructorImg: instructorImg3,
     bgColor: "bg-PrimaryColor-0 bg-opacity-[7%]",
@@ -160,8 +160,8 @@ const InstructorDetails = () => {
       <InstructorInfo />
       <section className="py-16 md:py-20 lg:py-28">
         <div className="Container">
-          <h1 className="font-Outfit text-HeadingColor-0 text-[42px] font-semibold mb-[52px] text-center">Browse My all Course</h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+          <h1 className="font-Outfit text-HeadingColor-0 text-2xl sm:text-3xl md:text-[42px] font-semibold mb-[52px] text-center">Browse My all Course</h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">
             {courses.map((course) => (
               <CourseCard key={course.id} {...course} />
             ))}

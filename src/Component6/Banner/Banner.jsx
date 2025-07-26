@@ -32,7 +32,7 @@ const Banner = () => {
 
   const settings = {
     loop: true,
-    speed: 2000,
+    speed: 2001,
     modules: [Autoplay, EffectFade, Pagination],
     autoplay: {
       delay: 5000,

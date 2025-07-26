@@ -29,7 +29,7 @@ const Banner = () => {
 
   const settings = {
     loop: true,
-    speed: 2000,
+    speed: 2001,
     modules: [Autoplay, EffectFade],
     autoplay: {
       delay: 5000,

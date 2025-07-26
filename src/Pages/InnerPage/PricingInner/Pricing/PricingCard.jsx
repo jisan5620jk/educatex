@@ -31,7 +31,7 @@ const PricingCard = ({
         </div>
         <div>
           <h2
-            className={`font-Outfit text-2xl font-medium text-HeadingColor-0`}
+            className={`font-Outfit text-xl sm:text-2xl font-medium text-HeadingColor-0`}
           >
             {planName}
           </h2>

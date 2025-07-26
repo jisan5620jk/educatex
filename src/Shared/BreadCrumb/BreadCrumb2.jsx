@@ -12,12 +12,12 @@ const BreadCrumb2 = ({
   breadCrumbText,
 }) => {
   return (
-    <div className="bg-[url('/images/breadcrumb-bg2.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start pt-[258px] pb-[154px] relative z-10">
+    <div className="bg-[url('/images/breadcrumb-bg2.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start pt-[200px] 2xl:pt-[258px] pb-[154px] relative z-10">
       <div className="Container">
         <h1 className="font-Outfit text-center font-semibold text-4xl sm:text-[40px] md:text-[50px] text-HeadingColor-0 capitalize">
           {breadCrumbTitle}
         </h1>
-        <ul className="flex flex-col sm:flex-row gap-2 sm:gap-3 sm:items-center justify-center mt-6">
+        <ul className="flex flex-col sm:flex-row gap-2 sm:gap-3 items-center justify-center mt-6">
           <li>
             <Link to={"/"}>
               <button className="font-Outfit font-medium uppercase text-PrimaryColor-0 flex items-center gap-2 transition-all duration-500 hover:text-PrimaryColor2-0">
@@ -49,10 +49,10 @@ const BreadCrumb2 = ({
           </li>
         </ul>
       </div>
-      <div className="absolute left-[20%] top-[45%] animate-flip">
+      <div className="absolute left-[20%] top-[45%] animate-flip hidden 2xl:block">
         <img src={shape} draggable={false} alt="Shape" />
       </div>
-      <div className="absolute right-[12%] top-[45%] animate-wiggle">
+      <div className="absolute right-[12%] top-[45%] animate-wiggle hidden 2xl:block">
         <img src={shape2} draggable={false} alt="Shape" />
       </div>
     </div>

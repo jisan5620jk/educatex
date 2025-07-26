@@ -14,20 +14,21 @@ const ShopInner = () => {
     { name: "Poetry", count: 2 },
   ];
 
-
-
   return (
     <>
       <HelmetChanger title={"Shop Inner Page Style Two"} />
       <BreadCrumb2
         breadCrumbTitle={"Shop"}
         breadCrumbIcon={<BsArrowUpRight />}
-        breadCrumbText={"Shop"}
+        breadCrumbIcon2={<BsArrowUpRight />}
+        breadCrumbLink={"Shop"}
+        url={"/shop_inner"}
+        breadCrumbText={"Products"}
       />
-      <section className="relative pt-28 pb-[120px] z-10">
+      <section className="relative py-16 md:py-20 lg:py-[120px] z-10">
         <div className="Container">
-          <div className="grid grid-cols-1 md:grid-cols-8 gap-7 rounded-md mb-8 lg:mb-0">
-            <div className="col-span-1 md:col-span-2">
+          <div className="grid grid-cols-1 lg:grid-cols-8 gap-7 rounded-md mb-8 lg:mb-0">
+            <div className="col-span-1 md:col-span-3 xl:col-span-2">
               <div className="bg-BodyBg-0 px-7 pt-7 pb-5 rounded-lg mb-8">
                 <h3 className="font-Outfit text-2xl font-medium text-HeadingColor-0">
                   Categories
@@ -46,7 +47,7 @@ const ShopInner = () => {
               </div>
               <PriceRange />
             </div>
-            <div className="col-span-1 md:col-span-6">
+            <div className="col-span-1 md:col-span-5 xl:col-span-6">
               <ShopItem />
             </div>
           </div>

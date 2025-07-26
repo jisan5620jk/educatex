@@ -73,7 +73,7 @@ const Main3 = () => {
       <HelmetChanger title={"Online Education"} />
       <BackToTop />
       <Navbar />
-      <div id="smooth-wrapper" className="h-full pt-[52px]">
+      <div id="smooth-wrapper" className="h-full pt-[50px]">
         <div id="smooth-content" className="min-h-screen will-change-transform">
           <Outlet />
           <Footer />

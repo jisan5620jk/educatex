@@ -68,7 +68,7 @@ const courses = [
     rating: 4.8,
     ratingContent: "/5 Ratings",
     lessons: 10,
-    students: 2000,
+    students: 2001,
     instructor: "Michael B. Jordan",
     instructorImg: instructorImg3,
     bgColor: "bg-PrimaryColor-0 bg-opacity-[7%]",
@@ -177,7 +177,8 @@ const CourseFilter = () => {
             </h5>
           </div>
           <h1 className="font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0">
-            Our Courses – Comprehensive<br /> Available all Programs
+            Our Courses – Comprehensive
+            <br /> Available all Programs
           </h1>
         </div>
 

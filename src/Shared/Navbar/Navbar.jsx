@@ -185,7 +185,7 @@ const Navbar = () => {
   return (
     <div>
       {/* Header Top */}
-      <div className="bg-SecondaryColor-0 px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] flex justify-between items-center border-b border-white border-opacity-10 lg:border-none">
+      <div className="bg-SecondaryColor-0 px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] flex justify-between items-center border-b border-white/10 lg:border-b-none">
         <div className="sm:flex items-center gap-3 hidden">
           <img src={star} draggable={false} alt="Star" />
           <p className="font-OpenSans text-[15px] text-white text-opacity-80">

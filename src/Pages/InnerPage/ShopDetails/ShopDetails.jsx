@@ -51,7 +51,7 @@ const ShopDetails = () => {
       />
       <section className="">
         <div className="Container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-0 p-10 bg-white rounded-2xl shadow-shades relative z-20 -mt-[62px]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 2xl:gap-0 p-4 md:p-10 bg-white rounded-2xl shadow-shades relative z-20 -mt-[62px]">
             <div className="w-full 2xl:pr-[60px]">
               <img
                 src={productImage}
@@ -62,7 +62,7 @@ const ShopDetails = () => {
 
             <div className="">
               <div>
-                <h2 className="font-Outfit text-[32px] font-semibold text-HeadingColor-0 mb-1">
+                <h2 className="font-Outfit text-2xl md:text-[32px] font-semibold text-HeadingColor-0 mb-1">
                   Brave New World
                 </h2>
                 <div className="flex items-center gap-3 mb-3">
@@ -91,7 +91,7 @@ const ShopDetails = () => {
                 </p>
               </div>
 
-              <div className="flex items-center space-x-4 my-9">
+              <div className="flex flex-wrap items-center gap-4 my-9">
                 {/* Quantity Selector */}
                 <div className="flex items-center border border-SecondaryColor-0 border-opacity-10 rounded-full w-[160px] relative">
                   <button
@@ -189,7 +189,7 @@ const ShopDetails = () => {
             className="overflow-hidden transition-all duration-500 ease-in-out"
           >
             <div>
-              <div className="flex items-start gap-3 mt-8">
+              <div className="flex flex-col sm:flex-row items-start gap-3 mt-8">
                 <div className="text-[80px] text-gray-300 -mt-2">
                   <HiUserCircle />
                 </div>

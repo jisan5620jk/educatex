@@ -147,7 +147,7 @@ const BookItem = ({ title, rating, price, oldPrice, itemImage, viewType }) => {
           alt={title}
           draggable={false}
           className={`rounded-md object-cover ${
-            viewType === "list" ? "w-72" : "w-full"
+            viewType === "list" ? "w-20 sm:w-56 md:w-72" : "w-full"
           }`}
         />
       </div>
@@ -156,7 +156,7 @@ const BookItem = ({ title, rating, price, oldPrice, itemImage, viewType }) => {
           viewType === "list" ? "flex-1" : "text-center"
         } flex flex-col justify-center`}
       >
-        <Link to={'/shop_details'} className="font-Outfit font-semibold text-2xl text-HeadingColor-0">{title}</Link>
+        <Link to={'/shop_details'} className="font-Outfit font-semibold text-xl sm:text-2xl text-HeadingColor-0">{title}</Link>
         <div className="flex items-center mt-1">
           <Stars rating={rating} />
           <span className="ml-2 text-sm text-TextColor-0">
@@ -234,7 +234,7 @@ const ShopItem = () => {
           ))}
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
           {booksData.map((book, idx) => (
             <BookItem key={idx} {...book} viewType="grid" />
           ))}

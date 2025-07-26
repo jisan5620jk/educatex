@@ -80,7 +80,7 @@ const courses = [
     rating: 4.8,
     ratingContent: "/5 Ratings",
     lessons: 10,
-    students: 2000,
+    students: 2001,
     instructor: "Michael B. Jordan",
     instructorImg: instructorImg3,
     bgColor: "bg-PrimaryColor-0 bg-opacity-[7%]",
@@ -629,16 +629,18 @@ const CourseDetails = () => {
           </div>
         </div>
       </section>
-          <section className="py-16 md:py-20 lg:py-28">
+      <section className="py-16 md:py-20 lg:py-28">
         <div className="Container">
-          <h1 className="font-Outfit text-HeadingColor-0 text-[42px] font-semibold mb-[52px] text-center">Similiar Course You Like</h1>
+          <h1 className="font-Outfit text-HeadingColor-0 text-[42px] font-semibold mb-[52px] text-center">
+            Similiar Course You Like
+          </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
             {courses.map((course) => (
               <CourseCard key={course.id} {...course} />
             ))}
           </div>
         </div>
-      </section>                
+      </section>
     </>
   );
 };

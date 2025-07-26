@@ -37,7 +37,7 @@ const CourseCard = ({
           {category}
         </span>
 
-        <h3 className="font-Outfit text-xl sm:text-2xl lg:text-[22px] xl:text-2xl font-medium text-HeadingColor-0 transition-all duration-500 2xl:mr-12 group-hover:text-PrimaryColor-0">
+        <h3 className="font-Outfit text-xl sm:text-2xl lg:text-2xl font-medium text-HeadingColor-0 transition-all duration-500 2xl:mr-12 group-hover:text-PrimaryColor-0">
           {title}
         </h3>
 

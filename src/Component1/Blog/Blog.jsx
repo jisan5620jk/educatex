@@ -75,7 +75,7 @@ const Blog = () => {
     loop: true,
     spaceBetween: 30,
     modules: [Autoplay],
-    speed: 2000,
+    speed: 2001,
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
@@ -99,7 +99,8 @@ const Blog = () => {
             </h5>
           </div>
           <h1 className="font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0">
-            Read the Latest Insights and<br /> Updates Educate Blog
+            Read the Latest Insights and
+            <br /> Updates Educate Blog
           </h1>
         </div>
 

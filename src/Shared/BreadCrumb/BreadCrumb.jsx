@@ -5,7 +5,7 @@ import shape2 from '/images/breadcumb-ball.png';
 
 const BreadCrumb = ({ breadCrumbTitle, breadCrumbIcon, breadCrumbLink }) => {
   return (
-    <div className="bg-[url('/images/breadcrumb-bg.png')] bg-no-repeat bg-cover bg-center flex items-center justify-start pt-36 md:pt-52 lg:pt-[258px] pb-20 md:pb-32 lg:pb-[154px] relative z-10">
+    <div className="bg-[url('/images/breadcrumb-bg.png')] bg-no-repeat bg-cover bg-left lg:bg-center flex items-center justify-start pt-36 md:pt-52 lg:pt-[258px] pb-20 md:pb-32 lg:pb-[154px] relative z-10">
       <div className='Container'>
         <h1 className='font-Outfit font-semibold text-4xl sm:text-[40px] md:text-[50px] text-HeadingColor-0 capitalize'>
           {breadCrumbTitle}
@@ -30,7 +30,7 @@ const BreadCrumb = ({ breadCrumbTitle, breadCrumbIcon, breadCrumbLink }) => {
           </li>
         </ul>
       </div>
-      <div className='absolute left-[40%] top-[35%] animate-wiggle hidden lg:block'>
+      <div className='absolute left-[40%] top-[35%] animate-wiggle hidden 2xl:block'>
         <img
           src={shape}
           draggable={false}
