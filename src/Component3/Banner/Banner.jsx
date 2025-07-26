@@ -29,8 +29,8 @@ const Banner = () => {
         />
       </div>
       <div className='Container lg:px-0'>
-        <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0 mt-[70px] lg:mt-[90px]'>
-          <div className='relative'>
+        <div className='grid lg:grid-cols-12 items-center gap-16 lg:gap-0 mt-[70px] lg:mt-[90px]'>
+          <div className='col-span-7 relative'>
             <h1 className='font-Outfit font-semibold text-HeadingColor-0 text-[26px] leading-[32px] sm:text-[36px] sm:leading-[42px] md:text-[56px] md:leading-[62px] lg:text-[42px] lg:leading-[48px] xl:text-[48px] xl:leading-[54px] 2xl:text-[60px] 2xl:leading-[70px]'>
               Unlocking the Magic of <br />
               Learning – Bright Future <br />
@@ -70,11 +70,11 @@ const Banner = () => {
               </div>
             </div>
           </div>
-          <div className='sm:flex justify-center lg:justify-end relative 3xl:-right-[110px] z-10'>
+          <div className='col-span-5 sm:flex justify-center lg:justify-end relative 3xl:-right-[110px] z-10'>
             <img
               src={bannerImg}
               draggable='false'
-              className='2xl:w-[inherit]'
+              className='2xl:w-[inherit] 2xl:max-w-[inherit]'
             />
             <img
               src={bannerShape}

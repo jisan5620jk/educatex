@@ -12,6 +12,7 @@ import itemImage9 from "/images/shop-thumb9.png";
 import { LuLayoutGrid } from "react-icons/lu";
 import { FaList } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const booksData = [
   {
@@ -144,8 +145,9 @@ const BookItem = ({ title, rating, price, oldPrice, itemImage, viewType }) => {
         <img
           src={itemImage}
           alt={title}
+          draggable={false}
           className={`rounded-md object-cover ${
-            viewType === "list" ? "w-64" : "w-full"
+            viewType === "list" ? "w-72" : "w-full"
           }`}
         />
       </div>
@@ -154,14 +156,14 @@ const BookItem = ({ title, rating, price, oldPrice, itemImage, viewType }) => {
           viewType === "list" ? "flex-1" : "text-center"
         } flex flex-col justify-center`}
       >
-        <h3 className="font-semibold text-lg text-gray-900">{title}</h3>
+        <Link to={'/shop_details'} className="font-Outfit font-semibold text-2xl text-HeadingColor-0">{title}</Link>
         <div className="flex items-center mt-1">
           <Stars rating={rating} />
-          <span className="ml-2 text-sm text-gray-600">
+          <span className="ml-2 text-sm text-TextColor-0">
             {rating.toFixed(1)}
           </span>
         </div>
-        <div className="mt-2 text-lg font-bold text-green-600">
+        <div className="mt-2 text-lg font-bold text-PrimaryColor-0">
           ${price}
           {oldPrice && (
             <span className="ml-2 text-sm line-through text-gray-400">

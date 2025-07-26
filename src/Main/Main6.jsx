@@ -70,7 +70,7 @@ const Main6 = () => {
       <Navbar6 />
       <div
         id='smooth-wrapper'
-        className='overflow-hidden h-full pt-28 sm:pt-[120px] lg:pt-[150px]'
+        className='h-full pt-28 sm:pt-[120px] lg:pt-[150px]'
       >
         <div
           id='smooth-content'

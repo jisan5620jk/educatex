@@ -70,7 +70,7 @@ const Main4 = () => {
       <Navbar4 />
       <div
         id='smooth-wrapper'
-        className='overflow-hidden h-full pt-28 sm:pt-[120px] lg:pt-[149px]'
+        className='h-full pt-28 sm:pt-[120px] lg:pt-[149px]'
       >
         <div
           id='smooth-content'
