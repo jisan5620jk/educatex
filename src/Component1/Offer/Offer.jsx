@@ -31,14 +31,15 @@ const Offer = () => {
             </div>
           </div>
           <div className="rounded-[20px] overflow-hidden px-5 sm:px-11 lg:px-6 2xl:px-11 pt-6 sm:pt-[50px] lg:pt-5 2xl:pt-[50px] pb-7 sm:pb-[49px] lg:pb-5 xl:pb-6 2xl:pb-[49px] bg-PrimaryColor-0 bg-opacity-15 relative z-10">
-            <h6 className="bg-BodyBg-0 border border-PrimaryColor-0 border-opacity-30 font-Outfit text-sm text-PrimaryColor-0 px-5 py-[5px] rounded-3xl font-medium mb-4 inline-block">
+            <h6 className="fade-up bg-BodyBg-0 border border-PrimaryColor-0 border-opacity-30 font-Outfit text-sm text-PrimaryColor-0 px-5 py-[5px] rounded-3xl font-medium mb-4 inline-block">
               Designing
             </h6>
-            <h3 className="font-Outfit text-xl sm:text-[28px] font-semibold sm:leading-[36px] text-HeadingColor-0 transition-all duration-500">
-              Creative Graphic Design<br /> With Adobe Suite
+            <h3 className="fade-up font-Outfit text-xl sm:text-[28px] font-semibold sm:leading-[36px] text-HeadingColor-0 transition-all duration-500">
+              Creative Graphic Design
+              <br /> With Adobe Suite
             </h3>
 
-            <div className="flex items-center gap-1 text-ReviewText-0 text-[15px] mt-[14px] mb-3">
+            <div className="fade-up flex items-center gap-1 text-ReviewText-0 text-[15px] mt-[14px] mb-3">
               <BsStarFill />
               <BsStarFill />
               <BsStarFill />
@@ -66,7 +67,7 @@ const Offer = () => {
                 className="w-[70%] md:w-[inherit] xl:w-[84%]"
               />
             </div>
-            <div className="flex items-center gap-4 mb-9 lg:mb-4 xl:mb-9">
+            <div className="fade-up flex items-center gap-4 mb-9 lg:mb-4 xl:mb-9">
               <h5 className="font-Outfit text-[22px] text-PrimaryColor-0">
                 $35
               </h5>
@@ -74,7 +75,7 @@ const Offer = () => {
                 $60
               </h5>
             </div>
-            <div>
+            <div className="fade-up">
               <Link to={"/about"} className="primary-btn2">
                 Enroll Now
                 <HiArrowNarrowRight size={20} />

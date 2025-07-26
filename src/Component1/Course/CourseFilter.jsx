@@ -231,7 +231,7 @@ const CourseFilter = () => {
         </div>
 
         <div
-          className="course-box flex flex-wrap -mx-[1.25%] pt-10 md:pt-[50px]"
+          className="course-box box-row flex flex-wrap -mx-[1.25%] pt-10 md:pt-[50px]"
           data-aos="fade-up"
           data-aos-delay="500"
           data-aos-duration="1000"
@@ -244,7 +244,7 @@ const CourseFilter = () => {
           {courses.map((course, idx) => (
             <div
               key={idx}
-              className={` course-item ${course.bgColor}
+              className={`box course-item ${course.bgColor}
                           ${
                             idx === 0
                               ? "finance"

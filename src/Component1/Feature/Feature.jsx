@@ -53,17 +53,20 @@ const Feature = () => {
       <div className="Container ">
         <div className="relative grid items-center grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="border-b border-SecondaryColor-0 border-opacity-15 pb-6 lg:py-6">
-            <h5 className="font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]">
+            <h5 className="zoom-in font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]">
               core features
             </h5>
           </div>
           <h1 className="font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0">
-            Interactive Online Learning<br /> Key Features & Benefits
+            Interactive Online Learning
+            <br /> Key Features & Benefits
           </h1>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start gap-7 relative z-10 mt-[52px]">
+        <div className="box-row grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start gap-7 relative z-10 mt-[52px]">
           {featureData.map((feature, index) => (
-            <FeatureCard key={index} {...feature} />
+            <div key={index} className="box">
+              <FeatureCard {...feature} />
+            </div>
           ))}
         </div>
       </div>

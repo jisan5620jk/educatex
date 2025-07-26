@@ -9,10 +9,17 @@ import ScrollSmoother from 'gsap/ScrollSmoother';
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
 import HelmetChanger from '../Shared/Helmet/Helmet';
 import ImageReveal from '../Shared/ImageReveal/ImageReveal';
+import TextReveal from '../Shared/TextAnim/TextReveal';
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
 
 const Main2 = () => {
+  //Text Reveal
+
+  TextReveal();
+
+
+
   //image Reveal
 
   ImageReveal();

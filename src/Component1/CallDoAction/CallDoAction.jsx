@@ -18,7 +18,7 @@ const CallDoAction = () => {
             <div className="absolute top-7 -left-20 animate-dance3 lg:hidden xl:block">
               <img src={shape} draggable={false} alt="Shape" />
             </div>
-            <div className="flex items-center gap-7">
+            <div className="fade-up flex items-center gap-7">
               <div>
                 <img
                   src={callDoActionIcon}
@@ -37,7 +37,7 @@ const CallDoAction = () => {
                 </a>
               </div>
             </div>
-            <div className="max-w-[294px] xl:max-w-[230px] 2xl:max-w-[294px] w-full rounded-md bg-white lg:m-[10px] pt-[42px] pb-10">
+            <div className="fade-right max-w-[294px] xl:max-w-[230px] 2xl:max-w-[294px] w-full rounded-md bg-white lg:m-[10px] pt-[42px] pb-10">
               <img src={logo} draggable={logo} alt="Logo" className="mx-auto" />
               <h5 className="font-OpenSans text-TextColor-0 text-center mt-3">
                 <span className="text-PrimaryColor-0">890+</span> Trustpilot 4.9

@@ -11,8 +11,10 @@ import Faq from '../../Component2/Faq/Faq';
 import Feature from '../../Component2/Feature/Feature';
 import Marquee from '../../Component2/Marquee/Marquee';
 import Testimonial from '../../Component2/Testimonial/Testimonial';
+import BoxReveal from '../../Shared/BoxReveal/BoxReveal';
 
 const Home2 = () => {
+  BoxReveal();
   return (
     <>
       <Banner />

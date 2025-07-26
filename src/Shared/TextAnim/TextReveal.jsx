@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -9,6 +11,37 @@ const TextReveal = () => {
     const animateLetters = () => {
       const headings = document.querySelectorAll("h1");
 
+      const wrapTextNodes = (node) => {
+        if (node.nodeType === Node.TEXT_NODE) {
+          const frag = document.createDocumentFragment();
+          node.textContent.split("").forEach((char) => {
+            const span = document.createElement("span");
+            span.className = "inline-block";
+            span.textContent = char === " " ? "\u00A0" : char;
+            frag.appendChild(span);
+          });
+          return frag;
+        } else if (node.nodeType === Node.ELEMENT_NODE) {
+          if (node.nodeName === "BR") {
+            // Preserve <br> tags with all attributes
+            const clonedBR = document.createElement("br");
+            for (const attr of node.attributes) {
+              clonedBR.setAttribute(attr.name, attr.value);
+            }
+            return clonedBR;
+          }
+
+          const cloned = node.cloneNode(false);
+          node.childNodes.forEach((child) => {
+            cloned.appendChild(wrapTextNodes(child));
+          });
+          return cloned;
+        }
+
+        // Return empty fragment for unknown node types
+        return document.createDocumentFragment();
+      };
+
       headings.forEach((heading) => {
         if (heading.dataset.gsapAnimated) return;
 
@@ -16,31 +49,10 @@ const TextReveal = () => {
 
         const originalNodes = Array.from(heading.childNodes);
         heading.innerHTML = ""; // Clear the heading
-
         heading.classList.add("overflow-hidden");
 
         originalNodes.forEach((node) => {
-          if (node.nodeType === Node.TEXT_NODE) {
-            // Handle text content
-            const text = node.textContent;
-
-            text.split("").forEach((char) => {
-              const span = document.createElement("span");
-              span.className = "inline-block";
-              span.textContent = char === " " ? "\u00A0" : char;
-              heading.appendChild(span);
-            });
-          } else if (
-            node.nodeType === Node.ELEMENT_NODE &&
-            node.nodeName === "BR"
-          ) {
-            // Clone the <br> element with all its attributes
-            const clonedBR = document.createElement("br");
-            for (const attr of node.attributes) {
-              clonedBR.setAttribute(attr.name, attr.value);
-            }
-            heading.appendChild(clonedBR);
-          }
+          heading.appendChild(wrapTextNodes(node));
         });
 
         const letters = heading.querySelectorAll("span");
@@ -51,9 +63,9 @@ const TextReveal = () => {
           opacity: 1,
           scale: 1,
           y: 0,
-          duration: 1,
+          duration: 0.15,
           ease: "power3.out",
-          stagger: 0.05,
+          stagger: 0.015,
           scrollTrigger: {
             trigger: heading,
             start: "top 95%",
@@ -65,7 +77,7 @@ const TextReveal = () => {
       ScrollTrigger.refresh();
     };
 
-    const timeout = setTimeout(animateLetters, 100);
+    const timeout = setTimeout(animateLetters, 50);
 
     return () => {
       clearTimeout(timeout);
@@ -73,7 +85,7 @@ const TextReveal = () => {
     };
   }, []);
 
-  return null; // This effect-only component doesn't render anything itself
+  return null; // This component runs effect only
 };
 
 export default TextReveal;

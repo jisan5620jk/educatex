@@ -1,24 +1,19 @@
-import { Outlet } from 'react-router-dom';
-import Navbar from '../Shared/Navbar/Navbar';
-import BackToTop from '../Shared/BackToTop/BackToTop';
-import Footer from '../Shared/Footer/Footer';
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import ScrollSmoother from 'gsap/ScrollSmoother';
-import ScrollToPlugin from 'gsap/ScrollToPlugin';
-import HelmetChanger from '../Shared/Helmet/Helmet';
-import ImageReveal from '../Shared/ImageReveal/ImageReveal';
-import TextReveal from '../Shared/TextAnim/TextReveal';
-import ContentReveal from '../Shared/ContentReveal/ContentReveal';
+import { Outlet } from "react-router-dom";
+import Navbar from "../Shared/Navbar/Navbar";
+import BackToTop from "../Shared/BackToTop/BackToTop";
+import Footer from "../Shared/Footer/Footer";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ScrollSmoother from "gsap/ScrollSmoother";
+import ScrollToPlugin from "gsap/ScrollToPlugin";
+import HelmetChanger from "../Shared/Helmet/Helmet";
+import ImageReveal from "../Shared/ImageReveal/ImageReveal";
+import TextReveal from "../Shared/TextAnim/TextReveal";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
 
 const Main3 = () => {
-//Content Reveal
-
-  ContentReveal();
-  
   //Text Reveal
 
   TextReveal();
@@ -33,8 +28,8 @@ const Main3 = () => {
 
   useEffect(() => {
     smootherRef.current = ScrollSmoother.create({
-      wrapper: '#smooth-wrapper',
-      content: '#smooth-content',
+      wrapper: "#smooth-wrapper",
+      content: "#smooth-content",
       smooth: 1.5,
       effects: true,
       normalizeScroll: true,
@@ -51,8 +46,8 @@ const Main3 = () => {
     const links = document.querySelectorAll('a[href^="#"]');
 
     links.forEach((link) => {
-      link.addEventListener('click', (e) => {
-        const targetId = link.getAttribute('href');
+      link.addEventListener("click", (e) => {
+        const targetId = link.getAttribute("href");
         const targetEl = document.querySelector(targetId);
 
         if (targetEl) {
@@ -61,7 +56,7 @@ const Main3 = () => {
           gsap.to(window, {
             duration: 1.2,
             scrollTo: { y: targetEl, offsetY: 0 },
-            ease: 'power2.inOut',
+            ease: "power2.inOut",
           });
         }
       });
@@ -69,23 +64,17 @@ const Main3 = () => {
 
     // Cleanup
     return () => {
-      links.forEach((link) => link.removeEventListener('click', () => {}));
+      links.forEach((link) => link.removeEventListener("click", () => {}));
     };
   }, []);
 
   return (
     <>
-      <HelmetChanger title={'Online Education'} />
+      <HelmetChanger title={"Online Education"} />
       <BackToTop />
       <Navbar />
-      <div
-        id='smooth-wrapper'
-        className='h-full pt-[52px]'
-      >
-        <div
-          id='smooth-content'
-          className='min-h-screen will-change-transform'
-        >
+      <div id="smooth-wrapper" className="h-full pt-[52px]">
+        <div id="smooth-content" className="min-h-screen will-change-transform">
           <Outlet />
           <Footer />
         </div>
