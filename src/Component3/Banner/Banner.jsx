@@ -36,12 +36,10 @@ const Banner = () => {
               Learning – Bright Future <br />
               Strong Foundation
             </h1>
-            <p className='font-OpenSans text-TextColor2-0 mb-8 mt-5'>
+            <p className='font-OpenSans text-TextColor2-0 mb-8 mt-5 w-full max-w-[530px]'>
               <span className='text-HeadingColor-0'>Educate</span> the ultimate
-              destination for knowledge seekers and educators
-              <br className='lg:block xl:block 2xl:hidden' /> alike.
-              <br className='hidden 2xl:block' /> We are committed to
-              transforming education
+              destination for knowledge seekers and educators alike.
+             We are committed to transforming education
             </p>
             <div className='flex flex-wrap items-center gap-y-5 gap-x-8'>
               <div>
