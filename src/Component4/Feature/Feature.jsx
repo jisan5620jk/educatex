@@ -44,10 +44,10 @@ const Feature = () => {
         />
       </div>
       <div className='Container'>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start gap-7 relative z-10'>
+        <div className='box-row grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start gap-7 relative z-10'>
           {processData.map(({ id, featureIcon, featureTitle, featureUrl }) => {
             return (
-              <div key={id}>
+              <div key={id} className='box'>
                 <FeatureCard
                   featureIcon={featureIcon}
                   featureTitle={featureTitle}

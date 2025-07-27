@@ -16,7 +16,7 @@ const Blog = () => {
       <div className='Container'>
         <div className='flex items-center justify-between flex-wrap gap-4'>
           <div>
-            <h5 className='font-OpenSans font-medium text-sm text-SecondaryColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor2-0 before:rounded-full before:size-[9px]'>
+            <h5 className='zoom-in font-OpenSans font-medium text-sm text-SecondaryColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor2-0 before:rounded-full before:size-[9px]'>
               latest news & blog
             </h5>
             <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-4 mb-4'>
@@ -24,7 +24,7 @@ const Blog = () => {
               <span className='text-PrimaryColor-0'> & Inside</span>
             </h1>
           </div>
-          <div>
+          <div className='fade-right'>
             <Link
               to={'/about'}
               className='primary-btn2'
@@ -35,7 +35,7 @@ const Blog = () => {
           </div>
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-0 mt-8 md:mt-[46px]'>
-          <div className='col-span-1 lg:col-span-5'>
+          <div className='fade-up col-span-1 lg:col-span-5'>
             <div className='p-3 sm:p-6 rounded-[20px] border border-SecondaryColor-0 border-opacity-20'>
               <div className='group bg-white transition-all duration-500 rounded-[20px]'>
                 <div className='relative rounded-[10px] overflow-hidden'>
@@ -74,8 +74,8 @@ const Blog = () => {
               </div>
             </div>
           </div>
-          <div className='col-span-1 lg:col-span-7 space-y-6 lg:ml-10'>
-            <div className='group rounded-[20px] overflow-hidden flex flex-col md:flex-row'>
+          <div className='box-row col-span-1 lg:col-span-7 space-y-6 lg:ml-10'>
+            <div className='box group rounded-[20px] overflow-hidden flex flex-col md:flex-row'>
               <div className='w-full overflow-hidden relative z-10 before:absolute before:-left-3/4 before:top-0 before:w-1/2 before:h-full before:bg-gradient-to-r before:to-transparent before:via-white before:from-transparent before:-skew-x-[20deg] before:opacity-50 group-hover:before:animate-shine'>
                 <img
                   src={blogThumb2}
@@ -123,7 +123,7 @@ const Blog = () => {
                 </div>
               </div>
             </div>
-            <div className='group rounded-[20px] overflow-hidden flex flex-col md:flex-row'>
+            <div className='box group rounded-[20px] overflow-hidden flex flex-col md:flex-row'>
               <div className='w-full overflow-hidden relative z-10 before:absolute before:-left-3/4 before:top-0 before:w-1/2 before:h-full before:bg-gradient-to-r before:to-transparent before:via-white before:from-transparent before:-skew-x-[20deg] before:opacity-50 group-hover:before:animate-shine'>
                 <img
                   src={blogThumb3}

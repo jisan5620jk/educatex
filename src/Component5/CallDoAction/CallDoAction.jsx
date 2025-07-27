@@ -4,7 +4,7 @@ import logo from '/images/call-logo.png';
 
 const CallDoAction = () => {
   return (
-    <section className='relative z-20 bg-PrimaryColor-0 py-4'>
+    <section className='fade-up relative z-20 bg-PrimaryColor-0 py-4'>
       <div className='Container'>
         <div className='grid grid-cols-1 xl:grid-cols-2 lg:items-center'>
           <div className='flex relative'>

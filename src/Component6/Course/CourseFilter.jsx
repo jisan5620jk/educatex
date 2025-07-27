@@ -169,7 +169,7 @@ const CourseFilter = () => {
       <div className="Container lg:px-0">
         <div className="relative grid items-center grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="border-b border-SecondaryColor-0 border-opacity-15 pb-6 lg:py-6">
-            <h5 className="font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]">
+            <h5 className="zoom-in font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]">
               OUR COURSES
             </h5>
           </div>
@@ -181,43 +181,43 @@ const CourseFilter = () => {
 
         <div className="flex items-center justify-center mt-11">
           <div
-            className="button-group filter-button-group relative z-10 inline-block"
+            className="button-group box-row filter-button-group relative z-10 inline-block"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
             <button
               data-filter="*"
-              className="active px-3 sm:px-6 md:px-5 lg:px-[30px] py-[5px] sm:py-[9px] mx-[1px] sm:mx-2 md:mx-1 lg:mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize"
+              className="box active px-3 sm:px-6 md:px-5 lg:px-[30px] py-[5px] sm:py-[9px] mx-[1px] sm:mx-2 md:mx-1 lg:mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize"
             >
               All <span className="hidden lg:inline-block">Categories</span>
             </button>
             <button
               data-filter=".finance"
-              className="hidden md:inline-block px-3 sm:px-6 md:px-5 lg:px-[30px] py-[5px] sm:py-[9px] mx-[1px] sm:mx-2 md:mx-1 lg:mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize"
+              className="box hidden md:inline-block px-3 sm:px-6 md:px-5 lg:px-[30px] py-[5px] sm:py-[9px] mx-[1px] sm:mx-2 md:mx-1 lg:mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize"
             >
               Wordpress
             </button>
             <button
               data-filter=".wordpress"
-              className=" px-3 sm:px-6 md:px-5 lg:px-[30px] py-[5px] sm:py-[9px] mx-[1px] sm:mx-2 md:mx-1 lg:mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize"
+              className="box px-3 sm:px-6 md:px-5 lg:px-[30px] py-[5px] sm:py-[9px] mx-[1px] sm:mx-2 md:mx-1 lg:mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize"
             >
               Business
             </button>
             <button
               data-filter=".networking"
-              className="hidden md:inline-block px-3 sm:px-6 md:px-5 lg:px-[30px] py-[5px] sm:py-[9px] mx-[1px] sm:mx-2 md:mx-1 lg:mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize"
+              className="box hidden md:inline-block px-3 sm:px-6 md:px-5 lg:px-[30px] py-[5px] sm:py-[9px] mx-[1px] sm:mx-2 md:mx-1 lg:mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize"
             >
               Networking
             </button>
             <button
               data-filter=".finance"
-              className="px-3 sm:px-6 md:px-5 lg:px-[30px] py-[6px] sm:py-[9px] mx-[1px] sm:mx-2 md:mx-1 lg:mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize"
+              className="box px-3 sm:px-6 md:px-5 lg:px-[30px] py-[6px] sm:py-[9px] mx-[1px] sm:mx-2 md:mx-1 lg:mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize"
             >
               Finance
             </button>
             <button
               data-filter=".wordpress"
-              className="px-3 sm:px-6 md:px-5 lg:px-[30px] py-[5px] sm:py-[9px] mx-[1px] sm:mx-2 md:mx-1 lg:mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize"
+              className="box px-3 sm:px-6 md:px-5 lg:px-[30px] py-[5px] sm:py-[9px] mx-[1px] sm:mx-2 md:mx-1 lg:mx-2 rounded-full relative z-10 transition-all duration-500 font-Outfit text-sm sm:text-base font-medium text-HeadingColor-0 bg-PrimaryColor3-0 bg-opacity-10  capitalize"
             >
               Designing
             </button>

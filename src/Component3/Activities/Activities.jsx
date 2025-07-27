@@ -47,8 +47,8 @@ const Activities = () => {
         />
       </div>
       <div className='Container'>
-        <div className='grid grid-cols-1 gap-7 lg:gap-0 lg:grid-cols-2 items-center'>
-          <div>
+        <div className='box-row grid grid-cols-1 gap-7 lg:gap-0 lg:grid-cols-2 items-center'>
+          <div className='box'>
             <h5 className='font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center gap-3'>
               <img
                 src={subTilteIcon}
@@ -63,7 +63,7 @@ const Activities = () => {
               Physical Activities for Kids
             </h1>
           </div>
-          <div className='xl:pr-8 flex lg:justify-end'>
+          <div className='box xl:pr-8 flex lg:justify-end'>
             <p className='font-OpenSans text-TextColor-0 max-w-[500px] w-full'>
               Educate the ultimate destination for knowledge seekers educators
               We are committed to transforming special education impact global
@@ -71,8 +71,8 @@ const Activities = () => {
             </p>
           </div>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center gap-x-6 gap-y-3 mt-8'>
-          <div className='group bg-[url("/images/activite-bg1.png")] bg-cover bg-center bg-no-repeat flex items-start gap-7 pt-8 sm:pt-10 md:pt-7 lg:pt-10 xl:pt-8 2xl:pt-10 pl-4 sm:pl-8 pr-3 sm:pr-7 h-[160px] rounded-[20px] transition-all duration-500 relative z-10'>
+        <div className='box-row grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center gap-x-6 gap-y-3 mt-8'>
+          <div className='box group bg-[url("/images/activite-bg1.png")] bg-cover bg-center bg-no-repeat flex items-start gap-7 pt-8 sm:pt-10 md:pt-7 lg:pt-10 xl:pt-8 2xl:pt-10 pl-4 sm:pl-8 pr-3 sm:pr-7 h-[160px] rounded-[20px] transition-all duration-500 relative z-10'>
             <div className='mb-6'>
               <img
                 src={Icon}
@@ -93,7 +93,7 @@ const Activities = () => {
               </p>
             </div>
           </div>
-          <div className='group bg-[url("/images/activite-bg2.png")] bg-cover bg-center bg-no-repeat flex items-start gap-7 pt-8 sm:pt-10 md:pt-7 lg:pt-10 xl:pt-8 2xl:pt-10 pl-4 sm:pl-8 pr-3 sm:pr-7 h-[160px] rounded-[20px] transition-all duration-500 relative z-10'>
+          <div className='box group bg-[url("/images/activite-bg2.png")] bg-cover bg-center bg-no-repeat flex items-start gap-7 pt-8 sm:pt-10 md:pt-7 lg:pt-10 xl:pt-8 2xl:pt-10 pl-4 sm:pl-8 pr-3 sm:pr-7 h-[160px] rounded-[20px] transition-all duration-500 relative z-10'>
             <div className='mb-6'>
               <img
                 src={Icon2}
@@ -114,7 +114,7 @@ const Activities = () => {
               </p>
             </div>
           </div>
-          <div className='group bg-[url("/images/activite-bg1.png")] bg-cover bg-center bg-no-repeat flex items-start gap-7 pt-8 sm:pt-10 md:pt-7 lg:pt-10 xl:pt-8 2xl:pt-10 pl-4 sm:pl-8 pr-3 sm:pr-7 h-[160px] rounded-[20px] transition-all duration-500 relative z-10'>
+          <div className='box group bg-[url("/images/activite-bg1.png")] bg-cover bg-center bg-no-repeat flex items-start gap-7 pt-8 sm:pt-10 md:pt-7 lg:pt-10 xl:pt-8 2xl:pt-10 pl-4 sm:pl-8 pr-3 sm:pr-7 h-[160px] rounded-[20px] transition-all duration-500 relative z-10'>
             <div className='mb-6'>
               <img
                 src={Icon3}
@@ -135,7 +135,7 @@ const Activities = () => {
               </p>
             </div>
           </div>
-          <div className='group bg-[url("/images/activite-bg4.png")] bg-cover bg-center bg-no-repeat flex items-start gap-7 pt-8 sm:pt-10 md:pt-7 lg:pt-10 xl:pt-8 2xl:pt-10 pl-4 sm:pl-8 pr-3 sm:pr-7 h-[160px] rounded-[20px] transition-all duration-500 relative z-10'>
+          <div className='box group bg-[url("/images/activite-bg4.png")] bg-cover bg-center bg-no-repeat flex items-start gap-7 pt-8 sm:pt-10 md:pt-7 lg:pt-10 xl:pt-8 2xl:pt-10 pl-4 sm:pl-8 pr-3 sm:pr-7 h-[160px] rounded-[20px] transition-all duration-500 relative z-10'>
             <div className='mb-6'>
               <img
                 src={Icon4}
@@ -156,7 +156,7 @@ const Activities = () => {
               </p>
             </div>
           </div>
-          <div className='group bg-[url("/images/activite-bg5.png")] bg-cover bg-center bg-no-repeat flex items-start gap-7 pt-8 sm:pt-10 md:pt-7 lg:pt-10 xl:pt-8 2xl:pt-10 pl-4 sm:pl-8 pr-3 sm:pr-7 h-[160px] rounded-[20px] transition-all duration-500 relative z-10'>
+          <div className='box group bg-[url("/images/activite-bg5.png")] bg-cover bg-center bg-no-repeat flex items-start gap-7 pt-8 sm:pt-10 md:pt-7 lg:pt-10 xl:pt-8 2xl:pt-10 pl-4 sm:pl-8 pr-3 sm:pr-7 h-[160px] rounded-[20px] transition-all duration-500 relative z-10'>
             <div className='mb-6'>
               <img
                 src={Icon5}
@@ -178,7 +178,7 @@ const Activities = () => {
             </div>
           </div>
 
-          <div className='group bg-[url("/images/activite-bg6.png")] bg-cover bg-center bg-no-repeat flex items-center justify-center h-[160px] rounded-[10px]'>
+          <div className='box group bg-[url("/images/activite-bg6.png")] bg-cover bg-center bg-no-repeat flex items-center justify-center h-[160px] rounded-[10px]'>
             <div>
               <Link
                 to={'/about'}

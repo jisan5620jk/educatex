@@ -60,20 +60,20 @@ const About = () => {
             </div>
           </div>
           <div className="relative">
-            <h5 className="font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center gap-3">
+            <h5 className="zoom-in font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center gap-3">
               <img src={subTilteIcon} draggable={false} alt="Icon" /> About Us
             </h5>
             <h1 className="font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 md:mt-[14px] mb-4">
               Who We Are – Introduction to<br /> Educate Online Platform
             </h1>
-            <p className="font-OpenSans text-TextColor-0 max-w-[570px] w-full">
+            <p className="fade-up font-OpenSans text-TextColor-0 max-w-[570px] w-full">
               Educate the ultimate destination for knowledge seekers and
               educators alike. We are committed to transforming special
               education impact global channels without standards compliant
               systems
             </p>
-            <ul className="space-y-4 my-7">
-              <li className="flex items-center gap-[10px]">
+            <ul className="box-row space-y-4 my-7">
+              <li className="box flex items-center gap-[10px]">
                 <div>
                   <img src={itemIcon} draggable={false} alt="Icon" />
                 </div>
@@ -81,7 +81,7 @@ const About = () => {
                   Course Catalog & Program Information
                 </h5>
               </li>
-              <li className="flex items-center gap-[10px]">
+              <li className="box flex items-center gap-[10px]">
                 <div>
                   <img src={itemIcon} draggable={false} alt="Icon" />
                 </div>
@@ -89,7 +89,7 @@ const About = () => {
                   Online Application & Admission Process
                 </h5>
               </li>
-              <li className="flex items-center gap-[10px]">
+              <li className="box flex items-center gap-[10px]">
                 <div>
                   <img src={itemIcon} draggable={false} alt="Icon" />
                 </div>
@@ -98,7 +98,7 @@ const About = () => {
                 </h5>
               </li>
             </ul>
-            <div className="flex items-center gap-4 pt-1 pb-10">
+            <div className="fade-up flex items-center gap-4 pt-1 pb-10">
               <div>
                 <img src={aboutIcon} draggable={false} alt="Icon" />
               </div>

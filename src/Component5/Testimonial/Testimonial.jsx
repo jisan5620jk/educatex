@@ -56,12 +56,12 @@ const Testimonial = () => {
   return (
     <section className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] mt-16 md:mt-20 lg:mt-28'>
       <div className='bg-white rounded-xl sm:rounded-2xl md:rounded-[30px] relative z-10 pb-16 md:pb-20 lg:pb-28 overflow-hidden'>
-        <div className='Container'>
+        <div className='box-row Container'>
           <Swiper
             {...settings}
           >
             {testiData.map((data, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={index} className='box'>
                 <TestimonialCard
                   {...data}
                   isActive={activeIndex === index}

@@ -13,13 +13,13 @@ const NewsletterForm = () => {
       </div>
       <div className="Container">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
-          <h2 className="text-xl md:text-[40px] md:leading-[50px] lg:text-[36px] lg:leading-[46px] 2xl:text-[40px] 2xl:leading-[50px] font-semibold font-Outfit text-HeadingColor-0 text-left">
+          <h2 className="fade-up text-xl md:text-[40px] md:leading-[50px] lg:text-[36px] lg:leading-[46px] 2xl:text-[40px] 2xl:leading-[50px] font-semibold font-Outfit text-HeadingColor-0 text-left">
             Subscribe Our Newsletter For<br /> Regular Updates
           </h2>
 
           <form
             action="#"
-            className="flex sm:gap-7 items-center rounded-full overflow-hidden relative z-10"
+            className="fade-right flex sm:gap-7 items-center rounded-full overflow-hidden relative z-10"
           >
             <div className="relative">
               <div className="absolute left-6 top-1/2 -translate-y-1/2 flex items-center text-gray-500">

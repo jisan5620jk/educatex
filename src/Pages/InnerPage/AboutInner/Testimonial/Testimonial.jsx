@@ -94,13 +94,13 @@ const Testimonial = () => {
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 xl:gap-7 2xl:gap-10 relative z-10">
           <div className="lg:col-span-1">
-            <h5 className="font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center gap-3">
+            <h5 className="zoom-in font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center gap-3">
               <img src={subTilteIcon} draggable={false} alt="Icon" /> Testimonial
             </h5>
             <h1 className="font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 md:mt-[14px] mb-4">
               All Real Experiences<br /> From Our Dedicated<br /> Learners
             </h1>
-            <div className="mt-10 border-b border-SecondaryColor-0 border-opacity-10 pb-6">
+            <div className="fade-up mt-10 border-b border-SecondaryColor-0 border-opacity-10 pb-6">
               <div>
                 <img src={user} draggable={false} alt="User Image" />
               </div>
@@ -113,13 +113,13 @@ const Testimonial = () => {
               </div>
             </div>
           </div>
-          <div className="lg:col-span-2 relative">
+          <div className="box-row lg:col-span-2 relative">
             <Swiper
               {...settings}
               onSwiper={(swiper) => (swiperRef.current = swiper)}
             >
               {testiData.map((testimonial) => (
-                <SwiperSlide key={testimonial.id}>
+                <SwiperSlide key={testimonial.id} className="box">
                   <div className="pb-16 lg:pb-0">
                     <TestimonialCard {...testimonial} />
                   </div>

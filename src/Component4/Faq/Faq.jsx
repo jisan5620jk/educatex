@@ -37,7 +37,7 @@ const Faq = () => {
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 lg:gap-7 2xl:gap-0 items-end'>
           <div>
-            <h5 className='font-OpenSans font-medium text-sm text-SecondaryColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor2-0 before:rounded-full before:size-[9px]'>
+            <h5 className='zoom-in font-OpenSans font-medium text-sm text-SecondaryColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor2-0 before:rounded-full before:size-[9px]'>
               Free Consultation
             </h5>
             <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-4 mb-8 md:mb-[62px]'>
@@ -54,11 +54,11 @@ const Faq = () => {
             </div>
           </div>
           <div className='max-w-[602px] w-full lg:ml-auto'>
-            <p className='font-OpenSans text-TextColor-0 text-[17px] w-full max-w-[575px] mt-7 lg:mt-0 mb-9'>
+            <p className='fade-up font-OpenSans text-TextColor-0 text-[17px] w-full max-w-[575px] mt-7 lg:mt-0 mb-9'>
               Memorizing the Quran (Hifz) brings immense spiritual rewards,
               strengs memory, and increases closeness to
             </p>
-            <div className='mt-10 space-y-[30px]'>
+            <div className='box-row mt-10 space-y-[30px]'>
               {faqs.map((faq, index) => {
                 const isOpen = openIndex === index;
                 const ref = (contentRefs.current[index] ||= React.createRef());
@@ -66,7 +66,7 @@ const Faq = () => {
                 return (
                   <div
                     key={index}
-                    className={`rounded-xl transition-all duration-500 border border-SecondaryColor-0 border-opacity-20 ${
+                    className={`box rounded-xl transition-all duration-500 border border-SecondaryColor-0 border-opacity-20 ${
                       isOpen ? 'bg-white border-transparent' : 'bg-transparent'
                     }`}
                   >

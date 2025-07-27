@@ -131,7 +131,7 @@ const Course = () => {
       <div className='Container lg:px-0'>
         <div className='relative grid items-center grid-cols-1 lg:grid-cols-2 gap-8'>
           <div className='border-b border-SecondaryColor-0 border-opacity-15 pb-6 lg:py-6'>
-            <h5 className='font-Outfit font-medium text-PrimaryColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
+            <h5 className='zoom-in font-Outfit font-medium text-PrimaryColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
               OUR COURSES
             </h5>
           </div>
@@ -146,11 +146,11 @@ const Course = () => {
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 3xl:pl-20 gap-y-10 lg:gap-0'>
           <div className='col-span-1 relative z-10'>
             {/* Tab Buttons */}
-            <div className='space-y-5 lg:mr-10 2xl:mr-20 w-full lg:w-auto'>
+            <div className='box-row space-y-5 lg:mr-10 2xl:mr-20 w-full lg:w-auto'>
               {tabs.map((tab, index) => (
                 <div
                   key={index}
-                  className='course-tab-btn'
+                  className='box course-tab-btn'
                 >
                   <button
                     onClick={() => setActiveIndex(index)}
@@ -232,7 +232,7 @@ const Course = () => {
             {[0, 1, 2, 3].map((index) => (
               <div
                 key={index}
-                className={`col-span-2 transition-opacity duration-500 ${
+                className={`box-row col-span-2 transition-opacity duration-500 ${
                   activeIndex === index
                     ? 'opacity-100 visible block animate-fadeInUp'
                     : 'opacity-0 invisible hidden pointer-events-none'
@@ -243,7 +243,7 @@ const Course = () => {
                   className='pr-0 md:!pr-20'
                 >
                   {courses.map((course) => (
-                    <SwiperSlide key={course.id}>
+                    <SwiperSlide key={course.id} className='box'>
                       <div className='course-box pb-20 lg:pb-0'>
                         <CourseCard {...course} />
                       </div>

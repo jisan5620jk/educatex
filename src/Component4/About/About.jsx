@@ -60,7 +60,7 @@ const About = () => {
             </div>
           </div>
           <div className='relative'>
-            <h5 className='font-OpenSans font-medium text-sm text-SecondaryColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor2-0 before:rounded-full before:size-[9px]'>
+            <h5 className='zoom-in font-OpenSans font-medium text-sm text-SecondaryColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor2-0 before:rounded-full before:size-[9px]'>
               about our educate
             </h5>
             <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-4 mb-4'>
@@ -68,38 +68,38 @@ const About = () => {
               <br />
               for Kids <span className='text-PrimaryColor-0'>and Adults</span>
             </h1>
-            <p className='font-OpenSans text-TextColor-0 text-[17px] w-full max-w-[500px] mb-9'>
+            <p className='fade-up font-OpenSans text-TextColor-0 text-[17px] w-full max-w-[500px] mb-9'>
               Experience future of learning our education-focused to main
               backgroud courses pro designed to and empower learners courses
               combine teaching tools.
             </p>
-            <ul className='w-full max-w-[430px] grid gap-x-9 gap-y-6 grid-cols-1 sm:grid-cols-2'>
-              <li>
+            <ul className='box-row w-full max-w-[430px] grid gap-x-9 gap-y-6 grid-cols-1 sm:grid-cols-2'>
+              <li className='box'>
                 <h5 className='font-Outfit font-medium text-SecondaryColor-0 uppercase pl-5 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor2-0 before:rounded-full before:size-[9px]'>
                   Create Your Profile
                 </h5>
               </li>
-              <li>
+              <li className='box'>
                 <h5 className='font-Outfit font-medium text-SecondaryColor-0 uppercase pl-5 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor2-0 before:rounded-full before:size-[9px]'>
                   Set Your Schedule
                 </h5>
               </li>
-              <li>
+              <li className='box'>
                 <h5 className='font-Outfit font-medium text-SecondaryColor-0 uppercase pl-5 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor2-0 before:rounded-full before:size-[9px]'>
                   Connect Students
                 </h5>
               </li>
-              <li>
+              <li className='box'>
                 <h5 className='font-Outfit font-medium text-SecondaryColor-0 uppercase pl-5 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor2-0 before:rounded-full before:size-[9px]'>
                   Start Tutoring
                 </h5>
               </li>
             </ul>
-            <p className='font-OpenSans text-TextColor-0 text-[17px] w-full max-w-[500px] mt-8 mb-12'>
+            <p className='fade-up font-OpenSans text-TextColor-0 text-[17px] w-full max-w-[500px] mt-8 mb-12'>
               Backgroud courses pro designed to and empower learners courses
               combine teaching tools.
             </p>
-            <div>
+            <div className='fade-up'>
               <Link
                 to={'/about'}
                 className='primary-btn2'

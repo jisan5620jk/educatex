@@ -58,7 +58,7 @@ const About = () => {
             </div>
           </div>
           <div className='col-span-1 lg:col-span-5 relative'>
-            <h5 className='font-OpenSans bg-white bg-opacity-20 pl-4 pr-5 py-[7px] rounded-r-full border border-PrimaryColor-0 border-opacity-20 text-HeadingColor-0 text-sm inline-flex items-center gap-2 uppercase'>
+            <h5 className='zoom-in font-OpenSans bg-white bg-opacity-20 pl-4 pr-5 py-[7px] rounded-r-full border border-PrimaryColor-0 border-opacity-20 text-HeadingColor-0 text-sm inline-flex items-center gap-2 uppercase'>
               <span className='text-PrimaryColor2-0'>
                 <FaCircle size={10} />
               </span>
@@ -69,12 +69,12 @@ const About = () => {
               <br />
               Online <span className='text-PrimaryColor-0'>Teaching</span>
             </h1>
-            <p className='font-OpenSans text-TextColor-0 text-[17px] w-full max-w-[500px] mb-9'>
+            <p className='fade-up font-OpenSans text-TextColor-0 text-[17px] w-full max-w-[500px] mb-9'>
               Experience future of learning our education-focused to main
               backgroud courses pro designed to and empower learners courses
               combine teaching tools.
             </p>
-            <h5 className='font-Outfit font-medium text-SecondaryColor-0 text-xl flex items-end gap-5'>
+            <h5 className='fade-up font-Outfit font-medium text-SecondaryColor-0 text-xl flex items-end gap-5'>
               <img
                 src={icon}
                 draggable={false}
@@ -82,11 +82,11 @@ const About = () => {
               />
               Flexible Shedule Classes
             </h5>
-            <p className='font-OpenSans text-TextColor-0 text-[17px] w-full max-w-[500px] mt-8 mb-12'>
+            <p className='fade-up font-OpenSans text-TextColor-0 text-[17px] w-full max-w-[500px] mt-8 mb-12'>
               Backgroud courses pro designed to and empower learners courses
               combine teaching tools.
             </p>
-            <div>
+            <div className='fade-up'>
               <Link
                 to={'/about'}
                 className='primary-btn2'

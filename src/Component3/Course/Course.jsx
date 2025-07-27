@@ -151,7 +151,7 @@ const Course = () => {
       </div>
       <div className='Container'>
         <div className='text-center'>
-          <h5 className='font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center justify-center gap-3'>
+          <h5 className='zoom-in font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center justify-center gap-3'>
             <img
               src={subTilteIcon}
               draggable={false}
@@ -167,13 +167,13 @@ const Course = () => {
       </div>
 
       <div className='w-full sm:w-[540px] md:w-[720px] lg:w-[960px] xl:w-[1140px] 2xl:w-[1350px] 3xl:w-[1450px] px-2 md:px-3 lg:px-4 mx-auto pt-5 md:pt-11'>
-        <div className='relative z-10 pr-0 lg:px-[50px] 2xl:px-[70px]'>
+        <div className='box-row relative z-10 pr-0 lg:px-[50px] 2xl:px-[70px]'>
           <Swiper
             {...settings}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
             {courses.map((course) => (
-              <SwiperSlide key={course.id}>
+              <SwiperSlide key={course.id} className='box'>
                 <div className='pb-20 lg:pb-0'>
                   <CourseCard {...course} />
                 </div>

@@ -9,7 +9,7 @@ const Marquee = () => {
   ];
 
   return (
-    <div className='w-full overflow-hidden whitespace-nowrap bg-PrimaryColor-0 pt-14 pb-12'>
+    <div className='fade-up w-full overflow-hidden whitespace-nowrap bg-PrimaryColor-0 pt-14 pb-12'>
       <div className='inline-flex will-change-transform overflow-hidden animate-marquee transition-all hover:animate-paused'>
         {marqueeItems.concat(marqueeItems).map((text, index) => (
           <>

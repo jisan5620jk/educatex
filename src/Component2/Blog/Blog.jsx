@@ -105,10 +105,10 @@ const Blog = () => {
           </h1>
         </div>
 
-        <div className="mt-[46px]">
+        <div className="mt-[46px] box-row">
           <Swiper {...settings}>
             {blogData.map((item) => (
-              <SwiperSlide key={item.id}>
+              <SwiperSlide key={item.id} className="box">
                 <BlogCard {...item} />
               </SwiperSlide>
             ))}

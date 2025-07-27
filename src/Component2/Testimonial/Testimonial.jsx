@@ -113,7 +113,7 @@ const Testimonial = () => {
       <div className='Container'>
         <div className='relative grid items-center grid-cols-1 lg:grid-cols-2 gap-8'>
           <div className='border-b border-white border-opacity-15 py-6'>
-            <h5 className='font-Outfit font-medium text-PrimaryColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
+            <h5 className='zoom-in font-Outfit font-medium text-PrimaryColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
               TESTIMONIALS
             </h5>
           </div>
@@ -124,10 +124,10 @@ const Testimonial = () => {
           </h1>
         </div>
 
-        <div className='mt-[46px] relative'>
+        <div className='box-row mt-[46px] relative'>
           <Swiper {...settings}>
             {testiData.map((testimonial) => (
-              <SwiperSlide key={testimonial.id}>
+              <SwiperSlide key={testimonial.id} className='box'>
                 <div className='pb-16'>
                   <TestimonialCard {...testimonial} />
                 </div>

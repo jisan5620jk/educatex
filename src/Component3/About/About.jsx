@@ -33,7 +33,7 @@ const About = () => {
             />
           </div>
           <div className='relative'>
-            <h5 className='font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center gap-3'>
+            <h5 className='zoom-in font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center gap-3'>
               <img
                 src={subTilteIcon}
                 draggable={false}
@@ -46,8 +46,8 @@ const About = () => {
               <br />
               Educate Online Platform
             </h1>
-            <div className='grid grid-cols-1 sm:grid-cols-2 items-center gap-5 mt-8 mb-9'>
-              <div className='bg-PrimaryColor-0 bg-opacity-[7%] h-[316px] flex flex-col justify-between rounded-[20px] px-7 lg:px-4 xl:px-7 pt-8 pb-9'>
+            <div className='box-row grid grid-cols-1 sm:grid-cols-2 items-center gap-5 mt-8 mb-9'>
+              <div className='box bg-PrimaryColor-0 bg-opacity-[7%] h-[316px] flex flex-col justify-between rounded-[20px] px-7 lg:px-4 xl:px-7 pt-8 pb-9'>
                 <div>
                   <h4 className='font-Outfit text-HeadingColor-0 font-medium text-[26px]'>
                     Our Mission
@@ -99,7 +99,7 @@ const About = () => {
                   </li>
                 </ul>
               </div>
-              <div className='bg-PrimaryColor2-0 bg-opacity-[7%] h-[316px] flex flex-col justify-between rounded-[20px] px-7 pt-8 pb-9'>
+              <div className='box bg-PrimaryColor2-0 bg-opacity-[7%] h-[316px] flex flex-col justify-between rounded-[20px] px-7 pt-8 pb-9'>
                 <div className=''>
                   <div className='text-5xl md:text-[56px] lg:text-[56px] leading-[56px] tracking-wide font-semibold font-Outfit text-PrimaryColor2-0 inline-flex items-center relative'>
                     <OnScrollCounter
@@ -142,7 +142,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <div className='fade-up'>
               <Link
                 to={'/about'}
                 className='primary-btn2'

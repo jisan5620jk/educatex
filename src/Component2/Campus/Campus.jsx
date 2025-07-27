@@ -44,7 +44,7 @@ const Campus = () => {
             </div>
           </div>
           <div className='relative'>
-            <h5 className='font-Outfit font-medium text-PrimaryColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
+            <h5 className='zoom-in font-Outfit font-medium text-PrimaryColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
               campus life
             </h5>
             <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 md:mt-[14px] mb-4'>
@@ -58,8 +58,8 @@ const Campus = () => {
               education impact global channels without standards compliant
               systems
             </p>
-            <ul className='flex flex-col sm:flex-row items-center gap-5 my-9'>
-              <li className='text-center group w-full bg-PrimaryColor-0 bg-opacity-10 rounded-[20px] px-7 sm:px-3 md:px-7 lg:px-2 xl:px-3 2xl:px-7 pt-10 pb-8 relative z-10 overflow-hidden'>
+            <ul className='box-row flex flex-col sm:flex-row items-center gap-5 my-9'>
+              <li className='box text-center group w-full bg-PrimaryColor-0 bg-opacity-10 rounded-[20px] px-7 sm:px-3 md:px-7 lg:px-2 xl:px-3 2xl:px-7 pt-10 pb-8 relative z-10 overflow-hidden'>
                 <div>
                   <span className='absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-0'></span>
                   <span className='absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor-0 group-hover:w-[25%] group-hover:left-[25%]'></span>
@@ -78,7 +78,7 @@ const Campus = () => {
                   Student Accomodations
                 </h5>
               </li>
-              <li className='text-center group w-full bg-PrimaryColor2-0 bg-opacity-10 rounded-[20px] px-7 sm:px-3 md:px-7 lg:px-2 xl:px-3 2xl:px-7 pt-10 pb-8 relative z-10 overflow-hidden'>
+              <li className='box text-center group w-full bg-PrimaryColor2-0 bg-opacity-10 rounded-[20px] px-7 sm:px-3 md:px-7 lg:px-2 xl:px-3 2xl:px-7 pt-10 pb-8 relative z-10 overflow-hidden'>
                 <div>
                   <span className='absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor2-0 group-hover:w-[25%] group-hover:left-0'></span>
                   <span className='absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor2-0 group-hover:w-[25%] group-hover:left-[25%]'></span>
@@ -97,7 +97,7 @@ const Campus = () => {
                   Gym and Sports Facilities
                 </h5>
               </li>
-              <li className='text-center group w-full bg-PrimaryColor3-0 bg-opacity-10 rounded-[20px] px-7 sm:px-3 md:px-7 lg:px-2 xl:px-3 2xl:px-7 pt-10 pb-8 relative z-10 overflow-hidden'>
+              <li className='box text-center group w-full bg-PrimaryColor3-0 bg-opacity-10 rounded-[20px] px-7 sm:px-3 md:px-7 lg:px-2 xl:px-3 2xl:px-7 pt-10 pb-8 relative z-10 overflow-hidden'>
                 <div>
                   <span className='absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor3-0 group-hover:w-[25%] group-hover:left-0'></span>
                   <span className='absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 -z-10 bg-PrimaryColor3-0 group-hover:w-[25%] group-hover:left-[25%]'></span>
@@ -117,7 +117,7 @@ const Campus = () => {
                 </h5>
               </li>
             </ul>
-            <div>
+            <div className='fade-up'>
               <Link
                 to={'/campus'}
                 className='primary-btn2'

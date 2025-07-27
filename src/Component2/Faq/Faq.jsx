@@ -103,7 +103,7 @@ const Faq = () => {
           </div>
           <div className='relative z-10 lg:pb-20'>
             <div>
-              <h5 className='font-Outfit font-medium text-PrimaryColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
+              <h5 className='zoom-in font-Outfit font-medium text-PrimaryColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]'>
                 freequently asked question
               </h5>
               <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 md:mt-[14px] mb-4'>
@@ -112,11 +112,11 @@ const Faq = () => {
                 Educate University?
               </h1>
             </div>
-            <ul className='space-y-5 mt-8'>
+            <ul className='box-row space-y-5 mt-8'>
               {faqData.map((faq, index) => (
                 <li
                   key={index}
-                  className='rounded-lg bg-white'
+                  className='box rounded-lg bg-white'
                 >
                   <div className=''>
                     <div
@@ -167,7 +167,7 @@ const Faq = () => {
                 </li>
               ))}
             </ul>
-            <div className='mt-10'>
+            <div className='fade-up mt-10'>
               <Link
                 to={'/about'}
                 className='primary-btn2'

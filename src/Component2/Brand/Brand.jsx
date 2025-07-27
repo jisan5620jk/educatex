@@ -29,7 +29,7 @@ const Brand = () => {
   };
 
   return (
-    <section className="bg-BodyBg-0 py-14 md:py-[70px] relative z-10">
+    <section className="fade-up bg-BodyBg-0 py-14 md:py-[70px] relative z-10">
       <div className="Container">
         <Swiper {...settings}>
           <SwiperSlide>

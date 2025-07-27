@@ -62,7 +62,7 @@ const Service = () => {
       </div>
       <div className='Container'>
         <div className='text-center'>
-          <h5 className='font-Outfit text-sm text-PrimaryColor-0 uppercase pb-1 relative z-10 before:absolute before:left-1/2 before:top-full before:-translate-x-1/2 before:w-[48%] md:before:w-[11%] before:h-[.5px] before:bg-gradient-to-r before:to-SecondaryColor-0 before:via-PrimaryColor-0 before:from-SecondaryColor-0'>
+          <h5 className='zoom-in font-Outfit text-sm text-PrimaryColor-0 uppercase pb-1 relative z-10 before:absolute before:left-1/2 before:top-full before:-translate-x-1/2 before:w-[48%] md:before:w-[11%] before:h-[.5px] before:bg-gradient-to-r before:to-SecondaryColor-0 before:via-PrimaryColor-0 before:from-SecondaryColor-0'>
             learn & place
           </h5>
           <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[18px] mb-4'>
@@ -70,7 +70,7 @@ const Service = () => {
             <span className='text-PrimaryColor-0'>Learning</span>
           </h1>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-7 mt-8 md:mt-[58px]'>
+        <div className='box-row grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-7 mt-8 md:mt-[58px]'>
           {serviceCard.map(
             ({
               id,
@@ -83,7 +83,7 @@ const Service = () => {
               serviceShape,
               serviceShape2,
             }) => (
-              <div key={id}>
+              <div key={id} className='box'>
                 <ServiceCard
                   serviceIcon={serviceIcon}
                   serviceTitle={serviceTitle}

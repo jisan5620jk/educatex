@@ -36,19 +36,19 @@ const Feature = () => {
             </div>
           </div>
           <div className="lg:col-span-5 relative 2xl:pl-4">
-            <h5 className="font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]">
+            <h5 className="zoom-in font-Outfit font-medium text-HeadingColor-0 uppercase pl-4 relative z-10 before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:bg-PrimaryColor-0 before:size-[6px]">
               Our Features
             </h5>
             <h1 className="font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[40px] 2xl:leading-[50px] text-HeadingColor-0 mt-2 md:mt-[14px] mb-4">
               Upgrade Your Skills with the<br /> Newest Trends
             </h1>
-            <p className="font-OpenSans text-TextColor2-0 max-w-[430px] w-full">
+            <p className="fade-up font-OpenSans text-TextColor2-0 max-w-[430px] w-full">
               Combining a rich history cutting-edge technology this fostering
               academic and personal Conveniently architect meta-services through
               whiteboard world-class
             </p>
-            <ul className="space-y-4 my-7">
-              <li className="flex items-center gap-[10px]">
+            <ul className="box-row space-y-4 my-7">
+              <li className="box flex items-center gap-[10px]">
                 <div className="size-6 rounded-full flex items-center justify-center bg-PrimaryColor-0 text-white">
                   <GiCheckMark />
                 </div>
@@ -56,7 +56,7 @@ const Feature = () => {
                   Flexible Courses to Match Your Unique Needs
                 </h5>
               </li>
-              <li className="flex items-center gap-[10px]">
+              <li className="box flex items-center gap-[10px]">
                 <div className="size-6 rounded-full flex items-center justify-center bg-PrimaryColor-0 text-white">
                   <GiCheckMark />
                 </div>
@@ -64,7 +64,7 @@ const Feature = () => {
                   Learning with Multimedia & Interactivity
                 </h5>
               </li>
-              <li className="flex items-center gap-[10px]">
+              <li className="box flex items-center gap-[10px]">
                 <div className="size-6 rounded-full flex items-center justify-center bg-PrimaryColor-0 text-white">
                   <GiCheckMark />
                 </div>
@@ -73,7 +73,7 @@ const Feature = () => {
                 </h5>
               </li>
             </ul>
-            <div className="mt-8 sm:mt-0">
+            <div className="fade-up mt-8 sm:mt-0">
               <Link to={"/feature"} className="primary-btn2">
                 Get Started
                 <HiArrowNarrowRight size={20} />

@@ -112,7 +112,7 @@ const Testimonial = () => {
           </div>
           <div className="lg:ml-4 pt-5 pb-8">
             <div>
-              <h5 className="font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center gap-3">
+              <h5 className="zoom-in font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center gap-3">
                 <img src={subTilteIcon} draggable={false} alt="Icon" /> PARENTS
                 TESTIMONIAL
               </h5>
@@ -122,41 +122,43 @@ const Testimonial = () => {
                 Dedicated Learners
               </h1>
             </div>
-            <Swiper {...settings}>
-              <div>
-                {testiData.map(
-                  ({
-                    id,
-                    testiTitle,
-                    testiQuate,
-                    testiRatingIcon,
-                    testiRatingIcon2,
-                    testiName,
-                    testiImg,
-                    testiDesc,
-                    testiDesignation,
-                  }) => {
-                    return (
-                      <SwiperSlide key={id}>
-                        <div className="pb-24 sm:pb-0">
-                          <TestimonialCard
-                            testiTitle={testiTitle}
-                            testiQuate={testiQuate}
-                            testiRatingIcon={testiRatingIcon}
-                            testiRatingIcon2={testiRatingIcon2}
-                            testiName={testiName}
-                            testiImg={testiImg}
-                            testiDesc={testiDesc}
-                            testiDesignation={testiDesignation}
-                          />
-                        </div>
-                      </SwiperSlide>
-                    );
-                  }
-                )}
-              </div>
-              <TestiNavigation />
-            </Swiper>
+            <div className="box-row">
+              <Swiper {...settings}>
+                <div>
+                  {testiData.map(
+                    ({
+                      id,
+                      testiTitle,
+                      testiQuate,
+                      testiRatingIcon,
+                      testiRatingIcon2,
+                      testiName,
+                      testiImg,
+                      testiDesc,
+                      testiDesignation,
+                    }) => {
+                      return (
+                        <SwiperSlide key={id} className="box">
+                          <div className="pb-24 sm:pb-0">
+                            <TestimonialCard
+                              testiTitle={testiTitle}
+                              testiQuate={testiQuate}
+                              testiRatingIcon={testiRatingIcon}
+                              testiRatingIcon2={testiRatingIcon2}
+                              testiName={testiName}
+                              testiImg={testiImg}
+                              testiDesc={testiDesc}
+                              testiDesignation={testiDesignation}
+                            />
+                          </div>
+                        </SwiperSlide>
+                      );
+                    }
+                  )}
+                </div>
+                <TestiNavigation />
+              </Swiper>
+            </div>
           </div>
         </div>
       </div>

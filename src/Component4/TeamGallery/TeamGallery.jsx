@@ -68,18 +68,18 @@ const TeamGallery = () => {
       </div>
       <div className='Container'>
         <div className='text-center'>
-          <h5 className='font-Outfit text-sm text-PrimaryColor-0 uppercase pb-1 relative z-10 before:absolute before:left-1/2 before:top-full before:-translate-x-1/2 before:w-[48%] md:before:w-[11%] before:h-[.5px] before:bg-gradient-to-r before:to-SecondaryColor-0 before:via-PrimaryColor-0 before:from-SecondaryColor-0'>
+          <h5 className='zoom-in font-Outfit text-sm text-PrimaryColor-0 uppercase pb-1 relative z-10 before:absolute before:left-1/2 before:top-full before:-translate-x-1/2 before:w-[48%] md:before:w-[11%] before:h-[.5px] before:bg-gradient-to-r before:to-SecondaryColor-0 before:via-PrimaryColor-0 before:from-SecondaryColor-0'>
             Creative Teacher
           </h5>
           <h1 className='font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[18px] mb-4'>
             Our Awesome Team <span className='text-PrimaryColor-0'>Member</span>
           </h1>
         </div>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 items-center gap-6 mt-8 md:mt-14'>
+        <div className='box-row grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 items-center gap-6 mt-8 md:mt-14'>
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className='group overflow-hidden inline-block transition duration-300 relative'
+              className='box group overflow-hidden inline-block transition duration-300 relative'
             >
               <img
                 src={member.image}

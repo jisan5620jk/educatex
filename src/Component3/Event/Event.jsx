@@ -114,7 +114,7 @@ const Event = () => {
       </div>
       <div className='Container px-0'>
         <div className='text-center'>
-          <h5 className='font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center justify-center gap-3'>
+          <h5 className='zoom-in font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center justify-center gap-3'>
             <img
               src={subTilteIcon}
               draggable={false}
@@ -127,9 +127,9 @@ const Event = () => {
             For Our Little Learners
           </h1>
         </div>
-        <div className='grid grid-cols-1 xl:grid-cols-2 items-center gap-6 mt-[50px]'>
+        <div className='box-row grid grid-cols-1 xl:grid-cols-2 items-center gap-6 mt-[50px]'>
           {eventData.map((events) => (
-            <div key={events.id}>
+            <div key={events.id} className='box'>
               <EventCard {...events} />
             </div>
           ))}
