@@ -45,7 +45,7 @@ const EventsDetails = () => {
   return (
     <section className="pt-16 md:pt-20 lg:pt-28">
       <div className="Container">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-7">
           <div className="col-span-1 lg:col-span-2">
             <div>
               <img
@@ -98,8 +98,8 @@ const EventsDetails = () => {
             </p>
           </div>
           <div>
-            <div className="bg-white px-10 pb-10 border-t-[5px] border-PrimaryColor-0 rounded-t rounded-2xl shadow-shades">
-              <div className="pt-6 pb-5">
+            <div className="bg-white px-4 sm:px-10 pb-4 sm:pb-10 border-t-[5px] border-PrimaryColor-0 rounded-t rounded-2xl shadow-shades">
+              <div className="pt-2 sm:pt-6 pb-5">
                 <h2 className="font-Outfit text-2xl font-medium text-HeadingColor-0 mt-4 mb-0.5">
                   Event Info
                 </h2>
@@ -181,7 +181,7 @@ const EventsDetails = () => {
                 </div>
               </div>
             </div>
-            <div className="px-10 pt-8 pb-10 bg-BodyBg-0 mt-7 rounded-2xl">
+            <div className="p-4 sm:px-10 pt-3 sm:pt-8 sm:pb-10 bg-BodyBg-0 mt-7 rounded-2xl">
               <h2 className="font-Outfit text-2xl font-medium text-HeadingColor-0 mb-6">
                 Event Location
               </h2>

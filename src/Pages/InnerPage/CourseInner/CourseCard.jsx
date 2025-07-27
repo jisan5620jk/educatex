@@ -8,13 +8,13 @@ import { Link } from "react-router-dom";
 const CourseCard = ({ course, isList }) => {
   return (
     <div
-      className={`p-3 lg:p-5 rounded-[20px] bg-white border border-SecondaryColor-0 border-opacity-10 hover:border-PrimaryColor-0 transition-all duration-500 group relative z-10 overflow-hidden !pb-7 ${
+      className={`p-3 xl:p-5 rounded-[20px] bg-white border border-SecondaryColor-0 border-opacity-10 hover:border-PrimaryColor-0 transition-all duration-500 group relative z-10 overflow-hidden pb-7 ${
         isList ? "flex gap-4 !pb-3" : ""
       }`}
     >
       <div
         className={`w-full relative rounded-2xl overflow-hidden ${
-          isList ? "max-w-[520px]" : ""
+          isList ? "max-w-[520px] md:max-w-[320px] lg:max-w-[520px]" : ""
         }`}
       >
         <span className="absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 z-10 bg-PrimaryColor-0 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-0"></span>
@@ -25,7 +25,7 @@ const CourseCard = ({ course, isList }) => {
           src={course.img}
           alt="Course"
           draggable={false}
-          className="w-full"
+          className="w-full h-full"
         />
         <span
           className={`absolute z-20 bottom-5 left-5 font-Outfit text-sm px-5 py-[5px] rounded-3xl inline-block text-white bg-PrimaryColor-0 ${
@@ -36,7 +36,7 @@ const CourseCard = ({ course, isList }) => {
         </span>
       </div>
 
-      <div className="sm:px-3 pt-6 text-left">
+      <div className="sm:px-3 lg:px-0 xl:px-3 pt-6 text-left">
         <span
           className={`font-Outfit text-sm px-5 py-[5px] rounded-3xl font-medium mb-4 hidden text-PrimaryColor-0 bg-PrimaryColor-0 bg-opacity-10 border border-PrimaryColor-0 border-opacity-30 ${
             isList ? "!inline-block" : ""
@@ -79,7 +79,7 @@ const CourseCard = ({ course, isList }) => {
         <div className="relative">
           <div
             className={`flex items-center gap-10 transition-all duration-500 group-hover:opacity-0 ${
-              isList ? "group-hover:opacity-100" : ""
+              isList ? "group-hover:opacity-0 lg:group-hover:opacity-100" : ""
             }`}
           >
             <div
@@ -101,7 +101,7 @@ const CourseCard = ({ course, isList }) => {
           <Link to="/course">
             <button
               className={`absolute left-0 font-Outfit inline-flex items-center gap-2 uppercase text-sm justify-between px-7 py-[12px] bg-PrimaryColor-0 border z-10 overflow-hidden rounded-full text-white transition-all duration-500 ${
-                isList ? "-bottom-[70px] hover:bg-PrimaryColor2-0" : "-bottom-20 group-hover:-bottom-4"
+                isList ? "-bottom-[70px] hover:bg-PrimaryColor2-0 group-hover:-bottom-1.5 lg:group-hover:-bottom-[70px]" : "-bottom-20 group-hover:-bottom-4"
               }`}
             >
               Enroll Now

@@ -21,7 +21,7 @@ const BlogListCard = ({
 }) => {
   return (
     <div
-      className={`group transition-all duration-500 rounded-[20px] p-3 sm:p-6 ${bgColor}`}
+      className={`group transition-all duration-500 rounded-[20px] p-3 sm:p-6 lg:p-4 xl:p-6 ${bgColor}`}
     >
       <div className="blog-thumb relative rounded-[10px] overflow-hidden">
         <span
@@ -43,14 +43,14 @@ const BlogListCard = ({
           {blogDate}
         </p>
       </div>
-      <div className="relative z-20 rounded-lg transition-all duration-500 px-3 pb-3">
+      <div className="relative z-20 rounded-lg transition-all duration-500 px-3 pb-3 lg:px-0 lg:pb-0 xl:px-3 xl:pb-3">
         <p className="font-Outfit font-medium text-HeadingColor-0 flex gap-3 items-center mt-7 mb-4">
           <img src={blogPostIcon} draggable={false} alt="UserIcon" />
           {blogPost}
         </p>
         <Link to={blogUrl}>
           <button
-            className={`blog-title font-Outfit text-left font-medium text-lg sm:text-[22px] md:text-xl lg:text-2xl xl:text-[21px] 2xl:text-2xl text-HeadingColor-0 transition-all duration-500 mb-7 ${titleHover}`}
+            className={`blog-title font-Outfit text-left font-medium text-lg sm:text-[22px] md:text-xl xl:text-[22px] 2xl:text-2xl text-HeadingColor-0 transition-all duration-500 mb-7 ${titleHover}`}
           >
             {blogTitle}
           </button>

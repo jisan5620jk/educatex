@@ -23,7 +23,7 @@ const courses = [
     rating: 4.5,
     ratingContent: "/3 Ratings",
     lessons: 12,
-    students: 1200,
+    students: 1201,
     instructor: "John D. Alexon",
     instructorImg: instructorImg,
     bgColor: "bg-PrimaryColor3-0 bg-opacity-[7%]",
@@ -66,7 +66,7 @@ const courses = [
     price: "$50",
     rating: 4.8,
     ratingContent: "/5 Ratings",
-    lessons: 10,
+    lessons: 11,
     students: 2001,
     instructor: "Michael B. Jordan",
     instructorImg: instructorImg3,
@@ -132,7 +132,7 @@ const courses = [
     price: "$50",
     rating: 4.8,
     ratingContent: "/5 Ratings",
-    lessons: 10,
+    lessons: 13,
     students: 2001,
     instructor: "Michael B. Jordan",
     instructorImg: instructorImg3,
@@ -155,7 +155,7 @@ const CourseGrid = () => {
       <div className="Container">
         {/* Top Bar */}
         <div className="flex items-center justify-between flex-wrap gap-7 mb-10">
-          <div className="flex items-center gap-5 bg-BodyBg-0 rounded-md px-3 py-2 max-w-[420px] w-full">
+          <div className="hidden md:flex items-center gap-5 bg-BodyBg-0 rounded-md px-3 py-2 max-w-[420px] w-full">
             <div className="flex items-center gap-2">
               <button
                 onClick={() => setIsListView(false)}
@@ -207,7 +207,7 @@ const CourseGrid = () => {
           className={
             isListView
               ? "space-y-4"
-              : "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+              : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           }
         >
           {courses.map((course) => (

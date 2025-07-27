@@ -79,7 +79,7 @@ const courses = [
     price: "$50",
     rating: 4.8,
     ratingContent: "/5 Ratings",
-    lessons: 10,
+    lessons: 11,
     students: 2001,
     instructor: "Michael B. Jordan",
     instructorImg: instructorImg3,
@@ -214,11 +214,11 @@ const CourseDetails = () => {
                 visualize professional paradigms for robust imperatives.
                 Seamlessly matrix robust infrastructures for premium innovation
               </p>
-              <h2 className="font-Outfit font-medium text-2xl sm:text-3xl text-HeadingColor-0 mt-[52px]">
+              <h2 className="font-Outfit font-medium text-2xl sm:text-3xl text-HeadingColor-0 mt-[52px] mb-6">
                 What you’ll Learn?
               </h2>
 
-              <ul>
+              <ul className="space-y-2">
                 <li className="flex items-center gap-2 font-OpenSans text-TextColor-0">
                   <span className="text-PrimaryColor-0">
                     <GiCheckMark />
@@ -251,7 +251,7 @@ const CourseDetails = () => {
                   A recognized certificate to boost credibility.
                 </li>
               </ul>
-              <p className="font-OpenSans text-TextColor-0">
+              <p className="font-OpenSans text-TextColor-0 mt-7">
                 Educate the ultimate destination for knowledge seekers and
                 educators alike distinctively restore installed We are committed
                 to transforming special education impact global
@@ -267,7 +267,7 @@ const CourseDetails = () => {
                     >
                       <button
                         onClick={() => setExpandedIndex(isOpen ? null : idx)}
-                        className={`flex items-center justify-between border-b border-SecondaryColor-0 border-opacity-10 last:border-none w-full px-[30px] py-5 bg-BodyBg-0 font-Outfit text-HeadingColor-0 text-[20px] text-left transition-all duration-500 overflow-hidden ${
+                        className={`flex items-center justify-between border-b border-SecondaryColor-0 border-opacity-10 last:border-none w-full px-4 sm:px-[30px] py-3 sm:py-5 bg-BodyBg-0 font-Outfit text-HeadingColor-0 text-base sm:text-xl text-left transition-all duration-500 overflow-hidden ${
                           isOpen ? "bg-PrimaryColor-0 text-white" : ""
                         }`}
                         aria-expanded={isOpen}
@@ -296,18 +296,18 @@ const CourseDetails = () => {
                             {items.map(({ title: itemTitle, duration }) => (
                               <li
                                 key={itemTitle}
-                                className="flex justify-between items-center py-5 border-b last:border-b-0 font-Outfit text-HeadingColor-0  cursor-pointer transition-all duration-500 hover:bg-BodyBg-0 px-[30px]"
+                                className="flex justify-between items-center px-3 sm:px-[30px] py-3 sm:py-5 border-b last:border-b-0 font-Outfit text-sm sm:text-base text-HeadingColor-0  cursor-pointer transition-all duration-500 hover:bg-BodyBg-0"
                               >
-                                <div className="flex items-center space-x-3">
+                                <div className="flex items-center space-x-1 sm:space-x-3">
                                   <button
-                                    className={`flex items-center justify-center text-2xl text-PrimaryColor-0 hover:text-PrimaryColor2-0 transition-all duration-500`}
+                                    className={`flex items-center justify-center text-xl sm:text-2xl text-PrimaryColor-0 hover:text-PrimaryColor2-0 transition-all duration-500`}
                                     aria-label={`Play ${itemTitle}`}
                                   >
                                     <MdPlayCircle />
                                   </button>
                                   <span>{itemTitle}</span>
                                 </div>
-                                <div className="flex items-center space-x-5 text-sm text-TextColor-0">
+                                <div className="flex items-center space-x-2 sm:space-x-5 text-sm text-TextColor-0">
                                   <span>{duration}</span>
                                   <FaRegEye />
                                 </div>
@@ -320,7 +320,7 @@ const CourseDetails = () => {
                   );
                 })}
               </div>
-              <div className="flex items-center gap-7 p-5 rounded-2xl bg-white shadow-shades">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-7 p-5 rounded-2xl bg-white shadow-shades">
                 <div>
                   <img
                     src={instructorThumb}
@@ -379,9 +379,9 @@ const CourseDetails = () => {
                   </ul>
                 </div>
               </div>
-              <div className="flex items-center gap-5 w-full h-[224px] mt-10">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-5 w-full sm:h-[225px] mt-10">
                 {/* Average Rating Section */}
-                <div className="max-w-[312px] w-full h-full bg-PrimaryColor-0 bg-opacity-[7%] rounded-2xl flex flex-col items-center justify-center text-center">
+                <div className="max-w-[312px] w-full h-full bg-PrimaryColor-0 bg-opacity-[7%] py-7 sm:py-0 rounded-2xl flex flex-col items-center justify-center text-center">
                   <div className="text-5xl font-bold text-HeadingColor-0">
                     {averageRating.toFixed(2)}
                   </div>
@@ -401,11 +401,11 @@ const CourseDetails = () => {
                 </div>
 
                 {/* Distribution bars with refined styling */}
-                <div className="w-full space-y-4 h-full bg-PrimaryColor2-0 bg-opacity-[7%] rounded-2xl flex flex-col items-center justify-center">
+                <div className="w-full h-[225px] space-y-4 bg-PrimaryColor2-0 bg-opacity-[7%] rounded-2xl flex flex-col items-center justify-center">
                   {ratingsDistribution.map(({ stars, count }) => (
                     <div
                       key={stars}
-                      className="flex items-center w-full px-7 space-x-2"
+                      className="flex items-center w-full px-3 sm:px-7 space-x-2"
                     >
                       {/* Star Label */}
                       <div className="w-12 text-sm font-medium text-gray-700">
@@ -413,7 +413,7 @@ const CourseDetails = () => {
                       </div>
 
                       {/* Progress Bar Container */}
-                      <div className="h-2 w-full bg-gray-200 rounded-full overflow-hidden shadow-inner relative">
+                      <div className="flex-1 h-2 w-full bg-gray-200 rounded-full overflow-hidden shadow-inner relative">
                         {/* Bar fill with transition */}
                         <div
                           className="h-full bg-ReviewText-0 rounded-full transition-all duration-300 ease-in-out shadow-md"
@@ -513,8 +513,8 @@ const CourseDetails = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-3 lg:col-span-1 -mt-[50px] relative z-10">
-              <div className="border-t-[5px] border-PrimaryColor-0 bg-white rounded-lg shadow-shades overflow-hidden p-7">
+            <div className="col-span-3 lg:col-span-1 mt-6 lg:-mt-[50px] relative z-10">
+              <div className="border-t-[5px] border-PrimaryColor-0 bg-white rounded-lg shadow-shades overflow-hidden p-4 sm:p-7 lg:p-4 xl:p-7">
                 {/* Image with Play Button */}
                 <div className="relative">
                   <img
@@ -631,7 +631,7 @@ const CourseDetails = () => {
       </section>
       <section className="py-16 md:py-20 lg:py-28">
         <div className="Container">
-          <h1 className="font-Outfit text-HeadingColor-0 text-[42px] font-semibold mb-[52px] text-center">
+          <h1 className="font-Outfit text-HeadingColor-0 text-2xl sm:text-3xl md:text-[42px] font-semibold mb-[52px] text-center">
             Similiar Course You Like
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">

@@ -26,7 +26,7 @@ const BlogDetails = () => {
         breadCrumbText={"trends that are shipping the..."}
       />
       <div className="Container lg:p-0">
-        <div className="px-[50px] pt-[50px] -mt-14 bg-white border border-SecondaryColor-0 border-opacity-10 rounded-xl relative z-20">
+        <div className="px-4 sm:px-7 md:px-10 lg:px-[50px] pt-4 sm:pt-7 md:pt-10 lg:pt-[50px] -mt-14 bg-white border border-SecondaryColor-0 border-opacity-10 rounded-xl relative z-20">
           <div className="mb-9 relative inline-block z-10">
             <img
               src={blog_detailsThumb}
@@ -40,7 +40,7 @@ const BlogDetails = () => {
           </div>
           {/* Article Content */}
           <article className="">
-            <div className="flex items-center gap-4 mb-4">
+            <div className="flex flex-wrap items-center gap-4 mb-4">
               <div className="flex items-center gap-4">
                 <img src={author} alt="Anjelina Watson" draggable={false} />
                 <h2 className="font-Outfit text-HeadingColor-0 font-medium">
@@ -48,7 +48,7 @@ const BlogDetails = () => {
                 </h2>
               </div>
               <div>
-                <div className="flex items-center font-OpenSans text-TextColor-0 gap-6">
+                <div className="flex items-center font-OpenSans text-TextColor-0 text-sm sm:text-base gap-2 sm:gap-6">
                   <div className="flex items-center gap-1">
                     <span className="text-lg text-PrimaryColor-0">
                       <LuCalendarFold />
@@ -65,7 +65,7 @@ const BlogDetails = () => {
               </div>
             </div>
 
-            <h1 className="font-Outfit text-[38px] font-semibold text-HeadingColor-0">
+            <h1 className="font-Outfit text-xl sm:text-3xl md:text-[38px] md:leading-[46px] font-semibold text-HeadingColor-0">
               Trends that are shaping the Learning experience
             </h1>
 
@@ -99,14 +99,14 @@ const BlogDetails = () => {
             </p>
 
             {/* Quote Block */}
-            <blockquote className="font-Outfit font-medium text-HeadingColor-0 text-xl pl-20 relative max-w-[850px] w-full">
-              <span className="absolute top-3 left-0 w-[64px] h-[2px] bg-PrimaryColor-0"></span>
+            <blockquote className="font-Outfit font-medium text-HeadingColor-0 text-base sm:text-xl pl-7 sm:pl-12 md:pl-20 relative max-w-[850px] w-full">
+              <span className="absolute top-3 left-0 w-5 sm:w-10 md:w-[64px] h-[2px] bg-PrimaryColor-0"></span>
               “Globally engage cross-media leadership skills before cross-media
               great opportunities whereas process-centric models efficiently.”
             </blockquote>
 
             {/* Learn Benefits */}
-            <h2 className="font-Outfit text-[38px] font-semibold text-HeadingColor-0 mt-8 mb-3">
+            <h2 className="font-Outfit text-xl sm:text-3xl md:text-[38px] md:leading-[46px] font-semibold text-HeadingColor-0 mt-8 mb-3">
               Learn Benefits
             </h2>
 
@@ -146,7 +146,7 @@ const BlogDetails = () => {
             </div>
 
             {/* Tags */}
-            <div className="flex items-center justify-between flex-wrap mt-[78px] mb-3">
+            <div className="flex items-center justify-between gap-5 flex-wrap mt-[78px] mb-3">
               <div className="flex flex-wrap items-center gap-2">
                 {["Technology", "Education", "Learning"].map((tag, index) => (
                   <span
@@ -183,20 +183,22 @@ const BlogDetails = () => {
 
             {/* Post Navigation */}
             <div className="flex justify-between items-center mt-8 border-t py-8">
-              <button className="flex items-center gap-2 text-lg font-Outfit font-medium text-HeadingColor-0">
+              <button className="flex items-center gap-1 sm:gap-2 text-base sm:text-lg font-Outfit font-medium text-HeadingColor-0">
                 <img
                   src="/images/pagination_icon1.png"
                   draggable={false}
                   alt="icon"
+                  className="w-7 sm:w-[inherit]"
                 />{" "}
                 Previous Posts
               </button>
-              <button className="flex items-center gap-2 text-lg font-Outfit font-medium text-PrimaryColor-0">
+              <button className="flex items-center gap-1 sm:gap-2 text-base sm:text-lg font-Outfit font-medium text-PrimaryColor-0">
                 Next Posts{" "}
                 <img
                   src="/images/pagination_icon2.png"
                   draggable={false}
                   alt="Icon"
+                  className="w-7 sm:w-[inherit]"
                 />
               </button>
             </div>
@@ -205,13 +207,20 @@ const BlogDetails = () => {
 
         {/* Comments Section */}
         <section className="mt-16">
-          <h3 className="font-Outfit text-HeadingColor-0 text-[28px] font-medium mb-6">
+          <h3 className="font-Outfit text-HeadingColor-0 text-2xl sm:text-[28px] font-medium mb-6">
             Comments (1)
           </h3>
 
-          <div className="px-10 py-11 rounded-md bg-BodyBg-0">
-            <div className="flex items-start gap-5">
-              <img src="/images/aouthor.png" alt="Avatar" />
+          <div className="px-4 sm:px-10 py-4 sm:py-11 rounded-md bg-BodyBg-0">
+            <div className="flex flex-col sm:flex-row sm:items-start gap-5">
+              <div>
+                <img
+                  src="/images/aouthor.png"
+                  alt="Avatar"
+                  draggable={false}
+                  className="w-[inherit]"
+                />
+              </div>
               <div className="flex-1">
                 <div className="flex justify-between items-center">
                   <h4 className="font-Outfit text-HeadingColor-0 text-xl">
@@ -237,7 +246,7 @@ const BlogDetails = () => {
 
         {/* Comment Form */}
         <section className="mt-16 pb-16 md:pb-20 lg:pb-28">
-          <h3 className="font-Outfit text-HeadingColor-0 text-[28px] font-medium mb-5">
+          <h3 className="font-Outfit text-HeadingColor-0 text-2xl sm:text-[28px] font-medium mb-5">
             Post a Comment
           </h3>
           <p className="font-OpenSans text-TextColor-0 mb-9">

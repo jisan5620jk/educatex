@@ -143,7 +143,7 @@ const BlogLeftSideBar = () => {
       />
       <section className="pt-16 md:pt-20 lg:pt-[120px] pb-16 md:pb-20 lg:pb-[120px]">
         <div className="Container">
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-[52px]">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-[52px] lg:gap-7 2xl:gap-[52px]">
             <div className="col-span-2 lg:col-span-1">
               <div className="bg-white shadow-shades border-t-[6px] border-PrimaryColor-0 rounded-b-md px-4 sm:px-8 lg:px-6 xl:px-10 pt-9 pb-4 mb-7">
                 <div className="relative inline-block w-full">
@@ -343,7 +343,7 @@ const BlogLeftSideBar = () => {
               </div>
             </div>
             <div className="col-span-2">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-7">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
                 {blogListData.map((item) => (
                   <div key={item.id} className="mb-7">
                     <BlogListCard {...item} />

@@ -26,17 +26,17 @@ const Contact = () => {
                 platforms without robust
               </p>
             </div>
-            <div className="bg-BodyBg-0 rounded-xl p-10 mt-10">
+            <div className="bg-BodyBg-0 rounded-xl p-4 sm:p-10 mt-10">
               <div className="flex items-center gap-5 group border-b border-dashed border-HeadingColor-0 border-opacity-20 pb-5">
                 <div className="size-[70px] bg-white rounded-full flex items-center justify-center text-PrimaryColor-0 transition-all duration-500 group-hover:text-white relative z-10 before:absolute before:left-0 before:top-0 before:size-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-10 before:rounded-full group-hover:before:scale-100">
                   <FaPhoneAlt size={"22"} />
                 </div>
-                <div>
+                <div className="flex-1">
                   <h6 className="font-OpenSans text-TextColor-0">
                     Call us Anytime
                   </h6>
                   <a href="tel:+1234567890" title="+123 - (4567) - 890">
-                    <button className="font-Outfit text-xl text-HeadingColor-0 font-medium mt-1">
+                    <button className="font-Outfit text-lg sm:text-xl text-HeadingColor-0 font-medium mt-1">
                       +123 - (4567) - 890
                     </button>
                   </a>
@@ -46,13 +46,13 @@ const Contact = () => {
                 <div className="size-[70px] bg-white rounded-full flex items-center justify-center text-PrimaryColor-0 transition-all duration-500 group-hover:text-white relative z-10 before:absolute before:left-0 before:top-0 before:size-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-10 before:rounded-full group-hover:before:scale-100">
                   <FaRegEnvelopeOpen size={"25"} />
                 </div>
-                <div>
+                <div className="flex-1">
                   <h6 className="font-OpenSans text-TextColor2-0">E-Mail us</h6>
                   <a
                     href={"mailto:example@gmail.com"}
                     title="example@gmail.com"
                   >
-                    <button className="font-Outfit text-xl text-HeadingColor-0 font-medium mt-1">
+                    <button className="font-Outfit text-lg sm:text-xl text-HeadingColor-0 font-medium mt-1">
                       example@gmail.com
                     </button>
                   </a>
@@ -62,7 +62,7 @@ const Contact = () => {
                 <div className="size-[70px] bg-white rounded-full flex items-center justify-center text-PrimaryColor-0 transition-all duration-500 group-hover:text-white relative z-10 before:absolute before:left-0 before:top-0 before:size-full before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 before:-z-10 before:rounded-full group-hover:before:scale-100">
                   <IoLocationOutline size={"32"} />
                 </div>
-                <div>
+                <div className="flex-1">
                   <h6 className="font-OpenSans text-TextColor-0">
                     Our Locations
                   </h6>
@@ -78,7 +78,7 @@ const Contact = () => {
               <h5 className="font-Outfit font-medium text-sm sm:text-base text-PrimaryColor-0 uppercase mb-3">
                 CONTACT US
               </h5>
-              <h1 className="font-Outfit font-semibold text-HeadingColor-0 inline-block text-[16px] leading-[26px] sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[30px] lg:leading-[44px] xl:text-[32px] xl:leading-[44px] 2xl:text-[34px] 2xl:leading-[44px] relative pb-4">
+              <h1 className="font-Outfit font-semibold text-HeadingColor-0 inline-block text-2xl sm:text-[25px] sm:leading-[35px] md:text-[30px] md:leading-[40px] lg:text-[30px] lg:leading-[44px] xl:text-[32px] xl:leading-[44px] 2xl:text-[34px] 2xl:leading-[44px] relative pb-4">
                 Feel Free to Contact Us
               </h1>
             </div>

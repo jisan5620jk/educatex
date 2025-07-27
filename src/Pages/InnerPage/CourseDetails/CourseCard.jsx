@@ -19,7 +19,7 @@ const CourseCard = ({
   students,
 }) => {
   return (
-    <div className="p-3 lg:p-5 rounded-[20px] bg-white border border-SecondaryColor-0 border-opacity-10 hover:border-PrimaryColor-0 transition-all duration-500 group relative z-10 overflow-hidden !pb-7">
+    <div className="p-3 xl:p-5 rounded-[20px] bg-white border border-SecondaryColor-0 border-opacity-10 hover:border-PrimaryColor-0 transition-all duration-500 group relative z-10 overflow-hidden !pb-7">
       <div className="w-full relative rounded-2xl overflow-hidden">
         <span className="absolute left-[12.5%] top-0 h-full w-0 transition-all duration-500 z-10 bg-PrimaryColor-0 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-0"></span>
         <span className="absolute left-[37.5%] top-0 h-full w-0 transition-all duration-500 z-10 bg-PrimaryColor-0 group-hover:opacity-0 group-hover:w-[25%] group-hover:left-[25%]"></span>
@@ -32,7 +32,7 @@ const CourseCard = ({
         </span>
       </div>
 
-      <div className="sm:px-3 pt-6 text-left">
+      <div className="sm:px-3 lg:px-0 xl:px-3 pt-6 text-left">
         <span className="font-Outfit text-sm px-5 py-[5px] rounded-3xl font-medium mb-4 hidden text-PrimaryColor-0 bg-PrimaryColor-0 bg-opacity-10 border border-PrimaryColor-0 border-opacity-30">
           {category}
         </span>

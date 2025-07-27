@@ -8,9 +8,9 @@ const CourseInner = () => {
     <>
       <HelmetChanger title={'Pricing Inner Page Style Two'} />
       <BreadCrumb2
-        breadCrumbTitle={'Affordable Price'}
+        breadCrumbTitle={'All Courses'}
         breadCrumbIcon={<BsArrowUpRight />}
-        breadCrumbLink={'Pricing Plan'}
+        breadCrumbLink={'Course'}
       />
       <CourseList />
     </>
