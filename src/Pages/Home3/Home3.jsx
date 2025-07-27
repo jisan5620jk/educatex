@@ -8,8 +8,22 @@ import Offer from "../../Component3/Offer/Offer";
 import Programs from "../../Component3/Programs/Programs";
 import Testimonial from "../../Component3/Testimonial/Testimonial";
 import BoxReveal from "../../Shared/BoxReveal/BoxReveal";
+import ImageReveal from "../../Shared/ImageReveal/ImageReveal";
+import TextReveal from "../../Shared/TextAnim/TextReveal";
 
 const Home3 = () => {
+  // Box Reveal
+
+  BoxReveal();
+
+  // Text Reveal
+
+  TextReveal();
+
+  // Image Reveal
+
+  ImageReveal();
+
   BoxReveal();
   return (
     <>

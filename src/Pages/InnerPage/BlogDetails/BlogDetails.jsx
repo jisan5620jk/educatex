@@ -13,7 +13,23 @@ import {
 import { LuCalendarFold } from "react-icons/lu";
 import { AiOutlineComment } from "react-icons/ai";
 
+import BoxReveal from "../../../Shared/BoxReveal/BoxReveal";
+import ImageReveal from "../../../Shared/ImageReveal/ImageReveal";
+import TextReveal from "../../../Shared/TextAnim/TextReveal";
+
 const BlogDetails = () => {
+  // Box Reveal
+
+  BoxReveal();
+
+  // Text Reveal
+
+  TextReveal();
+
+  // Image Reveal
+
+  ImageReveal();
+
   return (
     <>
       <HelmetChanger title={"Blog Details Inner Page Style One"} />

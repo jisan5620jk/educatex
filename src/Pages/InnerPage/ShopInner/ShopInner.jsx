@@ -4,7 +4,23 @@ import { BsArrowUpRight } from "react-icons/bs";
 import PriceRange from "./PriceRange";
 import ShopItem from "./ShopItem";
 
+import BoxReveal from "../../../Shared/BoxReveal/BoxReveal";
+import ImageReveal from "../../../Shared/ImageReveal/ImageReveal";
+import TextReveal from "../../../Shared/TextAnim/TextReveal";
+
 const ShopInner = () => {
+  // Box Reveal
+
+  BoxReveal();
+
+  // Text Reveal
+
+  TextReveal();
+
+  // Image Reveal
+
+  ImageReveal();
+
   const categories = [
     { name: "Historical Fiction", count: 18 },
     { name: "Mystery and Thriller", count: 13 },

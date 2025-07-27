@@ -13,6 +13,10 @@ import instructorImg3 from "/images/case-autor3.png";
 import InstructorInfo from "./InstructorInfo";
 import CourseCard from "./CourseCard";
 
+import BoxReveal from "../../../Shared/BoxReveal/BoxReveal";
+import ImageReveal from "../../../Shared/ImageReveal/ImageReveal";
+import TextReveal from "../../../Shared/TextAnim/TextReveal";
+
 const courses = [
   {
     id: 1,
@@ -149,6 +153,18 @@ const courses = [
 ];
 
 const InstructorDetails = () => {
+  // Box Reveal
+
+  BoxReveal();
+
+  // Text Reveal
+
+  TextReveal();
+
+  // Image Reveal
+
+  ImageReveal();
+
   return (
     <>
       <HelmetChanger title={"Instructor Details Page"} />

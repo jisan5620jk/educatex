@@ -8,7 +8,23 @@ import { IoMdStar, IoMdStarHalf } from "react-icons/io";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { HiUserCircle } from "react-icons/hi";
 
+import BoxReveal from "../../../Shared/BoxReveal/BoxReveal";
+import ImageReveal from "../../../Shared/ImageReveal/ImageReveal";
+import TextReveal from "../../../Shared/TextAnim/TextReveal";
+
 const ShopDetails = () => {
+  // Box Reveal
+
+  BoxReveal();
+
+  // Text Reveal
+
+  TextReveal();
+
+  // Image Reveal
+
+  ImageReveal();
+
   // Rating
   const [rating, setRating] = useState(0);
 

@@ -9,8 +9,22 @@ import Marquee from "../../Component4/Marquee/Marquee";
 import Service from "../../Component4/Service/Service";
 import TeamGallery from "../../Component4/TeamGallery/TeamGallery";
 import BoxReveal from "../../Shared/BoxReveal/BoxReveal";
+import ImageReveal from "../../Shared/ImageReveal/ImageReveal";
+import TextReveal from "../../Shared/TextAnim/TextReveal";
 
 const Home4 = () => {
+  // Box Reveal
+
+  BoxReveal();
+
+  // Text Reveal
+
+  TextReveal();
+
+  // Image Reveal
+
+  ImageReveal();
+
   BoxReveal();
   return (
     <>

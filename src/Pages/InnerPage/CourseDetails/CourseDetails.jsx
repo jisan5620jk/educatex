@@ -26,6 +26,10 @@ import instructorImg2 from "/images/case-autor2.png";
 import instructorImg3 from "/images/case-autor3.png";
 import CourseCard from "./CourseCard";
 
+import BoxReveal from "../../../Shared/BoxReveal/BoxReveal";
+import ImageReveal from "../../../Shared/ImageReveal/ImageReveal";
+import TextReveal from "../../../Shared/TextAnim/TextReveal";
+
 const courses = [
   {
     id: 1,
@@ -147,6 +151,18 @@ const sections = [
 ];
 
 const CourseDetails = () => {
+  // Box Reveal
+
+  BoxReveal();
+
+  // Text Reveal
+
+  TextReveal();
+
+  // Image Reveal
+
+  ImageReveal();
+
   const [expandedIndex, setExpandedIndex] = useState(0); // Start with first expanded
   const contentRefs = useRef([]);
 

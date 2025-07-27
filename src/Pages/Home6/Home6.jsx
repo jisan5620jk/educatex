@@ -10,8 +10,22 @@ import NewsletterForm from "../../Component6/NewsletterForm/NewsletterForm";
 import Pricing from "../../Component6/Pricing/Pricing";
 import Testimonial from "../../Component6/Testimonial/Testimonial";
 import BoxReveal from "../../Shared/BoxReveal/BoxReveal";
+import ImageReveal from "../../Shared/ImageReveal/ImageReveal";
+import TextReveal from "../../Shared/TextAnim/TextReveal";
 
 const Home6 = () => {
+  // Box Reveal
+
+  BoxReveal();
+
+  // Text Reveal
+
+  TextReveal();
+
+  // Image Reveal
+
+  ImageReveal();
+
   BoxReveal();
   return (
     <>

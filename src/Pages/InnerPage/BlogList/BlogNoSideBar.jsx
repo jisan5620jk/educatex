@@ -11,6 +11,10 @@ import BlogListCard from "./BlogListCard";
 import HelmetChanger from "../../../Shared/Helmet/Helmet";
 import { BsArrowUpRight } from "react-icons/bs";
 
+import BoxReveal from "../../../Shared/BoxReveal/BoxReveal";
+import ImageReveal from "../../../Shared/ImageReveal/ImageReveal";
+import TextReveal from "../../../Shared/TextAnim/TextReveal";
+
 const blogListData = [
   {
     id: 1,
@@ -129,6 +133,18 @@ const blogListData = [
 ];
 
 const BlogNoSideBar = () => {
+  // Box Reveal
+
+  BoxReveal();
+
+  // Text Reveal
+
+  TextReveal();
+
+  // Image Reveal
+
+  ImageReveal();
+
   return (
     <>
       <HelmetChanger title={"Blog No Sidebar Inner Page"} />

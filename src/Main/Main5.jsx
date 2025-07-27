@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Navbar5 from "../Shared/Navbar/Navbar5";
 import BackToTop from "../Shared/BackToTop/BackToTop";
 import Footer from "../Shared/Footer/Footer";
@@ -8,27 +8,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollSmoother from "gsap/ScrollSmoother";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 import HelmetChanger from "../Shared/Helmet/Helmet";
-import ImageReveal from "../Shared/ImageReveal/ImageReveal";
-import TextReveal from "../Shared/TextAnim/TextReveal";
-import BoxReveal from "../Shared/BoxReveal/BoxReveal";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
 
 const Main5 = () => {
-
-  //Box Reveal
-
-  BoxReveal();
-
-
-  //Text Reveal
-
-  TextReveal();
-
-  //image Reveal
-
-  ImageReveal();
-
   //Scroll Smoother
 
   const smootherRef = useRef(null);
@@ -74,6 +57,18 @@ const Main5 = () => {
       links.forEach((link) => link.removeEventListener("click", () => {}));
     };
   }, []);
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    const smoother = ScrollSmoother.get();
+
+    if (smoother) {
+      smoother.scrollTo(0, true); // smooth scroll to top
+    } else {
+      window.scrollTo(0, 0); // fallback
+    }
+  }, [pathname]);
 
   return (
     <>
