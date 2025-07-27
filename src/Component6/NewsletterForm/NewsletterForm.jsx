@@ -18,7 +18,7 @@ const NewsletterForm = () => {
           </h2>
 
           <form
-            action="#"
+            action="https://formspree.io/f/xayrekgy" method="post"
             className="fade-right flex sm:gap-7 items-center rounded-full overflow-hidden relative z-10"
           >
             <div className="relative">

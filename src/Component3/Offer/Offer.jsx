@@ -12,7 +12,7 @@ const Offer = () => {
   const [toggler, setToggler] = useState(false);
 
   return (
-    <section className="pt-12 md:py-16 lg:py-20">
+    <section className="pt-12 md:py-16 lg:py-20 relative">
       <div className="Container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="rounded-[20px] overflow-hidden px-5 sm:px-11 lg:px-6 2xl:px-11 pt-6 sm:pt-[50px] lg:pt-5 2xl:pt-[50px] pb-7 sm:pb-[49px] lg:pb-5 xl:pb-6 2xl:pb-[49px] bg-PrimaryColor-0 bg-opacity-15 relative z-10">

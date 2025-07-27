@@ -79,7 +79,7 @@ const FeatureCourse = () => {
     <section className="bg-white py-16 md:py-20 lg:py-28">
       <div className="Container">
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
-          <div className="">
+          <div className="box">
             <h5 className="font-OpenSans bg-PrimaryColor-0 bg-opacity-20 pl-4 pr-5 py-[7px] rounded-r-full border border-PrimaryColor-0 border-opacity-20 text-HeadingColor-0 text-sm inline-flex items-center gap-2 uppercase">
               <span className="text-PrimaryColor2-0">
                 <FaCircle size={10} />
@@ -101,13 +101,11 @@ const FeatureCourse = () => {
               </Link>
             </div>
           </div>
-          <div className="grid-row">
-            {courses.map((course) => (
-              <div key={course.id} className="box">
-                <CourseCard {...course} />
-              </div>
-            ))}
-          </div>
+          {courses.map((course) => (
+            <div key={course.id} className="box">
+              <CourseCard {...course} />
+            </div>
+          ))}
         </div>
       </div>
     </section>

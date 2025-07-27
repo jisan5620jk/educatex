@@ -164,7 +164,11 @@ const Footer = () => {
               <h4 className="font-Outfit text-[28px] text-white font-semibold mb-[30px]">
                 Newsletter
               </h4>
-              <form action="#" method="post">
+              <form
+                action="https://formspree.io/f/xayrekgy"
+                method="post"
+                method="post"
+              >
                 <label htmlFor="email" className="relative">
                   <input
                     type="email"

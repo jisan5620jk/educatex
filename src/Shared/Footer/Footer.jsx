@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import footerLogo from '/images/footer-logo.png';
+import { Link } from "react-router-dom";
+import footerLogo from "/images/footer-logo.png";
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -7,12 +7,12 @@ import {
   FaPinterestP,
   FaRegEnvelope,
   FaXTwitter,
-} from 'react-icons/fa6';
-import footerImg from '/images/footer-recent-img1.png';
-import footerImg2 from '/images/footer-recent-img2.png';
-import { HiOutlineMail } from 'react-icons/hi';
-import { IoPaperPlane } from 'react-icons/io5';
-import { IoMdLogIn } from 'react-icons/io';
+} from "react-icons/fa6";
+import footerImg from "/images/footer-recent-img1.png";
+import footerImg2 from "/images/footer-recent-img2.png";
+import { HiOutlineMail } from "react-icons/hi";
+import { IoPaperPlane } from "react-icons/io5";
+import { IoMdLogIn } from "react-icons/io";
 
 const Footer = () => {
   return (
@@ -33,7 +33,8 @@ const Footer = () => {
             </div>
             <div className="flex lg:justify-end">
               <form
-                action="#"
+                action="https://formspree.io/f/xayrekgy"
+                method="post"
                 method="post"
                 className="relative inline-block z-10"
               >

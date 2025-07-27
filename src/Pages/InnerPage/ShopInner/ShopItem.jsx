@@ -212,7 +212,8 @@ const ShopItem = () => {
         </div>
 
         <form
-          action="#"
+          action="https://formspree.io/f/xayrekgy"
+          method="post"
           className="flex items-center gap-5 bg-BodyBg-0 rounded-md max-w-[320px] w-full relative z-10"
         >
           <input

@@ -83,7 +83,7 @@ const Contact = () => {
               </h1>
             </div>
             <form
-              action="#"
+              action="https://formspree.io/f/xayrekgy"
               method="post"
               className="box-row flex flex-col gap-y-5 pt-10 pb-12"
             >
@@ -165,9 +165,7 @@ const Contact = () => {
                 terms & conditions.
               </label>
               <div className="box inline-block mt-2">
-                <button className="primary-btn2">
-                  {`Submit Now`}
-                </button>
+                <button className="primary-btn2">{`Submit Now`}</button>
               </div>
             </form>
           </div>
