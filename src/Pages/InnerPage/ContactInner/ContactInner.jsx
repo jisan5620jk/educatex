@@ -10,7 +10,7 @@ const ContactInner = () => {
     <>
       <HelmetChanger title={"Contact Inner Page"} />
       <BreadCrumb
-        breadCrumbTitle={"Contact"}
+        breadCrumbTitle={"Contact Us"}
         breadCrumbIcon={<BsArrowUpRight />}
         breadCrumbLink={"Contact"}
       />

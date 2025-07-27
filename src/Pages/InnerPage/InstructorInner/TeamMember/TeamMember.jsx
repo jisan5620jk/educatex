@@ -148,17 +148,17 @@ const TeamMember = () => {
       </div>
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center justify-center gap-3">
+          <h5 className="zoom-in font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center justify-center gap-3">
             <img src={subTilteIcon} draggable={false} alt="Icon" /> INstructor
           </h5>
           <h1 className="font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 md:mt-[14px] mb-4">
             Introducing The Educators and<br /> Professional Instructor
           </h1>
         </div>
-        <div className="mt-[48px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="box-row mt-[48px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {teamData.map((teams) => {
             return (
-              <div key={teams.id}>
+              <div key={teams.id} className="box">
                 <TeamCard {...teams} />
               </div>
             );

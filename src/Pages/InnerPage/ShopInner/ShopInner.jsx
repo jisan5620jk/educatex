@@ -28,7 +28,7 @@ const ShopInner = () => {
       <section className="relative py-16 md:py-20 lg:py-[120px] z-10">
         <div className="Container">
           <div className="grid grid-cols-1 lg:grid-cols-8 gap-7 rounded-md mb-8 lg:mb-0">
-            <div className="col-span-1 md:col-span-3 xl:col-span-2">
+            <div className="fade-up col-span-1 md:col-span-3 xl:col-span-2">
               <div className="bg-BodyBg-0 px-7 pt-7 pb-5 rounded-lg mb-8">
                 <h3 className="font-Outfit text-2xl font-medium text-HeadingColor-0">
                   Categories

@@ -108,7 +108,7 @@ const Event = () => {
       </div>
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center justify-center gap-3">
+          <h5 className="zoom-in font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center justify-center gap-3">
             <img src={subTilteIcon} draggable={false} alt="Icon" /> participate
             our events
           </h5>
@@ -117,9 +117,11 @@ const Event = () => {
             <br /> Workshops and Seminars
           </h1>
         </div>
-        <div className="event-card space-y-[18px] mt-[58px]">
+        <div className="box-row event-card space-y-[18px] mt-[58px]">
           {eventData.map((events) => (
-            <EventCard key={events.id} {...events} />
+            <div key={events.id} className="box">
+              <EventCard {...events} />
+            </div>
           ))}
         </div>
       </div>

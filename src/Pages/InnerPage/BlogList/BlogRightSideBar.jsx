@@ -145,9 +145,9 @@ const BlogRightSideBar = () => {
         <div className="Container">
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-[52px] lg:gap-7 2xl:gap-[52px]">
             <div className="col-span-2">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
+              <div className="box-row grid grid-cols-1 md:grid-cols-2 gap-7">
                 {blogListData.map((item) => (
-                  <div key={item.id} className="mb-7">
+                  <div key={item.id} className="box mb-7">
                     <BlogListCard {...item} />
                   </div>
                 ))}
@@ -174,7 +174,7 @@ const BlogRightSideBar = () => {
             </div>
             <div className="col-span-2 lg:col-span-1">
               <div className="bg-white shadow-shades border-t-[6px] border-PrimaryColor-0 rounded-b-md px-4 sm:px-8 lg:px-6 xl:px-10 pt-9 pb-4 mb-7">
-                <div className="relative inline-block w-full">
+                <div className="fade-up relative inline-block w-full">
                   <input
                     type="text"
                     name="search"
@@ -190,7 +190,7 @@ const BlogRightSideBar = () => {
                     <IoSearch />
                   </button>
                 </div>
-                <div className="mt-7">
+                <div className="fade-up mt-7">
                   <h4 className="font-Outfit font-medium text-left text-2xl text-HeadingColor-0 pb-1 mb-4 relative">
                     Categories
                   </h4>
@@ -257,7 +257,7 @@ const BlogRightSideBar = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="pt-12 pb-2">
+                <div className="fade-up pt-12 pb-2">
                   <h4 className="font-Outfit font-medium text-left text-2xl text-HeadingColor-0 pb-1 mb-5 relative">
                     Popular Post
                   </h4>
@@ -319,7 +319,7 @@ const BlogRightSideBar = () => {
                     </button>
                   </Link>
                 </div>
-                <div className="pt-12 pb-2">
+                <div className="fade-up pt-12 pb-2">
                   <h4 className="font-Outfit font-medium text-left text-2xl text-HeadingColor-0 pb-1 mb-4 relative">
                     Cloud Tags
                   </h4>

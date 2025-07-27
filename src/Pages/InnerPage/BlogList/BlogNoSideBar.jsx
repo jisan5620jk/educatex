@@ -142,9 +142,9 @@ const BlogNoSideBar = () => {
       <section className="pt-16 md:pt-20 lg:pt-[120px] pb-16 md:pb-20 lg:pb-[120px]">
         <div className="Container">
           <div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+            <div className="box-row grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
               {blogListData.map((item) => (
-                <div key={item.id} className="mb-7">
+                <div key={item.id} className="box mb-7">
                   <BlogListCard {...item} />
                 </div>
               ))}

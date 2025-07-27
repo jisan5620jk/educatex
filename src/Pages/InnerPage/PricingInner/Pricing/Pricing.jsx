@@ -85,7 +85,7 @@ const Pricing = () => {
     <section className="py-16 md:py-20 lg:py-28">
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center justify-center gap-3">
+          <h5 className="zoom-in font-Outfit font-medium text-PrimaryColor-0 uppercase flex items-center justify-center gap-3">
             <img src={subTilteIcon} draggable={false} alt="Icon" /> PRICING
             PLANS
           </h5>
@@ -95,7 +95,7 @@ const Pricing = () => {
           </h1>
         </div>
         {/* Toggle Switch */}
-        <div className="flex justify-center mt-10 mb-10">
+        <div className="fade-up flex justify-center mt-10 mb-10">
           <div className="inline-flex items-center justify-center space-x-4 py-2.5 px-7 rounded-full border border-HeadingColor-0 border-opacity-15">
             <span
               className={`font-Outfit font-medium transition-all duration-500 ${
@@ -128,9 +128,11 @@ const Pricing = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <div className="box-row grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
           {pricingData.map((plan, index) => (
-            <PricingCard key={index} {...plan} />
+            <div key={index} className="box">
+              <PricingCard {...plan} />
+            </div>
           ))}
         </div>
       </div>

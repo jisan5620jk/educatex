@@ -136,11 +136,11 @@ const TeamMember = () => {
             Event Speakers
           </h1>
         </div>
-        <div className="mt-[48px]">
+        <div className="box-row mt-[48px]">
           <Swiper {...settings}>
             {teamData.map((teams) => {
               return (
-                <SwiperSlide key={teams.id}>
+                <SwiperSlide key={teams.id} className="box">
                   <TeamCard {...teams} />
                 </SwiperSlide>
               );

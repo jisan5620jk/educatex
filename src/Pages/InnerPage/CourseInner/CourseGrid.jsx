@@ -154,7 +154,7 @@ const CourseGrid = () => {
     <section className="py-16 md:py-20 lg:py-28">
       <div className="Container">
         {/* Top Bar */}
-        <div className="flex items-center justify-between flex-wrap gap-7 mb-10">
+        <div className="fade-up flex items-center justify-between flex-wrap gap-7 mb-10">
           <div className="hidden md:flex items-center gap-5 bg-BodyBg-0 rounded-md px-3 py-2 max-w-[420px] w-full">
             <div className="flex items-center gap-2">
               <button
@@ -204,14 +204,16 @@ const CourseGrid = () => {
 
         {/* Course Cards */}
         <div
-          className={
+          className={`box-row ${
             isListView
               ? "space-y-4"
               : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-          }
+          }`}
         >
           {courses.map((course) => (
-            <CourseCard key={course.id} course={course} isList={isListView} />
+            <div key={course.id} className="box">
+              <CourseCard course={course} isList={isListView} />
+            </div>
           ))}
         </div>
       </div>

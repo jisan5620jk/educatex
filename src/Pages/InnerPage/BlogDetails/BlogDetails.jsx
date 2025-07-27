@@ -40,7 +40,7 @@ const BlogDetails = () => {
           </div>
           {/* Article Content */}
           <article className="">
-            <div className="flex flex-wrap items-center gap-4 mb-4">
+            <div className="fade-up flex flex-wrap items-center gap-4 mb-4">
               <div className="flex items-center gap-4">
                 <img src={author} alt="Anjelina Watson" draggable={false} />
                 <h2 className="font-Outfit text-HeadingColor-0 font-medium">
@@ -69,7 +69,7 @@ const BlogDetails = () => {
               Trends that are shaping the Learning experience
             </h1>
 
-            <p className="font-OpenSans text-TextColor-0 mt-4">
+            <p className="fade-up font-OpenSans text-TextColor-0 mt-4">
               Globally engage cross-media leadership skills before cross-media
               innovation forward morph flexible whereas process-centric models
               predomin Efficiently that’s transform customer directed alignments
@@ -84,7 +84,7 @@ const BlogDetails = () => {
               standards in innovation.
             </p>
 
-            <p className="font-OpenSans text-TextColor-0 mt-7 mb-11">
+            <p className="fade-up font-OpenSans text-TextColor-0 mt-7 mb-11">
               Dramatically harness cross-platform best practices whereas
               business services. Conveniently standards in innovation with
               wireless Globally engage leadership best breed to rather than
@@ -99,18 +99,18 @@ const BlogDetails = () => {
             </p>
 
             {/* Quote Block */}
-            <blockquote className="font-Outfit font-medium text-HeadingColor-0 text-base sm:text-xl pl-7 sm:pl-12 md:pl-20 relative max-w-[850px] w-full">
+            <blockquote className="fade-up font-Outfit font-medium text-HeadingColor-0 text-base sm:text-xl pl-7 sm:pl-12 md:pl-20 relative max-w-[850px] w-full">
               <span className="absolute top-3 left-0 w-5 sm:w-10 md:w-[64px] h-[2px] bg-PrimaryColor-0"></span>
               “Globally engage cross-media leadership skills before cross-media
               great opportunities whereas process-centric models efficiently.”
             </blockquote>
 
             {/* Learn Benefits */}
-            <h2 className="font-Outfit text-xl sm:text-3xl md:text-[38px] md:leading-[46px] font-semibold text-HeadingColor-0 mt-8 mb-3">
+            <h2 className="fade-up font-Outfit text-xl sm:text-3xl md:text-[38px] md:leading-[46px] font-semibold text-HeadingColor-0 mt-8 mb-3">
               Learn Benefits
             </h2>
 
-            <p className="font-OpenSans text-TextColor-0">
+            <p className="fade-up font-OpenSans text-TextColor-0">
               Globally engage cross-media leadership skills before cross-media
               innovation forward meaning flexible whereas process-centric models
               problem. Efficiently transform customer-directed alignments for
@@ -123,7 +123,7 @@ const BlogDetails = () => {
             </p>
 
             {/* Benefits Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
+            <div className="box-row grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
               {[
                 "Professional Team Member",
                 "24/7 Problem Solving",
@@ -137,7 +137,7 @@ const BlogDetails = () => {
               ].map((benefit, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-2 text-HeadingColor-0 font-Outfit text-"
+                  className="box flex items-center gap-2 text-HeadingColor-0 font-Outfit text-"
                 >
                   <FaCheck className="text-PrimaryColor-0 text-lg" />
                   {benefit}
@@ -146,8 +146,8 @@ const BlogDetails = () => {
             </div>
 
             {/* Tags */}
-            <div className="flex items-center justify-between gap-5 flex-wrap mt-[78px] mb-3">
-              <div className="flex flex-wrap items-center gap-2">
+            <div className="box-row flex items-center justify-between gap-5 flex-wrap mt-[78px] mb-3">
+              <div className="box flex flex-wrap items-center gap-2">
                 {["Technology", "Education", "Learning"].map((tag, index) => (
                   <span
                     key={index}
@@ -157,7 +157,7 @@ const BlogDetails = () => {
                   </span>
                 ))}
               </div>
-              <ul className="flex gap-3">
+              <ul className="box flex gap-3">
                 <li data-no-animate>
                   <button className="size-9 rounded-full text-sm bg-PrimaryColor-0 bg-opacity-10 flex items-center justify-center text-HeadingColor-0 overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0">
                     <FaFacebookF />
@@ -182,8 +182,8 @@ const BlogDetails = () => {
             </div>
 
             {/* Post Navigation */}
-            <div className="flex justify-between items-center mt-8 border-t py-8">
-              <button className="flex items-center gap-1 sm:gap-2 text-base sm:text-lg font-Outfit font-medium text-HeadingColor-0">
+            <div className="box-row flex justify-between items-center mt-8 border-t py-8">
+              <button className="box flex items-center gap-1 sm:gap-2 text-base sm:text-lg font-Outfit font-medium text-HeadingColor-0">
                 <img
                   src="/images/pagination_icon1.png"
                   draggable={false}
@@ -192,7 +192,7 @@ const BlogDetails = () => {
                 />{" "}
                 Previous Posts
               </button>
-              <button className="flex items-center gap-1 sm:gap-2 text-base sm:text-lg font-Outfit font-medium text-PrimaryColor-0">
+              <button className="box flex items-center gap-1 sm:gap-2 text-base sm:text-lg font-Outfit font-medium text-PrimaryColor-0">
                 Next Posts{" "}
                 <img
                   src="/images/pagination_icon2.png"
@@ -207,11 +207,11 @@ const BlogDetails = () => {
 
         {/* Comments Section */}
         <section className="mt-16">
-          <h3 className="font-Outfit text-HeadingColor-0 text-2xl sm:text-[28px] font-medium mb-6">
+          <h3 className="fade-up font-Outfit text-HeadingColor-0 text-2xl sm:text-[28px] font-medium mb-6">
             Comments (1)
           </h3>
 
-          <div className="px-4 sm:px-10 py-4 sm:py-11 rounded-md bg-BodyBg-0">
+          <div className="fade-up px-4 sm:px-10 py-4 sm:py-11 rounded-md bg-BodyBg-0">
             <div className="flex flex-col sm:flex-row sm:items-start gap-5">
               <div>
                 <img
@@ -246,15 +246,15 @@ const BlogDetails = () => {
 
         {/* Comment Form */}
         <section className="mt-16 pb-16 md:pb-20 lg:pb-28">
-          <h3 className="font-Outfit text-HeadingColor-0 text-2xl sm:text-[28px] font-medium mb-5">
+          <h3 className="fade-up font-Outfit text-HeadingColor-0 text-2xl sm:text-[28px] font-medium mb-5">
             Post a Comment
           </h3>
-          <p className="font-OpenSans text-TextColor-0 mb-9">
+          <p className="fade-up font-OpenSans text-TextColor-0 mb-9">
             Your email address will not be published. So, don’t worry.
           </p>
-          <form className="space-y-6">
+          <form className="box-row space-y-6">
             <textarea
-              className="w-full px-7 py-4 rounded-md border border-HeadingColor-0 font-OpenSans border-opacity-10 transition-all duration-500 hover:border-PrimaryColor-0 focus:border-PrimaryColor-0 outline-none placeholder:text-TextColor-0"
+              className="box w-full px-7 py-4 rounded-md border border-HeadingColor-0 font-OpenSans border-opacity-10 transition-all duration-500 hover:border-PrimaryColor-0 focus:border-PrimaryColor-0 outline-none placeholder:text-TextColor-0"
               rows="5"
               placeholder="Write Comments..."
             ></textarea>
@@ -263,27 +263,27 @@ const BlogDetails = () => {
               <input
                 type="text"
                 placeholder="Enter your Name *"
-                className="w-full px-7 py-4 rounded-md border border-HeadingColor-0 font-OpenSans border-opacity-10 transition-all duration-500 hover:border-PrimaryColor-0 focus:border-PrimaryColor-0 outline-none placeholder:text-TextColor-0"
+                className="box w-full px-7 py-4 rounded-md border border-HeadingColor-0 font-OpenSans border-opacity-10 transition-all duration-500 hover:border-PrimaryColor-0 focus:border-PrimaryColor-0 outline-none placeholder:text-TextColor-0"
               />
               <input
                 type="email"
                 placeholder="Your E-Mail *"
-                className="w-full px-7 py-4 rounded-md border border-HeadingColor-0 font-OpenSans border-opacity-10 transition-all duration-500 hover:border-PrimaryColor-0 focus:border-PrimaryColor-0 outline-none placeholder:text-TextColor-0"
+                className="box w-full px-7 py-4 rounded-md border border-HeadingColor-0 font-OpenSans border-opacity-10 transition-all duration-500 hover:border-PrimaryColor-0 focus:border-PrimaryColor-0 outline-none placeholder:text-TextColor-0"
               />
             </div>
 
             <input
               type="url"
               placeholder="Website URL"
-              className="w-full px-7 py-4 rounded-md border border-HeadingColor-0 font-OpenSans border-opacity-10 transition-all duration-500 hover:border-PrimaryColor-0 focus:border-PrimaryColor-0 outline-none placeholder:text-TextColor-0"
+              className="box w-full px-7 py-4 rounded-md border border-HeadingColor-0 font-OpenSans border-opacity-10 transition-all duration-500 hover:border-PrimaryColor-0 focus:border-PrimaryColor-0 outline-none placeholder:text-TextColor-0"
             />
 
-            <label className="flex items-center gap-2 font-OpenSans text-TextColor-0">
+            <label className="box flex items-center gap-2 font-OpenSans text-TextColor-0">
               <input type="checkbox" className="accent-PrimaryColor-0" />
               Save my information in this browser for next comments
             </label>
 
-            <button type="submit" className="primary-btn2 capitalize">
+            <button type="submit" className="box primary-btn2 capitalize">
               Post Comment
             </button>
           </form>

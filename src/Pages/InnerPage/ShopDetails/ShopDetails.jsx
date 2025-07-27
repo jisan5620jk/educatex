@@ -62,10 +62,10 @@ const ShopDetails = () => {
 
             <div className="">
               <div>
-                <h2 className="font-Outfit text-2xl md:text-[32px] font-semibold text-HeadingColor-0 mb-1">
+                <h2 className="fade-up font-Outfit text-2xl md:text-[32px] font-semibold text-HeadingColor-0 mb-1">
                   Brave New World
                 </h2>
-                <div className="flex items-center gap-3 mb-3">
+                <div className="fade-up flex items-center gap-3 mb-3">
                   <span className="flex text-ReviewText-0 text-2xl">
                     {[...Array(4)].map((_, i) => (
                       <IoMdStar key={i} />
@@ -76,13 +76,13 @@ const ShopDetails = () => {
                     (02 Reviews)
                   </span>
                 </div>
-                <p className="font-Outfit text-PrimaryColor-0 text-[22px] font-medium">
+                <p className="fade-up font-Outfit text-PrimaryColor-0 text-[22px] font-medium">
                   $70{" "}
                   <span className="text-gray-400 line-through font-normal ml-1">
                     $100
                   </span>
                 </p>
-                <p className="font-OpenSans text-TextColor-0 mt-5 max-w-[580px] w-full">
+                <p className="fade-up font-OpenSans text-TextColor-0 mt-5 max-w-[580px] w-full">
                   Educate the ultimate destination for knowledge seekers and
                   educators alike. We are committed to transforming special
                   education impact global channels without standards compliant
@@ -91,7 +91,7 @@ const ShopDetails = () => {
                 </p>
               </div>
 
-              <div className="flex flex-wrap items-center gap-4 my-9">
+              <div className="fade-up flex flex-wrap items-center gap-4 my-9">
                 {/* Quantity Selector */}
                 <div className="flex items-center border border-SecondaryColor-0 border-opacity-10 rounded-full w-[160px] relative">
                   <button
@@ -120,7 +120,7 @@ const ShopDetails = () => {
                 </button>
               </div>
 
-              <div className="mt-6">
+              <div className="fade-up mt-6">
                 <div className="space-y-2 text-base font-medium text-black">
                   <div className="flex">
                     <span className="w-24 font-Outfit text-HeadingColor-0">
@@ -159,7 +159,7 @@ const ShopDetails = () => {
         <div className="Container">
           {/* Tabs */}
           <div className="border-b border-gray-200 mb-6">
-            <ul className="flex space-x-6 text-sm font-medium">
+            <ul className="fade-up flex space-x-6 text-sm font-medium">
               <li
                 className={`cursor-pointer font-Outfit text-xl transition-all duration-500 font-medium pb-2 ${
                   activeTab === 0
@@ -186,7 +186,7 @@ const ShopDetails = () => {
           {/* Reviews Tab */}
           <div
             ref={(el) => (contentRefs.current[0] = el)}
-            className="overflow-hidden transition-all duration-500 ease-in-out"
+            className="fade-up overflow-hidden transition-all duration-500 ease-in-out"
           >
             <div>
               <div className="flex flex-col sm:flex-row items-start gap-3 mt-8">
@@ -287,7 +287,7 @@ const ShopDetails = () => {
           {/* Description Tab */}
           <div
             ref={(el) => (contentRefs.current[1] = el)}
-            className="overflow-hidden transition-all duration-500 ease-in-out"
+            className="fade-up overflow-hidden transition-all duration-500 ease-in-out"
           >
             <div className="text-TextColor-0 font-OpenSans max-w-[930px] w-full">
               <p className="font-OpenSans text-TextColor-0 mt-6">

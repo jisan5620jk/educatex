@@ -160,10 +160,14 @@ const InstructorDetails = () => {
       <InstructorInfo />
       <section className="py-16 md:py-20 lg:py-28">
         <div className="Container">
-          <h1 className="font-Outfit text-HeadingColor-0 text-2xl sm:text-3xl md:text-[42px] font-semibold mb-[52px] text-center">Browse My all Course</h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">
+          <h1 className="font-Outfit text-HeadingColor-0 text-2xl sm:text-3xl md:text-[42px] font-semibold mb-[52px] text-center">
+            Browse My all Course
+          </h1>
+          <div className="box-row grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">
             {courses.map((course) => (
-              <CourseCard key={course.id} {...course} />
+              <div key={course.id} className="box">
+                <CourseCard {...course} />
+              </div>
             ))}
           </div>
         </div>

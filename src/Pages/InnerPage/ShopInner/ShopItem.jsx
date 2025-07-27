@@ -156,7 +156,12 @@ const BookItem = ({ title, rating, price, oldPrice, itemImage, viewType }) => {
           viewType === "list" ? "flex-1" : "text-center"
         } flex flex-col justify-center`}
       >
-        <Link to={'/shop_details'} className="font-Outfit font-semibold text-xl sm:text-2xl text-HeadingColor-0">{title}</Link>
+        <Link
+          to={"/shop_details"}
+          className="font-Outfit font-semibold text-xl sm:text-2xl text-HeadingColor-0"
+        >
+          {title}
+        </Link>
         <div className="flex items-center mt-1">
           <Stars rating={rating} />
           <span className="ml-2 text-sm text-TextColor-0">
@@ -181,7 +186,7 @@ const ShopItem = () => {
 
   return (
     <div className="">
-      <div className="flex items-center justify-between flex-wrap gap-7 mb-10">
+      <div className="fade-up flex items-center justify-between flex-wrap gap-7 mb-10">
         <div className="flex items-center gap-5">
           <div className="flex items-center gap-2">
             <button
@@ -228,15 +233,19 @@ const ShopItem = () => {
       </div>
 
       {isListView ? (
-        <div className="space-y-4">
+        <div className="box-row space-y-4">
           {booksData.map((book, idx) => (
-            <BookItem key={idx} {...book} viewType="list" />
+            <div key={idx} className="box">
+              <BookItem {...book} viewType="list" />
+            </div>
           ))}
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div className="box-row grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
           {booksData.map((book, idx) => (
-            <BookItem key={idx} {...book} viewType="grid" />
+            <div key={idx} className="box">
+              <BookItem {...book} viewType="grid" />
+            </div>
           ))}
         </div>
       )}

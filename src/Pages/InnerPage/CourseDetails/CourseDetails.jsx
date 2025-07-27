@@ -197,73 +197,73 @@ const CourseDetails = () => {
         <div className="Container">
           <div className="grid grid-cols-3 gap-7">
             <div className="col-span-3 lg:col-span-2 mt-16 md:mt-20 lg:mt-28">
-              <h2 className="font-Outfit font-semibold text-2xl sm:text-[32px] text-HeadingColor-0">
+              <h2 className="fade-up font-Outfit font-semibold text-2xl sm:text-[32px] text-HeadingColor-0">
                 Course Overview
               </h2>
-              <p className="font-OpenSans text-TextColor2-0 mt-6">
+              <p className="fade-up font-OpenSans text-TextColor2-0 mt-6">
                 Educate the ultimate destination for knowledge seekers and
                 educators alike distinctively restore installed We are committed
                 to transforming special education impact global channels base
                 information with user without standards compliant systems base
                 information with
               </p>
-              <p className="font-OpenSans text-TextColor2-0 mt-7 mb-9">
+              <p className="fade-up font-OpenSans text-TextColor2-0 mt-7 mb-9">
                 Quickly deploy performance based architectures vis-a-vis
                 business bandwidth. Professionally disseminate best-of-breed
                 customer service and virtual catalysts for change. Proactively
                 visualize professional paradigms for robust imperatives.
                 Seamlessly matrix robust infrastructures for premium innovation
               </p>
-              <h2 className="font-Outfit font-medium text-2xl sm:text-3xl text-HeadingColor-0 mt-[52px] mb-6">
+              <h2 className="fade-up font-Outfit font-medium text-2xl sm:text-3xl text-HeadingColor-0 mt-[52px] mb-6">
                 What you’ll Learn?
               </h2>
 
-              <ul className="space-y-2">
-                <li className="flex items-center gap-2 font-OpenSans text-TextColor-0">
+              <ul className="box-row space-y-2">
+                <li className="box flex items-center gap-2 font-OpenSans text-TextColor-0">
                   <span className="text-PrimaryColor-0">
                     <GiCheckMark />
                   </span>
                   Covering essential topics like entrepreneurship, marketing
                 </li>
-                <li className="flex items-center gap-2 font-OpenSans text-TextColor-0">
+                <li className="box flex items-center gap-2 font-OpenSans text-TextColor-0">
                   <span className="text-PrimaryColor-0">
                     <GiCheckMark />
                   </span>
                   Regular live sessions with industry professionals for
                   real-time learning.
                 </li>
-                <li className="flex items-center gap-2 font-OpenSans text-TextColor-0">
+                <li className="box flex items-center gap-2 font-OpenSans text-TextColor-0">
                   <span className="text-PrimaryColor-0">
                     <GiCheckMark />
                   </span>
                   Interactive tests to reinforce knowledge and track progress.
                 </li>
-                <li className="flex items-center gap-2 font-OpenSans text-TextColor-0">
+                <li className="box flex items-center gap-2 font-OpenSans text-TextColor-0">
                   <span className="text-PrimaryColor-0">
                     <GiCheckMark />
                   </span>
                   Learning from successful business models and failures.
                 </li>
-                <li className="flex items-center gap-2 font-OpenSans text-TextColor-0">
+                <li className="box flex items-center gap-2 font-OpenSans text-TextColor-0">
                   <span className="text-PrimaryColor-0">
                     <GiCheckMark />
                   </span>
                   A recognized certificate to boost credibility.
                 </li>
               </ul>
-              <p className="font-OpenSans text-TextColor-0 mt-7">
+              <p className="fade-up font-OpenSans text-TextColor-0 mt-7">
                 Educate the ultimate destination for knowledge seekers and
                 educators alike distinctively restore installed We are committed
                 to transforming special education impact global
               </p>
-              <div className="my-10">
+              <div className="box-row my-10">
                 {sections.map(({ title, items }, idx) => {
                   const isOpen = expandedIndex === idx;
 
                   return (
                     <section
                       key={title}
-                      className="mb-4 rounded-lg border overflow-hidden"
+                      className="box mb-4 rounded-lg border overflow-hidden"
                     >
                       <button
                         onClick={() => setExpandedIndex(isOpen ? null : idx)}
@@ -328,14 +328,14 @@ const CourseDetails = () => {
                     alt="Instructor Thumb"
                   />
                 </div>
-                <div className="flex-1">
-                  <h5 className="font-Outfit text-lg text-PrimaryColor-0">
+                <div className="box-row flex-1">
+                  <h5 className="box font-Outfit text-lg text-PrimaryColor-0">
                     Instructor
                   </h5>
-                  <h3 className="font-Outfit text-[28px] text-HeadingColor-0 font-semibold">
+                  <h3 className="box font-Outfit text-[28px] text-HeadingColor-0 font-semibold">
                     Anjelina Jholi
                   </h3>
-                  <div className="flex items-center py-3">
+                  <div className="box flex items-center py-3">
                     {/* Stars */}
                     {[...Array(5)].map((_, i) => {
                       const starClass =
@@ -352,10 +352,10 @@ const CourseDetails = () => {
                       (4.5)
                     </span>
                   </div>
-                  <h6 className="font-Outfit text-sm text-PrimaryColor-0 inline-block px-5 py-1.5 bg-PrimaryColor-0 bg-opacity-10 border border-PrimaryColor-0 border-opacity-30 rounded-3xl mb-7">
+                  <h6 className="box font-Outfit text-sm text-PrimaryColor-0 inline-block px-5 py-1.5 bg-PrimaryColor-0 bg-opacity-10 border border-PrimaryColor-0 border-opacity-30 rounded-3xl mb-7">
                     UI/UX Designer
                   </h6>
-                  <ul className="flex gap-3">
+                  <ul className="box flex gap-3">
                     <li>
                       <button className="size-9 rounded-full text-sm bg-white border border-SecondaryColor-0 border-opacity-15 flex items-center justify-center text-HeadingColor-0 overflow-hidden transition-all duration-500 hover:border-PrimaryColor-0 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0">
                         <FaFacebookF />
@@ -379,9 +379,9 @@ const CourseDetails = () => {
                   </ul>
                 </div>
               </div>
-              <div className="flex flex-col sm:flex-row sm:items-center gap-5 w-full sm:h-[225px] mt-10">
+              <div className="box-row flex flex-col sm:flex-row sm:items-center gap-5 w-full sm:h-[225px] mt-10">
                 {/* Average Rating Section */}
-                <div className="max-w-[312px] w-full h-full bg-PrimaryColor-0 bg-opacity-[7%] py-7 sm:py-0 rounded-2xl flex flex-col items-center justify-center text-center">
+                <div className="box max-w-[312px] w-full h-full bg-PrimaryColor-0 bg-opacity-[7%] py-7 sm:py-0 rounded-2xl flex flex-col items-center justify-center text-center">
                   <div className="text-5xl font-bold text-HeadingColor-0">
                     {averageRating.toFixed(2)}
                   </div>
@@ -401,7 +401,7 @@ const CourseDetails = () => {
                 </div>
 
                 {/* Distribution bars with refined styling */}
-                <div className="w-full h-[225px] space-y-4 bg-PrimaryColor2-0 bg-opacity-[7%] rounded-2xl flex flex-col items-center justify-center">
+                <div className="box w-full h-[225px] space-y-4 bg-PrimaryColor2-0 bg-opacity-[7%] rounded-2xl flex flex-col items-center justify-center">
                   {ratingsDistribution.map(({ stars, count }) => (
                     <div
                       key={stars}
@@ -430,12 +430,12 @@ const CourseDetails = () => {
                 </div>
               </div>
               <div className="bg-white mt-10">
-                <h2 className="font-Outfit text-3xl font-medium mb-7">
+                <h2 className="fade-up font-Outfit text-3xl font-medium mb-7">
                   Student’s Reviews
                 </h2>
 
                 {/* Review 1 */}
-                <div className="mb-6 border-b border-HeadingColor-0 border-opacity-10 pb-8">
+                <div className="fade-up mb-6 border-b border-HeadingColor-0 border-opacity-10 pb-8">
                   <div className="flex items-center gap-5 mb-6">
                     {/* Avatar/Initials */}
                     <div className="flex-shrink-0 size-14 bg-PrimaryColor-0 bg-opacity-70 text-white flex items-center justify-center rounded-full font-Outfit font-medium uppercase text-lg">
@@ -474,7 +474,7 @@ const CourseDetails = () => {
                 </div>
 
                 {/* Review 2 */}
-                <div>
+                <div className="fade-up">
                   <div className="flex items-center gap-5 mb-6">
                     {/* Avatar/Initials */}
                     <div className="flex-shrink-0 size-14 bg-PrimaryColor2-0 bg-opacity-70 text-white flex items-center justify-center rounded-full font-Outfit font-medium uppercase text-lg">
@@ -516,7 +516,7 @@ const CourseDetails = () => {
             <div className="col-span-3 lg:col-span-1 mt-6 lg:-mt-[50px] relative z-10">
               <div className="border-t-[5px] border-PrimaryColor-0 bg-white rounded-lg shadow-shades overflow-hidden p-4 sm:p-7 lg:p-4 xl:p-7">
                 {/* Image with Play Button */}
-                <div className="relative">
+                <div className="fade-up relative">
                   <img
                     className="w-full h-60 object-cover rounded-lg"
                     src="/images/course-thumb1.png"
@@ -531,13 +531,12 @@ const CourseDetails = () => {
                 </div>
 
                 {/* Course Details */}
-                <div className="mt-4 px-2 mb-2">
+                <div className="fade-up mt-4 px-2 mb-2">
                   <h2 className="font-Outfit text-xl font-medium text-HeadingColor-0 mt-6 mb-2.5">
                     Course Includes :
                   </h2>
 
                   <div className="font-Outfit text-TextColor-0">
-                    {" "}
                     {/* Price */}
                     <div className="flex items-center justify-between border-b border-SecondaryColor-0 border-opacity-10 py-4">
                       <span className="flex items-center gap-2">
@@ -634,9 +633,11 @@ const CourseDetails = () => {
           <h1 className="font-Outfit text-HeadingColor-0 text-2xl sm:text-3xl md:text-[42px] font-semibold mb-[52px] text-center">
             Similiar Course You Like
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+          <div className="box-row grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
             {courses.map((course) => (
-              <CourseCard key={course.id} {...course} />
+              <div key={course.id} className="box">
+                <CourseCard {...course} />
+              </div>
             ))}
           </div>
         </div>
