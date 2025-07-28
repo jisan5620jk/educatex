@@ -9,6 +9,7 @@ import { useState } from 'react';
 import { IoPlaySharp } from 'react-icons/io5';
 import FsLightbox from 'fslightbox-react';
 import OnScrollCounter from '../../Shared/Counter/OnScrollCounter';
+import FsLightboxPortal from '../../Shared/FsLightBox/FsLightBox';
 
 const About = () => {
   const [toggler, setToggler] = useState(false);
@@ -127,10 +128,13 @@ const About = () => {
           className='animate-dance2'
         />
       </div>
-      <FsLightbox
-        toggler={toggler}
-        sources={['https://youtu.be/LlCwHnp3kL4?si=SD5vSCPhr4vc_U5t']}
-      />
+
+      <FsLightboxPortal>
+        <FsLightbox
+          toggler={toggler}
+          sources={['https://youtu.be/LlCwHnp3kL4?si=SD5vSCPhr4vc_U5t']}
+        />
+      </FsLightboxPortal>
     </section>
   );
 };

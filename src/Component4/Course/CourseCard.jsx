@@ -40,7 +40,7 @@ const CourseCard = ({
             </span>
           </div>
 
-          <h3 className='font-Outfit text-xl md:text-2xl font-medium text-HeadingColor-0 border-b border-SecondaryColor-0 group-hover:border-white group-hover:border-opacity-20 border-opacity-10 transition-all duration-500 group-hover:text-white pb-5 mb-4'>
+          <h3 className='font-Outfit text-xl md:text-2xl font-medium text-HeadingColor-0 border-b border-SecondaryColor-0 group-hover:border-white group-hover:border-opacity-20 border-opacity-10 transition-all duration-500 group-hover:text-white pb-4 mb-4'>
             {title}
           </h3>
 

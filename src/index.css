@@ -53,6 +53,7 @@
   .odometer.odometer-theme-default {
     @apply !font-Outfit leading-inherit;
   }
+
 }
 
 @layer base {

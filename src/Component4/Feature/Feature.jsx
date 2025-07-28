@@ -28,7 +28,7 @@ const processData = [
 
 const Feature = () => {
   return (
-    <section className='bg-SecondaryColor-0 pt-10 md:pt-[50px] relative'>
+    <section className='bg-SecondaryColor-0 pt-10 md:pt-[50px] relative z-10 -mb-1'>
       <div className='absolute top-1/2 -translate-y-1/2 left-32 animate-dance hidden 2xl:block'>
         <img
           src={featureShape}

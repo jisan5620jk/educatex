@@ -16,7 +16,7 @@ const teamData = [
   {
     id: 1,
     teamThumb: teamThumb,
-    teamUrl: "/team_details",
+    teamUrl: "/instructor_details",
     teamTitle: "Jone D. Alexon",
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
@@ -37,7 +37,7 @@ const teamData = [
   {
     id: 2,
     teamThumb: teamThumb2,
-    teamUrl: "/team_details",
+    teamUrl: "/instructor_details",
     teamTitle: "Anjelina M. Jholi",
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
@@ -58,7 +58,7 @@ const teamData = [
   {
     id: 3,
     teamThumb: teamThumb3,
-    teamUrl: "/team_details",
+    teamUrl: "/instructor_details",
     teamTitle: "Alaina Melvis",
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
@@ -79,7 +79,7 @@ const teamData = [
   {
     id: 4,
     teamThumb: teamThumb4,
-    teamUrl: "/team_details",
+    teamUrl: "/instructor_details",
     teamTitle: "David Jhonson",
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
@@ -143,7 +143,8 @@ const TeamMember = () => {
             </h5>
           </div>
           <h1 className="font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0">
-            Introducing the Educators and<br /> Professional Instructor
+            Introducing the Educators and
+            <br /> Professional Instructor
           </h1>
         </div>
         <div className="box-row mt-[48px]">

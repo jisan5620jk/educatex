@@ -7,6 +7,7 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 import { IoPlaySharp } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 import shape from '/images/brand-line.png';
+import FsLightboxPortal from '../../../../Shared/FsLightBox/FsLightBox';
 
 const Offer = () => {
   const [toggler, setToggler] = useState(false);
@@ -95,10 +96,12 @@ const Offer = () => {
         </div>
       </div>
 
-      <FsLightbox
-        toggler={toggler}
-        sources={['https://youtu.be/LlCwHnp3kL4?si=SD5vSCPhr4vc_U5t']}
-      />
+      <FsLightboxPortal>
+        <FsLightbox
+          toggler={toggler}
+          sources={['https://youtu.be/LlCwHnp3kL4?si=SD5vSCPhr4vc_U5t']}
+        />
+      </FsLightboxPortal>
     </section>
   );
 };

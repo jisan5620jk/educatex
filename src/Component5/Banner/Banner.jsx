@@ -16,6 +16,7 @@ import FeatureCard from './FeatureCard';
 import featureIcon from '/images/course-icon7.png';
 import featureIcon2 from '/images/course-icon8.png';
 import featureIcon3 from '/images/course-icon9.png';
+import FsLightboxPortal from '../../Shared/FsLightBox/FsLightBox';
 
 const featureData = [
   {
@@ -157,10 +158,13 @@ const Banner = () => {
             className='animate-wiggle'
           />
         </div>
-        <FsLightbox
-          toggler={toggler}
-          sources={['https://youtu.be/LlCwHnp3kL4?si=SD5vSCPhr4vc_U5t']}
-        />
+
+        <FsLightboxPortal>
+          <FsLightbox
+            toggler={toggler}
+            sources={['https://youtu.be/LlCwHnp3kL4?si=SD5vSCPhr4vc_U5t']}
+          />
+        </FsLightboxPortal>
       </section>
 
       {/* Feature */}

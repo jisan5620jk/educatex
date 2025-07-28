@@ -495,14 +495,14 @@ const Navbar2 = () => {
           </h5>
           <ul className="list-disc list-inside text-[#a3b7b7] font-medium font-outfit space-y-2">
             {[
-              "Managed IT Services",
-              "Cloud Services",
-              "Cybersecurity Services",
-              "Network Services",
-              "Data Analytics",
-              "IT Consulting Services",
-              "Backup and Disaster Recovery",
-              "Website Development",
+              "LMS Setup & Integration",
+              "Cloud Learning Platform",
+              "Cybersecurity Education",
+              "Academic Network Setup",
+              "Learning Data Insights",
+              "EdTech Consultation",
+              "Backup for Learning Tools",
+              "E-Learning Site Design",
             ].map((service, i) => (
               <li key={i}>
                 <Link to="/" className="hover:text-white transition">

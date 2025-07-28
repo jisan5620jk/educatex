@@ -14,7 +14,7 @@ const teamData = [
   {
     id: 1,
     teamThumb: teamThumb,
-    teamUrl: "/team_details",
+    teamUrl: "/instructor_details",
     teamTitle: "Jone D. Alexon",
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
@@ -35,7 +35,7 @@ const teamData = [
   {
     id: 2,
     teamThumb: teamThumb2,
-    teamUrl: "/team_details",
+    teamUrl: "/instructor_details",
     teamTitle: "Anjelina M. Jholi",
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
@@ -56,7 +56,7 @@ const teamData = [
   {
     id: 3,
     teamThumb: teamThumb3,
-    teamUrl: "/team_details",
+    teamUrl: "/instructor_details",
     teamTitle: "Alaina Melvis",
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
@@ -77,7 +77,7 @@ const teamData = [
   {
     id: 4,
     teamThumb: teamThumb4,
-    teamUrl: "/team_details",
+    teamUrl: "/instructor_details",
     teamTitle: "David Jhonson",
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,

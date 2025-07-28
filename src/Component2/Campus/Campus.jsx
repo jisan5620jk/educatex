@@ -9,6 +9,7 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 import { IoPlaySharp } from 'react-icons/io5';
 import FsLightbox from 'fslightbox-react';
 import { useState } from 'react';
+import FsLightboxPortal from '../../Shared/FsLightBox/FsLightBox';
 
 const Campus = () => {
   const [toggler, setToggler] = useState(false);
@@ -130,10 +131,12 @@ const Campus = () => {
         </div>
       </div>
 
-      <FsLightbox
-        toggler={toggler}
-        sources={['https://youtu.be/LlCwHnp3kL4?si=SD5vSCPhr4vc_U5t']}
-      />
+      <FsLightboxPortal>
+        <FsLightbox
+          toggler={toggler}
+          sources={['https://youtu.be/LlCwHnp3kL4?si=SD5vSCPhr4vc_U5t']}
+        />
+      </FsLightboxPortal>
     </section>
   );
 };

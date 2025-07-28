@@ -12,6 +12,7 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 import logo from "/images/logo.png";
+import logo2 from "/images/footer-logo.png";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { GrCart } from "react-icons/gr";
 import { IoIosSearch, IoMdLogIn, IoMdPaperPlane } from "react-icons/io";
@@ -234,12 +235,19 @@ const Navbar = () => {
         <div className="px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] py-4 lg:py-0">
           <div className="flex items-center justify-between gap-5">
             {/* Logo */}
-            <div className="">
+            <div className="hidden lg:block">
               <Link to="/" title="EducateX">
                 <img
                   src={logo}
                   draggable="false"
-                  className="brightness-0 invert-[1] lg:brightness-100 lg:invert-0"
+                />
+              </Link>
+            </div>
+            <div className="lg:hidden">
+              <Link to="/" title="EducateX">
+                <img
+                  src={logo2}
+                  draggable="false"
                 />
               </Link>
             </div>
@@ -481,7 +489,7 @@ const Navbar = () => {
 
         <div className="mb-6">
           <Link to="/">
-            <img src={logo} alt="Logo" draggable="false" />
+            <img src={logo2} alt="Logo" draggable="false" />
           </Link>
         </div>
 
@@ -495,14 +503,14 @@ const Navbar = () => {
           </h5>
           <ul className="list-disc list-inside text-[#a3b7b7] font-medium font-outfit space-y-2">
             {[
-              "Managed IT Services",
-              "Cloud Services",
-              "Cybersecurity Services",
-              "Network Services",
-              "Data Analytics",
-              "IT Consulting Services",
-              "Backup and Disaster Recovery",
-              "Website Development",
+              "LMS Setup & Integration",
+              "Cloud Learning Platform",
+              "Cybersecurity Education",
+              "Academic Network Setup",
+              "Learning Data Insights",
+              "EdTech Consultation",
+              "Backup for Learning Tools",
+              "E-Learning Site Design",
             ].map((service, i) => (
               <li key={i}>
                 <Link to="/" className="hover:text-white transition">

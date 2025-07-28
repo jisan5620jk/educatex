@@ -15,7 +15,7 @@ const teamData = [
   {
     id: 1,
     teamThumb: teamThumb,
-    teamUrl: "/team_details",
+    teamUrl: "/instructor_details",
     teamTitle: "Jone D. Alexon",
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
@@ -36,7 +36,7 @@ const teamData = [
   {
     id: 2,
     teamThumb: teamThumb2,
-    teamUrl: "/team_details",
+    teamUrl: "/instructor_details",
     teamTitle: "Anjelina M. Jholi",
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
@@ -57,7 +57,7 @@ const teamData = [
   {
     id: 3,
     teamThumb: teamThumb3,
-    teamUrl: "/team_details",
+    teamUrl: "/instructor_details",
     teamTitle: "Alaina Melvis",
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
@@ -78,7 +78,7 @@ const teamData = [
   {
     id: 4,
     teamThumb: teamThumb4,
-    teamUrl: "/team_details",
+    teamUrl: "/instructor_details",
     teamTitle: "David Jhonson",
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
@@ -99,7 +99,7 @@ const teamData = [
   {
     id: 5,
     teamThumb: teamThumb5,
-    teamUrl: "/team_details",
+    teamUrl: "/instructor_details",
     teamTitle: "Emily R. Watson",
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
@@ -120,7 +120,7 @@ const teamData = [
   {
     id: 6,
     teamThumb: teamThumb6,
-    teamUrl: "/team_details",
+    teamUrl: "/instructor_details",
     teamTitle: "Michael B. Clarke",
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
@@ -152,7 +152,8 @@ const TeamMember = () => {
             <img src={subTilteIcon} draggable={false} alt="Icon" /> INstructor
           </h5>
           <h1 className="font-Outfit font-semibold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-2 md:mt-[14px] mb-4">
-            Introducing The Educators and<br /> Professional Instructor
+            Introducing The Educators and
+            <br /> Professional Instructor
           </h1>
         </div>
         <div className="box-row mt-[48px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

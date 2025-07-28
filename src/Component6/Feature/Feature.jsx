@@ -5,6 +5,7 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import { GiCheckMark } from "react-icons/gi";
 import FsLightbox from "fslightbox-react";
 import { useState } from "react";
+import FsLightboxPortal from "../../Shared/FsLightBox/FsLightBox";
 
 const Feature = () => {
   const [toggler, setToggler] = useState(false);
@@ -82,10 +83,13 @@ const Feature = () => {
           </div>
         </div>
       </div>
-      <FsLightbox
-        toggler={toggler}
-        sources={["https://youtu.be/LlCwHnp3kL4?si=SD5vSCPhr4vc_U5t"]}
-      />
+
+      <FsLightboxPortal>
+        <FsLightbox
+          toggler={toggler}
+          sources={['https://youtu.be/LlCwHnp3kL4?si=SD5vSCPhr4vc_U5t']}
+        />
+      </FsLightboxPortal>
     </section>
   );
 };
